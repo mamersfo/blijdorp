@@ -17,6 +17,8 @@ System.config({
       "app/main.js",
       "app/List.js",
       "app/api.js",
+      "npm:whatwg-fetch@1.0.0.js",
+      "npm:whatwg-fetch@1.0.0/fetch.js",
       "npm:react@15.3.0.js",
       "npm:react@15.3.0/react.js",
       "npm:react@15.3.0/lib/React.js",
