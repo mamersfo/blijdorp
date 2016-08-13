@@ -18,11 +18,10 @@ const childRoutes = [
 ]
 
 class Main extends React.Component {
+  
   renderItems() {
-    console.log(routes.childRoutes)
     return childRoutes.map((item) => {
       let uri = baseUri + '/' + item.path
-      console.log(uri)
       return (
         <li role='presentation'
             className={this.props.location.pathname == uri ? 'active' : ''}>
@@ -49,6 +48,7 @@ class Main extends React.Component {
 const routes = {
   path: baseUri,
   component: Main,
+  indexRoute: { component: Home },
   childRoutes: childRoutes
 }
 

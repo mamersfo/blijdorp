@@ -1,9 +1,9 @@
 {
   "jspm": {
     "dependencies": {
-      "bootstrap": "github:twbs/bootstrap@^3.3.7",
       "react": "npm:react@^15.3.0",
       "react-dom": "npm:react-dom@^15.3.0",
+      "react-router": "npm:react-router@^2.6.1",
       "whatwg-fetch": "npm:whatwg-fetch@^1.0.0"
     },
     "devDependencies": {

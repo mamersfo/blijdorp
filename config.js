@@ -15,10 +15,7 @@ System.config({
   bundles: {
     "build.js": [
       "app/main.js",
-      "app/List.js",
-      "app/api.js",
-      "npm:whatwg-fetch@1.0.0.js",
-      "npm:whatwg-fetch@1.0.0/fetch.js",
+      "app/home.js",
       "npm:react@15.3.0.js",
       "npm:react@15.3.0/react.js",
       "npm:react@15.3.0/lib/React.js",
@@ -87,6 +84,82 @@ System.config({
       "npm:core-js@1.2.7/library/modules/$.defined.js",
       "npm:core-js@1.2.7/library/modules/$.iobject.js",
       "npm:core-js@1.2.7/library/modules/$.cof.js",
+      "app/team.js",
+      "app/list.js",
+      "app/api.js",
+      "npm:whatwg-fetch@1.0.0.js",
+      "npm:whatwg-fetch@1.0.0/fetch.js",
+      "npm:react-router@2.6.1.js",
+      "npm:react-router@2.6.1/lib/index.js",
+      "npm:react-router@2.6.1/lib/createMemoryHistory.js",
+      "npm:history@2.1.2/lib/createMemoryHistory.js",
+      "npm:history@2.1.2/lib/createHistory.js",
+      "npm:history@2.1.2/lib/deprecate.js",
+      "npm:warning@2.1.0.js",
+      "npm:warning@2.1.0/browser.js",
+      "npm:history@2.1.2/lib/runTransitionHook.js",
+      "npm:history@2.1.2/lib/createLocation.js",
+      "npm:history@2.1.2/lib/PathUtils.js",
+      "npm:history@2.1.2/lib/Actions.js",
+      "npm:history@2.1.2/lib/AsyncUtils.js",
+      "npm:deep-equal@1.0.1.js",
+      "npm:deep-equal@1.0.1/index.js",
+      "npm:deep-equal@1.0.1/lib/is_arguments.js",
+      "npm:deep-equal@1.0.1/lib/keys.js",
+      "npm:invariant@2.2.1.js",
+      "npm:invariant@2.2.1/browser.js",
+      "npm:history@2.1.2/lib/useBasename.js",
+      "npm:history@2.1.2/lib/ExecutionEnvironment.js",
+      "npm:history@2.1.2/lib/useQueries.js",
+      "npm:query-string@3.0.3.js",
+      "npm:query-string@3.0.3/index.js",
+      "npm:strict-uri-encode@1.1.0.js",
+      "npm:strict-uri-encode@1.1.0/index.js",
+      "npm:react-router@2.6.1/lib/hashHistory.js",
+      "npm:react-router@2.6.1/lib/createRouterHistory.js",
+      "npm:react-router@2.6.1/lib/useRouterHistory.js",
+      "npm:history@2.1.2/lib/createHashHistory.js",
+      "npm:history@2.1.2/lib/createDOMHistory.js",
+      "npm:history@2.1.2/lib/DOMUtils.js",
+      "npm:history@2.1.2/lib/DOMStateStorage.js",
+      "npm:react-router@2.6.1/lib/browserHistory.js",
+      "npm:history@2.1.2/lib/createBrowserHistory.js",
+      "npm:react-router@2.6.1/lib/applyRouterMiddleware.js",
+      "npm:react-router@2.6.1/lib/RouterContext.js",
+      "npm:react-router@2.6.1/lib/routerWarning.js",
+      "npm:warning@3.0.0.js",
+      "npm:warning@3.0.0/browser.js",
+      "npm:react-router@2.6.1/lib/RouteUtils.js",
+      "npm:react-router@2.6.1/lib/getRouteParams.js",
+      "npm:react-router@2.6.1/lib/PatternUtils.js",
+      "npm:react-router@2.6.1/lib/deprecateObjectProperties.js",
+      "npm:react-router@2.6.1/lib/match.js",
+      "npm:react-router@2.6.1/lib/RouterUtils.js",
+      "npm:react-router@2.6.1/lib/createTransitionManager.js",
+      "npm:react-router@2.6.1/lib/matchRoutes.js",
+      "npm:react-router@2.6.1/lib/makeStateWithLocation.js",
+      "npm:react-router@2.6.1/lib/AsyncUtils.js",
+      "npm:react-router@2.6.1/lib/getComponents.js",
+      "npm:react-router@2.6.1/lib/isActive.js",
+      "npm:react-router@2.6.1/lib/TransitionUtils.js",
+      "npm:react-router@2.6.1/lib/computeChangedRoutes.js",
+      "npm:react-router@2.6.1/lib/RoutingContext.js",
+      "npm:react-router@2.6.1/lib/useRoutes.js",
+      "npm:react-router@2.6.1/lib/RouteContext.js",
+      "npm:react-router@2.6.1/lib/Lifecycle.js",
+      "npm:react-router@2.6.1/lib/History.js",
+      "npm:react-router@2.6.1/lib/InternalPropTypes.js",
+      "npm:react-router@2.6.1/lib/Route.js",
+      "npm:react-router@2.6.1/lib/Redirect.js",
+      "npm:react-router@2.6.1/lib/IndexRoute.js",
+      "npm:react-router@2.6.1/lib/IndexRedirect.js",
+      "npm:react-router@2.6.1/lib/withRouter.js",
+      "npm:react-router@2.6.1/lib/PropTypes.js",
+      "npm:hoist-non-react-statics@1.2.0.js",
+      "npm:hoist-non-react-statics@1.2.0/index.js",
+      "npm:react-router@2.6.1/lib/IndexLink.js",
+      "npm:react-router@2.6.1/lib/Link.js",
+      "npm:react-router@2.6.1/lib/Router.js",
       "npm:react-dom@15.3.0.js",
       "npm:react-dom@15.3.0/index.js",
       "npm:react@15.3.0/lib/ReactDOM.js",
@@ -234,11 +307,11 @@ System.config({
   map: {
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
-    "bootstrap": "github:twbs/bootstrap@3.3.7",
     "core-js": "npm:core-js@1.2.7",
     "fetch": "npm:whatwg-fetch@1.0.0",
     "react": "npm:react@15.3.0",
     "react-dom": "npm:react-dom@15.3.0",
+    "react-router": "npm:react-router@2.6.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -285,9 +358,6 @@ System.config({
     },
     "github:jspm/nodelibs-zlib@0.1.0": {
       "browserify-zlib": "npm:browserify-zlib@0.1.4"
-    },
-    "github:twbs/bootstrap@3.3.7": {
-      "jquery": "npm:jquery@2.2.4"
     },
     "npm:asap@2.0.4": {
       "domain": "github:jspm/nodelibs-domain@0.1.0",
@@ -347,6 +417,13 @@ System.config({
       "promise": "npm:promise@7.1.1",
       "ua-parser-js": "npm:ua-parser-js@0.7.10"
     },
+    "npm:history@2.1.2": {
+      "deep-equal": "npm:deep-equal@1.0.1",
+      "invariant": "npm:invariant@2.2.1",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "query-string": "npm:query-string@3.0.3",
+      "warning": "npm:warning@2.1.0"
+    },
     "npm:https-browserify@0.0.0": {
       "http": "github:jspm/nodelibs-http@1.7.1"
     },
@@ -359,6 +436,10 @@ System.config({
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:invariant@2.2.1": {
+      "loose-envify": "npm:loose-envify@1.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:isomorphic-fetch@2.2.1": {
       "node-fetch": "npm:node-fetch@1.6.0",
@@ -404,8 +485,20 @@ System.config({
     "npm:punycode@1.3.2": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:query-string@3.0.3": {
+      "strict-uri-encode": "npm:strict-uri-encode@1.1.0"
+    },
     "npm:react-dom@15.3.0": {
       "react": "npm:react@15.3.0"
+    },
+    "npm:react-router@2.6.1": {
+      "history": "npm:history@2.1.2",
+      "hoist-non-react-statics": "npm:hoist-non-react-statics@1.2.0",
+      "invariant": "npm:invariant@2.2.1",
+      "loose-envify": "npm:loose-envify@1.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react": "npm:react@15.3.0",
+      "warning": "npm:warning@3.0.0"
     },
     "npm:react@15.3.0": {
       "fbjs": "npm:fbjs@0.8.3",
@@ -461,6 +554,14 @@ System.config({
     },
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:warning@2.1.0": {
+      "loose-envify": "npm:loose-envify@1.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:warning@3.0.0": {
+      "loose-envify": "npm:loose-envify@1.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     }
   }
 });
