@@ -16,6 +16,7 @@ System.config({
     "build.js": [
       "app/main.js",
       "app/List.js",
+      "app/api.js",
       "npm:react@15.3.0.js",
       "npm:react@15.3.0/react.js",
       "npm:react@15.3.0/lib/React.js",
@@ -233,9 +234,9 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bootstrap": "github:twbs/bootstrap@3.3.7",
     "core-js": "npm:core-js@1.2.7",
+    "fetch": "npm:whatwg-fetch@1.0.0",
     "react": "npm:react@15.3.0",
     "react-dom": "npm:react-dom@15.3.0",
-    "whatwg-fetch": "npm:whatwg-fetch@1.0.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },

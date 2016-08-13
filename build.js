@@ -13633,8 +13633,26 @@ System.registerDynamic("npm:react@15.3.0.js", ["npm:react@15.3.0/react.js"], tru
   return module.exports;
 });
 
-System.register('app/List.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, List;
+System.register("app/api.js", [], function (_export) {
+  "use strict";
+
+  var get;
+  return {
+    setters: [],
+    execute: function () {
+      get = function get(which) {
+        var url = "https://mamersfo.github.io/blijdorp/data/" + which + ".json";
+        return fetch(url).then(function (response) {
+          return response.json();
+        });
+      };
+
+      _export("get", get);
+    }
+  };
+});
+System.register('app/List.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'app/api.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, get, List;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -13647,6 +13665,8 @@ System.register('app/List.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
     }, function (_npmReact1530Js) {
       React = _npmReact1530Js['default'];
+    }, function (_appApiJs) {
+      get = _appApiJs.get;
     }],
     execute: function () {
       'use strict';
@@ -13654,19 +13674,45 @@ System.register('app/List.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       List = (function (_React$Component) {
         _inherits(List, _React$Component);
 
-        function List() {
+        function List(props) {
           _classCallCheck(this, List);
 
-          _get(Object.getPrototypeOf(List.prototype), 'constructor', this).apply(this, arguments);
+          _get(Object.getPrototypeOf(List.prototype), 'constructor', this).call(this, props);
+          this.state = { data: [] };
         }
 
         _createClass(List, [{
+          key: 'componentDidMount',
+          value: function componentDidMount() {
+            var _this = this;
+
+            get(this.props.which).then(function (data) {
+              _this.setState({ data: data });
+            });
+          }
+        }, {
           key: 'render',
           value: function render() {
+            var items = this.state.data.map(function (item) {
+              return React.createElement(
+                'li',
+                { key: item.id },
+                item.name
+              );
+            });
             return React.createElement(
               'div',
               null,
-              'Hello World'
+              React.createElement(
+                'h2',
+                null,
+                this.props.which
+              ),
+              React.createElement(
+                'ul',
+                null,
+                items
+              )
             );
           }
         }]);
@@ -13712,16 +13758,7 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
         _createClass(Main, [{
           key: 'render',
           value: function render() {
-            return React.createElement(
-              'div',
-              null,
-              React.createElement(
-                'h2',
-                null,
-                'List'
-              ),
-              React.createElement(List, null)
-            );
+            return React.createElement(List, { which: 'players' });
           }
         }]);
 
