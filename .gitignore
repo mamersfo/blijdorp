@@ -1,3 +1,5 @@
+dependency-bundle.js
+dependency-bundle.js.map
 jspm_packages/.dependencies.json
 jspm_packages/.loaderversions
 jspm_packages/github/
