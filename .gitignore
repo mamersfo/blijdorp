@@ -1,4 +1,3 @@
-build.js.map
 jspm_packages/.dependencies.json
 jspm_packages/.loaderversions
 jspm_packages/github/
@@ -9,6 +8,5 @@ jspm_packages/system-csp-production.src.js
 jspm_packages/system-polyfills.js
 jspm_packages/system-polyfills.js.map
 jspm_packages/system-polyfills.src.js
-jspm_packages/system.js.map
 jspm_packages/system.src.js
 node_modules/
