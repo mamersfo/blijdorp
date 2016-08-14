@@ -4,12 +4,12 @@
     "name": "Amine",
     "matches": 26,
     "goals": {
-      total: 1,
-      avg: 0.0
+      "total": 1,
+      "avg": 0.0
     },
     "assists": {
-      total: 0,
-      avg: 0.0
+      "total": 0,
+      "avg": 0.0
     }
   },
   {
@@ -17,12 +17,12 @@
     "name": "Dieuwe",
     "matches": 17.5,
     "goals": {
-      total: 2,
-      avg: 0.1
+      "total": 2,
+      "avg": 0.1
     },
     "assists": {
-      total: 4,
-      avg: 0.0
+      "total": 4,
+      "avg": 0.0
     }
   },
   {
@@ -30,12 +30,12 @@
     "name": "Fadi",
     "matches": 26,
     "goals": {
-      total: 46,
-      avg: 1.8
+      "total": 46,
+      "avg": 1.8
     },
     "assists": {
-      total: 17,
-      avg: 0.0
+      "total": 17,
+      "avg": 0.0
     }
   },
   {
@@ -44,8 +44,8 @@
     "matches": 0,
     "goals": 0,
     "assists": {
-      total: 0,
-      avg: 0.0
+      "total": 0,
+      "avg": 0.0
     }
   },
   {
@@ -53,12 +53,12 @@
     "name": "Lenny",
     "matches": 25,
     "goals": {
-      total: 0,
-      avg: 0.0
+      "total": 0,
+      "avg": 0.0
     },
     "assists": {
-      total: 0,
-      avg: 0.0
+      "total": 0,
+      "avg": 0.0
     }
   },
   {
@@ -66,12 +66,12 @@
     "name": "Luc",
     "matches": 26,
     "goals": {
-      total: 13,
-      avg: 0.5
+      "total": 13,
+      "avg": 0.5
     },
     "assists": {
-      total: 17,
-      avg: 0.0
+      "total": 17,
+      "avg": 0.0
     }
   },
   {
@@ -79,12 +79,12 @@
     "name": "Quincy",
     "matches": 16.5,
     "goals": {
-      total: 11,
-      avg: 0.7
+      "total": 11,
+      "avg": 0.7
     },
     "assists": {
-      total: 10,
-      avg: 0.0
+      "total": 10,
+      "avg": 0.0
     }
   },
   {
@@ -92,12 +92,12 @@
     "name": "Stijn",
     "matches": 18,
     "goals": {
-      total: 16,
-      avg: 0.9
+      "total": 16,
+      "avg": 0.9
     },
     "assists": {
-      total: 7,
-      avg: 0.0
+      "total": 7,
+      "avg": 0.0
     }
   },
   {
@@ -105,12 +105,12 @@
     "name": "Vito",
     "matches": 22.5,
     "goals": {
-      total: 9,
-      avg: 0.4
+      "total": 9,
+      "avg": 0.4
     },
     "assists": {
-      total: 9,
-      avg: 0.0
+      "total": 9,
+      "avg": 0.0
     }
   },
   {
@@ -118,12 +118,12 @@
     "name": "Xaver",
     "matches": 6,
     "goals": {
-      total: 0,
-      avg: 0.0
+      "total": 0,
+      "avg": 0.0
     },
     "assists": {
-      total: 0,
-      avg: 0.0
+      "total": 0,
+      "avg": 0.0
     }
   },
   {
@@ -131,12 +131,12 @@
     "name": "Vic",
     "matches": 25,
     "goals": {
-      total: 14,
-      avg: 0.6
+      "total": 14,
+      "avg": 0.6
     },
     "assists": {
-      total: 6,
-      avg: 0.0
+      "total": 6,
+      "avg": 0.0
     }
   }
 ]
