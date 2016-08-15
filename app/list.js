@@ -17,7 +17,7 @@ export default class List extends React.Component {
   render() {
     var items = this.state.data.map((item) => <li key={item.id}>{item.name}</li>)
     return (
-      <div>
+      <div className='container'>
         <h2>{this.props.which}</h2>
         <ul>{items}</ul>
       </div>
