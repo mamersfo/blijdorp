@@ -14,4 +14,4 @@ Usage:
 
 Bundle for production:
 
-    jspm bundle lib/main --inject
+    jspm bundle app/main --inject
