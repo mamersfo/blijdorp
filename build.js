@@ -4646,7 +4646,7 @@ System.register('app/goals.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
           key: 'render',
           value: function render() {
             return React.createElement(Players, {
-              metric: 'goals',
+              metric: 'doelpunten',
               colorRange: ['white', 'red']
             });
           }
@@ -47109,7 +47109,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function renderMap(m) {
             return m ? _Object$keys(m).map(function (k) {
               return k + ' (' + m[k] + ') ';
-            }) : 'none';
+            }) : 'geen';
           }
         }, {
           key: 'renderReport',
@@ -47153,7 +47153,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 React.createElement(
                   'td',
                   { style: { width: '100px' } },
-                  'Date:'
+                  'Datum:'
                 ),
                 React.createElement(
                   'td',
@@ -47167,7 +47167,21 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 React.createElement(
                   'td',
                   null,
-                  'Result:'
+                  'Competitie:'
+                ),
+                React.createElement(
+                  'td',
+                  null,
+                  m.league
+                )
+              ),
+              React.createElement(
+                'tr',
+                null,
+                React.createElement(
+                  'td',
+                  null,
+                  'Uitslag:'
                 ),
                 React.createElement(
                   'td',
@@ -47181,7 +47195,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 React.createElement(
                   'td',
                   null,
-                  'Goals:'
+                  'Doelpunten:'
                 ),
                 React.createElement(
                   'td',
@@ -47233,7 +47247,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
               React.createElement(
                 'h2',
                 null,
-                'matches'
+                'wedstrijden'
               ),
               React.createElement(
                 Accordion,
@@ -47294,11 +47308,11 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
         component: Home
       }, {
         id: 2,
-        path: 'matches',
+        path: 'wedstrijden',
         component: Matches
       }, {
         id: 3,
-        path: 'goals',
+        path: 'doelpunten',
         component: Goals
       }, {
         id: 4,

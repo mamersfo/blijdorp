@@ -17,12 +17,12 @@ const childRoutes = [
   },
   {
     id: 2,
-    path: 'matches',
+    path: 'wedstrijden',
     component: Matches
   },
   {
     id: 3,
-    path: 'goals',
+    path: 'doelpunten',
     component: Goals
   },
   {

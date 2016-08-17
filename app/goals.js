@@ -5,7 +5,7 @@ export default class Goals extends React.Component {
 
   render() {
     return <Players
-      metric='goals'
+      metric='doelpunten'
       colorRange={['white', 'red']}
        />
   }

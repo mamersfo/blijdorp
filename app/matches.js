@@ -16,7 +16,7 @@ export default class Matches extends React.Component {
   }
 
   renderMap(m) {
-    return m ? Object.keys(m).map((k) => k + ' (' + m[k] + ') ') : 'none'
+    return m ? Object.keys(m).map((k) => k + ' (' + m[k] + ') ') : 'geen'
   }
 
   renderReport(m) {
@@ -37,9 +37,10 @@ export default class Matches extends React.Component {
   renderTable(m) {
     return (
       <table className='table'>
-        <tr><td style={{width: '100px'}} >Date:</td><td>{m.date}</td></tr>
-        <tr><td>Result:</td><td>{m.result[0] + ' - ' + m.result[1]}</td></tr>
-        <tr><td>Goals:</td><td>{this.renderMap(m.goals)}</td></tr>
+        <tr><td style={{width: '100px'}} >Datum:</td><td>{m.date}</td></tr>
+        <tr><td>Competitie:</td><td>{m.league}</td></tr>
+        <tr><td>Uitslag:</td><td>{m.result[0] + ' - ' + m.result[1]}</td></tr>
+        <tr><td>Doelpunten:</td><td>{this.renderMap(m.goals)}</td></tr>
         <tr><td>Assists:</td><td>{this.renderMap(m.assists)}</td></tr>
       </table>
     )
@@ -62,7 +63,7 @@ export default class Matches extends React.Component {
   render() {
     return (
       <div className='container'>
-        <h2>matches</h2>
+        <h2>wedstrijden</h2>
         <Accordion>
         { this.renderItems() }
         </Accordion>
