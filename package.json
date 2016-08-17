@@ -9,6 +9,7 @@
       "react-bootstrap-table": "npm:react-bootstrap-table@^2.4.2",
       "react-dom": "npm:react-dom@^15.3.0",
       "react-router": "npm:react-router@^2.6.1",
+      "react-sanfona": "npm:react-sanfona@^0.0.14",
       "react-vis": "npm:react-vis@^0.4.2",
       "whatwg-fetch": "npm:whatwg-fetch@^1.0.0"
     },

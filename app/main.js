@@ -5,6 +5,7 @@ import Team from './team'
 import Home from './home'
 import Goals from './goals'
 import Assists from './assists'
+import Matches from './matches'
 
 const baseUri = '/blijdorp'
 
@@ -16,8 +17,8 @@ const childRoutes = [
   },
   {
     id: 2,
-    path: 'team',
-    component: Team
+    path: 'matches',
+    component: Matches
   },
   {
     id: 3,
