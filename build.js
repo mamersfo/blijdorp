@@ -4585,6 +4585,52 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
     }
   };
 });
+System.register('app/goals.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'app/players.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, Players, Goals;
+
+  return {
+    setters: [function (_npmBabelRuntime5838HelpersGetJs) {
+      _get = _npmBabelRuntime5838HelpersGetJs['default'];
+    }, function (_npmBabelRuntime5838HelpersInheritsJs) {
+      _inherits = _npmBabelRuntime5838HelpersInheritsJs['default'];
+    }, function (_npmBabelRuntime5838HelpersCreateClassJs) {
+      _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
+    }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
+      _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmReact1530Js) {
+      React = _npmReact1530Js['default'];
+    }, function (_appPlayersJs) {
+      Players = _appPlayersJs['default'];
+    }],
+    execute: function () {
+      'use strict';
+
+      Goals = (function (_React$Component) {
+        _inherits(Goals, _React$Component);
+
+        function Goals() {
+          _classCallCheck(this, Goals);
+
+          _get(Object.getPrototypeOf(Goals.prototype), 'constructor', this).apply(this, arguments);
+        }
+
+        _createClass(Goals, [{
+          key: 'render',
+          value: function render() {
+            return React.createElement(Players, {
+              metric: 'goals',
+              colorRange: ['white', 'red']
+            });
+          }
+        }]);
+
+        return Goals;
+      })(React.Component);
+
+      _export('default', Goals);
+    }
+  };
+});
 System.registerDynamic("npm:core-js@1.2.7/library/modules/$.cof.js", [], true, function($__require, exports, module) {
   ;
   var define,
@@ -19863,21 +19909,25 @@ System.registerDynamic("npm:whatwg-fetch@1.0.0.js", ["npm:whatwg-fetch@1.0.0/fet
   return module.exports;
 });
 
-System.register('app/api.js', ['npm:whatwg-fetch@1.0.0.js'], function (_export) {
-  'use strict';
+System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) {
+  "use strict";
 
-  var get;
+  var baseUrl, get;
   return {
     setters: [function (_npmWhatwgFetch100Js) {}],
     execute: function () {
+
+      // const baseUrl = "http://localhost:3000"
+      baseUrl = "https://mamersfo.github.io";
+
       get = function get(which) {
-        var url = 'https://mamersfo.github.io/blijdorp/data/' + which + '.json';
+        var url = baseUrl + "/blijdorp/data/" + which + ".json";
         return fetch(url).then(function (response) {
           return response.json();
         });
       };
 
-      _export('get', get);
+      _export("get", get);
     }
   };
 });
@@ -45934,8 +45984,8 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2.js", ["npm:react-bootstr
   return module.exports;
 });
 
-System.register('app/goals.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-vis@0.4.2.js', 'app/api.js', 'npm:react-bootstrap-table@2.4.2.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, Treemap, get, BootstrapTable, TableHeaderColumn, Goals;
+System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-vis@0.4.2.js', 'app/api.js', 'npm:react-bootstrap-table@2.4.2.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, Treemap, get, BootstrapTable, TableHeaderColumn, Players;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -45959,25 +46009,24 @@ System.register('app/goals.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
     execute: function () {
       'use strict';
 
-      Goals = (function (_React$Component) {
-        _inherits(Goals, _React$Component);
+      Players = (function (_React$Component) {
+        _inherits(Players, _React$Component);
 
-        function Goals(props) {
-          _classCallCheck(this, Goals);
+        function Players(props) {
+          _classCallCheck(this, Players);
 
-          _get(Object.getPrototypeOf(Goals.prototype), 'constructor', this).call(this, props);
+          _get(Object.getPrototypeOf(Players.prototype), 'constructor', this).call(this, props);
           this.state = { players: [], items: [] };
         }
 
-        _createClass(Goals, [{
+        _createClass(Players, [{
           key: 'transform',
           value: function transform(data) {
-            var color = 1;
             return data.map(function (player) {
               return {
                 title: player.name,
                 size: player.total,
-                color: color++
+                color: Math.random()
               };
             });
           }
@@ -45986,7 +46035,7 @@ System.register('app/goals.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
           value: function componentDidMount() {
             var _this = this;
 
-            get('goals').then(function (data) {
+            get(this.props.metric).then(function (data) {
               var sorted = data.sort(function (a, b) {
                 return b.total - a.total;
               });
@@ -45999,83 +46048,151 @@ System.register('app/goals.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
             });
           }
         }, {
+          key: 'renderHeader',
+          value: function renderHeader() {
+            return React.createElement(
+              'div',
+              { className: 'row' },
+              React.createElement(
+                'div',
+                { className: 'col-md-6' },
+                React.createElement(
+                  'h2',
+                  null,
+                  this.props.metric
+                )
+              ),
+              React.createElement('div', { className: 'col-md-6' })
+            );
+          }
+        }, {
+          key: 'renderTreeMap',
+          value: function renderTreeMap() {
+            return React.createElement(Treemap, {
+              data: { title: '', children: this.state.items },
+              height: 435,
+              width: 435,
+              colorDomain: this.props.colorDomain || [0, 1],
+              colorRange: this.props.colorRange || ['white', 'green'],
+              colorType: this.props.colorType || 'linear'
+            });
+          }
+        }, {
+          key: 'renderTable',
+          value: function renderTable() {
+            return React.createElement(
+              BootstrapTable,
+              { data: this.state.players, striped: true },
+              React.createElement(
+                TableHeaderColumn,
+                { isKey: true, dataField: 'id', hidden: true },
+                'Id'
+              ),
+              React.createElement(
+                TableHeaderColumn,
+                { dataField: 'name', dataSort: true, width: '100' },
+                'Player'
+              ),
+              React.createElement(
+                TableHeaderColumn,
+                { dataField: 'total', dataSort: true, width: '100',
+                  dataAlign: 'end' },
+                'Total'
+              ),
+              React.createElement(
+                TableHeaderColumn,
+                { dataField: 'matches', dataSort: true, width: '100',
+                  dataAlign: 'end' },
+                'Matches'
+              ),
+              React.createElement(
+                TableHeaderColumn,
+                { dataField: 'average', dataSort: true, width: '100',
+                  dataAlign: 'end' },
+                'Average'
+              )
+            );
+          }
+        }, {
           key: 'render',
           value: function render() {
             return React.createElement(
               'div',
               { className: 'container' },
+              this.renderHeader(),
               React.createElement(
                 'div',
                 { className: 'row' },
                 React.createElement(
                   'div',
                   { className: 'col-md-6' },
-                  React.createElement(
-                    'h2',
-                    null,
-                    'goals'
-                  )
-                ),
-                React.createElement('div', { className: 'col-md-6' })
-              ),
-              React.createElement(
-                'div',
-                { className: 'row' },
-                React.createElement(
-                  'div',
-                  { className: 'col-md-6' },
-                  React.createElement(Treemap, {
-                    data: { title: '', children: this.state.items },
-                    height: 435,
-                    width: 435 })
+                  this.renderTreeMap()
                 ),
                 React.createElement(
                   'div',
                   { className: 'col-md-6' },
-                  React.createElement(
-                    BootstrapTable,
-                    { data: this.state.players, striped: true, headerStyle: { 'margin-bottom': '0px' } },
-                    React.createElement(
-                      TableHeaderColumn,
-                      { isKey: true, dataField: 'id', hidden: 'true' },
-                      'Id'
-                    ),
-                    React.createElement(
-                      TableHeaderColumn,
-                      { dataField: 'name', dataSort: 'true', width: 100 },
-                      'Player'
-                    ),
-                    React.createElement(
-                      TableHeaderColumn,
-                      { dataField: 'total', dataSort: true, dataAlign: 'end', width: 100 },
-                      'Total'
-                    ),
-                    React.createElement(
-                      TableHeaderColumn,
-                      { dataField: 'matches', dataSort: true, dataAlign: 'end', width: 100 },
-                      'Matches'
-                    ),
-                    React.createElement(
-                      TableHeaderColumn,
-                      { dataField: 'average', dataSort: true, dataAlign: 'end', width: 100 },
-                      'Average'
-                    )
-                  )
+                  this.renderTable()
                 )
               )
             );
           }
         }]);
 
-        return Goals;
+        return Players;
       })(React.Component);
 
-      _export('default', Goals);
+      _export('default', Players);
     }
   };
 });
-System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-dom@15.3.0.js', 'npm:react-router@2.6.1.js', 'app/team.js', 'app/home.js', 'app/goals.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, ReactDOM, Router, Route, IndexRoute, Link, browserHistory, Team, Home, Goals, baseUri, childRoutes, Main, routes;
+System.register('app/assists.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'app/players.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, Players, Assists;
+
+  return {
+    setters: [function (_npmBabelRuntime5838HelpersGetJs) {
+      _get = _npmBabelRuntime5838HelpersGetJs['default'];
+    }, function (_npmBabelRuntime5838HelpersInheritsJs) {
+      _inherits = _npmBabelRuntime5838HelpersInheritsJs['default'];
+    }, function (_npmBabelRuntime5838HelpersCreateClassJs) {
+      _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
+    }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
+      _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmReact1530Js) {
+      React = _npmReact1530Js['default'];
+    }, function (_appPlayersJs) {
+      Players = _appPlayersJs['default'];
+    }],
+    execute: function () {
+      'use strict';
+
+      Assists = (function (_React$Component) {
+        _inherits(Assists, _React$Component);
+
+        function Assists() {
+          _classCallCheck(this, Assists);
+
+          _get(Object.getPrototypeOf(Assists.prototype), 'constructor', this).apply(this, arguments);
+        }
+
+        _createClass(Assists, [{
+          key: 'render',
+          value: function render() {
+            return React.createElement(Players, {
+              metric: 'assists',
+              colorRange: ['white', 'blue']
+            });
+          }
+        }]);
+
+        return Assists;
+      })(React.Component);
+
+      _export('default', Assists);
+    }
+  };
+});
+System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-dom@15.3.0.js', 'npm:react-router@2.6.1.js', 'app/team.js', 'app/home.js', 'app/goals.js', 'app/assists.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, ReactDOM, Router, Route, IndexRoute, Link, browserHistory, Team, Home, Goals, Assists, baseUri, childRoutes, Main, routes;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -46102,6 +46219,8 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       Home = _appHomeJs['default'];
     }, function (_appGoalsJs) {
       Goals = _appGoalsJs['default'];
+    }, function (_appAssistsJs) {
+      Assists = _appAssistsJs['default'];
     }],
     execute: function () {
       'use strict';
@@ -46119,6 +46238,10 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
         id: 3,
         path: 'goals',
         component: Goals
+      }, {
+        id: 4,
+        path: 'assists',
+        component: Assists
       }];
 
       Main = (function (_React$Component) {

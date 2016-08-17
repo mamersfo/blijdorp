@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Amine",
+    "position": "defender",
     "matches": 26,
     "total": 1,
     "average": 0.0
@@ -9,6 +10,7 @@
   {
     "id": 2,
     "name": "Dieuwe",
+    "position": "defender",
     "matches": 17.5,
     "total": 2,
     "average": 0.1
@@ -16,6 +18,7 @@
   {
     "id": 3,
     "name": "Fadi",
+    "position": "attacker",
     "matches": 26,
     "total": 46,
     "average": 1.8
@@ -23,6 +26,7 @@
   {
     "id": 5,
     "name": "Lenny",
+    "position": "defender",
     "matches": 25,
     "total": 0,
     "average": 0.0
@@ -30,6 +34,7 @@
   {
     "id": 6,
     "name": "Luc",
+    "position": "midfielder",
     "matches": 26,
     "total": 13,
     "average": 0.5
@@ -38,12 +43,14 @@
     "id": 7,
     "name": "Quincy",
     "matches": 16.5,
+    "position": "midfielder",
     "total": 11,
     "average": 0.7
   },
   {
     "id": 8,
     "name": "Stijn",
+    "position": "attacker",
     "matches": 18,
     "total": 16,
     "average": 0.9
@@ -52,19 +59,14 @@
     "id": 9,
     "name": "Vito",
     "matches": 22.5,
+    "position": "midfielder",
     "total": 9,
     "average": 0.4
   },
   {
-    "id": 10,
-    "name": "Xaver",
-    "matches": 6,
-    "total": 0,
-    "average": 0.0
-  },
-  {
     "id": 11,
     "name": "Vic",
+    "position": "attacker",
     "matches": 25,
     "total": 14,
     "average": 0.6

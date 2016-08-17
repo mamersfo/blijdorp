@@ -15,7 +15,8 @@ System.config({
   bundles: {
     "build.js": [
       "app/main.js",
-      "app/goals.js",
+      "app/assists.js",
+      "app/players.js",
       "npm:react-bootstrap-table@2.4.2.js",
       "npm:react-bootstrap-table@2.4.2/lib/index.js",
       "npm:react-bootstrap-table@2.4.2/lib/TableHeaderColumn.js",
@@ -355,6 +356,7 @@ System.config({
       "npm:core-js@1.2.7/library/modules/$.defined.js",
       "npm:core-js@1.2.7/library/modules/$.iobject.js",
       "npm:core-js@1.2.7/library/modules/$.cof.js",
+      "app/goals.js",
       "app/home.js",
       "app/team.js",
       "app/list.js",
@@ -431,7 +433,10 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bootstrap": "github:twbs/bootstrap@3.3.7",
     "core-js": "npm:core-js@1.2.7",
+    "d3-color": "npm:d3-color@0.4.2",
+    "d3-scale": "npm:d3-scale@0.7.2",
     "fetch": "npm:whatwg-fetch@1.0.0",
+    "history": "npm:history@2.1.2",
     "react": "npm:react@15.3.0",
     "react-bootstrap-table": "npm:react-bootstrap-table@2.4.2",
     "react-dom": "npm:react-dom@15.3.0",

@@ -4,6 +4,7 @@ import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
 import Team from './team'
 import Home from './home'
 import Goals from './goals'
+import Assists from './assists'
 
 const baseUri = '/blijdorp'
 
@@ -22,6 +23,11 @@ const childRoutes = [
     id: 3,
     path: 'goals',
     component: Goals
+  },
+  {
+    id: 4,
+    path: 'assists',
+    component: Assists
   }
 ]
 
