@@ -113,6 +113,7 @@ System.config({
       "npm:core-js@1.2.7/library/modules/$.iobject.js",
       "npm:core-js@1.2.7/library/modules/$.cof.js",
       "app/matches.js",
+      "app/constants.js",
       "app/api.js",
       "npm:whatwg-fetch@1.0.0.js",
       "npm:whatwg-fetch@1.0.0/fetch.js",

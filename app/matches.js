@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Accordion, AccordionItem } from 'react-sanfona'
 import { get } from './api'
+import { season } from './constants'
 
 export class Matches extends React.Component {
 
@@ -11,7 +12,7 @@ export class Matches extends React.Component {
   }
 
   componentDidMount() {
-    get(this.props.season + '/matches').then((data) => {
+    get((this.props.season || season ) + '/matches').then((data) => {
       this.setState({ matches: data })
     })
   }

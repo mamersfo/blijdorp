@@ -10,12 +10,12 @@ import ChooseSeason from './choose-season'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
-function season(state = '2015/16', action) {
+function season(state = '', action) {
   switch(action.type) {
     case 'CHOOSE_SEASON':
       return action.season
     default:
-      return state
+      return '2016/17'
   }
 }
 

@@ -22,7 +22,7 @@ export class Players extends React.Component {
   }
 
   componentDidMount() {
-    get(this.props.season + '/' + this.props.metric).then((data) => {
+    get((this.props.season || '2016-17' ) + '/' + this.props.metric).then((data) => {
       let sorted = data.sort((a, b) => b.total - a.total)
       this.setState({
         players: sorted,

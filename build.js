@@ -31923,7 +31923,7 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function componentDidMount() {
             var _this = this;
 
-            get(this.props.season + '/' + this.props.metric).then(function (data) {
+            get((this.props.season || '2016-17') + '/' + this.props.metric).then(function (data) {
               var sorted = data.sort(function (a, b) {
                 return b.total - a.total;
               });
@@ -43919,9 +43919,9 @@ System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) 
   return {
     setters: [function (_npmWhatwgFetch100Js) {}],
     execute: function () {
-      baseUrl = "http://localhost:3000";
 
-      // const baseUrl = "https://mamersfo.github.io"
+      // const baseUrl = "http://localhost:3000"
+      baseUrl = "https://mamersfo.github.io";
 
       get = function get(which) {
         var url = baseUrl + "/blijdorp/data/" + which + ".json";
@@ -43934,8 +43934,17 @@ System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) 
     }
   };
 });
-System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.0.js', 'npm:react-redux@4.4.5.js', 'npm:react-sanfona@0.0.14.js', 'app/api.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Object$keys, React, connect, Accordion, AccordionItem, get, Matches;
+System.registerDynamic('app/constants.js', [], false, function ($__require, $__exports, $__module) {
+  var _retrieveGlobal = System.get("@@global-helpers").prepareGlobal($__module.id, null, null);
+
+  (function ($__global) {
+    season = '2016-17';
+  })(this);
+
+  return _retrieveGlobal();
+});
+System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.0.js', 'npm:react-redux@4.4.5.js', 'npm:react-sanfona@0.0.14.js', 'app/api.js', 'app/constants.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Object$keys, React, connect, Accordion, AccordionItem, get, season, Matches;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -43957,6 +43966,8 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       AccordionItem = _npmReactSanfona0014Js.AccordionItem;
     }, function (_appApiJs) {
       get = _appApiJs.get;
+    }, function (_appConstantsJs) {
+      season = _appConstantsJs.season;
     }],
     execute: function () {
       'use strict';
@@ -43976,7 +43987,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function componentDidMount() {
             var _this = this;
 
-            get(this.props.season + '/matches').then(function (data) {
+            get((this.props.season || season) + '/matches').then(function (data) {
               _this.setState({ matches: data });
             });
           }
@@ -48452,13 +48463,13 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
   var _get, _inherits, _createClass, _classCallCheck, React, ReactDOM, Router, Route, IndexRoute, Link, browserHistory, Team, Home, Goals, Assists, Matches, ChooseSeason, Provider, createStore, store, baseUri, childRoutes, Main, routes;
 
   function season(state, action) {
-    if (state === undefined) state = '2015/16';
+    if (state === undefined) state = '';
 
     switch (action.type) {
       case 'CHOOSE_SEASON':
         return action.season;
       default:
-        return state;
+        return '2016/17';
     }
   }
 
