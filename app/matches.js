@@ -1,8 +1,9 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { Accordion, AccordionItem } from 'react-sanfona'
 import { get } from './api'
 
-export default class Matches extends React.Component {
+export class Matches extends React.Component {
 
   constructor(props) {
     super(props)
@@ -10,7 +11,7 @@ export default class Matches extends React.Component {
   }
 
   componentDidMount() {
-    get('matches').then((data) => {
+    get(this.props.season + '/matches').then((data) => {
       this.setState({ matches: data })
     })
   }
@@ -71,3 +72,10 @@ export default class Matches extends React.Component {
     )
   }
 }
+
+export default connect(state => {
+  console.log('connect', state)
+  return {
+    season: state.s
+  }
+})(Matches)

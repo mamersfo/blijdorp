@@ -8,9 +8,11 @@
       "react": "npm:react@^15.3.0",
       "react-bootstrap-table": "npm:react-bootstrap-table@^2.4.2",
       "react-dom": "npm:react-dom@^15.3.0",
+      "react-redux": "npm:react-redux@^4.4.5",
       "react-router": "npm:react-router@^2.6.1",
       "react-sanfona": "npm:react-sanfona@^0.0.14",
       "react-vis": "npm:react-vis@^0.4.2",
+      "redux": "npm:redux@^3.5.2",
       "whatwg-fetch": "npm:whatwg-fetch@^1.0.0"
     },
     "devDependencies": {

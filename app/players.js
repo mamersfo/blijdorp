@@ -1,9 +1,10 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import {Treemap} from 'react-vis'
 import { get } from './api'
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table'
 
-export default class Players extends React.Component {
+export class Players extends React.Component {
 
   constructor(props) {
     super(props)
@@ -21,7 +22,7 @@ export default class Players extends React.Component {
   }
 
   componentDidMount() {
-    get(this.props.metric).then((data) => {
+    get(this.props.season + '/' + this.props.metric).then((data) => {
       let sorted = data.sort((a, b) => b.total - a.total)
       this.setState({
         players: sorted,
@@ -96,3 +97,10 @@ export default class Players extends React.Component {
     )
   }
 }
+
+export default connect(state => {
+  console.log('connect', state)
+  return {
+    season: state.s
+  }
+})(Players)

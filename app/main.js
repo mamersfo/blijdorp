@@ -6,6 +6,20 @@ import Home from './home'
 import Goals from './goals'
 import Assists from './assists'
 import Matches from './matches'
+import ChooseSeason from './choose-season'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+
+function season(state = '2015/16', action) {
+  switch(action.type) {
+    case 'CHOOSE_SEASON':
+      return action.season
+    default:
+      return state
+  }
+}
+
+const store = createStore(season)
 
 const baseUri = '/blijdorp'
 
@@ -38,7 +52,7 @@ class Main extends React.Component {
     return childRoutes.map((item) => {
       let uri = baseUri + '/' + item.path
       return (
-          <li key={'item-' + item.id}
+        <li key={'item-' + item.id}
             role='presentation'
             className={this.props.location.pathname == uri ? 'active' : ''}>
           <Link to={uri}>{item.path}</Link>
@@ -46,12 +60,13 @@ class Main extends React.Component {
       )
     })    
   }
-  
+
   render() {
     return (
       <div>
         <ul className='nav nav-tabs'>
-          {this.renderItems()}
+        {this.renderItems()}
+        <ChooseSeason />
         </ul>
         {this.props.children}
       </div>
@@ -66,4 +81,7 @@ const routes = {
   childRoutes: childRoutes
 }
 
-ReactDOM.render(<Router history={browserHistory} routes={routes} />, document.getElementById('app'))
+ReactDOM.render(
+    <Provider store={store}>
+      <Router history={browserHistory} routes={routes} />
+    </Provider>, document.getElementById('app'))
