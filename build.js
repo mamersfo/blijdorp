@@ -4488,7 +4488,7 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'container' },
+              { className: 'container-fluid' },
               React.createElement(
                 'div',
                 { className: 'jumbotron' },
@@ -31970,8 +31970,8 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function renderTreeMap() {
             return React.createElement(Treemap, {
               data: { title: '', children: this.state.items },
-              height: 435,
-              width: 435,
+              height: 414,
+              width: 414,
               colorDomain: this.props.colorDomain || [0, 1],
               colorRange: this.props.colorRange || ['white', 'green'],
               colorType: this.props.colorType || 'linear'
@@ -31982,7 +31982,7 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function renderTable() {
             return React.createElement(
               BootstrapTable,
-              { data: this.state.players, striped: true },
+              { tableStyle: { margin: 0 }, height: 414, data: this.state.players, striped: true },
               React.createElement(
                 TableHeaderColumn,
                 { isKey: true, dataField: 'id', hidden: true },
@@ -32018,7 +32018,7 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'container' },
+              { className: 'container-fluid' },
               this.renderHeader(),
               React.createElement(
                 'div',
@@ -32026,12 +32026,12 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 React.createElement(
                   'div',
                   { className: 'col-md-6' },
-                  this.renderTreeMap()
+                  this.renderTable()
                 ),
                 React.createElement(
                   'div',
                   { className: 'col-md-6' },
-                  this.renderTable()
+                  this.renderTreeMap()
                 )
               )
             );
@@ -44153,7 +44153,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'container' },
+              { className: 'container-fluid' },
               React.createElement(
                 'h2',
                 null,
@@ -44764,11 +44764,12 @@ System.register('app/choose-season.js', ['npm:babel-runtime@5.8.38/helpers/get.j
                 { className: 'dropdown-toggle',
                   'data-toggle': 'dropdown', href: '#', role: 'button',
                   'aria-haspopup': 'true', 'aria-expanded': 'false' },
-                'seizoen ',
+                'seizoen',
                 React.createElement('span', { className: 'caret' }),
                 React.createElement(
                   'span',
-                  { style: { marginLeft: '10px' } },
+                  { style: { marginLeft: '10px',
+                      whiteSpace: 'nowrap' } },
                   this.props.season
                 )
               ),

@@ -74,7 +74,7 @@ export class Matches extends React.Component {
   
   render() {
     return (
-      <div className='container'>
+      <div className='container-fluid'>
         <h2>wedstrijden</h2>
         <Accordion>
         { this.renderItems() }

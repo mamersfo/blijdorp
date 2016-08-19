@@ -28,8 +28,10 @@ export class ChooseSeason extends React.Component {
         <a className='dropdown-toggle'
            data-toggle='dropdown' href='#' role='button'
            aria-haspopup='true' aria-expanded='false'>
-        seizoen <span className='caret'></span>
-        <span style={{marginLeft: '10px'}}>{this.props.season}</span>
+        seizoen
+        <span className='caret'></span>
+        <span style={{marginLeft: '10px',
+                      whiteSpace: 'nowrap'}}>{this.props.season}</span>
         </a>
         <ul className='dropdown-menu'>
           {this.renderItems()}

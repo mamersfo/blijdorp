@@ -57,8 +57,8 @@ export class Players extends React.Component {
     return (
         <Treemap
           data={{title: '', children: this.state.items}}
-          height={435}
-          width={435}
+          height={414}
+          width={414}
           colorDomain={this.props.colorDomain || [0, 1]}
           colorRange={this.props.colorRange || ['white', 'green']}
           colorType={this.props.colorType || 'linear'}
@@ -68,7 +68,7 @@ export class Players extends React.Component {
 
   renderTable() {
     return (
-      <BootstrapTable data={this.state.players} striped={true}>
+        <BootstrapTable tableStyle={{margin: 0}} height={414} data={this.state.players} striped={true}>
         <TableHeaderColumn isKey={true} dataField='id' hidden={true}>
           Id
         </TableHeaderColumn>
@@ -93,14 +93,14 @@ export class Players extends React.Component {
   
   render() {
     return (
-      <div className='container'>
+      <div className='container-fluid'>
         { this.renderHeader() }
         <div className='row'>
           <div className='col-md-6'>
-            { this.renderTreeMap() }
+            { this.renderTable() }
           </div>
           <div className='col-md-6'>
-            { this.renderTable() }
+            { this.renderTreeMap() }
           </div>
         </div>
       </div>
