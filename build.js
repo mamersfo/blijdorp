@@ -31919,11 +31919,11 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
             });
           }
         }, {
-          key: 'componentDidMount',
-          value: function componentDidMount() {
+          key: 'fetchData',
+          value: function fetchData(season) {
             var _this = this;
 
-            get((this.props.season || '2016-17') + '/' + this.props.metric).then(function (data) {
+            get(season + '/' + this.props.metric).then(function (data) {
               var sorted = data.sort(function (a, b) {
                 return b.total - a.total;
               });
@@ -31934,6 +31934,18 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 }))
               });
             });
+          }
+        }, {
+          key: 'componentDidMount',
+          value: function componentDidMount() {
+            this.fetchData(this.props.season);
+          }
+        }, {
+          key: 'componentWillReceiveProps',
+          value: function componentWillReceiveProps(next) {
+            if (this.props.season !== next.season) {
+              this.fetchData(next.season);
+            }
           }
         }, {
           key: 'renderHeader',
@@ -32032,9 +32044,8 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       _export('Players', Players);
 
       _export('default', connect(function (state) {
-        console.log('connect', state);
         return {
-          season: state.s
+          season: state.season
         };
       })(Players));
     }
@@ -43983,13 +43994,25 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
         }
 
         _createClass(Matches, [{
-          key: 'componentDidMount',
-          value: function componentDidMount() {
+          key: 'fetchData',
+          value: function fetchData(season) {
             var _this = this;
 
-            get((this.props.season || '2016-17') + '/matches').then(function (data) {
+            get(season + '/matches').then(function (data) {
               _this.setState({ matches: data });
             });
+          }
+        }, {
+          key: 'componentDidMount',
+          value: function componentDidMount() {
+            this.fetchData(this.props.season);
+          }
+        }, {
+          key: 'componentWillReceiveProps',
+          value: function componentWillReceiveProps(next) {
+            if (this.props.season !== next.season) {
+              this.fetchData(next.season);
+            }
           }
         }, {
           key: 'renderMap',
@@ -44151,9 +44174,8 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       _export('Matches', Matches);
 
       _export('default', connect(function (state) {
-        console.log('connect', state);
         return {
-          season: state.s
+          season: state.season
         };
       })(Matches));
     }
@@ -44705,12 +44727,10 @@ System.register('app/choose-season.js', ['npm:babel-runtime@5.8.38/helpers/get.j
         _createClass(ChooseSeason, [{
           key: 'choose',
           value: function choose(which) {
-            if (true) {
-              this.props.dispatch({
-                type: 'CHOOSE_SEASON',
-                season: which
-              });
-            }
+            this.props.dispatch({
+              type: 'CHOOSE_SEASON',
+              season: which
+            });
           }
         }, {
           key: 'renderItems',
@@ -44726,7 +44746,7 @@ System.register('app/choose-season.js', ['npm:babel-runtime@5.8.38/helpers/get.j
                 React.createElement(
                   'a',
                   { href: '#', onClick: function (e) {
-                      return _this.choose({ s: s });
+                      return _this.choose(s);
                     } },
                   s
                 )
@@ -44745,7 +44765,12 @@ System.register('app/choose-season.js', ['npm:babel-runtime@5.8.38/helpers/get.j
                   'data-toggle': 'dropdown', href: '#', role: 'button',
                   'aria-haspopup': 'true', 'aria-expanded': 'false' },
                 'seizoen ',
-                React.createElement('span', { className: 'caret' })
+                React.createElement('span', { className: 'caret' }),
+                React.createElement(
+                  'span',
+                  { style: { marginLeft: '10px' } },
+                  this.props.season
+                )
               ),
               React.createElement(
                 'ul',
@@ -48462,14 +48487,14 @@ System.registerDynamic("npm:redux@3.5.2.js", ["npm:redux@3.5.2/lib/index.js"], t
 System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-dom@15.3.0.js', 'npm:react-router@2.6.1.js', 'app/team.js', 'app/home.js', 'app/goals.js', 'app/assists.js', 'app/matches.js', 'app/choose-season.js', 'npm:react-redux@4.4.5.js', 'npm:redux@3.5.2.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, React, ReactDOM, Router, Route, IndexRoute, Link, browserHistory, Team, Home, Goals, Assists, Matches, ChooseSeason, Provider, createStore, store, baseUri, childRoutes, Main, routes;
 
-  function season(state, action) {
-    if (state === undefined) state = '';
+  function reducer(state, action) {
+    if (state === undefined) state = { season: '2015-16' };
 
     switch (action.type) {
       case 'CHOOSE_SEASON':
-        return action.season;
+        return { season: action.season };
       default:
-        return '2016/17';
+        return state;
     }
   }
 
@@ -48512,7 +48537,7 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
     execute: function () {
       'use strict';
 
-      store = createStore(season);
+      store = createStore(reducer);
       baseUri = '/blijdorp';
       childRoutes = [{
         id: 1,

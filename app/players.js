@@ -20,9 +20,9 @@ export class Players extends React.Component {
       }
     })
   }
-
-  componentDidMount() {
-    get((this.props.season || '2016-17' ) + '/' + this.props.metric).then((data) => {
+  
+  fetchData(season) {
+    get(season + '/' + this.props.metric).then((data) => {
       let sorted = data.sort((a, b) => b.total - a.total)
       this.setState({
         players: sorted,
@@ -31,6 +31,16 @@ export class Players extends React.Component {
     })
   }
 
+  componentDidMount() {
+    this.fetchData(this.props.season)
+  }
+
+  componentWillReceiveProps(next) {
+    if ( this.props.season !== next.season ) {
+      this.fetchData(next.season)
+    }
+  }
+  
   renderHeader() {
     return (
         <div className='row'>
@@ -99,8 +109,7 @@ export class Players extends React.Component {
 }
 
 export default connect(state => {
-  console.log('connect', state)
   return {
-    season: state.s
+    season: state.season
   }
 })(Players)

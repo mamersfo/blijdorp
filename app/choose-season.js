@@ -4,12 +4,10 @@ import { connect } from 'react-redux'
 export class ChooseSeason extends React.Component {
 
   choose(which) {
-    if ( true ) {
-      this.props.dispatch({
-        type: 'CHOOSE_SEASON',
-        season: which
-      })
-    }
+    this.props.dispatch({
+      type: 'CHOOSE_SEASON',
+      season: which
+    })
   }
 
   renderItems() {
@@ -18,7 +16,7 @@ export class ChooseSeason extends React.Component {
     return seasons.map((s) => {
       return (
         <li key={s}>
-          <a href='#' onClick={(e) => this.choose({s})}>{s}</a>
+          <a href='#' onClick={(e) => this.choose(s)}>{s}</a>
         </li>
       )
     })
@@ -30,7 +28,8 @@ export class ChooseSeason extends React.Component {
         <a className='dropdown-toggle'
            data-toggle='dropdown' href='#' role='button'
            aria-haspopup='true' aria-expanded='false'>
-          seizoen <span className='caret'></span>
+        seizoen <span className='caret'></span>
+        <span style={{marginLeft: '10px'}}>{this.props.season}</span>
         </a>
         <ul className='dropdown-menu'>
           {this.renderItems()}

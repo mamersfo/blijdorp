@@ -10,16 +10,16 @@ import ChooseSeason from './choose-season'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
-function season(state = '', action) {
+function reducer(state = {season: '2015-16'}, action) {
   switch(action.type) {
     case 'CHOOSE_SEASON':
-      return action.season
+      return {season: action.season}
     default:
-      return '2016/17'
+      return state
   }
 }
 
-const store = createStore(season)
+const store = createStore(reducer)
 
 const baseUri = '/blijdorp'
 

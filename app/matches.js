@@ -11,12 +11,22 @@ export class Matches extends React.Component {
     this.state = { matches: [] }
   }
 
-  componentDidMount() {
-    get((this.props.season || '2016-17' ) + '/matches').then((data) => {
+  fetchData(season) {
+    get(season + '/matches').then((data) => {
       this.setState({ matches: data })
     })
   }
 
+  componentDidMount() {
+    this.fetchData(this.props.season)
+  }
+
+  componentWillReceiveProps(next) {
+    if ( this.props.season !== next.season ) {
+      this.fetchData(next.season)
+    }
+  }
+  
   renderMap(m) {
     return m ? Object.keys(m).map((k) => k + ' (' + m[k] + ') ') : 'geen'
   }
@@ -75,8 +85,7 @@ export class Matches extends React.Component {
 }
 
 export default connect(state => {
-  console.log('connect', state)
   return {
-    season: state.s
+    season: state.season
   }
 })(Matches)
