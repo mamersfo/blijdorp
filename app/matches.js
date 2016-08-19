@@ -12,7 +12,7 @@ export class Matches extends React.Component {
   }
 
   componentDidMount() {
-    get((this.props.season || season ) + '/matches').then((data) => {
+    get((this.props.season || '2016-17' ) + '/matches').then((data) => {
       this.setState({ matches: data })
     })
   }
