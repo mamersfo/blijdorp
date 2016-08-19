@@ -43987,7 +43987,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function componentDidMount() {
             var _this = this;
 
-            get((this.props.season || season) + '/matches').then(function (data) {
+            get((this.props.season || '2016-17') + '/matches').then(function (data) {
               _this.setState({ matches: data });
             });
           }
