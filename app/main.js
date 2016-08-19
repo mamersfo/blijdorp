@@ -7,6 +7,7 @@ import Goals from './goals'
 import Assists from './assists'
 import Matches from './matches'
 import ChooseSeason from './choose-season'
+import Exercises from './exercises.js'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
@@ -43,6 +44,11 @@ const childRoutes = [
     id: 4,
     path: 'assists',
     component: Assists
+  },
+  {
+    id: 5,
+    path: 'oefeningen',
+    component: Exercises
   }
 ]
 

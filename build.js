@@ -32145,6 +32145,2116 @@ System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/keys.js", ["npm:
   return module.exports;
 });
 
+System.registerDynamic('app/constants.js', [], false, function ($__require, $__exports, $__module) {
+  var _retrieveGlobal = System.get("@@global-helpers").prepareGlobal($__module.id, null, null);
+
+  (function ($__global) {
+    season = '2016-17';
+  })(this);
+
+  return _retrieveGlobal();
+});
+System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.0.js', 'npm:react-redux@4.4.5.js', 'npm:react-sanfona@0.0.14.js', 'app/api.js', 'app/constants.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Object$keys, React, connect, Accordion, AccordionItem, get, season, Matches;
+
+  return {
+    setters: [function (_npmBabelRuntime5838HelpersGetJs) {
+      _get = _npmBabelRuntime5838HelpersGetJs['default'];
+    }, function (_npmBabelRuntime5838HelpersInheritsJs) {
+      _inherits = _npmBabelRuntime5838HelpersInheritsJs['default'];
+    }, function (_npmBabelRuntime5838HelpersCreateClassJs) {
+      _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
+    }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
+      _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmBabelRuntime5838CoreJsObjectKeysJs) {
+      _Object$keys = _npmBabelRuntime5838CoreJsObjectKeysJs['default'];
+    }, function (_npmReact1530Js) {
+      React = _npmReact1530Js['default'];
+    }, function (_npmReactRedux445Js) {
+      connect = _npmReactRedux445Js.connect;
+    }, function (_npmReactSanfona0014Js) {
+      Accordion = _npmReactSanfona0014Js.Accordion;
+      AccordionItem = _npmReactSanfona0014Js.AccordionItem;
+    }, function (_appApiJs) {
+      get = _appApiJs.get;
+    }, function (_appConstantsJs) {
+      season = _appConstantsJs.season;
+    }],
+    execute: function () {
+      'use strict';
+
+      Matches = (function (_React$Component) {
+        _inherits(Matches, _React$Component);
+
+        function Matches(props) {
+          _classCallCheck(this, Matches);
+
+          _get(Object.getPrototypeOf(Matches.prototype), 'constructor', this).call(this, props);
+          this.state = { matches: [] };
+        }
+
+        _createClass(Matches, [{
+          key: 'fetchData',
+          value: function fetchData(season) {
+            var _this = this;
+
+            get(season + '/matches').then(function (data) {
+              _this.setState({ matches: data });
+            });
+          }
+        }, {
+          key: 'componentDidMount',
+          value: function componentDidMount() {
+            this.fetchData(this.props.season);
+          }
+        }, {
+          key: 'componentWillReceiveProps',
+          value: function componentWillReceiveProps(next) {
+            if (this.props.season !== next.season) {
+              this.fetchData(next.season);
+            }
+          }
+        }, {
+          key: 'renderMap',
+          value: function renderMap(m) {
+            return m ? _Object$keys(m).map(function (k) {
+              return k + ' (' + m[k] + ') ';
+            }) : 'geen';
+          }
+        }, {
+          key: 'renderReport',
+          value: function renderReport(m) {
+            if (m && m.report) {
+              return React.createElement(
+                'div',
+                null,
+                React.createElement(
+                  'div',
+                  { style: { color: '#ababab' } },
+                  m.report.content ? m.report.content.map(function (p) {
+                    return React.createElement(
+                      'p',
+                      null,
+                      p
+                    );
+                  }) : null
+                ),
+                React.createElement(
+                  'div',
+                  null,
+                  '(verslag: ',
+                  m.report.author,
+                  ')'
+                )
+              );
+            }
+
+            return null;
+          }
+        }, {
+          key: 'renderTable',
+          value: function renderTable(m) {
+            return React.createElement(
+              'table',
+              { className: 'table' },
+              React.createElement(
+                'tr',
+                null,
+                React.createElement(
+                  'td',
+                  { style: { width: '100px' } },
+                  'Datum:'
+                ),
+                React.createElement(
+                  'td',
+                  null,
+                  m.date
+                )
+              ),
+              React.createElement(
+                'tr',
+                null,
+                React.createElement(
+                  'td',
+                  null,
+                  'Competitie:'
+                ),
+                React.createElement(
+                  'td',
+                  null,
+                  m.league
+                )
+              ),
+              React.createElement(
+                'tr',
+                null,
+                React.createElement(
+                  'td',
+                  null,
+                  'Uitslag:'
+                ),
+                React.createElement(
+                  'td',
+                  null,
+                  m.result[0] + ' - ' + m.result[1]
+                )
+              ),
+              React.createElement(
+                'tr',
+                null,
+                React.createElement(
+                  'td',
+                  null,
+                  'Doelpunten:'
+                ),
+                React.createElement(
+                  'td',
+                  null,
+                  this.renderMap(m.goals)
+                )
+              ),
+              React.createElement(
+                'tr',
+                null,
+                React.createElement(
+                  'td',
+                  null,
+                  'Assists:'
+                ),
+                React.createElement(
+                  'td',
+                  null,
+                  this.renderMap(m.assists)
+                )
+              )
+            );
+          }
+        }, {
+          key: 'renderItems',
+          value: function renderItems() {
+            var _this2 = this;
+
+            return this.state.matches.map(function (m) {
+              var title = m.teams[0] + ' - ' + m.teams[1];
+              return React.createElement(
+                AccordionItem,
+                { title: title, slug: m.date, key: m.date },
+                React.createElement(
+                  'div',
+                  null,
+                  _this2.renderTable(m),
+                  _this2.renderReport(m)
+                )
+              );
+            });
+          }
+        }, {
+          key: 'render',
+          value: function render() {
+            return React.createElement(
+              'div',
+              { className: 'container-fluid' },
+              React.createElement(
+                'h2',
+                null,
+                'wedstrijden'
+              ),
+              React.createElement(
+                Accordion,
+                null,
+                this.renderItems()
+              )
+            );
+          }
+        }]);
+
+        return Matches;
+      })(React.Component);
+
+      _export('Matches', Matches);
+
+      _export('default', connect(function (state) {
+        return {
+          season: state.season
+        };
+      })(Matches));
+    }
+  };
+});
+System.register('app/choose-season.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-redux@4.4.5.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, connect, ChooseSeason;
+
+  return {
+    setters: [function (_npmBabelRuntime5838HelpersGetJs) {
+      _get = _npmBabelRuntime5838HelpersGetJs['default'];
+    }, function (_npmBabelRuntime5838HelpersInheritsJs) {
+      _inherits = _npmBabelRuntime5838HelpersInheritsJs['default'];
+    }, function (_npmBabelRuntime5838HelpersCreateClassJs) {
+      _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
+    }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
+      _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmReact1530Js) {
+      React = _npmReact1530Js['default'];
+    }, function (_npmReactRedux445Js) {
+      connect = _npmReactRedux445Js.connect;
+    }],
+    execute: function () {
+      'use strict';
+
+      ChooseSeason = (function (_React$Component) {
+        _inherits(ChooseSeason, _React$Component);
+
+        function ChooseSeason() {
+          _classCallCheck(this, ChooseSeason);
+
+          _get(Object.getPrototypeOf(ChooseSeason.prototype), 'constructor', this).apply(this, arguments);
+        }
+
+        _createClass(ChooseSeason, [{
+          key: 'choose',
+          value: function choose(which) {
+            this.props.dispatch({
+              type: 'CHOOSE_SEASON',
+              season: which
+            });
+          }
+        }, {
+          key: 'renderItems',
+          value: function renderItems() {
+            var _this = this;
+
+            var seasons = ['2015-16', '2016-17'];
+
+            return seasons.map(function (s) {
+              return React.createElement(
+                'li',
+                { key: s },
+                React.createElement(
+                  'a',
+                  { href: '#', onClick: function (e) {
+                      return _this.choose(s);
+                    } },
+                  s
+                )
+              );
+            });
+          }
+        }, {
+          key: 'render',
+          value: function render() {
+            return React.createElement(
+              'li',
+              { key: 'item-dropdown', className: 'dropdown' },
+              React.createElement(
+                'a',
+                { className: 'dropdown-toggle',
+                  'data-toggle': 'dropdown', href: '#', role: 'button',
+                  'aria-haspopup': 'true', 'aria-expanded': 'false' },
+                'seizoen',
+                React.createElement('span', { className: 'caret' }),
+                React.createElement(
+                  'span',
+                  { style: { marginLeft: '10px',
+                      whiteSpace: 'nowrap' } },
+                  this.props.season
+                )
+              ),
+              React.createElement(
+                'ul',
+                { className: 'dropdown-menu' },
+                this.renderItems()
+              )
+            );
+          }
+        }]);
+
+        return ChooseSeason;
+      })(React.Component);
+
+      _export('ChooseSeason', ChooseSeason);
+
+      _export('default', connect(function (state) {
+        return {
+          season: state.season
+        };
+      })(ChooseSeason));
+    }
+  };
+});
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.object-sap.js", ["npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.core.js", "npm:core-js@1.2.7/library/modules/$.fails.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
+      core = $__require('npm:core-js@1.2.7/library/modules/$.core.js'),
+      fails = $__require('npm:core-js@1.2.7/library/modules/$.fails.js');
+  module.exports = function(KEY, exec) {
+    var fn = (core.Object || {})[KEY] || Object[KEY],
+        exp = {};
+    exp[KEY] = exec(fn);
+    $export($export.S + $export.F * fails(function() {
+      fn(1);
+    }), 'Object', exp);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.get-own-property-descriptor.js", ["npm:core-js@1.2.7/library/modules/$.to-iobject.js", "npm:core-js@1.2.7/library/modules/$.object-sap.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var toIObject = $__require('npm:core-js@1.2.7/library/modules/$.to-iobject.js');
+  $__require('npm:core-js@1.2.7/library/modules/$.object-sap.js')('getOwnPropertyDescriptor', function($getOwnPropertyDescriptor) {
+    return function getOwnPropertyDescriptor(it, key) {
+      return $getOwnPropertyDescriptor(toIObject(it), key);
+    };
+  });
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/object/get-own-property-descriptor.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/es6.object.get-own-property-descriptor.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js');
+  $__require('npm:core-js@1.2.7/library/modules/es6.object.get-own-property-descriptor.js');
+  module.exports = function getOwnPropertyDescriptor(it, key) {
+    return $.getDesc(it, key);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/get-own-property-descriptor.js", ["npm:core-js@1.2.7/library/fn/object/get-own-property-descriptor.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/object/get-own-property-descriptor.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/helpers/get.js", ["npm:babel-runtime@5.8.38/core-js/object/get-own-property-descriptor.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var _Object$getOwnPropertyDescriptor = $__require('npm:babel-runtime@5.8.38/core-js/object/get-own-property-descriptor.js')["default"];
+  exports["default"] = function get(_x, _x2, _x3) {
+    var _again = true;
+    _function: while (_again) {
+      var object = _x,
+          property = _x2,
+          receiver = _x3;
+      _again = false;
+      if (object === null)
+        object = Function.prototype;
+      var desc = _Object$getOwnPropertyDescriptor(object, property);
+      if (desc === undefined) {
+        var parent = Object.getPrototypeOf(object);
+        if (parent === null) {
+          return undefined;
+        } else {
+          _x = parent;
+          _x2 = property;
+          _x3 = receiver;
+          _again = true;
+          desc = parent = undefined;
+          continue _function;
+        }
+      } else if ("value" in desc) {
+        return desc.value;
+      } else {
+        var getter = desc.get;
+        if (getter === undefined) {
+          return undefined;
+        }
+        return getter.call(receiver);
+      }
+    }
+  };
+  exports.__esModule = true;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/object/create.js", ["npm:core-js@1.2.7/library/modules/$.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js');
+  module.exports = function create(P, D) {
+    return $.create(P, D);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/create.js", ["npm:core-js@1.2.7/library/fn/object/create.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/object/create.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.set-proto.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.is-object.js", "npm:core-js@1.2.7/library/modules/$.an-object.js", "npm:core-js@1.2.7/library/modules/$.ctx.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var getDesc = $__require('npm:core-js@1.2.7/library/modules/$.js').getDesc,
+      isObject = $__require('npm:core-js@1.2.7/library/modules/$.is-object.js'),
+      anObject = $__require('npm:core-js@1.2.7/library/modules/$.an-object.js');
+  var check = function(O, proto) {
+    anObject(O);
+    if (!isObject(proto) && proto !== null)
+      throw TypeError(proto + ": can't set as prototype!");
+  };
+  module.exports = {
+    set: Object.setPrototypeOf || ('__proto__' in {} ? function(test, buggy, set) {
+      try {
+        set = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js')(Function.call, getDesc(Object.prototype, '__proto__').set, 2);
+        set(test, []);
+        buggy = !(test instanceof Array);
+      } catch (e) {
+        buggy = true;
+      }
+      return function setPrototypeOf(O, proto) {
+        check(O, proto);
+        if (buggy)
+          O.__proto__ = proto;
+        else
+          set(O, proto);
+        return O;
+      };
+    }({}, false) : undefined),
+    check: check
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.set-prototype-of.js", ["npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.set-proto.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js');
+  $export($export.S, 'Object', {setPrototypeOf: $__require('npm:core-js@1.2.7/library/modules/$.set-proto.js').set});
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/object/set-prototype-of.js", ["npm:core-js@1.2.7/library/modules/es6.object.set-prototype-of.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  $__require('npm:core-js@1.2.7/library/modules/es6.object.set-prototype-of.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Object.setPrototypeOf;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/set-prototype-of.js", ["npm:core-js@1.2.7/library/fn/object/set-prototype-of.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/object/set-prototype-of.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/helpers/inherits.js", ["npm:babel-runtime@5.8.38/core-js/object/create.js", "npm:babel-runtime@5.8.38/core-js/object/set-prototype-of.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var _Object$create = $__require('npm:babel-runtime@5.8.38/core-js/object/create.js')["default"];
+  var _Object$setPrototypeOf = $__require('npm:babel-runtime@5.8.38/core-js/object/set-prototype-of.js')["default"];
+  exports["default"] = function(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    }
+    subClass.prototype = _Object$create(superClass && superClass.prototype, {constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }});
+    if (superClass)
+      _Object$setPrototypeOf ? _Object$setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  };
+  exports.__esModule = true;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/object/define-property.js", ["npm:core-js@1.2.7/library/modules/$.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js');
+  module.exports = function defineProperty(it, key, desc) {
+    return $.setDesc(it, key, desc);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/define-property.js", ["npm:core-js@1.2.7/library/fn/object/define-property.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/object/define-property.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/helpers/create-class.js", ["npm:babel-runtime@5.8.38/core-js/object/define-property.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var _Object$defineProperty = $__require('npm:babel-runtime@5.8.38/core-js/object/define-property.js')["default"];
+  exports["default"] = (function() {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor)
+          descriptor.writable = true;
+        _Object$defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+    return function(Constructor, protoProps, staticProps) {
+      if (protoProps)
+        defineProperties(Constructor.prototype, protoProps);
+      if (staticProps)
+        defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  })();
+  exports.__esModule = true;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/helpers/class-call-check.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports["default"] = function(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+  exports.__esModule = true;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.to-string.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  "format cjs";
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.string-at.js", ["npm:core-js@1.2.7/library/modules/$.to-integer.js", "npm:core-js@1.2.7/library/modules/$.defined.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var toInteger = $__require('npm:core-js@1.2.7/library/modules/$.to-integer.js'),
+      defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js');
+  module.exports = function(TO_STRING) {
+    return function(that, pos) {
+      var s = String(defined(that)),
+          i = toInteger(pos),
+          l = s.length,
+          a,
+          b;
+      if (i < 0 || i >= l)
+        return TO_STRING ? '' : undefined;
+      a = s.charCodeAt(i);
+      return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff ? TO_STRING ? s.charAt(i) : a : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
+    };
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.string.iterator.js", ["npm:core-js@1.2.7/library/modules/$.string-at.js", "npm:core-js@1.2.7/library/modules/$.iter-define.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $at = $__require('npm:core-js@1.2.7/library/modules/$.string-at.js')(true);
+  $__require('npm:core-js@1.2.7/library/modules/$.iter-define.js')(String, 'String', function(iterated) {
+    this._t = String(iterated);
+    this._i = 0;
+  }, function() {
+    var O = this._t,
+        index = this._i,
+        point;
+    if (index >= O.length)
+      return {
+        value: undefined,
+        done: true
+      };
+    point = $at(O, index);
+    this._i += point.length;
+    return {
+      value: point,
+      done: false
+    };
+  });
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.add-to-unscopables.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function() {};
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iobject.js", ["npm:core-js@1.2.7/library/modules/$.cof.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var cof = $__require('npm:core-js@1.2.7/library/modules/$.cof.js');
+  module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it) {
+    return cof(it) == 'String' ? it.split('') : Object(it);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-iobject.js", ["npm:core-js@1.2.7/library/modules/$.iobject.js", "npm:core-js@1.2.7/library/modules/$.defined.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var IObject = $__require('npm:core-js@1.2.7/library/modules/$.iobject.js'),
+      defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js');
+  module.exports = function(it) {
+    return IObject(defined(it));
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.array.iterator.js", ["npm:core-js@1.2.7/library/modules/$.add-to-unscopables.js", "npm:core-js@1.2.7/library/modules/$.iter-step.js", "npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.to-iobject.js", "npm:core-js@1.2.7/library/modules/$.iter-define.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var addToUnscopables = $__require('npm:core-js@1.2.7/library/modules/$.add-to-unscopables.js'),
+      step = $__require('npm:core-js@1.2.7/library/modules/$.iter-step.js'),
+      Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js'),
+      toIObject = $__require('npm:core-js@1.2.7/library/modules/$.to-iobject.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.iter-define.js')(Array, 'Array', function(iterated, kind) {
+    this._t = toIObject(iterated);
+    this._i = 0;
+    this._k = kind;
+  }, function() {
+    var O = this._t,
+        kind = this._k,
+        index = this._i++;
+    if (!O || index >= O.length) {
+      this._t = undefined;
+      return step(1);
+    }
+    if (kind == 'keys')
+      return step(0, index);
+    if (kind == 'values')
+      return step(0, O[index]);
+    return step(0, [index, O[index]]);
+  }, 'values');
+  Iterators.Arguments = Iterators.Array;
+  addToUnscopables('keys');
+  addToUnscopables('values');
+  addToUnscopables('entries');
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/web.dom.iterable.js", ["npm:core-js@1.2.7/library/modules/es6.array.iterator.js", "npm:core-js@1.2.7/library/modules/$.iterators.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  $__require('npm:core-js@1.2.7/library/modules/es6.array.iterator.js');
+  var Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js');
+  Iterators.NodeList = Iterators.HTMLCollection = Iterators.Array;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.defined.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function(it) {
+    if (it == undefined)
+      throw TypeError("Can't call method on  " + it);
+    return it;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.library.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = true;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-create.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.property-desc.js", "npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      descriptor = $__require('npm:core-js@1.2.7/library/modules/$.property-desc.js'),
+      setToStringTag = $__require('npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js'),
+      IteratorPrototype = {};
+  $__require('npm:core-js@1.2.7/library/modules/$.hide.js')(IteratorPrototype, $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'), function() {
+    return this;
+  });
+  module.exports = function(Constructor, NAME, next) {
+    Constructor.prototype = $.create(IteratorPrototype, {next: descriptor(1, next)});
+    setToStringTag(Constructor, NAME + ' Iterator');
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-define.js", ["npm:core-js@1.2.7/library/modules/$.library.js", "npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.redefine.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.has.js", "npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.iter-create.js", "npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", "npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var LIBRARY = $__require('npm:core-js@1.2.7/library/modules/$.library.js'),
+      $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
+      redefine = $__require('npm:core-js@1.2.7/library/modules/$.redefine.js'),
+      hide = $__require('npm:core-js@1.2.7/library/modules/$.hide.js'),
+      has = $__require('npm:core-js@1.2.7/library/modules/$.has.js'),
+      Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js'),
+      $iterCreate = $__require('npm:core-js@1.2.7/library/modules/$.iter-create.js'),
+      setToStringTag = $__require('npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js'),
+      getProto = $__require('npm:core-js@1.2.7/library/modules/$.js').getProto,
+      ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
+      BUGGY = !([].keys && 'next' in [].keys()),
+      FF_ITERATOR = '@@iterator',
+      KEYS = 'keys',
+      VALUES = 'values';
+  var returnThis = function() {
+    return this;
+  };
+  module.exports = function(Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED) {
+    $iterCreate(Constructor, NAME, next);
+    var getMethod = function(kind) {
+      if (!BUGGY && kind in proto)
+        return proto[kind];
+      switch (kind) {
+        case KEYS:
+          return function keys() {
+            return new Constructor(this, kind);
+          };
+        case VALUES:
+          return function values() {
+            return new Constructor(this, kind);
+          };
+      }
+      return function entries() {
+        return new Constructor(this, kind);
+      };
+    };
+    var TAG = NAME + ' Iterator',
+        DEF_VALUES = DEFAULT == VALUES,
+        VALUES_BUG = false,
+        proto = Base.prototype,
+        $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT],
+        $default = $native || getMethod(DEFAULT),
+        methods,
+        key;
+    if ($native) {
+      var IteratorPrototype = getProto($default.call(new Base));
+      setToStringTag(IteratorPrototype, TAG, true);
+      if (!LIBRARY && has(proto, FF_ITERATOR))
+        hide(IteratorPrototype, ITERATOR, returnThis);
+      if (DEF_VALUES && $native.name !== VALUES) {
+        VALUES_BUG = true;
+        $default = function values() {
+          return $native.call(this);
+        };
+      }
+    }
+    if ((!LIBRARY || FORCED) && (BUGGY || VALUES_BUG || !proto[ITERATOR])) {
+      hide(proto, ITERATOR, $default);
+    }
+    Iterators[NAME] = $default;
+    Iterators[TAG] = returnThis;
+    if (DEFAULT) {
+      methods = {
+        values: DEF_VALUES ? $default : getMethod(VALUES),
+        keys: IS_SET ? $default : getMethod(KEYS),
+        entries: !DEF_VALUES ? $default : getMethod('entries')
+      };
+      if (FORCED)
+        for (key in methods) {
+          if (!(key in proto))
+            redefine(proto, key, methods[key]);
+        }
+      else
+        $export($export.P + $export.F * (BUGGY || VALUES_BUG), NAME, methods);
+    }
+    return methods;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-step.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function(done, value) {
+    return {
+      value: value,
+      done: !!done
+    };
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.set-species.js", ["npm:core-js@1.2.7/library/modules/$.core.js", "npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var core = $__require('npm:core-js@1.2.7/library/modules/$.core.js'),
+      $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      DESCRIPTORS = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js'),
+      SPECIES = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('species');
+  module.exports = function(KEY) {
+    var C = core[KEY];
+    if (DESCRIPTORS && C && !C[SPECIES])
+      $.setDesc(C, SPECIES, {
+        configurable: true,
+        get: function() {
+          return this;
+        }
+      });
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.collection-strong.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.redefine-all.js", "npm:core-js@1.2.7/library/modules/$.ctx.js", "npm:core-js@1.2.7/library/modules/$.strict-new.js", "npm:core-js@1.2.7/library/modules/$.defined.js", "npm:core-js@1.2.7/library/modules/$.for-of.js", "npm:core-js@1.2.7/library/modules/$.iter-define.js", "npm:core-js@1.2.7/library/modules/$.iter-step.js", "npm:core-js@1.2.7/library/modules/$.uid.js", "npm:core-js@1.2.7/library/modules/$.has.js", "npm:core-js@1.2.7/library/modules/$.is-object.js", "npm:core-js@1.2.7/library/modules/$.set-species.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      hide = $__require('npm:core-js@1.2.7/library/modules/$.hide.js'),
+      redefineAll = $__require('npm:core-js@1.2.7/library/modules/$.redefine-all.js'),
+      ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
+      strictNew = $__require('npm:core-js@1.2.7/library/modules/$.strict-new.js'),
+      defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js'),
+      forOf = $__require('npm:core-js@1.2.7/library/modules/$.for-of.js'),
+      $iterDefine = $__require('npm:core-js@1.2.7/library/modules/$.iter-define.js'),
+      step = $__require('npm:core-js@1.2.7/library/modules/$.iter-step.js'),
+      ID = $__require('npm:core-js@1.2.7/library/modules/$.uid.js')('id'),
+      $has = $__require('npm:core-js@1.2.7/library/modules/$.has.js'),
+      isObject = $__require('npm:core-js@1.2.7/library/modules/$.is-object.js'),
+      setSpecies = $__require('npm:core-js@1.2.7/library/modules/$.set-species.js'),
+      DESCRIPTORS = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js'),
+      isExtensible = Object.isExtensible || isObject,
+      SIZE = DESCRIPTORS ? '_s' : 'size',
+      id = 0;
+  var fastKey = function(it, create) {
+    if (!isObject(it))
+      return typeof it == 'symbol' ? it : (typeof it == 'string' ? 'S' : 'P') + it;
+    if (!$has(it, ID)) {
+      if (!isExtensible(it))
+        return 'F';
+      if (!create)
+        return 'E';
+      hide(it, ID, ++id);
+    }
+    return 'O' + it[ID];
+  };
+  var getEntry = function(that, key) {
+    var index = fastKey(key),
+        entry;
+    if (index !== 'F')
+      return that._i[index];
+    for (entry = that._f; entry; entry = entry.n) {
+      if (entry.k == key)
+        return entry;
+    }
+  };
+  module.exports = {
+    getConstructor: function(wrapper, NAME, IS_MAP, ADDER) {
+      var C = wrapper(function(that, iterable) {
+        strictNew(that, C, NAME);
+        that._i = $.create(null);
+        that._f = undefined;
+        that._l = undefined;
+        that[SIZE] = 0;
+        if (iterable != undefined)
+          forOf(iterable, IS_MAP, that[ADDER], that);
+      });
+      redefineAll(C.prototype, {
+        clear: function clear() {
+          for (var that = this,
+              data = that._i,
+              entry = that._f; entry; entry = entry.n) {
+            entry.r = true;
+            if (entry.p)
+              entry.p = entry.p.n = undefined;
+            delete data[entry.i];
+          }
+          that._f = that._l = undefined;
+          that[SIZE] = 0;
+        },
+        'delete': function(key) {
+          var that = this,
+              entry = getEntry(that, key);
+          if (entry) {
+            var next = entry.n,
+                prev = entry.p;
+            delete that._i[entry.i];
+            entry.r = true;
+            if (prev)
+              prev.n = next;
+            if (next)
+              next.p = prev;
+            if (that._f == entry)
+              that._f = next;
+            if (that._l == entry)
+              that._l = prev;
+            that[SIZE]--;
+          }
+          return !!entry;
+        },
+        forEach: function forEach(callbackfn) {
+          var f = ctx(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3),
+              entry;
+          while (entry = entry ? entry.n : this._f) {
+            f(entry.v, entry.k, this);
+            while (entry && entry.r)
+              entry = entry.p;
+          }
+        },
+        has: function has(key) {
+          return !!getEntry(this, key);
+        }
+      });
+      if (DESCRIPTORS)
+        $.setDesc(C.prototype, 'size', {get: function() {
+            return defined(this[SIZE]);
+          }});
+      return C;
+    },
+    def: function(that, key, value) {
+      var entry = getEntry(that, key),
+          prev,
+          index;
+      if (entry) {
+        entry.v = value;
+      } else {
+        that._l = entry = {
+          i: index = fastKey(key, true),
+          k: key,
+          v: value,
+          p: prev = that._l,
+          n: undefined,
+          r: false
+        };
+        if (!that._f)
+          that._f = entry;
+        if (prev)
+          prev.n = entry;
+        that[SIZE]++;
+        if (index !== 'F')
+          that._i[index] = entry;
+      }
+      return that;
+    },
+    getEntry: getEntry,
+    setStrong: function(C, NAME, IS_MAP) {
+      $iterDefine(C, NAME, function(iterated, kind) {
+        this._t = iterated;
+        this._k = kind;
+        this._l = undefined;
+      }, function() {
+        var that = this,
+            kind = that._k,
+            entry = that._l;
+        while (entry && entry.r)
+          entry = entry.p;
+        if (!that._t || !(that._l = entry = entry ? entry.n : that._t._f)) {
+          that._t = undefined;
+          return step(1);
+        }
+        if (kind == 'keys')
+          return step(0, entry.k);
+        if (kind == 'values')
+          return step(0, entry.v);
+        return step(0, [entry.k, entry.v]);
+      }, IS_MAP ? 'entries' : 'values', !IS_MAP, true);
+      setSpecies(NAME);
+    }
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.property-desc.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function(bitmap, value) {
+    return {
+      enumerable: !(bitmap & 1),
+      configurable: !(bitmap & 2),
+      writable: !(bitmap & 4),
+      value: value
+    };
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.hide.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.property-desc.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      createDesc = $__require('npm:core-js@1.2.7/library/modules/$.property-desc.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js') ? function(object, key, value) {
+    return $.setDesc(object, key, createDesc(1, value));
+  } : function(object, key, value) {
+    object[key] = value;
+    return object;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.redefine.js", ["npm:core-js@1.2.7/library/modules/$.hide.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.hide.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.redefine-all.js", ["npm:core-js@1.2.7/library/modules/$.redefine.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var redefine = $__require('npm:core-js@1.2.7/library/modules/$.redefine.js');
+  module.exports = function(target, src) {
+    for (var key in src)
+      redefine(target, key, src[key]);
+    return target;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.strict-new.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function(it, Constructor, name) {
+    if (!(it instanceof Constructor))
+      throw TypeError(name + ": use the 'new' operator!");
+    return it;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $Object = Object;
+  module.exports = {
+    create: $Object.create,
+    getProto: $Object.getPrototypeOf,
+    isEnum: {}.propertyIsEnumerable,
+    getDesc: $Object.getOwnPropertyDescriptor,
+    setDesc: $Object.defineProperty,
+    setDescs: $Object.defineProperties,
+    getKeys: $Object.keys,
+    getNames: $Object.getOwnPropertyNames,
+    getSymbols: $Object.getOwnPropertySymbols,
+    each: [].forEach
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.has.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var hasOwnProperty = {}.hasOwnProperty;
+  module.exports = function(it, key) {
+    return hasOwnProperty.call(it, key);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.has.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var def = $__require('npm:core-js@1.2.7/library/modules/$.js').setDesc,
+      has = $__require('npm:core-js@1.2.7/library/modules/$.has.js'),
+      TAG = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('toStringTag');
+  module.exports = function(it, tag, stat) {
+    if (it && !has(it = stat ? it : it.prototype, TAG))
+      def(it, TAG, {
+        configurable: true,
+        value: tag
+      });
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.fails.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function(exec) {
+    try {
+      return !!exec();
+    } catch (e) {
+      return true;
+    }
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.descriptors.js", ["npm:core-js@1.2.7/library/modules/$.fails.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = !$__require('npm:core-js@1.2.7/library/modules/$.fails.js')(function() {
+    return Object.defineProperty({}, 'a', {get: function() {
+        return 7;
+      }}).a != 7;
+  });
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.collection.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.global.js", "npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.fails.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.redefine-all.js", "npm:core-js@1.2.7/library/modules/$.for-of.js", "npm:core-js@1.2.7/library/modules/$.strict-new.js", "npm:core-js@1.2.7/library/modules/$.is-object.js", "npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      global = $__require('npm:core-js@1.2.7/library/modules/$.global.js'),
+      $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
+      fails = $__require('npm:core-js@1.2.7/library/modules/$.fails.js'),
+      hide = $__require('npm:core-js@1.2.7/library/modules/$.hide.js'),
+      redefineAll = $__require('npm:core-js@1.2.7/library/modules/$.redefine-all.js'),
+      forOf = $__require('npm:core-js@1.2.7/library/modules/$.for-of.js'),
+      strictNew = $__require('npm:core-js@1.2.7/library/modules/$.strict-new.js'),
+      isObject = $__require('npm:core-js@1.2.7/library/modules/$.is-object.js'),
+      setToStringTag = $__require('npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js'),
+      DESCRIPTORS = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js');
+  module.exports = function(NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
+    var Base = global[NAME],
+        C = Base,
+        ADDER = IS_MAP ? 'set' : 'add',
+        proto = C && C.prototype,
+        O = {};
+    if (!DESCRIPTORS || typeof C != 'function' || !(IS_WEAK || proto.forEach && !fails(function() {
+      new C().entries().next();
+    }))) {
+      C = common.getConstructor(wrapper, NAME, IS_MAP, ADDER);
+      redefineAll(C.prototype, methods);
+    } else {
+      C = wrapper(function(target, iterable) {
+        strictNew(target, C, NAME);
+        target._c = new Base;
+        if (iterable != undefined)
+          forOf(iterable, IS_MAP, target[ADDER], target);
+      });
+      $.each.call('add,clear,delete,forEach,get,has,set,keys,values,entries'.split(','), function(KEY) {
+        var IS_ADDER = KEY == 'add' || KEY == 'set';
+        if (KEY in proto && !(IS_WEAK && KEY == 'clear'))
+          hide(C.prototype, KEY, function(a, b) {
+            if (!IS_ADDER && IS_WEAK && !isObject(a))
+              return KEY == 'get' ? undefined : false;
+            var result = this._c[KEY](a === 0 ? 0 : a, b);
+            return IS_ADDER ? this : result;
+          });
+      });
+      if ('size' in proto)
+        $.setDesc(C.prototype, 'size', {get: function() {
+            return this._c.size;
+          }});
+    }
+    setToStringTag(C, NAME);
+    O[NAME] = C;
+    $export($export.G + $export.W + $export.F, O);
+    if (!IS_WEAK)
+      common.setStrong(C, NAME, IS_MAP);
+    return C;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.set.js", ["npm:core-js@1.2.7/library/modules/$.collection-strong.js", "npm:core-js@1.2.7/library/modules/$.collection.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var strong = $__require('npm:core-js@1.2.7/library/modules/$.collection-strong.js');
+  $__require('npm:core-js@1.2.7/library/modules/$.collection.js')('Set', function(get) {
+    return function Set() {
+      return get(this, arguments.length > 0 ? arguments[0] : undefined);
+    };
+  }, {add: function add(value) {
+      return strong.def(this, value = value === 0 ? 0 : value, value);
+    }}, strong);
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.export.js", ["npm:core-js@1.2.7/library/modules/$.global.js", "npm:core-js@1.2.7/library/modules/$.core.js", "npm:core-js@1.2.7/library/modules/$.ctx.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var global = $__require('npm:core-js@1.2.7/library/modules/$.global.js'),
+      core = $__require('npm:core-js@1.2.7/library/modules/$.core.js'),
+      ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
+      PROTOTYPE = 'prototype';
+  var $export = function(type, name, source) {
+    var IS_FORCED = type & $export.F,
+        IS_GLOBAL = type & $export.G,
+        IS_STATIC = type & $export.S,
+        IS_PROTO = type & $export.P,
+        IS_BIND = type & $export.B,
+        IS_WRAP = type & $export.W,
+        exports = IS_GLOBAL ? core : core[name] || (core[name] = {}),
+        target = IS_GLOBAL ? global : IS_STATIC ? global[name] : (global[name] || {})[PROTOTYPE],
+        key,
+        own,
+        out;
+    if (IS_GLOBAL)
+      source = name;
+    for (key in source) {
+      own = !IS_FORCED && target && key in target;
+      if (own && key in exports)
+        continue;
+      out = own ? target[key] : source[key];
+      exports[key] = IS_GLOBAL && typeof target[key] != 'function' ? source[key] : IS_BIND && own ? ctx(out, global) : IS_WRAP && target[key] == out ? (function(C) {
+        var F = function(param) {
+          return this instanceof C ? new C(param) : C(param);
+        };
+        F[PROTOTYPE] = C[PROTOTYPE];
+        return F;
+      })(out) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
+      if (IS_PROTO)
+        (exports[PROTOTYPE] || (exports[PROTOTYPE] = {}))[key] = out;
+    }
+  };
+  $export.F = 1;
+  $export.G = 2;
+  $export.S = 4;
+  $export.P = 8;
+  $export.B = 16;
+  $export.W = 32;
+  module.exports = $export;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.a-function.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function(it) {
+    if (typeof it != 'function')
+      throw TypeError(it + ' is not a function!');
+    return it;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.ctx.js", ["npm:core-js@1.2.7/library/modules/$.a-function.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var aFunction = $__require('npm:core-js@1.2.7/library/modules/$.a-function.js');
+  module.exports = function(fn, that, length) {
+    aFunction(fn);
+    if (that === undefined)
+      return fn;
+    switch (length) {
+      case 1:
+        return function(a) {
+          return fn.call(that, a);
+        };
+      case 2:
+        return function(a, b) {
+          return fn.call(that, a, b);
+        };
+      case 3:
+        return function(a, b, c) {
+          return fn.call(that, a, b, c);
+        };
+    }
+    return function() {
+      return fn.apply(that, arguments);
+    };
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-call.js", ["npm:core-js@1.2.7/library/modules/$.an-object.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var anObject = $__require('npm:core-js@1.2.7/library/modules/$.an-object.js');
+  module.exports = function(iterator, fn, value, entries) {
+    try {
+      return entries ? fn(anObject(value)[0], value[1]) : fn(value);
+    } catch (e) {
+      var ret = iterator['return'];
+      if (ret !== undefined)
+        anObject(ret.call(iterator));
+      throw e;
+    }
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.is-array-iter.js", ["npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js'),
+      ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
+      ArrayProto = Array.prototype;
+  module.exports = function(it) {
+    return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.is-object.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function(it) {
+    return typeof it === 'object' ? it !== null : typeof it === 'function';
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.an-object.js", ["npm:core-js@1.2.7/library/modules/$.is-object.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var isObject = $__require('npm:core-js@1.2.7/library/modules/$.is-object.js');
+  module.exports = function(it) {
+    if (!isObject(it))
+      throw TypeError(it + ' is not an object!');
+    return it;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-integer.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var ceil = Math.ceil,
+      floor = Math.floor;
+  module.exports = function(it) {
+    return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-length.js", ["npm:core-js@1.2.7/library/modules/$.to-integer.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var toInteger = $__require('npm:core-js@1.2.7/library/modules/$.to-integer.js'),
+      min = Math.min;
+  module.exports = function(it) {
+    return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iterators.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {};
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/core.get-iterator-method.js", ["npm:core-js@1.2.7/library/modules/$.classof.js", "npm:core-js@1.2.7/library/modules/$.wks.js", "npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var classof = $__require('npm:core-js@1.2.7/library/modules/$.classof.js'),
+      ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
+      Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').getIteratorMethod = function(it) {
+    if (it != undefined)
+      return it[ITERATOR] || it['@@iterator'] || Iterators[classof(it)];
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.for-of.js", ["npm:core-js@1.2.7/library/modules/$.ctx.js", "npm:core-js@1.2.7/library/modules/$.iter-call.js", "npm:core-js@1.2.7/library/modules/$.is-array-iter.js", "npm:core-js@1.2.7/library/modules/$.an-object.js", "npm:core-js@1.2.7/library/modules/$.to-length.js", "npm:core-js@1.2.7/library/modules/core.get-iterator-method.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
+      call = $__require('npm:core-js@1.2.7/library/modules/$.iter-call.js'),
+      isArrayIter = $__require('npm:core-js@1.2.7/library/modules/$.is-array-iter.js'),
+      anObject = $__require('npm:core-js@1.2.7/library/modules/$.an-object.js'),
+      toLength = $__require('npm:core-js@1.2.7/library/modules/$.to-length.js'),
+      getIterFn = $__require('npm:core-js@1.2.7/library/modules/core.get-iterator-method.js');
+  module.exports = function(iterable, entries, fn, that) {
+    var iterFn = getIterFn(iterable),
+        f = ctx(fn, that, entries ? 2 : 1),
+        index = 0,
+        length,
+        step,
+        iterator;
+    if (typeof iterFn != 'function')
+      throw TypeError(iterable + ' is not iterable!');
+    if (isArrayIter(iterFn))
+      for (length = toLength(iterable.length); length > index; index++) {
+        entries ? f(anObject(step = iterable[index])[0], step[1]) : f(iterable[index]);
+      }
+    else
+      for (iterator = iterFn.call(iterable); !(step = iterator.next()).done; ) {
+        call(iterator, f, step.value, entries);
+      }
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.cof.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var toString = {}.toString;
+  module.exports = function(it) {
+    return toString.call(it).slice(8, -1);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.shared.js", ["npm:core-js@1.2.7/library/modules/$.global.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var global = $__require('npm:core-js@1.2.7/library/modules/$.global.js'),
+      SHARED = '__core-js_shared__',
+      store = global[SHARED] || (global[SHARED] = {});
+  module.exports = function(key) {
+    return store[key] || (store[key] = {});
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.uid.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var id = 0,
+      px = Math.random();
+  module.exports = function(key) {
+    return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.global.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var global = module.exports = typeof window != 'undefined' && window.Math == Math ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
+  if (typeof __g == 'number')
+    __g = global;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.wks.js", ["npm:core-js@1.2.7/library/modules/$.shared.js", "npm:core-js@1.2.7/library/modules/$.uid.js", "npm:core-js@1.2.7/library/modules/$.global.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var store = $__require('npm:core-js@1.2.7/library/modules/$.shared.js')('wks'),
+      uid = $__require('npm:core-js@1.2.7/library/modules/$.uid.js'),
+      Symbol = $__require('npm:core-js@1.2.7/library/modules/$.global.js').Symbol;
+  module.exports = function(name) {
+    return store[name] || (store[name] = Symbol && Symbol[name] || (Symbol || uid)('Symbol.' + name));
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.classof.js", ["npm:core-js@1.2.7/library/modules/$.cof.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var cof = $__require('npm:core-js@1.2.7/library/modules/$.cof.js'),
+      TAG = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('toStringTag'),
+      ARG = cof(function() {
+        return arguments;
+      }()) == 'Arguments';
+  module.exports = function(it) {
+    var O,
+        T,
+        B;
+    return it === undefined ? 'Undefined' : it === null ? 'Null' : typeof(T = (O = Object(it))[TAG]) == 'string' ? T : ARG ? cof(O) : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.collection-to-json.js", ["npm:core-js@1.2.7/library/modules/$.for-of.js", "npm:core-js@1.2.7/library/modules/$.classof.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var forOf = $__require('npm:core-js@1.2.7/library/modules/$.for-of.js'),
+      classof = $__require('npm:core-js@1.2.7/library/modules/$.classof.js');
+  module.exports = function(NAME) {
+    return function toJSON() {
+      if (classof(this) != NAME)
+        throw TypeError(NAME + "#toJSON isn't generic");
+      var arr = [];
+      forOf(this, false, arr.push, arr);
+      return arr;
+    };
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es7.set.to-json.js", ["npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.collection-to-json.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js');
+  $export($export.P, 'Set', {toJSON: $__require('npm:core-js@1.2.7/library/modules/$.collection-to-json.js')('Set')});
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.core.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var core = module.exports = {version: '1.2.6'};
+  if (typeof __e == 'number')
+    __e = core;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/set.js", ["npm:core-js@1.2.7/library/modules/es6.object.to-string.js", "npm:core-js@1.2.7/library/modules/es6.string.iterator.js", "npm:core-js@1.2.7/library/modules/web.dom.iterable.js", "npm:core-js@1.2.7/library/modules/es6.set.js", "npm:core-js@1.2.7/library/modules/es7.set.to-json.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  $__require('npm:core-js@1.2.7/library/modules/es6.object.to-string.js');
+  $__require('npm:core-js@1.2.7/library/modules/es6.string.iterator.js');
+  $__require('npm:core-js@1.2.7/library/modules/web.dom.iterable.js');
+  $__require('npm:core-js@1.2.7/library/modules/es6.set.js');
+  $__require('npm:core-js@1.2.7/library/modules/es7.set.to-json.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Set;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/set.js", ["npm:core-js@1.2.7/library/fn/set.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/set.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:whatwg-fetch@1.0.0/fetch.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  "format cjs";
+  (function(self) {
+    'use strict';
+    if (self.fetch) {
+      return;
+    }
+    var support = {
+      searchParams: 'URLSearchParams' in self,
+      iterable: 'Symbol' in self && 'iterator' in Symbol,
+      blob: 'FileReader' in self && 'Blob' in self && (function() {
+        try {
+          new Blob();
+          return true;
+        } catch (e) {
+          return false;
+        }
+      })(),
+      formData: 'FormData' in self,
+      arrayBuffer: 'ArrayBuffer' in self
+    };
+    function normalizeName(name) {
+      if (typeof name !== 'string') {
+        name = String(name);
+      }
+      if (/[^a-z0-9\-#$%&'*+.\^_`|~]/i.test(name)) {
+        throw new TypeError('Invalid character in header field name');
+      }
+      return name.toLowerCase();
+    }
+    function normalizeValue(value) {
+      if (typeof value !== 'string') {
+        value = String(value);
+      }
+      return value;
+    }
+    function iteratorFor(items) {
+      var iterator = {next: function() {
+          var value = items.shift();
+          return {
+            done: value === undefined,
+            value: value
+          };
+        }};
+      if (support.iterable) {
+        iterator[Symbol.iterator] = function() {
+          return iterator;
+        };
+      }
+      return iterator;
+    }
+    function Headers(headers) {
+      this.map = {};
+      if (headers instanceof Headers) {
+        headers.forEach(function(value, name) {
+          this.append(name, value);
+        }, this);
+      } else if (headers) {
+        Object.getOwnPropertyNames(headers).forEach(function(name) {
+          this.append(name, headers[name]);
+        }, this);
+      }
+    }
+    Headers.prototype.append = function(name, value) {
+      name = normalizeName(name);
+      value = normalizeValue(value);
+      var list = this.map[name];
+      if (!list) {
+        list = [];
+        this.map[name] = list;
+      }
+      list.push(value);
+    };
+    Headers.prototype['delete'] = function(name) {
+      delete this.map[normalizeName(name)];
+    };
+    Headers.prototype.get = function(name) {
+      var values = this.map[normalizeName(name)];
+      return values ? values[0] : null;
+    };
+    Headers.prototype.getAll = function(name) {
+      return this.map[normalizeName(name)] || [];
+    };
+    Headers.prototype.has = function(name) {
+      return this.map.hasOwnProperty(normalizeName(name));
+    };
+    Headers.prototype.set = function(name, value) {
+      this.map[normalizeName(name)] = [normalizeValue(value)];
+    };
+    Headers.prototype.forEach = function(callback, thisArg) {
+      Object.getOwnPropertyNames(this.map).forEach(function(name) {
+        this.map[name].forEach(function(value) {
+          callback.call(thisArg, value, name, this);
+        }, this);
+      }, this);
+    };
+    Headers.prototype.keys = function() {
+      var items = [];
+      this.forEach(function(value, name) {
+        items.push(name);
+      });
+      return iteratorFor(items);
+    };
+    Headers.prototype.values = function() {
+      var items = [];
+      this.forEach(function(value) {
+        items.push(value);
+      });
+      return iteratorFor(items);
+    };
+    Headers.prototype.entries = function() {
+      var items = [];
+      this.forEach(function(value, name) {
+        items.push([name, value]);
+      });
+      return iteratorFor(items);
+    };
+    if (support.iterable) {
+      Headers.prototype[Symbol.iterator] = Headers.prototype.entries;
+    }
+    function consumed(body) {
+      if (body.bodyUsed) {
+        return Promise.reject(new TypeError('Already read'));
+      }
+      body.bodyUsed = true;
+    }
+    function fileReaderReady(reader) {
+      return new Promise(function(resolve, reject) {
+        reader.onload = function() {
+          resolve(reader.result);
+        };
+        reader.onerror = function() {
+          reject(reader.error);
+        };
+      });
+    }
+    function readBlobAsArrayBuffer(blob) {
+      var reader = new FileReader();
+      reader.readAsArrayBuffer(blob);
+      return fileReaderReady(reader);
+    }
+    function readBlobAsText(blob) {
+      var reader = new FileReader();
+      reader.readAsText(blob);
+      return fileReaderReady(reader);
+    }
+    function Body() {
+      this.bodyUsed = false;
+      this._initBody = function(body) {
+        this._bodyInit = body;
+        if (typeof body === 'string') {
+          this._bodyText = body;
+        } else if (support.blob && Blob.prototype.isPrototypeOf(body)) {
+          this._bodyBlob = body;
+        } else if (support.formData && FormData.prototype.isPrototypeOf(body)) {
+          this._bodyFormData = body;
+        } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+          this._bodyText = body.toString();
+        } else if (!body) {
+          this._bodyText = '';
+        } else if (support.arrayBuffer && ArrayBuffer.prototype.isPrototypeOf(body)) {} else {
+          throw new Error('unsupported BodyInit type');
+        }
+        if (!this.headers.get('content-type')) {
+          if (typeof body === 'string') {
+            this.headers.set('content-type', 'text/plain;charset=UTF-8');
+          } else if (this._bodyBlob && this._bodyBlob.type) {
+            this.headers.set('content-type', this._bodyBlob.type);
+          } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
+            this.headers.set('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
+          }
+        }
+      };
+      if (support.blob) {
+        this.blob = function() {
+          var rejected = consumed(this);
+          if (rejected) {
+            return rejected;
+          }
+          if (this._bodyBlob) {
+            return Promise.resolve(this._bodyBlob);
+          } else if (this._bodyFormData) {
+            throw new Error('could not read FormData body as blob');
+          } else {
+            return Promise.resolve(new Blob([this._bodyText]));
+          }
+        };
+        this.arrayBuffer = function() {
+          return this.blob().then(readBlobAsArrayBuffer);
+        };
+        this.text = function() {
+          var rejected = consumed(this);
+          if (rejected) {
+            return rejected;
+          }
+          if (this._bodyBlob) {
+            return readBlobAsText(this._bodyBlob);
+          } else if (this._bodyFormData) {
+            throw new Error('could not read FormData body as text');
+          } else {
+            return Promise.resolve(this._bodyText);
+          }
+        };
+      } else {
+        this.text = function() {
+          var rejected = consumed(this);
+          return rejected ? rejected : Promise.resolve(this._bodyText);
+        };
+      }
+      if (support.formData) {
+        this.formData = function() {
+          return this.text().then(decode);
+        };
+      }
+      this.json = function() {
+        return this.text().then(JSON.parse);
+      };
+      return this;
+    }
+    var methods = ['DELETE', 'GET', 'HEAD', 'OPTIONS', 'POST', 'PUT'];
+    function normalizeMethod(method) {
+      var upcased = method.toUpperCase();
+      return (methods.indexOf(upcased) > -1) ? upcased : method;
+    }
+    function Request(input, options) {
+      options = options || {};
+      var body = options.body;
+      if (Request.prototype.isPrototypeOf(input)) {
+        if (input.bodyUsed) {
+          throw new TypeError('Already read');
+        }
+        this.url = input.url;
+        this.credentials = input.credentials;
+        if (!options.headers) {
+          this.headers = new Headers(input.headers);
+        }
+        this.method = input.method;
+        this.mode = input.mode;
+        if (!body) {
+          body = input._bodyInit;
+          input.bodyUsed = true;
+        }
+      } else {
+        this.url = input;
+      }
+      this.credentials = options.credentials || this.credentials || 'omit';
+      if (options.headers || !this.headers) {
+        this.headers = new Headers(options.headers);
+      }
+      this.method = normalizeMethod(options.method || this.method || 'GET');
+      this.mode = options.mode || this.mode || null;
+      this.referrer = null;
+      if ((this.method === 'GET' || this.method === 'HEAD') && body) {
+        throw new TypeError('Body not allowed for GET or HEAD requests');
+      }
+      this._initBody(body);
+    }
+    Request.prototype.clone = function() {
+      return new Request(this);
+    };
+    function decode(body) {
+      var form = new FormData();
+      body.trim().split('&').forEach(function(bytes) {
+        if (bytes) {
+          var split = bytes.split('=');
+          var name = split.shift().replace(/\+/g, ' ');
+          var value = split.join('=').replace(/\+/g, ' ');
+          form.append(decodeURIComponent(name), decodeURIComponent(value));
+        }
+      });
+      return form;
+    }
+    function headers(xhr) {
+      var head = new Headers();
+      var pairs = (xhr.getAllResponseHeaders() || '').trim().split('\n');
+      pairs.forEach(function(header) {
+        var split = header.trim().split(':');
+        var key = split.shift().trim();
+        var value = split.join(':').trim();
+        head.append(key, value);
+      });
+      return head;
+    }
+    Body.call(Request.prototype);
+    function Response(bodyInit, options) {
+      if (!options) {
+        options = {};
+      }
+      this.type = 'default';
+      this.status = options.status;
+      this.ok = this.status >= 200 && this.status < 300;
+      this.statusText = options.statusText;
+      this.headers = options.headers instanceof Headers ? options.headers : new Headers(options.headers);
+      this.url = options.url || '';
+      this._initBody(bodyInit);
+    }
+    Body.call(Response.prototype);
+    Response.prototype.clone = function() {
+      return new Response(this._bodyInit, {
+        status: this.status,
+        statusText: this.statusText,
+        headers: new Headers(this.headers),
+        url: this.url
+      });
+    };
+    Response.error = function() {
+      var response = new Response(null, {
+        status: 0,
+        statusText: ''
+      });
+      response.type = 'error';
+      return response;
+    };
+    var redirectStatuses = [301, 302, 303, 307, 308];
+    Response.redirect = function(url, status) {
+      if (redirectStatuses.indexOf(status) === -1) {
+        throw new RangeError('Invalid status code');
+      }
+      return new Response(null, {
+        status: status,
+        headers: {location: url}
+      });
+    };
+    self.Headers = Headers;
+    self.Request = Request;
+    self.Response = Response;
+    self.fetch = function(input, init) {
+      return new Promise(function(resolve, reject) {
+        var request;
+        if (Request.prototype.isPrototypeOf(input) && !init) {
+          request = input;
+        } else {
+          request = new Request(input, init);
+        }
+        var xhr = new XMLHttpRequest();
+        function responseURL() {
+          if ('responseURL' in xhr) {
+            return xhr.responseURL;
+          }
+          if (/^X-Request-URL:/m.test(xhr.getAllResponseHeaders())) {
+            return xhr.getResponseHeader('X-Request-URL');
+          }
+          return;
+        }
+        xhr.onload = function() {
+          var options = {
+            status: xhr.status,
+            statusText: xhr.statusText,
+            headers: headers(xhr),
+            url: responseURL()
+          };
+          var body = 'response' in xhr ? xhr.response : xhr.responseText;
+          resolve(new Response(body, options));
+        };
+        xhr.onerror = function() {
+          reject(new TypeError('Network request failed'));
+        };
+        xhr.ontimeout = function() {
+          reject(new TypeError('Network request failed'));
+        };
+        xhr.open(request.method, request.url, true);
+        if (request.credentials === 'include') {
+          xhr.withCredentials = true;
+        }
+        if ('responseType' in xhr && support.blob) {
+          xhr.responseType = 'blob';
+        }
+        request.headers.forEach(function(value, name) {
+          xhr.setRequestHeader(name, value);
+        });
+        xhr.send(typeof request._bodyInit === 'undefined' ? null : request._bodyInit);
+      });
+    };
+    self.fetch.polyfill = true;
+  })(typeof self !== 'undefined' ? self : this);
+  return module.exports;
+});
+
+System.registerDynamic("npm:whatwg-fetch@1.0.0.js", ["npm:whatwg-fetch@1.0.0/fetch.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:whatwg-fetch@1.0.0/fetch.js');
+  return module.exports;
+});
+
+System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) {
+  "use strict";
+
+  var baseUrl, get;
+  return {
+    setters: [function (_npmWhatwgFetch100Js) {}],
+    execute: function () {
+
+      // const baseUrl = "http://localhost:3000"
+      baseUrl = "https://mamersfo.github.io";
+
+      get = function get(which) {
+        var url = baseUrl + "/blijdorp/data/" + which + ".json";
+        return fetch(url).then(function (response) {
+          return response.json();
+        });
+      };
+
+      _export("get", get);
+    }
+  };
+});
 System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/Accordion/index.js", ["npm:classnames@2.2.0.js", "npm:react@15.3.0.js", "npm:react-dom@15.3.0.js"], true, function($__require, exports, module) {
   "use strict";
   ;
@@ -43532,430 +45642,14 @@ System.registerDynamic("npm:react-sanfona@0.0.14.js", ["npm:react-sanfona@0.0.14
   return module.exports;
 });
 
-System.registerDynamic("npm:whatwg-fetch@1.0.0/fetch.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  "format cjs";
-  (function(self) {
-    'use strict';
-    if (self.fetch) {
-      return;
-    }
-    var support = {
-      searchParams: 'URLSearchParams' in self,
-      iterable: 'Symbol' in self && 'iterator' in Symbol,
-      blob: 'FileReader' in self && 'Blob' in self && (function() {
-        try {
-          new Blob();
-          return true;
-        } catch (e) {
-          return false;
-        }
-      })(),
-      formData: 'FormData' in self,
-      arrayBuffer: 'ArrayBuffer' in self
-    };
-    function normalizeName(name) {
-      if (typeof name !== 'string') {
-        name = String(name);
-      }
-      if (/[^a-z0-9\-#$%&'*+.\^_`|~]/i.test(name)) {
-        throw new TypeError('Invalid character in header field name');
-      }
-      return name.toLowerCase();
-    }
-    function normalizeValue(value) {
-      if (typeof value !== 'string') {
-        value = String(value);
-      }
-      return value;
-    }
-    function iteratorFor(items) {
-      var iterator = {next: function() {
-          var value = items.shift();
-          return {
-            done: value === undefined,
-            value: value
-          };
-        }};
-      if (support.iterable) {
-        iterator[Symbol.iterator] = function() {
-          return iterator;
-        };
-      }
-      return iterator;
-    }
-    function Headers(headers) {
-      this.map = {};
-      if (headers instanceof Headers) {
-        headers.forEach(function(value, name) {
-          this.append(name, value);
-        }, this);
-      } else if (headers) {
-        Object.getOwnPropertyNames(headers).forEach(function(name) {
-          this.append(name, headers[name]);
-        }, this);
-      }
-    }
-    Headers.prototype.append = function(name, value) {
-      name = normalizeName(name);
-      value = normalizeValue(value);
-      var list = this.map[name];
-      if (!list) {
-        list = [];
-        this.map[name] = list;
-      }
-      list.push(value);
-    };
-    Headers.prototype['delete'] = function(name) {
-      delete this.map[normalizeName(name)];
-    };
-    Headers.prototype.get = function(name) {
-      var values = this.map[normalizeName(name)];
-      return values ? values[0] : null;
-    };
-    Headers.prototype.getAll = function(name) {
-      return this.map[normalizeName(name)] || [];
-    };
-    Headers.prototype.has = function(name) {
-      return this.map.hasOwnProperty(normalizeName(name));
-    };
-    Headers.prototype.set = function(name, value) {
-      this.map[normalizeName(name)] = [normalizeValue(value)];
-    };
-    Headers.prototype.forEach = function(callback, thisArg) {
-      Object.getOwnPropertyNames(this.map).forEach(function(name) {
-        this.map[name].forEach(function(value) {
-          callback.call(thisArg, value, name, this);
-        }, this);
-      }, this);
-    };
-    Headers.prototype.keys = function() {
-      var items = [];
-      this.forEach(function(value, name) {
-        items.push(name);
-      });
-      return iteratorFor(items);
-    };
-    Headers.prototype.values = function() {
-      var items = [];
-      this.forEach(function(value) {
-        items.push(value);
-      });
-      return iteratorFor(items);
-    };
-    Headers.prototype.entries = function() {
-      var items = [];
-      this.forEach(function(value, name) {
-        items.push([name, value]);
-      });
-      return iteratorFor(items);
-    };
-    if (support.iterable) {
-      Headers.prototype[Symbol.iterator] = Headers.prototype.entries;
-    }
-    function consumed(body) {
-      if (body.bodyUsed) {
-        return Promise.reject(new TypeError('Already read'));
-      }
-      body.bodyUsed = true;
-    }
-    function fileReaderReady(reader) {
-      return new Promise(function(resolve, reject) {
-        reader.onload = function() {
-          resolve(reader.result);
-        };
-        reader.onerror = function() {
-          reject(reader.error);
-        };
-      });
-    }
-    function readBlobAsArrayBuffer(blob) {
-      var reader = new FileReader();
-      reader.readAsArrayBuffer(blob);
-      return fileReaderReady(reader);
-    }
-    function readBlobAsText(blob) {
-      var reader = new FileReader();
-      reader.readAsText(blob);
-      return fileReaderReady(reader);
-    }
-    function Body() {
-      this.bodyUsed = false;
-      this._initBody = function(body) {
-        this._bodyInit = body;
-        if (typeof body === 'string') {
-          this._bodyText = body;
-        } else if (support.blob && Blob.prototype.isPrototypeOf(body)) {
-          this._bodyBlob = body;
-        } else if (support.formData && FormData.prototype.isPrototypeOf(body)) {
-          this._bodyFormData = body;
-        } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
-          this._bodyText = body.toString();
-        } else if (!body) {
-          this._bodyText = '';
-        } else if (support.arrayBuffer && ArrayBuffer.prototype.isPrototypeOf(body)) {} else {
-          throw new Error('unsupported BodyInit type');
-        }
-        if (!this.headers.get('content-type')) {
-          if (typeof body === 'string') {
-            this.headers.set('content-type', 'text/plain;charset=UTF-8');
-          } else if (this._bodyBlob && this._bodyBlob.type) {
-            this.headers.set('content-type', this._bodyBlob.type);
-          } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
-            this.headers.set('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
-          }
-        }
-      };
-      if (support.blob) {
-        this.blob = function() {
-          var rejected = consumed(this);
-          if (rejected) {
-            return rejected;
-          }
-          if (this._bodyBlob) {
-            return Promise.resolve(this._bodyBlob);
-          } else if (this._bodyFormData) {
-            throw new Error('could not read FormData body as blob');
-          } else {
-            return Promise.resolve(new Blob([this._bodyText]));
-          }
-        };
-        this.arrayBuffer = function() {
-          return this.blob().then(readBlobAsArrayBuffer);
-        };
-        this.text = function() {
-          var rejected = consumed(this);
-          if (rejected) {
-            return rejected;
-          }
-          if (this._bodyBlob) {
-            return readBlobAsText(this._bodyBlob);
-          } else if (this._bodyFormData) {
-            throw new Error('could not read FormData body as text');
-          } else {
-            return Promise.resolve(this._bodyText);
-          }
-        };
-      } else {
-        this.text = function() {
-          var rejected = consumed(this);
-          return rejected ? rejected : Promise.resolve(this._bodyText);
-        };
-      }
-      if (support.formData) {
-        this.formData = function() {
-          return this.text().then(decode);
-        };
-      }
-      this.json = function() {
-        return this.text().then(JSON.parse);
-      };
-      return this;
-    }
-    var methods = ['DELETE', 'GET', 'HEAD', 'OPTIONS', 'POST', 'PUT'];
-    function normalizeMethod(method) {
-      var upcased = method.toUpperCase();
-      return (methods.indexOf(upcased) > -1) ? upcased : method;
-    }
-    function Request(input, options) {
-      options = options || {};
-      var body = options.body;
-      if (Request.prototype.isPrototypeOf(input)) {
-        if (input.bodyUsed) {
-          throw new TypeError('Already read');
-        }
-        this.url = input.url;
-        this.credentials = input.credentials;
-        if (!options.headers) {
-          this.headers = new Headers(input.headers);
-        }
-        this.method = input.method;
-        this.mode = input.mode;
-        if (!body) {
-          body = input._bodyInit;
-          input.bodyUsed = true;
-        }
-      } else {
-        this.url = input;
-      }
-      this.credentials = options.credentials || this.credentials || 'omit';
-      if (options.headers || !this.headers) {
-        this.headers = new Headers(options.headers);
-      }
-      this.method = normalizeMethod(options.method || this.method || 'GET');
-      this.mode = options.mode || this.mode || null;
-      this.referrer = null;
-      if ((this.method === 'GET' || this.method === 'HEAD') && body) {
-        throw new TypeError('Body not allowed for GET or HEAD requests');
-      }
-      this._initBody(body);
-    }
-    Request.prototype.clone = function() {
-      return new Request(this);
-    };
-    function decode(body) {
-      var form = new FormData();
-      body.trim().split('&').forEach(function(bytes) {
-        if (bytes) {
-          var split = bytes.split('=');
-          var name = split.shift().replace(/\+/g, ' ');
-          var value = split.join('=').replace(/\+/g, ' ');
-          form.append(decodeURIComponent(name), decodeURIComponent(value));
-        }
-      });
-      return form;
-    }
-    function headers(xhr) {
-      var head = new Headers();
-      var pairs = (xhr.getAllResponseHeaders() || '').trim().split('\n');
-      pairs.forEach(function(header) {
-        var split = header.trim().split(':');
-        var key = split.shift().trim();
-        var value = split.join(':').trim();
-        head.append(key, value);
-      });
-      return head;
-    }
-    Body.call(Request.prototype);
-    function Response(bodyInit, options) {
-      if (!options) {
-        options = {};
-      }
-      this.type = 'default';
-      this.status = options.status;
-      this.ok = this.status >= 200 && this.status < 300;
-      this.statusText = options.statusText;
-      this.headers = options.headers instanceof Headers ? options.headers : new Headers(options.headers);
-      this.url = options.url || '';
-      this._initBody(bodyInit);
-    }
-    Body.call(Response.prototype);
-    Response.prototype.clone = function() {
-      return new Response(this._bodyInit, {
-        status: this.status,
-        statusText: this.statusText,
-        headers: new Headers(this.headers),
-        url: this.url
-      });
-    };
-    Response.error = function() {
-      var response = new Response(null, {
-        status: 0,
-        statusText: ''
-      });
-      response.type = 'error';
-      return response;
-    };
-    var redirectStatuses = [301, 302, 303, 307, 308];
-    Response.redirect = function(url, status) {
-      if (redirectStatuses.indexOf(status) === -1) {
-        throw new RangeError('Invalid status code');
-      }
-      return new Response(null, {
-        status: status,
-        headers: {location: url}
-      });
-    };
-    self.Headers = Headers;
-    self.Request = Request;
-    self.Response = Response;
-    self.fetch = function(input, init) {
-      return new Promise(function(resolve, reject) {
-        var request;
-        if (Request.prototype.isPrototypeOf(input) && !init) {
-          request = input;
-        } else {
-          request = new Request(input, init);
-        }
-        var xhr = new XMLHttpRequest();
-        function responseURL() {
-          if ('responseURL' in xhr) {
-            return xhr.responseURL;
-          }
-          if (/^X-Request-URL:/m.test(xhr.getAllResponseHeaders())) {
-            return xhr.getResponseHeader('X-Request-URL');
-          }
-          return;
-        }
-        xhr.onload = function() {
-          var options = {
-            status: xhr.status,
-            statusText: xhr.statusText,
-            headers: headers(xhr),
-            url: responseURL()
-          };
-          var body = 'response' in xhr ? xhr.response : xhr.responseText;
-          resolve(new Response(body, options));
-        };
-        xhr.onerror = function() {
-          reject(new TypeError('Network request failed'));
-        };
-        xhr.ontimeout = function() {
-          reject(new TypeError('Network request failed'));
-        };
-        xhr.open(request.method, request.url, true);
-        if (request.credentials === 'include') {
-          xhr.withCredentials = true;
-        }
-        if ('responseType' in xhr && support.blob) {
-          xhr.responseType = 'blob';
-        }
-        request.headers.forEach(function(value, name) {
-          xhr.setRequestHeader(name, value);
-        });
-        xhr.send(typeof request._bodyInit === 'undefined' ? null : request._bodyInit);
-      });
-    };
-    self.fetch.polyfill = true;
-  })(typeof self !== 'undefined' ? self : this);
-  return module.exports;
-});
+System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/set.js', 'npm:react@15.3.0.js', 'app/api.js', 'npm:react-sanfona@0.0.14.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Set, React, get, Accordion, AccordionItem, Exercises;
 
-System.registerDynamic("npm:whatwg-fetch@1.0.0.js", ["npm:whatwg-fetch@1.0.0/fetch.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = $__require('npm:whatwg-fetch@1.0.0/fetch.js');
-  return module.exports;
-});
-
-System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) {
-  "use strict";
-
-  var baseUrl, get;
-  return {
-    setters: [function (_npmWhatwgFetch100Js) {}],
-    execute: function () {
-
-      // const baseUrl = "http://localhost:3000"
-      baseUrl = "https://mamersfo.github.io";
-
-      get = function get(which) {
-        var url = baseUrl + "/blijdorp/data/" + which + ".json";
-        return fetch(url).then(function (response) {
-          return response.json();
-        });
-      };
-
-      _export("get", get);
-    }
-  };
-});
-System.registerDynamic('app/constants.js', [], false, function ($__require, $__exports, $__module) {
-  var _retrieveGlobal = System.get("@@global-helpers").prepareGlobal($__module.id, null, null);
-
-  (function ($__global) {
-    season = '2016-17';
-  })(this);
-
-  return _retrieveGlobal();
-});
-System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.0.js', 'npm:react-redux@4.4.5.js', 'npm:react-sanfona@0.0.14.js', 'app/api.js', 'app/constants.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Object$keys, React, connect, Accordion, AccordionItem, get, season, Matches;
+  function compare(a, b) {
+    if (a.name < b.name) return -1;
+    if (a.name > b.name) return 1;
+    return 0;
+  }
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -43966,184 +45660,102 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-    }, function (_npmBabelRuntime5838CoreJsObjectKeysJs) {
-      _Object$keys = _npmBabelRuntime5838CoreJsObjectKeysJs['default'];
+    }, function (_npmBabelRuntime5838CoreJsSetJs) {
+      _Set = _npmBabelRuntime5838CoreJsSetJs['default'];
     }, function (_npmReact1530Js) {
       React = _npmReact1530Js['default'];
-    }, function (_npmReactRedux445Js) {
-      connect = _npmReactRedux445Js.connect;
+    }, function (_appApiJs) {
+      get = _appApiJs.get;
     }, function (_npmReactSanfona0014Js) {
       Accordion = _npmReactSanfona0014Js.Accordion;
       AccordionItem = _npmReactSanfona0014Js.AccordionItem;
-    }, function (_appApiJs) {
-      get = _appApiJs.get;
-    }, function (_appConstantsJs) {
-      season = _appConstantsJs.season;
     }],
     execute: function () {
       'use strict';
 
-      Matches = (function (_React$Component) {
-        _inherits(Matches, _React$Component);
+      Exercises = (function (_React$Component) {
+        _inherits(Exercises, _React$Component);
 
-        function Matches(props) {
-          _classCallCheck(this, Matches);
+        function Exercises(props) {
+          _classCallCheck(this, Exercises);
 
-          _get(Object.getPrototypeOf(Matches.prototype), 'constructor', this).call(this, props);
-          this.state = { matches: [] };
+          _get(Object.getPrototypeOf(Exercises.prototype), 'constructor', this).call(this, props);
+          this.state = {
+            exercises: [],
+            categories: [{ id: 'c-1', title: 'Looptraining', checked: false }, { id: 'c-2', title: 'Krachttraining', checked: false }, { id: 'c-3', title: 'Motoriektraining', checked: false }, { id: 'c-4', title: 'Samenspelen en druk zetten', checked: false }, { id: 'c-5', title: 'Dribbelen en afpakken', checked: false }, { id: 'c-6', title: 'Scoren en tegenhouden', checked: false }, { id: 'c-7', title: 'Positiespel', checked: false }, { id: 'c-8', title: 'Standaard-situaties', checked: false }],
+            selected: []
+          };
         }
 
-        _createClass(Matches, [{
-          key: 'fetchData',
-          value: function fetchData(season) {
-            var _this = this;
-
-            get(season + '/matches').then(function (data) {
-              _this.setState({ matches: data });
-            });
-          }
-        }, {
+        _createClass(Exercises, [{
           key: 'componentDidMount',
           value: function componentDidMount() {
-            this.fetchData(this.props.season);
-          }
-        }, {
-          key: 'componentWillReceiveProps',
-          value: function componentWillReceiveProps(next) {
-            if (this.props.season !== next.season) {
-              this.fetchData(next.season);
-            }
-          }
-        }, {
-          key: 'renderMap',
-          value: function renderMap(m) {
-            return m ? _Object$keys(m).map(function (k) {
-              return k + ' (' + m[k] + ') ';
-            }) : 'geen';
-          }
-        }, {
-          key: 'renderReport',
-          value: function renderReport(m) {
-            if (m && m.report) {
-              return React.createElement(
-                'div',
-                null,
-                React.createElement(
-                  'div',
-                  { style: { color: '#ababab' } },
-                  m.report.content ? m.report.content.map(function (p) {
-                    return React.createElement(
-                      'p',
-                      null,
-                      p
-                    );
-                  }) : null
-                ),
-                React.createElement(
-                  'div',
-                  null,
-                  '(verslag: ',
-                  m.report.author,
-                  ')'
-                )
-              );
-            }
+            var _this = this;
 
-            return null;
-          }
-        }, {
-          key: 'renderTable',
-          value: function renderTable(m) {
-            return React.createElement(
-              'table',
-              { className: 'table' },
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  { style: { width: '100px' } },
-                  'Datum:'
-                ),
-                React.createElement(
-                  'td',
-                  null,
-                  m.date
-                )
-              ),
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  null,
-                  'Competitie:'
-                ),
-                React.createElement(
-                  'td',
-                  null,
-                  m.league
-                )
-              ),
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  null,
-                  'Uitslag:'
-                ),
-                React.createElement(
-                  'td',
-                  null,
-                  m.result[0] + ' - ' + m.result[1]
-                )
-              ),
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  null,
-                  'Doelpunten:'
-                ),
-                React.createElement(
-                  'td',
-                  null,
-                  this.renderMap(m.goals)
-                )
-              ),
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  null,
-                  'Assists:'
-                ),
-                React.createElement(
-                  'td',
-                  null,
-                  this.renderMap(m.assists)
-                )
-              )
-            );
+            get('exercises').then(function (data) {
+              _this.setState({
+                exercises: data.sort(compare)
+              });
+            });
           }
         }, {
           key: 'renderItems',
           value: function renderItems() {
-            var _this2 = this;
+            var selected = this.state.selected.length > 0 ? this.state.selected : this.state.exercises;
 
-            return this.state.matches.map(function (m) {
-              var title = m.teams[0] + ' - ' + m.teams[1];
+            return selected.map(function (m) {
               return React.createElement(
                 AccordionItem,
-                { title: title, slug: m.date, key: m.date },
+                { title: m.name, slug: m.uuid, key: m.uuid },
                 React.createElement(
                   'div',
                   null,
-                  _this2.renderTable(m),
-                  _this2.renderReport(m)
+                  m.text
+                )
+              );
+            });
+          }
+        }, {
+          key: 'updateFilters',
+          value: function updateFilters(id) {
+            var categories = this.state.categories.map(function (c) {
+              return {
+                id: c.id,
+                title: c.title,
+                checked: c.id === id ? !c.checked : c.checked };
+            });
+
+            var checked = new _Set(categories.filter(function (c) {
+              return c.checked;
+            }).map(function (c) {
+              return c.title;
+            }));
+
+            this.setState({
+              categories: categories,
+              selected: this.state.exercises.filter(function (e) {
+                return checked.has(e.category);
+              })
+            });
+          }
+        }, {
+          key: 'renderFilters',
+          value: function renderFilters() {
+            var _this2 = this;
+
+            return this.state.categories.map(function (c) {
+              return React.createElement(
+                'div',
+                { key: c.id },
+                React.createElement('input', { type: 'checkbox',
+                  'data-id': c.id,
+                  checked: c.checked,
+                  onChange: _this2.updateFilters.bind(_this2, c.id)
+                }),
+                React.createElement(
+                  'span',
+                  { style: { marginLeft: '10px' } },
+                  c.title
                 )
               );
             });
@@ -44157,641 +45769,38 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
               React.createElement(
                 'h2',
                 null,
-                'wedstrijden'
+                'oefeningen'
               ),
               React.createElement(
-                Accordion,
-                null,
-                this.renderItems()
+                'div',
+                { className: 'row' },
+                React.createElement(
+                  'div',
+                  { className: 'col-md-3' },
+                  React.createElement(
+                    'fieldset',
+                    null,
+                    this.renderFilters()
+                  )
+                ),
+                React.createElement(
+                  'div',
+                  { className: 'col-md-9' },
+                  React.createElement(
+                    Accordion,
+                    null,
+                    this.renderItems()
+                  )
+                )
               )
             );
           }
         }]);
 
-        return Matches;
+        return Exercises;
       })(React.Component);
 
-      _export('Matches', Matches);
-
-      _export('default', connect(function (state) {
-        return {
-          season: state.season
-        };
-      })(Matches));
-    }
-  };
-});
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.cof.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var toString = {}.toString;
-  module.exports = function(it) {
-    return toString.call(it).slice(8, -1);
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iobject.js", ["npm:core-js@1.2.7/library/modules/$.cof.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var cof = $__require('npm:core-js@1.2.7/library/modules/$.cof.js');
-  module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it) {
-    return cof(it) == 'String' ? it.split('') : Object(it);
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.defined.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = function(it) {
-    if (it == undefined)
-      throw TypeError("Can't call method on  " + it);
-    return it;
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-iobject.js", ["npm:core-js@1.2.7/library/modules/$.iobject.js", "npm:core-js@1.2.7/library/modules/$.defined.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var IObject = $__require('npm:core-js@1.2.7/library/modules/$.iobject.js'),
-      defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js');
-  module.exports = function(it) {
-    return IObject(defined(it));
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.fails.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = function(exec) {
-    try {
-      return !!exec();
-    } catch (e) {
-      return true;
-    }
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.object-sap.js", ["npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.core.js", "npm:core-js@1.2.7/library/modules/$.fails.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
-      core = $__require('npm:core-js@1.2.7/library/modules/$.core.js'),
-      fails = $__require('npm:core-js@1.2.7/library/modules/$.fails.js');
-  module.exports = function(KEY, exec) {
-    var fn = (core.Object || {})[KEY] || Object[KEY],
-        exp = {};
-    exp[KEY] = exec(fn);
-    $export($export.S + $export.F * fails(function() {
-      fn(1);
-    }), 'Object', exp);
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.get-own-property-descriptor.js", ["npm:core-js@1.2.7/library/modules/$.to-iobject.js", "npm:core-js@1.2.7/library/modules/$.object-sap.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var toIObject = $__require('npm:core-js@1.2.7/library/modules/$.to-iobject.js');
-  $__require('npm:core-js@1.2.7/library/modules/$.object-sap.js')('getOwnPropertyDescriptor', function($getOwnPropertyDescriptor) {
-    return function getOwnPropertyDescriptor(it, key) {
-      return $getOwnPropertyDescriptor(toIObject(it), key);
-    };
-  });
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/fn/object/get-own-property-descriptor.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/es6.object.get-own-property-descriptor.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js');
-  $__require('npm:core-js@1.2.7/library/modules/es6.object.get-own-property-descriptor.js');
-  module.exports = function getOwnPropertyDescriptor(it, key) {
-    return $.getDesc(it, key);
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/get-own-property-descriptor.js", ["npm:core-js@1.2.7/library/fn/object/get-own-property-descriptor.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = {
-    "default": $__require('npm:core-js@1.2.7/library/fn/object/get-own-property-descriptor.js'),
-    __esModule: true
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/helpers/get.js", ["npm:babel-runtime@5.8.38/core-js/object/get-own-property-descriptor.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var _Object$getOwnPropertyDescriptor = $__require('npm:babel-runtime@5.8.38/core-js/object/get-own-property-descriptor.js')["default"];
-  exports["default"] = function get(_x, _x2, _x3) {
-    var _again = true;
-    _function: while (_again) {
-      var object = _x,
-          property = _x2,
-          receiver = _x3;
-      _again = false;
-      if (object === null)
-        object = Function.prototype;
-      var desc = _Object$getOwnPropertyDescriptor(object, property);
-      if (desc === undefined) {
-        var parent = Object.getPrototypeOf(object);
-        if (parent === null) {
-          return undefined;
-        } else {
-          _x = parent;
-          _x2 = property;
-          _x3 = receiver;
-          _again = true;
-          desc = parent = undefined;
-          continue _function;
-        }
-      } else if ("value" in desc) {
-        return desc.value;
-      } else {
-        var getter = desc.get;
-        if (getter === undefined) {
-          return undefined;
-        }
-        return getter.call(receiver);
-      }
-    }
-  };
-  exports.__esModule = true;
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/fn/object/create.js", ["npm:core-js@1.2.7/library/modules/$.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js');
-  module.exports = function create(P, D) {
-    return $.create(P, D);
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/create.js", ["npm:core-js@1.2.7/library/fn/object/create.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = {
-    "default": $__require('npm:core-js@1.2.7/library/fn/object/create.js'),
-    __esModule: true
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.global.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var global = module.exports = typeof window != 'undefined' && window.Math == Math ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
-  if (typeof __g == 'number')
-    __g = global;
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.export.js", ["npm:core-js@1.2.7/library/modules/$.global.js", "npm:core-js@1.2.7/library/modules/$.core.js", "npm:core-js@1.2.7/library/modules/$.ctx.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var global = $__require('npm:core-js@1.2.7/library/modules/$.global.js'),
-      core = $__require('npm:core-js@1.2.7/library/modules/$.core.js'),
-      ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
-      PROTOTYPE = 'prototype';
-  var $export = function(type, name, source) {
-    var IS_FORCED = type & $export.F,
-        IS_GLOBAL = type & $export.G,
-        IS_STATIC = type & $export.S,
-        IS_PROTO = type & $export.P,
-        IS_BIND = type & $export.B,
-        IS_WRAP = type & $export.W,
-        exports = IS_GLOBAL ? core : core[name] || (core[name] = {}),
-        target = IS_GLOBAL ? global : IS_STATIC ? global[name] : (global[name] || {})[PROTOTYPE],
-        key,
-        own,
-        out;
-    if (IS_GLOBAL)
-      source = name;
-    for (key in source) {
-      own = !IS_FORCED && target && key in target;
-      if (own && key in exports)
-        continue;
-      out = own ? target[key] : source[key];
-      exports[key] = IS_GLOBAL && typeof target[key] != 'function' ? source[key] : IS_BIND && own ? ctx(out, global) : IS_WRAP && target[key] == out ? (function(C) {
-        var F = function(param) {
-          return this instanceof C ? new C(param) : C(param);
-        };
-        F[PROTOTYPE] = C[PROTOTYPE];
-        return F;
-      })(out) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
-      if (IS_PROTO)
-        (exports[PROTOTYPE] || (exports[PROTOTYPE] = {}))[key] = out;
-    }
-  };
-  $export.F = 1;
-  $export.G = 2;
-  $export.S = 4;
-  $export.P = 8;
-  $export.B = 16;
-  $export.W = 32;
-  module.exports = $export;
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.is-object.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = function(it) {
-    return typeof it === 'object' ? it !== null : typeof it === 'function';
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.an-object.js", ["npm:core-js@1.2.7/library/modules/$.is-object.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var isObject = $__require('npm:core-js@1.2.7/library/modules/$.is-object.js');
-  module.exports = function(it) {
-    if (!isObject(it))
-      throw TypeError(it + ' is not an object!');
-    return it;
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.a-function.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = function(it) {
-    if (typeof it != 'function')
-      throw TypeError(it + ' is not a function!');
-    return it;
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.ctx.js", ["npm:core-js@1.2.7/library/modules/$.a-function.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var aFunction = $__require('npm:core-js@1.2.7/library/modules/$.a-function.js');
-  module.exports = function(fn, that, length) {
-    aFunction(fn);
-    if (that === undefined)
-      return fn;
-    switch (length) {
-      case 1:
-        return function(a) {
-          return fn.call(that, a);
-        };
-      case 2:
-        return function(a, b) {
-          return fn.call(that, a, b);
-        };
-      case 3:
-        return function(a, b, c) {
-          return fn.call(that, a, b, c);
-        };
-    }
-    return function() {
-      return fn.apply(that, arguments);
-    };
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.set-proto.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.is-object.js", "npm:core-js@1.2.7/library/modules/$.an-object.js", "npm:core-js@1.2.7/library/modules/$.ctx.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var getDesc = $__require('npm:core-js@1.2.7/library/modules/$.js').getDesc,
-      isObject = $__require('npm:core-js@1.2.7/library/modules/$.is-object.js'),
-      anObject = $__require('npm:core-js@1.2.7/library/modules/$.an-object.js');
-  var check = function(O, proto) {
-    anObject(O);
-    if (!isObject(proto) && proto !== null)
-      throw TypeError(proto + ": can't set as prototype!");
-  };
-  module.exports = {
-    set: Object.setPrototypeOf || ('__proto__' in {} ? function(test, buggy, set) {
-      try {
-        set = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js')(Function.call, getDesc(Object.prototype, '__proto__').set, 2);
-        set(test, []);
-        buggy = !(test instanceof Array);
-      } catch (e) {
-        buggy = true;
-      }
-      return function setPrototypeOf(O, proto) {
-        check(O, proto);
-        if (buggy)
-          O.__proto__ = proto;
-        else
-          set(O, proto);
-        return O;
-      };
-    }({}, false) : undefined),
-    check: check
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.set-prototype-of.js", ["npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.set-proto.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js');
-  $export($export.S, 'Object', {setPrototypeOf: $__require('npm:core-js@1.2.7/library/modules/$.set-proto.js').set});
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.core.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var core = module.exports = {version: '1.2.6'};
-  if (typeof __e == 'number')
-    __e = core;
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/fn/object/set-prototype-of.js", ["npm:core-js@1.2.7/library/modules/es6.object.set-prototype-of.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  $__require('npm:core-js@1.2.7/library/modules/es6.object.set-prototype-of.js');
-  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Object.setPrototypeOf;
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/set-prototype-of.js", ["npm:core-js@1.2.7/library/fn/object/set-prototype-of.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = {
-    "default": $__require('npm:core-js@1.2.7/library/fn/object/set-prototype-of.js'),
-    __esModule: true
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/helpers/inherits.js", ["npm:babel-runtime@5.8.38/core-js/object/create.js", "npm:babel-runtime@5.8.38/core-js/object/set-prototype-of.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var _Object$create = $__require('npm:babel-runtime@5.8.38/core-js/object/create.js')["default"];
-  var _Object$setPrototypeOf = $__require('npm:babel-runtime@5.8.38/core-js/object/set-prototype-of.js')["default"];
-  exports["default"] = function(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-    }
-    subClass.prototype = _Object$create(superClass && superClass.prototype, {constructor: {
-        value: subClass,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }});
-    if (superClass)
-      _Object$setPrototypeOf ? _Object$setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-  };
-  exports.__esModule = true;
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $Object = Object;
-  module.exports = {
-    create: $Object.create,
-    getProto: $Object.getPrototypeOf,
-    isEnum: {}.propertyIsEnumerable,
-    getDesc: $Object.getOwnPropertyDescriptor,
-    setDesc: $Object.defineProperty,
-    setDescs: $Object.defineProperties,
-    getKeys: $Object.keys,
-    getNames: $Object.getOwnPropertyNames,
-    getSymbols: $Object.getOwnPropertySymbols,
-    each: [].forEach
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/fn/object/define-property.js", ["npm:core-js@1.2.7/library/modules/$.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js');
-  module.exports = function defineProperty(it, key, desc) {
-    return $.setDesc(it, key, desc);
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/define-property.js", ["npm:core-js@1.2.7/library/fn/object/define-property.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = {
-    "default": $__require('npm:core-js@1.2.7/library/fn/object/define-property.js'),
-    __esModule: true
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/helpers/create-class.js", ["npm:babel-runtime@5.8.38/core-js/object/define-property.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var _Object$defineProperty = $__require('npm:babel-runtime@5.8.38/core-js/object/define-property.js')["default"];
-  exports["default"] = (function() {
-    function defineProperties(target, props) {
-      for (var i = 0; i < props.length; i++) {
-        var descriptor = props[i];
-        descriptor.enumerable = descriptor.enumerable || false;
-        descriptor.configurable = true;
-        if ("value" in descriptor)
-          descriptor.writable = true;
-        _Object$defineProperty(target, descriptor.key, descriptor);
-      }
-    }
-    return function(Constructor, protoProps, staticProps) {
-      if (protoProps)
-        defineProperties(Constructor.prototype, protoProps);
-      if (staticProps)
-        defineProperties(Constructor, staticProps);
-      return Constructor;
-    };
-  })();
-  exports.__esModule = true;
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/helpers/class-call-check.js", [], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  exports["default"] = function(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-  exports.__esModule = true;
-  return module.exports;
-});
-
-System.register('app/choose-season.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-redux@4.4.5.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, connect, ChooseSeason;
-
-  return {
-    setters: [function (_npmBabelRuntime5838HelpersGetJs) {
-      _get = _npmBabelRuntime5838HelpersGetJs['default'];
-    }, function (_npmBabelRuntime5838HelpersInheritsJs) {
-      _inherits = _npmBabelRuntime5838HelpersInheritsJs['default'];
-    }, function (_npmBabelRuntime5838HelpersCreateClassJs) {
-      _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
-    }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
-      _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-    }, function (_npmReact1530Js) {
-      React = _npmReact1530Js['default'];
-    }, function (_npmReactRedux445Js) {
-      connect = _npmReactRedux445Js.connect;
-    }],
-    execute: function () {
-      'use strict';
-
-      ChooseSeason = (function (_React$Component) {
-        _inherits(ChooseSeason, _React$Component);
-
-        function ChooseSeason() {
-          _classCallCheck(this, ChooseSeason);
-
-          _get(Object.getPrototypeOf(ChooseSeason.prototype), 'constructor', this).apply(this, arguments);
-        }
-
-        _createClass(ChooseSeason, [{
-          key: 'choose',
-          value: function choose(which) {
-            this.props.dispatch({
-              type: 'CHOOSE_SEASON',
-              season: which
-            });
-          }
-        }, {
-          key: 'renderItems',
-          value: function renderItems() {
-            var _this = this;
-
-            var seasons = ['2015-16', '2016-17'];
-
-            return seasons.map(function (s) {
-              return React.createElement(
-                'li',
-                { key: s },
-                React.createElement(
-                  'a',
-                  { href: '#', onClick: function (e) {
-                      return _this.choose(s);
-                    } },
-                  s
-                )
-              );
-            });
-          }
-        }, {
-          key: 'render',
-          value: function render() {
-            return React.createElement(
-              'li',
-              { key: 'item-dropdown', className: 'dropdown' },
-              React.createElement(
-                'a',
-                { className: 'dropdown-toggle',
-                  'data-toggle': 'dropdown', href: '#', role: 'button',
-                  'aria-haspopup': 'true', 'aria-expanded': 'false' },
-                'seizoen',
-                React.createElement('span', { className: 'caret' }),
-                React.createElement(
-                  'span',
-                  { style: { marginLeft: '10px',
-                      whiteSpace: 'nowrap' } },
-                  this.props.season
-                )
-              ),
-              React.createElement(
-                'ul',
-                { className: 'dropdown-menu' },
-                this.renderItems()
-              )
-            );
-          }
-        }]);
-
-        return ChooseSeason;
-      })(React.Component);
-
-      _export('ChooseSeason', ChooseSeason);
-
-      _export('default', connect(function (state) {
-        return {
-          season: state.season
-        };
-      })(ChooseSeason));
+      _export('default', Exercises);
     }
   };
 });
@@ -48485,8 +49494,8 @@ System.registerDynamic("npm:redux@3.5.2.js", ["npm:redux@3.5.2/lib/index.js"], t
   return module.exports;
 });
 
-System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-dom@15.3.0.js', 'npm:react-router@2.6.1.js', 'app/team.js', 'app/home.js', 'app/goals.js', 'app/assists.js', 'app/matches.js', 'app/choose-season.js', 'npm:react-redux@4.4.5.js', 'npm:redux@3.5.2.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, ReactDOM, Router, Route, IndexRoute, Link, browserHistory, Team, Home, Goals, Assists, Matches, ChooseSeason, Provider, createStore, store, baseUri, childRoutes, Main, routes;
+System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-dom@15.3.0.js', 'npm:react-router@2.6.1.js', 'app/team.js', 'app/home.js', 'app/goals.js', 'app/assists.js', 'app/matches.js', 'app/choose-season.js', 'app/exercises.js', 'npm:react-redux@4.4.5.js', 'npm:redux@3.5.2.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, ReactDOM, Router, Route, IndexRoute, Link, browserHistory, Team, Home, Goals, Assists, Matches, ChooseSeason, Exercises, Provider, createStore, store, baseUri, childRoutes, Main, routes;
 
   function reducer(state, action) {
     if (state === undefined) state = { season: '2015-16' };
@@ -48530,6 +49539,8 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       Matches = _appMatchesJs['default'];
     }, function (_appChooseSeasonJs) {
       ChooseSeason = _appChooseSeasonJs['default'];
+    }, function (_appExercisesJs) {
+      Exercises = _appExercisesJs['default'];
     }, function (_npmReactRedux445Js) {
       Provider = _npmReactRedux445Js.Provider;
     }, function (_npmRedux352Js) {
@@ -48556,6 +49567,10 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
         id: 4,
         path: 'assists',
         component: Assists
+      }, {
+        id: 5,
+        path: 'oefeningen',
+        component: Exercises
       }];
 
       Main = (function (_React$Component) {
