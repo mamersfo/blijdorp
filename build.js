@@ -1,4 +1,4 @@
-System.registerDynamic("npm:react-router@2.6.1/lib/Router.js", ["npm:history@2.1.2/lib/createHashHistory.js", "npm:history@2.1.2/lib/useQueries.js", "npm:invariant@2.2.1.js", "npm:react@15.3.0.js", "npm:react-router@2.6.1/lib/createTransitionManager.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "npm:react-router@2.6.1/lib/RouterContext.js", "npm:react-router@2.6.1/lib/RouteUtils.js", "npm:react-router@2.6.1/lib/RouterUtils.js", "npm:react-router@2.6.1/lib/routerWarning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/Router.js", ["npm:history@2.1.2/lib/createHashHistory.js", "npm:history@2.1.2/lib/useQueries.js", "npm:invariant@2.2.1.js", "npm:react@15.3.1.js", "npm:react-router@2.6.1/lib/createTransitionManager.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "npm:react-router@2.6.1/lib/RouterContext.js", "npm:react-router@2.6.1/lib/RouteUtils.js", "npm:react-router@2.6.1/lib/RouterUtils.js", "npm:react-router@2.6.1/lib/routerWarning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -23,7 +23,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/Router.js", ["npm:history@2.1
     var _useQueries2 = _interopRequireDefault(_useQueries);
     var _invariant = $__require('npm:invariant@2.2.1.js');
     var _invariant2 = _interopRequireDefault(_invariant);
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     var _createTransitionManager = $__require('npm:react-router@2.6.1/lib/createTransitionManager.js');
     var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
@@ -192,7 +192,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/Router.js", ["npm:history@2.1
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/Link.js", ["npm:react@15.3.0.js", "npm:react-router@2.6.1/lib/routerWarning.js", "npm:invariant@2.2.1.js", "npm:react-router@2.6.1/lib/PropTypes.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/Link.js", ["npm:react@15.3.1.js", "npm:react-router@2.6.1/lib/routerWarning.js", "npm:invariant@2.2.1.js", "npm:react-router@2.6.1/lib/PropTypes.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -211,7 +211,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/Link.js", ["npm:react@15.3.0.
       }
       return target;
     };
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     var _routerWarning = $__require('npm:react-router@2.6.1/lib/routerWarning.js');
     var _routerWarning2 = _interopRequireDefault(_routerWarning);
@@ -350,7 +350,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/Link.js", ["npm:react@15.3.0.
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/IndexLink.js", ["npm:react@15.3.0.js", "npm:react-router@2.6.1/lib/Link.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/IndexLink.js", ["npm:react@15.3.1.js", "npm:react-router@2.6.1/lib/Link.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -368,7 +368,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/IndexLink.js", ["npm:react@15
     }
     return target;
   };
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _Link = $__require('npm:react-router@2.6.1/lib/Link.js');
   var _Link2 = _interopRequireDefault(_Link);
@@ -386,7 +386,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/IndexLink.js", ["npm:react@15
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/PropTypes.js", ["npm:react@15.3.0.js", "npm:react-router@2.6.1/lib/deprecateObjectProperties.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "npm:react-router@2.6.1/lib/routerWarning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/PropTypes.js", ["npm:react@15.3.1.js", "npm:react-router@2.6.1/lib/deprecateObjectProperties.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "npm:react-router@2.6.1/lib/routerWarning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -395,7 +395,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/PropTypes.js", ["npm:react@15
     'use strict';
     exports.__esModule = true;
     exports.router = exports.routes = exports.route = exports.components = exports.component = exports.location = exports.history = exports.falsy = exports.locationShape = exports.routerShape = undefined;
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _deprecateObjectProperties = $__require('npm:react-router@2.6.1/lib/deprecateObjectProperties.js');
     var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
     var _InternalPropTypes = $__require('npm:react-router@2.6.1/lib/InternalPropTypes.js');
@@ -489,7 +489,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/PropTypes.js", ["npm:react@15
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/withRouter.js", ["npm:react@15.3.0.js", "npm:hoist-non-react-statics@1.2.0.js", "npm:react-router@2.6.1/lib/PropTypes.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/withRouter.js", ["npm:react@15.3.1.js", "npm:hoist-non-react-statics@1.2.0.js", "npm:react-router@2.6.1/lib/PropTypes.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -508,7 +508,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/withRouter.js", ["npm:react@1
     return target;
   };
   exports.default = withRouter;
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _hoistNonReactStatics = $__require('npm:hoist-non-react-statics@1.2.0.js');
   var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
@@ -535,7 +535,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/withRouter.js", ["npm:react@1
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/IndexRedirect.js", ["npm:react@15.3.0.js", "npm:react-router@2.6.1/lib/routerWarning.js", "npm:invariant@2.2.1.js", "npm:react-router@2.6.1/lib/Redirect.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/IndexRedirect.js", ["npm:react@15.3.1.js", "npm:react-router@2.6.1/lib/routerWarning.js", "npm:invariant@2.2.1.js", "npm:react-router@2.6.1/lib/Redirect.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -543,7 +543,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/IndexRedirect.js", ["npm:reac
   (function(process) {
     'use strict';
     exports.__esModule = true;
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     var _routerWarning = $__require('npm:react-router@2.6.1/lib/routerWarning.js');
     var _routerWarning2 = _interopRequireDefault(_routerWarning);
@@ -584,7 +584,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/IndexRedirect.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/IndexRoute.js", ["npm:react@15.3.0.js", "npm:react-router@2.6.1/lib/routerWarning.js", "npm:invariant@2.2.1.js", "npm:react-router@2.6.1/lib/RouteUtils.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/IndexRoute.js", ["npm:react@15.3.1.js", "npm:react-router@2.6.1/lib/routerWarning.js", "npm:invariant@2.2.1.js", "npm:react-router@2.6.1/lib/RouteUtils.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -592,7 +592,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/IndexRoute.js", ["npm:react@1
   (function(process) {
     'use strict';
     exports.__esModule = true;
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     var _routerWarning = $__require('npm:react-router@2.6.1/lib/routerWarning.js');
     var _routerWarning2 = _interopRequireDefault(_routerWarning);
@@ -630,7 +630,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/IndexRoute.js", ["npm:react@1
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/Redirect.js", ["npm:react@15.3.0.js", "npm:invariant@2.2.1.js", "npm:react-router@2.6.1/lib/RouteUtils.js", "npm:react-router@2.6.1/lib/PatternUtils.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/Redirect.js", ["npm:react@15.3.1.js", "npm:invariant@2.2.1.js", "npm:react-router@2.6.1/lib/RouteUtils.js", "npm:react-router@2.6.1/lib/PatternUtils.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -638,7 +638,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/Redirect.js", ["npm:react@15.
   (function(process) {
     'use strict';
     exports.__esModule = true;
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     var _invariant = $__require('npm:invariant@2.2.1.js');
     var _invariant2 = _interopRequireDefault(_invariant);
@@ -711,7 +711,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/Redirect.js", ["npm:react@15.
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/Route.js", ["npm:react@15.3.0.js", "npm:invariant@2.2.1.js", "npm:react-router@2.6.1/lib/RouteUtils.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/Route.js", ["npm:react@15.3.1.js", "npm:invariant@2.2.1.js", "npm:react-router@2.6.1/lib/RouteUtils.js", "npm:react-router@2.6.1/lib/InternalPropTypes.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -719,7 +719,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/Route.js", ["npm:react@15.3.0
   (function(process) {
     'use strict';
     exports.__esModule = true;
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     var _invariant = $__require('npm:invariant@2.2.1.js');
     var _invariant2 = _interopRequireDefault(_invariant);
@@ -751,7 +751,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/Route.js", ["npm:react@15.3.0
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/InternalPropTypes.js", ["npm:react@15.3.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/InternalPropTypes.js", ["npm:react@15.3.1.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -760,7 +760,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/InternalPropTypes.js", ["npm:
   exports.__esModule = true;
   exports.routes = exports.route = exports.components = exports.component = exports.history = undefined;
   exports.falsy = falsy;
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var func = _react.PropTypes.func;
   var object = _react.PropTypes.object;
   var arrayOf = _react.PropTypes.arrayOf;
@@ -814,7 +814,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/History.js", ["npm:react-rout
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/Lifecycle.js", ["npm:react-router@2.6.1/lib/routerWarning.js", "npm:react@15.3.0.js", "npm:invariant@2.2.1.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/Lifecycle.js", ["npm:react-router@2.6.1/lib/routerWarning.js", "npm:react@15.3.1.js", "npm:invariant@2.2.1.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -824,7 +824,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/Lifecycle.js", ["npm:react-ro
     exports.__esModule = true;
     var _routerWarning = $__require('npm:react-router@2.6.1/lib/routerWarning.js');
     var _routerWarning2 = _interopRequireDefault(_routerWarning);
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     var _invariant = $__require('npm:invariant@2.2.1.js');
     var _invariant2 = _interopRequireDefault(_invariant);
@@ -856,7 +856,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/Lifecycle.js", ["npm:react-ro
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/RouteContext.js", ["npm:react-router@2.6.1/lib/routerWarning.js", "npm:react@15.3.0.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/RouteContext.js", ["npm:react-router@2.6.1/lib/routerWarning.js", "npm:react@15.3.1.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -866,7 +866,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/RouteContext.js", ["npm:react
     exports.__esModule = true;
     var _routerWarning = $__require('npm:react-router@2.6.1/lib/routerWarning.js');
     var _routerWarning2 = _interopRequireDefault(_routerWarning);
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     function _interopRequireDefault(obj) {
       return obj && obj.__esModule ? obj : {default: obj};
@@ -944,7 +944,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/useRoutes.js", ["npm:history@
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/RoutingContext.js", ["npm:react@15.3.0.js", "npm:react-router@2.6.1/lib/RouterContext.js", "npm:react-router@2.6.1/lib/routerWarning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/RoutingContext.js", ["npm:react@15.3.1.js", "npm:react-router@2.6.1/lib/RouterContext.js", "npm:react-router@2.6.1/lib/routerWarning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -952,7 +952,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/RoutingContext.js", ["npm:rea
   (function(process) {
     'use strict';
     exports.__esModule = true;
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     var _RouterContext = $__require('npm:react-router@2.6.1/lib/RouterContext.js');
     var _RouterContext2 = _interopRequireDefault(_RouterContext);
@@ -2216,7 +2216,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/getRouteParams.js", ["npm:rea
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/RouteUtils.js", ["npm:react@15.3.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/RouteUtils.js", ["npm:react@15.3.1.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -2238,7 +2238,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/RouteUtils.js", ["npm:react@1
   exports.createRouteFromReactElement = createRouteFromReactElement;
   exports.createRoutesFromReactChildren = createRoutesFromReactChildren;
   exports.createRoutes = createRoutes;
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {default: obj};
@@ -2374,7 +2374,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/routerWarning.js", ["npm:warn
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/RouterContext.js", ["npm:invariant@2.2.1.js", "npm:react@15.3.0.js", "npm:react-router@2.6.1/lib/deprecateObjectProperties.js", "npm:react-router@2.6.1/lib/getRouteParams.js", "npm:react-router@2.6.1/lib/RouteUtils.js", "npm:react-router@2.6.1/lib/routerWarning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/RouterContext.js", ["npm:invariant@2.2.1.js", "npm:react@15.3.1.js", "npm:react-router@2.6.1/lib/deprecateObjectProperties.js", "npm:react-router@2.6.1/lib/getRouteParams.js", "npm:react-router@2.6.1/lib/RouteUtils.js", "npm:react-router@2.6.1/lib/routerWarning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -2400,7 +2400,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/RouterContext.js", ["npm:inva
     };
     var _invariant = $__require('npm:invariant@2.2.1.js');
     var _invariant2 = _interopRequireDefault(_invariant);
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     var _deprecateObjectProperties = $__require('npm:react-router@2.6.1/lib/deprecateObjectProperties.js');
     var _deprecateObjectProperties2 = _interopRequireDefault(_deprecateObjectProperties);
@@ -2510,7 +2510,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/RouterContext.js", ["npm:inva
   return module.exports;
 });
 
-System.registerDynamic("npm:react-router@2.6.1/lib/applyRouterMiddleware.js", ["npm:react@15.3.0.js", "npm:react-router@2.6.1/lib/RouterContext.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-router@2.6.1/lib/applyRouterMiddleware.js", ["npm:react@15.3.1.js", "npm:react-router@2.6.1/lib/RouterContext.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -2528,7 +2528,7 @@ System.registerDynamic("npm:react-router@2.6.1/lib/applyRouterMiddleware.js", ["
     }
     return target;
   };
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _RouterContext = $__require('npm:react-router@2.6.1/lib/RouterContext.js');
   var _RouterContext2 = _interopRequireDefault(_RouterContext);
@@ -4311,7 +4311,7 @@ System.registerDynamic("npm:react-router@2.6.1.js", ["npm:react-router@2.6.1/lib
   return module.exports;
 });
 
-System.register('app/list.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'app/api.js'], function (_export) {
+System.register('app/list.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'app/api.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, React, get, List;
 
   return {
@@ -4323,8 +4323,8 @@ System.register('app/list.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-    }, function (_npmReact1530Js) {
-      React = _npmReact1530Js['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
     }, function (_appApiJs) {
       get = _appApiJs.get;
     }],
@@ -4384,7 +4384,7 @@ System.register('app/list.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
     }
   };
 });
-System.register('app/team.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'app/list.js'], function (_export) {
+System.register('app/team.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'app/list.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, React, List, Team;
 
   return {
@@ -4396,8 +4396,8 @@ System.register('app/team.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-    }, function (_npmReact1530Js) {
-      React = _npmReact1530Js['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
     }, function (_appListJs) {
       List = _appListJs['default'];
     }],
@@ -4431,7 +4431,7 @@ System.register('app/team.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
     }
   };
 });
-System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js'], function (_export) {
+System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, React, Home;
 
   return {
@@ -4443,8 +4443,8 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-    }, function (_npmReact1530Js) {
-      React = _npmReact1530Js['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
     }],
     execute: function () {
       'use strict';
@@ -4519,7 +4519,7 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
     }
   };
 });
-System.register('app/goals.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'app/players.js'], function (_export) {
+System.register('app/goals.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'app/players.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, React, Players, Goals;
 
   return {
@@ -4531,8 +4531,8 @@ System.register('app/goals.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-    }, function (_npmReact1530Js) {
-      React = _npmReact1530Js['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
     }, function (_appPlayersJs) {
       Players = _appPlayersJs['default'];
     }],
@@ -4565,7 +4565,7 @@ System.register('app/goals.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
     }
   };
 });
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/table/table.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/table/table.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -4591,7 +4591,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/table/table.js", ["npm:reac
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _reactUtils = $__require('npm:react-vis@0.4.2/dist/lib/utils/react-utils.js');
   function _interopRequireDefault(obj) {
@@ -5934,7 +5934,7 @@ System.registerDynamic("npm:d3-hierarchy@0.2.4.js", ["npm:d3-hierarchy@0.2.4/bui
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/treemap/treemap.js", ["npm:react@15.3.0.js", "npm:d3-hierarchy@0.2.4.js", "npm:d3-color@0.4.2.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/treemap/treemap.js", ["npm:react@15.3.1.js", "npm:d3-hierarchy@0.2.4.js", "npm:d3-color@0.4.2.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -5971,7 +5971,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/treemap/treemap.js", ["npm:
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _d3Hierarchy = $__require('npm:d3-hierarchy@0.2.4.js');
   var _d3Hierarchy2 = _interopRequireDefault(_d3Hierarchy);
@@ -6141,7 +6141,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/treemap/treemap.js", ["npm:
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/xy-plot.js", ["npm:react@15.3.0.js", "npm:deep-equal@1.0.1.js", "npm:react-vis@0.4.2/dist/lib/utils/series-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/chart-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/xy-plot.js", ["npm:react@15.3.1.js", "npm:deep-equal@1.0.1.js", "npm:react-vis@0.4.2/dist/lib/utils/series-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/chart-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -6178,7 +6178,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/xy-plot.js", ["npm:rea
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _deepEqual = $__require('npm:deep-equal@1.0.1.js');
   var _deepEqual2 = _interopRequireDefault(_deepEqual);
@@ -6437,7 +6437,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/xy-plot.js", ["npm:rea
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/vertical-bar-series.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/plot/series/bar-series.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/vertical-bar-series.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/plot/series/bar-series.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -6474,7 +6474,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/vertical-bar-se
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _abstractSeries = $__require('npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js');
   var _abstractSeries2 = _interopRequireDefault(_abstractSeries);
@@ -6541,7 +6541,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/vertical-bar-se
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/bar-series.js", ["npm:react@15.3.0.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/bar-series.js", ["npm:react@15.3.1.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -6578,7 +6578,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/bar-series.js",
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _d3Selection = $__require('npm:d3-selection@0.7.3.js');
   var _d3Selection2 = _interopRequireDefault(_d3Selection);
@@ -6704,7 +6704,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/bar-series.js",
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/horizontal-bar-series.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/plot/series/bar-series.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/horizontal-bar-series.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/plot/series/bar-series.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -6741,7 +6741,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/horizontal-bar-
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _abstractSeries = $__require('npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js');
   var _abstractSeries2 = _interopRequireDefault(_abstractSeries);
@@ -6808,7 +6808,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/horizontal-bar-
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/heatmap-series.js", ["npm:react@15.3.0.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/heatmap-series.js", ["npm:react@15.3.1.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -6834,7 +6834,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/heatmap-series.
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _d3Selection = $__require('npm:d3-selection@0.7.3.js');
   var _d3Selection2 = _interopRequireDefault(_d3Selection);
@@ -6938,7 +6938,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/heatmap-series.
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/area-series.js", ["npm:react@15.3.0.js", "npm:d3-selection@0.7.3.js", "npm:d3-shape@0.6.1.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/area-series.js", ["npm:react@15.3.1.js", "npm:d3-selection@0.7.3.js", "npm:d3-shape@0.6.1.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -6964,7 +6964,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/area-series.js"
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _d3Selection = $__require('npm:d3-selection@0.7.3.js');
   var _d3Selection2 = _interopRequireDefault(_d3Selection);
@@ -7061,7 +7061,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/area-series.js"
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/line-series.js", ["npm:react@15.3.0.js", "npm:d3-selection@0.7.3.js", "npm:d3-shape@0.6.1.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/line-series.js", ["npm:react@15.3.1.js", "npm:d3-selection@0.7.3.js", "npm:d3-shape@0.6.1.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -7087,7 +7087,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/line-series.js"
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _d3Selection = $__require('npm:d3-selection@0.7.3.js');
   var _d3Selection2 = _interopRequireDefault(_d3Selection);
@@ -7200,7 +7200,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/line-series.js"
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/mark-series.js", ["npm:react@15.3.0.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/mark-series.js", ["npm:react@15.3.1.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -7226,7 +7226,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/mark-series.js"
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _d3Selection = $__require('npm:d3-selection@0.7.3.js');
   var _d3Selection2 = _interopRequireDefault(_d3Selection);
@@ -7317,7 +7317,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/mark-series.js"
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/line-mark-series.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/plot/series/line-series.js", "npm:react-vis@0.4.2/dist/lib/plot/series/mark-series.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/line-mark-series.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/plot/series/line-series.js", "npm:react-vis@0.4.2/dist/lib/plot/series/mark-series.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -7343,7 +7343,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/line-mark-serie
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _abstractSeries = $__require('npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js');
   var _abstractSeries2 = _interopRequireDefault(_abstractSeries);
@@ -7402,7 +7402,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/line-mark-serie
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/hint.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/hint.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -7439,7 +7439,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/hint.js", ["npm:react@
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _pureRenderComponent = $__require('npm:react-vis@0.4.2/dist/lib/pure-render-component.js');
   var _pureRenderComponent2 = _interopRequireDefault(_pureRenderComponent);
@@ -7618,7 +7618,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/hint.js", ["npm:react@
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/crosshair.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/crosshair.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -7644,7 +7644,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/crosshair.js", ["npm:r
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _pureRenderComponent = $__require('npm:react-vis@0.4.2/dist/lib/pure-render-component.js');
   var _pureRenderComponent2 = _interopRequireDefault(_pureRenderComponent);
@@ -7801,7 +7801,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/crosshair.js", ["npm:r
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/x-axis.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/plot/axis.js", "npm:react-vis@0.4.2/dist/lib/utils/axis-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/x-axis.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/plot/axis.js", "npm:react-vis@0.4.2/dist/lib/utils/axis-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -7838,7 +7838,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/x-axis.js", ["npm:reac
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _pureRenderComponent = $__require('npm:react-vis@0.4.2/dist/lib/pure-render-component.js');
   var _pureRenderComponent2 = _interopRequireDefault(_pureRenderComponent);
@@ -7912,7 +7912,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/x-axis.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/axis.js", ["npm:react@15.3.0.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/axis-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/axis.js", ["npm:react@15.3.1.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/axis-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -7938,7 +7938,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/axis.js", ["npm:react@
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _d3Selection = $__require('npm:d3-selection@0.7.3.js');
   var _d3Selection2 = _interopRequireDefault(_d3Selection);
@@ -8107,7 +8107,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/axis.js", ["npm:react@
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/y-axis.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/plot/axis.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/y-axis.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/plot/axis.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -8144,7 +8144,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/y-axis.js", ["npm:reac
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _pureRenderComponent = $__require('npm:react-vis@0.4.2/dist/lib/pure-render-component.js');
   var _pureRenderComponent2 = _interopRequireDefault(_pureRenderComponent);
@@ -8226,7 +8226,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/y-axis.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/vertical-grid-lines.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/plot/grid-lines.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/axis-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/vertical-grid-lines.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/plot/grid-lines.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/axis-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -8263,7 +8263,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/vertical-grid-lines.js
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _pureRenderComponent = $__require('npm:react-vis@0.4.2/dist/lib/pure-render-component.js');
   var _pureRenderComponent2 = _interopRequireDefault(_pureRenderComponent);
@@ -8342,7 +8342,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/vertical-grid-lines.js
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/grid-lines.js", ["npm:react@15.3.0.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/axis-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/grid-lines.js", ["npm:react@15.3.1.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/axis-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -8368,7 +8368,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/grid-lines.js", ["npm:
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _d3Selection = $__require('npm:d3-selection@0.7.3.js');
   var _d3Selection2 = _interopRequireDefault(_d3Selection);
@@ -8680,7 +8680,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/axis-utils.js", ["npm
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/horizontal-grid-lines.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/plot/grid-lines.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/axis-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/horizontal-grid-lines.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/plot/grid-lines.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/axis-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -8717,7 +8717,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/horizontal-grid-lines.
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _pureRenderComponent = $__require('npm:react-vis@0.4.2/dist/lib/pure-render-component.js');
   var _pureRenderComponent2 = _interopRequireDefault(_pureRenderComponent);
@@ -10751,13 +10751,13 @@ System.registerDynamic("npm:d3-shape@0.6.1.js", ["npm:d3-shape@0.6.1/build/d3-sh
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/shallowCompare.js", ["npm:fbjs@0.8.3/lib/shallowEqual.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/shallowCompare.js", ["npm:fbjs@0.8.4/lib/shallowEqual.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var shallowEqual = $__require('npm:fbjs@0.8.3/lib/shallowEqual.js');
+  var shallowEqual = $__require('npm:fbjs@0.8.4/lib/shallowEqual.js');
   function shallowCompare(instance, nextProps, nextState) {
     return !shallowEqual(instance.props, nextProps) || !shallowEqual(instance.state, nextState);
   }
@@ -10765,12 +10765,12 @@ System.registerDynamic("npm:react@15.3.0/lib/shallowCompare.js", ["npm:fbjs@0.8.
   return module.exports;
 });
 
-System.registerDynamic("npm:react-addons-shallow-compare@15.3.0/index.js", ["npm:react@15.3.0/lib/shallowCompare.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-addons-shallow-compare@15.3.0/index.js", ["npm:react@15.3.1/lib/shallowCompare.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = $__require('npm:react@15.3.0/lib/shallowCompare.js');
+  module.exports = $__require('npm:react@15.3.1/lib/shallowCompare.js');
   return module.exports;
 });
 
@@ -10783,7 +10783,7 @@ System.registerDynamic("npm:react-addons-shallow-compare@15.3.0.js", ["npm:react
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/pure-render-component.js", ["npm:react@15.3.0.js", "npm:react-addons-shallow-compare@15.3.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/pure-render-component.js", ["npm:react@15.3.1.js", "npm:react-addons-shallow-compare@15.3.0.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -10809,7 +10809,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/pure-render-component.js", 
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _reactAddonsShallowCompare = $__require('npm:react-addons-shallow-compare@15.3.0.js');
   var _reactAddonsShallowCompare2 = _interopRequireDefault(_reactAddonsShallowCompare);
@@ -14268,7 +14268,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/data-utils.js", [], t
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", ["npm:d3-scale@0.7.2.js", "npm:d3-array@0.7.1.js", "npm:d3-collection@0.1.2.js", "npm:react@15.3.0.js", "npm:warning@2.1.0.js", "npm:react-vis@0.4.2/dist/lib/utils/data-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", ["npm:d3-scale@0.7.2.js", "npm:d3-array@0.7.1.js", "npm:d3-collection@0.1.2.js", "npm:react@15.3.1.js", "npm:warning@2.1.0.js", "npm:react-vis@0.4.2/dist/lib/utils/data-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -14305,7 +14305,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", ["n
   var _d3Array2 = _interopRequireDefault(_d3Array);
   var _d3Collection = $__require('npm:d3-collection@0.1.2.js');
   var _d3Collection2 = _interopRequireDefault(_d3Collection);
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _warning = $__require('npm:warning@2.1.0.js');
   var _warning2 = _interopRequireDefault(_warning);
@@ -14617,7 +14617,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", ["n
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", ["npm:react@15.3.0.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", ["npm:react@15.3.1.js", "npm:d3-selection@0.7.3.js", "npm:react-vis@0.4.2/dist/lib/pure-render-component.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -14654,7 +14654,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _d3Selection = $__require('npm:d3-selection@0.7.3.js');
   var _d3Selection2 = _interopRequireDefault(_d3Selection);
@@ -14834,7 +14834,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/series-utils.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/series-utils.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js", "npm:react-vis@0.4.2/dist/lib/theme.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -14856,7 +14856,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/series-utils.js", ["n
   exports.getSeriesChildren = getSeriesChildren;
   exports.getStackedData = getStackedData;
   exports.getSeriesPropsFromChildren = getSeriesPropsFromChildren;
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _abstractSeries = $__require('npm:react-vis@0.4.2/dist/lib/plot/series/abstract-series.js');
   var _abstractSeries2 = _interopRequireDefault(_abstractSeries);
@@ -18123,7 +18123,7 @@ System.registerDynamic("npm:d3-transition@0.2.10.js", ["npm:d3-transition@0.2.10
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js", ["npm:react@15.3.0.js", "npm:d3-transition@0.2.10.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js", ["npm:react@15.3.1.js", "npm:d3-transition@0.2.10.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -18144,7 +18144,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js", 
   };
   exports.applyTransition = applyTransition;
   exports.getCSSAnimation = getCSSAnimation;
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   $__require('npm:d3-transition@0.2.10.js');
   function _interopRequireDefault(obj) {
@@ -18202,7 +18202,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/theme.js", [], true, functi
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/radial-chart/radial-chart.js", ["npm:react@15.3.0.js", "npm:deep-equal@1.0.1.js", "npm:d3-selection@0.7.3.js", "npm:d3-shape@0.6.1.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/chart-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/radial-chart/radial-chart.js", ["npm:react@15.3.1.js", "npm:deep-equal@1.0.1.js", "npm:d3-selection@0.7.3.js", "npm:d3-shape@0.6.1.js", "npm:react-vis@0.4.2/dist/lib/utils/scales-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/chart-utils.js", "npm:react-vis@0.4.2/dist/lib/utils/animation-utils.js", "npm:react-vis@0.4.2/dist/lib/theme.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -18276,7 +18276,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/radial-chart/radial-chart.j
     }
     return target;
   };
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _deepEqual = $__require('npm:deep-equal@1.0.1.js');
   var _deepEqual2 = _interopRequireDefault(_deepEqual);
@@ -18524,7 +18524,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/radial-chart/radial-chart.j
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", ["npm:react@15.3.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", ["npm:react@15.3.1.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -18570,7 +18570,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", ["np
   }();
   exports.getDOMNode = getDOMNode;
   exports.isReactDOMSupported = isReactDOMSupported;
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {default: obj};
@@ -18609,7 +18609,7 @@ System.registerDynamic("npm:global@4.3.0/window.js", [], true, function($__requi
   return module.exports;
 });
 
-System.registerDynamic("npm:react-vis@0.4.2/dist/lib/make-vis-flexible.js", ["npm:react@15.3.0.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:global@4.3.0/window.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-vis@0.4.2/dist/lib/make-vis-flexible.js", ["npm:react@15.3.1.js", "npm:react-vis@0.4.2/dist/lib/utils/react-utils.js", "npm:global@4.3.0/window.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -18647,7 +18647,7 @@ System.registerDynamic("npm:react-vis@0.4.2/dist/lib/make-vis-flexible.js", ["np
     };
   }();
   exports.default = makeVisFlexible;
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _reactUtils = $__require('npm:react-vis@0.4.2/dist/lib/utils/react-utils.js');
   var _window = $__require('npm:global@4.3.0/window.js');
@@ -18938,7 +18938,7 @@ System.registerDynamic("npm:react-vis@0.4.2.js", ["npm:react-vis@0.4.2/index.js"
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/SelectRowHeaderColumn.js", ["npm:react@15.3.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/SelectRowHeaderColumn.js", ["npm:react@15.3.1.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -19018,7 +19018,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/SelectRowHeaderColum
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var SelectRowHeaderColumn = (function(_Component) {
     _inherits(SelectRowHeaderColumn, _Component);
@@ -19040,7 +19040,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/SelectRowHeaderColum
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableHeader.js", ["npm:react@15.3.0.js", "npm:react-dom@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:classnames@2.2.5.js", "npm:react-bootstrap-table@2.4.2/lib/SelectRowHeaderColumn.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableHeader.js", ["npm:react@15.3.1.js", "npm:react-dom@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:classnames@2.2.5.js", "npm:react-bootstrap-table@2.4.2/lib/SelectRowHeaderColumn.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -19120,9 +19120,9 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableHeader.js", ["n
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
-  var _reactDom = $__require('npm:react-dom@15.3.0.js');
+  var _reactDom = $__require('npm:react-dom@15.3.1.js');
   var _reactDom2 = _interopRequireDefault(_reactDom);
   var _Const = $__require('npm:react-bootstrap-table@2.4.2/lib/Const.js');
   var _Const2 = _interopRequireDefault(_Const);
@@ -19253,7 +19253,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableHeader.js", ["n
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableRow.js", ["npm:classnames@2.2.5.js", "npm:react@15.3.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableRow.js", ["npm:classnames@2.2.5.js", "npm:react@15.3.1.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -19346,7 +19346,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableRow.js", ["npm:
   }
   var _classnames = $__require('npm:classnames@2.2.5.js');
   var _classnames2 = _interopRequireDefault(_classnames);
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var TableRow = (function(_Component) {
     _inherits(TableRow, _Component);
@@ -19429,7 +19429,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableRow.js", ["npm:
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableColumn.js", ["npm:react@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableColumn.js", ["npm:react@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -19520,7 +19520,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableColumn.js", ["n
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _Const = $__require('npm:react-bootstrap-table@2.4.2/lib/Const.js');
   var _Const2 = _interopRequireDefault(_Const);
@@ -19609,7 +19609,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableColumn.js", ["n
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableEditColumn.js", ["npm:react@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/Editor.js", "npm:react-bootstrap-table@2.4.2/lib/Notification.js", "npm:classnames@2.2.5.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableEditColumn.js", ["npm:react@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/Editor.js", "npm:react-bootstrap-table@2.4.2/lib/Notification.js", "npm:classnames@2.2.5.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -19700,7 +19700,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableEditColumn.js",
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _Editor = $__require('npm:react-bootstrap-table@2.4.2/lib/Editor.js');
   var _Editor2 = _interopRequireDefault(_Editor);
@@ -19850,7 +19850,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableEditColumn.js",
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableBody.js", ["npm:react@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:react-bootstrap-table@2.4.2/lib/TableRow.js", "npm:react-bootstrap-table@2.4.2/lib/TableColumn.js", "npm:react-bootstrap-table@2.4.2/lib/TableEditColumn.js", "npm:classnames@2.2.5.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableBody.js", ["npm:react@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:react-bootstrap-table@2.4.2/lib/TableRow.js", "npm:react-bootstrap-table@2.4.2/lib/TableColumn.js", "npm:react-bootstrap-table@2.4.2/lib/TableEditColumn.js", "npm:classnames@2.2.5.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -19930,7 +19930,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableBody.js", ["npm
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _Const = $__require('npm:react-bootstrap-table@2.4.2/lib/Const.js');
   var _Const2 = _interopRequireDefault(_Const);
@@ -20199,7 +20199,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableBody.js", ["npm
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/pagination/PageButton.js", ["npm:react@15.3.0.js", "npm:classnames@2.2.5.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/pagination/PageButton.js", ["npm:react@15.3.1.js", "npm:classnames@2.2.5.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -20279,7 +20279,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/pagination/PageButto
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _classnames = $__require('npm:classnames@2.2.5.js');
   var _classnames2 = _interopRequireDefault(_classnames);
@@ -20322,7 +20322,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/pagination/PageButto
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/pagination/PaginationList.js", ["npm:react@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/pagination/PageButton.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/pagination/PaginationList.js", ["npm:react@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/pagination/PageButton.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -20402,7 +20402,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/pagination/Paginatio
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _PageButtonJs = $__require('npm:react-bootstrap-table@2.4.2/lib/pagination/PageButton.js');
   var _PageButtonJs2 = _interopRequireDefault(_PageButtonJs);
@@ -20599,7 +20599,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/pagination/Paginatio
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/Editor.js", ["npm:react@15.3.0.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/Editor.js", ["npm:react@15.3.1.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -20621,7 +20621,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/Editor.js", ["npm:re
     function _interopRequireDefault(obj) {
       return obj && obj.__esModule ? obj : {'default': obj};
     }
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     var editor = function editor(editable, attr, format, editorClass, defaultValue, ignoreEditable) {
       if (editable === true || editable === false && ignoreEditable || typeof editable === 'string') {
@@ -26320,7 +26320,7 @@ System.registerDynamic("npm:lodash@4.15.0.js", ["npm:lodash@4.15.0/lodash.js"], 
   return module.exports;
 });
 
-System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastContainer.js", ["npm:react@15.3.0.js", "npm:react-addons-update@15.3.0.js", "npm:react-toastr@2.8.0/lib/ToastMessage/index.js", "npm:lodash@4.15.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastContainer.js", ["npm:react@15.3.1.js", "npm:react-addons-update@15.3.0.js", "npm:react-toastr@2.8.0/lib/ToastMessage/index.js", "npm:lodash@4.15.0.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -26357,7 +26357,7 @@ System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastContainer.js", ["npm:rea
       return Constructor;
     };
   }();
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _reactAddonsUpdate = $__require('npm:react-addons-update@15.3.0.js');
   var _reactAddonsUpdate2 = _interopRequireDefault(_reactAddonsUpdate);
@@ -26561,17 +26561,17 @@ System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastContainer.js", ["npm:rea
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/update.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:fbjs@0.8.3/lib/keyOf.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/update.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:fbjs@0.8.4/lib/keyOf.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js'),
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js'),
         _assign = $__require('npm:object-assign@4.1.0.js');
-    var keyOf = $__require('npm:fbjs@0.8.3/lib/keyOf.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var keyOf = $__require('npm:fbjs@0.8.4/lib/keyOf.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var hasOwnProperty = {}.hasOwnProperty;
     function shallowCopy(x) {
       if (Array.isArray(x)) {
@@ -26647,12 +26647,12 @@ System.registerDynamic("npm:react@15.3.0/lib/update.js", ["npm:react@15.3.0/lib/
   return module.exports;
 });
 
-System.registerDynamic("npm:react-addons-update@15.3.0/index.js", ["npm:react@15.3.0/lib/update.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-addons-update@15.3.0/index.js", ["npm:react@15.3.1/lib/update.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = $__require('npm:react@15.3.0/lib/update.js');
+  module.exports = $__require('npm:react@15.3.1/lib/update.js');
   return module.exports;
 });
 
@@ -26665,14 +26665,14 @@ System.registerDynamic("npm:react-addons-update@15.3.0.js", ["npm:react-addons-u
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactTransitionEvents.js", ["npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:react@15.3.0/lib/getVendorPrefixedEventName.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactTransitionEvents.js", ["npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:react@15.3.1/lib/getVendorPrefixedEventName.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-  var getVendorPrefixedEventName = $__require('npm:react@15.3.0/lib/getVendorPrefixedEventName.js');
+  var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+  var getVendorPrefixedEventName = $__require('npm:react@15.3.1/lib/getVendorPrefixedEventName.js');
   var endEvents = [];
   function detectEvents() {
     var animEnd = getVendorPrefixedEventName('animationend');
@@ -26800,16 +26800,16 @@ System.registerDynamic("npm:element-class@0.2.2.js", ["npm:element-class@0.2.2/i
   return module.exports;
 });
 
-System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastMessage/animationMixin.js", ["npm:react@15.3.0/lib/ReactTransitionEvents.js", "npm:react-dom@15.3.0.js", "npm:element-class@0.2.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastMessage/animationMixin.js", ["npm:react@15.3.1/lib/ReactTransitionEvents.js", "npm:react-dom@15.3.1.js", "npm:element-class@0.2.2.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   Object.defineProperty(exports, "__esModule", {value: true});
-  var _ReactTransitionEvents = $__require('npm:react@15.3.0/lib/ReactTransitionEvents.js');
+  var _ReactTransitionEvents = $__require('npm:react@15.3.1/lib/ReactTransitionEvents.js');
   var _ReactTransitionEvents2 = _interopRequireDefault(_ReactTransitionEvents);
-  var _reactDom = $__require('npm:react-dom@15.3.0.js');
+  var _reactDom = $__require('npm:react-dom@15.3.1.js');
   var _reactDom2 = _interopRequireDefault(_reactDom);
   var _elementClass = $__require('npm:element-class@0.2.2.js');
   var _elementClass2 = _interopRequireDefault(_elementClass);
@@ -26981,14 +26981,14 @@ System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastMessage/animationMixin.j
   return module.exports;
 });
 
-System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastMessage/jQueryMixin.js", ["npm:react-dom@15.3.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastMessage/jQueryMixin.js", ["npm:react-dom@15.3.1.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   Object.defineProperty(exports, "__esModule", {value: true});
-  var _reactDom = $__require('npm:react-dom@15.3.0.js');
+  var _reactDom = $__require('npm:react-dom@15.3.1.js');
   var _reactDom2 = _interopRequireDefault(_reactDom);
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {default: obj};
@@ -27060,7 +27060,7 @@ System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastMessage/jQueryMixin.js",
   return module.exports;
 });
 
-System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastMessage/index.js", ["npm:react@15.3.0.js", "npm:react-addons-update@15.3.0.js", "npm:classnames@2.2.5.js", "npm:react-toastr@2.8.0/lib/ToastMessage/animationMixin.js", "npm:react-toastr@2.8.0/lib/ToastMessage/jQueryMixin.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastMessage/index.js", ["npm:react@15.3.1.js", "npm:react-addons-update@15.3.0.js", "npm:classnames@2.2.5.js", "npm:react-toastr@2.8.0/lib/ToastMessage/animationMixin.js", "npm:react-toastr@2.8.0/lib/ToastMessage/jQueryMixin.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -27068,7 +27068,7 @@ System.registerDynamic("npm:react-toastr@2.8.0/lib/ToastMessage/index.js", ["npm
       GLOBAL = global;
   Object.defineProperty(exports, "__esModule", {value: true});
   exports.jQuery = exports.animation = undefined;
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _reactAddonsUpdate = $__require('npm:react-addons-update@15.3.0.js');
   var _reactAddonsUpdate2 = _interopRequireDefault(_reactAddonsUpdate);
@@ -27185,7 +27185,7 @@ System.registerDynamic("npm:react-toastr@2.8.0.js", ["npm:react-toastr@2.8.0/lib
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/Notification.js", ["npm:react@15.3.0.js", "npm:react-toastr@2.8.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/Notification.js", ["npm:react@15.3.1.js", "npm:react-toastr@2.8.0.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -27265,7 +27265,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/Notification.js", ["
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _reactToastr = $__require('npm:react-toastr@2.8.0.js');
   var ToastrMessageFactory = _react2['default'].createFactory(_reactToastr.ToastMessage.animation);
@@ -27304,7 +27304,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/Notification.js", ["
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/toolbar/ToolBar.js", ["npm:react@15.3.0.js", "npm:classnames@2.2.5.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:react-bootstrap-table@2.4.2/lib/Editor.js", "npm:react-bootstrap-table@2.4.2/lib/Notification.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/toolbar/ToolBar.js", ["npm:react@15.3.1.js", "npm:classnames@2.2.5.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:react-bootstrap-table@2.4.2/lib/Editor.js", "npm:react-bootstrap-table@2.4.2/lib/Notification.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -27385,7 +27385,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/toolbar/ToolBar.js",
       if (superClass)
         Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
     }
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _react2 = _interopRequireDefault(_react);
     var _classnames = $__require('npm:classnames@2.2.5.js');
     var _classnames2 = _interopRequireDefault(_classnames);
@@ -27727,7 +27727,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/toolbar/ToolBar.js",
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableFilter.js", ["npm:react@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:classnames@2.2.5.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableFilter.js", ["npm:react@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:classnames@2.2.5.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -27807,7 +27807,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableFilter.js", ["n
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _Const = $__require('npm:react-bootstrap-table@2.4.2/lib/Const.js');
   var _Const2 = _interopRequireDefault(_Const);
@@ -29187,7 +29187,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/Filter.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/BootstrapTable.js", ["npm:react@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:react-bootstrap-table@2.4.2/lib/TableHeader.js", "npm:react-bootstrap-table@2.4.2/lib/TableBody.js", "npm:react-bootstrap-table@2.4.2/lib/pagination/PaginationList.js", "npm:react-bootstrap-table@2.4.2/lib/toolbar/ToolBar.js", "npm:react-bootstrap-table@2.4.2/lib/TableFilter.js", "npm:react-bootstrap-table@2.4.2/lib/store/TableDataStore.js", "npm:react-bootstrap-table@2.4.2/lib/util.js", "npm:react-bootstrap-table@2.4.2/lib/csv_export_util.js", "npm:react-bootstrap-table@2.4.2/lib/Filter.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/BootstrapTable.js", ["npm:react@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:react-bootstrap-table@2.4.2/lib/TableHeader.js", "npm:react-bootstrap-table@2.4.2/lib/TableBody.js", "npm:react-bootstrap-table@2.4.2/lib/pagination/PaginationList.js", "npm:react-bootstrap-table@2.4.2/lib/toolbar/ToolBar.js", "npm:react-bootstrap-table@2.4.2/lib/TableFilter.js", "npm:react-bootstrap-table@2.4.2/lib/store/TableDataStore.js", "npm:react-bootstrap-table@2.4.2/lib/util.js", "npm:react-bootstrap-table@2.4.2/lib/csv_export_util.js", "npm:react-bootstrap-table@2.4.2/lib/Filter.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -29278,7 +29278,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/BootstrapTable.js", 
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _Const = $__require('npm:react-bootstrap-table@2.4.2/lib/Const.js');
   var _Const2 = _interopRequireDefault(_Const);
@@ -30311,7 +30311,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/BootstrapTable.js", 
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/util.js", ["npm:react@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:classnames@2.2.5.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/util.js", ["npm:react@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:classnames@2.2.5.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -30321,7 +30321,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/util.js", ["npm:reac
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {'default': obj};
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _Const = $__require('npm:react-bootstrap-table@2.4.2/lib/Const.js');
   var _Const2 = _interopRequireDefault(_Const);
@@ -30365,7 +30365,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/util.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Date.js", ["npm:react@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Date.js", ["npm:react@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -30445,7 +30445,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Date.js", ["
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _Const = $__require('npm:react-bootstrap-table@2.4.2/lib/Const.js');
   var _Const2 = _interopRequireDefault(_Const);
@@ -30601,7 +30601,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Date.js", ["
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Text.js", ["npm:react@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Text.js", ["npm:react@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -30681,7 +30681,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Text.js", ["
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _Const = $__require('npm:react-bootstrap-table@2.4.2/lib/Const.js');
   var _Const2 = _interopRequireDefault(_Const);
@@ -30763,7 +30763,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Text.js", ["
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Regex.js", ["npm:react@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Regex.js", ["npm:react@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -30843,7 +30843,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Regex.js", [
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _Const = $__require('npm:react-bootstrap-table@2.4.2/lib/Const.js');
   var _Const2 = _interopRequireDefault(_Const);
@@ -30925,7 +30925,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Regex.js", [
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Select.js", ["npm:react@15.3.0.js", "npm:classnames@2.2.5.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Select.js", ["npm:react@15.3.1.js", "npm:classnames@2.2.5.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -31005,7 +31005,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Select.js", 
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _classnames = $__require('npm:classnames@2.2.5.js');
   var _classnames2 = _interopRequireDefault(_classnames);
@@ -31194,7 +31194,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/Const.js", [], true,
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Number.js", ["npm:react@15.3.0.js", "npm:classnames@2.2.5.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Number.js", ["npm:react@15.3.1.js", "npm:classnames@2.2.5.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -31274,7 +31274,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Number.js", 
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _classnames = $__require('npm:classnames@2.2.5.js');
   var _classnames2 = _interopRequireDefault(_classnames);
@@ -31472,7 +31472,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Number.js", 
   return module.exports;
 });
 
-System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableHeaderColumn.js", ["npm:react@15.3.0.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:react-bootstrap-table@2.4.2/lib/util.js", "npm:react-bootstrap-table@2.4.2/lib/filters/Date.js", "npm:react-bootstrap-table@2.4.2/lib/filters/Text.js", "npm:react-bootstrap-table@2.4.2/lib/filters/Regex.js", "npm:react-bootstrap-table@2.4.2/lib/filters/Select.js", "npm:react-bootstrap-table@2.4.2/lib/filters/Number.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableHeaderColumn.js", ["npm:react@15.3.1.js", "npm:react-bootstrap-table@2.4.2/lib/Const.js", "npm:react-bootstrap-table@2.4.2/lib/util.js", "npm:react-bootstrap-table@2.4.2/lib/filters/Date.js", "npm:react-bootstrap-table@2.4.2/lib/filters/Text.js", "npm:react-bootstrap-table@2.4.2/lib/filters/Regex.js", "npm:react-bootstrap-table@2.4.2/lib/filters/Select.js", "npm:react-bootstrap-table@2.4.2/lib/filters/Number.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -31563,7 +31563,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/TableHeaderColumn.js
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
   var _Const = $__require('npm:react-bootstrap-table@2.4.2/lib/Const.js');
   var _Const2 = _interopRequireDefault(_Const);
@@ -31870,7 +31870,7 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2.js", ["npm:react-bootstr
   return module.exports;
 });
 
-System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'app/api.js', 'npm:react-bootstrap-table@2.4.2.js'], function (_export) {
+System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'app/api.js', 'npm:react-bootstrap-table@2.4.2.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, React, connect, Treemap, get, BootstrapTable, TableHeaderColumn, Players;
 
   return {
@@ -31882,8 +31882,8 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-    }, function (_npmReact1530Js) {
-      React = _npmReact1530Js['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
     }, function (_npmReactRedux445Js) {
       connect = _npmReactRedux445Js.connect;
     }, function (_npmReactVis042Js) {
@@ -32051,7 +32051,7 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
     }
   };
 });
-System.register('app/assists.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'app/players.js'], function (_export) {
+System.register('app/assists.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'app/players.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, React, Players, Assists;
 
   return {
@@ -32063,8 +32063,8 @@ System.register('app/assists.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-    }, function (_npmReact1530Js) {
-      React = _npmReact1530Js['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
     }, function (_appPlayersJs) {
       Players = _appPlayersJs['default'];
     }],
@@ -32154,7 +32154,7 @@ System.registerDynamic('app/constants.js', [], false, function ($__require, $__e
 
   return _retrieveGlobal();
 });
-System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.0.js', 'npm:react-redux@4.4.5.js', 'npm:react-sanfona@0.0.14.js', 'app/api.js', 'app/constants.js'], function (_export) {
+System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-sanfona@0.0.14.js', 'app/api.js', 'app/constants.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, _Object$keys, React, connect, Accordion, AccordionItem, get, season, Matches;
 
   return {
@@ -32168,8 +32168,8 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
     }, function (_npmBabelRuntime5838CoreJsObjectKeysJs) {
       _Object$keys = _npmBabelRuntime5838CoreJsObjectKeysJs['default'];
-    }, function (_npmReact1530Js) {
-      React = _npmReact1530Js['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
     }, function (_npmReactRedux445Js) {
       connect = _npmReactRedux445Js.connect;
     }, function (_npmReactSanfona0014Js) {
@@ -32381,7 +32381,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
     }
   };
 });
-System.register('app/choose-season.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-redux@4.4.5.js'], function (_export) {
+System.register('app/choose-season.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, React, connect, ChooseSeason;
 
   return {
@@ -32393,8 +32393,8 @@ System.register('app/choose-season.js', ['npm:babel-runtime@5.8.38/helpers/get.j
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-    }, function (_npmReact1530Js) {
-      React = _npmReact1530Js['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
     }, function (_npmReactRedux445Js) {
       connect = _npmReactRedux445Js.connect;
     }],
@@ -34255,7 +34255,7 @@ System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) 
     }
   };
 });
-System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/Accordion/index.js", ["npm:classnames@2.2.0.js", "npm:react@15.3.0.js", "npm:react-dom@15.3.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/Accordion/index.js", ["npm:classnames@2.2.0.js", "npm:react@15.3.1.js", "npm:react-dom@15.3.1.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -34283,9 +34283,9 @@ System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/Accordion/index.js
   }();
   var _classnames = $__require('npm:classnames@2.2.0.js');
   var _classnames2 = _interopRequireDefault(_classnames);
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
-  var _reactDom = $__require('npm:react-dom@15.3.0.js');
+  var _reactDom = $__require('npm:react-dom@15.3.1.js');
   var _reactDom2 = _interopRequireDefault(_reactDom);
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {default: obj};
@@ -34401,15 +34401,662 @@ System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/Accordion/index.js
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/FallbackCompositionState.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/PooledClass.js", "npm:react@15.3.0/lib/getTextContentAccessor.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:uuid@2.0.1/rng-browser.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var rng;
+  if (global.crypto && crypto.getRandomValues) {
+    var _rnds8 = new Uint8Array(16);
+    rng = function whatwgRNG() {
+      crypto.getRandomValues(_rnds8);
+      return _rnds8;
+    };
+  }
+  if (!rng) {
+    var _rnds = new Array(16);
+    rng = function() {
+      for (var i = 0,
+          r; i < 16; i++) {
+        if ((i & 0x03) === 0)
+          r = Math.random() * 0x100000000;
+        _rnds[i] = r >>> ((i & 0x03) << 3) & 0xff;
+      }
+      return _rnds;
+    };
+  }
+  module.exports = rng;
+  return module.exports;
+});
+
+System.registerDynamic("npm:uuid@2.0.1/uuid.js", ["npm:uuid@2.0.1/rng-browser.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var _rng = $__require('npm:uuid@2.0.1/rng-browser.js');
+  var _byteToHex = [];
+  var _hexToByte = {};
+  for (var i = 0; i < 256; i++) {
+    _byteToHex[i] = (i + 0x100).toString(16).substr(1);
+    _hexToByte[_byteToHex[i]] = i;
+  }
+  function parse(s, buf, offset) {
+    var i = (buf && offset) || 0,
+        ii = 0;
+    buf = buf || [];
+    s.toLowerCase().replace(/[0-9a-f]{2}/g, function(oct) {
+      if (ii < 16) {
+        buf[i + ii++] = _hexToByte[oct];
+      }
+    });
+    while (ii < 16) {
+      buf[i + ii++] = 0;
+    }
+    return buf;
+  }
+  function unparse(buf, offset) {
+    var i = offset || 0,
+        bth = _byteToHex;
+    return bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]] + '-' + bth[buf[i++]] + bth[buf[i++]] + '-' + bth[buf[i++]] + bth[buf[i++]] + '-' + bth[buf[i++]] + bth[buf[i++]] + '-' + bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]];
+  }
+  var _seedBytes = _rng();
+  var _nodeId = [_seedBytes[0] | 0x01, _seedBytes[1], _seedBytes[2], _seedBytes[3], _seedBytes[4], _seedBytes[5]];
+  var _clockseq = (_seedBytes[6] << 8 | _seedBytes[7]) & 0x3fff;
+  var _lastMSecs = 0,
+      _lastNSecs = 0;
+  function v1(options, buf, offset) {
+    var i = buf && offset || 0;
+    var b = buf || [];
+    options = options || {};
+    var clockseq = options.clockseq !== undefined ? options.clockseq : _clockseq;
+    var msecs = options.msecs !== undefined ? options.msecs : new Date().getTime();
+    var nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1;
+    var dt = (msecs - _lastMSecs) + (nsecs - _lastNSecs) / 10000;
+    if (dt < 0 && options.clockseq === undefined) {
+      clockseq = clockseq + 1 & 0x3fff;
+    }
+    if ((dt < 0 || msecs > _lastMSecs) && options.nsecs === undefined) {
+      nsecs = 0;
+    }
+    if (nsecs >= 10000) {
+      throw new Error('uuid.v1(): Can\'t create more than 10M uuids/sec');
+    }
+    _lastMSecs = msecs;
+    _lastNSecs = nsecs;
+    _clockseq = clockseq;
+    msecs += 12219292800000;
+    var tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
+    b[i++] = tl >>> 24 & 0xff;
+    b[i++] = tl >>> 16 & 0xff;
+    b[i++] = tl >>> 8 & 0xff;
+    b[i++] = tl & 0xff;
+    var tmh = (msecs / 0x100000000 * 10000) & 0xfffffff;
+    b[i++] = tmh >>> 8 & 0xff;
+    b[i++] = tmh & 0xff;
+    b[i++] = tmh >>> 24 & 0xf | 0x10;
+    b[i++] = tmh >>> 16 & 0xff;
+    b[i++] = clockseq >>> 8 | 0x80;
+    b[i++] = clockseq & 0xff;
+    var node = options.node || _nodeId;
+    for (var n = 0; n < 6; n++) {
+      b[i + n] = node[n];
+    }
+    return buf ? buf : unparse(b);
+  }
+  function v4(options, buf, offset) {
+    var i = buf && offset || 0;
+    if (typeof(options) == 'string') {
+      buf = options == 'binary' ? new Array(16) : null;
+      options = null;
+    }
+    options = options || {};
+    var rnds = options.random || (options.rng || _rng)();
+    rnds[6] = (rnds[6] & 0x0f) | 0x40;
+    rnds[8] = (rnds[8] & 0x3f) | 0x80;
+    if (buf) {
+      for (var ii = 0; ii < 16; ii++) {
+        buf[i + ii] = rnds[ii];
+      }
+    }
+    return buf || unparse(rnds);
+  }
+  var uuid = v4;
+  uuid.v1 = v1;
+  uuid.v4 = v4;
+  uuid.parse = parse;
+  uuid.unparse = unparse;
+  module.exports = uuid;
+  return module.exports;
+});
+
+System.registerDynamic("npm:uuid@2.0.1.js", ["npm:uuid@2.0.1/uuid.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:uuid@2.0.1/uuid.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/AccordionItemBody/index.js", ["npm:classnames@2.2.0.js", "npm:react@15.3.1.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  Object.defineProperty(exports, "__esModule", {value: true});
+  var _createClass = function() {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor)
+          descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+    return function(Constructor, protoProps, staticProps) {
+      if (protoProps)
+        defineProperties(Constructor.prototype, protoProps);
+      if (staticProps)
+        defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+  var _classnames = $__require('npm:classnames@2.2.0.js');
+  var _classnames2 = _interopRequireDefault(_classnames);
+  var _react = $__require('npm:react@15.3.1.js');
+  var _react2 = _interopRequireDefault(_react);
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {default: obj};
+  }
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+  function _possibleConstructorReturn(self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+  }
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    }
+    subClass.prototype = Object.create(superClass && superClass.prototype, {constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }});
+    if (superClass)
+      Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  }
+  var AccordionItemBody = function(_Component) {
+    _inherits(AccordionItemBody, _Component);
+    function AccordionItemBody() {
+      _classCallCheck(this, AccordionItemBody);
+      return _possibleConstructorReturn(this, Object.getPrototypeOf(AccordionItemBody).apply(this, arguments));
+    }
+    _createClass(AccordionItemBody, [{
+      key: 'render',
+      value: function render() {
+        var style = {
+          maxHeight: this.props.maxHeight,
+          overflow: this.props.overflow,
+          transition: 'max-height ' + this.props.duration + 'ms ease'
+        };
+        return _react2.default.createElement('div', {
+          'aria-labelledby': 'react-safona-item-title-' + this.props.uuid,
+          className: (0, _classnames2.default)('react-sanfona-item-body', this.props.className),
+          id: 'react-safona-item-body-' + this.props.uuid,
+          style: style
+        }, _react2.default.createElement('div', {className: 'react-sanfona-item-body-wrapper'}, this.props.children));
+      }
+    }]);
+    return AccordionItemBody;
+  }(_react.Component);
+  exports.default = AccordionItemBody;
+  AccordionItemBody.propTypes = {
+    className: _react.PropTypes.string,
+    maxHeight: _react.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.number]),
+    duration: _react.PropTypes.number,
+    overflow: _react.PropTypes.string,
+    uuid: _react.PropTypes.string
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:classnames@2.2.0/index.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  "format cjs";
+  (function() {
+    'use strict';
+    var hasOwn = {}.hasOwnProperty;
+    function classNames() {
+      var classes = '';
+      for (var i = 0; i < arguments.length; i++) {
+        var arg = arguments[i];
+        if (!arg)
+          continue;
+        var argType = typeof arg;
+        if (argType === 'string' || argType === 'number') {
+          classes += ' ' + arg;
+        } else if (Array.isArray(arg)) {
+          classes += ' ' + classNames.apply(null, arg);
+        } else if (argType === 'object') {
+          for (var key in arg) {
+            if (hasOwn.call(arg, key) && arg[key]) {
+              classes += ' ' + key;
+            }
+          }
+        }
+      }
+      return classes.substr(1);
+    }
+    if (typeof module !== 'undefined' && module.exports) {
+      module.exports = classNames;
+    } else if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
+      define('classnames', function() {
+        return classNames;
+      });
+    } else {
+      window.classNames = classNames;
+    }
+  }());
+  return module.exports;
+});
+
+System.registerDynamic("npm:classnames@2.2.0.js", ["npm:classnames@2.2.0/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:classnames@2.2.0/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/AccordionItemTitle/index.js", ["npm:classnames@2.2.0.js", "npm:react@15.3.1.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  Object.defineProperty(exports, "__esModule", {value: true});
+  var _createClass = function() {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor)
+          descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+    return function(Constructor, protoProps, staticProps) {
+      if (protoProps)
+        defineProperties(Constructor.prototype, protoProps);
+      if (staticProps)
+        defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+  var _classnames = $__require('npm:classnames@2.2.0.js');
+  var _classnames2 = _interopRequireDefault(_classnames);
+  var _react = $__require('npm:react@15.3.1.js');
+  var _react2 = _interopRequireDefault(_react);
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {default: obj};
+  }
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+  function _possibleConstructorReturn(self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+  }
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    }
+    subClass.prototype = Object.create(superClass && superClass.prototype, {constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }});
+    if (superClass)
+      Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  }
+  var AccordionItemTitle = function(_Component) {
+    _inherits(AccordionItemTitle, _Component);
+    function AccordionItemTitle() {
+      _classCallCheck(this, AccordionItemTitle);
+      return _possibleConstructorReturn(this, Object.getPrototypeOf(AccordionItemTitle).apply(this, arguments));
+    }
+    _createClass(AccordionItemTitle, [{
+      key: 'render',
+      value: function render() {
+        var style = {
+          cursor: 'pointer',
+          margin: 0,
+          color: this.props.titleColor
+        };
+        return _react2.default.createElement('h3', {
+          'aria-controls': 'react-sanfona-item-body-' + this.props.uuid,
+          className: (0, _classnames2.default)('react-sanfona-item-title', this.props.className),
+          id: 'react-safona-item-title-' + this.props.uuid,
+          onClick: this.props.onClick,
+          style: style
+        }, this.props.title);
+      }
+    }]);
+    return AccordionItemTitle;
+  }(_react.Component);
+  exports.default = AccordionItemTitle;
+  AccordionItemTitle.propTypes = {
+    className: _react.PropTypes.string,
+    onClick: _react.PropTypes.func,
+    title: _react.PropTypes.string,
+    uuid: _react.PropTypes.string
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/AccordionItem/index.js", ["npm:classnames@2.2.0.js", "npm:react@15.3.1.js", "npm:react-dom@15.3.1.js", "npm:uuid@2.0.1.js", "npm:react-sanfona@0.0.14/dist-modules/AccordionItemBody/index.js", "npm:react-sanfona@0.0.14/dist-modules/AccordionItemTitle/index.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  Object.defineProperty(exports, "__esModule", {value: true});
+  var _extends = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  var _createClass = function() {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor)
+          descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+    return function(Constructor, protoProps, staticProps) {
+      if (protoProps)
+        defineProperties(Constructor.prototype, protoProps);
+      if (staticProps)
+        defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+  var _classnames = $__require('npm:classnames@2.2.0.js');
+  var _classnames2 = _interopRequireDefault(_classnames);
+  var _react = $__require('npm:react@15.3.1.js');
+  var _react2 = _interopRequireDefault(_react);
+  var _reactDom = $__require('npm:react-dom@15.3.1.js');
+  var _reactDom2 = _interopRequireDefault(_reactDom);
+  var _uuid = $__require('npm:uuid@2.0.1.js');
+  var _uuid2 = _interopRequireDefault(_uuid);
+  var _AccordionItemBody = $__require('npm:react-sanfona@0.0.14/dist-modules/AccordionItemBody/index.js');
+  var _AccordionItemBody2 = _interopRequireDefault(_AccordionItemBody);
+  var _AccordionItemTitle = $__require('npm:react-sanfona@0.0.14/dist-modules/AccordionItemTitle/index.js');
+  var _AccordionItemTitle2 = _interopRequireDefault(_AccordionItemTitle);
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {default: obj};
+  }
+  function _defineProperty(obj, key, value) {
+    if (key in obj) {
+      Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      });
+    } else {
+      obj[key] = value;
+    }
+    return obj;
+  }
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+  function _possibleConstructorReturn(self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+  }
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    }
+    subClass.prototype = Object.create(superClass && superClass.prototype, {constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }});
+    if (superClass)
+      Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  }
+  var AccordionItem = function(_Component) {
+    _inherits(AccordionItem, _Component);
+    function AccordionItem(props) {
+      _classCallCheck(this, AccordionItem);
+      var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(AccordionItem).call(this, props));
+      _this.state = {
+        maxHeight: props.expanded ? 'none' : 0,
+        overflow: props.expanded ? 'visible' : 'hidden',
+        duration: 300
+      };
+      return _this;
+    }
+    _createClass(AccordionItem, [{
+      key: 'componentWillMount',
+      value: function componentWillMount() {
+        this.uuid = _uuid2.default.v4();
+      }
+    }, {
+      key: 'componentDidUpdate',
+      value: function componentDidUpdate(prevProps) {
+        if (prevProps.expanded !== this.props.expanded) {
+          if (this.props.expanded) {
+            this.maybeExpand();
+          } else {
+            this.handleCollapse();
+          }
+        }
+      }
+    }, {
+      key: 'startTransition',
+      value: function startTransition() {
+        this.setState({
+          maxHeight: this.maxHeight,
+          overflow: 'hidden'
+        });
+        clearTimeout(this.timeout);
+      }
+    }, {
+      key: 'maybeExpand',
+      value: function maybeExpand() {
+        var bodyNode = _reactDom2.default.findDOMNode(this.refs.body);
+        var images = bodyNode.querySelectorAll('img');
+        if (images.length > 0) {
+          this.preloadImages(bodyNode, images);
+          return;
+        }
+        this.handleExpand();
+      }
+    }, {
+      key: 'handleExpand',
+      value: function handleExpand() {
+        var _this2 = this;
+        var onExpand = this.props.onExpand;
+        this.startTransition();
+        this.timeout = setTimeout(function() {
+          _this2.setState({
+            maxHeight: 'none',
+            overflow: 'visible'
+          });
+          if (onExpand) {
+            onExpand();
+          }
+        }, this.state.duration);
+      }
+    }, {
+      key: 'handleCollapse',
+      value: function handleCollapse() {
+        var _this3 = this;
+        var onClose = this.props.onClose;
+        this.startTransition();
+        this.timeout = setTimeout(function() {
+          _this3.setState({
+            maxHeight: 0,
+            overflow: 'hidden'
+          });
+          if (onClose) {
+            onClose();
+          }
+        }, 0);
+      }
+    }, {
+      key: 'preloadImages',
+      value: function preloadImages(node) {
+        var _this4 = this;
+        var images = arguments.length <= 1 || arguments[1] === undefined ? [] : arguments[1];
+        var imagesLoaded = 0;
+        var imgLoaded = function imgLoaded() {
+          imagesLoaded++;
+          if (imagesLoaded === images.length) {
+            _this4.handleExpand();
+          }
+        };
+        for (var i = 0; i < images.length; i += 1) {
+          var img = new Image();
+          img.src = images[i].src;
+          img.onload = img.onerror = imgLoaded;
+        }
+      }
+    }, {
+      key: 'getProps',
+      value: function getProps() {
+        var props = {
+          className: (0, _classnames2.default)('react-sanfona-item', this.props.className, {'react-sanfona-item-expanded': this.props.expanded}, this.props.expandedClassName && _defineProperty({}, this.props.expandedClassName, this.props.expanded)),
+          role: 'tabpanel',
+          style: this.props.style
+        };
+        if (this.props.expanded) {
+          props['aria-expanded'] = true;
+        } else {
+          props['aria-hidden'] = true;
+        }
+        return props;
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement('div', _extends({}, this.getProps(), {ref: 'item'}), _react2.default.createElement(_AccordionItemTitle2.default, {
+          className: this.props.titleClassName,
+          title: this.props.title,
+          onClick: this.props.onClick,
+          titleColor: this.props.titleColor,
+          uuid: this.uuid
+        }), _react2.default.createElement(_AccordionItemBody2.default, {
+          maxHeight: this.state.maxHeight,
+          duration: this.state.duration,
+          className: this.props.bodyClassName,
+          overflow: this.state.overflow,
+          ref: 'body',
+          uuid: this.uuid
+        }, this.props.children));
+      }
+    }, {
+      key: 'maxHeight',
+      get: function get() {
+        var body = _reactDom2.default.findDOMNode(this.refs.body);
+        return body.scrollHeight + 'px';
+      }
+    }]);
+    return AccordionItem;
+  }(_react.Component);
+  exports.default = AccordionItem;
+  AccordionItem.propTypes = {
+    bodyClassName: _react.PropTypes.string,
+    className: _react.PropTypes.string,
+    expanded: _react.PropTypes.bool,
+    onClick: _react.PropTypes.func,
+    title: _react.PropTypes.string,
+    expandedClassName: _react.PropTypes.string,
+    style: _react.PropTypes.object,
+    titleClassName: _react.PropTypes.string
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/index.js", ["npm:react-sanfona@0.0.14/dist-modules/Accordion/index.js", "npm:react-sanfona@0.0.14/dist-modules/AccordionItem/index.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  Object.defineProperty(exports, "__esModule", {value: true});
+  exports.AccordionItem = exports.Accordion = undefined;
+  var _Accordion2 = $__require('npm:react-sanfona@0.0.14/dist-modules/Accordion/index.js');
+  var _Accordion3 = _interopRequireDefault(_Accordion2);
+  var _AccordionItem2 = $__require('npm:react-sanfona@0.0.14/dist-modules/AccordionItem/index.js');
+  var _AccordionItem3 = _interopRequireDefault(_AccordionItem2);
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {default: obj};
+  }
+  exports.Accordion = _Accordion3.default;
+  exports.AccordionItem = _AccordionItem3.default;
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-sanfona@0.0.14.js", ["npm:react-sanfona@0.0.14/dist-modules/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:react-sanfona@0.0.14/dist-modules/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/FallbackCompositionState.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/PooledClass.js", "npm:react@15.3.1/lib/getTextContentAccessor.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   var _assign = $__require('npm:object-assign@4.1.0.js');
-  var PooledClass = $__require('npm:react@15.3.0/lib/PooledClass.js');
-  var getTextContentAccessor = $__require('npm:react@15.3.0/lib/getTextContentAccessor.js');
+  var PooledClass = $__require('npm:react@15.3.1/lib/PooledClass.js');
+  var getTextContentAccessor = $__require('npm:react@15.3.1/lib/getTextContentAccessor.js');
   function FallbackCompositionState(root) {
     this._root = root;
     this._startText = this.getText();
@@ -34458,13 +35105,13 @@ System.registerDynamic("npm:react@15.3.0/lib/FallbackCompositionState.js", ["npm
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticCompositionEvent.js", ["npm:react@15.3.0/lib/SyntheticEvent.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticCompositionEvent.js", ["npm:react@15.3.1/lib/SyntheticEvent.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticEvent = $__require('npm:react@15.3.0/lib/SyntheticEvent.js');
+  var SyntheticEvent = $__require('npm:react@15.3.1/lib/SyntheticEvent.js');
   var CompositionEventInterface = {data: null};
   function SyntheticCompositionEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget) {
     return SyntheticEvent.call(this, dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget);
@@ -34474,13 +35121,13 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticCompositionEvent.js", ["np
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticInputEvent.js", ["npm:react@15.3.0/lib/SyntheticEvent.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticInputEvent.js", ["npm:react@15.3.1/lib/SyntheticEvent.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticEvent = $__require('npm:react@15.3.0/lib/SyntheticEvent.js');
+  var SyntheticEvent = $__require('npm:react@15.3.1/lib/SyntheticEvent.js');
   var InputEventInterface = {data: null};
   function SyntheticInputEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget) {
     return SyntheticEvent.call(this, dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget);
@@ -34490,19 +35137,19 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticInputEvent.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/BeforeInputEventPlugin.js", ["npm:react@15.3.0/lib/EventConstants.js", "npm:react@15.3.0/lib/EventPropagators.js", "npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:react@15.3.0/lib/FallbackCompositionState.js", "npm:react@15.3.0/lib/SyntheticCompositionEvent.js", "npm:react@15.3.0/lib/SyntheticInputEvent.js", "npm:fbjs@0.8.3/lib/keyOf.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/BeforeInputEventPlugin.js", ["npm:react@15.3.1/lib/EventConstants.js", "npm:react@15.3.1/lib/EventPropagators.js", "npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:react@15.3.1/lib/FallbackCompositionState.js", "npm:react@15.3.1/lib/SyntheticCompositionEvent.js", "npm:react@15.3.1/lib/SyntheticInputEvent.js", "npm:fbjs@0.8.4/lib/keyOf.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var EventConstants = $__require('npm:react@15.3.0/lib/EventConstants.js');
-  var EventPropagators = $__require('npm:react@15.3.0/lib/EventPropagators.js');
-  var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-  var FallbackCompositionState = $__require('npm:react@15.3.0/lib/FallbackCompositionState.js');
-  var SyntheticCompositionEvent = $__require('npm:react@15.3.0/lib/SyntheticCompositionEvent.js');
-  var SyntheticInputEvent = $__require('npm:react@15.3.0/lib/SyntheticInputEvent.js');
-  var keyOf = $__require('npm:fbjs@0.8.3/lib/keyOf.js');
+  var EventConstants = $__require('npm:react@15.3.1/lib/EventConstants.js');
+  var EventPropagators = $__require('npm:react@15.3.1/lib/EventPropagators.js');
+  var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+  var FallbackCompositionState = $__require('npm:react@15.3.1/lib/FallbackCompositionState.js');
+  var SyntheticCompositionEvent = $__require('npm:react@15.3.1/lib/SyntheticCompositionEvent.js');
+  var SyntheticInputEvent = $__require('npm:react@15.3.1/lib/SyntheticInputEvent.js');
+  var keyOf = $__require('npm:fbjs@0.8.4/lib/keyOf.js');
   var END_KEYCODES = [9, 13, 27, 32];
   var START_KEYCODE = 229;
   var canUseCompositionEvent = ExecutionEnvironment.canUseDOM && 'CompositionEvent' in window;
@@ -34694,24 +35341,24 @@ System.registerDynamic("npm:react@15.3.0/lib/BeforeInputEventPlugin.js", ["npm:r
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ChangeEventPlugin.js", ["npm:react@15.3.0/lib/EventConstants.js", "npm:react@15.3.0/lib/EventPluginHub.js", "npm:react@15.3.0/lib/EventPropagators.js", "npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactUpdates.js", "npm:react@15.3.0/lib/SyntheticEvent.js", "npm:react@15.3.0/lib/getEventTarget.js", "npm:react@15.3.0/lib/isEventSupported.js", "npm:react@15.3.0/lib/isTextInputElement.js", "npm:fbjs@0.8.3/lib/keyOf.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ChangeEventPlugin.js", ["npm:react@15.3.1/lib/EventConstants.js", "npm:react@15.3.1/lib/EventPluginHub.js", "npm:react@15.3.1/lib/EventPropagators.js", "npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactUpdates.js", "npm:react@15.3.1/lib/SyntheticEvent.js", "npm:react@15.3.1/lib/getEventTarget.js", "npm:react@15.3.1/lib/isEventSupported.js", "npm:react@15.3.1/lib/isTextInputElement.js", "npm:fbjs@0.8.4/lib/keyOf.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var EventConstants = $__require('npm:react@15.3.0/lib/EventConstants.js');
-    var EventPluginHub = $__require('npm:react@15.3.0/lib/EventPluginHub.js');
-    var EventPropagators = $__require('npm:react@15.3.0/lib/EventPropagators.js');
-    var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactUpdates = $__require('npm:react@15.3.0/lib/ReactUpdates.js');
-    var SyntheticEvent = $__require('npm:react@15.3.0/lib/SyntheticEvent.js');
-    var getEventTarget = $__require('npm:react@15.3.0/lib/getEventTarget.js');
-    var isEventSupported = $__require('npm:react@15.3.0/lib/isEventSupported.js');
-    var isTextInputElement = $__require('npm:react@15.3.0/lib/isTextInputElement.js');
-    var keyOf = $__require('npm:fbjs@0.8.3/lib/keyOf.js');
+    var EventConstants = $__require('npm:react@15.3.1/lib/EventConstants.js');
+    var EventPluginHub = $__require('npm:react@15.3.1/lib/EventPluginHub.js');
+    var EventPropagators = $__require('npm:react@15.3.1/lib/EventPropagators.js');
+    var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactUpdates = $__require('npm:react@15.3.1/lib/ReactUpdates.js');
+    var SyntheticEvent = $__require('npm:react@15.3.1/lib/SyntheticEvent.js');
+    var getEventTarget = $__require('npm:react@15.3.1/lib/getEventTarget.js');
+    var isEventSupported = $__require('npm:react@15.3.1/lib/isEventSupported.js');
+    var isTextInputElement = $__require('npm:react@15.3.1/lib/isTextInputElement.js');
+    var keyOf = $__require('npm:fbjs@0.8.4/lib/keyOf.js');
     var topLevelTypes = EventConstants.topLevelTypes;
     var eventTypes = {change: {
         phasedRegistrationNames: {
@@ -34888,29 +35535,29 @@ System.registerDynamic("npm:react@15.3.0/lib/ChangeEventPlugin.js", ["npm:react@
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/DefaultEventPluginOrder.js", ["npm:fbjs@0.8.3/lib/keyOf.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/DefaultEventPluginOrder.js", ["npm:fbjs@0.8.4/lib/keyOf.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var keyOf = $__require('npm:fbjs@0.8.3/lib/keyOf.js');
+  var keyOf = $__require('npm:fbjs@0.8.4/lib/keyOf.js');
   var DefaultEventPluginOrder = [keyOf({ResponderEventPlugin: null}), keyOf({SimpleEventPlugin: null}), keyOf({TapEventPlugin: null}), keyOf({EnterLeaveEventPlugin: null}), keyOf({ChangeEventPlugin: null}), keyOf({SelectEventPlugin: null}), keyOf({BeforeInputEventPlugin: null})];
   module.exports = DefaultEventPluginOrder;
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/EnterLeaveEventPlugin.js", ["npm:react@15.3.0/lib/EventConstants.js", "npm:react@15.3.0/lib/EventPropagators.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/SyntheticMouseEvent.js", "npm:fbjs@0.8.3/lib/keyOf.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/EnterLeaveEventPlugin.js", ["npm:react@15.3.1/lib/EventConstants.js", "npm:react@15.3.1/lib/EventPropagators.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/SyntheticMouseEvent.js", "npm:fbjs@0.8.4/lib/keyOf.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var EventConstants = $__require('npm:react@15.3.0/lib/EventConstants.js');
-  var EventPropagators = $__require('npm:react@15.3.0/lib/EventPropagators.js');
-  var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-  var SyntheticMouseEvent = $__require('npm:react@15.3.0/lib/SyntheticMouseEvent.js');
-  var keyOf = $__require('npm:fbjs@0.8.3/lib/keyOf.js');
+  var EventConstants = $__require('npm:react@15.3.1/lib/EventConstants.js');
+  var EventPropagators = $__require('npm:react@15.3.1/lib/EventPropagators.js');
+  var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+  var SyntheticMouseEvent = $__require('npm:react@15.3.1/lib/SyntheticMouseEvent.js');
+  var keyOf = $__require('npm:fbjs@0.8.4/lib/keyOf.js');
   var topLevelTypes = EventConstants.topLevelTypes;
   var eventTypes = {
     mouseEnter: {
@@ -34973,13 +35620,13 @@ System.registerDynamic("npm:react@15.3.0/lib/EnterLeaveEventPlugin.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/HTMLDOMPropertyConfig.js", ["npm:react@15.3.0/lib/DOMProperty.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/HTMLDOMPropertyConfig.js", ["npm:react@15.3.1/lib/DOMProperty.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var DOMProperty = $__require('npm:react@15.3.0/lib/DOMProperty.js');
+  var DOMProperty = $__require('npm:react@15.3.1/lib/DOMProperty.js');
   var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
   var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
   var HAS_NUMERIC_VALUE = DOMProperty.injection.HAS_NUMERIC_VALUE;
@@ -35144,14 +35791,50 @@ System.registerDynamic("npm:react@15.3.0/lib/HTMLDOMPropertyConfig.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/AutoFocusUtils.js", ["npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:fbjs@0.8.3/lib/focusNode.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMIDOperations.js", ["npm:react@15.3.1/lib/DOMChildrenOperations.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var DOMChildrenOperations = $__require('npm:react@15.3.1/lib/DOMChildrenOperations.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactDOMIDOperations = {dangerouslyProcessChildrenUpdates: function(parentInst, updates) {
+        var node = ReactDOMComponentTree.getNodeFromInstance(parentInst);
+        DOMChildrenOperations.processUpdates(node, updates);
+      }};
+    module.exports = ReactDOMIDOperations;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/ReactComponentBrowserEnvironment.js", ["npm:react@15.3.1/lib/DOMChildrenOperations.js", "npm:react@15.3.1/lib/ReactDOMIDOperations.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var DOMChildrenOperations = $__require('npm:react@15.3.1/lib/DOMChildrenOperations.js');
+    var ReactDOMIDOperations = $__require('npm:react@15.3.1/lib/ReactDOMIDOperations.js');
+    var ReactComponentBrowserEnvironment = {
+      processChildrenUpdates: ReactDOMIDOperations.dangerouslyProcessChildrenUpdates,
+      replaceNodeWithMarkup: DOMChildrenOperations.dangerouslyReplaceNodeWithMarkup
+    };
+    module.exports = ReactComponentBrowserEnvironment;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/AutoFocusUtils.js", ["npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:fbjs@0.8.4/lib/focusNode.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-  var focusNode = $__require('npm:fbjs@0.8.3/lib/focusNode.js');
+  var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+  var focusNode = $__require('npm:fbjs@0.8.4/lib/focusNode.js');
   var AutoFocusUtils = {focusDOMComponent: function() {
       focusNode(ReactDOMComponentTree.getNodeFromInstance(this));
     }};
@@ -35159,7 +35842,7 @@ System.registerDynamic("npm:react@15.3.0/lib/AutoFocusUtils.js", ["npm:react@15.
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/camelize.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/camelize.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -35175,13 +35858,13 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/camelize.js", [], true, function($__r
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/camelizeStyleName.js", ["npm:fbjs@0.8.3/lib/camelize.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/camelizeStyleName.js", ["npm:fbjs@0.8.4/lib/camelize.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var camelize = $__require('npm:fbjs@0.8.3/lib/camelize.js');
+  var camelize = $__require('npm:fbjs@0.8.4/lib/camelize.js');
   var msPattern = /^-ms-/;
   function camelizeStyleName(string) {
     return camelize(string.replace(msPattern, 'ms-'));
@@ -35190,7 +35873,7 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/camelizeStyleName.js", ["npm:fbjs@0.8
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/CSSProperty.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/CSSProperty.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -35301,15 +35984,15 @@ System.registerDynamic("npm:react@15.3.0/lib/CSSProperty.js", [], true, function
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/dangerousStyleValue.js", ["npm:react@15.3.0/lib/CSSProperty.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/dangerousStyleValue.js", ["npm:react@15.3.1/lib/CSSProperty.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var CSSProperty = $__require('npm:react@15.3.0/lib/CSSProperty.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var CSSProperty = $__require('npm:react@15.3.1/lib/CSSProperty.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var isUnitlessNumber = CSSProperty.isUnitlessNumber;
     var styleWarnings = {};
     function dangerousStyleValue(name, value, component) {
@@ -35351,7 +36034,7 @@ System.registerDynamic("npm:react@15.3.0/lib/dangerousStyleValue.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/hyphenate.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/hyphenate.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -35365,13 +36048,13 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/hyphenate.js", [], true, function($__
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/hyphenateStyleName.js", ["npm:fbjs@0.8.3/lib/hyphenate.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/hyphenateStyleName.js", ["npm:fbjs@0.8.4/lib/hyphenate.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var hyphenate = $__require('npm:fbjs@0.8.3/lib/hyphenate.js');
+  var hyphenate = $__require('npm:fbjs@0.8.4/lib/hyphenate.js');
   var msPattern = /^ms-/;
   function hyphenateStyleName(string) {
     return hyphenate(string).replace(msPattern, '-ms-');
@@ -35380,7 +36063,7 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/hyphenateStyleName.js", ["npm:fbjs@0.
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/memoizeStringOnly.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/memoizeStringOnly.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -35399,21 +36082,21 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/memoizeStringOnly.js", [], true, func
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/CSSPropertyOperations.js", ["npm:react@15.3.0/lib/CSSProperty.js", "npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:fbjs@0.8.3/lib/camelizeStyleName.js", "npm:react@15.3.0/lib/dangerousStyleValue.js", "npm:fbjs@0.8.3/lib/hyphenateStyleName.js", "npm:fbjs@0.8.3/lib/memoizeStringOnly.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/CSSPropertyOperations.js", ["npm:react@15.3.1/lib/CSSProperty.js", "npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:fbjs@0.8.4/lib/camelizeStyleName.js", "npm:react@15.3.1/lib/dangerousStyleValue.js", "npm:fbjs@0.8.4/lib/hyphenateStyleName.js", "npm:fbjs@0.8.4/lib/memoizeStringOnly.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var CSSProperty = $__require('npm:react@15.3.0/lib/CSSProperty.js');
-    var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var camelizeStyleName = $__require('npm:fbjs@0.8.3/lib/camelizeStyleName.js');
-    var dangerousStyleValue = $__require('npm:react@15.3.0/lib/dangerousStyleValue.js');
-    var hyphenateStyleName = $__require('npm:fbjs@0.8.3/lib/hyphenateStyleName.js');
-    var memoizeStringOnly = $__require('npm:fbjs@0.8.3/lib/memoizeStringOnly.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var CSSProperty = $__require('npm:react@15.3.1/lib/CSSProperty.js');
+    var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+    var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+    var camelizeStyleName = $__require('npm:fbjs@0.8.4/lib/camelizeStyleName.js');
+    var dangerousStyleValue = $__require('npm:react@15.3.1/lib/dangerousStyleValue.js');
+    var hyphenateStyleName = $__require('npm:fbjs@0.8.4/lib/hyphenateStyleName.js');
+    var memoizeStringOnly = $__require('npm:fbjs@0.8.4/lib/memoizeStringOnly.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var processStyleName = memoizeStringOnly(function(styleName) {
       return hyphenateStyleName(styleName);
     });
@@ -35544,265 +36227,25 @@ System.registerDynamic("npm:react@15.3.0/lib/CSSPropertyOperations.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMIDOperations.js", ["npm:react@15.3.0/lib/DOMChildrenOperations.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var DOMChildrenOperations = $__require('npm:react@15.3.0/lib/DOMChildrenOperations.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactDOMIDOperations = {dangerouslyProcessChildrenUpdates: function(parentInst, updates) {
-        var node = ReactDOMComponentTree.getNodeFromInstance(parentInst);
-        DOMChildrenOperations.processUpdates(node, updates);
-      }};
-    module.exports = ReactDOMIDOperations;
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/ReactComponentBrowserEnvironment.js", ["npm:react@15.3.0/lib/DOMChildrenOperations.js", "npm:react@15.3.0/lib/ReactDOMIDOperations.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var DOMChildrenOperations = $__require('npm:react@15.3.0/lib/DOMChildrenOperations.js');
-    var ReactDOMIDOperations = $__require('npm:react@15.3.0/lib/ReactDOMIDOperations.js');
-    var ReactComponentBrowserEnvironment = {
-      processChildrenUpdates: ReactDOMIDOperations.dangerouslyProcessChildrenUpdates,
-      replaceNodeWithMarkup: DOMChildrenOperations.dangerouslyReplaceNodeWithMarkup,
-      unmountIDFromEnvironment: function(rootNodeID) {}
-    };
-    module.exports = ReactComponentBrowserEnvironment;
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMButton.js", ["npm:react@15.3.0/lib/DisabledInputUtils.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMButton.js", ["npm:react@15.3.1/lib/DisabledInputUtils.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var DisabledInputUtils = $__require('npm:react@15.3.0/lib/DisabledInputUtils.js');
+  var DisabledInputUtils = $__require('npm:react@15.3.1/lib/DisabledInputUtils.js');
   var ReactDOMButton = {getHostProps: DisabledInputUtils.getHostProps};
   module.exports = ReactDOMButton;
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMNullInputValuePropDevtool.js", ["npm:react@15.3.0/lib/ReactComponentTreeDevtool.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var ReactComponentTreeDevtool = $__require('npm:react@15.3.0/lib/ReactComponentTreeDevtool.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
-    var didWarnValueNull = false;
-    function handleElement(debugID, element) {
-      if (element == null) {
-        return;
-      }
-      if (element.type !== 'input' && element.type !== 'textarea' && element.type !== 'select') {
-        return;
-      }
-      if (element.props != null && element.props.value === null && !didWarnValueNull) {
-        "production" !== 'production' ? warning(false, '`value` prop on `%s` should not be null. ' + 'Consider using the empty string to clear the component or `undefined` ' + 'for uncontrolled components.%s', element.type, ReactComponentTreeDevtool.getStackAddendumByID(debugID)) : void 0;
-        didWarnValueNull = true;
-      }
-    }
-    var ReactDOMUnknownPropertyDevtool = {
-      onBeforeMountComponent: function(debugID, element) {
-        handleElement(debugID, element);
-      },
-      onBeforeUpdateComponent: function(debugID, element) {
-        handleElement(debugID, element);
-      }
-    };
-    module.exports = ReactDOMUnknownPropertyDevtool;
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMUnknownPropertyDevtool.js", ["npm:react@15.3.0/lib/DOMProperty.js", "npm:react@15.3.0/lib/EventPluginRegistry.js", "npm:react@15.3.0/lib/ReactComponentTreeDevtool.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var DOMProperty = $__require('npm:react@15.3.0/lib/DOMProperty.js');
-    var EventPluginRegistry = $__require('npm:react@15.3.0/lib/EventPluginRegistry.js');
-    var ReactComponentTreeDevtool = $__require('npm:react@15.3.0/lib/ReactComponentTreeDevtool.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
-    if ("production" !== 'production') {
-      var reactProps = {
-        children: true,
-        dangerouslySetInnerHTML: true,
-        key: true,
-        ref: true,
-        autoFocus: true,
-        defaultValue: true,
-        valueLink: true,
-        defaultChecked: true,
-        checkedLink: true,
-        innerHTML: true,
-        suppressContentEditableWarning: true,
-        onFocusIn: true,
-        onFocusOut: true
-      };
-      var warnedProperties = {};
-      var validateProperty = function(tagName, name, debugID) {
-        if (DOMProperty.properties.hasOwnProperty(name) || DOMProperty.isCustomAttribute(name)) {
-          return true;
-        }
-        if (reactProps.hasOwnProperty(name) && reactProps[name] || warnedProperties.hasOwnProperty(name) && warnedProperties[name]) {
-          return true;
-        }
-        if (EventPluginRegistry.registrationNameModules.hasOwnProperty(name)) {
-          return true;
-        }
-        warnedProperties[name] = true;
-        var lowerCasedName = name.toLowerCase();
-        var standardName = DOMProperty.isCustomAttribute(lowerCasedName) ? lowerCasedName : DOMProperty.getPossibleStandardName.hasOwnProperty(lowerCasedName) ? DOMProperty.getPossibleStandardName[lowerCasedName] : null;
-        var registrationName = EventPluginRegistry.possibleRegistrationNames.hasOwnProperty(lowerCasedName) ? EventPluginRegistry.possibleRegistrationNames[lowerCasedName] : null;
-        if (standardName != null) {
-          "production" !== 'production' ? warning(standardName == null, 'Unknown DOM property %s. Did you mean %s?%s', name, standardName, ReactComponentTreeDevtool.getStackAddendumByID(debugID)) : void 0;
-          return true;
-        } else if (registrationName != null) {
-          "production" !== 'production' ? warning(registrationName == null, 'Unknown event handler property %s. Did you mean `%s`?%s', name, registrationName, ReactComponentTreeDevtool.getStackAddendumByID(debugID)) : void 0;
-          return true;
-        } else {
-          return false;
-        }
-      };
-    }
-    var warnUnknownProperties = function(debugID, element) {
-      var unknownProps = [];
-      for (var key in element.props) {
-        var isValid = validateProperty(element.type, key, debugID);
-        if (!isValid) {
-          unknownProps.push(key);
-        }
-      }
-      var unknownPropString = unknownProps.map(function(prop) {
-        return '`' + prop + '`';
-      }).join(', ');
-      if (unknownProps.length === 1) {
-        "production" !== 'production' ? warning(false, 'Unknown prop %s on <%s> tag. Remove this prop from the element. ' + 'For details, see https://fb.me/react-unknown-prop%s', unknownPropString, element.type, ReactComponentTreeDevtool.getStackAddendumByID(debugID)) : void 0;
-      } else if (unknownProps.length > 1) {
-        "production" !== 'production' ? warning(false, 'Unknown props %s on <%s> tag. Remove these props from the element. ' + 'For details, see https://fb.me/react-unknown-prop%s', unknownPropString, element.type, ReactComponentTreeDevtool.getStackAddendumByID(debugID)) : void 0;
-      }
-    };
-    function handleElement(debugID, element) {
-      if (element == null || typeof element.type !== 'string') {
-        return;
-      }
-      if (element.type.indexOf('-') >= 0 || element.props.is) {
-        return;
-      }
-      warnUnknownProperties(debugID, element);
-    }
-    var ReactDOMUnknownPropertyDevtool = {
-      onBeforeMountComponent: function(debugID, element) {
-        handleElement(debugID, element);
-      },
-      onBeforeUpdateComponent: function(debugID, element) {
-        handleElement(debugID, element);
-      }
-    };
-    module.exports = ReactDOMUnknownPropertyDevtool;
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMDebugTool.js", ["npm:react@15.3.0/lib/ReactDOMNullInputValuePropDevtool.js", "npm:react@15.3.0/lib/ReactDOMUnknownPropertyDevtool.js", "npm:react@15.3.0/lib/ReactDebugTool.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var ReactDOMNullInputValuePropDevtool = $__require('npm:react@15.3.0/lib/ReactDOMNullInputValuePropDevtool.js');
-    var ReactDOMUnknownPropertyDevtool = $__require('npm:react@15.3.0/lib/ReactDOMUnknownPropertyDevtool.js');
-    var ReactDebugTool = $__require('npm:react@15.3.0/lib/ReactDebugTool.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
-    var eventHandlers = [];
-    var handlerDoesThrowForEvent = {};
-    function emitEvent(handlerFunctionName, arg1, arg2, arg3, arg4, arg5) {
-      eventHandlers.forEach(function(handler) {
-        try {
-          if (handler[handlerFunctionName]) {
-            handler[handlerFunctionName](arg1, arg2, arg3, arg4, arg5);
-          }
-        } catch (e) {
-          "production" !== 'production' ? warning(handlerDoesThrowForEvent[handlerFunctionName], 'exception thrown by devtool while handling %s: %s', handlerFunctionName, e + '\n' + e.stack) : void 0;
-          handlerDoesThrowForEvent[handlerFunctionName] = true;
-        }
-      });
-    }
-    var ReactDOMDebugTool = {
-      addDevtool: function(devtool) {
-        ReactDebugTool.addDevtool(devtool);
-        eventHandlers.push(devtool);
-      },
-      removeDevtool: function(devtool) {
-        ReactDebugTool.removeDevtool(devtool);
-        for (var i = 0; i < eventHandlers.length; i++) {
-          if (eventHandlers[i] === devtool) {
-            eventHandlers.splice(i, 1);
-            i--;
-          }
-        }
-      },
-      onCreateMarkupForProperty: function(name, value) {
-        emitEvent('onCreateMarkupForProperty', name, value);
-      },
-      onSetValueForProperty: function(node, name, value) {
-        emitEvent('onSetValueForProperty', node, name, value);
-      },
-      onDeleteValueForProperty: function(node, name) {
-        emitEvent('onDeleteValueForProperty', node, name);
-      },
-      onTestEvent: function() {
-        emitEvent('onTestEvent');
-      }
-    };
-    ReactDOMDebugTool.addDevtool(ReactDOMUnknownPropertyDevtool);
-    ReactDOMDebugTool.addDevtool(ReactDOMNullInputValuePropDevtool);
-    module.exports = ReactDOMDebugTool;
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMInstrumentation.js", ["npm:react@15.3.0/lib/ReactDOMDebugTool.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var debugTool = null;
-    if ("production" !== 'production') {
-      var ReactDOMDebugTool = $__require('npm:react@15.3.0/lib/ReactDOMDebugTool.js');
-      debugTool = ReactDOMDebugTool;
-    }
-    module.exports = {debugTool: debugTool};
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/quoteAttributeValueForBrowser.js", ["npm:react@15.3.0/lib/escapeTextContentForBrowser.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/quoteAttributeValueForBrowser.js", ["npm:react@15.3.1/lib/escapeTextContentForBrowser.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var escapeTextContentForBrowser = $__require('npm:react@15.3.0/lib/escapeTextContentForBrowser.js');
+  var escapeTextContentForBrowser = $__require('npm:react@15.3.1/lib/escapeTextContentForBrowser.js');
   function quoteAttributeValueForBrowser(value) {
     return '"' + escapeTextContentForBrowser(value) + '"';
   }
@@ -35810,19 +36253,18 @@ System.registerDynamic("npm:react@15.3.0/lib/quoteAttributeValueForBrowser.js", 
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/DOMPropertyOperations.js", ["npm:react@15.3.0/lib/DOMProperty.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactDOMInstrumentation.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:react@15.3.0/lib/quoteAttributeValueForBrowser.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/DOMPropertyOperations.js", ["npm:react@15.3.1/lib/DOMProperty.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:react@15.3.1/lib/quoteAttributeValueForBrowser.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var DOMProperty = $__require('npm:react@15.3.0/lib/DOMProperty.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactDOMInstrumentation = $__require('npm:react@15.3.0/lib/ReactDOMInstrumentation.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var quoteAttributeValueForBrowser = $__require('npm:react@15.3.0/lib/quoteAttributeValueForBrowser.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var DOMProperty = $__require('npm:react@15.3.1/lib/DOMProperty.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+    var quoteAttributeValueForBrowser = $__require('npm:react@15.3.1/lib/quoteAttributeValueForBrowser.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
     var illegalAttributeNameCache = {};
     var validatedAttributeNameCache = {};
@@ -35858,9 +36300,6 @@ System.registerDynamic("npm:react@15.3.0/lib/DOMPropertyOperations.js", ["npm:re
         node.setAttribute(DOMProperty.ROOT_ATTRIBUTE_NAME, '');
       },
       createMarkupForProperty: function(name, value) {
-        if ("production" !== 'production') {
-          ReactDOMInstrumentation.debugTool.onCreateMarkupForProperty(name, value);
-        }
         var propertyInfo = DOMProperty.properties.hasOwnProperty(name) ? DOMProperty.properties[name] : null;
         if (propertyInfo) {
           if (shouldIgnoreValue(propertyInfo, value)) {
@@ -35912,7 +36351,6 @@ System.registerDynamic("npm:react@15.3.0/lib/DOMPropertyOperations.js", ["npm:re
           return;
         }
         if ("production" !== 'production') {
-          ReactDOMInstrumentation.debugTool.onSetValueForProperty(node, name, value);
           var payload = {};
           payload[name] = value;
           ReactInstrumentation.debugTool.onHostOperation(ReactDOMComponentTree.getInstanceFromNode(node)._debugID, 'update attribute', payload);
@@ -35936,7 +36374,6 @@ System.registerDynamic("npm:react@15.3.0/lib/DOMPropertyOperations.js", ["npm:re
       deleteValueForAttribute: function(node, name) {
         node.removeAttribute(name);
         if ("production" !== 'production') {
-          ReactDOMInstrumentation.debugTool.onDeleteValueForProperty(node, name);
           ReactInstrumentation.debugTool.onHostOperation(ReactDOMComponentTree.getInstanceFromNode(node)._debugID, 'remove attribute', name);
         }
       },
@@ -35960,7 +36397,6 @@ System.registerDynamic("npm:react@15.3.0/lib/DOMPropertyOperations.js", ["npm:re
           node.removeAttribute(name);
         }
         if ("production" !== 'production') {
-          ReactDOMInstrumentation.debugTool.onDeleteValueForProperty(node, name);
           ReactInstrumentation.debugTool.onHostOperation(ReactDOMComponentTree.getInstanceFromNode(node)._debugID, 'remove attribute', name);
         }
       }
@@ -35970,22 +36406,22 @@ System.registerDynamic("npm:react@15.3.0/lib/DOMPropertyOperations.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMInput.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/DisabledInputUtils.js", "npm:react@15.3.0/lib/DOMPropertyOperations.js", "npm:react@15.3.0/lib/LinkedValueUtils.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactUpdates.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMInput.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/DisabledInputUtils.js", "npm:react@15.3.1/lib/DOMPropertyOperations.js", "npm:react@15.3.1/lib/LinkedValueUtils.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactUpdates.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js'),
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js'),
         _assign = $__require('npm:object-assign@4.1.0.js');
-    var DisabledInputUtils = $__require('npm:react@15.3.0/lib/DisabledInputUtils.js');
-    var DOMPropertyOperations = $__require('npm:react@15.3.0/lib/DOMPropertyOperations.js');
-    var LinkedValueUtils = $__require('npm:react@15.3.0/lib/LinkedValueUtils.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactUpdates = $__require('npm:react@15.3.0/lib/ReactUpdates.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var DisabledInputUtils = $__require('npm:react@15.3.1/lib/DisabledInputUtils.js');
+    var DOMPropertyOperations = $__require('npm:react@15.3.1/lib/DOMPropertyOperations.js');
+    var LinkedValueUtils = $__require('npm:react@15.3.1/lib/LinkedValueUtils.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactUpdates = $__require('npm:react@15.3.1/lib/ReactUpdates.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var didWarnValueLink = false;
     var didWarnCheckedLink = false;
     var didWarnValueDefaultValue = false;
@@ -36007,7 +36443,9 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMInput.js", ["npm:react@15.3
         var checked = LinkedValueUtils.getChecked(props);
         var hostProps = _assign({
           type: undefined,
-          step: undefined
+          step: undefined,
+          min: undefined,
+          max: undefined
         }, DisabledInputUtils.getHostProps(inst, props), {
           defaultChecked: undefined,
           defaultValue: undefined,
@@ -36086,8 +36524,23 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMInput.js", ["npm:react@15.3
       postMountWrapper: function(inst) {
         var props = inst._currentElement.props;
         var node = ReactDOMComponentTree.getNodeFromInstance(inst);
-        if (props.type !== 'submit' && props.type !== 'reset') {
-          node.value = node.value;
+        switch (props.type) {
+          case 'submit':
+          case 'reset':
+            break;
+          case 'color':
+          case 'date':
+          case 'datetime':
+          case 'datetime-local':
+          case 'month':
+          case 'time':
+          case 'week':
+            node.value = '';
+            node.value = node.defaultValue;
+            break;
+          default:
+            node.value = node.value;
+            break;
         }
         var name = node.name;
         if (name !== '') {
@@ -36129,7 +36582,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMInput.js", ["npm:react@15.3
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMOption.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/ReactChildren.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactDOMSelect.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMOption.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/ReactChildren.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactDOMSelect.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -36137,10 +36590,10 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMOption.js", ["npm:object-as
   (function(process) {
     'use strict';
     var _assign = $__require('npm:object-assign@4.1.0.js');
-    var ReactChildren = $__require('npm:react@15.3.0/lib/ReactChildren.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactDOMSelect = $__require('npm:react@15.3.0/lib/ReactDOMSelect.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var ReactChildren = $__require('npm:react@15.3.1/lib/ReactChildren.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactDOMSelect = $__require('npm:react@15.3.1/lib/ReactDOMSelect.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var didWarnInvalidOptionChildren = false;
     function flattenChildren(children) {
       var content = '';
@@ -36221,7 +36674,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMOption.js", ["npm:object-as
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMSelect.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/DisabledInputUtils.js", "npm:react@15.3.0/lib/LinkedValueUtils.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactUpdates.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMSelect.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/DisabledInputUtils.js", "npm:react@15.3.1/lib/LinkedValueUtils.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactUpdates.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -36229,11 +36682,11 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMSelect.js", ["npm:object-as
   (function(process) {
     'use strict';
     var _assign = $__require('npm:object-assign@4.1.0.js');
-    var DisabledInputUtils = $__require('npm:react@15.3.0/lib/DisabledInputUtils.js');
-    var LinkedValueUtils = $__require('npm:react@15.3.0/lib/LinkedValueUtils.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactUpdates = $__require('npm:react@15.3.0/lib/ReactUpdates.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var DisabledInputUtils = $__require('npm:react@15.3.1/lib/DisabledInputUtils.js');
+    var LinkedValueUtils = $__require('npm:react@15.3.1/lib/LinkedValueUtils.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactUpdates = $__require('npm:react@15.3.1/lib/ReactUpdates.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var didWarnValueLink = false;
     var didWarnValueDefaultValue = false;
     function updateOptionsIfPendingUpdateAndMounted() {
@@ -36268,10 +36721,11 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMSelect.js", ["npm:object-as
         if (props[propName] == null) {
           continue;
         }
-        if (props.multiple) {
-          "production" !== 'production' ? warning(Array.isArray(props[propName]), 'The `%s` prop supplied to <select> must be an array if ' + '`multiple` is true.%s', propName, getDeclarationErrorAddendum(owner)) : void 0;
-        } else {
-          "production" !== 'production' ? warning(!Array.isArray(props[propName]), 'The `%s` prop supplied to <select> must be a scalar ' + 'value if `multiple` is false.%s', propName, getDeclarationErrorAddendum(owner)) : void 0;
+        var isArray = Array.isArray(props[propName]);
+        if (props.multiple && !isArray) {
+          "production" !== 'production' ? warning(false, 'The `%s` prop supplied to <select> must be an array if ' + '`multiple` is true.%s', propName, getDeclarationErrorAddendum(owner)) : void 0;
+        } else if (!props.multiple && isArray) {
+          "production" !== 'production' ? warning(false, 'The `%s` prop supplied to <select> must be a scalar ' + 'value if `multiple` is false.%s', propName, getDeclarationErrorAddendum(owner)) : void 0;
         }
       }
     }
@@ -36362,7 +36816,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMSelect.js", ["npm:object-as
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/DisabledInputUtils.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/DisabledInputUtils.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -36396,19 +36850,19 @@ System.registerDynamic("npm:react@15.3.0/lib/DisabledInputUtils.js", [], true, f
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/LinkedValueUtils.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/ReactPropTypes.js", "npm:react@15.3.0/lib/ReactPropTypeLocations.js", "npm:react@15.3.0/lib/ReactPropTypesSecret.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/LinkedValueUtils.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactPropTypes.js", "npm:react@15.3.1/lib/ReactPropTypeLocations.js", "npm:react@15.3.1/lib/ReactPropTypesSecret.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var ReactPropTypes = $__require('npm:react@15.3.0/lib/ReactPropTypes.js');
-    var ReactPropTypeLocations = $__require('npm:react@15.3.0/lib/ReactPropTypeLocations.js');
-    var ReactPropTypesSecret = $__require('npm:react@15.3.0/lib/ReactPropTypesSecret.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var ReactPropTypes = $__require('npm:react@15.3.1/lib/ReactPropTypes.js');
+    var ReactPropTypeLocations = $__require('npm:react@15.3.1/lib/ReactPropTypeLocations.js');
+    var ReactPropTypesSecret = $__require('npm:react@15.3.1/lib/ReactPropTypesSecret.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var hasReadOnlyValue = {
       'button': true,
       'checkbox': true,
@@ -36498,21 +36952,21 @@ System.registerDynamic("npm:react@15.3.0/lib/LinkedValueUtils.js", ["npm:react@1
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMTextarea.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/DisabledInputUtils.js", "npm:react@15.3.0/lib/LinkedValueUtils.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactUpdates.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMTextarea.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/DisabledInputUtils.js", "npm:react@15.3.1/lib/LinkedValueUtils.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactUpdates.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js'),
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js'),
         _assign = $__require('npm:object-assign@4.1.0.js');
-    var DisabledInputUtils = $__require('npm:react@15.3.0/lib/DisabledInputUtils.js');
-    var LinkedValueUtils = $__require('npm:react@15.3.0/lib/LinkedValueUtils.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactUpdates = $__require('npm:react@15.3.0/lib/ReactUpdates.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var DisabledInputUtils = $__require('npm:react@15.3.1/lib/DisabledInputUtils.js');
+    var LinkedValueUtils = $__require('npm:react@15.3.1/lib/LinkedValueUtils.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactUpdates = $__require('npm:react@15.3.1/lib/ReactUpdates.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var didWarnValueLink = false;
     var didWarnValDefaultVal = false;
     function forceUpdateIfMounted() {
@@ -36603,30 +37057,32 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMTextarea.js", ["npm:react@1
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactChildReconciler.js", ["npm:react@15.3.0/lib/ReactReconciler.js", "npm:react@15.3.0/lib/instantiateReactComponent.js", "npm:react@15.3.0/lib/KeyEscapeUtils.js", "npm:react@15.3.0/lib/shouldUpdateReactComponent.js", "npm:react@15.3.0/lib/traverseAllChildren.js", "npm:fbjs@0.8.3/lib/warning.js", "npm:react@15.3.0/lib/ReactComponentTreeDevtool.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactChildReconciler.js", ["npm:react@15.3.1/lib/ReactReconciler.js", "npm:react@15.3.1/lib/instantiateReactComponent.js", "npm:react@15.3.1/lib/KeyEscapeUtils.js", "npm:react@15.3.1/lib/shouldUpdateReactComponent.js", "npm:react@15.3.1/lib/traverseAllChildren.js", "npm:fbjs@0.8.4/lib/warning.js", "npm:react@15.3.1/lib/ReactComponentTreeHook.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var ReactReconciler = $__require('npm:react@15.3.0/lib/ReactReconciler.js');
-    var instantiateReactComponent = $__require('npm:react@15.3.0/lib/instantiateReactComponent.js');
-    var KeyEscapeUtils = $__require('npm:react@15.3.0/lib/KeyEscapeUtils.js');
-    var shouldUpdateReactComponent = $__require('npm:react@15.3.0/lib/shouldUpdateReactComponent.js');
-    var traverseAllChildren = $__require('npm:react@15.3.0/lib/traverseAllChildren.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
-    var ReactComponentTreeDevtool;
+    var ReactReconciler = $__require('npm:react@15.3.1/lib/ReactReconciler.js');
+    var instantiateReactComponent = $__require('npm:react@15.3.1/lib/instantiateReactComponent.js');
+    var KeyEscapeUtils = $__require('npm:react@15.3.1/lib/KeyEscapeUtils.js');
+    var shouldUpdateReactComponent = $__require('npm:react@15.3.1/lib/shouldUpdateReactComponent.js');
+    var traverseAllChildren = $__require('npm:react@15.3.1/lib/traverseAllChildren.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
+    var ReactComponentTreeHook;
     if (typeof process !== 'undefined' && process.env && "production" === 'test') {
-      ReactComponentTreeDevtool = $__require('npm:react@15.3.0/lib/ReactComponentTreeDevtool.js');
+      ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
     }
     function instantiateChild(childInstances, child, name, selfDebugID) {
       var keyUnique = childInstances[name] === undefined;
       if ("production" !== 'production') {
-        if (!ReactComponentTreeDevtool) {
-          ReactComponentTreeDevtool = $__require('npm:react@15.3.0/lib/ReactComponentTreeDevtool.js');
+        if (!ReactComponentTreeHook) {
+          ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
         }
-        "production" !== 'production' ? warning(keyUnique, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeDevtool.getStackAddendumByID(selfDebugID)) : void 0;
+        if (!keyUnique) {
+          "production" !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
+        }
       }
       if (child != null && keyUnique) {
         childInstances[name] = instantiateReactComponent(child, true);
@@ -36647,7 +37103,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactChildReconciler.js", ["npm:rea
         }
         return childInstances;
       },
-      updateChildren: function(prevChildren, nextChildren, mountImages, removedNodes, transaction, hostParent, hostContainerInfo, context) {
+      updateChildren: function(prevChildren, nextChildren, mountImages, removedNodes, transaction, hostParent, hostContainerInfo, context, selfDebugID) {
         if (!nextChildren && !prevChildren) {
           return;
         }
@@ -36670,7 +37126,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactChildReconciler.js", ["npm:rea
             }
             var nextChildInstance = instantiateReactComponent(nextElement, true);
             nextChildren[name] = nextChildInstance;
-            var nextChildMountImage = ReactReconciler.mountComponent(nextChildInstance, transaction, hostParent, hostContainerInfo, context);
+            var nextChildMountImage = ReactReconciler.mountComponent(nextChildInstance, transaction, hostParent, hostContainerInfo, context, selfDebugID);
             mountImages.push(nextChildMountImage);
           }
         }
@@ -36696,29 +37152,31 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactChildReconciler.js", ["npm:rea
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/flattenChildren.js", ["npm:react@15.3.0/lib/KeyEscapeUtils.js", "npm:react@15.3.0/lib/traverseAllChildren.js", "npm:fbjs@0.8.3/lib/warning.js", "npm:react@15.3.0/lib/ReactComponentTreeDevtool.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/flattenChildren.js", ["npm:react@15.3.1/lib/KeyEscapeUtils.js", "npm:react@15.3.1/lib/traverseAllChildren.js", "npm:fbjs@0.8.4/lib/warning.js", "npm:react@15.3.1/lib/ReactComponentTreeHook.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var KeyEscapeUtils = $__require('npm:react@15.3.0/lib/KeyEscapeUtils.js');
-    var traverseAllChildren = $__require('npm:react@15.3.0/lib/traverseAllChildren.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
-    var ReactComponentTreeDevtool;
+    var KeyEscapeUtils = $__require('npm:react@15.3.1/lib/KeyEscapeUtils.js');
+    var traverseAllChildren = $__require('npm:react@15.3.1/lib/traverseAllChildren.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
+    var ReactComponentTreeHook;
     if (typeof process !== 'undefined' && process.env && "production" === 'test') {
-      ReactComponentTreeDevtool = $__require('npm:react@15.3.0/lib/ReactComponentTreeDevtool.js');
+      ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
     }
     function flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID) {
       if (traverseContext && typeof traverseContext === 'object') {
         var result = traverseContext;
         var keyUnique = result[name] === undefined;
         if ("production" !== 'production') {
-          if (!ReactComponentTreeDevtool) {
-            ReactComponentTreeDevtool = $__require('npm:react@15.3.0/lib/ReactComponentTreeDevtool.js');
+          if (!ReactComponentTreeHook) {
+            ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
           }
-          "production" !== 'production' ? warning(keyUnique, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeDevtool.getStackAddendumByID(selfDebugID)) : void 0;
+          if (!keyUnique) {
+            "production" !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
+          }
         }
         if (keyUnique && child != null) {
           result[name] = child;
@@ -36744,24 +37202,24 @@ System.registerDynamic("npm:react@15.3.0/lib/flattenChildren.js", ["npm:react@15
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactMultiChild.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/ReactComponentEnvironment.js", "npm:react@15.3.0/lib/ReactInstanceMap.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:react@15.3.0/lib/ReactMultiChildUpdateTypes.js", "npm:react@15.3.0/lib/ReactCurrentOwner.js", "npm:react@15.3.0/lib/ReactReconciler.js", "npm:react@15.3.0/lib/ReactChildReconciler.js", "npm:fbjs@0.8.3/lib/emptyFunction.js", "npm:react@15.3.0/lib/flattenChildren.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactMultiChild.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactComponentEnvironment.js", "npm:react@15.3.1/lib/ReactInstanceMap.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:react@15.3.1/lib/ReactMultiChildUpdateTypes.js", "npm:react@15.3.1/lib/ReactCurrentOwner.js", "npm:react@15.3.1/lib/ReactReconciler.js", "npm:react@15.3.1/lib/ReactChildReconciler.js", "npm:fbjs@0.8.4/lib/emptyFunction.js", "npm:react@15.3.1/lib/flattenChildren.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var ReactComponentEnvironment = $__require('npm:react@15.3.0/lib/ReactComponentEnvironment.js');
-    var ReactInstanceMap = $__require('npm:react@15.3.0/lib/ReactInstanceMap.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var ReactMultiChildUpdateTypes = $__require('npm:react@15.3.0/lib/ReactMultiChildUpdateTypes.js');
-    var ReactCurrentOwner = $__require('npm:react@15.3.0/lib/ReactCurrentOwner.js');
-    var ReactReconciler = $__require('npm:react@15.3.0/lib/ReactReconciler.js');
-    var ReactChildReconciler = $__require('npm:react@15.3.0/lib/ReactChildReconciler.js');
-    var emptyFunction = $__require('npm:fbjs@0.8.3/lib/emptyFunction.js');
-    var flattenChildren = $__require('npm:react@15.3.0/lib/flattenChildren.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var ReactComponentEnvironment = $__require('npm:react@15.3.1/lib/ReactComponentEnvironment.js');
+    var ReactInstanceMap = $__require('npm:react@15.3.1/lib/ReactInstanceMap.js');
+    var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+    var ReactMultiChildUpdateTypes = $__require('npm:react@15.3.1/lib/ReactMultiChildUpdateTypes.js');
+    var ReactCurrentOwner = $__require('npm:react@15.3.1/lib/ReactCurrentOwner.js');
+    var ReactReconciler = $__require('npm:react@15.3.1/lib/ReactReconciler.js');
+    var ReactChildReconciler = $__require('npm:react@15.3.1/lib/ReactChildReconciler.js');
+    var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
+    var flattenChildren = $__require('npm:react@15.3.1/lib/flattenChildren.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     function makeInsertMarkup(markup, afterNode, toIndex) {
       return {
         type: ReactMultiChildUpdateTypes.INSERT_MARKUP,
@@ -36822,7 +37280,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMultiChild.js", ["npm:react@15
     function processQueue(inst, updateQueue) {
       ReactComponentEnvironment.processChildrenUpdates(inst, updateQueue);
     }
-    var setParentForInstrumentation = emptyFunction;
     var setChildrenForInstrumentation = emptyFunction;
     if ("production" !== 'production') {
       var getDebugID = function(inst) {
@@ -36833,11 +37290,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMultiChild.js", ["npm:react@15
           }
         }
         return inst._debugID;
-      };
-      setParentForInstrumentation = function(child) {
-        if (child._debugID !== 0) {
-          ReactInstrumentation.debugTool.onSetParent(child._debugID, getDebugID(this));
-        }
       };
       setChildrenForInstrumentation = function(children) {
         var debugID = getDebugID(this);
@@ -36851,10 +37303,11 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMultiChild.js", ["npm:react@15
     var ReactMultiChild = {Mixin: {
         _reconcilerInstantiateChildren: function(nestedChildren, transaction, context) {
           if ("production" !== 'production') {
+            var selfDebugID = getDebugID(this);
             if (this._currentElement) {
               try {
                 ReactCurrentOwner.current = this._currentElement._owner;
-                return ReactChildReconciler.instantiateChildren(nestedChildren, transaction, context, this._debugID);
+                return ReactChildReconciler.instantiateChildren(nestedChildren, transaction, context, selfDebugID);
               } finally {
                 ReactCurrentOwner.current = null;
               }
@@ -36864,20 +37317,22 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMultiChild.js", ["npm:react@15
         },
         _reconcilerUpdateChildren: function(prevChildren, nextNestedChildrenElements, mountImages, removedNodes, transaction, context) {
           var nextChildren;
+          var selfDebugID = 0;
           if ("production" !== 'production') {
+            selfDebugID = getDebugID(this);
             if (this._currentElement) {
               try {
                 ReactCurrentOwner.current = this._currentElement._owner;
-                nextChildren = flattenChildren(nextNestedChildrenElements, this._debugID);
+                nextChildren = flattenChildren(nextNestedChildrenElements, selfDebugID);
               } finally {
                 ReactCurrentOwner.current = null;
               }
-              ReactChildReconciler.updateChildren(prevChildren, nextChildren, mountImages, removedNodes, transaction, this, this._hostContainerInfo, context);
+              ReactChildReconciler.updateChildren(prevChildren, nextChildren, mountImages, removedNodes, transaction, this, this._hostContainerInfo, context, selfDebugID);
               return nextChildren;
             }
           }
-          nextChildren = flattenChildren(nextNestedChildrenElements);
-          ReactChildReconciler.updateChildren(prevChildren, nextChildren, mountImages, removedNodes, transaction, this, this._hostContainerInfo, context);
+          nextChildren = flattenChildren(nextNestedChildrenElements, selfDebugID);
+          ReactChildReconciler.updateChildren(prevChildren, nextChildren, mountImages, removedNodes, transaction, this, this._hostContainerInfo, context, selfDebugID);
           return nextChildren;
         },
         mountChildren: function(nestedChildren, transaction, context) {
@@ -36888,10 +37343,11 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMultiChild.js", ["npm:react@15
           for (var name in children) {
             if (children.hasOwnProperty(name)) {
               var child = children[name];
+              var selfDebugID = 0;
               if ("production" !== 'production') {
-                setParentForInstrumentation.call(this, child);
+                selfDebugID = getDebugID(this);
               }
-              var mountImage = ReactReconciler.mountComponent(child, transaction, this, this._hostContainerInfo, context);
+              var mountImage = ReactReconciler.mountComponent(child, transaction, this, this._hostContainerInfo, context, selfDebugID);
               child._mountIndex = index++;
               mountImages.push(mountImage);
             }
@@ -37004,7 +37460,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMultiChild.js", ["npm:react@15
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactServerUpdateQueue.js", ["npm:react@15.3.0/lib/ReactUpdateQueue.js", "npm:react@15.3.0/lib/Transaction.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactServerUpdateQueue.js", ["npm:react@15.3.1/lib/ReactUpdateQueue.js", "npm:react@15.3.1/lib/Transaction.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -37016,9 +37472,9 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactServerUpdateQueue.js", ["npm:r
         throw new TypeError("Cannot call a class as a function");
       }
     }
-    var ReactUpdateQueue = $__require('npm:react@15.3.0/lib/ReactUpdateQueue.js');
-    var Transaction = $__require('npm:react@15.3.0/lib/Transaction.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var ReactUpdateQueue = $__require('npm:react@15.3.1/lib/ReactUpdateQueue.js');
+    var Transaction = $__require('npm:react@15.3.1/lib/Transaction.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     function warnNoop(publicInstance, callerName) {
       if ("production" !== 'production') {
         var constructor = publicInstance.constructor;
@@ -37066,7 +37522,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactServerUpdateQueue.js", ["npm:r
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactServerRenderingTransaction.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/PooledClass.js", "npm:react@15.3.0/lib/Transaction.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:react@15.3.0/lib/ReactServerUpdateQueue.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactServerRenderingTransaction.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/PooledClass.js", "npm:react@15.3.1/lib/Transaction.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:react@15.3.1/lib/ReactServerUpdateQueue.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -37074,10 +37530,10 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactServerRenderingTransaction.js"
   (function(process) {
     'use strict';
     var _assign = $__require('npm:object-assign@4.1.0.js');
-    var PooledClass = $__require('npm:react@15.3.0/lib/PooledClass.js');
-    var Transaction = $__require('npm:react@15.3.0/lib/Transaction.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var ReactServerUpdateQueue = $__require('npm:react@15.3.0/lib/ReactServerUpdateQueue.js');
+    var PooledClass = $__require('npm:react@15.3.1/lib/PooledClass.js');
+    var Transaction = $__require('npm:react@15.3.1/lib/Transaction.js');
+    var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+    var ReactServerUpdateQueue = $__require('npm:react@15.3.1/lib/ReactServerUpdateQueue.js');
     var TRANSACTION_WRAPPERS = [];
     if ("production" !== 'production') {
       TRANSACTION_WRAPPERS.push({
@@ -37113,44 +37569,43 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactServerRenderingTransaction.js"
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/AutoFocusUtils.js", "npm:react@15.3.0/lib/CSSPropertyOperations.js", "npm:react@15.3.0/lib/DOMLazyTree.js", "npm:react@15.3.0/lib/DOMNamespaces.js", "npm:react@15.3.0/lib/DOMProperty.js", "npm:react@15.3.0/lib/DOMPropertyOperations.js", "npm:react@15.3.0/lib/EventConstants.js", "npm:react@15.3.0/lib/EventPluginHub.js", "npm:react@15.3.0/lib/EventPluginRegistry.js", "npm:react@15.3.0/lib/ReactBrowserEventEmitter.js", "npm:react@15.3.0/lib/ReactComponentBrowserEnvironment.js", "npm:react@15.3.0/lib/ReactDOMButton.js", "npm:react@15.3.0/lib/ReactDOMComponentFlags.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactDOMInput.js", "npm:react@15.3.0/lib/ReactDOMOption.js", "npm:react@15.3.0/lib/ReactDOMSelect.js", "npm:react@15.3.0/lib/ReactDOMTextarea.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:react@15.3.0/lib/ReactMultiChild.js", "npm:react@15.3.0/lib/ReactServerRenderingTransaction.js", "npm:fbjs@0.8.3/lib/emptyFunction.js", "npm:react@15.3.0/lib/escapeTextContentForBrowser.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:react@15.3.0/lib/isEventSupported.js", "npm:fbjs@0.8.3/lib/keyOf.js", "npm:fbjs@0.8.3/lib/shallowEqual.js", "npm:react@15.3.0/lib/validateDOMNesting.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMComponent.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/AutoFocusUtils.js", "npm:react@15.3.1/lib/CSSPropertyOperations.js", "npm:react@15.3.1/lib/DOMLazyTree.js", "npm:react@15.3.1/lib/DOMNamespaces.js", "npm:react@15.3.1/lib/DOMProperty.js", "npm:react@15.3.1/lib/DOMPropertyOperations.js", "npm:react@15.3.1/lib/EventConstants.js", "npm:react@15.3.1/lib/EventPluginHub.js", "npm:react@15.3.1/lib/EventPluginRegistry.js", "npm:react@15.3.1/lib/ReactBrowserEventEmitter.js", "npm:react@15.3.1/lib/ReactDOMButton.js", "npm:react@15.3.1/lib/ReactDOMComponentFlags.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactDOMInput.js", "npm:react@15.3.1/lib/ReactDOMOption.js", "npm:react@15.3.1/lib/ReactDOMSelect.js", "npm:react@15.3.1/lib/ReactDOMTextarea.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:react@15.3.1/lib/ReactMultiChild.js", "npm:react@15.3.1/lib/ReactServerRenderingTransaction.js", "npm:fbjs@0.8.4/lib/emptyFunction.js", "npm:react@15.3.1/lib/escapeTextContentForBrowser.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:react@15.3.1/lib/isEventSupported.js", "npm:fbjs@0.8.4/lib/keyOf.js", "npm:fbjs@0.8.4/lib/shallowEqual.js", "npm:react@15.3.1/lib/validateDOMNesting.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js'),
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js'),
         _assign = $__require('npm:object-assign@4.1.0.js');
-    var AutoFocusUtils = $__require('npm:react@15.3.0/lib/AutoFocusUtils.js');
-    var CSSPropertyOperations = $__require('npm:react@15.3.0/lib/CSSPropertyOperations.js');
-    var DOMLazyTree = $__require('npm:react@15.3.0/lib/DOMLazyTree.js');
-    var DOMNamespaces = $__require('npm:react@15.3.0/lib/DOMNamespaces.js');
-    var DOMProperty = $__require('npm:react@15.3.0/lib/DOMProperty.js');
-    var DOMPropertyOperations = $__require('npm:react@15.3.0/lib/DOMPropertyOperations.js');
-    var EventConstants = $__require('npm:react@15.3.0/lib/EventConstants.js');
-    var EventPluginHub = $__require('npm:react@15.3.0/lib/EventPluginHub.js');
-    var EventPluginRegistry = $__require('npm:react@15.3.0/lib/EventPluginRegistry.js');
-    var ReactBrowserEventEmitter = $__require('npm:react@15.3.0/lib/ReactBrowserEventEmitter.js');
-    var ReactComponentBrowserEnvironment = $__require('npm:react@15.3.0/lib/ReactComponentBrowserEnvironment.js');
-    var ReactDOMButton = $__require('npm:react@15.3.0/lib/ReactDOMButton.js');
-    var ReactDOMComponentFlags = $__require('npm:react@15.3.0/lib/ReactDOMComponentFlags.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactDOMInput = $__require('npm:react@15.3.0/lib/ReactDOMInput.js');
-    var ReactDOMOption = $__require('npm:react@15.3.0/lib/ReactDOMOption.js');
-    var ReactDOMSelect = $__require('npm:react@15.3.0/lib/ReactDOMSelect.js');
-    var ReactDOMTextarea = $__require('npm:react@15.3.0/lib/ReactDOMTextarea.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var ReactMultiChild = $__require('npm:react@15.3.0/lib/ReactMultiChild.js');
-    var ReactServerRenderingTransaction = $__require('npm:react@15.3.0/lib/ReactServerRenderingTransaction.js');
-    var emptyFunction = $__require('npm:fbjs@0.8.3/lib/emptyFunction.js');
-    var escapeTextContentForBrowser = $__require('npm:react@15.3.0/lib/escapeTextContentForBrowser.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var isEventSupported = $__require('npm:react@15.3.0/lib/isEventSupported.js');
-    var keyOf = $__require('npm:fbjs@0.8.3/lib/keyOf.js');
-    var shallowEqual = $__require('npm:fbjs@0.8.3/lib/shallowEqual.js');
-    var validateDOMNesting = $__require('npm:react@15.3.0/lib/validateDOMNesting.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var AutoFocusUtils = $__require('npm:react@15.3.1/lib/AutoFocusUtils.js');
+    var CSSPropertyOperations = $__require('npm:react@15.3.1/lib/CSSPropertyOperations.js');
+    var DOMLazyTree = $__require('npm:react@15.3.1/lib/DOMLazyTree.js');
+    var DOMNamespaces = $__require('npm:react@15.3.1/lib/DOMNamespaces.js');
+    var DOMProperty = $__require('npm:react@15.3.1/lib/DOMProperty.js');
+    var DOMPropertyOperations = $__require('npm:react@15.3.1/lib/DOMPropertyOperations.js');
+    var EventConstants = $__require('npm:react@15.3.1/lib/EventConstants.js');
+    var EventPluginHub = $__require('npm:react@15.3.1/lib/EventPluginHub.js');
+    var EventPluginRegistry = $__require('npm:react@15.3.1/lib/EventPluginRegistry.js');
+    var ReactBrowserEventEmitter = $__require('npm:react@15.3.1/lib/ReactBrowserEventEmitter.js');
+    var ReactDOMButton = $__require('npm:react@15.3.1/lib/ReactDOMButton.js');
+    var ReactDOMComponentFlags = $__require('npm:react@15.3.1/lib/ReactDOMComponentFlags.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactDOMInput = $__require('npm:react@15.3.1/lib/ReactDOMInput.js');
+    var ReactDOMOption = $__require('npm:react@15.3.1/lib/ReactDOMOption.js');
+    var ReactDOMSelect = $__require('npm:react@15.3.1/lib/ReactDOMSelect.js');
+    var ReactDOMTextarea = $__require('npm:react@15.3.1/lib/ReactDOMTextarea.js');
+    var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+    var ReactMultiChild = $__require('npm:react@15.3.1/lib/ReactMultiChild.js');
+    var ReactServerRenderingTransaction = $__require('npm:react@15.3.1/lib/ReactServerRenderingTransaction.js');
+    var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
+    var escapeTextContentForBrowser = $__require('npm:react@15.3.1/lib/escapeTextContentForBrowser.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var isEventSupported = $__require('npm:react@15.3.1/lib/isEventSupported.js');
+    var keyOf = $__require('npm:fbjs@0.8.4/lib/keyOf.js');
+    var shallowEqual = $__require('npm:fbjs@0.8.4/lib/shallowEqual.js');
+    var validateDOMNesting = $__require('npm:react@15.3.1/lib/validateDOMNesting.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var Flags = ReactDOMComponentFlags;
     var deleteListener = EventPluginHub.deleteListener;
     var getNode = ReactDOMComponentTree.getNodeFromInstance;
@@ -37278,7 +37733,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@
       setContentChildForInstrumentation = function(content) {
         var hasExistingContent = this._contentDebugID != null;
         var debugID = this._debugID;
-        var contentDebugID = debugID + '#text';
+        var contentDebugID = -debugID;
         if (content == null) {
           if (hasExistingContent) {
             ReactInstrumentation.debugTool.onUnmountComponent(this._contentDebugID);
@@ -37287,15 +37742,11 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@
           return;
         }
         this._contentDebugID = contentDebugID;
-        var text = '' + content;
-        ReactInstrumentation.debugTool.onSetDisplayName(contentDebugID, '#text');
-        ReactInstrumentation.debugTool.onSetParent(contentDebugID, debugID);
-        ReactInstrumentation.debugTool.onSetText(contentDebugID, text);
         if (hasExistingContent) {
           ReactInstrumentation.debugTool.onBeforeUpdateComponent(contentDebugID, content);
           ReactInstrumentation.debugTool.onUpdateComponent(contentDebugID);
         } else {
-          ReactInstrumentation.debugTool.onBeforeMountComponent(contentDebugID, content);
+          ReactInstrumentation.debugTool.onBeforeMountComponent(contentDebugID, content, debugID);
           ReactInstrumentation.debugTool.onMountComponent(contentDebugID);
           ReactInstrumentation.debugTool.onSetChildren(debugID, [contentDebugID]);
         }
@@ -37411,8 +37862,8 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@
       this._previousStyleCopy = null;
       this._hostNode = null;
       this._hostParent = null;
-      this._rootNodeID = null;
-      this._domID = null;
+      this._rootNodeID = 0;
+      this._domID = 0;
       this._hostContainerInfo = null;
       this._wrapperState = null;
       this._topLevelWrapper = null;
@@ -37425,7 +37876,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@
     ReactDOMComponent.displayName = 'ReactDOMComponent';
     ReactDOMComponent.Mixin = {
       mountComponent: function(transaction, hostParent, hostContainerInfo, context) {
-        var _this = this;
         this._rootNodeID = globalIdCounter++;
         this._domID = hostContainerInfo._idCounter++;
         this._hostParent = hostParent;
@@ -37562,14 +38012,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@
             transaction.getReactMountReady().enqueue(optionPostMount, this);
             break;
         }
-        if ("production" !== 'production') {
-          if (this._debugID) {
-            var callback = function() {
-              return ReactInstrumentation.debugTool.onComponentHasMounted(_this._debugID);
-            };
-            transaction.getReactMountReady().enqueue(callback, this);
-          }
-        }
         return mountImage;
       },
       _createOpenTagMarkupAndPutListeners: function(transaction, props) {
@@ -37672,7 +38114,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@
         this.updateComponent(transaction, prevElement, nextElement, context);
       },
       updateComponent: function(transaction, prevElement, nextElement, context) {
-        var _this2 = this;
         var lastProps = prevElement.props;
         var nextProps = this._currentElement.props;
         switch (this._tag) {
@@ -37681,7 +38122,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@
             nextProps = ReactDOMButton.getHostProps(this, nextProps);
             break;
           case 'input':
-            ReactDOMInput.updateWrapper(this);
             lastProps = ReactDOMInput.getHostProps(this, lastProps);
             nextProps = ReactDOMInput.getHostProps(this, nextProps);
             break;
@@ -37694,7 +38134,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@
             nextProps = ReactDOMSelect.getHostProps(this, nextProps);
             break;
           case 'textarea':
-            ReactDOMTextarea.updateWrapper(this);
             lastProps = ReactDOMTextarea.getHostProps(this, lastProps);
             nextProps = ReactDOMTextarea.getHostProps(this, nextProps);
             break;
@@ -37702,16 +38141,16 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@
         assertValidProps(this, nextProps);
         this._updateDOMProperties(lastProps, nextProps, transaction);
         this._updateDOMChildren(lastProps, nextProps, transaction, context);
-        if (this._tag === 'select') {
-          transaction.getReactMountReady().enqueue(postUpdateSelectWrapper, this);
-        }
-        if ("production" !== 'production') {
-          if (this._debugID) {
-            var callback = function() {
-              return ReactInstrumentation.debugTool.onComponentHasUpdated(_this2._debugID);
-            };
-            transaction.getReactMountReady().enqueue(callback, this);
-          }
+        switch (this._tag) {
+          case 'input':
+            ReactDOMInput.updateWrapper(this);
+            break;
+          case 'textarea':
+            ReactDOMTextarea.updateWrapper(this);
+            break;
+          case 'select':
+            transaction.getReactMountReady().enqueue(postUpdateSelectWrapper, this);
+            break;
         }
       },
       _updateDOMProperties: function(lastProps, nextProps, transaction) {
@@ -37865,9 +38304,8 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@
         this.unmountChildren(safely);
         ReactDOMComponentTree.uncacheNode(this);
         EventPluginHub.deleteAllListeners(this);
-        ReactComponentBrowserEnvironment.unmountIDFromEnvironment(this._rootNodeID);
-        this._rootNodeID = null;
-        this._domID = null;
+        this._rootNodeID = 0;
+        this._domID = 0;
         this._wrapperState = null;
         if ("production" !== 'production') {
           setContentChildForInstrumentation.call(this, null);
@@ -37883,21 +38321,21 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponent.js", ["npm:react@
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMEmptyComponent.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/DOMLazyTree.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMEmptyComponent.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/DOMLazyTree.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   var _assign = $__require('npm:object-assign@4.1.0.js');
-  var DOMLazyTree = $__require('npm:react@15.3.0/lib/DOMLazyTree.js');
-  var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
+  var DOMLazyTree = $__require('npm:react@15.3.1/lib/DOMLazyTree.js');
+  var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
   var ReactDOMEmptyComponent = function(instantiate) {
     this._currentElement = null;
     this._hostNode = null;
     this._hostParent = null;
     this._hostContainerInfo = null;
-    this._domID = null;
+    this._domID = 0;
   };
   _assign(ReactDOMEmptyComponent.prototype, {
     mountComponent: function(transaction, hostParent, hostContainerInfo, context) {
@@ -37930,15 +38368,15 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMEmptyComponent.js", ["npm:o
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMTreeTraversal.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMTreeTraversal.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     function getLowestCommonAncestor(instA, instB) {
       !('_hostNode' in instA) ? "production" !== 'production' ? invariant(false, 'getNodeFromInstance: Invalid argument.') : _prodInvariant('33') : void 0;
       !('_hostNode' in instB) ? "production" !== 'production' ? invariant(false, 'getNodeFromInstance: Invalid argument.') : _prodInvariant('33') : void 0;
@@ -38028,14 +38466,14 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMTreeTraversal.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/createArrayFromMixed.js", ["npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/createArrayFromMixed.js", ["npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     function toArray(obj) {
       var length = obj.length;
       !(!Array.isArray(obj) && (typeof obj === 'object' || typeof obj === 'function')) ? "production" !== 'production' ? invariant(false, 'toArray: Array-like object expected') : invariant(false) : void 0;
@@ -38070,15 +38508,15 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/createArrayFromMixed.js", ["npm:fbjs@
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/getMarkupWrap.js", ["npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/getMarkupWrap.js", ["npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var dummyNode = ExecutionEnvironment.canUseDOM ? document.createElement('div') : null;
     var shouldWrap = {};
     var selectWrap = [1, '<select multiple="true">', '</select>'];
@@ -38127,17 +38565,17 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/getMarkupWrap.js", ["npm:fbjs@0.8.3/l
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/createNodesFromMarkup.js", ["npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:fbjs@0.8.3/lib/createArrayFromMixed.js", "npm:fbjs@0.8.3/lib/getMarkupWrap.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/createNodesFromMarkup.js", ["npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:fbjs@0.8.4/lib/createArrayFromMixed.js", "npm:fbjs@0.8.4/lib/getMarkupWrap.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-    var createArrayFromMixed = $__require('npm:fbjs@0.8.3/lib/createArrayFromMixed.js');
-    var getMarkupWrap = $__require('npm:fbjs@0.8.3/lib/getMarkupWrap.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+    var createArrayFromMixed = $__require('npm:fbjs@0.8.4/lib/createArrayFromMixed.js');
+    var getMarkupWrap = $__require('npm:fbjs@0.8.4/lib/getMarkupWrap.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var dummyNode = ExecutionEnvironment.canUseDOM ? document.createElement('div') : null;
     var nodeNamePattern = /^\s*<(\w+)/;
     function getNodeName(markup) {
@@ -38174,19 +38612,19 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/createNodesFromMarkup.js", ["npm:fbjs
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/Danger.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/DOMLazyTree.js", "npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:fbjs@0.8.3/lib/createNodesFromMarkup.js", "npm:fbjs@0.8.3/lib/emptyFunction.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/Danger.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/DOMLazyTree.js", "npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:fbjs@0.8.4/lib/createNodesFromMarkup.js", "npm:fbjs@0.8.4/lib/emptyFunction.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var DOMLazyTree = $__require('npm:react@15.3.0/lib/DOMLazyTree.js');
-    var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-    var createNodesFromMarkup = $__require('npm:fbjs@0.8.3/lib/createNodesFromMarkup.js');
-    var emptyFunction = $__require('npm:fbjs@0.8.3/lib/emptyFunction.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var DOMLazyTree = $__require('npm:react@15.3.1/lib/DOMLazyTree.js');
+    var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+    var createNodesFromMarkup = $__require('npm:fbjs@0.8.4/lib/createNodesFromMarkup.js');
+    var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var Danger = {dangerouslyReplaceNodeWithMarkup: function(oldChild, markup) {
         !ExecutionEnvironment.canUseDOM ? "production" !== 'production' ? invariant(false, 'dangerouslyReplaceNodeWithMarkup(...): Cannot render markup in a worker thread. Make sure `window` and `document` are available globally before requiring React when unit testing or use ReactDOMServer.renderToString() for server rendering.') : _prodInvariant('56') : void 0;
         !markup ? "production" !== 'production' ? invariant(false, 'dangerouslyReplaceNodeWithMarkup(...): Missing markup.') : _prodInvariant('57') : void 0;
@@ -38203,13 +38641,13 @@ System.registerDynamic("npm:react@15.3.0/lib/Danger.js", ["npm:react@15.3.0/lib/
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactMultiChildUpdateTypes.js", ["npm:fbjs@0.8.3/lib/keyMirror.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactMultiChildUpdateTypes.js", ["npm:fbjs@0.8.4/lib/keyMirror.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var keyMirror = $__require('npm:fbjs@0.8.3/lib/keyMirror.js');
+  var keyMirror = $__require('npm:fbjs@0.8.4/lib/keyMirror.js');
   var ReactMultiChildUpdateTypes = keyMirror({
     INSERT_MARKUP: null,
     MOVE_EXISTING: null,
@@ -38221,21 +38659,21 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMultiChildUpdateTypes.js", ["n
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/DOMChildrenOperations.js", ["npm:react@15.3.0/lib/DOMLazyTree.js", "npm:react@15.3.0/lib/Danger.js", "npm:react@15.3.0/lib/ReactMultiChildUpdateTypes.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:react@15.3.0/lib/createMicrosoftUnsafeLocalFunction.js", "npm:react@15.3.0/lib/setInnerHTML.js", "npm:react@15.3.0/lib/setTextContent.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/DOMChildrenOperations.js", ["npm:react@15.3.1/lib/DOMLazyTree.js", "npm:react@15.3.1/lib/Danger.js", "npm:react@15.3.1/lib/ReactMultiChildUpdateTypes.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:react@15.3.1/lib/createMicrosoftUnsafeLocalFunction.js", "npm:react@15.3.1/lib/setInnerHTML.js", "npm:react@15.3.1/lib/setTextContent.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var DOMLazyTree = $__require('npm:react@15.3.0/lib/DOMLazyTree.js');
-    var Danger = $__require('npm:react@15.3.0/lib/Danger.js');
-    var ReactMultiChildUpdateTypes = $__require('npm:react@15.3.0/lib/ReactMultiChildUpdateTypes.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var createMicrosoftUnsafeLocalFunction = $__require('npm:react@15.3.0/lib/createMicrosoftUnsafeLocalFunction.js');
-    var setInnerHTML = $__require('npm:react@15.3.0/lib/setInnerHTML.js');
-    var setTextContent = $__require('npm:react@15.3.0/lib/setTextContent.js');
+    var DOMLazyTree = $__require('npm:react@15.3.1/lib/DOMLazyTree.js');
+    var Danger = $__require('npm:react@15.3.1/lib/Danger.js');
+    var ReactMultiChildUpdateTypes = $__require('npm:react@15.3.1/lib/ReactMultiChildUpdateTypes.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+    var createMicrosoftUnsafeLocalFunction = $__require('npm:react@15.3.1/lib/createMicrosoftUnsafeLocalFunction.js');
+    var setInnerHTML = $__require('npm:react@15.3.1/lib/setInnerHTML.js');
+    var setTextContent = $__require('npm:react@15.3.1/lib/setTextContent.js');
     function getNodeAfter(parentNode, node) {
       if (Array.isArray(node)) {
         node = node[1];
@@ -38373,28 +38811,27 @@ System.registerDynamic("npm:react@15.3.0/lib/DOMChildrenOperations.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMTextComponent.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/DOMChildrenOperations.js", "npm:react@15.3.0/lib/DOMLazyTree.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:react@15.3.0/lib/escapeTextContentForBrowser.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:react@15.3.0/lib/validateDOMNesting.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMTextComponent.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/DOMChildrenOperations.js", "npm:react@15.3.1/lib/DOMLazyTree.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/escapeTextContentForBrowser.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:react@15.3.1/lib/validateDOMNesting.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js'),
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js'),
         _assign = $__require('npm:object-assign@4.1.0.js');
-    var DOMChildrenOperations = $__require('npm:react@15.3.0/lib/DOMChildrenOperations.js');
-    var DOMLazyTree = $__require('npm:react@15.3.0/lib/DOMLazyTree.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var escapeTextContentForBrowser = $__require('npm:react@15.3.0/lib/escapeTextContentForBrowser.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var validateDOMNesting = $__require('npm:react@15.3.0/lib/validateDOMNesting.js');
+    var DOMChildrenOperations = $__require('npm:react@15.3.1/lib/DOMChildrenOperations.js');
+    var DOMLazyTree = $__require('npm:react@15.3.1/lib/DOMLazyTree.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var escapeTextContentForBrowser = $__require('npm:react@15.3.1/lib/escapeTextContentForBrowser.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var validateDOMNesting = $__require('npm:react@15.3.1/lib/validateDOMNesting.js');
     var ReactDOMTextComponent = function(text) {
       this._currentElement = text;
       this._stringText = '' + text;
       this._hostNode = null;
       this._hostParent = null;
-      this._domID = null;
+      this._domID = 0;
       this._mountIndex = 0;
       this._closingComment = null;
       this._commentNodes = null;
@@ -38402,7 +38839,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMTextComponent.js", ["npm:re
     _assign(ReactDOMTextComponent.prototype, {
       mountComponent: function(transaction, hostParent, hostContainerInfo, context) {
         if ("production" !== 'production') {
-          ReactInstrumentation.debugTool.onSetText(this._debugID, this._stringText);
           var parentInfo;
           if (hostParent != null) {
             parentInfo = hostParent._ancestorInfo;
@@ -38447,9 +38883,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMTextComponent.js", ["npm:re
             this._stringText = nextStringText;
             var commentNodes = this.getHostNode();
             DOMChildrenOperations.replaceDelimitedText(commentNodes[0], commentNodes[1], nextStringText);
-            if ("production" !== 'production') {
-              ReactInstrumentation.debugTool.onSetText(this._debugID, nextStringText);
-            }
           }
         }
       },
@@ -38485,16 +38918,16 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMTextComponent.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDefaultBatchingStrategy.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/ReactUpdates.js", "npm:react@15.3.0/lib/Transaction.js", "npm:fbjs@0.8.3/lib/emptyFunction.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDefaultBatchingStrategy.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/ReactUpdates.js", "npm:react@15.3.1/lib/Transaction.js", "npm:fbjs@0.8.4/lib/emptyFunction.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   var _assign = $__require('npm:object-assign@4.1.0.js');
-  var ReactUpdates = $__require('npm:react@15.3.0/lib/ReactUpdates.js');
-  var Transaction = $__require('npm:react@15.3.0/lib/Transaction.js');
-  var emptyFunction = $__require('npm:fbjs@0.8.3/lib/emptyFunction.js');
+  var ReactUpdates = $__require('npm:react@15.3.1/lib/ReactUpdates.js');
+  var Transaction = $__require('npm:react@15.3.1/lib/Transaction.js');
+  var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
   var RESET_BATCHED_UPDATES = {
     initialize: emptyFunction,
     close: function() {
@@ -38529,7 +38962,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDefaultBatchingStrategy.js", [
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/getUnboundedScrollPosition.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/getUnboundedScrollPosition.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -38551,7 +38984,7 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/getUnboundedScrollPosition.js", [], t
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactEventListener.js", ["npm:object-assign@4.1.0.js", "npm:fbjs@0.8.3/lib/EventListener.js", "npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:react@15.3.0/lib/PooledClass.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactUpdates.js", "npm:react@15.3.0/lib/getEventTarget.js", "npm:fbjs@0.8.3/lib/getUnboundedScrollPosition.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactEventListener.js", ["npm:object-assign@4.1.0.js", "npm:fbjs@0.8.4/lib/EventListener.js", "npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:react@15.3.1/lib/PooledClass.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactUpdates.js", "npm:react@15.3.1/lib/getEventTarget.js", "npm:fbjs@0.8.4/lib/getUnboundedScrollPosition.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -38559,13 +38992,13 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactEventListener.js", ["npm:objec
   (function(process) {
     'use strict';
     var _assign = $__require('npm:object-assign@4.1.0.js');
-    var EventListener = $__require('npm:fbjs@0.8.3/lib/EventListener.js');
-    var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-    var PooledClass = $__require('npm:react@15.3.0/lib/PooledClass.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactUpdates = $__require('npm:react@15.3.0/lib/ReactUpdates.js');
-    var getEventTarget = $__require('npm:react@15.3.0/lib/getEventTarget.js');
-    var getUnboundedScrollPosition = $__require('npm:fbjs@0.8.3/lib/getUnboundedScrollPosition.js');
+    var EventListener = $__require('npm:fbjs@0.8.4/lib/EventListener.js');
+    var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+    var PooledClass = $__require('npm:react@15.3.1/lib/PooledClass.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactUpdates = $__require('npm:react@15.3.1/lib/ReactUpdates.js');
+    var getEventTarget = $__require('npm:react@15.3.1/lib/getEventTarget.js');
+    var getUnboundedScrollPosition = $__require('npm:fbjs@0.8.4/lib/getUnboundedScrollPosition.js');
     function findParent(inst) {
       while (inst._hostParent) {
         inst = inst._hostParent;
@@ -38650,21 +39083,21 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactEventListener.js", ["npm:objec
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactInjection.js", ["npm:react@15.3.0/lib/DOMProperty.js", "npm:react@15.3.0/lib/EventPluginHub.js", "npm:react@15.3.0/lib/EventPluginUtils.js", "npm:react@15.3.0/lib/ReactComponentEnvironment.js", "npm:react@15.3.0/lib/ReactClass.js", "npm:react@15.3.0/lib/ReactEmptyComponent.js", "npm:react@15.3.0/lib/ReactBrowserEventEmitter.js", "npm:react@15.3.0/lib/ReactHostComponent.js", "npm:react@15.3.0/lib/ReactUpdates.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactInjection.js", ["npm:react@15.3.1/lib/DOMProperty.js", "npm:react@15.3.1/lib/EventPluginHub.js", "npm:react@15.3.1/lib/EventPluginUtils.js", "npm:react@15.3.1/lib/ReactComponentEnvironment.js", "npm:react@15.3.1/lib/ReactClass.js", "npm:react@15.3.1/lib/ReactEmptyComponent.js", "npm:react@15.3.1/lib/ReactBrowserEventEmitter.js", "npm:react@15.3.1/lib/ReactHostComponent.js", "npm:react@15.3.1/lib/ReactUpdates.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var DOMProperty = $__require('npm:react@15.3.0/lib/DOMProperty.js');
-  var EventPluginHub = $__require('npm:react@15.3.0/lib/EventPluginHub.js');
-  var EventPluginUtils = $__require('npm:react@15.3.0/lib/EventPluginUtils.js');
-  var ReactComponentEnvironment = $__require('npm:react@15.3.0/lib/ReactComponentEnvironment.js');
-  var ReactClass = $__require('npm:react@15.3.0/lib/ReactClass.js');
-  var ReactEmptyComponent = $__require('npm:react@15.3.0/lib/ReactEmptyComponent.js');
-  var ReactBrowserEventEmitter = $__require('npm:react@15.3.0/lib/ReactBrowserEventEmitter.js');
-  var ReactHostComponent = $__require('npm:react@15.3.0/lib/ReactHostComponent.js');
-  var ReactUpdates = $__require('npm:react@15.3.0/lib/ReactUpdates.js');
+  var DOMProperty = $__require('npm:react@15.3.1/lib/DOMProperty.js');
+  var EventPluginHub = $__require('npm:react@15.3.1/lib/EventPluginHub.js');
+  var EventPluginUtils = $__require('npm:react@15.3.1/lib/EventPluginUtils.js');
+  var ReactComponentEnvironment = $__require('npm:react@15.3.1/lib/ReactComponentEnvironment.js');
+  var ReactClass = $__require('npm:react@15.3.1/lib/ReactClass.js');
+  var ReactEmptyComponent = $__require('npm:react@15.3.1/lib/ReactEmptyComponent.js');
+  var ReactBrowserEventEmitter = $__require('npm:react@15.3.1/lib/ReactBrowserEventEmitter.js');
+  var ReactHostComponent = $__require('npm:react@15.3.1/lib/ReactHostComponent.js');
+  var ReactUpdates = $__require('npm:react@15.3.1/lib/ReactUpdates.js');
   var ReactInjection = {
     Component: ReactComponentEnvironment.injection,
     Class: ReactClass.injection,
@@ -38680,7 +39113,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactInjection.js", ["npm:react@15.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactReconcileTransaction.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/CallbackQueue.js", "npm:react@15.3.0/lib/PooledClass.js", "npm:react@15.3.0/lib/ReactBrowserEventEmitter.js", "npm:react@15.3.0/lib/ReactInputSelection.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:react@15.3.0/lib/Transaction.js", "npm:react@15.3.0/lib/ReactUpdateQueue.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactReconcileTransaction.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/CallbackQueue.js", "npm:react@15.3.1/lib/PooledClass.js", "npm:react@15.3.1/lib/ReactBrowserEventEmitter.js", "npm:react@15.3.1/lib/ReactInputSelection.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:react@15.3.1/lib/Transaction.js", "npm:react@15.3.1/lib/ReactUpdateQueue.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -38688,13 +39121,13 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactReconcileTransaction.js", ["np
   (function(process) {
     'use strict';
     var _assign = $__require('npm:object-assign@4.1.0.js');
-    var CallbackQueue = $__require('npm:react@15.3.0/lib/CallbackQueue.js');
-    var PooledClass = $__require('npm:react@15.3.0/lib/PooledClass.js');
-    var ReactBrowserEventEmitter = $__require('npm:react@15.3.0/lib/ReactBrowserEventEmitter.js');
-    var ReactInputSelection = $__require('npm:react@15.3.0/lib/ReactInputSelection.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var Transaction = $__require('npm:react@15.3.0/lib/Transaction.js');
-    var ReactUpdateQueue = $__require('npm:react@15.3.0/lib/ReactUpdateQueue.js');
+    var CallbackQueue = $__require('npm:react@15.3.1/lib/CallbackQueue.js');
+    var PooledClass = $__require('npm:react@15.3.1/lib/PooledClass.js');
+    var ReactBrowserEventEmitter = $__require('npm:react@15.3.1/lib/ReactBrowserEventEmitter.js');
+    var ReactInputSelection = $__require('npm:react@15.3.1/lib/ReactInputSelection.js');
+    var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+    var Transaction = $__require('npm:react@15.3.1/lib/Transaction.js');
+    var ReactUpdateQueue = $__require('npm:react@15.3.1/lib/ReactUpdateQueue.js');
     var SELECTION_RESTORATION = {
       initialize: ReactInputSelection.getSelectionInformation,
       close: ReactInputSelection.restoreSelection
@@ -38758,7 +39191,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactReconcileTransaction.js", ["np
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SVGDOMPropertyConfig.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SVGDOMPropertyConfig.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -39035,7 +39468,7 @@ System.registerDynamic("npm:react@15.3.0/lib/SVGDOMPropertyConfig.js", [], true,
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/getNodeForCharacterOffset.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/getNodeForCharacterOffset.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -39077,13 +39510,13 @@ System.registerDynamic("npm:react@15.3.0/lib/getNodeForCharacterOffset.js", [], 
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/getTextContentAccessor.js", ["npm:fbjs@0.8.3/lib/ExecutionEnvironment.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/getTextContentAccessor.js", ["npm:fbjs@0.8.4/lib/ExecutionEnvironment.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
+  var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
   var contentKey = null;
   function getTextContentAccessor() {
     if (!contentKey && ExecutionEnvironment.canUseDOM) {
@@ -39095,15 +39528,15 @@ System.registerDynamic("npm:react@15.3.0/lib/getTextContentAccessor.js", ["npm:f
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMSelection.js", ["npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:react@15.3.0/lib/getNodeForCharacterOffset.js", "npm:react@15.3.0/lib/getTextContentAccessor.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMSelection.js", ["npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:react@15.3.1/lib/getNodeForCharacterOffset.js", "npm:react@15.3.1/lib/getTextContentAccessor.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-  var getNodeForCharacterOffset = $__require('npm:react@15.3.0/lib/getNodeForCharacterOffset.js');
-  var getTextContentAccessor = $__require('npm:react@15.3.0/lib/getTextContentAccessor.js');
+  var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+  var getNodeForCharacterOffset = $__require('npm:react@15.3.1/lib/getNodeForCharacterOffset.js');
+  var getTextContentAccessor = $__require('npm:react@15.3.1/lib/getTextContentAccessor.js');
   function isCollapsed(anchorNode, anchorOffset, focusNode, focusOffset) {
     return anchorNode === focusNode && anchorOffset === focusOffset;
   }
@@ -39211,7 +39644,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMSelection.js", ["npm:fbjs@0
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/isNode.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/isNode.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -39224,13 +39657,13 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/isNode.js", [], true, function($__req
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/isTextNode.js", ["npm:fbjs@0.8.3/lib/isNode.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/isTextNode.js", ["npm:fbjs@0.8.4/lib/isNode.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var isNode = $__require('npm:fbjs@0.8.3/lib/isNode.js');
+  var isNode = $__require('npm:fbjs@0.8.4/lib/isNode.js');
   function isTextNode(object) {
     return isNode(object) && object.nodeType == 3;
   }
@@ -39238,13 +39671,13 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/isTextNode.js", ["npm:fbjs@0.8.3/lib/
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/containsNode.js", ["npm:fbjs@0.8.3/lib/isTextNode.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/containsNode.js", ["npm:fbjs@0.8.4/lib/isTextNode.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var isTextNode = $__require('npm:fbjs@0.8.3/lib/isTextNode.js');
+  var isTextNode = $__require('npm:fbjs@0.8.4/lib/isTextNode.js');
   function containsNode(outerNode, innerNode) {
     if (!outerNode || !innerNode) {
       return false;
@@ -39266,7 +39699,7 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/containsNode.js", ["npm:fbjs@0.8.3/li
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/focusNode.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/focusNode.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -39281,16 +39714,16 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/focusNode.js", [], true, function($__
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactInputSelection.js", ["npm:react@15.3.0/lib/ReactDOMSelection.js", "npm:fbjs@0.8.3/lib/containsNode.js", "npm:fbjs@0.8.3/lib/focusNode.js", "npm:fbjs@0.8.3/lib/getActiveElement.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactInputSelection.js", ["npm:react@15.3.1/lib/ReactDOMSelection.js", "npm:fbjs@0.8.4/lib/containsNode.js", "npm:fbjs@0.8.4/lib/focusNode.js", "npm:fbjs@0.8.4/lib/getActiveElement.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var ReactDOMSelection = $__require('npm:react@15.3.0/lib/ReactDOMSelection.js');
-  var containsNode = $__require('npm:fbjs@0.8.3/lib/containsNode.js');
-  var focusNode = $__require('npm:fbjs@0.8.3/lib/focusNode.js');
-  var getActiveElement = $__require('npm:fbjs@0.8.3/lib/getActiveElement.js');
+  var ReactDOMSelection = $__require('npm:react@15.3.1/lib/ReactDOMSelection.js');
+  var containsNode = $__require('npm:fbjs@0.8.4/lib/containsNode.js');
+  var focusNode = $__require('npm:fbjs@0.8.4/lib/focusNode.js');
+  var getActiveElement = $__require('npm:fbjs@0.8.4/lib/getActiveElement.js');
   function isInDocument(node) {
     return containsNode(document.documentElement, node);
   }
@@ -39364,7 +39797,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactInputSelection.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/getActiveElement.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/getActiveElement.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -39384,7 +39817,7 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/getActiveElement.js", [], true, funct
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/isTextInputElement.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/isTextInputElement.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -39421,22 +39854,22 @@ System.registerDynamic("npm:react@15.3.0/lib/isTextInputElement.js", [], true, f
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SelectEventPlugin.js", ["npm:react@15.3.0/lib/EventConstants.js", "npm:react@15.3.0/lib/EventPropagators.js", "npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactInputSelection.js", "npm:react@15.3.0/lib/SyntheticEvent.js", "npm:fbjs@0.8.3/lib/getActiveElement.js", "npm:react@15.3.0/lib/isTextInputElement.js", "npm:fbjs@0.8.3/lib/keyOf.js", "npm:fbjs@0.8.3/lib/shallowEqual.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SelectEventPlugin.js", ["npm:react@15.3.1/lib/EventConstants.js", "npm:react@15.3.1/lib/EventPropagators.js", "npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactInputSelection.js", "npm:react@15.3.1/lib/SyntheticEvent.js", "npm:fbjs@0.8.4/lib/getActiveElement.js", "npm:react@15.3.1/lib/isTextInputElement.js", "npm:fbjs@0.8.4/lib/keyOf.js", "npm:fbjs@0.8.4/lib/shallowEqual.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var EventConstants = $__require('npm:react@15.3.0/lib/EventConstants.js');
-  var EventPropagators = $__require('npm:react@15.3.0/lib/EventPropagators.js');
-  var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-  var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-  var ReactInputSelection = $__require('npm:react@15.3.0/lib/ReactInputSelection.js');
-  var SyntheticEvent = $__require('npm:react@15.3.0/lib/SyntheticEvent.js');
-  var getActiveElement = $__require('npm:fbjs@0.8.3/lib/getActiveElement.js');
-  var isTextInputElement = $__require('npm:react@15.3.0/lib/isTextInputElement.js');
-  var keyOf = $__require('npm:fbjs@0.8.3/lib/keyOf.js');
-  var shallowEqual = $__require('npm:fbjs@0.8.3/lib/shallowEqual.js');
+  var EventConstants = $__require('npm:react@15.3.1/lib/EventConstants.js');
+  var EventPropagators = $__require('npm:react@15.3.1/lib/EventPropagators.js');
+  var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+  var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+  var ReactInputSelection = $__require('npm:react@15.3.1/lib/ReactInputSelection.js');
+  var SyntheticEvent = $__require('npm:react@15.3.1/lib/SyntheticEvent.js');
+  var getActiveElement = $__require('npm:fbjs@0.8.4/lib/getActiveElement.js');
+  var isTextInputElement = $__require('npm:react@15.3.1/lib/isTextInputElement.js');
+  var keyOf = $__require('npm:fbjs@0.8.4/lib/keyOf.js');
+  var shallowEqual = $__require('npm:fbjs@0.8.4/lib/shallowEqual.js');
   var topLevelTypes = EventConstants.topLevelTypes;
   var skipSelectionChangeEvent = ExecutionEnvironment.canUseDOM && 'documentMode' in document && document.documentMode <= 11;
   var eventTypes = {select: {
@@ -39538,14 +39971,14 @@ System.registerDynamic("npm:react@15.3.0/lib/SelectEventPlugin.js", ["npm:react@
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/EventListener.js", ["npm:fbjs@0.8.3/lib/emptyFunction.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/EventListener.js", ["npm:fbjs@0.8.4/lib/emptyFunction.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var emptyFunction = $__require('npm:fbjs@0.8.3/lib/emptyFunction.js');
+    var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
     var EventListener = {
       listen: function listen(target, eventType, callback) {
         if (target.addEventListener) {
@@ -39580,19 +40013,19 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/EventListener.js", ["npm:fbjs@0.8.3/l
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/EventPropagators.js", ["npm:react@15.3.0/lib/EventConstants.js", "npm:react@15.3.0/lib/EventPluginHub.js", "npm:react@15.3.0/lib/EventPluginUtils.js", "npm:react@15.3.0/lib/accumulateInto.js", "npm:react@15.3.0/lib/forEachAccumulated.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/EventPropagators.js", ["npm:react@15.3.1/lib/EventConstants.js", "npm:react@15.3.1/lib/EventPluginHub.js", "npm:react@15.3.1/lib/EventPluginUtils.js", "npm:react@15.3.1/lib/accumulateInto.js", "npm:react@15.3.1/lib/forEachAccumulated.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var EventConstants = $__require('npm:react@15.3.0/lib/EventConstants.js');
-    var EventPluginHub = $__require('npm:react@15.3.0/lib/EventPluginHub.js');
-    var EventPluginUtils = $__require('npm:react@15.3.0/lib/EventPluginUtils.js');
-    var accumulateInto = $__require('npm:react@15.3.0/lib/accumulateInto.js');
-    var forEachAccumulated = $__require('npm:react@15.3.0/lib/forEachAccumulated.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var EventConstants = $__require('npm:react@15.3.1/lib/EventConstants.js');
+    var EventPluginHub = $__require('npm:react@15.3.1/lib/EventPluginHub.js');
+    var EventPluginUtils = $__require('npm:react@15.3.1/lib/EventPluginUtils.js');
+    var accumulateInto = $__require('npm:react@15.3.1/lib/accumulateInto.js');
+    var forEachAccumulated = $__require('npm:react@15.3.1/lib/forEachAccumulated.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var PropagationPhases = EventConstants.PropagationPhases;
     var getListener = EventPluginHub.getListener;
     function listenerAtPhase(inst, event, propagationPhase) {
@@ -39660,13 +40093,13 @@ System.registerDynamic("npm:react@15.3.0/lib/EventPropagators.js", ["npm:react@1
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticAnimationEvent.js", ["npm:react@15.3.0/lib/SyntheticEvent.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticAnimationEvent.js", ["npm:react@15.3.1/lib/SyntheticEvent.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticEvent = $__require('npm:react@15.3.0/lib/SyntheticEvent.js');
+  var SyntheticEvent = $__require('npm:react@15.3.1/lib/SyntheticEvent.js');
   var AnimationEventInterface = {
     animationName: null,
     elapsedTime: null,
@@ -39680,13 +40113,13 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticAnimationEvent.js", ["npm:
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticClipboardEvent.js", ["npm:react@15.3.0/lib/SyntheticEvent.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticClipboardEvent.js", ["npm:react@15.3.1/lib/SyntheticEvent.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticEvent = $__require('npm:react@15.3.0/lib/SyntheticEvent.js');
+  var SyntheticEvent = $__require('npm:react@15.3.1/lib/SyntheticEvent.js');
   var ClipboardEventInterface = {clipboardData: function(event) {
       return 'clipboardData' in event ? event.clipboardData : window.clipboardData;
     }};
@@ -39698,13 +40131,13 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticClipboardEvent.js", ["npm:
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticFocusEvent.js", ["npm:react@15.3.0/lib/SyntheticUIEvent.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticFocusEvent.js", ["npm:react@15.3.1/lib/SyntheticUIEvent.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticUIEvent = $__require('npm:react@15.3.0/lib/SyntheticUIEvent.js');
+  var SyntheticUIEvent = $__require('npm:react@15.3.1/lib/SyntheticUIEvent.js');
   var FocusEventInterface = {relatedTarget: null};
   function SyntheticFocusEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget) {
     return SyntheticUIEvent.call(this, dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget);
@@ -39714,13 +40147,13 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticFocusEvent.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/getEventKey.js", ["npm:react@15.3.0/lib/getEventCharCode.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/getEventKey.js", ["npm:react@15.3.1/lib/getEventCharCode.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var getEventCharCode = $__require('npm:react@15.3.0/lib/getEventCharCode.js');
+  var getEventCharCode = $__require('npm:react@15.3.1/lib/getEventCharCode.js');
   var normalizeKey = {
     'Esc': 'Escape',
     'Spacebar': ' ',
@@ -39793,16 +40226,16 @@ System.registerDynamic("npm:react@15.3.0/lib/getEventKey.js", ["npm:react@15.3.0
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticKeyboardEvent.js", ["npm:react@15.3.0/lib/SyntheticUIEvent.js", "npm:react@15.3.0/lib/getEventCharCode.js", "npm:react@15.3.0/lib/getEventKey.js", "npm:react@15.3.0/lib/getEventModifierState.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticKeyboardEvent.js", ["npm:react@15.3.1/lib/SyntheticUIEvent.js", "npm:react@15.3.1/lib/getEventCharCode.js", "npm:react@15.3.1/lib/getEventKey.js", "npm:react@15.3.1/lib/getEventModifierState.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticUIEvent = $__require('npm:react@15.3.0/lib/SyntheticUIEvent.js');
-  var getEventCharCode = $__require('npm:react@15.3.0/lib/getEventCharCode.js');
-  var getEventKey = $__require('npm:react@15.3.0/lib/getEventKey.js');
-  var getEventModifierState = $__require('npm:react@15.3.0/lib/getEventModifierState.js');
+  var SyntheticUIEvent = $__require('npm:react@15.3.1/lib/SyntheticUIEvent.js');
+  var getEventCharCode = $__require('npm:react@15.3.1/lib/getEventCharCode.js');
+  var getEventKey = $__require('npm:react@15.3.1/lib/getEventKey.js');
+  var getEventModifierState = $__require('npm:react@15.3.1/lib/getEventModifierState.js');
   var KeyboardEventInterface = {
     key: getEventKey,
     location: null,
@@ -39843,13 +40276,13 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticKeyboardEvent.js", ["npm:r
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticDragEvent.js", ["npm:react@15.3.0/lib/SyntheticMouseEvent.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticDragEvent.js", ["npm:react@15.3.1/lib/SyntheticMouseEvent.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticMouseEvent = $__require('npm:react@15.3.0/lib/SyntheticMouseEvent.js');
+  var SyntheticMouseEvent = $__require('npm:react@15.3.1/lib/SyntheticMouseEvent.js');
   var DragEventInterface = {dataTransfer: null};
   function SyntheticDragEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget) {
     return SyntheticMouseEvent.call(this, dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget);
@@ -39859,14 +40292,14 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticDragEvent.js", ["npm:react
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticTouchEvent.js", ["npm:react@15.3.0/lib/SyntheticUIEvent.js", "npm:react@15.3.0/lib/getEventModifierState.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticTouchEvent.js", ["npm:react@15.3.1/lib/SyntheticUIEvent.js", "npm:react@15.3.1/lib/getEventModifierState.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticUIEvent = $__require('npm:react@15.3.0/lib/SyntheticUIEvent.js');
-  var getEventModifierState = $__require('npm:react@15.3.0/lib/getEventModifierState.js');
+  var SyntheticUIEvent = $__require('npm:react@15.3.1/lib/SyntheticUIEvent.js');
+  var getEventModifierState = $__require('npm:react@15.3.1/lib/getEventModifierState.js');
   var TouchEventInterface = {
     touches: null,
     targetTouches: null,
@@ -39885,13 +40318,13 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticTouchEvent.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticTransitionEvent.js", ["npm:react@15.3.0/lib/SyntheticEvent.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticTransitionEvent.js", ["npm:react@15.3.1/lib/SyntheticEvent.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticEvent = $__require('npm:react@15.3.0/lib/SyntheticEvent.js');
+  var SyntheticEvent = $__require('npm:react@15.3.1/lib/SyntheticEvent.js');
   var TransitionEventInterface = {
     propertyName: null,
     elapsedTime: null,
@@ -39905,7 +40338,7 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticTransitionEvent.js", ["npm
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticEvent.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/PooledClass.js", "npm:fbjs@0.8.3/lib/emptyFunction.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticEvent.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/PooledClass.js", "npm:fbjs@0.8.4/lib/emptyFunction.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -39913,9 +40346,9 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticEvent.js", ["npm:object-as
   (function(process) {
     'use strict';
     var _assign = $__require('npm:object-assign@4.1.0.js');
-    var PooledClass = $__require('npm:react@15.3.0/lib/PooledClass.js');
-    var emptyFunction = $__require('npm:fbjs@0.8.3/lib/emptyFunction.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var PooledClass = $__require('npm:react@15.3.1/lib/PooledClass.js');
+    var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var didWarnForAddedNewProperty = false;
     var isProxySupported = typeof Proxy === 'function';
     var shouldBeReleasedProperties = ['dispatchConfig', '_targetInst', 'nativeEvent', 'isDefaultPrevented', 'isPropagationStopped', '_dispatchListeners', '_dispatchInstances'];
@@ -39990,7 +40423,7 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticEvent.js", ["npm:object-as
         }
         if (event.stopPropagation) {
           event.stopPropagation();
-        } else {
+        } else if (typeof event.cancelBubble !== 'unknown') {
           event.cancelBubble = true;
         }
         this.isPropagationStopped = emptyFunction.thatReturnsTrue;
@@ -40079,7 +40512,7 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticEvent.js", ["npm:object-as
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/getEventTarget.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/getEventTarget.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -40096,14 +40529,14 @@ System.registerDynamic("npm:react@15.3.0/lib/getEventTarget.js", [], true, funct
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticUIEvent.js", ["npm:react@15.3.0/lib/SyntheticEvent.js", "npm:react@15.3.0/lib/getEventTarget.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticUIEvent.js", ["npm:react@15.3.1/lib/SyntheticEvent.js", "npm:react@15.3.1/lib/getEventTarget.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticEvent = $__require('npm:react@15.3.0/lib/SyntheticEvent.js');
-  var getEventTarget = $__require('npm:react@15.3.0/lib/getEventTarget.js');
+  var SyntheticEvent = $__require('npm:react@15.3.1/lib/SyntheticEvent.js');
+  var getEventTarget = $__require('npm:react@15.3.1/lib/getEventTarget.js');
   var UIEventInterface = {
     view: function(event) {
       if (event.view) {
@@ -40132,7 +40565,7 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticUIEvent.js", ["npm:react@1
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/getEventModifierState.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/getEventModifierState.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -40160,15 +40593,15 @@ System.registerDynamic("npm:react@15.3.0/lib/getEventModifierState.js", [], true
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticMouseEvent.js", ["npm:react@15.3.0/lib/SyntheticUIEvent.js", "npm:react@15.3.0/lib/ViewportMetrics.js", "npm:react@15.3.0/lib/getEventModifierState.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticMouseEvent.js", ["npm:react@15.3.1/lib/SyntheticUIEvent.js", "npm:react@15.3.1/lib/ViewportMetrics.js", "npm:react@15.3.1/lib/getEventModifierState.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticUIEvent = $__require('npm:react@15.3.0/lib/SyntheticUIEvent.js');
-  var ViewportMetrics = $__require('npm:react@15.3.0/lib/ViewportMetrics.js');
-  var getEventModifierState = $__require('npm:react@15.3.0/lib/getEventModifierState.js');
+  var SyntheticUIEvent = $__require('npm:react@15.3.1/lib/SyntheticUIEvent.js');
+  var ViewportMetrics = $__require('npm:react@15.3.1/lib/ViewportMetrics.js');
+  var getEventModifierState = $__require('npm:react@15.3.1/lib/getEventModifierState.js');
   var MouseEventInterface = {
     screenX: null,
     screenY: null,
@@ -40205,13 +40638,13 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticMouseEvent.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SyntheticWheelEvent.js", ["npm:react@15.3.0/lib/SyntheticMouseEvent.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SyntheticWheelEvent.js", ["npm:react@15.3.1/lib/SyntheticMouseEvent.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var SyntheticMouseEvent = $__require('npm:react@15.3.0/lib/SyntheticMouseEvent.js');
+  var SyntheticMouseEvent = $__require('npm:react@15.3.1/lib/SyntheticMouseEvent.js');
   var WheelEventInterface = {
     deltaX: function(event) {
       return 'deltaX' in event ? event.deltaX : 'wheelDeltaX' in event ? -event.wheelDeltaX : 0;
@@ -40230,7 +40663,7 @@ System.registerDynamic("npm:react@15.3.0/lib/SyntheticWheelEvent.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/getEventCharCode.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/getEventCharCode.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -40256,33 +40689,33 @@ System.registerDynamic("npm:react@15.3.0/lib/getEventCharCode.js", [], true, fun
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/SimpleEventPlugin.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/EventConstants.js", "npm:fbjs@0.8.3/lib/EventListener.js", "npm:react@15.3.0/lib/EventPropagators.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/SyntheticAnimationEvent.js", "npm:react@15.3.0/lib/SyntheticClipboardEvent.js", "npm:react@15.3.0/lib/SyntheticEvent.js", "npm:react@15.3.0/lib/SyntheticFocusEvent.js", "npm:react@15.3.0/lib/SyntheticKeyboardEvent.js", "npm:react@15.3.0/lib/SyntheticMouseEvent.js", "npm:react@15.3.0/lib/SyntheticDragEvent.js", "npm:react@15.3.0/lib/SyntheticTouchEvent.js", "npm:react@15.3.0/lib/SyntheticTransitionEvent.js", "npm:react@15.3.0/lib/SyntheticUIEvent.js", "npm:react@15.3.0/lib/SyntheticWheelEvent.js", "npm:fbjs@0.8.3/lib/emptyFunction.js", "npm:react@15.3.0/lib/getEventCharCode.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/keyOf.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/SimpleEventPlugin.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/EventConstants.js", "npm:fbjs@0.8.4/lib/EventListener.js", "npm:react@15.3.1/lib/EventPropagators.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/SyntheticAnimationEvent.js", "npm:react@15.3.1/lib/SyntheticClipboardEvent.js", "npm:react@15.3.1/lib/SyntheticEvent.js", "npm:react@15.3.1/lib/SyntheticFocusEvent.js", "npm:react@15.3.1/lib/SyntheticKeyboardEvent.js", "npm:react@15.3.1/lib/SyntheticMouseEvent.js", "npm:react@15.3.1/lib/SyntheticDragEvent.js", "npm:react@15.3.1/lib/SyntheticTouchEvent.js", "npm:react@15.3.1/lib/SyntheticTransitionEvent.js", "npm:react@15.3.1/lib/SyntheticUIEvent.js", "npm:react@15.3.1/lib/SyntheticWheelEvent.js", "npm:fbjs@0.8.4/lib/emptyFunction.js", "npm:react@15.3.1/lib/getEventCharCode.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/keyOf.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var EventConstants = $__require('npm:react@15.3.0/lib/EventConstants.js');
-    var EventListener = $__require('npm:fbjs@0.8.3/lib/EventListener.js');
-    var EventPropagators = $__require('npm:react@15.3.0/lib/EventPropagators.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var SyntheticAnimationEvent = $__require('npm:react@15.3.0/lib/SyntheticAnimationEvent.js');
-    var SyntheticClipboardEvent = $__require('npm:react@15.3.0/lib/SyntheticClipboardEvent.js');
-    var SyntheticEvent = $__require('npm:react@15.3.0/lib/SyntheticEvent.js');
-    var SyntheticFocusEvent = $__require('npm:react@15.3.0/lib/SyntheticFocusEvent.js');
-    var SyntheticKeyboardEvent = $__require('npm:react@15.3.0/lib/SyntheticKeyboardEvent.js');
-    var SyntheticMouseEvent = $__require('npm:react@15.3.0/lib/SyntheticMouseEvent.js');
-    var SyntheticDragEvent = $__require('npm:react@15.3.0/lib/SyntheticDragEvent.js');
-    var SyntheticTouchEvent = $__require('npm:react@15.3.0/lib/SyntheticTouchEvent.js');
-    var SyntheticTransitionEvent = $__require('npm:react@15.3.0/lib/SyntheticTransitionEvent.js');
-    var SyntheticUIEvent = $__require('npm:react@15.3.0/lib/SyntheticUIEvent.js');
-    var SyntheticWheelEvent = $__require('npm:react@15.3.0/lib/SyntheticWheelEvent.js');
-    var emptyFunction = $__require('npm:fbjs@0.8.3/lib/emptyFunction.js');
-    var getEventCharCode = $__require('npm:react@15.3.0/lib/getEventCharCode.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var keyOf = $__require('npm:fbjs@0.8.3/lib/keyOf.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var EventConstants = $__require('npm:react@15.3.1/lib/EventConstants.js');
+    var EventListener = $__require('npm:fbjs@0.8.4/lib/EventListener.js');
+    var EventPropagators = $__require('npm:react@15.3.1/lib/EventPropagators.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var SyntheticAnimationEvent = $__require('npm:react@15.3.1/lib/SyntheticAnimationEvent.js');
+    var SyntheticClipboardEvent = $__require('npm:react@15.3.1/lib/SyntheticClipboardEvent.js');
+    var SyntheticEvent = $__require('npm:react@15.3.1/lib/SyntheticEvent.js');
+    var SyntheticFocusEvent = $__require('npm:react@15.3.1/lib/SyntheticFocusEvent.js');
+    var SyntheticKeyboardEvent = $__require('npm:react@15.3.1/lib/SyntheticKeyboardEvent.js');
+    var SyntheticMouseEvent = $__require('npm:react@15.3.1/lib/SyntheticMouseEvent.js');
+    var SyntheticDragEvent = $__require('npm:react@15.3.1/lib/SyntheticDragEvent.js');
+    var SyntheticTouchEvent = $__require('npm:react@15.3.1/lib/SyntheticTouchEvent.js');
+    var SyntheticTransitionEvent = $__require('npm:react@15.3.1/lib/SyntheticTransitionEvent.js');
+    var SyntheticUIEvent = $__require('npm:react@15.3.1/lib/SyntheticUIEvent.js');
+    var SyntheticWheelEvent = $__require('npm:react@15.3.1/lib/SyntheticWheelEvent.js');
+    var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
+    var getEventCharCode = $__require('npm:react@15.3.1/lib/getEventCharCode.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var keyOf = $__require('npm:fbjs@0.8.4/lib/keyOf.js');
     var topLevelTypes = EventConstants.topLevelTypes;
     var eventTypes = {
       abort: {phasedRegistrationNames: {
@@ -40733,30 +41166,30 @@ System.registerDynamic("npm:react@15.3.0/lib/SimpleEventPlugin.js", ["npm:react@
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDefaultInjection.js", ["npm:react@15.3.0/lib/BeforeInputEventPlugin.js", "npm:react@15.3.0/lib/ChangeEventPlugin.js", "npm:react@15.3.0/lib/DefaultEventPluginOrder.js", "npm:react@15.3.0/lib/EnterLeaveEventPlugin.js", "npm:react@15.3.0/lib/HTMLDOMPropertyConfig.js", "npm:react@15.3.0/lib/ReactComponentBrowserEnvironment.js", "npm:react@15.3.0/lib/ReactDOMComponent.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactDOMEmptyComponent.js", "npm:react@15.3.0/lib/ReactDOMTreeTraversal.js", "npm:react@15.3.0/lib/ReactDOMTextComponent.js", "npm:react@15.3.0/lib/ReactDefaultBatchingStrategy.js", "npm:react@15.3.0/lib/ReactEventListener.js", "npm:react@15.3.0/lib/ReactInjection.js", "npm:react@15.3.0/lib/ReactReconcileTransaction.js", "npm:react@15.3.0/lib/SVGDOMPropertyConfig.js", "npm:react@15.3.0/lib/SelectEventPlugin.js", "npm:react@15.3.0/lib/SimpleEventPlugin.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDefaultInjection.js", ["npm:react@15.3.1/lib/BeforeInputEventPlugin.js", "npm:react@15.3.1/lib/ChangeEventPlugin.js", "npm:react@15.3.1/lib/DefaultEventPluginOrder.js", "npm:react@15.3.1/lib/EnterLeaveEventPlugin.js", "npm:react@15.3.1/lib/HTMLDOMPropertyConfig.js", "npm:react@15.3.1/lib/ReactComponentBrowserEnvironment.js", "npm:react@15.3.1/lib/ReactDOMComponent.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactDOMEmptyComponent.js", "npm:react@15.3.1/lib/ReactDOMTreeTraversal.js", "npm:react@15.3.1/lib/ReactDOMTextComponent.js", "npm:react@15.3.1/lib/ReactDefaultBatchingStrategy.js", "npm:react@15.3.1/lib/ReactEventListener.js", "npm:react@15.3.1/lib/ReactInjection.js", "npm:react@15.3.1/lib/ReactReconcileTransaction.js", "npm:react@15.3.1/lib/SVGDOMPropertyConfig.js", "npm:react@15.3.1/lib/SelectEventPlugin.js", "npm:react@15.3.1/lib/SimpleEventPlugin.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var BeforeInputEventPlugin = $__require('npm:react@15.3.0/lib/BeforeInputEventPlugin.js');
-  var ChangeEventPlugin = $__require('npm:react@15.3.0/lib/ChangeEventPlugin.js');
-  var DefaultEventPluginOrder = $__require('npm:react@15.3.0/lib/DefaultEventPluginOrder.js');
-  var EnterLeaveEventPlugin = $__require('npm:react@15.3.0/lib/EnterLeaveEventPlugin.js');
-  var HTMLDOMPropertyConfig = $__require('npm:react@15.3.0/lib/HTMLDOMPropertyConfig.js');
-  var ReactComponentBrowserEnvironment = $__require('npm:react@15.3.0/lib/ReactComponentBrowserEnvironment.js');
-  var ReactDOMComponent = $__require('npm:react@15.3.0/lib/ReactDOMComponent.js');
-  var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-  var ReactDOMEmptyComponent = $__require('npm:react@15.3.0/lib/ReactDOMEmptyComponent.js');
-  var ReactDOMTreeTraversal = $__require('npm:react@15.3.0/lib/ReactDOMTreeTraversal.js');
-  var ReactDOMTextComponent = $__require('npm:react@15.3.0/lib/ReactDOMTextComponent.js');
-  var ReactDefaultBatchingStrategy = $__require('npm:react@15.3.0/lib/ReactDefaultBatchingStrategy.js');
-  var ReactEventListener = $__require('npm:react@15.3.0/lib/ReactEventListener.js');
-  var ReactInjection = $__require('npm:react@15.3.0/lib/ReactInjection.js');
-  var ReactReconcileTransaction = $__require('npm:react@15.3.0/lib/ReactReconcileTransaction.js');
-  var SVGDOMPropertyConfig = $__require('npm:react@15.3.0/lib/SVGDOMPropertyConfig.js');
-  var SelectEventPlugin = $__require('npm:react@15.3.0/lib/SelectEventPlugin.js');
-  var SimpleEventPlugin = $__require('npm:react@15.3.0/lib/SimpleEventPlugin.js');
+  var BeforeInputEventPlugin = $__require('npm:react@15.3.1/lib/BeforeInputEventPlugin.js');
+  var ChangeEventPlugin = $__require('npm:react@15.3.1/lib/ChangeEventPlugin.js');
+  var DefaultEventPluginOrder = $__require('npm:react@15.3.1/lib/DefaultEventPluginOrder.js');
+  var EnterLeaveEventPlugin = $__require('npm:react@15.3.1/lib/EnterLeaveEventPlugin.js');
+  var HTMLDOMPropertyConfig = $__require('npm:react@15.3.1/lib/HTMLDOMPropertyConfig.js');
+  var ReactComponentBrowserEnvironment = $__require('npm:react@15.3.1/lib/ReactComponentBrowserEnvironment.js');
+  var ReactDOMComponent = $__require('npm:react@15.3.1/lib/ReactDOMComponent.js');
+  var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+  var ReactDOMEmptyComponent = $__require('npm:react@15.3.1/lib/ReactDOMEmptyComponent.js');
+  var ReactDOMTreeTraversal = $__require('npm:react@15.3.1/lib/ReactDOMTreeTraversal.js');
+  var ReactDOMTextComponent = $__require('npm:react@15.3.1/lib/ReactDOMTextComponent.js');
+  var ReactDefaultBatchingStrategy = $__require('npm:react@15.3.1/lib/ReactDefaultBatchingStrategy.js');
+  var ReactEventListener = $__require('npm:react@15.3.1/lib/ReactEventListener.js');
+  var ReactInjection = $__require('npm:react@15.3.1/lib/ReactInjection.js');
+  var ReactReconcileTransaction = $__require('npm:react@15.3.1/lib/ReactReconcileTransaction.js');
+  var SVGDOMPropertyConfig = $__require('npm:react@15.3.1/lib/SVGDOMPropertyConfig.js');
+  var SelectEventPlugin = $__require('npm:react@15.3.1/lib/SelectEventPlugin.js');
+  var SimpleEventPlugin = $__require('npm:react@15.3.1/lib/SimpleEventPlugin.js');
   var alreadyInjected = false;
   function inject() {
     if (alreadyInjected) {
@@ -40789,20 +41222,20 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDefaultInjection.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/findDOMNode.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/ReactCurrentOwner.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactInstanceMap.js", "npm:react@15.3.0/lib/getHostComponentFromComposite.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/findDOMNode.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactCurrentOwner.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactInstanceMap.js", "npm:react@15.3.1/lib/getHostComponentFromComposite.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var ReactCurrentOwner = $__require('npm:react@15.3.0/lib/ReactCurrentOwner.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactInstanceMap = $__require('npm:react@15.3.0/lib/ReactInstanceMap.js');
-    var getHostComponentFromComposite = $__require('npm:react@15.3.0/lib/getHostComponentFromComposite.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var ReactCurrentOwner = $__require('npm:react@15.3.1/lib/ReactCurrentOwner.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactInstanceMap = $__require('npm:react@15.3.1/lib/ReactInstanceMap.js');
+    var getHostComponentFromComposite = $__require('npm:react@15.3.1/lib/getHostComponentFromComposite.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     function findDOMNode(componentOrElement) {
       if ("production" !== 'production') {
         var owner = ReactCurrentOwner.current;
@@ -40833,13 +41266,13 @@ System.registerDynamic("npm:react@15.3.0/lib/findDOMNode.js", ["npm:react@15.3.0
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/getHostComponentFromComposite.js", ["npm:react@15.3.0/lib/ReactNodeTypes.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/getHostComponentFromComposite.js", ["npm:react@15.3.1/lib/ReactNodeTypes.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var ReactNodeTypes = $__require('npm:react@15.3.0/lib/ReactNodeTypes.js');
+  var ReactNodeTypes = $__require('npm:react@15.3.1/lib/ReactNodeTypes.js');
   function getHostComponentFromComposite(inst) {
     var type;
     while ((type = inst._renderedNodeType) === ReactNodeTypes.COMPOSITE) {
@@ -40855,7 +41288,7 @@ System.registerDynamic("npm:react@15.3.0/lib/getHostComponentFromComposite.js", 
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/escapeTextContentForBrowser.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/escapeTextContentForBrowser.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -40910,15 +41343,15 @@ System.registerDynamic("npm:react@15.3.0/lib/escapeTextContentForBrowser.js", []
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/setTextContent.js", ["npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:react@15.3.0/lib/escapeTextContentForBrowser.js", "npm:react@15.3.0/lib/setInnerHTML.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/setTextContent.js", ["npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:react@15.3.1/lib/escapeTextContentForBrowser.js", "npm:react@15.3.1/lib/setInnerHTML.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-  var escapeTextContentForBrowser = $__require('npm:react@15.3.0/lib/escapeTextContentForBrowser.js');
-  var setInnerHTML = $__require('npm:react@15.3.0/lib/setInnerHTML.js');
+  var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+  var escapeTextContentForBrowser = $__require('npm:react@15.3.1/lib/escapeTextContentForBrowser.js');
+  var setInnerHTML = $__require('npm:react@15.3.1/lib/setInnerHTML.js');
   var setTextContent = function(node, text) {
     if (text) {
       var firstChild = node.firstChild;
@@ -40940,16 +41373,16 @@ System.registerDynamic("npm:react@15.3.0/lib/setTextContent.js", ["npm:fbjs@0.8.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/DOMLazyTree.js", ["npm:react@15.3.0/lib/DOMNamespaces.js", "npm:react@15.3.0/lib/setInnerHTML.js", "npm:react@15.3.0/lib/createMicrosoftUnsafeLocalFunction.js", "npm:react@15.3.0/lib/setTextContent.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/DOMLazyTree.js", ["npm:react@15.3.1/lib/DOMNamespaces.js", "npm:react@15.3.1/lib/setInnerHTML.js", "npm:react@15.3.1/lib/createMicrosoftUnsafeLocalFunction.js", "npm:react@15.3.1/lib/setTextContent.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var DOMNamespaces = $__require('npm:react@15.3.0/lib/DOMNamespaces.js');
-  var setInnerHTML = $__require('npm:react@15.3.0/lib/setInnerHTML.js');
-  var createMicrosoftUnsafeLocalFunction = $__require('npm:react@15.3.0/lib/createMicrosoftUnsafeLocalFunction.js');
-  var setTextContent = $__require('npm:react@15.3.0/lib/setTextContent.js');
+  var DOMNamespaces = $__require('npm:react@15.3.1/lib/DOMNamespaces.js');
+  var setInnerHTML = $__require('npm:react@15.3.1/lib/setInnerHTML.js');
+  var createMicrosoftUnsafeLocalFunction = $__require('npm:react@15.3.1/lib/createMicrosoftUnsafeLocalFunction.js');
+  var setTextContent = $__require('npm:react@15.3.1/lib/setTextContent.js');
   var ELEMENT_NODE_TYPE = 1;
   var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
   var enableLazy = typeof document !== 'undefined' && typeof document.documentMode === 'number' || typeof navigator !== 'undefined' && typeof navigator.userAgent === 'string' && /\bEdge\/\d/.test(navigator.userAgent);
@@ -41024,152 +41457,13 @@ System.registerDynamic("npm:react@15.3.0/lib/DOMLazyTree.js", ["npm:react@15.3.0
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/EventPluginRegistry.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var EventPluginOrder = null;
-    var namesToPlugins = {};
-    function recomputePluginOrdering() {
-      if (!EventPluginOrder) {
-        return;
-      }
-      for (var pluginName in namesToPlugins) {
-        var PluginModule = namesToPlugins[pluginName];
-        var pluginIndex = EventPluginOrder.indexOf(pluginName);
-        !(pluginIndex > -1) ? "production" !== 'production' ? invariant(false, 'EventPluginRegistry: Cannot inject event plugins that do not exist in the plugin ordering, `%s`.', pluginName) : _prodInvariant('96', pluginName) : void 0;
-        if (EventPluginRegistry.plugins[pluginIndex]) {
-          continue;
-        }
-        !PluginModule.extractEvents ? "production" !== 'production' ? invariant(false, 'EventPluginRegistry: Event plugins must implement an `extractEvents` method, but `%s` does not.', pluginName) : _prodInvariant('97', pluginName) : void 0;
-        EventPluginRegistry.plugins[pluginIndex] = PluginModule;
-        var publishedEvents = PluginModule.eventTypes;
-        for (var eventName in publishedEvents) {
-          !publishEventForPlugin(publishedEvents[eventName], PluginModule, eventName) ? "production" !== 'production' ? invariant(false, 'EventPluginRegistry: Failed to publish event `%s` for plugin `%s`.', eventName, pluginName) : _prodInvariant('98', eventName, pluginName) : void 0;
-        }
-      }
-    }
-    function publishEventForPlugin(dispatchConfig, PluginModule, eventName) {
-      !!EventPluginRegistry.eventNameDispatchConfigs.hasOwnProperty(eventName) ? "production" !== 'production' ? invariant(false, 'EventPluginHub: More than one plugin attempted to publish the same event name, `%s`.', eventName) : _prodInvariant('99', eventName) : void 0;
-      EventPluginRegistry.eventNameDispatchConfigs[eventName] = dispatchConfig;
-      var phasedRegistrationNames = dispatchConfig.phasedRegistrationNames;
-      if (phasedRegistrationNames) {
-        for (var phaseName in phasedRegistrationNames) {
-          if (phasedRegistrationNames.hasOwnProperty(phaseName)) {
-            var phasedRegistrationName = phasedRegistrationNames[phaseName];
-            publishRegistrationName(phasedRegistrationName, PluginModule, eventName);
-          }
-        }
-        return true;
-      } else if (dispatchConfig.registrationName) {
-        publishRegistrationName(dispatchConfig.registrationName, PluginModule, eventName);
-        return true;
-      }
-      return false;
-    }
-    function publishRegistrationName(registrationName, PluginModule, eventName) {
-      !!EventPluginRegistry.registrationNameModules[registrationName] ? "production" !== 'production' ? invariant(false, 'EventPluginHub: More than one plugin attempted to publish the same registration name, `%s`.', registrationName) : _prodInvariant('100', registrationName) : void 0;
-      EventPluginRegistry.registrationNameModules[registrationName] = PluginModule;
-      EventPluginRegistry.registrationNameDependencies[registrationName] = PluginModule.eventTypes[eventName].dependencies;
-      if ("production" !== 'production') {
-        var lowerCasedName = registrationName.toLowerCase();
-        EventPluginRegistry.possibleRegistrationNames[lowerCasedName] = registrationName;
-        if (registrationName === 'onDoubleClick') {
-          EventPluginRegistry.possibleRegistrationNames.ondblclick = registrationName;
-        }
-      }
-    }
-    var EventPluginRegistry = {
-      plugins: [],
-      eventNameDispatchConfigs: {},
-      registrationNameModules: {},
-      registrationNameDependencies: {},
-      possibleRegistrationNames: "production" !== 'production' ? {} : null,
-      injectEventPluginOrder: function(InjectedEventPluginOrder) {
-        !!EventPluginOrder ? "production" !== 'production' ? invariant(false, 'EventPluginRegistry: Cannot inject event plugin ordering more than once. You are likely trying to load more than one copy of React.') : _prodInvariant('101') : void 0;
-        EventPluginOrder = Array.prototype.slice.call(InjectedEventPluginOrder);
-        recomputePluginOrdering();
-      },
-      injectEventPluginsByName: function(injectedNamesToPlugins) {
-        var isOrderingDirty = false;
-        for (var pluginName in injectedNamesToPlugins) {
-          if (!injectedNamesToPlugins.hasOwnProperty(pluginName)) {
-            continue;
-          }
-          var PluginModule = injectedNamesToPlugins[pluginName];
-          if (!namesToPlugins.hasOwnProperty(pluginName) || namesToPlugins[pluginName] !== PluginModule) {
-            !!namesToPlugins[pluginName] ? "production" !== 'production' ? invariant(false, 'EventPluginRegistry: Cannot inject two different event plugins using the same name, `%s`.', pluginName) : _prodInvariant('102', pluginName) : void 0;
-            namesToPlugins[pluginName] = PluginModule;
-            isOrderingDirty = true;
-          }
-        }
-        if (isOrderingDirty) {
-          recomputePluginOrdering();
-        }
-      },
-      getPluginModuleForEvent: function(event) {
-        var dispatchConfig = event.dispatchConfig;
-        if (dispatchConfig.registrationName) {
-          return EventPluginRegistry.registrationNameModules[dispatchConfig.registrationName] || null;
-        }
-        for (var phase in dispatchConfig.phasedRegistrationNames) {
-          if (!dispatchConfig.phasedRegistrationNames.hasOwnProperty(phase)) {
-            continue;
-          }
-          var PluginModule = EventPluginRegistry.registrationNameModules[dispatchConfig.phasedRegistrationNames[phase]];
-          if (PluginModule) {
-            return PluginModule;
-          }
-        }
-        return null;
-      },
-      _resetEventPlugins: function() {
-        EventPluginOrder = null;
-        for (var pluginName in namesToPlugins) {
-          if (namesToPlugins.hasOwnProperty(pluginName)) {
-            delete namesToPlugins[pluginName];
-          }
-        }
-        EventPluginRegistry.plugins.length = 0;
-        var eventNameDispatchConfigs = EventPluginRegistry.eventNameDispatchConfigs;
-        for (var eventName in eventNameDispatchConfigs) {
-          if (eventNameDispatchConfigs.hasOwnProperty(eventName)) {
-            delete eventNameDispatchConfigs[eventName];
-          }
-        }
-        var registrationNameModules = EventPluginRegistry.registrationNameModules;
-        for (var registrationName in registrationNameModules) {
-          if (registrationNameModules.hasOwnProperty(registrationName)) {
-            delete registrationNameModules[registrationName];
-          }
-        }
-        if ("production" !== 'production') {
-          var possibleRegistrationNames = EventPluginRegistry.possibleRegistrationNames;
-          for (var lowerCasedName in possibleRegistrationNames) {
-            if (possibleRegistrationNames.hasOwnProperty(lowerCasedName)) {
-              delete possibleRegistrationNames[lowerCasedName];
-            }
-          }
-        }
-      }
-    };
-    module.exports = EventPluginRegistry;
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/EventConstants.js", ["npm:fbjs@0.8.3/lib/keyMirror.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/EventConstants.js", ["npm:fbjs@0.8.4/lib/keyMirror.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var keyMirror = $__require('npm:fbjs@0.8.3/lib/keyMirror.js');
+  var keyMirror = $__require('npm:fbjs@0.8.4/lib/keyMirror.js');
   var PropagationPhases = keyMirror({
     bubbled: null,
     captured: null
@@ -41252,18 +41546,18 @@ System.registerDynamic("npm:react@15.3.0/lib/EventConstants.js", ["npm:fbjs@0.8.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/EventPluginUtils.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/EventConstants.js", "npm:react@15.3.0/lib/ReactErrorUtils.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/EventPluginUtils.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/EventConstants.js", "npm:react@15.3.1/lib/ReactErrorUtils.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var EventConstants = $__require('npm:react@15.3.0/lib/EventConstants.js');
-    var ReactErrorUtils = $__require('npm:react@15.3.0/lib/ReactErrorUtils.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var EventConstants = $__require('npm:react@15.3.1/lib/EventConstants.js');
+    var ReactErrorUtils = $__require('npm:react@15.3.1/lib/ReactErrorUtils.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var ComponentTree;
     var TreeTraversal;
     var injection = {
@@ -41412,15 +41706,15 @@ System.registerDynamic("npm:react@15.3.0/lib/EventPluginUtils.js", ["npm:react@1
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/accumulateInto.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/accumulateInto.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     function accumulateInto(current, next) {
       !(next != null) ? "production" !== 'production' ? invariant(false, 'accumulateInto(...): Accumulated items must not be null or undefined.') : _prodInvariant('30') : void 0;
       if (current == null) {
@@ -41444,7 +41738,7 @@ System.registerDynamic("npm:react@15.3.0/lib/accumulateInto.js", ["npm:react@15.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/forEachAccumulated.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/forEachAccumulated.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -41461,20 +41755,20 @@ System.registerDynamic("npm:react@15.3.0/lib/forEachAccumulated.js", [], true, f
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/EventPluginHub.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/EventPluginRegistry.js", "npm:react@15.3.0/lib/EventPluginUtils.js", "npm:react@15.3.0/lib/ReactErrorUtils.js", "npm:react@15.3.0/lib/accumulateInto.js", "npm:react@15.3.0/lib/forEachAccumulated.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/EventPluginHub.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/EventPluginRegistry.js", "npm:react@15.3.1/lib/EventPluginUtils.js", "npm:react@15.3.1/lib/ReactErrorUtils.js", "npm:react@15.3.1/lib/accumulateInto.js", "npm:react@15.3.1/lib/forEachAccumulated.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var EventPluginRegistry = $__require('npm:react@15.3.0/lib/EventPluginRegistry.js');
-    var EventPluginUtils = $__require('npm:react@15.3.0/lib/EventPluginUtils.js');
-    var ReactErrorUtils = $__require('npm:react@15.3.0/lib/ReactErrorUtils.js');
-    var accumulateInto = $__require('npm:react@15.3.0/lib/accumulateInto.js');
-    var forEachAccumulated = $__require('npm:react@15.3.0/lib/forEachAccumulated.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var EventPluginRegistry = $__require('npm:react@15.3.1/lib/EventPluginRegistry.js');
+    var EventPluginUtils = $__require('npm:react@15.3.1/lib/EventPluginUtils.js');
+    var ReactErrorUtils = $__require('npm:react@15.3.1/lib/ReactErrorUtils.js');
+    var accumulateInto = $__require('npm:react@15.3.1/lib/accumulateInto.js');
+    var forEachAccumulated = $__require('npm:react@15.3.1/lib/forEachAccumulated.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var listenerBank = {};
     var eventQueue = null;
     var executeDispatchesAndRelease = function(event, simulated) {
@@ -41583,13 +41877,13 @@ System.registerDynamic("npm:react@15.3.0/lib/EventPluginHub.js", ["npm:react@15.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactEventEmitterMixin.js", ["npm:react@15.3.0/lib/EventPluginHub.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactEventEmitterMixin.js", ["npm:react@15.3.1/lib/EventPluginHub.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var EventPluginHub = $__require('npm:react@15.3.0/lib/EventPluginHub.js');
+  var EventPluginHub = $__require('npm:react@15.3.1/lib/EventPluginHub.js');
   function runEventQueueInBatch(events) {
     EventPluginHub.enqueueEvents(events);
     EventPluginHub.processEventQueue(false);
@@ -41602,7 +41896,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactEventEmitterMixin.js", ["npm:r
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ViewportMetrics.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ViewportMetrics.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -41620,13 +41914,13 @@ System.registerDynamic("npm:react@15.3.0/lib/ViewportMetrics.js", [], true, func
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/getVendorPrefixedEventName.js", ["npm:fbjs@0.8.3/lib/ExecutionEnvironment.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/getVendorPrefixedEventName.js", ["npm:fbjs@0.8.4/lib/ExecutionEnvironment.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
+  var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
   function makePrefixMap(styleProp, eventName) {
     var prefixes = {};
     prefixes[styleProp.toLowerCase()] = eventName.toLowerCase();
@@ -41673,13 +41967,13 @@ System.registerDynamic("npm:react@15.3.0/lib/getVendorPrefixedEventName.js", ["n
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/isEventSupported.js", ["npm:fbjs@0.8.3/lib/ExecutionEnvironment.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/isEventSupported.js", ["npm:fbjs@0.8.4/lib/ExecutionEnvironment.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
+  var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
   var useHasFeature;
   if (ExecutionEnvironment.canUseDOM) {
     useHasFeature = document.implementation && document.implementation.hasFeature && document.implementation.hasFeature('', '') !== true;
@@ -41704,7 +41998,7 @@ System.registerDynamic("npm:react@15.3.0/lib/isEventSupported.js", ["npm:fbjs@0.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactBrowserEventEmitter.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/EventConstants.js", "npm:react@15.3.0/lib/EventPluginRegistry.js", "npm:react@15.3.0/lib/ReactEventEmitterMixin.js", "npm:react@15.3.0/lib/ViewportMetrics.js", "npm:react@15.3.0/lib/getVendorPrefixedEventName.js", "npm:react@15.3.0/lib/isEventSupported.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactBrowserEventEmitter.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/EventConstants.js", "npm:react@15.3.1/lib/EventPluginRegistry.js", "npm:react@15.3.1/lib/ReactEventEmitterMixin.js", "npm:react@15.3.1/lib/ViewportMetrics.js", "npm:react@15.3.1/lib/getVendorPrefixedEventName.js", "npm:react@15.3.1/lib/isEventSupported.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -41712,12 +42006,12 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactBrowserEventEmitter.js", ["npm
   (function(process) {
     'use strict';
     var _assign = $__require('npm:object-assign@4.1.0.js');
-    var EventConstants = $__require('npm:react@15.3.0/lib/EventConstants.js');
-    var EventPluginRegistry = $__require('npm:react@15.3.0/lib/EventPluginRegistry.js');
-    var ReactEventEmitterMixin = $__require('npm:react@15.3.0/lib/ReactEventEmitterMixin.js');
-    var ViewportMetrics = $__require('npm:react@15.3.0/lib/ViewportMetrics.js');
-    var getVendorPrefixedEventName = $__require('npm:react@15.3.0/lib/getVendorPrefixedEventName.js');
-    var isEventSupported = $__require('npm:react@15.3.0/lib/isEventSupported.js');
+    var EventConstants = $__require('npm:react@15.3.1/lib/EventConstants.js');
+    var EventPluginRegistry = $__require('npm:react@15.3.1/lib/EventPluginRegistry.js');
+    var ReactEventEmitterMixin = $__require('npm:react@15.3.1/lib/ReactEventEmitterMixin.js');
+    var ViewportMetrics = $__require('npm:react@15.3.1/lib/ViewportMetrics.js');
+    var getVendorPrefixedEventName = $__require('npm:react@15.3.1/lib/getVendorPrefixedEventName.js');
+    var isEventSupported = $__require('npm:react@15.3.1/lib/isEventSupported.js');
     var hasEventPageXY;
     var alreadyListeningTo = {};
     var isMonitoringScrollValue = false;
@@ -41871,99 +42165,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactBrowserEventEmitter.js", ["npm
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/DOMProperty.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    function checkMask(value, bitmask) {
-      return (value & bitmask) === bitmask;
-    }
-    var DOMPropertyInjection = {
-      MUST_USE_PROPERTY: 0x1,
-      HAS_BOOLEAN_VALUE: 0x4,
-      HAS_NUMERIC_VALUE: 0x8,
-      HAS_POSITIVE_NUMERIC_VALUE: 0x10 | 0x8,
-      HAS_OVERLOADED_BOOLEAN_VALUE: 0x20,
-      injectDOMPropertyConfig: function(domPropertyConfig) {
-        var Injection = DOMPropertyInjection;
-        var Properties = domPropertyConfig.Properties || {};
-        var DOMAttributeNamespaces = domPropertyConfig.DOMAttributeNamespaces || {};
-        var DOMAttributeNames = domPropertyConfig.DOMAttributeNames || {};
-        var DOMPropertyNames = domPropertyConfig.DOMPropertyNames || {};
-        var DOMMutationMethods = domPropertyConfig.DOMMutationMethods || {};
-        if (domPropertyConfig.isCustomAttribute) {
-          DOMProperty._isCustomAttributeFunctions.push(domPropertyConfig.isCustomAttribute);
-        }
-        for (var propName in Properties) {
-          !!DOMProperty.properties.hasOwnProperty(propName) ? "production" !== 'production' ? invariant(false, 'injectDOMPropertyConfig(...): You\'re trying to inject DOM property \'%s\' which has already been injected. You may be accidentally injecting the same DOM property config twice, or you may be injecting two configs that have conflicting property names.', propName) : _prodInvariant('48', propName) : void 0;
-          var lowerCased = propName.toLowerCase();
-          var propConfig = Properties[propName];
-          var propertyInfo = {
-            attributeName: lowerCased,
-            attributeNamespace: null,
-            propertyName: propName,
-            mutationMethod: null,
-            mustUseProperty: checkMask(propConfig, Injection.MUST_USE_PROPERTY),
-            hasBooleanValue: checkMask(propConfig, Injection.HAS_BOOLEAN_VALUE),
-            hasNumericValue: checkMask(propConfig, Injection.HAS_NUMERIC_VALUE),
-            hasPositiveNumericValue: checkMask(propConfig, Injection.HAS_POSITIVE_NUMERIC_VALUE),
-            hasOverloadedBooleanValue: checkMask(propConfig, Injection.HAS_OVERLOADED_BOOLEAN_VALUE)
-          };
-          !(propertyInfo.hasBooleanValue + propertyInfo.hasNumericValue + propertyInfo.hasOverloadedBooleanValue <= 1) ? "production" !== 'production' ? invariant(false, 'DOMProperty: Value can be one of boolean, overloaded boolean, or numeric value, but not a combination: %s', propName) : _prodInvariant('50', propName) : void 0;
-          if ("production" !== 'production') {
-            DOMProperty.getPossibleStandardName[lowerCased] = propName;
-          }
-          if (DOMAttributeNames.hasOwnProperty(propName)) {
-            var attributeName = DOMAttributeNames[propName];
-            propertyInfo.attributeName = attributeName;
-            if ("production" !== 'production') {
-              DOMProperty.getPossibleStandardName[attributeName] = propName;
-            }
-          }
-          if (DOMAttributeNamespaces.hasOwnProperty(propName)) {
-            propertyInfo.attributeNamespace = DOMAttributeNamespaces[propName];
-          }
-          if (DOMPropertyNames.hasOwnProperty(propName)) {
-            propertyInfo.propertyName = DOMPropertyNames[propName];
-          }
-          if (DOMMutationMethods.hasOwnProperty(propName)) {
-            propertyInfo.mutationMethod = DOMMutationMethods[propName];
-          }
-          DOMProperty.properties[propName] = propertyInfo;
-        }
-      }
-    };
-    var ATTRIBUTE_NAME_START_CHAR = ':A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD';
-    var DOMProperty = {
-      ID_ATTRIBUTE_NAME: 'data-reactid',
-      ROOT_ATTRIBUTE_NAME: 'data-reactroot',
-      ATTRIBUTE_NAME_START_CHAR: ATTRIBUTE_NAME_START_CHAR,
-      ATTRIBUTE_NAME_CHAR: ATTRIBUTE_NAME_START_CHAR + '\\-.0-9\\u00B7\\u0300-\\u036F\\u203F-\\u2040',
-      properties: {},
-      getPossibleStandardName: "production" !== 'production' ? {} : null,
-      _isCustomAttributeFunctions: [],
-      isCustomAttribute: function(attributeName) {
-        for (var i = 0; i < DOMProperty._isCustomAttributeFunctions.length; i++) {
-          var isCustomAttributeFn = DOMProperty._isCustomAttributeFunctions[i];
-          if (isCustomAttributeFn(attributeName)) {
-            return true;
-          }
-        }
-        return false;
-      },
-      injection: DOMPropertyInjection
-    };
-    module.exports = DOMProperty;
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponentFlags.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMComponentFlags.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -41974,17 +42176,17 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponentFlags.js", [], tru
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponentTree.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/DOMProperty.js", "npm:react@15.3.0/lib/ReactDOMComponentFlags.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMComponentTree.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/DOMProperty.js", "npm:react@15.3.1/lib/ReactDOMComponentFlags.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var DOMProperty = $__require('npm:react@15.3.0/lib/DOMProperty.js');
-    var ReactDOMComponentFlags = $__require('npm:react@15.3.0/lib/ReactDOMComponentFlags.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var DOMProperty = $__require('npm:react@15.3.1/lib/DOMProperty.js');
+    var ReactDOMComponentFlags = $__require('npm:react@15.3.1/lib/ReactDOMComponentFlags.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
     var Flags = ReactDOMComponentFlags;
     var internalInstanceKey = '__reactInternalInstance$' + Math.random().toString(36).slice(2);
@@ -42019,7 +42221,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponentTree.js", ["npm:re
         }
         var childInst = children[name];
         var childID = getRenderedHostOrTextFromComponent(childInst)._domID;
-        if (childID == null) {
+        if (childID === 0) {
           continue;
         }
         for (; childNode !== null; childNode = childNode.nextSibling) {
@@ -42092,7 +42294,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMComponentTree.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/validateDOMNesting.js", ["npm:object-assign@4.1.0.js", "npm:fbjs@0.8.3/lib/emptyFunction.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/validateDOMNesting.js", ["npm:object-assign@4.1.0.js", "npm:fbjs@0.8.4/lib/emptyFunction.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -42100,8 +42302,8 @@ System.registerDynamic("npm:react@15.3.0/lib/validateDOMNesting.js", ["npm:objec
   (function(process) {
     'use strict';
     var _assign = $__require('npm:object-assign@4.1.0.js');
-    var emptyFunction = $__require('npm:fbjs@0.8.3/lib/emptyFunction.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var validateDOMNesting = emptyFunction;
     if ("production" !== 'production') {
       var specialTags = ['address', 'applet', 'area', 'article', 'aside', 'base', 'basefont', 'bgsound', 'blockquote', 'body', 'br', 'button', 'caption', 'center', 'col', 'colgroup', 'dd', 'details', 'dir', 'div', 'dl', 'dt', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'frame', 'frameset', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hgroup', 'hr', 'html', 'iframe', 'img', 'input', 'isindex', 'li', 'link', 'listing', 'main', 'marquee', 'menu', 'menuitem', 'meta', 'nav', 'noembed', 'noframes', 'noscript', 'object', 'ol', 'p', 'param', 'plaintext', 'pre', 'script', 'section', 'select', 'source', 'style', 'summary', 'table', 'tbody', 'td', 'template', 'textarea', 'tfoot', 'th', 'thead', 'title', 'tr', 'track', 'ul', 'wbr', 'xmp'];
@@ -42344,14 +42546,14 @@ System.registerDynamic("npm:react@15.3.0/lib/validateDOMNesting.js", ["npm:objec
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMContainerInfo.js", ["npm:react@15.3.0/lib/validateDOMNesting.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMContainerInfo.js", ["npm:react@15.3.1/lib/validateDOMNesting.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var validateDOMNesting = $__require('npm:react@15.3.0/lib/validateDOMNesting.js');
+    var validateDOMNesting = $__require('npm:react@15.3.1/lib/validateDOMNesting.js');
     var DOC_NODE_TYPE = 9;
     function ReactDOMContainerInfo(topLevelWrapper, node) {
       var info = {
@@ -42372,7 +42574,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMContainerInfo.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMFeatureFlags.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMFeatureFlags.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -42383,7 +42585,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOMFeatureFlags.js", [], true,
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/adler32.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/adler32.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -42415,13 +42617,13 @@ System.registerDynamic("npm:react@15.3.0/lib/adler32.js", [], true, function($__
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactMarkupChecksum.js", ["npm:react@15.3.0/lib/adler32.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactMarkupChecksum.js", ["npm:react@15.3.1/lib/adler32.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var adler32 = $__require('npm:react@15.3.0/lib/adler32.js');
+  var adler32 = $__require('npm:react@15.3.1/lib/adler32.js');
   var TAG_END = /\/?>/;
   var COMMENT_START = /^<\!\-\-/;
   var ReactMarkupChecksum = {
@@ -42445,20 +42647,20 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMarkupChecksum.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactUpdateQueue.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/ReactCurrentOwner.js", "npm:react@15.3.0/lib/ReactInstanceMap.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:react@15.3.0/lib/ReactUpdates.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactUpdateQueue.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactCurrentOwner.js", "npm:react@15.3.1/lib/ReactInstanceMap.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:react@15.3.1/lib/ReactUpdates.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var ReactCurrentOwner = $__require('npm:react@15.3.0/lib/ReactCurrentOwner.js');
-    var ReactInstanceMap = $__require('npm:react@15.3.0/lib/ReactInstanceMap.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var ReactUpdates = $__require('npm:react@15.3.0/lib/ReactUpdates.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var ReactCurrentOwner = $__require('npm:react@15.3.1/lib/ReactCurrentOwner.js');
+    var ReactInstanceMap = $__require('npm:react@15.3.1/lib/ReactInstanceMap.js');
+    var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+    var ReactUpdates = $__require('npm:react@15.3.1/lib/ReactUpdates.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     function enqueueUpdate(internalInstance) {
       ReactUpdates.enqueueUpdate(internalInstance);
     }
@@ -42569,17 +42771,17 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactUpdateQueue.js", ["npm:react@1
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/CallbackQueue.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/PooledClass.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/CallbackQueue.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/PooledClass.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js'),
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js'),
         _assign = $__require('npm:object-assign@4.1.0.js');
-    var PooledClass = $__require('npm:react@15.3.0/lib/PooledClass.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var PooledClass = $__require('npm:react@15.3.1/lib/PooledClass.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     function CallbackQueue() {
       this._callbacks = null;
       this._contexts = null;
@@ -42628,7 +42830,7 @@ System.registerDynamic("npm:react@15.3.0/lib/CallbackQueue.js", ["npm:react@15.3
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactFeatureFlags.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactFeatureFlags.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -42639,15 +42841,15 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactFeatureFlags.js", [], true, fu
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/Transaction.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/Transaction.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var Mixin = {
       reinitializeTransaction: function() {
         this.transactionWrappers = this.getTransactionWrappers();
@@ -42737,21 +42939,21 @@ System.registerDynamic("npm:react@15.3.0/lib/Transaction.js", ["npm:react@15.3.0
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactUpdates.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/CallbackQueue.js", "npm:react@15.3.0/lib/PooledClass.js", "npm:react@15.3.0/lib/ReactFeatureFlags.js", "npm:react@15.3.0/lib/ReactReconciler.js", "npm:react@15.3.0/lib/Transaction.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactUpdates.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/CallbackQueue.js", "npm:react@15.3.1/lib/PooledClass.js", "npm:react@15.3.1/lib/ReactFeatureFlags.js", "npm:react@15.3.1/lib/ReactReconciler.js", "npm:react@15.3.1/lib/Transaction.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js'),
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js'),
         _assign = $__require('npm:object-assign@4.1.0.js');
-    var CallbackQueue = $__require('npm:react@15.3.0/lib/CallbackQueue.js');
-    var PooledClass = $__require('npm:react@15.3.0/lib/PooledClass.js');
-    var ReactFeatureFlags = $__require('npm:react@15.3.0/lib/ReactFeatureFlags.js');
-    var ReactReconciler = $__require('npm:react@15.3.0/lib/ReactReconciler.js');
-    var Transaction = $__require('npm:react@15.3.0/lib/Transaction.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var CallbackQueue = $__require('npm:react@15.3.1/lib/CallbackQueue.js');
+    var PooledClass = $__require('npm:react@15.3.1/lib/PooledClass.js');
+    var ReactFeatureFlags = $__require('npm:react@15.3.1/lib/ReactFeatureFlags.js');
+    var ReactReconciler = $__require('npm:react@15.3.1/lib/ReactReconciler.js');
+    var Transaction = $__require('npm:react@15.3.1/lib/Transaction.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var dirtyComponents = [];
     var updateBatchNumber = 0;
     var asapCallbackQueue = CallbackQueue.getPooled();
@@ -42897,23 +43099,21 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactUpdates.js", ["npm:react@15.3.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactComponentEnvironment.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactComponentEnvironment.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var injected = false;
     var ReactComponentEnvironment = {
-      unmountIDFromEnvironment: null,
       replaceNodeWithMarkup: null,
       processChildrenUpdates: null,
       injection: {injectEnvironment: function(environment) {
           !!injected ? "production" !== 'production' ? invariant(false, 'ReactCompositeComponent: injectEnvironment() can only be called once.') : _prodInvariant('104') : void 0;
-          ReactComponentEnvironment.unmountIDFromEnvironment = environment.unmountIDFromEnvironment;
           ReactComponentEnvironment.replaceNodeWithMarkup = environment.replaceNodeWithMarkup;
           ReactComponentEnvironment.processChildrenUpdates = environment.processChildrenUpdates;
           injected = true;
@@ -42924,7 +43124,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactComponentEnvironment.js", ["np
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactErrorUtils.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactErrorUtils.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -42972,7 +43172,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactErrorUtils.js", ["github:jspm/
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactInstanceMap.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactInstanceMap.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -42996,16 +43196,16 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactInstanceMap.js", [], true, fun
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactNodeTypes.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/ReactElement.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactNodeTypes.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactElement.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var ReactElement = $__require('npm:react@15.3.0/lib/ReactElement.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var ReactElement = $__require('npm:react@15.3.1/lib/ReactElement.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var ReactNodeTypes = {
       HOST: 0,
       COMPOSITE: 1,
@@ -43028,15 +43228,15 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactNodeTypes.js", ["npm:react@15.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactOwner.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactOwner.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var ReactOwner = {
       isValidOwner: function(object) {
         return !!(object && typeof object.attachRef === 'function' && typeof object.detachRef === 'function');
@@ -43058,14 +43258,14 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactOwner.js", ["npm:react@15.3.0/
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactRef.js", ["npm:react@15.3.0/lib/ReactOwner.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactRef.js", ["npm:react@15.3.1/lib/ReactOwner.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var ReactOwner = $__require('npm:react@15.3.0/lib/ReactOwner.js');
+    var ReactOwner = $__require('npm:react@15.3.1/lib/ReactOwner.js');
     var ReactRef = {};
     function attachRef(ref, component, owner) {
       if (typeof ref === 'function') {
@@ -43109,34 +43309,32 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactRef.js", ["npm:react@15.3.0/li
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactReconciler.js", ["npm:react@15.3.0/lib/ReactRef.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactReconciler.js", ["npm:react@15.3.1/lib/ReactRef.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var ReactRef = $__require('npm:react@15.3.0/lib/ReactRef.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var ReactRef = $__require('npm:react@15.3.1/lib/ReactRef.js');
+    var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     function attachRefs() {
       ReactRef.attachRefs(this, this._currentElement);
     }
     var ReactReconciler = {
-      mountComponent: function(internalInstance, transaction, hostParent, hostContainerInfo, context) {
+      mountComponent: function(internalInstance, transaction, hostParent, hostContainerInfo, context, parentDebugID) {
         if ("production" !== 'production') {
           if (internalInstance._debugID !== 0) {
-            ReactInstrumentation.debugTool.onBeforeMountComponent(internalInstance._debugID, internalInstance._currentElement);
-            ReactInstrumentation.debugTool.onBeginReconcilerTimer(internalInstance._debugID, 'mountComponent');
+            ReactInstrumentation.debugTool.onBeforeMountComponent(internalInstance._debugID, internalInstance._currentElement, parentDebugID);
           }
         }
-        var markup = internalInstance.mountComponent(transaction, hostParent, hostContainerInfo, context);
+        var markup = internalInstance.mountComponent(transaction, hostParent, hostContainerInfo, context, parentDebugID);
         if (internalInstance._currentElement && internalInstance._currentElement.ref != null) {
           transaction.getReactMountReady().enqueue(attachRefs, internalInstance);
         }
         if ("production" !== 'production') {
           if (internalInstance._debugID !== 0) {
-            ReactInstrumentation.debugTool.onEndReconcilerTimer(internalInstance._debugID, 'mountComponent');
             ReactInstrumentation.debugTool.onMountComponent(internalInstance._debugID);
           }
         }
@@ -43148,14 +43346,13 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactReconciler.js", ["npm:react@15
       unmountComponent: function(internalInstance, safely) {
         if ("production" !== 'production') {
           if (internalInstance._debugID !== 0) {
-            ReactInstrumentation.debugTool.onBeginReconcilerTimer(internalInstance._debugID, 'unmountComponent');
+            ReactInstrumentation.debugTool.onBeforeUnmountComponent(internalInstance._debugID);
           }
         }
         ReactRef.detachRefs(internalInstance, internalInstance._currentElement);
         internalInstance.unmountComponent(safely);
         if ("production" !== 'production') {
           if (internalInstance._debugID !== 0) {
-            ReactInstrumentation.debugTool.onEndReconcilerTimer(internalInstance._debugID, 'unmountComponent');
             ReactInstrumentation.debugTool.onUnmountComponent(internalInstance._debugID);
           }
         }
@@ -43168,7 +43365,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactReconciler.js", ["npm:react@15
         if ("production" !== 'production') {
           if (internalInstance._debugID !== 0) {
             ReactInstrumentation.debugTool.onBeforeUpdateComponent(internalInstance._debugID, nextElement);
-            ReactInstrumentation.debugTool.onBeginReconcilerTimer(internalInstance._debugID, 'receiveComponent');
           }
         }
         var refsChanged = ReactRef.shouldUpdateRefs(prevElement, nextElement);
@@ -43181,7 +43377,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactReconciler.js", ["npm:react@15
         }
         if ("production" !== 'production') {
           if (internalInstance._debugID !== 0) {
-            ReactInstrumentation.debugTool.onEndReconcilerTimer(internalInstance._debugID, 'receiveComponent');
             ReactInstrumentation.debugTool.onUpdateComponent(internalInstance._debugID);
           }
         }
@@ -43193,14 +43388,12 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactReconciler.js", ["npm:react@15
         }
         if ("production" !== 'production') {
           if (internalInstance._debugID !== 0) {
-            ReactInstrumentation.debugTool.onBeginReconcilerTimer(internalInstance._debugID, 'performUpdateIfNecessary');
             ReactInstrumentation.debugTool.onBeforeUpdateComponent(internalInstance._debugID, internalInstance._currentElement);
           }
         }
         internalInstance.performUpdateIfNecessary(transaction);
         if ("production" !== 'production') {
           if (internalInstance._debugID !== 0) {
-            ReactInstrumentation.debugTool.onEndReconcilerTimer(internalInstance._debugID, 'performUpdateIfNecessary');
             ReactInstrumentation.debugTool.onUpdateComponent(internalInstance._debugID);
           }
         }
@@ -43211,7 +43404,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactReconciler.js", ["npm:react@15
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/shallowEqual.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/shallowEqual.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -43248,30 +43441,30 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/shallowEqual.js", [], true, function(
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactCompositeComponent.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/ReactComponentEnvironment.js", "npm:react@15.3.0/lib/ReactCurrentOwner.js", "npm:react@15.3.0/lib/ReactElement.js", "npm:react@15.3.0/lib/ReactErrorUtils.js", "npm:react@15.3.0/lib/ReactInstanceMap.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:react@15.3.0/lib/ReactNodeTypes.js", "npm:react@15.3.0/lib/ReactPropTypeLocations.js", "npm:react@15.3.0/lib/ReactReconciler.js", "npm:react@15.3.0/lib/checkReactTypeSpec.js", "npm:fbjs@0.8.3/lib/emptyObject.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/shallowEqual.js", "npm:react@15.3.0/lib/shouldUpdateReactComponent.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactCompositeComponent.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/ReactComponentEnvironment.js", "npm:react@15.3.1/lib/ReactCurrentOwner.js", "npm:react@15.3.1/lib/ReactElement.js", "npm:react@15.3.1/lib/ReactErrorUtils.js", "npm:react@15.3.1/lib/ReactInstanceMap.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:react@15.3.1/lib/ReactNodeTypes.js", "npm:react@15.3.1/lib/ReactPropTypeLocations.js", "npm:react@15.3.1/lib/ReactReconciler.js", "npm:react@15.3.1/lib/checkReactTypeSpec.js", "npm:fbjs@0.8.4/lib/emptyObject.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/shallowEqual.js", "npm:react@15.3.1/lib/shouldUpdateReactComponent.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js'),
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js'),
         _assign = $__require('npm:object-assign@4.1.0.js');
-    var ReactComponentEnvironment = $__require('npm:react@15.3.0/lib/ReactComponentEnvironment.js');
-    var ReactCurrentOwner = $__require('npm:react@15.3.0/lib/ReactCurrentOwner.js');
-    var ReactElement = $__require('npm:react@15.3.0/lib/ReactElement.js');
-    var ReactErrorUtils = $__require('npm:react@15.3.0/lib/ReactErrorUtils.js');
-    var ReactInstanceMap = $__require('npm:react@15.3.0/lib/ReactInstanceMap.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var ReactNodeTypes = $__require('npm:react@15.3.0/lib/ReactNodeTypes.js');
-    var ReactPropTypeLocations = $__require('npm:react@15.3.0/lib/ReactPropTypeLocations.js');
-    var ReactReconciler = $__require('npm:react@15.3.0/lib/ReactReconciler.js');
-    var checkReactTypeSpec = $__require('npm:react@15.3.0/lib/checkReactTypeSpec.js');
-    var emptyObject = $__require('npm:fbjs@0.8.3/lib/emptyObject.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var shallowEqual = $__require('npm:fbjs@0.8.3/lib/shallowEqual.js');
-    var shouldUpdateReactComponent = $__require('npm:react@15.3.0/lib/shouldUpdateReactComponent.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var ReactComponentEnvironment = $__require('npm:react@15.3.1/lib/ReactComponentEnvironment.js');
+    var ReactCurrentOwner = $__require('npm:react@15.3.1/lib/ReactCurrentOwner.js');
+    var ReactElement = $__require('npm:react@15.3.1/lib/ReactElement.js');
+    var ReactErrorUtils = $__require('npm:react@15.3.1/lib/ReactErrorUtils.js');
+    var ReactInstanceMap = $__require('npm:react@15.3.1/lib/ReactInstanceMap.js');
+    var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+    var ReactNodeTypes = $__require('npm:react@15.3.1/lib/ReactNodeTypes.js');
+    var ReactPropTypeLocations = $__require('npm:react@15.3.1/lib/ReactPropTypeLocations.js');
+    var ReactReconciler = $__require('npm:react@15.3.1/lib/ReactReconciler.js');
+    var checkReactTypeSpec = $__require('npm:react@15.3.1/lib/checkReactTypeSpec.js');
+    var emptyObject = $__require('npm:fbjs@0.8.4/lib/emptyObject.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var shallowEqual = $__require('npm:fbjs@0.8.4/lib/shallowEqual.js');
+    var shouldUpdateReactComponent = $__require('npm:react@15.3.1/lib/shouldUpdateReactComponent.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var CompositeTypes = {
       ImpureClass: 0,
       PureClass: 1,
@@ -43320,7 +43513,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactCompositeComponent.js", ["npm:
     var ReactCompositeComponentMixin = {
       construct: function(element) {
         this._currentElement = element;
-        this._rootNodeID = null;
+        this._rootNodeID = 0;
         this._compositeType = null;
         this._instance = null;
         this._hostParent = null;
@@ -43342,7 +43535,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactCompositeComponent.js", ["npm:
         }
       },
       mountComponent: function(transaction, hostParent, hostContainerInfo, context) {
-        var _this = this;
         this._context = context;
         this._mountOrder = nextMountID++;
         this._hostParent = hostParent;
@@ -43409,14 +43601,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactCompositeComponent.js", ["npm:
             transaction.getReactMountReady().enqueue(invokeComponentDidMountWithTimer, this);
           } else {
             transaction.getReactMountReady().enqueue(inst.componentDidMount, inst);
-          }
-        }
-        if ("production" !== 'production') {
-          if (this._debugID) {
-            var callback = function(component) {
-              return ReactInstrumentation.debugTool.onComponentHasMounted(_this._debugID);
-            };
-            transaction.getReactMountReady().enqueue(callback, this);
           }
         }
         return markup;
@@ -43511,12 +43695,11 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactCompositeComponent.js", ["npm:
         this._renderedNodeType = nodeType;
         var child = this._instantiateReactComponent(renderedElement, nodeType !== ReactNodeTypes.EMPTY);
         this._renderedComponent = child;
+        var selfDebugID = 0;
         if ("production" !== 'production') {
-          if (child._debugID !== 0 && this._debugID !== 0) {
-            ReactInstrumentation.debugTool.onSetParent(child._debugID, this._debugID);
-          }
+          selfDebugID = this._debugID;
         }
-        var markup = ReactReconciler.mountComponent(child, transaction, hostParent, hostContainerInfo, this._processChildContext(context));
+        var markup = ReactReconciler.mountComponent(child, transaction, hostParent, hostContainerInfo, this._processChildContext(context), selfDebugID);
         if ("production" !== 'production') {
           if (this._debugID !== 0) {
             ReactInstrumentation.debugTool.onSetChildren(this._debugID, child._debugID !== 0 ? [child._debugID] : []);
@@ -43563,7 +43746,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactCompositeComponent.js", ["npm:
         this._pendingCallbacks = null;
         this._pendingElement = null;
         this._context = null;
-        this._rootNodeID = null;
+        this._rootNodeID = 0;
         this._topLevelWrapper = null;
         ReactInstanceMap.remove(inst);
       },
@@ -43714,7 +43897,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactCompositeComponent.js", ["npm:
         return nextState;
       },
       _performComponentUpdate: function(nextElement, nextProps, nextState, nextContext, transaction, unmaskedContext) {
-        var _this2 = this;
         var inst = this._instance;
         var hasComponentDidUpdate = Boolean(inst.componentDidUpdate);
         var prevProps;
@@ -43751,14 +43933,6 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactCompositeComponent.js", ["npm:
             transaction.getReactMountReady().enqueue(inst.componentDidUpdate.bind(inst, prevProps, prevState, prevContext), inst);
           }
         }
-        if ("production" !== 'production') {
-          if (this._debugID) {
-            var callback = function() {
-              return ReactInstrumentation.debugTool.onComponentHasUpdated(_this2._debugID);
-            };
-            transaction.getReactMountReady().enqueue(callback, this);
-          }
-        }
       },
       _updateRenderedComponent: function(transaction, context) {
         var prevComponentInstance = this._renderedComponent;
@@ -43773,12 +43947,11 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactCompositeComponent.js", ["npm:
           this._renderedNodeType = nodeType;
           var child = this._instantiateReactComponent(nextRenderedElement, nodeType !== ReactNodeTypes.EMPTY);
           this._renderedComponent = child;
+          var selfDebugID = 0;
           if ("production" !== 'production') {
-            if (child._debugID !== 0 && this._debugID !== 0) {
-              ReactInstrumentation.debugTool.onSetParent(child._debugID, this._debugID);
-            }
+            selfDebugID = this._debugID;
           }
-          var nextMarkup = ReactReconciler.mountComponent(child, transaction, this._hostParent, this._hostContainerInfo, this._processChildContext(context));
+          var nextMarkup = ReactReconciler.mountComponent(child, transaction, this._hostParent, this._hostContainerInfo, this._processChildContext(context), selfDebugID);
           if ("production" !== 'production') {
             if (this._debugID !== 0) {
               ReactInstrumentation.debugTool.onSetChildren(this._debugID, child._debugID !== 0 ? [child._debugID] : []);
@@ -43860,7 +44033,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactCompositeComponent.js", ["npm:
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactEmptyComponent.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactEmptyComponent.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -43878,16 +44051,16 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactEmptyComponent.js", [], true, 
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactHostComponent.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactHostComponent.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js'),
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js'),
         _assign = $__require('npm:object-assign@4.1.0.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var genericComponentClass = null;
     var tagToComponentClass = {};
     var textComponentClass = null;
@@ -43923,483 +44096,20 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactHostComponent.js", ["npm:react
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactInvalidSetStateWarningDevTool.js", ["npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/instantiateReactComponent.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/ReactCompositeComponent.js", "npm:react@15.3.1/lib/ReactEmptyComponent.js", "npm:react@15.3.1/lib/ReactHostComponent.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
-    if ("production" !== 'production') {
-      var processingChildContext = false;
-      var warnInvalidSetState = function() {
-        "production" !== 'production' ? warning(!processingChildContext, 'setState(...): Cannot call setState() inside getChildContext()') : void 0;
-      };
-    }
-    var ReactInvalidSetStateWarningDevTool = {
-      onBeginProcessingChildContext: function() {
-        processingChildContext = true;
-      },
-      onEndProcessingChildContext: function() {
-        processingChildContext = false;
-      },
-      onSetState: function() {
-        warnInvalidSetState();
-      }
-    };
-    module.exports = ReactInvalidSetStateWarningDevTool;
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/ReactHostOperationHistoryDevtool.js", [], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var history = [];
-  var ReactHostOperationHistoryDevtool = {
-    onHostOperation: function(debugID, type, payload) {
-      history.push({
-        instanceID: debugID,
-        type: type,
-        payload: payload
-      });
-    },
-    clearHistory: function() {
-      if (ReactHostOperationHistoryDevtool._preventClearing) {
-        return;
-      }
-      history = [];
-    },
-    getHistory: function() {
-      return history;
-    }
-  };
-  module.exports = ReactHostOperationHistoryDevtool;
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/ReactChildrenMutationWarningDevtool.js", ["npm:react@15.3.0/lib/ReactComponentTreeDevtool.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var ReactComponentTreeDevtool = $__require('npm:react@15.3.0/lib/ReactComponentTreeDevtool.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
-    var elements = {};
-    function handleElement(debugID, element) {
-      if (element == null) {
-        return;
-      }
-      if (element._shadowChildren === undefined) {
-        return;
-      }
-      if (element._shadowChildren === element.props.children) {
-        return;
-      }
-      var isMutated = false;
-      if (Array.isArray(element._shadowChildren)) {
-        if (element._shadowChildren.length === element.props.children.length) {
-          for (var i = 0; i < element._shadowChildren.length; i++) {
-            if (element._shadowChildren[i] !== element.props.children[i]) {
-              isMutated = true;
-            }
-          }
-        } else {
-          isMutated = true;
-        }
-      }
-      "production" !== 'production' ? warning(Array.isArray(element._shadowChildren) && !isMutated, 'Component\'s children should not be mutated.%s', ReactComponentTreeDevtool.getStackAddendumByID(debugID)) : void 0;
-    }
-    var ReactDOMUnknownPropertyDevtool = {
-      onBeforeMountComponent: function(debugID, element) {
-        elements[debugID] = element;
-      },
-      onBeforeUpdateComponent: function(debugID, element) {
-        elements[debugID] = element;
-      },
-      onComponentHasMounted: function(debugID) {
-        handleElement(debugID, elements[debugID]);
-        delete elements[debugID];
-      },
-      onComponentHasUpdated: function(debugID) {
-        handleElement(debugID, elements[debugID]);
-        delete elements[debugID];
-      }
-    };
-    module.exports = ReactDOMUnknownPropertyDevtool;
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:fbjs@0.8.3/lib/performance.js", ["npm:fbjs@0.8.3/lib/ExecutionEnvironment.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-  var performance;
-  if (ExecutionEnvironment.canUseDOM) {
-    performance = window.performance || window.msPerformance || window.webkitPerformance;
-  }
-  module.exports = performance || {};
-  return module.exports;
-});
-
-System.registerDynamic("npm:fbjs@0.8.3/lib/performanceNow.js", ["npm:fbjs@0.8.3/lib/performance.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var performance = $__require('npm:fbjs@0.8.3/lib/performance.js');
-  var performanceNow;
-  if (performance.now) {
-    performanceNow = function performanceNow() {
-      return performance.now();
-    };
-  } else {
-    performanceNow = function performanceNow() {
-      return Date.now();
-    };
-  }
-  module.exports = performanceNow;
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/ReactDebugTool.js", ["npm:react@15.3.0/lib/ReactInvalidSetStateWarningDevTool.js", "npm:react@15.3.0/lib/ReactHostOperationHistoryDevtool.js", "npm:react@15.3.0/lib/ReactComponentTreeDevtool.js", "npm:react@15.3.0/lib/ReactChildrenMutationWarningDevtool.js", "npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:fbjs@0.8.3/lib/performanceNow.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var ReactInvalidSetStateWarningDevTool = $__require('npm:react@15.3.0/lib/ReactInvalidSetStateWarningDevTool.js');
-    var ReactHostOperationHistoryDevtool = $__require('npm:react@15.3.0/lib/ReactHostOperationHistoryDevtool.js');
-    var ReactComponentTreeDevtool = $__require('npm:react@15.3.0/lib/ReactComponentTreeDevtool.js');
-    var ReactChildrenMutationWarningDevtool = $__require('npm:react@15.3.0/lib/ReactChildrenMutationWarningDevtool.js');
-    var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-    var performanceNow = $__require('npm:fbjs@0.8.3/lib/performanceNow.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
-    var eventHandlers = [];
-    var handlerDoesThrowForEvent = {};
-    function emitEvent(handlerFunctionName, arg1, arg2, arg3, arg4, arg5) {
-      eventHandlers.forEach(function(handler) {
-        try {
-          if (handler[handlerFunctionName]) {
-            handler[handlerFunctionName](arg1, arg2, arg3, arg4, arg5);
-          }
-        } catch (e) {
-          "production" !== 'production' ? warning(handlerDoesThrowForEvent[handlerFunctionName], 'exception thrown by devtool while handling %s: %s', handlerFunctionName, e + '\n' + e.stack) : void 0;
-          handlerDoesThrowForEvent[handlerFunctionName] = true;
-        }
-      });
-    }
-    var isProfiling = false;
-    var flushHistory = [];
-    var lifeCycleTimerStack = [];
-    var currentFlushNesting = 0;
-    var currentFlushMeasurements = null;
-    var currentFlushStartTime = null;
-    var currentTimerDebugID = null;
-    var currentTimerStartTime = null;
-    var currentTimerNestedFlushDuration = null;
-    var currentTimerType = null;
-    var lifeCycleTimerHasWarned = false;
-    function clearHistory() {
-      ReactComponentTreeDevtool.purgeUnmountedComponents();
-      ReactHostOperationHistoryDevtool.clearHistory();
-    }
-    function getTreeSnapshot(registeredIDs) {
-      return registeredIDs.reduce(function(tree, id) {
-        var ownerID = ReactComponentTreeDevtool.getOwnerID(id);
-        var parentID = ReactComponentTreeDevtool.getParentID(id);
-        tree[id] = {
-          displayName: ReactComponentTreeDevtool.getDisplayName(id),
-          text: ReactComponentTreeDevtool.getText(id),
-          updateCount: ReactComponentTreeDevtool.getUpdateCount(id),
-          childIDs: ReactComponentTreeDevtool.getChildIDs(id),
-          ownerID: ownerID || ReactComponentTreeDevtool.getOwnerID(parentID),
-          parentID: parentID
-        };
-        return tree;
-      }, {});
-    }
-    function resetMeasurements() {
-      var previousStartTime = currentFlushStartTime;
-      var previousMeasurements = currentFlushMeasurements || [];
-      var previousOperations = ReactHostOperationHistoryDevtool.getHistory();
-      if (currentFlushNesting === 0) {
-        currentFlushStartTime = null;
-        currentFlushMeasurements = null;
-        clearHistory();
-        return;
-      }
-      if (previousMeasurements.length || previousOperations.length) {
-        var registeredIDs = ReactComponentTreeDevtool.getRegisteredIDs();
-        flushHistory.push({
-          duration: performanceNow() - previousStartTime,
-          measurements: previousMeasurements || [],
-          operations: previousOperations || [],
-          treeSnapshot: getTreeSnapshot(registeredIDs)
-        });
-      }
-      clearHistory();
-      currentFlushStartTime = performanceNow();
-      currentFlushMeasurements = [];
-    }
-    function checkDebugID(debugID) {
-      "production" !== 'production' ? warning(debugID, 'ReactDebugTool: debugID may not be empty.') : void 0;
-    }
-    function beginLifeCycleTimer(debugID, timerType) {
-      if (currentFlushNesting === 0) {
-        return;
-      }
-      if (currentTimerType && !lifeCycleTimerHasWarned) {
-        "production" !== 'production' ? warning(false, 'There is an internal error in the React performance measurement code. ' + 'Did not expect %s timer to start while %s timer is still in ' + 'progress for %s instance.', timerType, currentTimerType || 'no', debugID === currentTimerDebugID ? 'the same' : 'another') : void 0;
-        lifeCycleTimerHasWarned = true;
-      }
-      currentTimerStartTime = performanceNow();
-      currentTimerNestedFlushDuration = 0;
-      currentTimerDebugID = debugID;
-      currentTimerType = timerType;
-    }
-    function endLifeCycleTimer(debugID, timerType) {
-      if (currentFlushNesting === 0) {
-        return;
-      }
-      if (currentTimerType !== timerType && !lifeCycleTimerHasWarned) {
-        "production" !== 'production' ? warning(false, 'There is an internal error in the React performance measurement code. ' + 'We did not expect %s timer to stop while %s timer is still in ' + 'progress for %s instance. Please report this as a bug in React.', timerType, currentTimerType || 'no', debugID === currentTimerDebugID ? 'the same' : 'another') : void 0;
-        lifeCycleTimerHasWarned = true;
-      }
-      if (isProfiling) {
-        currentFlushMeasurements.push({
-          timerType: timerType,
-          instanceID: debugID,
-          duration: performanceNow() - currentTimerStartTime - currentTimerNestedFlushDuration
-        });
-      }
-      currentTimerStartTime = null;
-      currentTimerNestedFlushDuration = null;
-      currentTimerDebugID = null;
-      currentTimerType = null;
-    }
-    function pauseCurrentLifeCycleTimer() {
-      var currentTimer = {
-        startTime: currentTimerStartTime,
-        nestedFlushStartTime: performanceNow(),
-        debugID: currentTimerDebugID,
-        timerType: currentTimerType
-      };
-      lifeCycleTimerStack.push(currentTimer);
-      currentTimerStartTime = null;
-      currentTimerNestedFlushDuration = null;
-      currentTimerDebugID = null;
-      currentTimerType = null;
-    }
-    function resumeCurrentLifeCycleTimer() {
-      var _lifeCycleTimerStack$ = lifeCycleTimerStack.pop();
-      var startTime = _lifeCycleTimerStack$.startTime;
-      var nestedFlushStartTime = _lifeCycleTimerStack$.nestedFlushStartTime;
-      var debugID = _lifeCycleTimerStack$.debugID;
-      var timerType = _lifeCycleTimerStack$.timerType;
-      var nestedFlushDuration = performanceNow() - nestedFlushStartTime;
-      currentTimerStartTime = startTime;
-      currentTimerNestedFlushDuration += nestedFlushDuration;
-      currentTimerDebugID = debugID;
-      currentTimerType = timerType;
-    }
-    var ReactDebugTool = {
-      addDevtool: function(devtool) {
-        eventHandlers.push(devtool);
-      },
-      removeDevtool: function(devtool) {
-        for (var i = 0; i < eventHandlers.length; i++) {
-          if (eventHandlers[i] === devtool) {
-            eventHandlers.splice(i, 1);
-            i--;
-          }
-        }
-      },
-      isProfiling: function() {
-        return isProfiling;
-      },
-      beginProfiling: function() {
-        if (isProfiling) {
-          return;
-        }
-        isProfiling = true;
-        flushHistory.length = 0;
-        resetMeasurements();
-        ReactDebugTool.addDevtool(ReactHostOperationHistoryDevtool);
-      },
-      endProfiling: function() {
-        if (!isProfiling) {
-          return;
-        }
-        isProfiling = false;
-        resetMeasurements();
-        ReactDebugTool.removeDevtool(ReactHostOperationHistoryDevtool);
-      },
-      getFlushHistory: function() {
-        return flushHistory;
-      },
-      onBeginFlush: function() {
-        currentFlushNesting++;
-        resetMeasurements();
-        pauseCurrentLifeCycleTimer();
-        emitEvent('onBeginFlush');
-      },
-      onEndFlush: function() {
-        resetMeasurements();
-        currentFlushNesting--;
-        resumeCurrentLifeCycleTimer();
-        emitEvent('onEndFlush');
-      },
-      onBeginLifeCycleTimer: function(debugID, timerType) {
-        checkDebugID(debugID);
-        emitEvent('onBeginLifeCycleTimer', debugID, timerType);
-        beginLifeCycleTimer(debugID, timerType);
-      },
-      onEndLifeCycleTimer: function(debugID, timerType) {
-        checkDebugID(debugID);
-        endLifeCycleTimer(debugID, timerType);
-        emitEvent('onEndLifeCycleTimer', debugID, timerType);
-      },
-      onBeginReconcilerTimer: function(debugID, timerType) {
-        checkDebugID(debugID);
-        emitEvent('onBeginReconcilerTimer', debugID, timerType);
-      },
-      onEndReconcilerTimer: function(debugID, timerType) {
-        checkDebugID(debugID);
-        emitEvent('onEndReconcilerTimer', debugID, timerType);
-      },
-      onError: function(debugID) {
-        if (currentTimerDebugID != null) {
-          endLifeCycleTimer(currentTimerDebugID, currentTimerType);
-        }
-        emitEvent('onError', debugID);
-      },
-      onBeginProcessingChildContext: function() {
-        emitEvent('onBeginProcessingChildContext');
-      },
-      onEndProcessingChildContext: function() {
-        emitEvent('onEndProcessingChildContext');
-      },
-      onHostOperation: function(debugID, type, payload) {
-        checkDebugID(debugID);
-        emitEvent('onHostOperation', debugID, type, payload);
-      },
-      onComponentHasMounted: function(debugID) {
-        checkDebugID(debugID);
-        emitEvent('onComponentHasMounted', debugID);
-      },
-      onComponentHasUpdated: function(debugID) {
-        checkDebugID(debugID);
-        emitEvent('onComponentHasUpdated', debugID);
-      },
-      onSetState: function() {
-        emitEvent('onSetState');
-      },
-      onSetDisplayName: function(debugID, displayName) {
-        checkDebugID(debugID);
-        emitEvent('onSetDisplayName', debugID, displayName);
-      },
-      onSetChildren: function(debugID, childDebugIDs) {
-        checkDebugID(debugID);
-        childDebugIDs.forEach(checkDebugID);
-        emitEvent('onSetChildren', debugID, childDebugIDs);
-      },
-      onSetOwner: function(debugID, ownerDebugID) {
-        checkDebugID(debugID);
-        emitEvent('onSetOwner', debugID, ownerDebugID);
-      },
-      onSetParent: function(debugID, parentDebugID) {
-        checkDebugID(debugID);
-        emitEvent('onSetParent', debugID, parentDebugID);
-      },
-      onSetText: function(debugID, text) {
-        checkDebugID(debugID);
-        emitEvent('onSetText', debugID, text);
-      },
-      onMountRootComponent: function(debugID) {
-        checkDebugID(debugID);
-        emitEvent('onMountRootComponent', debugID);
-      },
-      onBeforeMountComponent: function(debugID, element) {
-        checkDebugID(debugID);
-        emitEvent('onBeforeMountComponent', debugID, element);
-      },
-      onMountComponent: function(debugID) {
-        checkDebugID(debugID);
-        emitEvent('onMountComponent', debugID);
-      },
-      onBeforeUpdateComponent: function(debugID, element) {
-        checkDebugID(debugID);
-        emitEvent('onBeforeUpdateComponent', debugID, element);
-      },
-      onUpdateComponent: function(debugID) {
-        checkDebugID(debugID);
-        emitEvent('onUpdateComponent', debugID);
-      },
-      onUnmountComponent: function(debugID) {
-        checkDebugID(debugID);
-        emitEvent('onUnmountComponent', debugID);
-      },
-      onTestEvent: function() {
-        emitEvent('onTestEvent');
-      }
-    };
-    ReactDebugTool.addDevtool(ReactInvalidSetStateWarningDevTool);
-    ReactDebugTool.addDevtool(ReactComponentTreeDevtool);
-    ReactDebugTool.addDevtool(ReactChildrenMutationWarningDevtool);
-    var url = ExecutionEnvironment.canUseDOM && window.location.href || '';
-    if (/[?&]react_perf\b/.test(url)) {
-      ReactDebugTool.beginProfiling();
-    }
-    module.exports = ReactDebugTool;
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/ReactInstrumentation.js", ["npm:react@15.3.0/lib/ReactDebugTool.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var debugTool = null;
-    if ("production" !== 'production') {
-      var ReactDebugTool = $__require('npm:react@15.3.0/lib/ReactDebugTool.js');
-      debugTool = ReactDebugTool;
-    }
-    module.exports = {debugTool: debugTool};
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/instantiateReactComponent.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/ReactCompositeComponent.js", "npm:react@15.3.0/lib/ReactEmptyComponent.js", "npm:react@15.3.0/lib/ReactHostComponent.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js'),
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js'),
         _assign = $__require('npm:object-assign@4.1.0.js');
-    var ReactCompositeComponent = $__require('npm:react@15.3.0/lib/ReactCompositeComponent.js');
-    var ReactEmptyComponent = $__require('npm:react@15.3.0/lib/ReactEmptyComponent.js');
-    var ReactHostComponent = $__require('npm:react@15.3.0/lib/ReactHostComponent.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var ReactCompositeComponent = $__require('npm:react@15.3.1/lib/ReactCompositeComponent.js');
+    var ReactEmptyComponent = $__require('npm:react@15.3.1/lib/ReactEmptyComponent.js');
+    var ReactHostComponent = $__require('npm:react@15.3.1/lib/ReactHostComponent.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var ReactCompositeComponentWrapper = function(element) {
       this.construct(element);
     };
@@ -44412,20 +44122,6 @@ System.registerDynamic("npm:react@15.3.0/lib/instantiateReactComponent.js", ["np
         }
       }
       return '';
-    }
-    function getDisplayName(instance) {
-      var element = instance._currentElement;
-      if (element == null) {
-        return '#empty';
-      } else if (typeof element === 'string' || typeof element === 'number') {
-        return '#text';
-      } else if (typeof element.type === 'string') {
-        return element.type;
-      } else if (instance.getName) {
-        return instance.getName() || 'Unknown';
-      } else {
-        return element.type.displayName || element.type.name || 'Unknown';
-      }
     }
     function isInternalComponentType(type) {
       return typeof type === 'function' && typeof type.prototype !== 'undefined' && typeof type.prototype.mountComponent === 'function' && typeof type.prototype.receiveComponent === 'function';
@@ -44459,18 +44155,7 @@ System.registerDynamic("npm:react@15.3.0/lib/instantiateReactComponent.js", ["np
       instance._mountIndex = 0;
       instance._mountImage = null;
       if ("production" !== 'production') {
-        if (shouldHaveDebugID) {
-          var debugID = nextDebugID++;
-          instance._debugID = debugID;
-          var displayName = getDisplayName(instance);
-          ReactInstrumentation.debugTool.onSetDisplayName(debugID, displayName);
-          var owner = node && node._owner;
-          if (owner) {
-            ReactInstrumentation.debugTool.onSetOwner(debugID, owner._debugID);
-          }
-        } else {
-          instance._debugID = 0;
-        }
+        instance._debugID = shouldHaveDebugID ? nextDebugID++ : 0;
       }
       if ("production" !== 'production') {
         if (Object.preventExtensions) {
@@ -44484,7 +44169,7 @@ System.registerDynamic("npm:react@15.3.0/lib/instantiateReactComponent.js", ["np
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/DOMNamespaces.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/DOMNamespaces.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -44499,7 +44184,7 @@ System.registerDynamic("npm:react@15.3.0/lib/DOMNamespaces.js", [], true, functi
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/createMicrosoftUnsafeLocalFunction.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/createMicrosoftUnsafeLocalFunction.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -44520,18 +44205,18 @@ System.registerDynamic("npm:react@15.3.0/lib/createMicrosoftUnsafeLocalFunction.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/setInnerHTML.js", ["npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "npm:react@15.3.0/lib/DOMNamespaces.js", "npm:react@15.3.0/lib/createMicrosoftUnsafeLocalFunction.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/setInnerHTML.js", ["npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:react@15.3.1/lib/DOMNamespaces.js", "npm:react@15.3.1/lib/createMicrosoftUnsafeLocalFunction.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
-    var DOMNamespaces = $__require('npm:react@15.3.0/lib/DOMNamespaces.js');
+    var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+    var DOMNamespaces = $__require('npm:react@15.3.1/lib/DOMNamespaces.js');
     var WHITESPACE_TEST = /^[ \r\n\t\f]/;
     var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
-    var createMicrosoftUnsafeLocalFunction = $__require('npm:react@15.3.0/lib/createMicrosoftUnsafeLocalFunction.js');
+    var createMicrosoftUnsafeLocalFunction = $__require('npm:react@15.3.1/lib/createMicrosoftUnsafeLocalFunction.js');
     var reusableSVGContainer;
     var setInnerHTML = createMicrosoftUnsafeLocalFunction(function(node, html) {
       if (node.namespaceURI === DOMNamespaces.svg && !('innerHTML' in node)) {
@@ -44573,7 +44258,7 @@ System.registerDynamic("npm:react@15.3.0/lib/setInnerHTML.js", ["npm:fbjs@0.8.3/
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/shouldUpdateReactComponent.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/shouldUpdateReactComponent.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -44597,35 +44282,35 @@ System.registerDynamic("npm:react@15.3.0/lib/shouldUpdateReactComponent.js", [],
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactMount.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/DOMLazyTree.js", "npm:react@15.3.0/lib/DOMProperty.js", "npm:react@15.3.0/lib/ReactBrowserEventEmitter.js", "npm:react@15.3.0/lib/ReactCurrentOwner.js", "npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactDOMContainerInfo.js", "npm:react@15.3.0/lib/ReactDOMFeatureFlags.js", "npm:react@15.3.0/lib/ReactElement.js", "npm:react@15.3.0/lib/ReactFeatureFlags.js", "npm:react@15.3.0/lib/ReactInstanceMap.js", "npm:react@15.3.0/lib/ReactInstrumentation.js", "npm:react@15.3.0/lib/ReactMarkupChecksum.js", "npm:react@15.3.0/lib/ReactReconciler.js", "npm:react@15.3.0/lib/ReactUpdateQueue.js", "npm:react@15.3.0/lib/ReactUpdates.js", "npm:fbjs@0.8.3/lib/emptyObject.js", "npm:react@15.3.0/lib/instantiateReactComponent.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:react@15.3.0/lib/setInnerHTML.js", "npm:react@15.3.0/lib/shouldUpdateReactComponent.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactMount.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/DOMLazyTree.js", "npm:react@15.3.1/lib/DOMProperty.js", "npm:react@15.3.1/lib/ReactBrowserEventEmitter.js", "npm:react@15.3.1/lib/ReactCurrentOwner.js", "npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactDOMContainerInfo.js", "npm:react@15.3.1/lib/ReactDOMFeatureFlags.js", "npm:react@15.3.1/lib/ReactElement.js", "npm:react@15.3.1/lib/ReactFeatureFlags.js", "npm:react@15.3.1/lib/ReactInstanceMap.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:react@15.3.1/lib/ReactMarkupChecksum.js", "npm:react@15.3.1/lib/ReactReconciler.js", "npm:react@15.3.1/lib/ReactUpdateQueue.js", "npm:react@15.3.1/lib/ReactUpdates.js", "npm:fbjs@0.8.4/lib/emptyObject.js", "npm:react@15.3.1/lib/instantiateReactComponent.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:react@15.3.1/lib/setInnerHTML.js", "npm:react@15.3.1/lib/shouldUpdateReactComponent.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var DOMLazyTree = $__require('npm:react@15.3.0/lib/DOMLazyTree.js');
-    var DOMProperty = $__require('npm:react@15.3.0/lib/DOMProperty.js');
-    var ReactBrowserEventEmitter = $__require('npm:react@15.3.0/lib/ReactBrowserEventEmitter.js');
-    var ReactCurrentOwner = $__require('npm:react@15.3.0/lib/ReactCurrentOwner.js');
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactDOMContainerInfo = $__require('npm:react@15.3.0/lib/ReactDOMContainerInfo.js');
-    var ReactDOMFeatureFlags = $__require('npm:react@15.3.0/lib/ReactDOMFeatureFlags.js');
-    var ReactElement = $__require('npm:react@15.3.0/lib/ReactElement.js');
-    var ReactFeatureFlags = $__require('npm:react@15.3.0/lib/ReactFeatureFlags.js');
-    var ReactInstanceMap = $__require('npm:react@15.3.0/lib/ReactInstanceMap.js');
-    var ReactInstrumentation = $__require('npm:react@15.3.0/lib/ReactInstrumentation.js');
-    var ReactMarkupChecksum = $__require('npm:react@15.3.0/lib/ReactMarkupChecksum.js');
-    var ReactReconciler = $__require('npm:react@15.3.0/lib/ReactReconciler.js');
-    var ReactUpdateQueue = $__require('npm:react@15.3.0/lib/ReactUpdateQueue.js');
-    var ReactUpdates = $__require('npm:react@15.3.0/lib/ReactUpdates.js');
-    var emptyObject = $__require('npm:fbjs@0.8.3/lib/emptyObject.js');
-    var instantiateReactComponent = $__require('npm:react@15.3.0/lib/instantiateReactComponent.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var setInnerHTML = $__require('npm:react@15.3.0/lib/setInnerHTML.js');
-    var shouldUpdateReactComponent = $__require('npm:react@15.3.0/lib/shouldUpdateReactComponent.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var DOMLazyTree = $__require('npm:react@15.3.1/lib/DOMLazyTree.js');
+    var DOMProperty = $__require('npm:react@15.3.1/lib/DOMProperty.js');
+    var ReactBrowserEventEmitter = $__require('npm:react@15.3.1/lib/ReactBrowserEventEmitter.js');
+    var ReactCurrentOwner = $__require('npm:react@15.3.1/lib/ReactCurrentOwner.js');
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactDOMContainerInfo = $__require('npm:react@15.3.1/lib/ReactDOMContainerInfo.js');
+    var ReactDOMFeatureFlags = $__require('npm:react@15.3.1/lib/ReactDOMFeatureFlags.js');
+    var ReactElement = $__require('npm:react@15.3.1/lib/ReactElement.js');
+    var ReactFeatureFlags = $__require('npm:react@15.3.1/lib/ReactFeatureFlags.js');
+    var ReactInstanceMap = $__require('npm:react@15.3.1/lib/ReactInstanceMap.js');
+    var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+    var ReactMarkupChecksum = $__require('npm:react@15.3.1/lib/ReactMarkupChecksum.js');
+    var ReactReconciler = $__require('npm:react@15.3.1/lib/ReactReconciler.js');
+    var ReactUpdateQueue = $__require('npm:react@15.3.1/lib/ReactUpdateQueue.js');
+    var ReactUpdates = $__require('npm:react@15.3.1/lib/ReactUpdates.js');
+    var emptyObject = $__require('npm:fbjs@0.8.4/lib/emptyObject.js');
+    var instantiateReactComponent = $__require('npm:react@15.3.1/lib/instantiateReactComponent.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var setInnerHTML = $__require('npm:react@15.3.1/lib/setInnerHTML.js');
+    var shouldUpdateReactComponent = $__require('npm:react@15.3.1/lib/shouldUpdateReactComponent.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
     var ROOT_ATTR_NAME = DOMProperty.ROOT_ATTRIBUTE_NAME;
     var ELEMENT_NODE_TYPE = 1;
@@ -44662,7 +44347,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMount.js", ["npm:react@15.3.0/
         markerName = 'React mount: ' + (typeof type === 'string' ? type : type.displayName || type.name);
         console.time(markerName);
       }
-      var markup = ReactReconciler.mountComponent(wrapperInstance, transaction, null, ReactDOMContainerInfo(wrapperInstance, container), context);
+      var markup = ReactReconciler.mountComponent(wrapperInstance, transaction, null, ReactDOMContainerInfo(wrapperInstance, container), context, 0);
       if (markerName) {
         console.timeEnd(markerName);
       }
@@ -44695,6 +44380,16 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMount.js", ["npm:react@15.3.0/
         var inst = ReactDOMComponentTree.getInstanceFromNode(rootEl);
         return !!(inst && inst._hostParent);
       }
+    }
+    function nodeIsRenderedByOtherInstance(container) {
+      var rootEl = getReactRootElementInContainer(container);
+      return !!(rootEl && isReactNode(rootEl) && !ReactDOMComponentTree.getInstanceFromNode(rootEl));
+    }
+    function isValidContainer(node) {
+      return !!(node && (node.nodeType === ELEMENT_NODE_TYPE || node.nodeType === DOC_NODE_TYPE || node.nodeType === DOCUMENT_FRAGMENT_NODE_TYPE));
+    }
+    function isReactNode(node) {
+      return isValidContainer(node) && (node.hasAttribute(ROOT_ATTR_NAME) || node.hasAttribute(ATTR_NAME));
     }
     function getHostRootInstanceInContainer(container) {
       var rootEl = getReactRootElementInContainer(container);
@@ -44733,15 +44428,12 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMount.js", ["npm:react@15.3.0/
       },
       _renderNewRootComponent: function(nextElement, container, shouldReuseMarkup, context) {
         "production" !== 'production' ? warning(ReactCurrentOwner.current == null, '_renderNewRootComponent(): Render methods should be a pure function ' + 'of props and state; triggering nested component updates from ' + 'render is not allowed. If necessary, trigger nested updates in ' + 'componentDidUpdate. Check the render method of %s.', ReactCurrentOwner.current && ReactCurrentOwner.current.getName() || 'ReactCompositeComponent') : void 0;
-        !(container && (container.nodeType === ELEMENT_NODE_TYPE || container.nodeType === DOC_NODE_TYPE || container.nodeType === DOCUMENT_FRAGMENT_NODE_TYPE)) ? "production" !== 'production' ? invariant(false, '_registerComponent(...): Target container is not a DOM element.') : _prodInvariant('37') : void 0;
+        !isValidContainer(container) ? "production" !== 'production' ? invariant(false, '_registerComponent(...): Target container is not a DOM element.') : _prodInvariant('37') : void 0;
         ReactBrowserEventEmitter.ensureScrollValueMonitoring();
         var componentInstance = instantiateReactComponent(nextElement, false);
         ReactUpdates.batchedUpdates(batchedMountComponentIntoNode, componentInstance, container, shouldReuseMarkup, context);
         var wrapperID = componentInstance._instance.rootID;
         instancesByReactRootID[wrapperID] = componentInstance;
-        if ("production" !== 'production') {
-          ReactInstrumentation.debugTool.onMountRootComponent(componentInstance._renderedComponent._debugID);
-        }
         return componentInstance;
       },
       renderSubtreeIntoContainer: function(parentComponent, nextElement, container, callback) {
@@ -44803,7 +44495,10 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMount.js", ["npm:react@15.3.0/
       },
       unmountComponentAtNode: function(container) {
         "production" !== 'production' ? warning(ReactCurrentOwner.current == null, 'unmountComponentAtNode(): Render methods should be a pure function ' + 'of props and state; triggering nested component updates from render ' + 'is not allowed. If necessary, trigger nested updates in ' + 'componentDidUpdate. Check the render method of %s.', ReactCurrentOwner.current && ReactCurrentOwner.current.getName() || 'ReactCompositeComponent') : void 0;
-        !(container && (container.nodeType === ELEMENT_NODE_TYPE || container.nodeType === DOC_NODE_TYPE || container.nodeType === DOCUMENT_FRAGMENT_NODE_TYPE)) ? "production" !== 'production' ? invariant(false, 'unmountComponentAtNode(...): Target container is not a DOM element.') : _prodInvariant('40') : void 0;
+        !isValidContainer(container) ? "production" !== 'production' ? invariant(false, 'unmountComponentAtNode(...): Target container is not a DOM element.') : _prodInvariant('40') : void 0;
+        if ("production" !== 'production') {
+          "production" !== 'production' ? warning(!nodeIsRenderedByOtherInstance(container), 'unmountComponentAtNode(): The node you\'re attempting to unmount ' + 'was rendered by another copy of React.') : void 0;
+        }
         var prevComponent = getTopLevelWrapperInContainer(container);
         if (!prevComponent) {
           var containerHasNonRootReactChild = hasNonRootReactChild(container);
@@ -44818,7 +44513,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMount.js", ["npm:react@15.3.0/
         return true;
       },
       _mountImageIntoNode: function(markup, container, instance, shouldReuseMarkup, transaction) {
-        !(container && (container.nodeType === ELEMENT_NODE_TYPE || container.nodeType === DOC_NODE_TYPE || container.nodeType === DOCUMENT_FRAGMENT_NODE_TYPE)) ? "production" !== 'production' ? invariant(false, 'mountComponentIntoNode(...): Target container is not valid.') : _prodInvariant('41') : void 0;
+        !isValidContainer(container) ? "production" !== 'production' ? invariant(false, 'mountComponentIntoNode(...): Target container is not valid.') : _prodInvariant('41') : void 0;
         if (shouldReuseMarkup) {
           var rootElement = getReactRootElementInContainer(container);
           if (ReactMarkupChecksum.canReuseMarkup(markup, rootElement)) {
@@ -44875,18 +44570,125 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactMount.js", ["npm:react@15.3.0/
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/renderSubtreeIntoContainer.js", ["npm:react@15.3.0/lib/ReactMount.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/renderSubtreeIntoContainer.js", ["npm:react@15.3.1/lib/ReactMount.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var ReactMount = $__require('npm:react@15.3.0/lib/ReactMount.js');
+  var ReactMount = $__require('npm:react@15.3.1/lib/ReactMount.js');
   module.exports = ReactMount.renderSubtreeIntoContainer;
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactInvalidSetStateWarningHook.js", ["npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
+    if ("production" !== 'production') {
+      var processingChildContext = false;
+      var warnInvalidSetState = function() {
+        "production" !== 'production' ? warning(!processingChildContext, 'setState(...): Cannot call setState() inside getChildContext()') : void 0;
+      };
+    }
+    var ReactInvalidSetStateWarningHook = {
+      onBeginProcessingChildContext: function() {
+        processingChildContext = true;
+      },
+      onEndProcessingChildContext: function() {
+        processingChildContext = false;
+      },
+      onSetState: function() {
+        warnInvalidSetState();
+      }
+    };
+    module.exports = ReactInvalidSetStateWarningHook;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/ReactHostOperationHistoryHook.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var history = [];
+  var ReactHostOperationHistoryHook = {
+    onHostOperation: function(debugID, type, payload) {
+      history.push({
+        instanceID: debugID,
+        type: type,
+        payload: payload
+      });
+    },
+    clearHistory: function() {
+      if (ReactHostOperationHistoryHook._preventClearing) {
+        return;
+      }
+      history = [];
+    },
+    getHistory: function() {
+      return history;
+    }
+  };
+  module.exports = ReactHostOperationHistoryHook;
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/ReactChildrenMutationWarningHook.js", ["npm:react@15.3.1/lib/ReactComponentTreeHook.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
+    function handleElement(debugID, element) {
+      if (element == null) {
+        return;
+      }
+      if (element._shadowChildren === undefined) {
+        return;
+      }
+      if (element._shadowChildren === element.props.children) {
+        return;
+      }
+      var isMutated = false;
+      if (Array.isArray(element._shadowChildren)) {
+        if (element._shadowChildren.length === element.props.children.length) {
+          for (var i = 0; i < element._shadowChildren.length; i++) {
+            if (element._shadowChildren[i] !== element.props.children[i]) {
+              isMutated = true;
+            }
+          }
+        } else {
+          isMutated = true;
+        }
+      }
+      if (!Array.isArray(element._shadowChildren) || isMutated) {
+        "production" !== 'production' ? warning(false, 'Component\'s children should not be mutated.%s', ReactComponentTreeHook.getStackAddendumByID(debugID)) : void 0;
+      }
+    }
+    var ReactChildrenMutationWarningHook = {
+      onMountComponent: function(debugID) {
+        handleElement(debugID, ReactComponentTreeHook.getElement(debugID));
+      },
+      onUpdateComponent: function(debugID) {
+        handleElement(debugID, ReactComponentTreeHook.getElement(debugID));
+      }
+    };
+    module.exports = ReactChildrenMutationWarningHook;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -44904,23 +44706,711 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", [], true, f
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOM.js", ["npm:react@15.3.0/lib/ReactDOMComponentTree.js", "npm:react@15.3.0/lib/ReactDefaultInjection.js", "npm:react@15.3.0/lib/ReactMount.js", "npm:react@15.3.0/lib/ReactReconciler.js", "npm:react@15.3.0/lib/ReactUpdates.js", "npm:react@15.3.0/lib/ReactVersion.js", "npm:react@15.3.0/lib/findDOMNode.js", "npm:react@15.3.0/lib/getHostComponentFromComposite.js", "npm:react@15.3.0/lib/renderSubtreeIntoContainer.js", "npm:fbjs@0.8.3/lib/warning.js", "npm:fbjs@0.8.3/lib/ExecutionEnvironment.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/performance.js", ["npm:fbjs@0.8.4/lib/ExecutionEnvironment.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+  var performance;
+  if (ExecutionEnvironment.canUseDOM) {
+    performance = window.performance || window.msPerformance || window.webkitPerformance;
+  }
+  module.exports = performance || {};
+  return module.exports;
+});
+
+System.registerDynamic("npm:fbjs@0.8.4/lib/performanceNow.js", ["npm:fbjs@0.8.4/lib/performance.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var performance = $__require('npm:fbjs@0.8.4/lib/performance.js');
+  var performanceNow;
+  if (performance.now) {
+    performanceNow = function performanceNow() {
+      return performance.now();
+    };
+  } else {
+    performanceNow = function performanceNow() {
+      return Date.now();
+    };
+  }
+  module.exports = performanceNow;
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/ReactDebugTool.js", ["npm:react@15.3.1/lib/ReactInvalidSetStateWarningHook.js", "npm:react@15.3.1/lib/ReactHostOperationHistoryHook.js", "npm:react@15.3.1/lib/ReactComponentTreeHook.js", "npm:react@15.3.1/lib/ReactChildrenMutationWarningHook.js", "npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:fbjs@0.8.4/lib/performanceNow.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var ReactDOMComponentTree = $__require('npm:react@15.3.0/lib/ReactDOMComponentTree.js');
-    var ReactDefaultInjection = $__require('npm:react@15.3.0/lib/ReactDefaultInjection.js');
-    var ReactMount = $__require('npm:react@15.3.0/lib/ReactMount.js');
-    var ReactReconciler = $__require('npm:react@15.3.0/lib/ReactReconciler.js');
-    var ReactUpdates = $__require('npm:react@15.3.0/lib/ReactUpdates.js');
-    var ReactVersion = $__require('npm:react@15.3.0/lib/ReactVersion.js');
-    var findDOMNode = $__require('npm:react@15.3.0/lib/findDOMNode.js');
-    var getHostComponentFromComposite = $__require('npm:react@15.3.0/lib/getHostComponentFromComposite.js');
-    var renderSubtreeIntoContainer = $__require('npm:react@15.3.0/lib/renderSubtreeIntoContainer.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var ReactInvalidSetStateWarningHook = $__require('npm:react@15.3.1/lib/ReactInvalidSetStateWarningHook.js');
+    var ReactHostOperationHistoryHook = $__require('npm:react@15.3.1/lib/ReactHostOperationHistoryHook.js');
+    var ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
+    var ReactChildrenMutationWarningHook = $__require('npm:react@15.3.1/lib/ReactChildrenMutationWarningHook.js');
+    var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
+    var performanceNow = $__require('npm:fbjs@0.8.4/lib/performanceNow.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
+    var hooks = [];
+    var didHookThrowForEvent = {};
+    function callHook(event, fn, context, arg1, arg2, arg3, arg4, arg5) {
+      try {
+        fn.call(context, arg1, arg2, arg3, arg4, arg5);
+      } catch (e) {
+        "production" !== 'production' ? warning(didHookThrowForEvent[event], 'Exception thrown by hook while handling %s: %s', event, e + '\n' + e.stack) : void 0;
+        didHookThrowForEvent[event] = true;
+      }
+    }
+    function emitEvent(event, arg1, arg2, arg3, arg4, arg5) {
+      for (var i = 0; i < hooks.length; i++) {
+        var hook = hooks[i];
+        var fn = hook[event];
+        if (fn) {
+          callHook(event, fn, hook, arg1, arg2, arg3, arg4, arg5);
+        }
+      }
+    }
+    var isProfiling = false;
+    var flushHistory = [];
+    var lifeCycleTimerStack = [];
+    var currentFlushNesting = 0;
+    var currentFlushMeasurements = null;
+    var currentFlushStartTime = null;
+    var currentTimerDebugID = null;
+    var currentTimerStartTime = null;
+    var currentTimerNestedFlushDuration = null;
+    var currentTimerType = null;
+    var lifeCycleTimerHasWarned = false;
+    function clearHistory() {
+      ReactComponentTreeHook.purgeUnmountedComponents();
+      ReactHostOperationHistoryHook.clearHistory();
+    }
+    function getTreeSnapshot(registeredIDs) {
+      return registeredIDs.reduce(function(tree, id) {
+        var ownerID = ReactComponentTreeHook.getOwnerID(id);
+        var parentID = ReactComponentTreeHook.getParentID(id);
+        tree[id] = {
+          displayName: ReactComponentTreeHook.getDisplayName(id),
+          text: ReactComponentTreeHook.getText(id),
+          updateCount: ReactComponentTreeHook.getUpdateCount(id),
+          childIDs: ReactComponentTreeHook.getChildIDs(id),
+          ownerID: ownerID || ReactComponentTreeHook.getOwnerID(parentID),
+          parentID: parentID
+        };
+        return tree;
+      }, {});
+    }
+    function resetMeasurements() {
+      var previousStartTime = currentFlushStartTime;
+      var previousMeasurements = currentFlushMeasurements || [];
+      var previousOperations = ReactHostOperationHistoryHook.getHistory();
+      if (currentFlushNesting === 0) {
+        currentFlushStartTime = null;
+        currentFlushMeasurements = null;
+        clearHistory();
+        return;
+      }
+      if (previousMeasurements.length || previousOperations.length) {
+        var registeredIDs = ReactComponentTreeHook.getRegisteredIDs();
+        flushHistory.push({
+          duration: performanceNow() - previousStartTime,
+          measurements: previousMeasurements || [],
+          operations: previousOperations || [],
+          treeSnapshot: getTreeSnapshot(registeredIDs)
+        });
+      }
+      clearHistory();
+      currentFlushStartTime = performanceNow();
+      currentFlushMeasurements = [];
+    }
+    function checkDebugID(debugID) {
+      var allowRoot = arguments.length <= 1 || arguments[1] === undefined ? false : arguments[1];
+      if (allowRoot && debugID === 0) {
+        return;
+      }
+      if (!debugID) {
+        "production" !== 'production' ? warning(false, 'ReactDebugTool: debugID may not be empty.') : void 0;
+      }
+    }
+    function beginLifeCycleTimer(debugID, timerType) {
+      if (currentFlushNesting === 0) {
+        return;
+      }
+      if (currentTimerType && !lifeCycleTimerHasWarned) {
+        "production" !== 'production' ? warning(false, 'There is an internal error in the React performance measurement code. ' + 'Did not expect %s timer to start while %s timer is still in ' + 'progress for %s instance.', timerType, currentTimerType || 'no', debugID === currentTimerDebugID ? 'the same' : 'another') : void 0;
+        lifeCycleTimerHasWarned = true;
+      }
+      currentTimerStartTime = performanceNow();
+      currentTimerNestedFlushDuration = 0;
+      currentTimerDebugID = debugID;
+      currentTimerType = timerType;
+    }
+    function endLifeCycleTimer(debugID, timerType) {
+      if (currentFlushNesting === 0) {
+        return;
+      }
+      if (currentTimerType !== timerType && !lifeCycleTimerHasWarned) {
+        "production" !== 'production' ? warning(false, 'There is an internal error in the React performance measurement code. ' + 'We did not expect %s timer to stop while %s timer is still in ' + 'progress for %s instance. Please report this as a bug in React.', timerType, currentTimerType || 'no', debugID === currentTimerDebugID ? 'the same' : 'another') : void 0;
+        lifeCycleTimerHasWarned = true;
+      }
+      if (isProfiling) {
+        currentFlushMeasurements.push({
+          timerType: timerType,
+          instanceID: debugID,
+          duration: performanceNow() - currentTimerStartTime - currentTimerNestedFlushDuration
+        });
+      }
+      currentTimerStartTime = null;
+      currentTimerNestedFlushDuration = null;
+      currentTimerDebugID = null;
+      currentTimerType = null;
+    }
+    function pauseCurrentLifeCycleTimer() {
+      var currentTimer = {
+        startTime: currentTimerStartTime,
+        nestedFlushStartTime: performanceNow(),
+        debugID: currentTimerDebugID,
+        timerType: currentTimerType
+      };
+      lifeCycleTimerStack.push(currentTimer);
+      currentTimerStartTime = null;
+      currentTimerNestedFlushDuration = null;
+      currentTimerDebugID = null;
+      currentTimerType = null;
+    }
+    function resumeCurrentLifeCycleTimer() {
+      var _lifeCycleTimerStack$ = lifeCycleTimerStack.pop();
+      var startTime = _lifeCycleTimerStack$.startTime;
+      var nestedFlushStartTime = _lifeCycleTimerStack$.nestedFlushStartTime;
+      var debugID = _lifeCycleTimerStack$.debugID;
+      var timerType = _lifeCycleTimerStack$.timerType;
+      var nestedFlushDuration = performanceNow() - nestedFlushStartTime;
+      currentTimerStartTime = startTime;
+      currentTimerNestedFlushDuration += nestedFlushDuration;
+      currentTimerDebugID = debugID;
+      currentTimerType = timerType;
+    }
+    var ReactDebugTool = {
+      addHook: function(hook) {
+        hooks.push(hook);
+      },
+      removeHook: function(hook) {
+        for (var i = 0; i < hooks.length; i++) {
+          if (hooks[i] === hook) {
+            hooks.splice(i, 1);
+            i--;
+          }
+        }
+      },
+      isProfiling: function() {
+        return isProfiling;
+      },
+      beginProfiling: function() {
+        if (isProfiling) {
+          return;
+        }
+        isProfiling = true;
+        flushHistory.length = 0;
+        resetMeasurements();
+        ReactDebugTool.addHook(ReactHostOperationHistoryHook);
+      },
+      endProfiling: function() {
+        if (!isProfiling) {
+          return;
+        }
+        isProfiling = false;
+        resetMeasurements();
+        ReactDebugTool.removeHook(ReactHostOperationHistoryHook);
+      },
+      getFlushHistory: function() {
+        return flushHistory;
+      },
+      onBeginFlush: function() {
+        currentFlushNesting++;
+        resetMeasurements();
+        pauseCurrentLifeCycleTimer();
+        emitEvent('onBeginFlush');
+      },
+      onEndFlush: function() {
+        resetMeasurements();
+        currentFlushNesting--;
+        resumeCurrentLifeCycleTimer();
+        emitEvent('onEndFlush');
+      },
+      onBeginLifeCycleTimer: function(debugID, timerType) {
+        checkDebugID(debugID);
+        emitEvent('onBeginLifeCycleTimer', debugID, timerType);
+        beginLifeCycleTimer(debugID, timerType);
+      },
+      onEndLifeCycleTimer: function(debugID, timerType) {
+        checkDebugID(debugID);
+        endLifeCycleTimer(debugID, timerType);
+        emitEvent('onEndLifeCycleTimer', debugID, timerType);
+      },
+      onError: function(debugID) {
+        if (currentTimerDebugID != null) {
+          endLifeCycleTimer(currentTimerDebugID, currentTimerType);
+        }
+        emitEvent('onError', debugID);
+      },
+      onBeginProcessingChildContext: function() {
+        emitEvent('onBeginProcessingChildContext');
+      },
+      onEndProcessingChildContext: function() {
+        emitEvent('onEndProcessingChildContext');
+      },
+      onHostOperation: function(debugID, type, payload) {
+        checkDebugID(debugID);
+        emitEvent('onHostOperation', debugID, type, payload);
+      },
+      onSetState: function() {
+        emitEvent('onSetState');
+      },
+      onSetChildren: function(debugID, childDebugIDs) {
+        checkDebugID(debugID);
+        childDebugIDs.forEach(checkDebugID);
+        emitEvent('onSetChildren', debugID, childDebugIDs);
+      },
+      onBeforeMountComponent: function(debugID, element, parentDebugID) {
+        checkDebugID(debugID);
+        checkDebugID(parentDebugID, true);
+        emitEvent('onBeforeMountComponent', debugID, element, parentDebugID);
+      },
+      onMountComponent: function(debugID) {
+        checkDebugID(debugID);
+        emitEvent('onMountComponent', debugID);
+      },
+      onBeforeUpdateComponent: function(debugID, element) {
+        checkDebugID(debugID);
+        emitEvent('onBeforeUpdateComponent', debugID, element);
+      },
+      onUpdateComponent: function(debugID) {
+        checkDebugID(debugID);
+        emitEvent('onUpdateComponent', debugID);
+      },
+      onBeforeUnmountComponent: function(debugID) {
+        checkDebugID(debugID);
+        emitEvent('onBeforeUnmountComponent', debugID);
+      },
+      onUnmountComponent: function(debugID) {
+        checkDebugID(debugID);
+        emitEvent('onUnmountComponent', debugID);
+      },
+      onTestEvent: function() {
+        emitEvent('onTestEvent');
+      }
+    };
+    ReactDebugTool.addDevtool = ReactDebugTool.addHook;
+    ReactDebugTool.removeDevtool = ReactDebugTool.removeHook;
+    ReactDebugTool.addHook(ReactInvalidSetStateWarningHook);
+    ReactDebugTool.addHook(ReactComponentTreeHook);
+    ReactDebugTool.addHook(ReactChildrenMutationWarningHook);
+    var url = ExecutionEnvironment.canUseDOM && window.location.href || '';
+    if (/[?&]react_perf\b/.test(url)) {
+      ReactDebugTool.beginProfiling();
+    }
+    module.exports = ReactDebugTool;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/ReactInstrumentation.js", ["npm:react@15.3.1/lib/ReactDebugTool.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var debugTool = null;
+    if ("production" !== 'production') {
+      var ReactDebugTool = $__require('npm:react@15.3.1/lib/ReactDebugTool.js');
+      debugTool = ReactDebugTool;
+    }
+    module.exports = {debugTool: debugTool};
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/DOMProperty.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    function checkMask(value, bitmask) {
+      return (value & bitmask) === bitmask;
+    }
+    var DOMPropertyInjection = {
+      MUST_USE_PROPERTY: 0x1,
+      HAS_BOOLEAN_VALUE: 0x4,
+      HAS_NUMERIC_VALUE: 0x8,
+      HAS_POSITIVE_NUMERIC_VALUE: 0x10 | 0x8,
+      HAS_OVERLOADED_BOOLEAN_VALUE: 0x20,
+      injectDOMPropertyConfig: function(domPropertyConfig) {
+        var Injection = DOMPropertyInjection;
+        var Properties = domPropertyConfig.Properties || {};
+        var DOMAttributeNamespaces = domPropertyConfig.DOMAttributeNamespaces || {};
+        var DOMAttributeNames = domPropertyConfig.DOMAttributeNames || {};
+        var DOMPropertyNames = domPropertyConfig.DOMPropertyNames || {};
+        var DOMMutationMethods = domPropertyConfig.DOMMutationMethods || {};
+        if (domPropertyConfig.isCustomAttribute) {
+          DOMProperty._isCustomAttributeFunctions.push(domPropertyConfig.isCustomAttribute);
+        }
+        for (var propName in Properties) {
+          !!DOMProperty.properties.hasOwnProperty(propName) ? "production" !== 'production' ? invariant(false, 'injectDOMPropertyConfig(...): You\'re trying to inject DOM property \'%s\' which has already been injected. You may be accidentally injecting the same DOM property config twice, or you may be injecting two configs that have conflicting property names.', propName) : _prodInvariant('48', propName) : void 0;
+          var lowerCased = propName.toLowerCase();
+          var propConfig = Properties[propName];
+          var propertyInfo = {
+            attributeName: lowerCased,
+            attributeNamespace: null,
+            propertyName: propName,
+            mutationMethod: null,
+            mustUseProperty: checkMask(propConfig, Injection.MUST_USE_PROPERTY),
+            hasBooleanValue: checkMask(propConfig, Injection.HAS_BOOLEAN_VALUE),
+            hasNumericValue: checkMask(propConfig, Injection.HAS_NUMERIC_VALUE),
+            hasPositiveNumericValue: checkMask(propConfig, Injection.HAS_POSITIVE_NUMERIC_VALUE),
+            hasOverloadedBooleanValue: checkMask(propConfig, Injection.HAS_OVERLOADED_BOOLEAN_VALUE)
+          };
+          !(propertyInfo.hasBooleanValue + propertyInfo.hasNumericValue + propertyInfo.hasOverloadedBooleanValue <= 1) ? "production" !== 'production' ? invariant(false, 'DOMProperty: Value can be one of boolean, overloaded boolean, or numeric value, but not a combination: %s', propName) : _prodInvariant('50', propName) : void 0;
+          if ("production" !== 'production') {
+            DOMProperty.getPossibleStandardName[lowerCased] = propName;
+          }
+          if (DOMAttributeNames.hasOwnProperty(propName)) {
+            var attributeName = DOMAttributeNames[propName];
+            propertyInfo.attributeName = attributeName;
+            if ("production" !== 'production') {
+              DOMProperty.getPossibleStandardName[attributeName] = propName;
+            }
+          }
+          if (DOMAttributeNamespaces.hasOwnProperty(propName)) {
+            propertyInfo.attributeNamespace = DOMAttributeNamespaces[propName];
+          }
+          if (DOMPropertyNames.hasOwnProperty(propName)) {
+            propertyInfo.propertyName = DOMPropertyNames[propName];
+          }
+          if (DOMMutationMethods.hasOwnProperty(propName)) {
+            propertyInfo.mutationMethod = DOMMutationMethods[propName];
+          }
+          DOMProperty.properties[propName] = propertyInfo;
+        }
+      }
+    };
+    var ATTRIBUTE_NAME_START_CHAR = ':A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD';
+    var DOMProperty = {
+      ID_ATTRIBUTE_NAME: 'data-reactid',
+      ROOT_ATTRIBUTE_NAME: 'data-reactroot',
+      ATTRIBUTE_NAME_START_CHAR: ATTRIBUTE_NAME_START_CHAR,
+      ATTRIBUTE_NAME_CHAR: ATTRIBUTE_NAME_START_CHAR + '\\-.0-9\\u00B7\\u0300-\\u036F\\u203F-\\u2040',
+      properties: {},
+      getPossibleStandardName: "production" !== 'production' ? {} : null,
+      _isCustomAttributeFunctions: [],
+      isCustomAttribute: function(attributeName) {
+        for (var i = 0; i < DOMProperty._isCustomAttributeFunctions.length; i++) {
+          var isCustomAttributeFn = DOMProperty._isCustomAttributeFunctions[i];
+          if (isCustomAttributeFn(attributeName)) {
+            return true;
+          }
+        }
+        return false;
+      },
+      injection: DOMPropertyInjection
+    };
+    module.exports = DOMProperty;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/EventPluginRegistry.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var EventPluginOrder = null;
+    var namesToPlugins = {};
+    function recomputePluginOrdering() {
+      if (!EventPluginOrder) {
+        return;
+      }
+      for (var pluginName in namesToPlugins) {
+        var PluginModule = namesToPlugins[pluginName];
+        var pluginIndex = EventPluginOrder.indexOf(pluginName);
+        !(pluginIndex > -1) ? "production" !== 'production' ? invariant(false, 'EventPluginRegistry: Cannot inject event plugins that do not exist in the plugin ordering, `%s`.', pluginName) : _prodInvariant('96', pluginName) : void 0;
+        if (EventPluginRegistry.plugins[pluginIndex]) {
+          continue;
+        }
+        !PluginModule.extractEvents ? "production" !== 'production' ? invariant(false, 'EventPluginRegistry: Event plugins must implement an `extractEvents` method, but `%s` does not.', pluginName) : _prodInvariant('97', pluginName) : void 0;
+        EventPluginRegistry.plugins[pluginIndex] = PluginModule;
+        var publishedEvents = PluginModule.eventTypes;
+        for (var eventName in publishedEvents) {
+          !publishEventForPlugin(publishedEvents[eventName], PluginModule, eventName) ? "production" !== 'production' ? invariant(false, 'EventPluginRegistry: Failed to publish event `%s` for plugin `%s`.', eventName, pluginName) : _prodInvariant('98', eventName, pluginName) : void 0;
+        }
+      }
+    }
+    function publishEventForPlugin(dispatchConfig, PluginModule, eventName) {
+      !!EventPluginRegistry.eventNameDispatchConfigs.hasOwnProperty(eventName) ? "production" !== 'production' ? invariant(false, 'EventPluginHub: More than one plugin attempted to publish the same event name, `%s`.', eventName) : _prodInvariant('99', eventName) : void 0;
+      EventPluginRegistry.eventNameDispatchConfigs[eventName] = dispatchConfig;
+      var phasedRegistrationNames = dispatchConfig.phasedRegistrationNames;
+      if (phasedRegistrationNames) {
+        for (var phaseName in phasedRegistrationNames) {
+          if (phasedRegistrationNames.hasOwnProperty(phaseName)) {
+            var phasedRegistrationName = phasedRegistrationNames[phaseName];
+            publishRegistrationName(phasedRegistrationName, PluginModule, eventName);
+          }
+        }
+        return true;
+      } else if (dispatchConfig.registrationName) {
+        publishRegistrationName(dispatchConfig.registrationName, PluginModule, eventName);
+        return true;
+      }
+      return false;
+    }
+    function publishRegistrationName(registrationName, PluginModule, eventName) {
+      !!EventPluginRegistry.registrationNameModules[registrationName] ? "production" !== 'production' ? invariant(false, 'EventPluginHub: More than one plugin attempted to publish the same registration name, `%s`.', registrationName) : _prodInvariant('100', registrationName) : void 0;
+      EventPluginRegistry.registrationNameModules[registrationName] = PluginModule;
+      EventPluginRegistry.registrationNameDependencies[registrationName] = PluginModule.eventTypes[eventName].dependencies;
+      if ("production" !== 'production') {
+        var lowerCasedName = registrationName.toLowerCase();
+        EventPluginRegistry.possibleRegistrationNames[lowerCasedName] = registrationName;
+        if (registrationName === 'onDoubleClick') {
+          EventPluginRegistry.possibleRegistrationNames.ondblclick = registrationName;
+        }
+      }
+    }
+    var EventPluginRegistry = {
+      plugins: [],
+      eventNameDispatchConfigs: {},
+      registrationNameModules: {},
+      registrationNameDependencies: {},
+      possibleRegistrationNames: "production" !== 'production' ? {} : null,
+      injectEventPluginOrder: function(InjectedEventPluginOrder) {
+        !!EventPluginOrder ? "production" !== 'production' ? invariant(false, 'EventPluginRegistry: Cannot inject event plugin ordering more than once. You are likely trying to load more than one copy of React.') : _prodInvariant('101') : void 0;
+        EventPluginOrder = Array.prototype.slice.call(InjectedEventPluginOrder);
+        recomputePluginOrdering();
+      },
+      injectEventPluginsByName: function(injectedNamesToPlugins) {
+        var isOrderingDirty = false;
+        for (var pluginName in injectedNamesToPlugins) {
+          if (!injectedNamesToPlugins.hasOwnProperty(pluginName)) {
+            continue;
+          }
+          var PluginModule = injectedNamesToPlugins[pluginName];
+          if (!namesToPlugins.hasOwnProperty(pluginName) || namesToPlugins[pluginName] !== PluginModule) {
+            !!namesToPlugins[pluginName] ? "production" !== 'production' ? invariant(false, 'EventPluginRegistry: Cannot inject two different event plugins using the same name, `%s`.', pluginName) : _prodInvariant('102', pluginName) : void 0;
+            namesToPlugins[pluginName] = PluginModule;
+            isOrderingDirty = true;
+          }
+        }
+        if (isOrderingDirty) {
+          recomputePluginOrdering();
+        }
+      },
+      getPluginModuleForEvent: function(event) {
+        var dispatchConfig = event.dispatchConfig;
+        if (dispatchConfig.registrationName) {
+          return EventPluginRegistry.registrationNameModules[dispatchConfig.registrationName] || null;
+        }
+        for (var phase in dispatchConfig.phasedRegistrationNames) {
+          if (!dispatchConfig.phasedRegistrationNames.hasOwnProperty(phase)) {
+            continue;
+          }
+          var PluginModule = EventPluginRegistry.registrationNameModules[dispatchConfig.phasedRegistrationNames[phase]];
+          if (PluginModule) {
+            return PluginModule;
+          }
+        }
+        return null;
+      },
+      _resetEventPlugins: function() {
+        EventPluginOrder = null;
+        for (var pluginName in namesToPlugins) {
+          if (namesToPlugins.hasOwnProperty(pluginName)) {
+            delete namesToPlugins[pluginName];
+          }
+        }
+        EventPluginRegistry.plugins.length = 0;
+        var eventNameDispatchConfigs = EventPluginRegistry.eventNameDispatchConfigs;
+        for (var eventName in eventNameDispatchConfigs) {
+          if (eventNameDispatchConfigs.hasOwnProperty(eventName)) {
+            delete eventNameDispatchConfigs[eventName];
+          }
+        }
+        var registrationNameModules = EventPluginRegistry.registrationNameModules;
+        for (var registrationName in registrationNameModules) {
+          if (registrationNameModules.hasOwnProperty(registrationName)) {
+            delete registrationNameModules[registrationName];
+          }
+        }
+        if ("production" !== 'production') {
+          var possibleRegistrationNames = EventPluginRegistry.possibleRegistrationNames;
+          for (var lowerCasedName in possibleRegistrationNames) {
+            if (possibleRegistrationNames.hasOwnProperty(lowerCasedName)) {
+              delete possibleRegistrationNames[lowerCasedName];
+            }
+          }
+        }
+      }
+    };
+    module.exports = EventPluginRegistry;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMUnknownPropertyHook.js", ["npm:react@15.3.1/lib/DOMProperty.js", "npm:react@15.3.1/lib/EventPluginRegistry.js", "npm:react@15.3.1/lib/ReactComponentTreeHook.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var DOMProperty = $__require('npm:react@15.3.1/lib/DOMProperty.js');
+    var EventPluginRegistry = $__require('npm:react@15.3.1/lib/EventPluginRegistry.js');
+    var ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
+    if ("production" !== 'production') {
+      var reactProps = {
+        children: true,
+        dangerouslySetInnerHTML: true,
+        key: true,
+        ref: true,
+        autoFocus: true,
+        defaultValue: true,
+        valueLink: true,
+        defaultChecked: true,
+        checkedLink: true,
+        innerHTML: true,
+        suppressContentEditableWarning: true,
+        onFocusIn: true,
+        onFocusOut: true
+      };
+      var warnedProperties = {};
+      var validateProperty = function(tagName, name, debugID) {
+        if (DOMProperty.properties.hasOwnProperty(name) || DOMProperty.isCustomAttribute(name)) {
+          return true;
+        }
+        if (reactProps.hasOwnProperty(name) && reactProps[name] || warnedProperties.hasOwnProperty(name) && warnedProperties[name]) {
+          return true;
+        }
+        if (EventPluginRegistry.registrationNameModules.hasOwnProperty(name)) {
+          return true;
+        }
+        warnedProperties[name] = true;
+        var lowerCasedName = name.toLowerCase();
+        var standardName = DOMProperty.isCustomAttribute(lowerCasedName) ? lowerCasedName : DOMProperty.getPossibleStandardName.hasOwnProperty(lowerCasedName) ? DOMProperty.getPossibleStandardName[lowerCasedName] : null;
+        var registrationName = EventPluginRegistry.possibleRegistrationNames.hasOwnProperty(lowerCasedName) ? EventPluginRegistry.possibleRegistrationNames[lowerCasedName] : null;
+        if (standardName != null) {
+          "production" !== 'production' ? warning(false, 'Unknown DOM property %s. Did you mean %s?%s', name, standardName, ReactComponentTreeHook.getStackAddendumByID(debugID)) : void 0;
+          return true;
+        } else if (registrationName != null) {
+          "production" !== 'production' ? warning(false, 'Unknown event handler property %s. Did you mean `%s`?%s', name, registrationName, ReactComponentTreeHook.getStackAddendumByID(debugID)) : void 0;
+          return true;
+        } else {
+          return false;
+        }
+      };
+    }
+    var warnUnknownProperties = function(debugID, element) {
+      var unknownProps = [];
+      for (var key in element.props) {
+        var isValid = validateProperty(element.type, key, debugID);
+        if (!isValid) {
+          unknownProps.push(key);
+        }
+      }
+      var unknownPropString = unknownProps.map(function(prop) {
+        return '`' + prop + '`';
+      }).join(', ');
+      if (unknownProps.length === 1) {
+        "production" !== 'production' ? warning(false, 'Unknown prop %s on <%s> tag. Remove this prop from the element. ' + 'For details, see https://fb.me/react-unknown-prop%s', unknownPropString, element.type, ReactComponentTreeHook.getStackAddendumByID(debugID)) : void 0;
+      } else if (unknownProps.length > 1) {
+        "production" !== 'production' ? warning(false, 'Unknown props %s on <%s> tag. Remove these props from the element. ' + 'For details, see https://fb.me/react-unknown-prop%s', unknownPropString, element.type, ReactComponentTreeHook.getStackAddendumByID(debugID)) : void 0;
+      }
+    };
+    function handleElement(debugID, element) {
+      if (element == null || typeof element.type !== 'string') {
+        return;
+      }
+      if (element.type.indexOf('-') >= 0 || element.props.is) {
+        return;
+      }
+      warnUnknownProperties(debugID, element);
+    }
+    var ReactDOMUnknownPropertyHook = {
+      onBeforeMountComponent: function(debugID, element) {
+        handleElement(debugID, element);
+      },
+      onBeforeUpdateComponent: function(debugID, element) {
+        handleElement(debugID, element);
+      }
+    };
+    module.exports = ReactDOMUnknownPropertyHook;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMNullInputValuePropHook.js", ["npm:react@15.3.1/lib/ReactComponentTreeHook.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
+    var didWarnValueNull = false;
+    function handleElement(debugID, element) {
+      if (element == null) {
+        return;
+      }
+      if (element.type !== 'input' && element.type !== 'textarea' && element.type !== 'select') {
+        return;
+      }
+      if (element.props != null && element.props.value === null && !didWarnValueNull) {
+        "production" !== 'production' ? warning(false, '`value` prop on `%s` should not be null. ' + 'Consider using the empty string to clear the component or `undefined` ' + 'for uncontrolled components.%s', element.type, ReactComponentTreeHook.getStackAddendumByID(debugID)) : void 0;
+        didWarnValueNull = true;
+      }
+    }
+    var ReactDOMNullInputValuePropHook = {
+      onBeforeMountComponent: function(debugID, element) {
+        handleElement(debugID, element);
+      },
+      onBeforeUpdateComponent: function(debugID, element) {
+        handleElement(debugID, element);
+      }
+    };
+    module.exports = ReactDOMNullInputValuePropHook;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOM.js", ["npm:react@15.3.1/lib/ReactDOMComponentTree.js", "npm:react@15.3.1/lib/ReactDefaultInjection.js", "npm:react@15.3.1/lib/ReactMount.js", "npm:react@15.3.1/lib/ReactReconciler.js", "npm:react@15.3.1/lib/ReactUpdates.js", "npm:react@15.3.1/lib/ReactVersion.js", "npm:react@15.3.1/lib/findDOMNode.js", "npm:react@15.3.1/lib/getHostComponentFromComposite.js", "npm:react@15.3.1/lib/renderSubtreeIntoContainer.js", "npm:fbjs@0.8.4/lib/warning.js", "npm:fbjs@0.8.4/lib/ExecutionEnvironment.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:react@15.3.1/lib/ReactDOMUnknownPropertyHook.js", "npm:react@15.3.1/lib/ReactDOMNullInputValuePropHook.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var ReactDOMComponentTree = $__require('npm:react@15.3.1/lib/ReactDOMComponentTree.js');
+    var ReactDefaultInjection = $__require('npm:react@15.3.1/lib/ReactDefaultInjection.js');
+    var ReactMount = $__require('npm:react@15.3.1/lib/ReactMount.js');
+    var ReactReconciler = $__require('npm:react@15.3.1/lib/ReactReconciler.js');
+    var ReactUpdates = $__require('npm:react@15.3.1/lib/ReactUpdates.js');
+    var ReactVersion = $__require('npm:react@15.3.1/lib/ReactVersion.js');
+    var findDOMNode = $__require('npm:react@15.3.1/lib/findDOMNode.js');
+    var getHostComponentFromComposite = $__require('npm:react@15.3.1/lib/getHostComponentFromComposite.js');
+    var renderSubtreeIntoContainer = $__require('npm:react@15.3.1/lib/renderSubtreeIntoContainer.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     ReactDefaultInjection.inject();
     var ReactDOM = {
       findDOMNode: findDOMNode,
@@ -44950,7 +45440,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOM.js", ["npm:react@15.3.0/li
       });
     }
     if ("production" !== 'production') {
-      var ExecutionEnvironment = $__require('npm:fbjs@0.8.3/lib/ExecutionEnvironment.js');
+      var ExecutionEnvironment = $__require('npm:fbjs@0.8.4/lib/ExecutionEnvironment.js');
       if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined') {
           if (navigator.userAgent.indexOf('Chrome') > -1 && navigator.userAgent.indexOf('Edge') === -1 || navigator.userAgent.indexOf('Firefox') > -1) {
@@ -44971,320 +45461,634 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactDOM.js", ["npm:react@15.3.0/li
         }
       }
     }
+    if ("production" !== 'production') {
+      var ReactInstrumentation = $__require('npm:react@15.3.1/lib/ReactInstrumentation.js');
+      var ReactDOMUnknownPropertyHook = $__require('npm:react@15.3.1/lib/ReactDOMUnknownPropertyHook.js');
+      var ReactDOMNullInputValuePropHook = $__require('npm:react@15.3.1/lib/ReactDOMNullInputValuePropHook.js');
+      ReactInstrumentation.debugTool.addHook(ReactDOMUnknownPropertyHook);
+      ReactInstrumentation.debugTool.addHook(ReactDOMNullInputValuePropHook);
+    }
     module.exports = ReactDOM;
   })($__require('github:jspm/nodelibs-process@0.1.2.js'));
   return module.exports;
 });
 
-System.registerDynamic("npm:react-dom@15.3.0/index.js", ["npm:react@15.3.0/lib/ReactDOM.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-dom@15.3.1/index.js", ["npm:react@15.3.1/lib/ReactDOM.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = $__require('npm:react@15.3.0/lib/ReactDOM.js');
+  module.exports = $__require('npm:react@15.3.1/lib/ReactDOM.js');
   return module.exports;
 });
 
-System.registerDynamic("npm:react-dom@15.3.0.js", ["npm:react-dom@15.3.0/index.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-dom@15.3.1.js", ["npm:react-dom@15.3.1/index.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = $__require('npm:react-dom@15.3.0/index.js');
+  module.exports = $__require('npm:react-dom@15.3.1/index.js');
   return module.exports;
 });
 
-System.registerDynamic("npm:uuid@2.0.1/rng-browser.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:lodash._basecopy@3.0.1/index.js", [], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var rng;
-  if (global.crypto && crypto.getRandomValues) {
-    var _rnds8 = new Uint8Array(16);
-    rng = function whatwgRNG() {
-      crypto.getRandomValues(_rnds8);
-      return _rnds8;
+  function baseCopy(source, props, object) {
+    object || (object = {});
+    var index = -1,
+        length = props.length;
+    while (++index < length) {
+      var key = props[index];
+      object[key] = source[key];
+    }
+    return object;
+  }
+  module.exports = baseCopy;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash._basecopy@3.0.1.js", ["npm:lodash._basecopy@3.0.1/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash._basecopy@3.0.1/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash._baseassign@3.2.0/index.js", ["npm:lodash._basecopy@3.0.1.js", "npm:lodash.keys@3.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var baseCopy = $__require('npm:lodash._basecopy@3.0.1.js'),
+      keys = $__require('npm:lodash.keys@3.1.2.js');
+  function baseAssign(object, source) {
+    return source == null ? object : baseCopy(source, keys(source), object);
+  }
+  module.exports = baseAssign;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash._baseassign@3.2.0.js", ["npm:lodash._baseassign@3.2.0/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash._baseassign@3.2.0/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash._bindcallback@3.0.1/index.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  function bindCallback(func, thisArg, argCount) {
+    if (typeof func != 'function') {
+      return identity;
+    }
+    if (thisArg === undefined) {
+      return func;
+    }
+    switch (argCount) {
+      case 1:
+        return function(value) {
+          return func.call(thisArg, value);
+        };
+      case 3:
+        return function(value, index, collection) {
+          return func.call(thisArg, value, index, collection);
+        };
+      case 4:
+        return function(accumulator, value, index, collection) {
+          return func.call(thisArg, accumulator, value, index, collection);
+        };
+      case 5:
+        return function(value, other, key, object, source) {
+          return func.call(thisArg, value, other, key, object, source);
+        };
+    }
+    return function() {
+      return func.apply(thisArg, arguments);
     };
   }
-  if (!rng) {
-    var _rnds = new Array(16);
-    rng = function() {
-      for (var i = 0,
-          r; i < 16; i++) {
-        if ((i & 0x03) === 0)
-          r = Math.random() * 0x100000000;
-        _rnds[i] = r >>> ((i & 0x03) << 3) & 0xff;
-      }
-      return _rnds;
-    };
+  function identity(value) {
+    return value;
   }
-  module.exports = rng;
+  module.exports = bindCallback;
   return module.exports;
 });
 
-System.registerDynamic("npm:uuid@2.0.1/uuid.js", ["npm:uuid@2.0.1/rng-browser.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:lodash._bindcallback@3.0.1.js", ["npm:lodash._bindcallback@3.0.1/index.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var _rng = $__require('npm:uuid@2.0.1/rng-browser.js');
-  var _byteToHex = [];
-  var _hexToByte = {};
-  for (var i = 0; i < 256; i++) {
-    _byteToHex[i] = (i + 0x100).toString(16).substr(1);
-    _hexToByte[_byteToHex[i]] = i;
+  module.exports = $__require('npm:lodash._bindcallback@3.0.1/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash._isiterateecall@3.0.9/index.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var reIsUint = /^\d+$/;
+  var MAX_SAFE_INTEGER = 9007199254740991;
+  function baseProperty(key) {
+    return function(object) {
+      return object == null ? undefined : object[key];
+    };
   }
-  function parse(s, buf, offset) {
-    var i = (buf && offset) || 0,
-        ii = 0;
-    buf = buf || [];
-    s.toLowerCase().replace(/[0-9a-f]{2}/g, function(oct) {
-      if (ii < 16) {
-        buf[i + ii++] = _hexToByte[oct];
+  var getLength = baseProperty('length');
+  function isArrayLike(value) {
+    return value != null && isLength(getLength(value));
+  }
+  function isIndex(value, length) {
+    value = (typeof value == 'number' || reIsUint.test(value)) ? +value : -1;
+    length = length == null ? MAX_SAFE_INTEGER : length;
+    return value > -1 && value % 1 == 0 && value < length;
+  }
+  function isIterateeCall(value, index, object) {
+    if (!isObject(object)) {
+      return false;
+    }
+    var type = typeof index;
+    if (type == 'number' ? (isArrayLike(object) && isIndex(index, object.length)) : (type == 'string' && index in object)) {
+      var other = object[index];
+      return value === value ? (value === other) : (other !== other);
+    }
+    return false;
+  }
+  function isLength(value) {
+    return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+  }
+  function isObject(value) {
+    var type = typeof value;
+    return !!value && (type == 'object' || type == 'function');
+  }
+  module.exports = isIterateeCall;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash._isiterateecall@3.0.9.js", ["npm:lodash._isiterateecall@3.0.9/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash._isiterateecall@3.0.9/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.restparam@3.6.1/index.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var FUNC_ERROR_TEXT = 'Expected a function';
+  var nativeMax = Math.max;
+  function restParam(func, start) {
+    if (typeof func != 'function') {
+      throw new TypeError(FUNC_ERROR_TEXT);
+    }
+    start = nativeMax(start === undefined ? (func.length - 1) : (+start || 0), 0);
+    return function() {
+      var args = arguments,
+          index = -1,
+          length = nativeMax(args.length - start, 0),
+          rest = Array(length);
+      while (++index < length) {
+        rest[index] = args[start + index];
       }
+      switch (start) {
+        case 0:
+          return func.call(this, rest);
+        case 1:
+          return func.call(this, args[0], rest);
+        case 2:
+          return func.call(this, args[0], args[1], rest);
+      }
+      var otherArgs = Array(start + 1);
+      index = -1;
+      while (++index < start) {
+        otherArgs[index] = args[index];
+      }
+      otherArgs[start] = rest;
+      return func.apply(this, otherArgs);
+    };
+  }
+  module.exports = restParam;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.restparam@3.6.1.js", ["npm:lodash.restparam@3.6.1/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash.restparam@3.6.1/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash._createassigner@3.1.1/index.js", ["npm:lodash._bindcallback@3.0.1.js", "npm:lodash._isiterateecall@3.0.9.js", "npm:lodash.restparam@3.6.1.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var bindCallback = $__require('npm:lodash._bindcallback@3.0.1.js'),
+      isIterateeCall = $__require('npm:lodash._isiterateecall@3.0.9.js'),
+      restParam = $__require('npm:lodash.restparam@3.6.1.js');
+  function createAssigner(assigner) {
+    return restParam(function(object, sources) {
+      var index = -1,
+          length = object == null ? 0 : sources.length,
+          customizer = length > 2 ? sources[length - 2] : undefined,
+          guard = length > 2 ? sources[2] : undefined,
+          thisArg = length > 1 ? sources[length - 1] : undefined;
+      if (typeof customizer == 'function') {
+        customizer = bindCallback(customizer, thisArg, 5);
+        length -= 2;
+      } else {
+        customizer = typeof thisArg == 'function' ? thisArg : undefined;
+        length -= (customizer ? 1 : 0);
+      }
+      if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+        customizer = length < 3 ? undefined : customizer;
+        length = 1;
+      }
+      while (++index < length) {
+        var source = sources[index];
+        if (source) {
+          assigner(object, source, customizer);
+        }
+      }
+      return object;
     });
-    while (ii < 16) {
-      buf[i + ii++] = 0;
-    }
-    return buf;
   }
-  function unparse(buf, offset) {
-    var i = offset || 0,
-        bth = _byteToHex;
-    return bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]] + '-' + bth[buf[i++]] + bth[buf[i++]] + '-' + bth[buf[i++]] + bth[buf[i++]] + '-' + bth[buf[i++]] + bth[buf[i++]] + '-' + bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]] + bth[buf[i++]];
-  }
-  var _seedBytes = _rng();
-  var _nodeId = [_seedBytes[0] | 0x01, _seedBytes[1], _seedBytes[2], _seedBytes[3], _seedBytes[4], _seedBytes[5]];
-  var _clockseq = (_seedBytes[6] << 8 | _seedBytes[7]) & 0x3fff;
-  var _lastMSecs = 0,
-      _lastNSecs = 0;
-  function v1(options, buf, offset) {
-    var i = buf && offset || 0;
-    var b = buf || [];
-    options = options || {};
-    var clockseq = options.clockseq !== undefined ? options.clockseq : _clockseq;
-    var msecs = options.msecs !== undefined ? options.msecs : new Date().getTime();
-    var nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1;
-    var dt = (msecs - _lastMSecs) + (nsecs - _lastNSecs) / 10000;
-    if (dt < 0 && options.clockseq === undefined) {
-      clockseq = clockseq + 1 & 0x3fff;
-    }
-    if ((dt < 0 || msecs > _lastMSecs) && options.nsecs === undefined) {
-      nsecs = 0;
-    }
-    if (nsecs >= 10000) {
-      throw new Error('uuid.v1(): Can\'t create more than 10M uuids/sec');
-    }
-    _lastMSecs = msecs;
-    _lastNSecs = nsecs;
-    _clockseq = clockseq;
-    msecs += 12219292800000;
-    var tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
-    b[i++] = tl >>> 24 & 0xff;
-    b[i++] = tl >>> 16 & 0xff;
-    b[i++] = tl >>> 8 & 0xff;
-    b[i++] = tl & 0xff;
-    var tmh = (msecs / 0x100000000 * 10000) & 0xfffffff;
-    b[i++] = tmh >>> 8 & 0xff;
-    b[i++] = tmh & 0xff;
-    b[i++] = tmh >>> 24 & 0xf | 0x10;
-    b[i++] = tmh >>> 16 & 0xff;
-    b[i++] = clockseq >>> 8 | 0x80;
-    b[i++] = clockseq & 0xff;
-    var node = options.node || _nodeId;
-    for (var n = 0; n < 6; n++) {
-      b[i + n] = node[n];
-    }
-    return buf ? buf : unparse(b);
-  }
-  function v4(options, buf, offset) {
-    var i = buf && offset || 0;
-    if (typeof(options) == 'string') {
-      buf = options == 'binary' ? new Array(16) : null;
-      options = null;
-    }
-    options = options || {};
-    var rnds = options.random || (options.rng || _rng)();
-    rnds[6] = (rnds[6] & 0x0f) | 0x40;
-    rnds[8] = (rnds[8] & 0x3f) | 0x80;
-    if (buf) {
-      for (var ii = 0; ii < 16; ii++) {
-        buf[i + ii] = rnds[ii];
-      }
-    }
-    return buf || unparse(rnds);
-  }
-  var uuid = v4;
-  uuid.v1 = v1;
-  uuid.v4 = v4;
-  uuid.parse = parse;
-  uuid.unparse = unparse;
-  module.exports = uuid;
+  module.exports = createAssigner;
   return module.exports;
 });
 
-System.registerDynamic("npm:uuid@2.0.1.js", ["npm:uuid@2.0.1/uuid.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:lodash._createassigner@3.1.1.js", ["npm:lodash._createassigner@3.1.1/index.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = $__require('npm:uuid@2.0.1/uuid.js');
+  module.exports = $__require('npm:lodash._createassigner@3.1.1/index.js');
   return module.exports;
 });
 
-System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/AccordionItemBody/index.js", ["npm:classnames@2.2.0.js", "npm:react@15.3.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:lodash._getnative@3.9.1/index.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var funcTag = '[object Function]';
+  var reIsHostCtor = /^\[object .+?Constructor\]$/;
+  function isObjectLike(value) {
+    return !!value && typeof value == 'object';
+  }
+  var objectProto = Object.prototype;
+  var fnToString = Function.prototype.toString;
+  var hasOwnProperty = objectProto.hasOwnProperty;
+  var objToString = objectProto.toString;
+  var reIsNative = RegExp('^' + fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
+  function getNative(object, key) {
+    var value = object == null ? undefined : object[key];
+    return isNative(value) ? value : undefined;
+  }
+  function isFunction(value) {
+    return isObject(value) && objToString.call(value) == funcTag;
+  }
+  function isObject(value) {
+    var type = typeof value;
+    return !!value && (type == 'object' || type == 'function');
+  }
+  function isNative(value) {
+    if (value == null) {
+      return false;
+    }
+    if (isFunction(value)) {
+      return reIsNative.test(fnToString.call(value));
+    }
+    return isObjectLike(value) && reIsHostCtor.test(value);
+  }
+  module.exports = getNative;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash._getnative@3.9.1.js", ["npm:lodash._getnative@3.9.1/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash._getnative@3.9.1/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.isarguments@3.1.0/index.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var MAX_SAFE_INTEGER = 9007199254740991;
+  var argsTag = '[object Arguments]',
+      funcTag = '[object Function]',
+      genTag = '[object GeneratorFunction]';
+  var objectProto = Object.prototype;
+  var hasOwnProperty = objectProto.hasOwnProperty;
+  var objectToString = objectProto.toString;
+  var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+  function isArguments(value) {
+    return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') && (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+  }
+  function isArrayLike(value) {
+    return value != null && isLength(value.length) && !isFunction(value);
+  }
+  function isArrayLikeObject(value) {
+    return isObjectLike(value) && isArrayLike(value);
+  }
+  function isFunction(value) {
+    var tag = isObject(value) ? objectToString.call(value) : '';
+    return tag == funcTag || tag == genTag;
+  }
+  function isLength(value) {
+    return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+  }
+  function isObject(value) {
+    var type = typeof value;
+    return !!value && (type == 'object' || type == 'function');
+  }
+  function isObjectLike(value) {
+    return !!value && typeof value == 'object';
+  }
+  module.exports = isArguments;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.isarguments@3.1.0.js", ["npm:lodash.isarguments@3.1.0/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash.isarguments@3.1.0/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.isarray@3.0.4/index.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var arrayTag = '[object Array]',
+      funcTag = '[object Function]';
+  var reIsHostCtor = /^\[object .+?Constructor\]$/;
+  function isObjectLike(value) {
+    return !!value && typeof value == 'object';
+  }
+  var objectProto = Object.prototype;
+  var fnToString = Function.prototype.toString;
+  var hasOwnProperty = objectProto.hasOwnProperty;
+  var objToString = objectProto.toString;
+  var reIsNative = RegExp('^' + fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
+  var nativeIsArray = getNative(Array, 'isArray');
+  var MAX_SAFE_INTEGER = 9007199254740991;
+  function getNative(object, key) {
+    var value = object == null ? undefined : object[key];
+    return isNative(value) ? value : undefined;
+  }
+  function isLength(value) {
+    return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+  }
+  var isArray = nativeIsArray || function(value) {
+    return isObjectLike(value) && isLength(value.length) && objToString.call(value) == arrayTag;
+  };
+  function isFunction(value) {
+    return isObject(value) && objToString.call(value) == funcTag;
+  }
+  function isObject(value) {
+    var type = typeof value;
+    return !!value && (type == 'object' || type == 'function');
+  }
+  function isNative(value) {
+    if (value == null) {
+      return false;
+    }
+    if (isFunction(value)) {
+      return reIsNative.test(fnToString.call(value));
+    }
+    return isObjectLike(value) && reIsHostCtor.test(value);
+  }
+  module.exports = isArray;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.isarray@3.0.4.js", ["npm:lodash.isarray@3.0.4/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash.isarray@3.0.4/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.keys@3.1.2/index.js", ["npm:lodash._getnative@3.9.1.js", "npm:lodash.isarguments@3.1.0.js", "npm:lodash.isarray@3.0.4.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var getNative = $__require('npm:lodash._getnative@3.9.1.js'),
+      isArguments = $__require('npm:lodash.isarguments@3.1.0.js'),
+      isArray = $__require('npm:lodash.isarray@3.0.4.js');
+  var reIsUint = /^\d+$/;
+  var objectProto = Object.prototype;
+  var hasOwnProperty = objectProto.hasOwnProperty;
+  var nativeKeys = getNative(Object, 'keys');
+  var MAX_SAFE_INTEGER = 9007199254740991;
+  function baseProperty(key) {
+    return function(object) {
+      return object == null ? undefined : object[key];
+    };
+  }
+  var getLength = baseProperty('length');
+  function isArrayLike(value) {
+    return value != null && isLength(getLength(value));
+  }
+  function isIndex(value, length) {
+    value = (typeof value == 'number' || reIsUint.test(value)) ? +value : -1;
+    length = length == null ? MAX_SAFE_INTEGER : length;
+    return value > -1 && value % 1 == 0 && value < length;
+  }
+  function isLength(value) {
+    return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+  }
+  function shimKeys(object) {
+    var props = keysIn(object),
+        propsLength = props.length,
+        length = propsLength && object.length;
+    var allowIndexes = !!length && isLength(length) && (isArray(object) || isArguments(object));
+    var index = -1,
+        result = [];
+    while (++index < propsLength) {
+      var key = props[index];
+      if ((allowIndexes && isIndex(key, length)) || hasOwnProperty.call(object, key)) {
+        result.push(key);
+      }
+    }
+    return result;
+  }
+  function isObject(value) {
+    var type = typeof value;
+    return !!value && (type == 'object' || type == 'function');
+  }
+  var keys = !nativeKeys ? shimKeys : function(object) {
+    var Ctor = object == null ? undefined : object.constructor;
+    if ((typeof Ctor == 'function' && Ctor.prototype === object) || (typeof object != 'function' && isArrayLike(object))) {
+      return shimKeys(object);
+    }
+    return isObject(object) ? nativeKeys(object) : [];
+  };
+  function keysIn(object) {
+    if (object == null) {
+      return [];
+    }
+    if (!isObject(object)) {
+      object = Object(object);
+    }
+    var length = object.length;
+    length = (length && isLength(length) && (isArray(object) || isArguments(object)) && length) || 0;
+    var Ctor = object.constructor,
+        index = -1,
+        isProto = typeof Ctor == 'function' && Ctor.prototype === object,
+        result = Array(length),
+        skipIndexes = length > 0;
+    while (++index < length) {
+      result[index] = (index + '');
+    }
+    for (var key in object) {
+      if (!(skipIndexes && isIndex(key, length)) && !(key == 'constructor' && (isProto || !hasOwnProperty.call(object, key)))) {
+        result.push(key);
+      }
+    }
+    return result;
+  }
+  module.exports = keys;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.keys@3.1.2.js", ["npm:lodash.keys@3.1.2/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash.keys@3.1.2/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.assign@3.2.0/index.js", ["npm:lodash._baseassign@3.2.0.js", "npm:lodash._createassigner@3.1.1.js", "npm:lodash.keys@3.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var baseAssign = $__require('npm:lodash._baseassign@3.2.0.js'),
+      createAssigner = $__require('npm:lodash._createassigner@3.1.1.js'),
+      keys = $__require('npm:lodash.keys@3.1.2.js');
+  function assignWith(object, source, customizer) {
+    var index = -1,
+        props = keys(source),
+        length = props.length;
+    while (++index < length) {
+      var key = props[index],
+          value = object[key],
+          result = customizer(value, source[key], key, object, source);
+      if ((result === result ? (result !== value) : (value === value)) || (value === undefined && !(key in object))) {
+        object[key] = result;
+      }
+    }
+    return object;
+  }
+  var assign = createAssigner(function(object, source, customizer) {
+    return customizer ? assignWith(object, source, customizer) : baseAssign(object, source);
+  });
+  module.exports = assign;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.assign@3.2.0.js", ["npm:lodash.assign@3.2.0/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash.assign@3.2.0/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-prefixr@0.1.0/stylePrefixr.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  Object.defineProperty(exports, "__esModule", {value: true});
-  var _createClass = function() {
-    function defineProperties(target, props) {
-      for (var i = 0; i < props.length; i++) {
-        var descriptor = props[i];
-        descriptor.enumerable = descriptor.enumerable || false;
-        descriptor.configurable = true;
-        if ("value" in descriptor)
-          descriptor.writable = true;
-        Object.defineProperty(target, descriptor.key, descriptor);
+  var el;
+  if (!!global.document) {
+    el = global.document.createElement('div');
+  }
+  var prefixes = ["ms", "Moz", "Webkit", "O"];
+  var properties = ['userSelect', 'transform', 'transition', 'transformOrigin', 'transformStyle', 'transitionProperty', 'transitionDuration', 'transitionTimingFunction', 'transitionDelay', 'borderImage', 'borderImageSlice', 'boxShadow', 'backgroundClip', 'backfaceVisibility', 'perspective', 'perspectiveOrigin', 'animation', 'animationDuration', 'animationName', 'animationDelay', 'animationDirection', 'animationIterationCount', 'animationTimingFunction', 'animationPlayState', 'animationFillMode', 'appearance'];
+  function GetVendorPrefix(property) {
+    if (properties.indexOf(property) == -1 || !global.document || typeof el.style[property] !== 'undefined') {
+      return property;
+    }
+    property = property[0].toUpperCase() + property.slice(1);
+    var temp;
+    for (var i = 0; i < prefixes.length; i++) {
+      temp = prefixes[i] + property;
+      if (typeof el.style[temp] !== 'undefined') {
+        prefixes = [prefixes[i]];
+        return temp;
       }
     }
-    return function(Constructor, protoProps, staticProps) {
-      if (protoProps)
-        defineProperties(Constructor.prototype, protoProps);
-      if (staticProps)
-        defineProperties(Constructor, staticProps);
-      return Constructor;
-    };
-  }();
-  var _classnames = $__require('npm:classnames@2.2.0.js');
-  var _classnames2 = _interopRequireDefault(_classnames);
-  var _react = $__require('npm:react@15.3.0.js');
-  var _react2 = _interopRequireDefault(_react);
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {default: obj};
+    return property[0].toLowerCase() + property.slice(1);
   }
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-  function _possibleConstructorReturn(self, call) {
-    if (!self) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-    return call && (typeof call === "object" || typeof call === "function") ? call : self;
-  }
-  function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-    }
-    subClass.prototype = Object.create(superClass && superClass.prototype, {constructor: {
-        value: subClass,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }});
-    if (superClass)
-      Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-  }
-  var AccordionItemBody = function(_Component) {
-    _inherits(AccordionItemBody, _Component);
-    function AccordionItemBody() {
-      _classCallCheck(this, AccordionItemBody);
-      return _possibleConstructorReturn(this, Object.getPrototypeOf(AccordionItemBody).apply(this, arguments));
-    }
-    _createClass(AccordionItemBody, [{
-      key: 'render',
-      value: function render() {
-        var style = {
-          maxHeight: this.props.maxHeight,
-          overflow: this.props.overflow,
-          transition: 'max-height ' + this.props.duration + 'ms ease'
-        };
-        return _react2.default.createElement('div', {
-          'aria-labelledby': 'react-safona-item-title-' + this.props.uuid,
-          className: (0, _classnames2.default)('react-sanfona-item-body', this.props.className),
-          id: 'react-safona-item-body-' + this.props.uuid,
-          style: style
-        }, _react2.default.createElement('div', {className: 'react-sanfona-item-body-wrapper'}, this.props.children));
+  module.exports = (function() {
+    var cache = {};
+    return function(obj) {
+      if (!global.document) {
+        return obj;
       }
-    }]);
-    return AccordionItemBody;
-  }(_react.Component);
-  exports.default = AccordionItemBody;
-  AccordionItemBody.propTypes = {
-    className: _react.PropTypes.string,
-    maxHeight: _react.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.number]),
-    duration: _react.PropTypes.number,
-    overflow: _react.PropTypes.string,
-    uuid: _react.PropTypes.string
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:classnames@2.2.0/index.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  "format cjs";
-  (function() {
-    'use strict';
-    var hasOwn = {}.hasOwnProperty;
-    function classNames() {
-      var classes = '';
-      for (var i = 0; i < arguments.length; i++) {
-        var arg = arguments[i];
-        if (!arg)
-          continue;
-        var argType = typeof arg;
-        if (argType === 'string' || argType === 'number') {
-          classes += ' ' + arg;
-        } else if (Array.isArray(arg)) {
-          classes += ' ' + classNames.apply(null, arg);
-        } else if (argType === 'object') {
-          for (var key in arg) {
-            if (hasOwn.call(arg, key) && arg[key]) {
-              classes += ' ' + key;
-            }
-          }
+      var result = {};
+      for (var key in obj) {
+        if (cache[key] === undefined) {
+          cache[key] = GetVendorPrefix(key);
         }
+        result[cache[key]] = obj[key];
       }
-      return classes.substr(1);
-    }
-    if (typeof module !== 'undefined' && module.exports) {
-      module.exports = classNames;
-    } else if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
-      define('classnames', function() {
-        return classNames;
-      });
-    } else {
-      window.classNames = classNames;
-    }
-  }());
+      return result;
+    };
+  })();
   return module.exports;
 });
 
-System.registerDynamic("npm:classnames@2.2.0.js", ["npm:classnames@2.2.0/index.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-prefixr@0.1.0.js", ["npm:react-prefixr@0.1.0/stylePrefixr.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = $__require('npm:classnames@2.2.0/index.js');
+  module.exports = $__require('npm:react-prefixr@0.1.0/stylePrefixr.js');
   return module.exports;
 });
 
-System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/AccordionItemTitle/index.js", ["npm:classnames@2.2.0.js", "npm:react@15.3.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-dynamic-modal@1.1.1/lib/Modal.js", ["npm:react@15.3.1.js", "npm:react-dom@15.3.1.js", "npm:lodash.assign@3.2.0.js", "npm:react-prefixr@0.1.0.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  Object.defineProperty(exports, "__esModule", {value: true});
   var _createClass = function() {
     function defineProperties(target, props) {
       for (var i = 0; i < props.length; i++) {
@@ -45304,136 +46108,16 @@ System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/AccordionItemTitle
       return Constructor;
     };
   }();
-  var _classnames = $__require('npm:classnames@2.2.0.js');
-  var _classnames2 = _interopRequireDefault(_classnames);
-  var _react = $__require('npm:react@15.3.0.js');
-  var _react2 = _interopRequireDefault(_react);
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {default: obj};
-  }
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
-  function _possibleConstructorReturn(self, call) {
-    if (!self) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-    return call && (typeof call === "object" || typeof call === "function") ? call : self;
-  }
-  function _inherits(subClass, superClass) {
-    if (typeof superClass !== "function" && superClass !== null) {
-      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-    }
-    subClass.prototype = Object.create(superClass && superClass.prototype, {constructor: {
-        value: subClass,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }});
-    if (superClass)
-      Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-  }
-  var AccordionItemTitle = function(_Component) {
-    _inherits(AccordionItemTitle, _Component);
-    function AccordionItemTitle() {
-      _classCallCheck(this, AccordionItemTitle);
-      return _possibleConstructorReturn(this, Object.getPrototypeOf(AccordionItemTitle).apply(this, arguments));
-    }
-    _createClass(AccordionItemTitle, [{
-      key: 'render',
-      value: function render() {
-        var style = {
-          cursor: 'pointer',
-          margin: 0,
-          color: this.props.titleColor
-        };
-        return _react2.default.createElement('h3', {
-          'aria-controls': 'react-sanfona-item-body-' + this.props.uuid,
-          className: (0, _classnames2.default)('react-sanfona-item-title', this.props.className),
-          id: 'react-safona-item-title-' + this.props.uuid,
-          onClick: this.props.onClick,
-          style: style
-        }, this.props.title);
-      }
-    }]);
-    return AccordionItemTitle;
-  }(_react.Component);
-  exports.default = AccordionItemTitle;
-  AccordionItemTitle.propTypes = {
-    className: _react.PropTypes.string,
-    onClick: _react.PropTypes.func,
-    title: _react.PropTypes.string,
-    uuid: _react.PropTypes.string
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/AccordionItem/index.js", ["npm:classnames@2.2.0.js", "npm:react@15.3.0.js", "npm:react-dom@15.3.0.js", "npm:uuid@2.0.1.js", "npm:react-sanfona@0.0.14/dist-modules/AccordionItemBody/index.js", "npm:react-sanfona@0.0.14/dist-modules/AccordionItemTitle/index.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
   Object.defineProperty(exports, "__esModule", {value: true});
-  var _extends = Object.assign || function(target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-    return target;
-  };
-  var _createClass = function() {
-    function defineProperties(target, props) {
-      for (var i = 0; i < props.length; i++) {
-        var descriptor = props[i];
-        descriptor.enumerable = descriptor.enumerable || false;
-        descriptor.configurable = true;
-        if ("value" in descriptor)
-          descriptor.writable = true;
-        Object.defineProperty(target, descriptor.key, descriptor);
-      }
-    }
-    return function(Constructor, protoProps, staticProps) {
-      if (protoProps)
-        defineProperties(Constructor.prototype, protoProps);
-      if (staticProps)
-        defineProperties(Constructor, staticProps);
-      return Constructor;
-    };
-  }();
-  var _classnames = $__require('npm:classnames@2.2.0.js');
-  var _classnames2 = _interopRequireDefault(_classnames);
-  var _react = $__require('npm:react@15.3.0.js');
+  exports.ModalManager = exports.Modal = undefined;
+  var _react = $__require('npm:react@15.3.1.js');
   var _react2 = _interopRequireDefault(_react);
-  var _reactDom = $__require('npm:react-dom@15.3.0.js');
+  var _reactDom = $__require('npm:react-dom@15.3.1.js');
   var _reactDom2 = _interopRequireDefault(_reactDom);
-  var _uuid = $__require('npm:uuid@2.0.1.js');
-  var _uuid2 = _interopRequireDefault(_uuid);
-  var _AccordionItemBody = $__require('npm:react-sanfona@0.0.14/dist-modules/AccordionItemBody/index.js');
-  var _AccordionItemBody2 = _interopRequireDefault(_AccordionItemBody);
-  var _AccordionItemTitle = $__require('npm:react-sanfona@0.0.14/dist-modules/AccordionItemTitle/index.js');
-  var _AccordionItemTitle2 = _interopRequireDefault(_AccordionItemTitle);
+  var _lodash = $__require('npm:lodash.assign@3.2.0.js');
+  var _lodash2 = _interopRequireDefault(_lodash);
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : {default: obj};
-  }
-  function _defineProperty(obj, key, value) {
-    if (key in obj) {
-      Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      });
-    } else {
-      obj[key] = value;
-    }
-    return obj;
   }
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -45459,191 +46143,425 @@ System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/AccordionItem/inde
     if (superClass)
       Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   }
-  var AccordionItem = function(_Component) {
-    _inherits(AccordionItem, _Component);
-    function AccordionItem(props) {
-      _classCallCheck(this, AccordionItem);
-      var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(AccordionItem).call(this, props));
-      _this.state = {
-        maxHeight: props.expanded ? 'none' : 0,
-        overflow: props.expanded ? 'visible' : 'hidden',
-        duration: 300
-      };
+  var prefix = $__require('npm:react-prefixr@0.1.0.js');
+  var defaultStyles = {
+    overlay: {
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      zIndex: 99999999,
+      overflow: 'hidden',
+      perspective: 1300,
+      backgroundColor: 'rgba(0, 0, 0, 0.3)'
+    },
+    content: {
+      position: 'relative',
+      margin: '15% auto',
+      width: '60%',
+      border: '1px solid rgba(0, 0, 0, .2)',
+      background: '#fff',
+      overflow: 'auto',
+      borderRadius: '4px',
+      outline: 'none',
+      boxShadow: '0 5px 10px rgba(0, 0, 0, .3)'
+    }
+  };
+  var defaultTransition = {
+    property: 'all',
+    duration: 300,
+    timingfunction: 'linear'
+  };
+  var stopPropagation = function stopPropagation(e) {
+    return e.stopPropagation();
+  };
+  var onClose = void 0;
+  var Modal = exports.Modal = function(_Component) {
+    _inherits(Modal, _Component);
+    function Modal(props) {
+      _classCallCheck(this, Modal);
+      var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Modal).call(this, props));
+      _this.state = {open: false};
       return _this;
     }
-    _createClass(AccordionItem, [{
-      key: 'componentWillMount',
-      value: function componentWillMount() {
-        this.uuid = _uuid2.default.v4();
-      }
-    }, {
-      key: 'componentDidUpdate',
-      value: function componentDidUpdate(prevProps) {
-        if (prevProps.expanded !== this.props.expanded) {
-          if (this.props.expanded) {
-            this.maybeExpand();
-          } else {
-            this.handleCollapse();
-          }
+    _createClass(Modal, [{
+      key: 'close',
+      value: function close() {
+        if (!this.props.onRequestClose || this.props.onRequestClose()) {
+          ModalManager.close();
         }
       }
     }, {
-      key: 'startTransition',
-      value: function startTransition() {
-        this.setState({
-          maxHeight: this.maxHeight,
-          overflow: 'hidden'
-        });
-        clearTimeout(this.timeout);
+      key: 'handleKeyDown',
+      value: function handleKeyDown(event) {
+        if (event.keyCode == 27)
+          this.close();
       }
     }, {
-      key: 'maybeExpand',
-      value: function maybeExpand() {
-        var bodyNode = _reactDom2.default.findDOMNode(this.refs.body);
-        var images = bodyNode.querySelectorAll('img');
-        if (images.length > 0) {
-          this.preloadImages(bodyNode, images);
-          return;
-        }
-        this.handleExpand();
-      }
-    }, {
-      key: 'handleExpand',
-      value: function handleExpand() {
+      key: 'componentDidMount',
+      value: function componentDidMount() {
         var _this2 = this;
-        var onExpand = this.props.onExpand;
-        this.startTransition();
-        this.timeout = setTimeout(function() {
-          _this2.setState({
-            maxHeight: 'none',
-            overflow: 'visible'
-          });
-          if (onExpand) {
-            onExpand();
-          }
-        }, this.state.duration);
-      }
-    }, {
-      key: 'handleCollapse',
-      value: function handleCollapse() {
-        var _this3 = this;
-        var onClose = this.props.onClose;
-        this.startTransition();
-        this.timeout = setTimeout(function() {
-          _this3.setState({
-            maxHeight: 0,
-            overflow: 'hidden'
-          });
-          if (onClose) {
-            onClose();
-          }
+        var transitionTimeMS = this.getTransitionDuration();
+        setTimeout(function() {
+          return _this2.setState({open: true});
         }, 0);
+        onClose = function onClose(callback) {
+          _this2.setState({open: false}, function() {
+            _this2.closeTimer = setTimeout(callback, transitionTimeMS);
+          });
+        };
       }
     }, {
-      key: 'preloadImages',
-      value: function preloadImages(node) {
-        var _this4 = this;
-        var images = arguments.length <= 1 || arguments[1] === undefined ? [] : arguments[1];
-        var imagesLoaded = 0;
-        var imgLoaded = function imgLoaded() {
-          imagesLoaded++;
-          if (imagesLoaded === images.length) {
-            _this4.handleExpand();
-          }
-        };
-        for (var i = 0; i < images.length; i += 1) {
-          var img = new Image();
-          img.src = images[i].src;
-          img.onload = img.onerror = imgLoaded;
-        }
+      key: 'componentWillUnmount',
+      value: function componentWillUnmount() {
+        onClose = null;
+        clearTimeout(this.closeTimer);
       }
     }, {
-      key: 'getProps',
-      value: function getProps() {
-        var props = {
-          className: (0, _classnames2.default)('react-sanfona-item', this.props.className, {'react-sanfona-item-expanded': this.props.expanded}, this.props.expandedClassName && _defineProperty({}, this.props.expandedClassName, this.props.expanded)),
-          role: 'tabpanel',
-          style: this.props.style
-        };
-        if (this.props.expanded) {
-          props['aria-expanded'] = true;
-        } else {
-          props['aria-hidden'] = true;
+      key: 'getTransitionDuration',
+      value: function getTransitionDuration() {
+        var effect = this.props.effect;
+        if (!effect.transition) {
+          return defaultTransition.duration;
         }
-        return props;
+        return effect.transition.duration || defaultTransition.duration;
       }
     }, {
       key: 'render',
       value: function render() {
-        return _react2.default.createElement('div', _extends({}, this.getProps(), {ref: 'item'}), _react2.default.createElement(_AccordionItemTitle2.default, {
-          className: this.props.titleClassName,
-          title: this.props.title,
-          onClick: this.props.onClick,
-          titleColor: this.props.titleColor,
-          uuid: this.uuid
-        }), _react2.default.createElement(_AccordionItemBody2.default, {
-          maxHeight: this.state.maxHeight,
-          duration: this.state.duration,
-          className: this.props.bodyClassName,
-          overflow: this.state.overflow,
-          ref: 'body',
-          uuid: this.uuid
+        var _props = this.props;
+        var style = _props.style;
+        var effect = _props.effect;
+        var open = this.state.open;
+        var transition = effect.transition;
+        if (!transition) {
+          transition = defaultTransition;
+        } else {
+          transition = (0, _lodash2.default)({}, defaultTransition, transition);
+        }
+        var transition_style = {'transition': transition.property + ' ' + transition.duration / 1000 + 's' + ' ' + transition.timingfunction};
+        return _react2.default.createElement('div', {
+          ref: 'overlay',
+          style: prefix((0, _lodash2.default)({}, defaultStyles.overlay, style ? style.overlay ? style.overlay : {} : {}, {
+            transition: 'opacity ' + transition.duration / 1000 + 's' + ' linear',
+            opacity: open ? 1 : 0
+          })),
+          onClick: this.close.bind(this)
+        }, _react2.default.createElement('div', {
+          ref: 'content',
+          style: prefix((0, _lodash2.default)({}, defaultStyles.content, style ? style.content ? style.content : {} : {}, transition_style, open ? effect.end : effect.begin)),
+          onClick: stopPropagation,
+          onKeyDown: this.handleKeyDown.bind(this)
         }, this.props.children));
       }
-    }, {
-      key: 'maxHeight',
-      get: function get() {
-        var body = _reactDom2.default.findDOMNode(this.refs.body);
-        return body.scrollHeight + 'px';
-      }
     }]);
-    return AccordionItem;
+    return Modal;
   }(_react.Component);
-  exports.default = AccordionItem;
-  AccordionItem.propTypes = {
-    bodyClassName: _react.PropTypes.string,
-    className: _react.PropTypes.string,
-    expanded: _react.PropTypes.bool,
-    onClick: _react.PropTypes.func,
-    title: _react.PropTypes.string,
-    expandedClassName: _react.PropTypes.string,
-    style: _react.PropTypes.object,
-    titleClassName: _react.PropTypes.string
+  var node;
+  var modals = [];
+  var renderModal = function renderModal() {
+    if (modals.length == 0)
+      return;
+    var component = modals.shift();
+    if (!node) {
+      node = document.createElement('div');
+      document.body.appendChild(node);
+    }
+    _reactDom2.default.render(component, node);
+  };
+  var ModalManager = exports.ModalManager = {
+    open: function open(component) {
+      modals.push(component);
+      if (modals.length == 1) {
+        renderModal();
+      }
+    },
+    close: function close() {
+      onClose && onClose(function() {
+        _reactDom2.default.unmountComponentAtNode(node);
+        renderModal();
+      });
+    }
   };
   return module.exports;
 });
 
-System.registerDynamic("npm:react-sanfona@0.0.14/dist-modules/index.js", ["npm:react-sanfona@0.0.14/dist-modules/Accordion/index.js", "npm:react-sanfona@0.0.14/dist-modules/AccordionItem/index.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-dynamic-modal@1.1.1/lib/Effect.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   Object.defineProperty(exports, "__esModule", {value: true});
-  exports.AccordionItem = exports.Accordion = undefined;
-  var _Accordion2 = $__require('npm:react-sanfona@0.0.14/dist-modules/Accordion/index.js');
-  var _Accordion3 = _interopRequireDefault(_Accordion2);
-  var _AccordionItem2 = $__require('npm:react-sanfona@0.0.14/dist-modules/AccordionItem/index.js');
-  var _AccordionItem3 = _interopRequireDefault(_AccordionItem2);
-  function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {default: obj};
-  }
-  exports.Accordion = _Accordion3.default;
-  exports.AccordionItem = _AccordionItem3.default;
+  var ScaleUp = exports.ScaleUp = {
+    transition: {
+      property: 'all',
+      duration: 300,
+      timingfunction: 'linear'
+    },
+    begin: {
+      'transform': 'scale(0.7)',
+      'opacity': 0
+    },
+    end: {
+      'transform': 'scale(1)',
+      'opacity': 1
+    }
+  };
+  var SlideFromRight = exports.SlideFromRight = {
+    transition: {
+      property: 'all',
+      duration: 300,
+      timingfunction: 'cubic-bezier(0.25, 0.5, 0.5, 0.9)'
+    },
+    begin: {
+      'transform': 'translateX(35%)',
+      'opacity': 0
+    },
+    end: {
+      'transform': 'translateX(0)',
+      'opacity': 1
+    }
+  };
+  var SlideFromBottom = exports.SlideFromBottom = {
+    transition: {
+      property: 'all',
+      duration: 300,
+      timingfunction: 'linear'
+    },
+    begin: {
+      'transform': 'translateY(35%)',
+      'opacity': 0
+    },
+    end: {
+      'transform': 'translateY(0)',
+      'opacity': 1
+    }
+  };
+  var Newspaper = exports.Newspaper = {
+    transition: {
+      property: 'all',
+      duration: 500,
+      timingfunction: 'linear'
+    },
+    begin: {
+      'transform': 'scale(0) rotate(720deg)',
+      'opacity': 0
+    },
+    end: {
+      'transform': 'scale(1) rotate(0deg)',
+      'opacity': 1
+    }
+  };
+  var Fall = exports.Fall = {
+    transition: {
+      property: 'all',
+      duration: 300,
+      timingfunction: 'ease-in'
+    },
+    begin: {
+      'transformStyle': 'preserve-3d',
+      'transform': 'translateZ(600px) rotateX(20deg)',
+      'opacity': 0
+    },
+    end: {
+      'transformStyle': 'preserve-3d',
+      'transform': 'translateZ(0px) rotateX(0deg)',
+      'opacity': 1
+    }
+  };
+  var SideFall = exports.SideFall = {
+    transition: {
+      property: 'all',
+      duration: 300,
+      timingfunction: 'linear'
+    },
+    begin: {
+      'transformStyle': 'preserve-3d',
+      'transform': 'translate(30%) translateZ(600px) rotate(10deg)',
+      'opacity': 0
+    },
+    end: {
+      'transformStyle': 'preserve-3d',
+      'transform': 'translate(0%) translateZ(0) rotate(0deg)',
+      'opacity': 1
+    }
+  };
+  var FlipHorizontal3D = exports.FlipHorizontal3D = {
+    transition: {
+      property: 'all',
+      duration: 300,
+      timingfunction: 'linear'
+    },
+    begin: {
+      'transformStyle': 'preserve-3d',
+      'transform': 'rotateY(-70deg)',
+      'opacity': 0
+    },
+    end: {
+      'transformStyle': 'preserve-3d',
+      'transform': 'rotateY(0deg)',
+      'opacity': 1
+    }
+  };
+  var FlipVertical3D = exports.FlipVertical3D = {
+    transition: {
+      property: 'all',
+      duration: 300,
+      timingfunction: 'linear'
+    },
+    begin: {
+      'transformStyle': 'preserve-3d',
+      'transform': 'rotateX(-70deg)',
+      'opacity': 0
+    },
+    end: {
+      'transformStyle': 'preserve-3d',
+      'transform': 'rotateX(0deg)',
+      'opacity': 1
+    }
+  };
+  var Sign3D = exports.Sign3D = {
+    transition: {
+      property: 'all',
+      duration: 300,
+      timingfunction: 'linear'
+    },
+    begin: {
+      'transformStyle': 'preserve-3d',
+      'transformOrigin': '50% 0',
+      'transform': 'rotateX(-60deg)',
+      'opacity': 0
+    },
+    end: {
+      'transformStyle': 'preserve-3d',
+      'transformOrigin': '50% 0',
+      'transform': 'rotateX(0deg)',
+      'opacity': 1
+    }
+  };
+  var SuperScaled = exports.SuperScaled = {
+    transition: {
+      property: 'all',
+      duration: 300,
+      timingfunction: 'linear'
+    },
+    begin: {
+      'transform': 'scale(2)',
+      'opacity': 0
+    },
+    end: {
+      'transform': 'scale(1)',
+      'opacity': 1
+    }
+  };
+  var RotateFromBottom3D = exports.RotateFromBottom3D = {
+    transition: {
+      property: 'all',
+      duration: 300,
+      timingfunction: 'ease-out'
+    },
+    begin: {
+      'transformStyle': 'preserve-3d',
+      'transformOrigin': '0 100%',
+      'transform': 'translateY(100%) rotateX(90deg)',
+      'opacity': 0
+    },
+    end: {
+      'transformStyle': 'preserve-3d',
+      'transformOrigin': '0 100%',
+      'transform': 'translateY(0%) rotateX(0deg)',
+      'opacity': 1
+    }
+  };
+  var RotateFromLeft3D = exports.RotateFromLeft3D = {
+    transition: {
+      property: 'all',
+      duration: 300,
+      timingfunction: 'linear'
+    },
+    begin: {
+      'transformStyle': 'preserve-3d',
+      'transformOrigin': '0 100%',
+      'transform': 'translateZ(100px) translateX(-30%) rotateY(90deg)',
+      'opacity': 0
+    },
+    end: {
+      'transformStyle': 'preserve-3d',
+      'transformOrigin': '0 100%',
+      'transform': 'translateZ(0px) translateX(0%) rotateY(0deg)',
+      'opacity': 1
+    }
+  };
   return module.exports;
 });
 
-System.registerDynamic("npm:react-sanfona@0.0.14.js", ["npm:react-sanfona@0.0.14/dist-modules/index.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-dynamic-modal@1.1.1/lib/index.js", ["npm:react-dynamic-modal@1.1.1/lib/Modal.js", "npm:react-dynamic-modal@1.1.1/lib/Effect.js"], true, function($__require, exports, module) {
+  "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = $__require('npm:react-sanfona@0.0.14/dist-modules/index.js');
+  Object.defineProperty(exports, "__esModule", {value: true});
+  exports.Effect = undefined;
+  var _Modal = $__require('npm:react-dynamic-modal@1.1.1/lib/Modal.js');
+  var _loop = function _loop(_key2) {
+    if (_key2 === "default")
+      return 'continue';
+    Object.defineProperty(exports, _key2, {
+      enumerable: true,
+      get: function get() {
+        return _Modal[_key2];
+      }
+    });
+  };
+  for (var _key2 in _Modal) {
+    var _ret = _loop(_key2);
+    if (_ret === 'continue')
+      continue;
+  }
+  var _Effect2 = $__require('npm:react-dynamic-modal@1.1.1/lib/Effect.js');
+  var _Effect = _interopRequireWildcard(_Effect2);
+  function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) {
+      return obj;
+    } else {
+      var newObj = {};
+      if (obj != null) {
+        for (var key in obj) {
+          if (Object.prototype.hasOwnProperty.call(obj, key))
+            newObj[key] = obj[key];
+        }
+      }
+      newObj.default = obj;
+      return newObj;
+    }
+  }
+  var Effect = exports.Effect = _Effect;
   return module.exports;
 });
 
-System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/set.js', 'npm:react@15.3.0.js', 'app/api.js', 'npm:react-sanfona@0.0.14.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Set, React, get, Accordion, AccordionItem, Exercises;
+System.registerDynamic("npm:react-dynamic-modal@1.1.1/lib.js", ["npm:react-dynamic-modal@1.1.1/lib/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:react-dynamic-modal@1.1.1/lib/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-dynamic-modal@1.1.1.js", ["npm:react-dynamic-modal@1.1.1/lib.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:react-dynamic-modal@1.1.1/lib.js');
+  return module.exports;
+});
+
+System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/set.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-sanfona@0.0.14.js', 'npm:react-dynamic-modal@1.1.1.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Set, React, get, Accordion, AccordionItem, Modal, ModalManager, Effect, Exercises;
 
   function compare(a, b) {
     if (a.name < b.name) return -1;
@@ -45662,13 +46580,17 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
     }, function (_npmBabelRuntime5838CoreJsSetJs) {
       _Set = _npmBabelRuntime5838CoreJsSetJs['default'];
-    }, function (_npmReact1530Js) {
-      React = _npmReact1530Js['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
     }, function (_appApiJs) {
       get = _appApiJs.get;
     }, function (_npmReactSanfona0014Js) {
       Accordion = _npmReactSanfona0014Js.Accordion;
       AccordionItem = _npmReactSanfona0014Js.AccordionItem;
+    }, function (_npmReactDynamicModal111Js) {
+      Modal = _npmReactDynamicModal111Js.Modal;
+      ModalManager = _npmReactDynamicModal111Js.ModalManager;
+      Effect = _npmReactDynamicModal111Js.Effect;
     }],
     execute: function () {
       'use strict';
@@ -45699,19 +46621,126 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             });
           }
         }, {
-          key: 'renderItems',
-          value: function renderItems() {
-            var selected = this.state.selected.length > 0 ? this.state.selected : this.state.exercises;
+          key: 'parseVariations',
+          value: function parseVariations(s) {
+            if (s.indexOf(';') != -1) {
+              return s.split(';').map(function (v) {
+                if (v.indexOf(',') !== -1) {
+                  var parts = v.split(',');
+                  return parts.slice(1).map(function (p) {
+                    return p.split('=');
+                  }).reduce(function (prev, next) {
+                    prev[next[0].trim()] = next[1].trim();
+                    return prev;
+                  }, { n: parts[0] });
+                } else {
+                  return { n: v };
+                }
+              });
+            }
 
+            return [];
+          }
+        }, {
+          key: 'renderLink',
+          value: function renderLink(m) {
+            if (undefined === m.v) {
+              return React.createElement(
+                'span',
+                null,
+                m.n
+              );
+            } else {
+              var url = 'https://www.youtube.com/watch?v=' + m.v;
+              var img = 'images/' + m.s + '.png';
+              return React.createElement(
+                'a',
+                { href: url, target: '_blank' },
+                React.createElement(
+                  'span',
+                  null,
+                  m.n,
+                  React.createElement('img', { src: img,
+                    style: { float: 'right', width: '24px', height: '24px' } })
+                )
+              );
+            }
+          }
+        }, {
+          key: 'renderVariations',
+          value: function renderVariations(s) {
+            var _this2 = this;
+
+            var maps = this.parseVariations(s);
+
+            if (maps.length > 0) {
+              var items = maps.map(function (m) {
+                return React.createElement(
+                  'li',
+                  { className: 'list-group-item' },
+                  _this2.renderLink(m)
+                );
+              });
+
+              return React.createElement(
+                'ul',
+                {
+                  style: { marginTop: '20px', marginBottom: '0px' },
+                  className: 'list-group' },
+                items
+              );
+            }
+
+            return null;
+          }
+        }, {
+          key: 'runModal',
+          value: function runModal(e) {
+            e.preventDefault();
+            ModalManager.open(React.createElement(
+              Modal,
+              {
+                onRequestClose: function () {
+                  return true;
+                },
+                style: { content: { width: '430px', background: 'rgba(191,191,191,0.95)' } },
+                effect: Effect.ScaleUp },
+              React.createElement(
+                'div',
+                { className: 'modal-body' },
+                React.createElement('img', { src: e.target.href })
+              ),
+              React.createElement(
+                'div',
+                { className: 'modal-footer' },
+                React.createElement(
+                  'button',
+                  {
+                    type: 'button',
+                    className: 'btn btn-primary btn-sm',
+                    onClick: ModalManager.close },
+                  'Sluiten'
+                )
+              )
+            ));
+          }
+        }, {
+          key: 'renderExercises',
+          value: function renderExercises() {
+            var _this3 = this;
+
+            var selected = this.state.selected.length > 0 ? this.state.selected : this.state.exercises;
             return selected.map(function (m) {
+              var imgSrc = 'images/exercises/' + m.uuid + '.png';
               return React.createElement(
                 AccordionItem,
                 { title: m.name, slug: m.uuid, key: m.uuid },
                 React.createElement(
-                  'div',
-                  null,
+                  'a',
+                  { href: imgSrc, onClick: _this3.runModal.bind(_this3) },
                   m.text
-                )
+                ),
+                _this3.renderVariations(m.variations)
               );
             });
           }
@@ -45741,7 +46770,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
         }, {
           key: 'renderFilters',
           value: function renderFilters() {
-            var _this2 = this;
+            var _this4 = this;
 
             return this.state.categories.map(function (c) {
               return React.createElement(
@@ -45750,7 +46779,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                 React.createElement('input', { type: 'checkbox',
                   'data-id': c.id,
                   checked: c.checked,
-                  onChange: _this2.updateFilters.bind(_this2, c.id)
+                  onChange: _this4.updateFilters.bind(_this4, c.id)
                 }),
                 React.createElement(
                   'span',
@@ -45785,13 +46814,14 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                 ),
                 React.createElement(
                   'div',
-                  { className: 'col-md-9' },
+                  { className: 'col-md-8' },
                   React.createElement(
                     Accordion,
                     null,
-                    this.renderItems()
+                    this.renderExercises()
                   )
-                )
+                ),
+                React.createElement('div', { className: 'col-md-1' })
               )
             );
           }
@@ -45804,7 +46834,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
     }
   };
 });
-System.registerDynamic("npm:react-redux@4.4.5/lib/components/Provider.js", ["npm:react@15.3.0.js", "npm:react-redux@4.4.5/lib/utils/storeShape.js", "npm:react-redux@4.4.5/lib/utils/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-redux@4.4.5/lib/components/Provider.js", ["npm:react@15.3.1.js", "npm:react-redux@4.4.5/lib/utils/storeShape.js", "npm:react-redux@4.4.5/lib/utils/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -45813,7 +46843,7 @@ System.registerDynamic("npm:react-redux@4.4.5/lib/components/Provider.js", ["npm
     'use strict';
     exports.__esModule = true;
     exports["default"] = undefined;
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _storeShape = $__require('npm:react-redux@4.4.5/lib/utils/storeShape.js');
     var _storeShape2 = _interopRequireDefault(_storeShape);
     var _warning = $__require('npm:react-redux@4.4.5/lib/utils/warning.js');
@@ -45889,15 +46919,15 @@ System.registerDynamic("npm:react-redux@4.4.5/lib/components/Provider.js", ["npm
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/PooledClass.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/PooledClass.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var oneArgumentPooler = function(copyFieldsFrom) {
       var Klass = this;
       if (Klass.instancePool.length) {
@@ -45981,7 +47011,7 @@ System.registerDynamic("npm:react@15.3.0/lib/PooledClass.js", ["npm:react@15.3.0
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/KeyEscapeUtils.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/KeyEscapeUtils.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -46017,20 +47047,20 @@ System.registerDynamic("npm:react@15.3.0/lib/KeyEscapeUtils.js", [], true, funct
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/traverseAllChildren.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/ReactCurrentOwner.js", "npm:react@15.3.0/lib/ReactElement.js", "npm:react@15.3.0/lib/getIteratorFn.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:react@15.3.0/lib/KeyEscapeUtils.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/traverseAllChildren.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactCurrentOwner.js", "npm:react@15.3.1/lib/ReactElement.js", "npm:react@15.3.1/lib/getIteratorFn.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:react@15.3.1/lib/KeyEscapeUtils.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var ReactCurrentOwner = $__require('npm:react@15.3.0/lib/ReactCurrentOwner.js');
-    var ReactElement = $__require('npm:react@15.3.0/lib/ReactElement.js');
-    var getIteratorFn = $__require('npm:react@15.3.0/lib/getIteratorFn.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var KeyEscapeUtils = $__require('npm:react@15.3.0/lib/KeyEscapeUtils.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var ReactCurrentOwner = $__require('npm:react@15.3.1/lib/ReactCurrentOwner.js');
+    var ReactElement = $__require('npm:react@15.3.1/lib/ReactElement.js');
+    var getIteratorFn = $__require('npm:react@15.3.1/lib/getIteratorFn.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var KeyEscapeUtils = $__require('npm:react@15.3.1/lib/KeyEscapeUtils.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var SEPARATOR = '.';
     var SUBSEPARATOR = ':';
     var didWarnAboutMaps = false;
@@ -46123,16 +47153,16 @@ System.registerDynamic("npm:react@15.3.0/lib/traverseAllChildren.js", ["npm:reac
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactChildren.js", ["npm:react@15.3.0/lib/PooledClass.js", "npm:react@15.3.0/lib/ReactElement.js", "npm:fbjs@0.8.3/lib/emptyFunction.js", "npm:react@15.3.0/lib/traverseAllChildren.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactChildren.js", ["npm:react@15.3.1/lib/PooledClass.js", "npm:react@15.3.1/lib/ReactElement.js", "npm:fbjs@0.8.4/lib/emptyFunction.js", "npm:react@15.3.1/lib/traverseAllChildren.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var PooledClass = $__require('npm:react@15.3.0/lib/PooledClass.js');
-  var ReactElement = $__require('npm:react@15.3.0/lib/ReactElement.js');
-  var emptyFunction = $__require('npm:fbjs@0.8.3/lib/emptyFunction.js');
-  var traverseAllChildren = $__require('npm:react@15.3.0/lib/traverseAllChildren.js');
+  var PooledClass = $__require('npm:react@15.3.1/lib/PooledClass.js');
+  var ReactElement = $__require('npm:react@15.3.1/lib/ReactElement.js');
+  var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
+  var traverseAllChildren = $__require('npm:react@15.3.1/lib/traverseAllChildren.js');
   var twoArgumentPooler = PooledClass.twoArgumentPooler;
   var fourArgumentPooler = PooledClass.fourArgumentPooler;
   var userProvidedKeyEscapeRegex = /\/+/g;
@@ -46232,16 +47262,16 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactChildren.js", ["npm:react@15.3
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactPureComponent.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/ReactComponent.js", "npm:react@15.3.0/lib/ReactNoopUpdateQueue.js", "npm:fbjs@0.8.3/lib/emptyObject.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactPureComponent.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/ReactComponent.js", "npm:react@15.3.1/lib/ReactNoopUpdateQueue.js", "npm:fbjs@0.8.4/lib/emptyObject.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   var _assign = $__require('npm:object-assign@4.1.0.js');
-  var ReactComponent = $__require('npm:react@15.3.0/lib/ReactComponent.js');
-  var ReactNoopUpdateQueue = $__require('npm:react@15.3.0/lib/ReactNoopUpdateQueue.js');
-  var emptyObject = $__require('npm:fbjs@0.8.3/lib/emptyObject.js');
+  var ReactComponent = $__require('npm:react@15.3.1/lib/ReactComponent.js');
+  var ReactNoopUpdateQueue = $__require('npm:react@15.3.1/lib/ReactNoopUpdateQueue.js');
+  var emptyObject = $__require('npm:fbjs@0.8.4/lib/emptyObject.js');
   function ReactPureComponent(props, context, updater) {
     this.props = props;
     this.context = context;
@@ -46258,19 +47288,19 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPureComponent.js", ["npm:objec
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactComponent.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/ReactNoopUpdateQueue.js", "npm:react@15.3.0/lib/canDefineProperty.js", "npm:fbjs@0.8.3/lib/emptyObject.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactComponent.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactNoopUpdateQueue.js", "npm:react@15.3.1/lib/canDefineProperty.js", "npm:fbjs@0.8.4/lib/emptyObject.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var ReactNoopUpdateQueue = $__require('npm:react@15.3.0/lib/ReactNoopUpdateQueue.js');
-    var canDefineProperty = $__require('npm:react@15.3.0/lib/canDefineProperty.js');
-    var emptyObject = $__require('npm:fbjs@0.8.3/lib/emptyObject.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var ReactNoopUpdateQueue = $__require('npm:react@15.3.1/lib/ReactNoopUpdateQueue.js');
+    var canDefineProperty = $__require('npm:react@15.3.1/lib/canDefineProperty.js');
+    var emptyObject = $__require('npm:fbjs@0.8.4/lib/emptyObject.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     function ReactComponent(props, context, updater) {
       this.props = props;
       this.context = context;
@@ -46315,14 +47345,14 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactComponent.js", ["npm:react@15.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactNoopUpdateQueue.js", ["npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactNoopUpdateQueue.js", ["npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     function warnNoop(publicInstance, callerName) {
       if ("production" !== 'production') {
         var constructor = publicInstance.constructor;
@@ -46349,7 +47379,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactNoopUpdateQueue.js", ["npm:fbj
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/emptyObject.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/emptyObject.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -46365,7 +47395,7 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/emptyObject.js", ["github:jspm/nodeli
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/keyOf.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/keyOf.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -46385,25 +47415,25 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/keyOf.js", [], true, function($__requ
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactClass.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/ReactComponent.js", "npm:react@15.3.0/lib/ReactElement.js", "npm:react@15.3.0/lib/ReactPropTypeLocations.js", "npm:react@15.3.0/lib/ReactPropTypeLocationNames.js", "npm:react@15.3.0/lib/ReactNoopUpdateQueue.js", "npm:fbjs@0.8.3/lib/emptyObject.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/keyMirror.js", "npm:fbjs@0.8.3/lib/keyOf.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactClass.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/ReactComponent.js", "npm:react@15.3.1/lib/ReactElement.js", "npm:react@15.3.1/lib/ReactPropTypeLocations.js", "npm:react@15.3.1/lib/ReactPropTypeLocationNames.js", "npm:react@15.3.1/lib/ReactNoopUpdateQueue.js", "npm:fbjs@0.8.4/lib/emptyObject.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/keyMirror.js", "npm:fbjs@0.8.4/lib/keyOf.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js'),
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js'),
         _assign = $__require('npm:object-assign@4.1.0.js');
-    var ReactComponent = $__require('npm:react@15.3.0/lib/ReactComponent.js');
-    var ReactElement = $__require('npm:react@15.3.0/lib/ReactElement.js');
-    var ReactPropTypeLocations = $__require('npm:react@15.3.0/lib/ReactPropTypeLocations.js');
-    var ReactPropTypeLocationNames = $__require('npm:react@15.3.0/lib/ReactPropTypeLocationNames.js');
-    var ReactNoopUpdateQueue = $__require('npm:react@15.3.0/lib/ReactNoopUpdateQueue.js');
-    var emptyObject = $__require('npm:fbjs@0.8.3/lib/emptyObject.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var keyMirror = $__require('npm:fbjs@0.8.3/lib/keyMirror.js');
-    var keyOf = $__require('npm:fbjs@0.8.3/lib/keyOf.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var ReactComponent = $__require('npm:react@15.3.1/lib/ReactComponent.js');
+    var ReactElement = $__require('npm:react@15.3.1/lib/ReactElement.js');
+    var ReactPropTypeLocations = $__require('npm:react@15.3.1/lib/ReactPropTypeLocations.js');
+    var ReactPropTypeLocationNames = $__require('npm:react@15.3.1/lib/ReactPropTypeLocationNames.js');
+    var ReactNoopUpdateQueue = $__require('npm:react@15.3.1/lib/ReactNoopUpdateQueue.js');
+    var emptyObject = $__require('npm:fbjs@0.8.4/lib/emptyObject.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var keyMirror = $__require('npm:fbjs@0.8.4/lib/keyMirror.js');
+    var keyOf = $__require('npm:fbjs@0.8.4/lib/keyOf.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var MIXINS_KEY = keyOf({mixins: null});
     var SpecPolicy = keyMirror({
       DEFINE_ONCE: null,
@@ -46701,197 +47731,171 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactClass.js", ["npm:react@15.3.0/
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/mapObject.js", [], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var hasOwnProperty = Object.prototype.hasOwnProperty;
-  function mapObject(object, callback, context) {
-    if (!object) {
-      return null;
-    }
-    var result = {};
-    for (var name in object) {
-      if (hasOwnProperty.call(object, name)) {
-        result[name] = callback.call(context, object[name], name, object);
-      }
-    }
-    return result;
-  }
-  module.exports = mapObject;
-  return module.exports;
-});
-
-System.registerDynamic("npm:react@15.3.0/lib/ReactDOMFactories.js", ["npm:react@15.3.0/lib/ReactElement.js", "npm:fbjs@0.8.3/lib/mapObject.js", "npm:react@15.3.0/lib/ReactElementValidator.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactDOMFactories.js", ["npm:react@15.3.1/lib/ReactElement.js", "npm:react@15.3.1/lib/ReactElementValidator.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var ReactElement = $__require('npm:react@15.3.0/lib/ReactElement.js');
-    var mapObject = $__require('npm:fbjs@0.8.3/lib/mapObject.js');
-    function createDOMFactory(tag) {
-      if ("production" !== 'production') {
-        var ReactElementValidator = $__require('npm:react@15.3.0/lib/ReactElementValidator.js');
-        return ReactElementValidator.createFactory(tag);
-      }
-      return ReactElement.createFactory(tag);
+    var ReactElement = $__require('npm:react@15.3.1/lib/ReactElement.js');
+    var createDOMFactory = ReactElement.createFactory;
+    if ("production" !== 'production') {
+      var ReactElementValidator = $__require('npm:react@15.3.1/lib/ReactElementValidator.js');
+      createDOMFactory = ReactElementValidator.createFactory;
     }
-    var ReactDOMFactories = mapObject({
-      a: 'a',
-      abbr: 'abbr',
-      address: 'address',
-      area: 'area',
-      article: 'article',
-      aside: 'aside',
-      audio: 'audio',
-      b: 'b',
-      base: 'base',
-      bdi: 'bdi',
-      bdo: 'bdo',
-      big: 'big',
-      blockquote: 'blockquote',
-      body: 'body',
-      br: 'br',
-      button: 'button',
-      canvas: 'canvas',
-      caption: 'caption',
-      cite: 'cite',
-      code: 'code',
-      col: 'col',
-      colgroup: 'colgroup',
-      data: 'data',
-      datalist: 'datalist',
-      dd: 'dd',
-      del: 'del',
-      details: 'details',
-      dfn: 'dfn',
-      dialog: 'dialog',
-      div: 'div',
-      dl: 'dl',
-      dt: 'dt',
-      em: 'em',
-      embed: 'embed',
-      fieldset: 'fieldset',
-      figcaption: 'figcaption',
-      figure: 'figure',
-      footer: 'footer',
-      form: 'form',
-      h1: 'h1',
-      h2: 'h2',
-      h3: 'h3',
-      h4: 'h4',
-      h5: 'h5',
-      h6: 'h6',
-      head: 'head',
-      header: 'header',
-      hgroup: 'hgroup',
-      hr: 'hr',
-      html: 'html',
-      i: 'i',
-      iframe: 'iframe',
-      img: 'img',
-      input: 'input',
-      ins: 'ins',
-      kbd: 'kbd',
-      keygen: 'keygen',
-      label: 'label',
-      legend: 'legend',
-      li: 'li',
-      link: 'link',
-      main: 'main',
-      map: 'map',
-      mark: 'mark',
-      menu: 'menu',
-      menuitem: 'menuitem',
-      meta: 'meta',
-      meter: 'meter',
-      nav: 'nav',
-      noscript: 'noscript',
-      object: 'object',
-      ol: 'ol',
-      optgroup: 'optgroup',
-      option: 'option',
-      output: 'output',
-      p: 'p',
-      param: 'param',
-      picture: 'picture',
-      pre: 'pre',
-      progress: 'progress',
-      q: 'q',
-      rp: 'rp',
-      rt: 'rt',
-      ruby: 'ruby',
-      s: 's',
-      samp: 'samp',
-      script: 'script',
-      section: 'section',
-      select: 'select',
-      small: 'small',
-      source: 'source',
-      span: 'span',
-      strong: 'strong',
-      style: 'style',
-      sub: 'sub',
-      summary: 'summary',
-      sup: 'sup',
-      table: 'table',
-      tbody: 'tbody',
-      td: 'td',
-      textarea: 'textarea',
-      tfoot: 'tfoot',
-      th: 'th',
-      thead: 'thead',
-      time: 'time',
-      title: 'title',
-      tr: 'tr',
-      track: 'track',
-      u: 'u',
-      ul: 'ul',
-      'var': 'var',
-      video: 'video',
-      wbr: 'wbr',
-      circle: 'circle',
-      clipPath: 'clipPath',
-      defs: 'defs',
-      ellipse: 'ellipse',
-      g: 'g',
-      image: 'image',
-      line: 'line',
-      linearGradient: 'linearGradient',
-      mask: 'mask',
-      path: 'path',
-      pattern: 'pattern',
-      polygon: 'polygon',
-      polyline: 'polyline',
-      radialGradient: 'radialGradient',
-      rect: 'rect',
-      stop: 'stop',
-      svg: 'svg',
-      text: 'text',
-      tspan: 'tspan'
-    }, createDOMFactory);
+    var ReactDOMFactories = {
+      a: createDOMFactory('a'),
+      abbr: createDOMFactory('abbr'),
+      address: createDOMFactory('address'),
+      area: createDOMFactory('area'),
+      article: createDOMFactory('article'),
+      aside: createDOMFactory('aside'),
+      audio: createDOMFactory('audio'),
+      b: createDOMFactory('b'),
+      base: createDOMFactory('base'),
+      bdi: createDOMFactory('bdi'),
+      bdo: createDOMFactory('bdo'),
+      big: createDOMFactory('big'),
+      blockquote: createDOMFactory('blockquote'),
+      body: createDOMFactory('body'),
+      br: createDOMFactory('br'),
+      button: createDOMFactory('button'),
+      canvas: createDOMFactory('canvas'),
+      caption: createDOMFactory('caption'),
+      cite: createDOMFactory('cite'),
+      code: createDOMFactory('code'),
+      col: createDOMFactory('col'),
+      colgroup: createDOMFactory('colgroup'),
+      data: createDOMFactory('data'),
+      datalist: createDOMFactory('datalist'),
+      dd: createDOMFactory('dd'),
+      del: createDOMFactory('del'),
+      details: createDOMFactory('details'),
+      dfn: createDOMFactory('dfn'),
+      dialog: createDOMFactory('dialog'),
+      div: createDOMFactory('div'),
+      dl: createDOMFactory('dl'),
+      dt: createDOMFactory('dt'),
+      em: createDOMFactory('em'),
+      embed: createDOMFactory('embed'),
+      fieldset: createDOMFactory('fieldset'),
+      figcaption: createDOMFactory('figcaption'),
+      figure: createDOMFactory('figure'),
+      footer: createDOMFactory('footer'),
+      form: createDOMFactory('form'),
+      h1: createDOMFactory('h1'),
+      h2: createDOMFactory('h2'),
+      h3: createDOMFactory('h3'),
+      h4: createDOMFactory('h4'),
+      h5: createDOMFactory('h5'),
+      h6: createDOMFactory('h6'),
+      head: createDOMFactory('head'),
+      header: createDOMFactory('header'),
+      hgroup: createDOMFactory('hgroup'),
+      hr: createDOMFactory('hr'),
+      html: createDOMFactory('html'),
+      i: createDOMFactory('i'),
+      iframe: createDOMFactory('iframe'),
+      img: createDOMFactory('img'),
+      input: createDOMFactory('input'),
+      ins: createDOMFactory('ins'),
+      kbd: createDOMFactory('kbd'),
+      keygen: createDOMFactory('keygen'),
+      label: createDOMFactory('label'),
+      legend: createDOMFactory('legend'),
+      li: createDOMFactory('li'),
+      link: createDOMFactory('link'),
+      main: createDOMFactory('main'),
+      map: createDOMFactory('map'),
+      mark: createDOMFactory('mark'),
+      menu: createDOMFactory('menu'),
+      menuitem: createDOMFactory('menuitem'),
+      meta: createDOMFactory('meta'),
+      meter: createDOMFactory('meter'),
+      nav: createDOMFactory('nav'),
+      noscript: createDOMFactory('noscript'),
+      object: createDOMFactory('object'),
+      ol: createDOMFactory('ol'),
+      optgroup: createDOMFactory('optgroup'),
+      option: createDOMFactory('option'),
+      output: createDOMFactory('output'),
+      p: createDOMFactory('p'),
+      param: createDOMFactory('param'),
+      picture: createDOMFactory('picture'),
+      pre: createDOMFactory('pre'),
+      progress: createDOMFactory('progress'),
+      q: createDOMFactory('q'),
+      rp: createDOMFactory('rp'),
+      rt: createDOMFactory('rt'),
+      ruby: createDOMFactory('ruby'),
+      s: createDOMFactory('s'),
+      samp: createDOMFactory('samp'),
+      script: createDOMFactory('script'),
+      section: createDOMFactory('section'),
+      select: createDOMFactory('select'),
+      small: createDOMFactory('small'),
+      source: createDOMFactory('source'),
+      span: createDOMFactory('span'),
+      strong: createDOMFactory('strong'),
+      style: createDOMFactory('style'),
+      sub: createDOMFactory('sub'),
+      summary: createDOMFactory('summary'),
+      sup: createDOMFactory('sup'),
+      table: createDOMFactory('table'),
+      tbody: createDOMFactory('tbody'),
+      td: createDOMFactory('td'),
+      textarea: createDOMFactory('textarea'),
+      tfoot: createDOMFactory('tfoot'),
+      th: createDOMFactory('th'),
+      thead: createDOMFactory('thead'),
+      time: createDOMFactory('time'),
+      title: createDOMFactory('title'),
+      tr: createDOMFactory('tr'),
+      track: createDOMFactory('track'),
+      u: createDOMFactory('u'),
+      ul: createDOMFactory('ul'),
+      'var': createDOMFactory('var'),
+      video: createDOMFactory('video'),
+      wbr: createDOMFactory('wbr'),
+      circle: createDOMFactory('circle'),
+      clipPath: createDOMFactory('clipPath'),
+      defs: createDOMFactory('defs'),
+      ellipse: createDOMFactory('ellipse'),
+      g: createDOMFactory('g'),
+      image: createDOMFactory('image'),
+      line: createDOMFactory('line'),
+      linearGradient: createDOMFactory('linearGradient'),
+      mask: createDOMFactory('mask'),
+      path: createDOMFactory('path'),
+      pattern: createDOMFactory('pattern'),
+      polygon: createDOMFactory('polygon'),
+      polyline: createDOMFactory('polyline'),
+      radialGradient: createDOMFactory('radialGradient'),
+      rect: createDOMFactory('rect'),
+      stop: createDOMFactory('stop'),
+      svg: createDOMFactory('svg'),
+      text: createDOMFactory('text'),
+      tspan: createDOMFactory('tspan')
+    };
     module.exports = ReactDOMFactories;
   })($__require('github:jspm/nodelibs-process@0.1.2.js'));
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.3.0/lib/ReactElement.js", "npm:react@15.3.0/lib/ReactPropTypeLocationNames.js", "npm:react@15.3.0/lib/ReactPropTypesSecret.js", "npm:fbjs@0.8.3/lib/emptyFunction.js", "npm:react@15.3.0/lib/getIteratorFn.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactPropTypes.js", ["npm:react@15.3.1/lib/ReactElement.js", "npm:react@15.3.1/lib/ReactPropTypeLocationNames.js", "npm:react@15.3.1/lib/ReactPropTypesSecret.js", "npm:fbjs@0.8.4/lib/emptyFunction.js", "npm:react@15.3.1/lib/getIteratorFn.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var ReactElement = $__require('npm:react@15.3.0/lib/ReactElement.js');
-    var ReactPropTypeLocationNames = $__require('npm:react@15.3.0/lib/ReactPropTypeLocationNames.js');
-    var ReactPropTypesSecret = $__require('npm:react@15.3.0/lib/ReactPropTypesSecret.js');
-    var emptyFunction = $__require('npm:fbjs@0.8.3/lib/emptyFunction.js');
-    var getIteratorFn = $__require('npm:react@15.3.0/lib/getIteratorFn.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var ReactElement = $__require('npm:react@15.3.1/lib/ReactElement.js');
+    var ReactPropTypeLocationNames = $__require('npm:react@15.3.1/lib/ReactPropTypeLocationNames.js');
+    var ReactPropTypesSecret = $__require('npm:react@15.3.1/lib/ReactPropTypesSecret.js');
+    var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
+    var getIteratorFn = $__require('npm:react@15.3.1/lib/getIteratorFn.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var ANONYMOUS = '<<anonymous>>';
     var ReactPropTypes = {
       array: createPrimitiveTypeChecker('array'),
@@ -46918,6 +47922,11 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.
         return x !== x && y !== y;
       }
     }
+    function PropTypeError(message) {
+      this.message = message;
+      this.stack = '';
+    }
+    PropTypeError.prototype = Error.prototype;
     function createChainableTypeChecker(validate) {
       if ("production" !== 'production') {
         var manualPropTypeCallCache = {};
@@ -46937,7 +47946,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.
         if (props[propName] == null) {
           var locationName = ReactPropTypeLocationNames[location];
           if (isRequired) {
-            return new Error('Required ' + locationName + ' `' + propFullName + '` was not specified in ' + ('`' + componentName + '`.'));
+            return new PropTypeError('Required ' + locationName + ' `' + propFullName + '` was not specified in ' + ('`' + componentName + '`.'));
           }
           return null;
         } else {
@@ -46955,7 +47964,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.
         if (propType !== expectedType) {
           var locationName = ReactPropTypeLocationNames[location];
           var preciseType = getPreciseType(propValue);
-          return new Error('Invalid ' + locationName + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
+          return new PropTypeError('Invalid ' + locationName + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
         }
         return null;
       }
@@ -46967,13 +47976,13 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.
     function createArrayOfTypeChecker(typeChecker) {
       function validate(props, propName, componentName, location, propFullName) {
         if (typeof typeChecker !== 'function') {
-          return new Error('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
+          return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
         }
         var propValue = props[propName];
         if (!Array.isArray(propValue)) {
           var locationName = ReactPropTypeLocationNames[location];
           var propType = getPropType(propValue);
-          return new Error('Invalid ' + locationName + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
+          return new PropTypeError('Invalid ' + locationName + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
         }
         for (var i = 0; i < propValue.length; i++) {
           var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
@@ -46991,7 +48000,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.
         if (!ReactElement.isValidElement(propValue)) {
           var locationName = ReactPropTypeLocationNames[location];
           var propType = getPropType(propValue);
-          return new Error('Invalid ' + locationName + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
+          return new PropTypeError('Invalid ' + locationName + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
         }
         return null;
       }
@@ -47003,7 +48012,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.
           var locationName = ReactPropTypeLocationNames[location];
           var expectedClassName = expectedClass.name || ANONYMOUS;
           var actualClassName = getClassName(props[propName]);
-          return new Error('Invalid ' + locationName + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
+          return new PropTypeError('Invalid ' + locationName + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
         }
         return null;
       }
@@ -47023,20 +48032,20 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.
         }
         var locationName = ReactPropTypeLocationNames[location];
         var valuesString = JSON.stringify(expectedValues);
-        return new Error('Invalid ' + locationName + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+        return new PropTypeError('Invalid ' + locationName + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
       }
       return createChainableTypeChecker(validate);
     }
     function createObjectOfTypeChecker(typeChecker) {
       function validate(props, propName, componentName, location, propFullName) {
         if (typeof typeChecker !== 'function') {
-          return new Error('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
+          return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
         }
         var propValue = props[propName];
         var propType = getPropType(propValue);
         if (propType !== 'object') {
           var locationName = ReactPropTypeLocationNames[location];
-          return new Error('Invalid ' + locationName + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
+          return new PropTypeError('Invalid ' + locationName + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
         }
         for (var key in propValue) {
           if (propValue.hasOwnProperty(key)) {
@@ -47063,7 +48072,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.
           }
         }
         var locationName = ReactPropTypeLocationNames[location];
-        return new Error('Invalid ' + locationName + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
+        return new PropTypeError('Invalid ' + locationName + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
       }
       return createChainableTypeChecker(validate);
     }
@@ -47071,7 +48080,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.
       function validate(props, propName, componentName, location, propFullName) {
         if (!isNode(props[propName])) {
           var locationName = ReactPropTypeLocationNames[location];
-          return new Error('Invalid ' + locationName + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
+          return new PropTypeError('Invalid ' + locationName + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
         }
         return null;
       }
@@ -47083,7 +48092,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.
         var propType = getPropType(propValue);
         if (propType !== 'object') {
           var locationName = ReactPropTypeLocationNames[location];
-          return new Error('Invalid ' + locationName + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
+          return new PropTypeError('Invalid ' + locationName + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
         }
         for (var key in shapeTypes) {
           var checker = shapeTypes[key];
@@ -47189,28 +48198,28 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypes.js", ["npm:react@15.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactVersion.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactVersion.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = '15.3.0';
+  module.exports = '15.3.1';
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/onlyChild.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/ReactElement.js", "npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/onlyChild.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactElement.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var ReactElement = $__require('npm:react@15.3.0/lib/ReactElement.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var ReactElement = $__require('npm:react@15.3.1/lib/ReactElement.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     function onlyChild(children) {
-      !ReactElement.isValidElement(children) ? "production" !== 'production' ? invariant(false, 'onlyChild must be passed a children with exactly one child.') : _prodInvariant('23') : void 0;
+      !ReactElement.isValidElement(children) ? "production" !== 'production' ? invariant(false, 'React.Children.only expected to receive a single React element child.') : _prodInvariant('143') : void 0;
       return children;
     }
     module.exports = onlyChild;
@@ -47298,7 +48307,7 @@ System.registerDynamic("npm:object-assign@4.1.0.js", ["npm:object-assign@4.1.0/i
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactElement.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/ReactCurrentOwner.js", "npm:fbjs@0.8.3/lib/warning.js", "npm:react@15.3.0/lib/canDefineProperty.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactElement.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/ReactCurrentOwner.js", "npm:fbjs@0.8.4/lib/warning.js", "npm:react@15.3.1/lib/canDefineProperty.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -47306,9 +48315,9 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactElement.js", ["npm:object-assi
   (function(process) {
     'use strict';
     var _assign = $__require('npm:object-assign@4.1.0.js');
-    var ReactCurrentOwner = $__require('npm:react@15.3.0/lib/ReactCurrentOwner.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
-    var canDefineProperty = $__require('npm:react@15.3.0/lib/canDefineProperty.js');
+    var ReactCurrentOwner = $__require('npm:react@15.3.1/lib/ReactCurrentOwner.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
+    var canDefineProperty = $__require('npm:react@15.3.1/lib/canDefineProperty.js');
     var hasOwnProperty = Object.prototype.hasOwnProperty;
     var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol['for']('react.element') || 0xeac7;
     var RESERVED_PROPS = {
@@ -47340,6 +48349,32 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactElement.js", ["npm:object-assi
         }
       }
       return config.key !== undefined;
+    }
+    function defineKeyPropWarningGetter(props, displayName) {
+      var warnAboutAccessingKey = function() {
+        if (!specialPropKeyWarningShown) {
+          specialPropKeyWarningShown = true;
+          "production" !== 'production' ? warning(false, '%s: `key` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://fb.me/react-special-props)', displayName) : void 0;
+        }
+      };
+      warnAboutAccessingKey.isReactWarning = true;
+      Object.defineProperty(props, 'key', {
+        get: warnAboutAccessingKey,
+        configurable: true
+      });
+    }
+    function defineRefPropWarningGetter(props, displayName) {
+      var warnAboutAccessingRef = function() {
+        if (!specialPropRefWarningShown) {
+          specialPropRefWarningShown = true;
+          "production" !== 'production' ? warning(false, '%s: `ref` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://fb.me/react-special-props)', displayName) : void 0;
+        }
+      };
+      warnAboutAccessingRef.isReactWarning = true;
+      Object.defineProperty(props, 'ref', {
+        get: warnAboutAccessingRef,
+        configurable: true
+      });
     }
     var ReactElement = function(type, key, ref, self, source, owner, props) {
       var element = {
@@ -47435,35 +48470,15 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactElement.js", ["npm:object-assi
         }
       }
       if ("production" !== 'production') {
-        var displayName = typeof type === 'function' ? type.displayName || type.name || 'Unknown' : type;
-        var warnAboutAccessingKey = function() {
-          if (!specialPropKeyWarningShown) {
-            specialPropKeyWarningShown = true;
-            "production" !== 'production' ? warning(false, '%s: `key` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://fb.me/react-special-props)', displayName) : void 0;
-          }
-          return undefined;
-        };
-        warnAboutAccessingKey.isReactWarning = true;
-        var warnAboutAccessingRef = function() {
-          if (!specialPropRefWarningShown) {
-            specialPropRefWarningShown = true;
-            "production" !== 'production' ? warning(false, '%s: `ref` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://fb.me/react-special-props)', displayName) : void 0;
-          }
-          return undefined;
-        };
-        warnAboutAccessingRef.isReactWarning = true;
-        if (typeof props.$$typeof === 'undefined' || props.$$typeof !== REACT_ELEMENT_TYPE) {
-          if (!props.hasOwnProperty('key')) {
-            Object.defineProperty(props, 'key', {
-              get: warnAboutAccessingKey,
-              configurable: true
-            });
-          }
-          if (!props.hasOwnProperty('ref')) {
-            Object.defineProperty(props, 'ref', {
-              get: warnAboutAccessingRef,
-              configurable: true
-            });
+        if (key || ref) {
+          if (typeof props.$$typeof === 'undefined' || props.$$typeof !== REACT_ELEMENT_TYPE) {
+            var displayName = typeof type === 'function' ? type.displayName || type.name || 'Unknown' : type;
+            if (key) {
+              defineKeyPropWarningGetter(props, displayName);
+            }
+            if (ref) {
+              defineRefPropWarningGetter(props, displayName);
+            }
           }
         }
       }
@@ -47532,14 +48547,14 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactElement.js", ["npm:object-assi
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/keyMirror.js", ["npm:fbjs@0.8.3/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/keyMirror.js", ["npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
     var keyMirror = function keyMirror(obj) {
       var ret = {};
       var key;
@@ -47557,13 +48572,13 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/keyMirror.js", ["npm:fbjs@0.8.3/lib/i
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypeLocations.js", ["npm:fbjs@0.8.3/lib/keyMirror.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactPropTypeLocations.js", ["npm:fbjs@0.8.4/lib/keyMirror.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  var keyMirror = $__require('npm:fbjs@0.8.3/lib/keyMirror.js');
+  var keyMirror = $__require('npm:fbjs@0.8.4/lib/keyMirror.js');
   var ReactPropTypeLocations = keyMirror({
     prop: null,
     context: null,
@@ -47573,7 +48588,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypeLocations.js", ["npm:f
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypeLocationNames.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactPropTypeLocationNames.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -47593,7 +48608,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypeLocationNames.js", ["g
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypesSecret.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactPropTypesSecret.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -47604,7 +48619,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactPropTypesSecret.js", [], true,
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/reactProdInvariant.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/reactProdInvariant.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -47626,7 +48641,7 @@ System.registerDynamic("npm:react@15.3.0/lib/reactProdInvariant.js", [], true, f
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactCurrentOwner.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactCurrentOwner.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -47637,7 +48652,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactCurrentOwner.js", [], true, fu
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/invariant.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/invariant.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -47671,135 +48686,206 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/invariant.js", ["github:jspm/nodelibs
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactComponentTreeDevtool.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/ReactCurrentOwner.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactComponentTreeHook.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactCurrentOwner.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var ReactCurrentOwner = $__require('npm:react@15.3.0/lib/ReactCurrentOwner.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
-    var tree = {};
-    var unmountedIDs = {};
-    var rootIDs = {};
-    function updateTree(id, update) {
-      if (!tree[id]) {
-        tree[id] = {
-          element: null,
-          parentID: null,
-          ownerID: null,
-          text: null,
-          childIDs: [],
-          displayName: 'Unknown',
-          isMounted: false,
-          updateCount: 0
-        };
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var ReactCurrentOwner = $__require('npm:react@15.3.1/lib/ReactCurrentOwner.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
+    function isNative(fn) {
+      var funcToString = Function.prototype.toString;
+      var hasOwnProperty = Object.prototype.hasOwnProperty;
+      var reIsNative = RegExp('^' + funcToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
+      try {
+        var source = funcToString.call(fn);
+        return reIsNative.test(source);
+      } catch (err) {
+        return false;
       }
-      update(tree[id]);
+    }
+    var canUseCollections = typeof Array.from === 'function' && typeof Map === 'function' && isNative(Map) && Map.prototype != null && typeof Map.prototype.keys === 'function' && isNative(Map.prototype.keys) && typeof Set === 'function' && isNative(Set) && Set.prototype != null && typeof Set.prototype.keys === 'function' && isNative(Set.prototype.keys);
+    var itemMap;
+    var rootIDSet;
+    var itemByKey;
+    var rootByKey;
+    if (canUseCollections) {
+      itemMap = new Map();
+      rootIDSet = new Set();
+    } else {
+      itemByKey = {};
+      rootByKey = {};
+    }
+    var unmountedIDs = [];
+    function getKeyFromID(id) {
+      return '.' + id;
+    }
+    function getIDFromKey(key) {
+      return parseInt(key.substr(1), 10);
+    }
+    function get(id) {
+      if (canUseCollections) {
+        return itemMap.get(id);
+      } else {
+        var key = getKeyFromID(id);
+        return itemByKey[key];
+      }
+    }
+    function remove(id) {
+      if (canUseCollections) {
+        itemMap['delete'](id);
+      } else {
+        var key = getKeyFromID(id);
+        delete itemByKey[key];
+      }
+    }
+    function create(id, element, parentID) {
+      var item = {
+        element: element,
+        parentID: parentID,
+        text: null,
+        childIDs: [],
+        isMounted: false,
+        updateCount: 0
+      };
+      if (canUseCollections) {
+        itemMap.set(id, item);
+      } else {
+        var key = getKeyFromID(id);
+        itemByKey[key] = item;
+      }
+    }
+    function addRoot(id) {
+      if (canUseCollections) {
+        rootIDSet.add(id);
+      } else {
+        var key = getKeyFromID(id);
+        rootByKey[key] = true;
+      }
+    }
+    function removeRoot(id) {
+      if (canUseCollections) {
+        rootIDSet['delete'](id);
+      } else {
+        var key = getKeyFromID(id);
+        delete rootByKey[key];
+      }
+    }
+    function getRegisteredIDs() {
+      if (canUseCollections) {
+        return Array.from(itemMap.keys());
+      } else {
+        return Object.keys(itemByKey).map(getIDFromKey);
+      }
+    }
+    function getRootIDs() {
+      if (canUseCollections) {
+        return Array.from(rootIDSet.keys());
+      } else {
+        return Object.keys(rootByKey).map(getIDFromKey);
+      }
     }
     function purgeDeep(id) {
-      var item = tree[id];
+      var item = get(id);
       if (item) {
         var childIDs = item.childIDs;
-        delete tree[id];
+        remove(id);
         childIDs.forEach(purgeDeep);
       }
     }
     function describeComponentFrame(name, source, ownerName) {
       return '\n    in ' + name + (source ? ' (at ' + source.fileName.replace(/^.*[\\\/]/, '') + ':' + source.lineNumber + ')' : ownerName ? ' (created by ' + ownerName + ')' : '');
     }
+    function getDisplayName(element) {
+      if (element == null) {
+        return '#empty';
+      } else if (typeof element === 'string' || typeof element === 'number') {
+        return '#text';
+      } else if (typeof element.type === 'string') {
+        return element.type;
+      } else {
+        return element.type.displayName || element.type.name || 'Unknown';
+      }
+    }
     function describeID(id) {
-      var name = ReactComponentTreeDevtool.getDisplayName(id);
-      var element = ReactComponentTreeDevtool.getElement(id);
-      var ownerID = ReactComponentTreeDevtool.getOwnerID(id);
+      var name = ReactComponentTreeHook.getDisplayName(id);
+      var element = ReactComponentTreeHook.getElement(id);
+      var ownerID = ReactComponentTreeHook.getOwnerID(id);
       var ownerName;
       if (ownerID) {
-        ownerName = ReactComponentTreeDevtool.getDisplayName(ownerID);
+        ownerName = ReactComponentTreeHook.getDisplayName(ownerID);
       }
-      "production" !== 'production' ? warning(element, 'ReactComponentTreeDevtool: Missing React element for debugID %s when ' + 'building stack', id) : void 0;
+      "production" !== 'production' ? warning(element, 'ReactComponentTreeHook: Missing React element for debugID %s when ' + 'building stack', id) : void 0;
       return describeComponentFrame(name, element && element._source, ownerName);
     }
-    var ReactComponentTreeDevtool = {
-      onSetDisplayName: function(id, displayName) {
-        updateTree(id, function(item) {
-          return item.displayName = displayName;
-        });
-      },
+    var ReactComponentTreeHook = {
       onSetChildren: function(id, nextChildIDs) {
-        updateTree(id, function(item) {
-          item.childIDs = nextChildIDs;
-          nextChildIDs.forEach(function(nextChildID) {
-            var nextChild = tree[nextChildID];
-            !nextChild ? "production" !== 'production' ? invariant(false, 'Expected devtool events to fire for the child before its parent includes it in onSetChildren().') : _prodInvariant('68') : void 0;
-            !(nextChild.displayName != null) ? "production" !== 'production' ? invariant(false, 'Expected onSetDisplayName() to fire for the child before its parent includes it in onSetChildren().') : _prodInvariant('69') : void 0;
-            !(nextChild.childIDs != null || nextChild.text != null) ? "production" !== 'production' ? invariant(false, 'Expected onSetChildren() or onSetText() to fire for the child before its parent includes it in onSetChildren().') : _prodInvariant('70') : void 0;
-            !nextChild.isMounted ? "production" !== 'production' ? invariant(false, 'Expected onMountComponent() to fire for the child before its parent includes it in onSetChildren().') : _prodInvariant('71') : void 0;
-            if (nextChild.parentID == null) {
-              nextChild.parentID = id;
-            }
-            !(nextChild.parentID === id) ? "production" !== 'production' ? invariant(false, 'Expected onSetParent() and onSetChildren() to be consistent (%s has parents %s and %s).', nextChildID, nextChild.parentID, id) : _prodInvariant('72', nextChildID, nextChild.parentID, id) : void 0;
-          });
-        });
+        var item = get(id);
+        item.childIDs = nextChildIDs;
+        for (var i = 0; i < nextChildIDs.length; i++) {
+          var nextChildID = nextChildIDs[i];
+          var nextChild = get(nextChildID);
+          !nextChild ? "production" !== 'production' ? invariant(false, 'Expected hook events to fire for the child before its parent includes it in onSetChildren().') : _prodInvariant('140') : void 0;
+          !(nextChild.childIDs != null || typeof nextChild.element !== 'object' || nextChild.element == null) ? "production" !== 'production' ? invariant(false, 'Expected onSetChildren() to fire for a container child before its parent includes it in onSetChildren().') : _prodInvariant('141') : void 0;
+          !nextChild.isMounted ? "production" !== 'production' ? invariant(false, 'Expected onMountComponent() to fire for the child before its parent includes it in onSetChildren().') : _prodInvariant('71') : void 0;
+          if (nextChild.parentID == null) {
+            nextChild.parentID = id;
+          }
+          !(nextChild.parentID === id) ? "production" !== 'production' ? invariant(false, 'Expected onBeforeMountComponent() parent and onSetChildren() to be consistent (%s has parents %s and %s).', nextChildID, nextChild.parentID, id) : _prodInvariant('142', nextChildID, nextChild.parentID, id) : void 0;
+        }
       },
-      onSetOwner: function(id, ownerID) {
-        updateTree(id, function(item) {
-          return item.ownerID = ownerID;
-        });
-      },
-      onSetParent: function(id, parentID) {
-        updateTree(id, function(item) {
-          return item.parentID = parentID;
-        });
-      },
-      onSetText: function(id, text) {
-        updateTree(id, function(item) {
-          return item.text = text;
-        });
-      },
-      onBeforeMountComponent: function(id, element) {
-        updateTree(id, function(item) {
-          return item.element = element;
-        });
+      onBeforeMountComponent: function(id, element, parentID) {
+        create(id, element, parentID);
       },
       onBeforeUpdateComponent: function(id, element) {
-        updateTree(id, function(item) {
-          return item.element = element;
-        });
-      },
-      onMountComponent: function(id) {
-        updateTree(id, function(item) {
-          return item.isMounted = true;
-        });
-      },
-      onMountRootComponent: function(id) {
-        rootIDs[id] = true;
-      },
-      onUpdateComponent: function(id) {
-        updateTree(id, function(item) {
-          return item.updateCount++;
-        });
-      },
-      onUnmountComponent: function(id) {
-        updateTree(id, function(item) {
-          return item.isMounted = false;
-        });
-        unmountedIDs[id] = true;
-        delete rootIDs[id];
-      },
-      purgeUnmountedComponents: function() {
-        if (ReactComponentTreeDevtool._preventPurging) {
+        var item = get(id);
+        if (!item || !item.isMounted) {
           return;
         }
-        for (var id in unmountedIDs) {
+        item.element = element;
+      },
+      onMountComponent: function(id) {
+        var item = get(id);
+        item.isMounted = true;
+        var isRoot = item.parentID === 0;
+        if (isRoot) {
+          addRoot(id);
+        }
+      },
+      onUpdateComponent: function(id) {
+        var item = get(id);
+        if (!item || !item.isMounted) {
+          return;
+        }
+        item.updateCount++;
+      },
+      onUnmountComponent: function(id) {
+        var item = get(id);
+        if (item) {
+          item.isMounted = false;
+          var isRoot = item.parentID === 0;
+          if (isRoot) {
+            removeRoot(id);
+          }
+        }
+        unmountedIDs.push(id);
+      },
+      purgeUnmountedComponents: function() {
+        if (ReactComponentTreeHook._preventPurging) {
+          return;
+        }
+        for (var i = 0; i < unmountedIDs.length; i++) {
+          var id = unmountedIDs[i];
           purgeDeep(id);
         }
-        unmountedIDs = {};
+        unmountedIDs.length = 0;
       },
       isMounted: function(id) {
-        var item = tree[id];
+        var item = get(id);
         return item ? item.isMounted : false;
       },
       getCurrentStackAddendum: function(topElement) {
@@ -47812,78 +48898,86 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactComponentTreeDevtool.js", ["np
         }
         var currentOwner = ReactCurrentOwner.current;
         var id = currentOwner && currentOwner._debugID;
-        info += ReactComponentTreeDevtool.getStackAddendumByID(id);
+        info += ReactComponentTreeHook.getStackAddendumByID(id);
         return info;
       },
       getStackAddendumByID: function(id) {
         var info = '';
         while (id) {
           info += describeID(id);
-          id = ReactComponentTreeDevtool.getParentID(id);
+          id = ReactComponentTreeHook.getParentID(id);
         }
         return info;
       },
       getChildIDs: function(id) {
-        var item = tree[id];
+        var item = get(id);
         return item ? item.childIDs : [];
       },
       getDisplayName: function(id) {
-        var item = tree[id];
-        return item ? item.displayName : 'Unknown';
+        var element = ReactComponentTreeHook.getElement(id);
+        if (!element) {
+          return null;
+        }
+        return getDisplayName(element);
       },
       getElement: function(id) {
-        var item = tree[id];
+        var item = get(id);
         return item ? item.element : null;
       },
       getOwnerID: function(id) {
-        var item = tree[id];
-        return item ? item.ownerID : null;
+        var element = ReactComponentTreeHook.getElement(id);
+        if (!element || !element._owner) {
+          return null;
+        }
+        return element._owner._debugID;
       },
       getParentID: function(id) {
-        var item = tree[id];
+        var item = get(id);
         return item ? item.parentID : null;
       },
       getSource: function(id) {
-        var item = tree[id];
+        var item = get(id);
         var element = item ? item.element : null;
         var source = element != null ? element._source : null;
         return source;
       },
       getText: function(id) {
-        var item = tree[id];
-        return item ? item.text : null;
+        var element = ReactComponentTreeHook.getElement(id);
+        if (typeof element === 'string') {
+          return element;
+        } else if (typeof element === 'number') {
+          return '' + element;
+        } else {
+          return null;
+        }
       },
       getUpdateCount: function(id) {
-        var item = tree[id];
+        var item = get(id);
         return item ? item.updateCount : 0;
       },
-      getRootIDs: function() {
-        return Object.keys(rootIDs);
-      },
-      getRegisteredIDs: function() {
-        return Object.keys(tree);
-      }
+      getRegisteredIDs: getRegisteredIDs,
+      getRootIDs: getRootIDs
     };
-    module.exports = ReactComponentTreeDevtool;
+    module.exports = ReactComponentTreeHook;
   })($__require('github:jspm/nodelibs-process@0.1.2.js'));
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/checkReactTypeSpec.js", ["npm:react@15.3.0/lib/reactProdInvariant.js", "npm:react@15.3.0/lib/ReactPropTypeLocationNames.js", "npm:react@15.3.0/lib/ReactPropTypesSecret.js", "npm:fbjs@0.8.3/lib/invariant.js", "npm:fbjs@0.8.3/lib/warning.js", "npm:react@15.3.0/lib/ReactComponentTreeDevtool.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/checkReactTypeSpec.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactPropTypeLocationNames.js", "npm:react@15.3.1/lib/ReactPropTypesSecret.js", "npm:fbjs@0.8.4/lib/invariant.js", "npm:fbjs@0.8.4/lib/warning.js", "npm:react@15.3.1/lib/ReactComponentTreeHook.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var _prodInvariant = $__require('npm:react@15.3.0/lib/reactProdInvariant.js');
-    var ReactPropTypeLocationNames = $__require('npm:react@15.3.0/lib/ReactPropTypeLocationNames.js');
-    var ReactPropTypesSecret = $__require('npm:react@15.3.0/lib/ReactPropTypesSecret.js');
-    var invariant = $__require('npm:fbjs@0.8.3/lib/invariant.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
-    var ReactComponentTreeDevtool;
+    var _prodInvariant = $__require('npm:react@15.3.1/lib/reactProdInvariant.js');
+    var ReactPropTypeLocationNames = $__require('npm:react@15.3.1/lib/ReactPropTypeLocationNames.js');
+    var ReactPropTypesSecret = $__require('npm:react@15.3.1/lib/ReactPropTypesSecret.js');
+    var invariant = $__require('npm:fbjs@0.8.4/lib/invariant.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
+    var ReactComponentTreeHook;
     if (typeof process !== 'undefined' && process.env && "production" === 'test') {
-      ReactComponentTreeDevtool = $__require('npm:react@15.3.0/lib/ReactComponentTreeDevtool.js');
+      ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
     }
     var loggedTypeFailures = {};
     function checkReactTypeSpec(typeSpecs, values, location, componentName, element, debugID) {
@@ -47901,13 +48995,13 @@ System.registerDynamic("npm:react@15.3.0/lib/checkReactTypeSpec.js", ["npm:react
             loggedTypeFailures[error.message] = true;
             var componentStackInfo = '';
             if ("production" !== 'production') {
-              if (!ReactComponentTreeDevtool) {
-                ReactComponentTreeDevtool = $__require('npm:react@15.3.0/lib/ReactComponentTreeDevtool.js');
+              if (!ReactComponentTreeHook) {
+                ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
               }
               if (debugID !== null) {
-                componentStackInfo = ReactComponentTreeDevtool.getStackAddendumByID(debugID);
+                componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
               } else if (element !== null) {
-                componentStackInfo = ReactComponentTreeDevtool.getCurrentStackAddendum(element);
+                componentStackInfo = ReactComponentTreeHook.getCurrentStackAddendum(element);
               }
             }
             "production" !== 'production' ? warning(false, 'Failed %s type: %s%s', location, error.message, componentStackInfo) : void 0;
@@ -47920,7 +49014,7 @@ System.registerDynamic("npm:react@15.3.0/lib/checkReactTypeSpec.js", ["npm:react
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/canDefineProperty.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/canDefineProperty.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -47939,7 +49033,7 @@ System.registerDynamic("npm:react@15.3.0/lib/canDefineProperty.js", ["github:jsp
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/getIteratorFn.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/getIteratorFn.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -47957,7 +49051,7 @@ System.registerDynamic("npm:react@15.3.0/lib/getIteratorFn.js", [], true, functi
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/emptyFunction.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/emptyFunction.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
@@ -47983,29 +49077,23 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/emptyFunction.js", [], true, function
   return module.exports;
 });
 
-System.registerDynamic("npm:fbjs@0.8.3/lib/warning.js", ["npm:fbjs@0.8.3/lib/emptyFunction.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:fbjs@0.8.4/lib/warning.js", ["npm:fbjs@0.8.4/lib/emptyFunction.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var emptyFunction = $__require('npm:fbjs@0.8.3/lib/emptyFunction.js');
+    var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
     var warning = emptyFunction;
     if ("production" !== 'production') {
-      warning = function warning(condition, format) {
-        for (var _len = arguments.length,
-            args = Array(_len > 2 ? _len - 2 : 0),
-            _key = 2; _key < _len; _key++) {
-          args[_key - 2] = arguments[_key];
-        }
-        if (format === undefined) {
-          throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
-        }
-        if (format.indexOf('Failed Composite propType: ') === 0) {
-          return;
-        }
-        if (!condition) {
+      (function() {
+        var printWarning = function printWarning(format) {
+          for (var _len = arguments.length,
+              args = Array(_len > 1 ? _len - 1 : 0),
+              _key = 1; _key < _len; _key++) {
+            args[_key - 1] = arguments[_key];
+          }
           var argIndex = 0;
           var message = 'Warning: ' + format.replace(/%s/g, function() {
             return args[argIndex++];
@@ -48016,29 +49104,45 @@ System.registerDynamic("npm:fbjs@0.8.3/lib/warning.js", ["npm:fbjs@0.8.3/lib/emp
           try {
             throw new Error(message);
           } catch (x) {}
-        }
-      };
+        };
+        warning = function warning(condition, format) {
+          if (format === undefined) {
+            throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
+          }
+          if (format.indexOf('Failed Composite propType: ') === 0) {
+            return;
+          }
+          if (!condition) {
+            for (var _len2 = arguments.length,
+                args = Array(_len2 > 2 ? _len2 - 2 : 0),
+                _key2 = 2; _key2 < _len2; _key2++) {
+              args[_key2 - 2] = arguments[_key2];
+            }
+            printWarning.apply(undefined, [format].concat(args));
+          }
+        };
+      })();
     }
     module.exports = warning;
   })($__require('github:jspm/nodelibs-process@0.1.2.js'));
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/ReactElementValidator.js", ["npm:react@15.3.0/lib/ReactCurrentOwner.js", "npm:react@15.3.0/lib/ReactComponentTreeDevtool.js", "npm:react@15.3.0/lib/ReactElement.js", "npm:react@15.3.0/lib/ReactPropTypeLocations.js", "npm:react@15.3.0/lib/checkReactTypeSpec.js", "npm:react@15.3.0/lib/canDefineProperty.js", "npm:react@15.3.0/lib/getIteratorFn.js", "npm:fbjs@0.8.3/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/ReactElementValidator.js", ["npm:react@15.3.1/lib/ReactCurrentOwner.js", "npm:react@15.3.1/lib/ReactComponentTreeHook.js", "npm:react@15.3.1/lib/ReactElement.js", "npm:react@15.3.1/lib/ReactPropTypeLocations.js", "npm:react@15.3.1/lib/checkReactTypeSpec.js", "npm:react@15.3.1/lib/canDefineProperty.js", "npm:react@15.3.1/lib/getIteratorFn.js", "npm:fbjs@0.8.4/lib/warning.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   (function(process) {
     'use strict';
-    var ReactCurrentOwner = $__require('npm:react@15.3.0/lib/ReactCurrentOwner.js');
-    var ReactComponentTreeDevtool = $__require('npm:react@15.3.0/lib/ReactComponentTreeDevtool.js');
-    var ReactElement = $__require('npm:react@15.3.0/lib/ReactElement.js');
-    var ReactPropTypeLocations = $__require('npm:react@15.3.0/lib/ReactPropTypeLocations.js');
-    var checkReactTypeSpec = $__require('npm:react@15.3.0/lib/checkReactTypeSpec.js');
-    var canDefineProperty = $__require('npm:react@15.3.0/lib/canDefineProperty.js');
-    var getIteratorFn = $__require('npm:react@15.3.0/lib/getIteratorFn.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var ReactCurrentOwner = $__require('npm:react@15.3.1/lib/ReactCurrentOwner.js');
+    var ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
+    var ReactElement = $__require('npm:react@15.3.1/lib/ReactElement.js');
+    var ReactPropTypeLocations = $__require('npm:react@15.3.1/lib/ReactPropTypeLocations.js');
+    var checkReactTypeSpec = $__require('npm:react@15.3.1/lib/checkReactTypeSpec.js');
+    var canDefineProperty = $__require('npm:react@15.3.1/lib/canDefineProperty.js');
+    var getIteratorFn = $__require('npm:react@15.3.1/lib/getIteratorFn.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     function getDeclarationErrorAddendum() {
       if (ReactCurrentOwner.current) {
         var name = ReactCurrentOwner.current.getName();
@@ -48074,7 +49178,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactElementValidator.js", ["npm:re
       if (element && element._owner && element._owner !== ReactCurrentOwner.current) {
         childOwner = ' It was passed a child from ' + element._owner.getName() + '.';
       }
-      "production" !== 'production' ? warning(false, 'Each child in an array or iterator should have a unique "key" prop.' + '%s%s See https://fb.me/react-warning-keys for more information.%s', currentComponentErrorInfo, childOwner, ReactComponentTreeDevtool.getCurrentStackAddendum(element)) : void 0;
+      "production" !== 'production' ? warning(false, 'Each child in an array or iterator should have a unique "key" prop.' + '%s%s See https://fb.me/react-warning-keys for more information.%s', currentComponentErrorInfo, childOwner, ReactComponentTreeHook.getCurrentStackAddendum(element)) : void 0;
     }
     function validateChildKeys(node, parentType) {
       if (typeof node !== 'object') {
@@ -48122,7 +49226,9 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactElementValidator.js", ["npm:re
     var ReactElementValidator = {
       createElement: function(type, props, children) {
         var validType = typeof type === 'string' || typeof type === 'function';
-        "production" !== 'production' ? warning(validType, 'React.createElement: type should not be null, undefined, boolean, or ' + 'number. It should be a string (for DOM elements) or a ReactClass ' + '(for composite components).%s', getDeclarationErrorAddendum()) : void 0;
+        if (!validType) {
+          "production" !== 'production' ? warning(false, 'React.createElement: type should not be null, undefined, boolean, or ' + 'number. It should be a string (for DOM elements) or a ReactClass ' + '(for composite components).%s', getDeclarationErrorAddendum()) : void 0;
+        }
         var element = ReactElement.createElement.apply(this, arguments);
         if (element == null) {
           return element;
@@ -48166,7 +49272,7 @@ System.registerDynamic("npm:react@15.3.0/lib/ReactElementValidator.js", ["npm:re
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/lib/React.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.0/lib/ReactChildren.js", "npm:react@15.3.0/lib/ReactComponent.js", "npm:react@15.3.0/lib/ReactPureComponent.js", "npm:react@15.3.0/lib/ReactClass.js", "npm:react@15.3.0/lib/ReactDOMFactories.js", "npm:react@15.3.0/lib/ReactElement.js", "npm:react@15.3.0/lib/ReactPropTypes.js", "npm:react@15.3.0/lib/ReactVersion.js", "npm:react@15.3.0/lib/onlyChild.js", "npm:fbjs@0.8.3/lib/warning.js", "npm:react@15.3.0/lib/ReactElementValidator.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/lib/React.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/ReactChildren.js", "npm:react@15.3.1/lib/ReactComponent.js", "npm:react@15.3.1/lib/ReactPureComponent.js", "npm:react@15.3.1/lib/ReactClass.js", "npm:react@15.3.1/lib/ReactDOMFactories.js", "npm:react@15.3.1/lib/ReactElement.js", "npm:react@15.3.1/lib/ReactPropTypes.js", "npm:react@15.3.1/lib/ReactVersion.js", "npm:react@15.3.1/lib/onlyChild.js", "npm:fbjs@0.8.4/lib/warning.js", "npm:react@15.3.1/lib/ReactElementValidator.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -48174,21 +49280,21 @@ System.registerDynamic("npm:react@15.3.0/lib/React.js", ["npm:object-assign@4.1.
   (function(process) {
     'use strict';
     var _assign = $__require('npm:object-assign@4.1.0.js');
-    var ReactChildren = $__require('npm:react@15.3.0/lib/ReactChildren.js');
-    var ReactComponent = $__require('npm:react@15.3.0/lib/ReactComponent.js');
-    var ReactPureComponent = $__require('npm:react@15.3.0/lib/ReactPureComponent.js');
-    var ReactClass = $__require('npm:react@15.3.0/lib/ReactClass.js');
-    var ReactDOMFactories = $__require('npm:react@15.3.0/lib/ReactDOMFactories.js');
-    var ReactElement = $__require('npm:react@15.3.0/lib/ReactElement.js');
-    var ReactPropTypes = $__require('npm:react@15.3.0/lib/ReactPropTypes.js');
-    var ReactVersion = $__require('npm:react@15.3.0/lib/ReactVersion.js');
-    var onlyChild = $__require('npm:react@15.3.0/lib/onlyChild.js');
-    var warning = $__require('npm:fbjs@0.8.3/lib/warning.js');
+    var ReactChildren = $__require('npm:react@15.3.1/lib/ReactChildren.js');
+    var ReactComponent = $__require('npm:react@15.3.1/lib/ReactComponent.js');
+    var ReactPureComponent = $__require('npm:react@15.3.1/lib/ReactPureComponent.js');
+    var ReactClass = $__require('npm:react@15.3.1/lib/ReactClass.js');
+    var ReactDOMFactories = $__require('npm:react@15.3.1/lib/ReactDOMFactories.js');
+    var ReactElement = $__require('npm:react@15.3.1/lib/ReactElement.js');
+    var ReactPropTypes = $__require('npm:react@15.3.1/lib/ReactPropTypes.js');
+    var ReactVersion = $__require('npm:react@15.3.1/lib/ReactVersion.js');
+    var onlyChild = $__require('npm:react@15.3.1/lib/onlyChild.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
     var createElement = ReactElement.createElement;
     var createFactory = ReactElement.createFactory;
     var cloneElement = ReactElement.cloneElement;
     if ("production" !== 'production') {
-      var ReactElementValidator = $__require('npm:react@15.3.0/lib/ReactElementValidator.js');
+      var ReactElementValidator = $__require('npm:react@15.3.1/lib/ReactElementValidator.js');
       createElement = ReactElementValidator.createElement;
       createFactory = ReactElementValidator.createFactory;
       cloneElement = ReactElementValidator.cloneElement;
@@ -48230,33 +49336,33 @@ System.registerDynamic("npm:react@15.3.0/lib/React.js", ["npm:object-assign@4.1.
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0/react.js", ["npm:react@15.3.0/lib/React.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1/react.js", ["npm:react@15.3.1/lib/React.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = $__require('npm:react@15.3.0/lib/React.js');
+  module.exports = $__require('npm:react@15.3.1/lib/React.js');
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.0.js", ["npm:react@15.3.0/react.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react@15.3.1.js", ["npm:react@15.3.1/react.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = $__require('npm:react@15.3.0/react.js');
+  module.exports = $__require('npm:react@15.3.1/react.js');
   return module.exports;
 });
 
-System.registerDynamic("npm:react-redux@4.4.5/lib/utils/storeShape.js", ["npm:react@15.3.0.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-redux@4.4.5/lib/utils/storeShape.js", ["npm:react@15.3.1.js"], true, function($__require, exports, module) {
   "use strict";
   ;
   var define,
       global = this || self,
       GLOBAL = global;
   exports.__esModule = true;
-  var _react = $__require('npm:react@15.3.0.js');
+  var _react = $__require('npm:react@15.3.1.js');
   exports["default"] = _react.PropTypes.shape({
     subscribe: _react.PropTypes.func.isRequired,
     dispatch: _react.PropTypes.func.isRequired,
@@ -48425,7 +49531,7 @@ System.registerDynamic("npm:invariant@2.2.1.js", ["npm:invariant@2.2.1/browser.j
   return module.exports;
 });
 
-System.registerDynamic("npm:react-redux@4.4.5/lib/components/connect.js", ["npm:react@15.3.0.js", "npm:react-redux@4.4.5/lib/utils/storeShape.js", "npm:react-redux@4.4.5/lib/utils/shallowEqual.js", "npm:react-redux@4.4.5/lib/utils/wrapActionCreators.js", "npm:react-redux@4.4.5/lib/utils/warning.js", "npm:lodash@4.15.0/isPlainObject.js", "npm:hoist-non-react-statics@1.2.0.js", "npm:invariant@2.2.1.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:react-redux@4.4.5/lib/components/connect.js", ["npm:react@15.3.1.js", "npm:react-redux@4.4.5/lib/utils/storeShape.js", "npm:react-redux@4.4.5/lib/utils/shallowEqual.js", "npm:react-redux@4.4.5/lib/utils/wrapActionCreators.js", "npm:react-redux@4.4.5/lib/utils/warning.js", "npm:lodash@4.15.0/isPlainObject.js", "npm:hoist-non-react-statics@1.2.0.js", "npm:invariant@2.2.1.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -48445,7 +49551,7 @@ System.registerDynamic("npm:react-redux@4.4.5/lib/components/connect.js", ["npm:
     };
     exports.__esModule = true;
     exports["default"] = connect;
-    var _react = $__require('npm:react@15.3.0.js');
+    var _react = $__require('npm:react@15.3.1.js');
     var _storeShape = $__require('npm:react-redux@4.4.5/lib/utils/storeShape.js');
     var _storeShape2 = _interopRequireDefault(_storeShape);
     var _shallowEqual = $__require('npm:react-redux@4.4.5/lib/utils/shallowEqual.js');
@@ -49494,7 +50600,7 @@ System.registerDynamic("npm:redux@3.5.2.js", ["npm:redux@3.5.2/lib/index.js"], t
   return module.exports;
 });
 
-System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.0.js', 'npm:react-dom@15.3.0.js', 'npm:react-router@2.6.1.js', 'app/team.js', 'app/home.js', 'app/goals.js', 'app/assists.js', 'app/matches.js', 'app/choose-season.js', 'app/exercises.js', 'npm:react-redux@4.4.5.js', 'npm:redux@3.5.2.js'], function (_export) {
+System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-dom@15.3.1.js', 'npm:react-router@2.6.1.js', 'app/team.js', 'app/home.js', 'app/goals.js', 'app/assists.js', 'app/matches.js', 'app/choose-season.js', 'app/exercises.js', 'npm:react-redux@4.4.5.js', 'npm:redux@3.5.2.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, React, ReactDOM, Router, Route, IndexRoute, Link, browserHistory, Team, Home, Goals, Assists, Matches, ChooseSeason, Exercises, Provider, createStore, store, baseUri, childRoutes, Main, routes;
 
   function reducer(state, action) {
@@ -49517,10 +50623,10 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
-    }, function (_npmReact1530Js) {
-      React = _npmReact1530Js['default'];
-    }, function (_npmReactDom1530Js) {
-      ReactDOM = _npmReactDom1530Js['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
+    }, function (_npmReactDom1531Js) {
+      ReactDOM = _npmReactDom1531Js['default'];
     }, function (_npmReactRouter261Js) {
       Router = _npmReactRouter261Js.Router;
       Route = _npmReactRouter261Js.Route;

@@ -1,6 +1,7 @@
 import React from 'react'
 import { get } from './api'
 import { Accordion, AccordionItem } from 'react-sanfona'
+import { Modal,ModalManager,Effect} from 'react-dynamic-modal'
 
 function compare(a, b) {
   if (a.name < b.name) return -1
@@ -22,7 +23,7 @@ export default class Exercises extends React.Component {
         {id: 'c-5', title: 'Dribbelen en afpakken',      checked: false},
         {id: 'c-6', title: 'Scoren en tegenhouden',      checked: false},
         {id: 'c-7', title: 'Positiespel',                checked: false},
-        {id: 'c-8', title: 'Standaard-situaties',         checked: false}
+        {id: 'c-8', title: 'Standaard-situaties',        checked: false}
       ],
       selected: []
     }
@@ -36,16 +37,94 @@ export default class Exercises extends React.Component {
     })
   }
 
-  renderItems() {
+  parseVariations(s) {
+    if ( s.indexOf(';') != -1 ) {
+      return s.split(';').map((v) => {
+        if ( v.indexOf(',') !== -1 ) {
+          let parts = v.split(',')
+          return parts.slice(1).map((p) => p.split('=')).reduce( (prev, next) => {
+            prev[next[0].trim()] = next[1].trim()
+            return prev }, {n: parts[0]} )
+        }
+        else {
+          return {n: v}
+        }
+      })
+    }
+
+    return []
+  }
+
+  renderLink(m) {
+    if ( undefined === m.v ) {
+      return <span>{m.n}</span>
+    } else {
+      let url = 'https://www.youtube.com/watch?v=' + m.v
+      let img = 'images/' + m.s + '.png'
+      return (
+        <a href={url} target='_blank'>
+          <span>{m.n}<img src={img}
+            style={{float: 'right', width: '24px', height: '24px'}}></img>
+          </span>
+        </a>
+      )
+    }
+  }
+
+  renderVariations(s) {
+    let maps = this.parseVariations(s)
+
+    if ( maps.length > 0 ) {
+      let items = maps.map((m) => {
+        return (
+          <li className='list-group-item'>
+            {this.renderLink(m)}
+          </li>
+        )
+      })
+
+      return (
+          <ul
+            style={{marginTop: '20px', marginBottom: '0px'}}
+            className='list-group'>
+          {items}
+        </ul>
+      )
+    }
+
+    return null
+  }
+
+  runModal(e) {
+    e.preventDefault()
+    ModalManager.open(
+      <Modal
+        onRequestClose={() => true}
+        style={{content: {width: '430px', background: 'rgba(191,191,191,0.95)'}}}
+        effect={Effect.ScaleUp}>
+          <div className='modal-body'>
+            <img src={e.target.href}/>
+          </div>
+          <div className='modal-footer'>
+          <button
+            type='button'
+            className='btn btn-primary btn-sm'
+            onClick={ModalManager.close}>Sluiten
+          </button>
+        </div>
+      </Modal>
+    )
+  }
+
+  renderExercises() {
     let selected = this.state.selected.length > 0 ?
         this.state.selected : this.state.exercises
-    
     return selected.map((m) => {
+      let imgSrc = 'images/exercises/' + m.uuid + '.png'
       return (
         <AccordionItem title={m.name} slug={m.uuid} key={m.uuid}>
-          <div>
-            { m.text }
-          </div>
+          <a href={imgSrc} onClick={this.runModal.bind(this)}>{m.text}</a>
+          { this.renderVariations(m.variations) }
         </AccordionItem>  
       )
     })
@@ -92,10 +171,12 @@ export default class Exercises extends React.Component {
               { this.renderFilters() }
             </fieldset>
           </div>
-          <div className='col-md-9'>
+          <div className='col-md-8'>
             <Accordion>
-            { this.renderItems() }
+            { this.renderExercises() }
             </Accordion>
+          </div>
+          <div className='col-md-1'>
           </div>
         </div>
       </div>

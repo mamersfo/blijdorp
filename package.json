@@ -8,6 +8,7 @@
       "react": "npm:react@^15.3.0",
       "react-bootstrap-table": "npm:react-bootstrap-table@^2.4.2",
       "react-dom": "npm:react-dom@^15.3.0",
+      "react-dynamic-modal": "npm:react-dynamic-modal@^1.1.1",
       "react-redux": "npm:react-redux@^4.4.5",
       "react-router": "npm:react-router@^2.6.1",
       "react-sanfona": "npm:react-sanfona@^0.0.14",
