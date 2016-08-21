@@ -1,0 +1,1086 @@
+* Training
+** Training: Fysiek
+*** Category: Looptraining
+**** Exercise: Duo-loop
+Twee-aan-twee tegelijk sprinten tot aan pion, daarna rustig
+uitlopen richting de startpositie en daarna weer opnieuw.
+***** UUID: c291a408-7488-47e7-b729-3af5f97f9f1b
+***** Image: false
+***** Station: 2
+***** Tag: sprinten
+***** Tag: feyenoord
+***** Variation: Hip Out, v=rPugh9vf9Hg, s=11+, t=13
+***** Variation: Hip In, v=dyeV-K5wmQA, s=11+, t=13
+***** Variation: Plant and cut, v=mFpOPRUohgA, s=11+, t=13
+***** Variation: Quick forwards & backwards, v=-qLxW9S1CoM, s=11+, t=13
+***** Variation: Straight Ahead, v=RSJIp7e7fyY, s=11+, t=13
+**** Exercise: 1-2-3-4
+In een vierkant rennen spelers op afroep naar zijde 1, 2, 3, resp. 4.
+***** UUID: 99bf99c2-7297-4ab1-9fd6-98a52e14697a
+***** Station: 2
+***** Tag: vierkant
+***** Tag: rennen
+**** Exercise: Warm up cool down
+Oefeningen voor de kleine ruimte, bijvoorbeeld langs de lijn.
+***** UUID: 780ff4fb-f7f8-4cd7-bc80-d69371254f7b
+***** Station: 0
+***** Tag: lopen
+***** Tag: loopscholing
+***** Tag: souplesse
+***** Variation: Triplings, v=CDR9yetcp-0, s=voorkomblessures, c=stuwende beweging vanuit de enkel
+***** Variation: Kniehefloop
+***** Variation: Hakken billen, v=ISnav18tx5M, s=voorkomblessures
+***** Variation: Hakken billen knie naar voren, v=D7zC5t201IA, s=voorkomblessures
+***** Variation: Hakken billen knie naar beneden, v=68TCrQVHCKA, s=voorkomblessures
+***** Variation: Skipping, v=hjvERAKbl_s, s=inspanningloont, t=13
+***** Variation: Skipping op één been, v=vUBGwrBZ3Qs, s=voorkomblessures
+***** Variation: Paardenstappen, v=vIqlW02pjLE, s=inspanningloont, t=13
+***** Variation: Springen met knie richting borst
+**** Exercise: Loop-ABC
+Diverse loopoefeningen voor als er meer ruimte beschikbaar is.
+Aandachtspunten: snelle acceleratie en decelleratie.
+***** UUID: c519a3e1-5c35-426b-96d0-a08a2b1ffd6a
+***** Station: 0
+***** Tag: loopscholing
+***** Tag: souplesse
+***** Tag: lopen
+***** Tag: explosiviteit
+***** Variation: Huppelpas
+***** Variation: Kruispas
+***** Variation: Zijwaarts lopen
+***** Variation: Vooruit- en achteruitlopen
+***** Variation: Grond aantikken en springen
+***** Variation: Intervalloop
+***** Variation: Schaatsen
+***** Variation: Springlopen, v=1FTBApO6WWI, s=11+, c=bounding, t=13
+***** Variation: Springlopen, v=72orGQFxWhA, s=inspanningloont, t=13
+**** Exercise: Coopertest
+Zes minuten hardlopen rond het veld. Dit wordt eens per seizoen door
+de clubgeorganiseerd.
+***** Station: 0
+***** UUID: cd4d9413-130c-4eee-b765-3293c93b756e
+***** Tag: conditie
+***** Tag: uithoudingsvermogen
+***** Tag: hardlopen
+**** Exercise: Draaisprint
+Sprinten naar eerste hoedje, er omheen draaien, daarna naar andere
+hoedje, daaromheen en tenslotte op volle snelheid terug.
+Aandachtspunt: sterke lichaamshouding, hoge startsnelheid, snelle
+wendingen, snelle sprint.
+***** UUID: 464d7c78-cfa0-4ff8-94fd-fe8542cc05b2
+***** Station: 2
+***** Tag: sprinten
+***** Tag: wendbaarheid
+***** Tag: estafette
+***** Tag: draaien
+***** Tag: explosiviteit
+***** Variation: Groepsgewijs
+***** Variation: Estafette
+***** Variation: Tijdmeting
+**** Exercise: Dragrace
+Twee spelers, door de trainer bij de pols vastgehouden, zetten zich
+schrap. Trainer laat vervolgens los en de spelers rennen wie het
+snelst is op een korte sprintafstand. Aandachtspunten: snelle
+startsnelheid.
+***** UUID: 9ebe5983-8970-4b62-9448-40dfc666c77c
+***** Station: 0
+***** Tag: sprinten
+***** Tag: explosiviteit
+***** Tag: battle
+***** Tag: feyenoord
+***** Variation: Als eerste bij de bal
+***** Variation: Afwerken
+**** Exercise: Slalommen
+Slalomsprint langs hoedjes. Aandachtspunt: snelle wendingen.
+***** UUID: 583a4bd5-d147-4d9a-9011-b2e92321f89d
+***** Station: 2
+***** Tag: slalom
+***** Tag: sprinten
+***** Tag: wendbaarheid
+***** Tag: battle
+***** Tag: coordinatie
+***** Tag: balans
+***** Tag: stabiliteit
+***** Variation: Estafette
+***** Variation: Tijdmeting
+***** Variation: Zijwaarts, v=_ohfUhM5lSU, s=voetbalomgeving, t=30
+***** Variation: Zigzaggen, v=1ZVufGwt9uQ, s=voorkomblessures
+**** Exercise: Sprintstart
+Sprintwedstrijd vanuit stand, daarna direct uitlopen over ongeveer
+tien meter. Aandachtspunt: sterke lichaamshouding van waaruit
+explosieve acties kunnen beginnen, hogere startsnelheid.
+***** UUID: 5e0e2f74-c7b8-433d-8b99-a41fff50ff5b***** Station: 0
+***** Tag: sprinten
+***** Tag: explosiviteit
+***** Variation: Met de groep tegelijk
+***** Variation: Twee aan twee
+***** Variation: Tijdmeting
+**** Exercise: Tikkertje
+In een vierkant proberen de tikkers de anderen te pakken door ze aan
+te tikken.
+***** UUID: 546c6cae-5135-463d-9009-89f8a01c4e28
+***** Station: 2
+***** Tag: wendbaarheid
+***** Tag: battle
+***** Tag: vierkant
+***** Tag: aftikken
+***** Instructie: V-1.3
+***** Instructie: V-1.4
+***** Variation: Twee tikkers
+***** Variation: Dribbeltikspel, v=eh6dPj3NqfM, s=knvb, t=25
+***** Variation: Af is oefening
+***** Variation: Af is tikker
+***** Variation: Vluchters dribbelen
+***** Variation: Tikkers dribbelen
+***** Variation: Wegtikken
+***** Variation: Hand-in-hand
+**** Exercise: Achtervolging
+Hele team rent rond een vierkant, wordt achtervolgd door één tikker.
+Zodra de tikker de eerste heeft getikt stoppen.
+***** UUID: d59f06b8-3caa-4166-bf96-bb594909fc82
+***** Station: 2
+***** Tag: wendbaarheid
+***** Tag: vierkant
+***** Tag: sprinten
+***** Tag: aftikken
+*** Category: Krachttraining
+**** Exercise: Line jump
+Over een lijn springen, met één of twee benen, voorwaarts of
+zijwaarts.
+***** UUID: 036fa445-ce5d-4f63-8b56-48763c9f0ddb
+***** Station: 0
+***** Tag: hinkelen
+***** Tag: springen
+***** Variation: Voorwaarts
+***** Variation: Zijwaarts met één been, v=AcH86tC9bwM, t=3
+***** Variation: Zijwaarts met twee benen, v=1xnn4YSPmHo, t=3
+**** Exercise: Sprong-ABC
+Springoefeningen, met één been of twee benen, horizontaal, verticaal
+of zijwaarts, gewone sprong of wisselsprong.
+***** UUID: 1adecf34-3e28-4708-bed8-67646c8ba3f4
+***** Station: 0
+***** Tag: springen
+***** Variation: Sprong-ABC, v=Y28kxV5YiCA, s=revalidatievoorstekruisband, t=7
+***** Variation: Tweebenige verticale sprongen
+***** Variation: Tweebenige horizontale sprongen
+***** Variation: Verticale wisselsprong
+***** Variation: Horizontale wisselsprong
+***** Variation: Eenbenige verticale wisselsprong
+***** Variation: Eenbenige horizontale wisselsprong
+***** Variation: Eenbenige zijwaartse sprong
+***** Variation: Vertical Jumps, v=MY-IC4ptlhU, s=11+, t=13
+**** Exercise: Backpacker
+Maatje op de rug nemen en dragen of optillen, van de ene kant naar de
+andere kant dragen
+***** TODO diagram
+***** UUID: 95228ce6-f522-4ee4-bb68-f4a05f1ae2f2
+***** Station: 0
+***** Tag: kracht
+**** Exercise: Chest bump
+Met de borst vooruit tegen elkaar opspringen.
+***** TODO diagram
+***** UUID: b8957469-dabd-4b07-b5b8-9172e376d4f3
+***** Station: 0
+***** Tag: kracht
+***** Tag: battle
+***** Tag: duel
+***** Tag: balans
+***** Variation: Met aanloop, v=ZbEhAXMASN8
+**** Exercise: Sleper
+Proberen zo snel mogelijk vooruit te komen terwijl je door de ander
+wordt tegengehouden.
+***** TODO diagram
+***** UUID: e3091cf3-61c8-4db5-a72a-994e953e1745
+***** Station: 0
+***** Tag: kracht
+***** Tag: weerstand
+***** Tag: balans
+**** Exercise: Vertesprongen
+Uit stand zo ver mogelijk springen.
+***** TODO diagram
+***** UUID: eb7514a5-92de-4e9e-8488-fe0c531dcbdb
+***** Station: 0
+***** Tag: springen
+***** Tag: kracht
+***** Tag: explosiviteit
+***** Tag: balans
+***** Tag: stabiliteit
+***** Variation: Lateral Jumps, v=V76W_0EaKcg, s=11+, t=13
+***** Variation: Box Jumps, v=P9EtKVKC8uA, s=11+, t=13
+***** Variation: Vertesprong 1 been + vasthouden, v=FeW5hFr42hM, s=revalidatievoorstekruisband, t=3
+***** Variation: Twee voeten voorwaarts
+***** Variation: Zijwaarts
+***** Variation: Vertesprongen, v=K2u-JD5gtoI, s=voorkomblessures
+***** Variation: Schaatssprongen V2, v=Cn__Lw4dlo4, s=voorkomblessures
+***** Variation: Op één been voorwaarts, v=tViy1cuUFG4, s=voorkomblessures
+**** Exercise: Hoogtesprongen
+Krachtoefening voor bovenbeen- en bilspieren gericht op veerkracht
+***** UUID: c73d53c7-30eb-4a38-b5ef-4cb17aa487f1
+***** Station: 0
+***** Tag: beenspieren
+***** Tag: bilspieren
+***** Tag: veerkracht
+***** Tag: balans
+***** Tag: stabiliteit
+***** Variation: Hoogtesprongen, v=g3avDXQgZHI, s=voorkomblessures
+***** Variation: Op één been, v=Vbkw1ROrLM0, s=voorkomblessures
+***** Variation: Jumping squat
+**** Exercise: Squat
+Pas op de plaats, armen naar voren, door de knieën omlaag en weer
+omhoog komen. One leg squat kan met of zonder steun van maatje.
+***** UUID: 7df122fd-55dd-49c7-91d8-e5aef0bfa766
+***** Station: 0
+***** Tag: kracht
+***** Tag: springen
+***** Tag: balans
+***** Tag: stabiliteit
+***** Tag: hamstrings
+***** Tag: core
+***** Variation: Russian squat
+***** Variation: Prisoner squat
+***** Variation: Akimbo squat, v=_zYjf23XcRU, s=11+, t=13
+***** Variation: One leg squat, v=ijlZzNkgUSA, s=11+, t=13
+***** Variation: Squat met en zonder bal, v=6k5cP0COgAE, s=voorkomblessures
+***** Variation: Eénbenig, v=PBJRYIXlZyA, s=voorkomblessures
+**** Exercise: Lunges
+Krachtoefening voor bovenbeen- en bilspieren en hamstrings.
+***** UUID: b9da7be6-8055-43fd-8c5c-9a47a7a6da16
+***** Station: 0
+***** Tag: kracht
+***** Tag: beenspieren
+***** Tag: bilspieren
+***** Tag: hamstrings
+***** Variation: Lunges, v=ob9V2G8-qeE, s=voorkomblessures
+***** Variation: Side lunges, v=nC0U-aVEeaE, s=voorkomblessures
+***** Variation: Walking lunges, v=vOd7JmOgF6Y, s=11+, t=13
+**** Exercise: Duo-duel
+Tweetal loopt naar voren en bij een hoedje lopen zijwaarts naar elkaar
+toe en doen een duel met de 'tegenstander' - bijvoorbeeld door met de
+schouder tegen elkaar op te springen. Lopen vervolgens zijwaarts terug
+en komen elkaar weer tegen bij het volgende hoedje.
+***** UUID: 42011408-458c-4bac-b912-f0e905c3a1a
+***** Station: 2
+***** Tag: duel
+***** Tag: kracht
+***** Tag: fifatv
+***** Variation: Jumping with Shoulder, v=DlWuFO1e4Xc, s=11+, t=13
+***** Variation: Circling Partner, v=67FEXBx_G6g, s=11+, t=13
+**** Exercise: Plank
+Oefeningen ter versterking van de romp.
+***** UUID: 96e02a2d-0cfa-44b4-8f17-aea25313b517
+***** Station: 0
+***** Tag: kracht
+***** Tag: romp
+***** Tag: core
+***** Variation: The Bench, v=gf-XEapqXPU, s=11+, t=13
+***** Variation: Alternate Legs, v=xIjMKLQbYN4, s=11+, t=13
+***** Variation: One leg lift and hold, v=DCNqxL53ic, s=11+, t=13
+***** Variation: Sideways, v=U4qn6CHzZ2Q, s=11+, t=13
+***** Variation: Raise and lower hip, v=2G3PeyIQNxg, s=11+, t=13
+***** Variation: With leg lift, v=rW4I5wtDou4, s=11+, t=13
+***** Variation: Plank, v=Q8pDwqMSBxk, s=voorkomblessures
+***** Variation: Met armen om en om uitstrekken, v=sPegV-0uM0U, s=voorkomblessures
+***** Variation: Around the world, v=Jb1B8OTJbRU, s=voorkomblessures
+***** Variation: Diagonalen, v=vNQqz41V1Og, s=voorkomblessures
+**** Exercise: Hamstrings
+Oefeningen ter versterking van de hamstrings.
+***** TODO diagram
+***** UUID: d705cfbb-941a-4aae-b1d8-d6737dbd12b7
+***** Station: 0
+***** Tag: kracht
+***** Tag: hamstrings
+***** Variation: Hamstrings, v=rfZ-i7erbaY, s=11+, t=13
+***** Variation: Advanced, v=XGq0PFDuH0M, s=11+, t=13
+***** Variation: Good morning, v=039yWofwmdg, s=voorkomblessures
+**** Exercise: Op één been
+Op één been staan, met bal in de hand en balanceren.
+***** TODO diagram
+***** UUID: 1704f57c-bdb2-40db-beb3-fd6d9bcb4cba
+***** Station: 0
+***** Tag: kracht
+***** Tag: balans
+***** Tag: beenspieren
+***** Tag: duel
+***** Tag: battle
+***** Tag: duwen
+***** Variation: Single-Leg Stance, v=oN15EId6A3U, s=11+, t=13
+***** Variation: Throwing ball, v=q_4OC5tUCro, s=11+, t=13
+***** Variation: Test partner, v=P__OfVT9Khc, s=11+, t=13
+**** Exercise: Kuitspieren
+***** UUID: 2ffc9ab0-2cf4-4dab-b12f-e20ad3b81014
+***** Station: 0
+***** Tag: kracht
+***** Tag: kuitspieren
+***** Variation: Met gestrekte knie, v=JDSSLoh7a50, s=voorkomblessures
+***** Variation: Met gebogen knie, v=k9n5kaDRruw, s=voorkomblessures
+***** Variation: Excentrisch trainen, v=X0-MwmkhwtM, s=voorkomblessures
+**** Exercise: Wisselsprongen
+Krachtoefening voor bovenbeen-, bilspieren, gericht op veerkracht.
+***** UUID: 60fa0191-9e43-47eb-a0ca-65
+***** Station: 0
+***** Tag: beenspieren
+***** Tag: bilspieren
+***** Tag: veerkracht
+***** Variation: Diepe sprongen, v=BpdGENOTlJ4, s=voorkomblessures
+***** Variation: Huppelsprongen, v=s9KdysuVjzc, s=voorkomblessures
+**** Exercise: Peesplaat
+Rekken van de peesplaat bij een lopersknie
+***** UUID: fd7a6d93-f1e2-4840-86a0-83111ca5eec7
+***** Station: 0
+***** Tag: peesplaat
+***** Tag: lopersknie
+***** Variation: Staand zijwaarts, v=uNPNPejsjBI, s=voorkomblessures
+***** Variation: Staand voorover, v=iMHaa7KL9R4, s=voorkomblessures
+***** Variation: Liggend, v=SPPRcB-TckI, s=voorkomblessures
+**** Exercise: Deadlift
+Kracht- en stabiliteitstraining van hamstrings en rugspieren.
+***** UUID: 9cc4343f-6e1a-473d-a4f7-386435965e30
+***** Station: 0
+***** Tag: kracht
+***** Tag: balans
+***** Tag: stabiliteit
+***** Tag: hamstrings
+***** Tag: rug
+***** Variation: Eénbenig, v=CyErXElgZbk, s=voorkomblessures
+**** Exercise: Huppen
+Krachtoefening voor voet- en onderbeenspieren
+***** UUID: f0b9ec2f-f5e5-4b30-a625-bd213e5415ba
+***** Station: 0
+***** Tag: warm up cool down
+***** Tag: kracht
+***** Tag: voeten
+***** Tag: onderbenen
+***** Tag: balans
+***** Tag: stabiliteit
+***** Tag: stationair
+***** Variation: Huppen, v=9h1MH2zKB8Q, s=voorkomblessures
+***** Variation: Eén been, v=PEzsvsMN4AE, s=voorkomblessures
+***** Variation: Zijwaarts, v=XI4coope3uk, s=voorkomblessures
+***** Variation: Voor- en achterwaarts, v=CTpJoaHgjC4, s=voorkomblessures
+***** Variation: Rotatiebeweging, v=o9CiNFcQtnA, s=voorkomblessures
+***** Variation: Met wisselsprong, v=s9KdysuVjzc, s=voorkomblessures
+***** Variation: Met spreid- en sluitbeweging, v=qdfihPLKv8E, s=voorkomblessures
+*** Category: Motoriektraining
+**** Exercise: Sole tap
+De bal met de zool, dus de onderkant van de voet bewegen.
+***** UUID: 374821bd-1cd0-4505-ad4b-bd24a2afe340
+***** Station: 2
+***** Tag: motoriek
+***** Tag: coerver
+***** Variation: #1 Sole taps, s=coerver, v=94KuOfMKG2Q, t=10
+***** Variation: Naar voren en naar achteren
+**** Exercise: Shuffle
+De bal heen en weer bewegen met binnenkant voet. Take: de bal met de
+buitenkant van de voet opzij bewegen.
+***** UUID: 2364fdd5-74ec-4d38-aadd-b8cf5e7f227f
+***** Station: 2
+***** Tag: motoriek
+***** Tag: coerver
+***** Variation: #2 Shuffle, s=coerver, v=dRpfwtPv5hA, t=10
+***** Variation: #3 Shuffle stop, s=coerver, v=15y7MGYKuN8, t=10
+***** Variation: #5 Shuffle stop take, s=coerver, v=J77JFvfdm4k, t=10
+***** Variation: Shuffle met hoedjes, v=G3zo7IFhEgg, s=knvb, t=7
+**** Exercise: Roll up, roll over
+Roll up: bal met binnen- of buitenkant voet van beneden naar boven
+beroeren. Roll over: bovenkant bal met voetzool 'aaien'. 
+***** UUID: 50253682-8e89-47e2-8c21-26d10721f810
+***** Station: 0
+***** Tag: motoriek
+***** Tag: coerver
+***** Variation: #9 Roll up inside, s=coerver, v=em0ALzMSt6U, t=10
+***** Variation: #10 Roll up outside, s=coerver, v=o5Yp2IMI5ZI, t=10
+**** Exercise: Slide
+De bal van boven naar beneden beroeren en opzij schuiven.
+***** UUID: 5355dfec-c31d-46ed-b03a-3ae9a93a3c5e
+***** Variation: #8 Slides, s=coerver, v=z7TuoaA-WN4, t=10
+***** Tag: motoriek
+***** Tag: coerver
+**** Exercise: Stops & Starts
+***** UUID: e52166d5-c338-4e97-b437-b866de398add
+***** Station: 2
+***** Tag: motoriek
+***** Tag: coerver
+***** Variation: Step on, s=coerver, v=bHmqGUa5Dvk, t=27
+***** Variation: Double step on, s=coerver, v=bHmqGUa5Dvk, t=56
+***** Variation: Pull push, s=coerver, v=bHmqGUa5Dvk, t=74
+***** Variation: Step kick, s=coerver, v=bHmqGUa5Dvk, t=90
+***** Variation: High wave, s=coerver, v=bHmqGUa5Dvk, t=100
+***** Variation: Half pull spin, s=coerver, v=bHmqGUa5Dvk, t=113
+***** Variation: 180 spin s=coerver, v=bHmqGUa5Dvk, t=133
+***** Variation: Fake inside cut, s=coerver, v=bHmqGUa5Dvk, t=148
+***** Variation: Double touch, s=coerver, v=bHmqGUa5Dvk, t=179
+**** Exercise: Kappen en draaien
+Bal van de ene naar de andere kant dribbelen, halverwege 360 graden
+kappen en draaien.
+***** UUID: cb195922-f342-4b26-9560-57b76b2107e2
+***** Station: 0
+***** Tag: motoriek
+***** Tag: coerver
+***** Variation: Kappen en draaien, v=MaWRhDbvvaE, c=360 graden draaien, t=20
+**** Exercise: Passeren
+Met de bal op verschillende manieren van de ene naar de andere kant
+dribbelen. Aandachtspunten: (1) controle over de bal, (2)
+handelingssnelheid, (3) bovenlichaam meebewegen.
+***** UUID: 0e0695ff-0386-4a14-826d-ff73c0eb0ad6
+***** Station: 0
+***** Tag: balcontrole
+***** Tag: passeren
+***** Tag: passeerbeweging
+***** Tag: schijnbeweging
+***** Tag: schaarbeweging
+***** Tag: overstap
+***** Tag: kappen
+***** Tag: draaien
+***** Tag: afrollen
+***** Variation: Schijnbeweging, v=rEcfED495_k, s=az, t=4
+***** Variation: Schijntrap, v=VuNnbizEC4Y, s=az, t=4
+***** Variation: Overstap, v=1Xb739iHf28, s=az, c=overstap en buitenkant, t=4
+***** Variation: Schaar, v=AI4Wnar5I14, s=az, c=overstap en buitenkant, t=4
+***** Variation: Dubbele schaar, v=9DREOLPfVNs, s=az, c=overstap overstap en buitenkant, t=4
+***** Variation: Schaarbeweging, v=Pq8a6g_cSGw, s=knvb, t=14
+***** Variation: Romario, v=-ACpgZjtatQ, s=psv, c=na scherpe draai slepen
+***** Variation: Stanley Matthews, v=qx3B2v2uJcs, s=psv, c=binnen buiten
+***** Variation: Jay-Jay Okocha, v=B9QTf3K91GQ, s=psv, c=dreigen en overstappen
+***** Variation: Johan Cruyff, v=OMFhI6mI6xg, s=psv, c=achter standbeen kappen
+***** Variation: Thiery Henry, v=Pc6LEK7DwIk, s=psv, c=met buitenkant voet kappen
+***** Variation: Diego Maradona, v=KQiIfbJUtrg, s=psv, c=met binnenkant voet afrollen
+***** Variation: Zinedine Zidane, v=oP--UFGCcCY, s=az, c=onderkant naar onderkant, t=4
+***** Variation: Cristiano Ronaldo, v=KwnaotNWi3I, s=az, c=achter standbeen kappen, t=4
+***** Variation: Ibrahimovic, v=OA63zmogl_M, s=voetbalomgeving, c=binnen binnen buiten, t=18
+**** Exercise: Dribbelvariaties
+Met de bal op verschillende manieren van de ene naar de andere kant
+dribbelen.
+***** UUID: 6e963c44-1f3f-4b7a-9c62-ac012cef6088
+***** Station: 0
+***** Tag: dribbelen
+***** Tag: controleren
+***** Variation: Bal onder de voet, v=24gVCVDPklg, s=az, t=4
+***** Variation: Buitenkant - twee benen, v=H7OjaByaDqw, s=az, t=4
+***** Variation: Buiten- en onderkant, v=IPz5FoDrtGo, s=az, t=4
+***** Variation: Binnen- en buitenkant - een been, v=IlWaFZteBnM, s=az, t=4
+***** Variation: Binnen- en buitenkant - twee benen, v=utTweeEcagE, s=az, t=4
+***** Variation: Dribbelen buitenkant voet, v=1MPPOA2UfIE, s=az, t=4
+***** Variation: Drijven buitenkant voet, v=Ya7VtCURx2I, s=az, t=4
+** Training: Techniek
+*** Category: Samenspelen en druk zetten
+**** Exercise: Drie bij vier
+Drie spelers staan bij een van de vier hoedjes, speler in het midden
+proberen 'm af te pakken. Telkens driehoekje maken door naar
+vrijstaande hoedje te rennen.
+***** UUID: f93c2988-2b56-4c09-ace1-1e018ce771b0
+***** Station: 2
+***** Tag: vrijlopen
+***** Tag: aannemen
+***** Tag: passen
+***** Tag: druk zetten
+***** Tag: vierkant
+***** Variation: Met keeper
+**** Exercise: Driehoek
+Pilonnen in een driehoek. Speler begint bij pilon 0 en loopt linksom
+of rechtsom naar pilon 1. Hij kapt de bal met zijn ene been en passt
+met zijn andere been naar de speler die start vanaf pilon 2. Deze
+neemt de bal aan, en dribbelt naar pilon 0.
+***** UUID: db33b528-5901-4141-9187-a904dfb4e962
+***** Station: 2
+***** Tag: aannemen
+***** Tag: passen
+***** Tag: kappen
+***** Variation: Linksom, s=feyenoord
+***** Variation: Rechtsom, s = feyenoord
+**** Exercise: Kruis
+Pilonnen staan in de vorm van een kruis opgesteld. Speler bij
+buitenste pilon passt naar speler in het midden. Die kaatst terug
+terwijl de eerste speler naar de volgende pilon aan de buitenkant
+loopt. Deze neemt de bal terug aan en dribbelt naar het midden. De
+ontvangende speler loopt naar de pilon aan de buitenkant
+tegenovergesteld aan de eerste pilon.
+***** UUID: 6fb9e6d7-fefa-4b73-8563-3c1c5207a632
+***** Station: 2
+***** Tag: aannemen
+***** Tag: kaatsen
+***** Tag: dribbelen
+***** Variation: Linksom, s=feyenoord
+***** Variation: Rechtsom, s=feyenoord
+**** Exercise: Rondo
+Spelers staan in een cirkel en spelen de bal rond, terwijl speler in
+het midden 'm probeert af te pakken.
+***** UUID: 1c0f41d5-552d-4051-8109-d8e85c768d0f
+***** Station: 2
+***** Tag: aannemen
+***** Tag: passen
+***** Tag: druk zetten
+***** Variation: Meerdere afpakkers
+***** Variation: Buurman
+**** Exercise: Opbouwen
+Spelers staan bij x-aantal hoedjes, de eerste speelt naar de tweede en
+loopt naar de volgende positie, evenzo van de tweede naar de derde,
+derde naar vierde enzovoort, tot de laatste die op het doel afwerkt.
+***** UUID: 4d7546f4-2ad6-48fa-b824-1bc32c4ed8cc
+***** Station: 3
+***** Tag: opbouwen
+***** Tag: aannemen
+***** Tag: passen
+***** Tag: vrijlopen
+***** Tag: afwerken
+***** Tag: storen
+***** Variant: Tussen elk station een verdediger posteren die lichtjes stoort.
+***** Variant: Twee ballen in omloop
+**** Exercise: Pionkegelen
+Twee spelers proberen de pion halverwege te raken door te passen, op
+vaste dan wel variabele afstand.
+***** UUID: 4718c80c-7822-4292-a4af-45669fecdd6f
+***** Station: 6
+***** Tag: mikken
+***** Tag: passen
+***** Instructie: V-3.2
+***** Variation: Binnenkant
+***** Variation: Inworp
+***** Variation: Uitworp
+**** Exercise: Kopkaatsen
+Drie spelers, twee aan weerszijden, één in het midden. De een gooit de
+bal omhoog, de ander kopt terug. Aandachtspunten: (1) gebruik armen om
+een spanboog te maken, (2) maak een knikbeweging.
+***** UUID: 9cbcc8d7-acfb-4ced-92be-1faf14b9efb5
+***** Station: 6
+***** Tag: koppen
+***** Tag: mikken
+***** Tag: kaatsen
+***** Variation: Middenspeler is kopper
+***** Variation: Buitenspelers is kopper
+***** Variation: Koppen, v=s47Vyk2DcMg, s=az, c=gebruik armen om een spanboog te maken, t=4
+**** Exercise: Terugspelen
+Spelers aan weerszijden gooien de bal, de speler in het midden speelt
+'m terug. Daarbij rent de speler van de ene naar de andere kant.
+***** UUID: b3d53493-7d80-4aa7-b89c-4d7a2796ade0
+***** Station: 6
+***** Tag: aannemen
+***** Tag: kaatsen
+***** Tag: tripling
+***** Variation: Voorwaarts lopen, v=16gjEpcmLmY, s=knvb, t=13
+***** Variation: Eén been, v=hJRFCy0ttYY, s=knvb, t=13
+***** Variation: Buitenwaarts, v=0OBrrfe7eX0, s=knvb, t=13
+***** Variation: Zijwaartse, v=5076iMJxYUM, s=knvb, t=13
+***** Variation: Tripling, v=u0jxL7R-3-Q, s=knvb, t=13
+***** Variation: Sprong op hetzelfde been, v=fYstrGesE_c, s=knvb, t=13
+***** Variation: Statisch, v=hIhcZShoHVE, s=knvb, t=13
+**** Exercise: Compact verdedigen
+Drie verdedigers bakenen een gebied af in de vorm van een driehoek,
+afgezet met hoedjes. De verdedigers mogen daar niet buiten komen. De
+aanvallers mogen daar niet binnen komen, maar proberen de bal rond te
+spelen en op doel te schieten. De verdedigers moeten dat voorkomen
+door compact te verdedigen, dus als blok dicht bij elkaar de bal te
+volgen en bij gevaar naar de bal te gaan.
+***** UUID: b121041b-f16e-4947-804d-2d74c86ec91b
+***** Station: 3
+***** Variation: Staying Compact, v=D72gPqw3ILA, s=nike, t=28
+**** Exercise: Eerste aanname
+Speler loopt in richting het midden, bal wordt strak ingespeeld en
+direct na de aanname versnelt de speler zijwaarts door de poortjes.
+Sluit na het bereiken van het einde aan in de rij van degenen die
+inspelen; de ander sluit aan in de rij van spelers die de bal krijgt
+aangespeeld.
+***** UUID: 7d77a822-ff18-4168-9c7b-8b59e5bde675
+***** Tag: passen
+***** Tag: aannemen
+***** Variation: Eerste aanname, v=apY39wSq8XE, s=thomasvlaminck
+**** Exercise: Vierkant
+Spelers aan de zijden van een vierkant spelen op balbezit, één of twee
+lummels in het vierkant proberen af te pakken.
+***** UUID: fdbeb81b-1449-4022-998f-f2ec41e11512
+*** Category: Dribbelen en afpakken
+**** Exercise: Draaidribbel
+Speler dribbelt naar eerste hoedje, draait er omheen, dribbelt naar
+tweede hoedje en daarna op volle snelheid terug.
+***** UUID: 762f272d-b629-4696-b59b-191d011a573b
+***** Station: 2
+***** Tag: battle
+***** Tag: estafette
+***** Tag: dribbelen
+***** Variation: Estafette
+***** Variation: Tijdmeting
+**** Exercise: Slalomdribbel
+Slalommend dribbelen langs hoedjes.
+***** UUID: 6aa94bb8-6e42-4060-bf20-f2951ed4bd4f
+***** Station: 2
+***** Tag: dribbelen
+***** Tag: estafette
+***** Tag: battle
+***** Tag: slalom
+***** Tag: estafette
+***** Variation: Estafette
+***** Variation: Tijdmeting
+***** Variation: Afwerken
+***** Variation: Coerver personal training, v=MWkRaQpxarY, t=485
+**** Exercise: Oversteekspel
+Alle spelers proberen één of twee spelers te passeren, om vervolgens
+te scoren in doeltjes halverwege het veld, dan wel de achterlijn te
+halen.
+***** UUID: d097ab86-f167-4e00-afca-19e2b1d9a996
+***** Station: 2
+***** Tag: dribbelen
+***** Tag: mikken
+***** Tag: afpakken
+***** Instructie: V-1.1
+***** Instructie: V-1.2
+***** Variation: Eén verdediger
+***** Variation: Twee verdedigers
+***** Variation: Doeltjes halverwege
+***** Variation: Achterlijn
+**** Exercise: Passeren en schieten
+Diverse passeerbewegingen uitvoeren, met als doel: de tegenstander
+uitspelen, door poortje gaan en vervolgens op doel afwerken.
+Aandachtspunten: (1) timing is belangrijk, dus beweging niet te vroeg
+of te laat inzetten, (2) passeerbeweging kan één of meerdere keren
+achter elkaar worden uitgevoerd, (3) de bal niet te lang bij je
+houden, te bereiken door binnen 10 seconden het poortje te bereiken.
+***** UUID: bb41f1e7-2f4e-4586-b5d9-4a2108b3e880
+***** Station: 3
+***** Tag: afwerken
+***** Tag: passeren
+***** Variation: Kappen en draaien, v=gWIca-POBso, s=thomasvlaminck
+**** Exercise: Wegdraaien
+Twee spelers aan weerszijden, speler in het midden neemt aan van de
+ene, draait en passt naar de andere. Aandachtspunten: (1) maak een
+schijnbeweging, (2) neem de bal mee in de ruimte.
+***** UUID: f0d54cc2-25b3-452a-83e6-5eb680479be4
+***** Station: 6
+***** Tag: kappen
+***** Tag: uitschakelen
+***** Tag: opendraaien
+***** Variation: Achter standbeen, v=62XufKgBUuA, s=az, t=4
+***** Variation: Buitenkant voet, v=1YoZX5TEUzk, s=az, t=4
+***** Variation: Binnenkant voet, v=8RTGa_BUcI8, s=az, c=plaats de voet schuin op de bal, t=4
+**** Exercise: Eén tegen één
+Partijtje, één tegen één.
+***** UUID: f635154e-19b1-4b70-ae39-5ff7e1828f84
+***** Station: 6
+***** Tag: dribbelen
+***** Tag: passeren
+***** Tag: afpakken
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Tag: battle
+***** Instructie: V-1.10
+***** Variation: Doeltjes
+***** Variation: Achterlijn
+***** Variation: Scheidsrechterbal
+**** Exercise: Afstoppen
+Verdediger speelt de bal naar de aanvaller, die dribbelt naar voren en
+de verdediger moet hem zien af te stoppen. Aanvaller scoort punt door
+achterlijn te halen. Verdediger scoort punt door binnen de gestelde
+tijd de aanvaller van scoren af te houden. Aandachtspunten: (1) zet je
+lichaam tussen tegenstander en de bal, (2) beweeg in een verdedigende
+houding, (3) gebruik je armen om je tegenstander van je af te houden,
+(4) pak de bal af door je voet voor de bal te zetten.
+***** UUID: 32af2d5d-44e3-427e-af17-62622d0d01a7
+***** Station: 6
+***** Tag: dribbelen
+***** Tag: verdedigen
+***** Variation: Body position, v=ZqDfqIDid8I, s=nike, t=29
+***** Variation: Verdedigende houding, v=gVZPt4WDuNo, s=az, t=4
+***** Variation: Lichaam gebruiken, v=_p7CG4v0tjs, s=az, t=4
+***** Variation: Afpakken, v=h8i7B4Zf9_s, s=az, t=4
+***** Variation: 1 tegen 1, s=feyenoord
+***** Variation: 2 tegen 1, s=feyenoord
+**** Exercise: Duel 1:1
+Duel van twee spelers in vierkant. Aanvaller krijgt bal frontaal of
+schuin frontaal ingespeeld en probeert via lijndribbel in bovenste
+twee doeltjes te scoren. Verdediger kan afpakken en kan scoren in
+onderste twee doeltjes. Na een doelpunt sluiten de spelers aan in de
+rij en komen twee nieuwe spelers in het vierkant om het duel uit te
+spelen. Aanvaller kan ook bal ingespeeld krijgen met speler naast zich
+of met speler in de rug.
+***** UUID: 4af9df45-fda4-4367-a876-f505e5302de7
+***** Tag: dribbelen
+***** Tag: passeren
+***** Variation: Frontaal, v=k85xY6fLGgg, s=thomasvlaminck
+***** Variation: Schuin frontaal, v=JxZyMy62I78, s=thomasvlaminck
+***** Variation: Naast je, v=9sVGAEEv178, s=thomasvlaminck
+***** Variation: In de rug, v=uVKDC9j9ILc, s=thomasvlaminck
+**** Exercise: Vierkantpasseren
+Verdedigers staan achter elkaar opgesteld in twee of drie vierkanten,
+elke verdediger bewaakt daarbij zijn eigen vierkant. Aanvallers gaan
+één voor één door de vierkanten en proberen de verdedigers te
+passeren, hetgeen kan worden voorkomen door de bal simpelweg uit het
+vierkant te tikken.
+***** UUID: cf0c9f51-d86a-4917-b1c3-26f679ba5095
+***** Tag: dribbelen
+***** Tag: passeren
+**** Exercise: Tiki taka
+Twee spelers aan weerszijden van een klein vierkant (2x2) tikken de
+bal op verschillende manieren naar elkaar.
+***** UUID: f94a6fdd-90e9-4e00-adb7-96557378f483
+***** Station: 0
+***** Tag: passen
+***** Tag: vrijlopen
+***** Variation: Coerver personal training, s=coerver, v=MWkRaQpxarY, t=240
+**** Exercise: Caroussel
+Spelers staan in een cirkel richting het midden en doen een beweging
+van Coerver. Wanneer het teken wordt gegeven bewegen de spelers
+richting het midden en bij een volgend teken weer terug. Na een ander
+signaal schuiven ze allemaal een plaatsje op naar rechts.
+***** UUID: 224fa681-3817-497b-bcef-6ee510147128
+***** Station: 0
+***** Variation: Coerver personal training, s=coerver, v=KfL3NmxK_E
+**** Exercise: Stop, start & react
+Aanvaller doet stops & starts, verdediger reageert. Doel is over de
+lijn te dribbelen. Als de lijn is gehaald, eventueel proberen in
+doeltje dat haaks op de looplijn staat te scoren.
+***** UUID: debf4c96-ad70-481d-afdf-82d046ae7c53
+***** Tag: dribbelen
+***** Tag: afpakken
+***** Variation: (Achter)lijn halen
+***** Variation: Scoren in doel haaks op de looplijn
+*** Category: Scoren en tegenhouden
+**** Exercise: 7-9-11
+Spelers werken af op groot doel met keeper. Bal wordt diep gespeeld naar
+drie mogelijke plekken, aangegeven door respectievelijk 7 (links), 9
+(midden) of 11 (rechts) te roepen. Speler rent om het hoedje heen,
+controleert en werkt af.
+***** UUID: bd04a3fc-1ae3-45e0-ae28-9ee537af9514
+***** Station: 3
+***** Tag: afwerken
+***** Tag: scoren
+***** Tag: passen
+***** Tag: vrijlopen
+***** Tag: loopactie
+***** Tag: tegenhouden
+***** Variation: Direct schieten
+**** Exercise: Duel om de bal
+Verdediger wordt 'losgelaten' op aanvaller die in groot doel met
+keeper probeert te scoren. Tegenstander komt van achteren, van de
+zijkant of van voren.
+***** UUID: 89324b43-20f0-4be5-8c63-4a7bd8eac867
+***** Station: 3
+***** Tag: afwerken
+***** Tag: scoren
+***** Tag: dribbelen
+***** Tag: afpakken
+***** Tag: sliding
+***** Tag: duel
+***** Instructie: O-1.11
+***** Instructie: O-1.12
+***** Instructie: O-1.13
+***** Instructie: O-2.6
+***** Instructie: O-2.7
+***** Instructie: O-2.8
+***** Variation: Tegenstander van achteren, v=Tugn4mc2M6E, s=knvb
+***** Variation: Tegenstander vanaf zijkant, v=2nRkHzIbVZM, s=knvb
+***** Variation: Tegenstander maakt sliding
+***** Variation: Tegenstand komt van voren, v=ROqX54EAA, s=knvb
+**** Exercise: Kaatsbal
+Ene speler staat met gezicht naar de ander, ontvangt de bal en kaatst
+telkens terug naar de opkomende man.
+***** UUID: bc367b79-9749-45f9-9d1c-1af1f26435d7
+***** Station: 3
+***** Tag: passen
+***** Tag: inspelen
+***** Tag: kaatsen
+***** Tag: afwerken
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Variation: Achterlijn
+***** Variation: Mikken
+***** Variation: Uithalen
+**** Exercise: Latschieten
+Met z'n allen op een rij tegelijk proberen op de lat te schieten. Kan
+overal worden gespeeld waar een doel staat, maar beste plek is het
+grote doel bij de kantine, omdat de ballen hier niet over het hek
+kunnen vliegen.
+***** UUID: 714878c9-5a7a-484e-b749-f2e4cc5261ef
+***** Station: 3
+***** Tag: afwerken
+***** Tag: mikken
+***** Tag: battle
+**** Exercise: Voorzet
+Bij groot doel met keeper passt de ene de bal in de hoek, de andere
+rent er achteraan en geeft de voorzet weer terug naar de opkomende
+man. Bij een variatie met twee inlopende spelers beginnen de spelers
+even 'hoog', maar gaat er één diep en gaat de ander er een paar meter
+achter.
+***** UUID: b7aee7d1-7a45-4a85-8f1b-3dc640b7f9ca
+***** Station: 3
+***** Tag: voorzetten
+***** Tag: passen
+***** Tag: afwerken
+***** Tag: schieten
+***** Tag: koppen
+***** Tag: vrijlopen
+***** Tag: tegenhouden
+***** Variation: Eén inlopende speler
+***** Variation: Twee inlopende spelers
+**** Exercise: Pionschietspel
+Alle spelers proberen langs twee verdedigers pionnen te raken die aan
+de achterlijn staan opgesteld.
+***** UUID: 1ca37870-31ee-4b84-a27a-af6df98db3ad
+***** Station: 2
+***** Tag: mikken
+***** Tag: scoren
+***** Tag: dribbelen
+***** Tag: tegenhouden
+***** Variation: Pionnenschietspel, v=3itMO9TfNRw, s=knvb
+***** Variation: Langs verdedigers schieten
+**** Exercise: Poortschietspel
+Twee spelers proberen vanaf hun lijn te scoren in het doel halverwege,
+met en zonder keeper, op vaste en variabele afstand.
+***** UUID: 912a26e1-577e-405d-83b2-b68a193f068f
+***** Station: 6
+***** Tag: mikken
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Instructie: V-2.2
+***** Instructie: V-3.1
+***** Variation: Poortschietspel, v=2HopwRrOtV8, s=knvb
+***** Variation: Met keeper
+***** Variation: Zonder keeper
+***** Variation: Vaste afstand
+***** Variation: Variabele afstand
+**** Exercise: Doelschietspel
+Schieten op doel met variabele afstand, op groot doel of kleine
+doeltjes, met of zonder keeper.
+***** UUID: 6b6797f8-8e79-4612-94ef-cac2fcd5b295
+***** Station: 3
+***** Tag: schieten
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Instructie: V-2.1
+***** Instructie: V-2.3
+***** Instructie: V-3.3
+***** Variation: Vaste afstand
+***** Variation: Variabele afstand
+***** Variation: Groot doel
+***** Variation: Kleine doeltjes
+***** Variation: Hoog schieten
+***** Variation: Laag schieten
+***** Variation: met keeper
+***** Variation: Zonder keeper
+**** Exercise: Pingels
+Strafschoppen nemen.
+***** TODO diagram
+***** UUID: 17fc6743-0e7f-4ab9-9c8b-683b6c72f3ea
+***** Station: 3
+***** Tag: schieten
+***** Tag: tegenhouden
+***** Variation: Laag schieten
+***** Variation: Hoog schieten
+***** Variation: Verkeerde been
+***** Variation: Binnenkant voet
+***** Variation: Wreef
+**** Exercise: Aanspeelpunt
+Uitgaande van de posities 7-9-11, wordt 7 of 9 of 11 geroepen en gaat
+de aanvaller naar die positie en biedt zich aan. De speler wordt daar
+aangespeeld, maar achter zich staat een verdediger die hem dekt en
+probeert om de bal van hem af te pakken. Idee is dan dat de aanvaller
+een actie maakt om de verdediger van zich af te schudden. Vervolgens
+werkt de aanvaller af op doel.
+***** UUID: 6b6f088d-e90f-4153-a7db-34608eff9556
+***** Station: 3
+***** Tag: vrijlopen
+***** Tag: aannemen
+***** Tag: wegdraaien
+***** Tag: opendraaien
+***** Tag: schieten
+***** Tag: scoren
+***** Tag: afpakken
+***** Tag: tegenhouden
+***** Variation: Wegdraaien op het middenveld, v=3kVAdMe4it4, c=als Luka Modric, s=voetbalomgeving
+**** Exercise: Afwerken
+Vanaf de achterlijn naar de aangever nadat hij een actie heeft
+gemaakt, en vervolgens naar degene die afwerkt op doel.
+***** UUID: a52d0a6e-4bb6-44a5-bbc6-77686795ae0a
+***** Station: 3
+***** Tag: opendraaien
+***** Tag: aanleggen
+***** Tag: schieten
+***** Variation: Aanspelen in de voet, s=feyenoord
+***** Variation: Kaatsen, s=feyenoord
+** Training: Tactiek
+*** Category: Positiespel
+**** Exercise: Partijtje met vier doeltjes
+Twee teams (1-1, 2-1, 2-2, 3-2, 4-4) zonder keeper op daartoe
+aangewezen plek in het circuit.
+***** UUID: eeaca8fd-8f6e-40b6-aab3-9bb2ba3984ef
+***** Station: 1
+***** Tag: battle
+***** Tag: positiespel
+***** Instructie: O-1.4
+***** Instructie: O-1.8
+***** Instructie: O-3.1
+***** Instructie: O-3.3
+***** Instructie: O-3.5
+***** Instructie: O-3.7
+***** Instructie: P-3.A
+***** Variation: 1 tegen 1, v=ovzgsV0Jlj8, s=knvb
+***** Variation: 2 tegen 1, v=f7VLDWQbiqI, s=knvb
+***** Variation: 2 tegen 2, v=5czYrLOocKE, s=knvb
+***** Variation: 3 tegen 2
+***** Variation: 4 tegen 4, v=be8cogya1_U, s=knvb
+**** Exercise: Partijtje KNVB
+Verdedigers spelen met keeper en 3 spelers in ruit en proberen in de
+kleine doeltjes te scoren. Aanvallers spelen met 3 of 4 spelers in
+ruit en proberen in grote doel te scoren.
+***** UUID: 14565bc0-ab93-478f-860d-e6e824cfb12d
+***** Station: 3
+***** Tag: positiespel
+***** Tag: opbouwen
+***** Tag: passen
+***** Tag: vrijlopen
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Instructie: O-1.9
+***** Instructie: O-2.5
+***** Variation: 3 Aanvallers
+***** Variation: 4 Aanvallers
+**** Exercise: Partijtje met keepers
+Partijtje op twee grote doelen met keepers (2-2, 3-2, 3-3, 4-3, 4-4,
+5-5, inclusief keeper). In het circuit kan dat alleen op station 4,
+met kleine doeltjes.
+***** UUID: 0b1e4e94-9f49-466e-bc36-4e17c2ad9939
+***** Station: 4
+***** Tag: positiespel
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Instructie: O-1.1
+***** Instructie: O-1.5
+***** Instructie: O-2.1
+***** Instructie: O-2.2
+***** Instructie: O-2.3
+***** Instructie: O-2.4
+***** Instructie: O-3.2
+***** Instructie: O-3.4
+***** Instructie: O-3.6
+***** Instructie: P-1.B
+***** Instructie: P-2.A
+***** Instructie: P-2.B
+***** Instructie: P-3.B
+***** Instructie: P-3.C
+***** Instructie: P-3.D
+***** Variation: 1 tegen 1, v=CB1HROQd3og, s=knvb
+***** Variation: 2 tegen 2, v=AnHeapWTbn4, s=knvb
+***** Variation: 3 tegen 2
+***** Variation: 3 tegen 3, v=3YpwKhA--C8, s=knvb
+***** Variation: 4 tegen 3, v=BRM8aAS83RM, s=knvb
+***** Variation: 4 tegen 4, v=k8IyesGaoSc, s=knvb
+***** Variation: 5 tegen 5
+**** Exercise: Partijtje zonder keepers
+Twee teams (4-3, 4-4, 5-4) zonder keeper.
+***** UUID: c6f68ae2-4269-45ae-bddb-4658b362e9e1
+***** Station: 4
+***** Instructie: P-1.B
+***** Instructie: P-3.B
+***** Tag: positiespel
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Variation: 4 tegen 3
+***** Variation: 4 tegen 4, v=UVAy6IEQH-s, s=knvb
+***** Variation: 5 tegen 4
+**** Exercise: Lijnvoetbal
+Op een lang veld met 1 of 2 tegen elkaar, of een breed veld met 4
+tegen elkaar proberen de bal over de achterlijn te dribbelen.
+***** UUID: f80d77ce-5497-4129-ae31-48cff5a809cb
+***** Station: 6
+***** Instructie: O-1.2
+***** Instructie: O-1.6
+***** Instructie: P-1.A
+***** Tag: positiespel
+***** Tag: dribbelen
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Variation: 1 tegen 1 op lang veld, v=SW_KORV9ql4, s=knvb
+***** Variation: 2 tegen 2 op lang veld
+***** Variation: 4 tegen 4 op breed veld
+**** Exercise: Pionvoetbal
+Twee teams (2-2, 4-4) proberen pionnen die bij de achterlijn van
+de tegenstander staan opgesteld te raken (1 punt), dan wel omver te
+schieten (2 punten).
+***** UUID: af24611f-a544-4207-8856-f3ba97603036
+***** Station: 6
+***** Tag: mikken
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Instructie: O-1.3
+***** Instructie: O-1.7
+***** Instructie: P-1.C
+***** Variation: 1 tegen 1, v=lAqmlO-vnVc, s=knvb
+***** Variation: 2 tegen 2
+***** Variation: 4 tegen 4, v=Xkw1HMquFhw, s=knvb
+**** Exercise: Partijtje met twee doeltjes
+Partijtje met twee doeltjes, team van 2 tegen team van 1, 2 of 3.
+***** UUID: 5592d47e-77ad-47ad-8b4b-ce723ec266c9
+***** Station: 1
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Variation: 2 tegen 1
+***** Variation: 2 tegen 2
+***** Variation: 2 tegen 3
+***** Variation: Toernooi met vier teams van 2
+**** Exercise: 2 tegen 2 tegen 2 tegen 2
+Partijtje met vier doeltjes, met vier teams van 2 tegen elkaar.
+***** UUID: d4c0b082-706f-4d92-82ec-2dd44c1fd72c
+***** Station: 1
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Tag: vrijlopen
+***** Variation: 2 tegen 2 tegen 2 tegen 2
+*** Category: Standaard-situaties
+**** Exercise: Keeperbal
+Keeper gooit of passt de bal naar een van de vleugelverdedigers die
+zich aanbieden aan de zijkanten. Verdediger neemt de bal aan, en na
+een eventuele dribbel passt hij naar de nummer 10 die zich ook
+richting zijkant aanbiedt. Oefening eindigt wanneer de nummer 10 de
+bal onder de voet controleert en zo een punt verdient. De
+tegenstanders proberen deze combinatie te verstoren, en krijgen een
+punt als ze in het doel scoren.
+***** UUID: 586204d6-f1e8-4a0c-aa0f-b66c0048f424
+***** Station: 3
+***** Tag: opbouwen
+***** Tag: gooien
+***** Tag: passen
+***** Tag: vrijlopen
+**** Exercise: Hoekschop
+Oefening voor mandakking bij corner. Verdediger moet dicht bij zijn
+tegenstander staan, tussen de tegenstander en het doel, zodanig dat
+hij zowel de bal als de tegenstander kan zien.
+***** UUID: dddf3af3-347f-42e5-b241-1b2a08c51016
+***** Station: 3
+***** Tag: hoekschop
+***** Tag: corner
+***** Tag: koppen
+***** Tag: schieten
+***** Tag: positiespel
+***** Tag: tegenhouden
+***** Variation: Defending corner kicks, v=uTZTKdRO908, s=nike, t=10
+***** Variation: Verdedigen van eerste en tweede paal
+**** Exercise: Vrije trap
+Twee aanvallers staan bij de bal om een vrije trap te nemen. Keeper
+verdedigt het doel, drie verdedigers staan in de muur. De derde
+aanvaller staat in de buurt van de muur om een eventuele rebound in te
+schieten. De vrije trap kan met links of rechts worden genomen. De
+verdedigende partij kan uitverdedigen en scoren in één van de
+doeltjes.
+***** UUID: 551cf7b7-cbe7-42b6-bb54-4617242341b4
+***** Station: 3
+***** Tag: schieten
+***** Tag: scoren
+***** Tag: tegenhouden
+***** Tag: vrije trap
+***** Tag: rebound
+***** Variation: Direct Free Kicks, v=TFQAur1y9WM, s=nike
+***** Variation: Laag inschieten
+***** Variation: Hoog inschieten
+**** Exercise: Ingooi
+Speler gooit in naar medespeler die zich komt aanbieden, die neemt de
+bal aan en kaatst 'm weer terug naar de eerste speler. Speler die
+aanneemt wordt gehinderd door tegenstander. Aandachtspunten: (1)
+onverwachts naar vrije ruimte komen om aan te bieden, (2) arm naar
+achteren om de tegenstander af te houden, (3) bij aanname lichtjes
+raken zodat de bal 'valt'.
+***** UUID: 27bfa3a5-8e05-4cbd-bce8-d0cdbae19f48
+***** Station: 6
+***** Tag: ingooien
+***** Tag: kaatsen
+***** Tag: vrijlopen
+***** Variation: Aanname borst, v=f6OYXNg8DrI, s=az, t=4
+***** Variation: Aanname knie, v=yRXgF6kRe_c, s=az, t=4
+***** Variation: Binnenkant voet, v=8y59LVhI-ic, s=az, c=bal met stuit, t=4
+***** Variation: Binnenkant voet, v=pG_W16oaSXE, s=az, c=bal door de lucht, t=4

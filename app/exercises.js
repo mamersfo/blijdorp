@@ -116,14 +116,22 @@ export default class Exercises extends React.Component {
     )
   }
 
+  renderExerciseText(m) {
+    if ( m.image ) {
+      let imgSrc = 'images/exercises/' + m.uuid + '.png'
+      return <a href={imgSrc} onClick={this.runModal.bind(this)}>{m.text}</a>
+    } else {
+      return <div>{m.text}</div>
+    }
+  }
+
   renderExercises() {
     let selected = this.state.selected.length > 0 ?
         this.state.selected : this.state.exercises
     return selected.map((m) => {
-      let imgSrc = 'images/exercises/' + m.uuid + '.png'
       return (
         <AccordionItem title={m.name} slug={m.uuid} key={m.uuid}>
-          <a href={imgSrc} onClick={this.runModal.bind(this)}>{m.text}</a>
+          { this.renderExerciseText(m) }
           { this.renderVariations(m.variations) }
         </AccordionItem>  
       )

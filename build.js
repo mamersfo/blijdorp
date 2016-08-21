@@ -4508,7 +4508,7 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
                 React.createElement(
                   'p',
                   null,
-                  'Website gewijd aan het selectieteam van Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je wedstrijdverslagen, statistieken en oefenstof.'
+                  'Website gewijd aan het selectieteam voor Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je wedstrijdverslagen, statistieken en oefenstof.'
                 ),
                 React.createElement(
                   'div',
@@ -46733,21 +46733,34 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             ));
           }
         }, {
+          key: 'renderExerciseText',
+          value: function renderExerciseText(m) {
+            if (m.image) {
+              var imgSrc = 'images/exercises/' + m.uuid + '.png';
+              return React.createElement(
+                'a',
+                { href: imgSrc, onClick: this.runModal.bind(this) },
+                m.text
+              );
+            } else {
+              return React.createElement(
+                'div',
+                null,
+                m.text
+              );
+            }
+          }
+        }, {
           key: 'renderExercises',
           value: function renderExercises() {
             var _this3 = this;
 
             var selected = this.state.selected.length > 0 ? this.state.selected : this.state.exercises;
             return selected.map(function (m) {
-              var imgSrc = 'images/exercises/' + m.uuid + '.png';
               return React.createElement(
                 AccordionItem,
                 { title: m.name, slug: m.uuid, key: m.uuid },
-                React.createElement(
-                  'a',
-                  { href: imgSrc, onClick: _this3.runModal.bind(_this3) },
-                  m.text
-                ),
+                _this3.renderExerciseText(m),
                 _this3.renderVariations(m.variations)
               );
             });
