@@ -28,13 +28,30 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className='container-fluid'>
-        <div className='jumbotron'>
-          <h1>Blijdorp JO11-1</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at dui vitae odio varius sagittis. Curabitur est risus, porta sit amet arcu ut, aliquam auctor velit.</p>
-          <div>
-            { this.renderLinks() }
-          </div>
-       </div>
+        <div className='jumbotron'
+      style={{height: '500px'}}>
+
+        <img src='images/team.png'
+      style={{
+        position: 'relative',
+        float: 'right',
+        marginLeft: '30px',
+        '-webkit-filter': 'saturate(20%)'
+      }}>
+        </img>
+
+        <h1>Blijdorp JO11-1</h1>
+
+        <p>
+        Website gewijd aan het selectieteam van Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je wedstrijdverslagen, statistieken en oefenstof.
+        </p>
+
+        <div>{ this.renderLinks() }</div>
+        
+
+
+        
+      </div>
       </div>
     )
   }

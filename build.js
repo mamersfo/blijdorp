@@ -4491,7 +4491,15 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
               { className: 'container-fluid' },
               React.createElement(
                 'div',
-                { className: 'jumbotron' },
+                { className: 'jumbotron',
+                  style: { height: '500px' } },
+                React.createElement('img', { src: 'images/team.png',
+                  style: {
+                    position: 'relative',
+                    float: 'right',
+                    marginLeft: '30px',
+                    '-webkit-filter': 'saturate(20%)'
+                  } }),
                 React.createElement(
                   'h1',
                   null,
@@ -4500,7 +4508,7 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
                 React.createElement(
                   'p',
                   null,
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at dui vitae odio varius sagittis. Curabitur est risus, porta sit amet arcu ut, aliquam auctor velit.'
+                  'Website gewijd aan het selectieteam van Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je wedstrijdverslagen, statistieken en oefenstof.'
                 ),
                 React.createElement(
                   'div',
@@ -46651,7 +46659,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                 m.n
               );
             } else {
-              var url = 'https://www.youtube.com/watch?v=' + m.v;
+              var url = 'https://www.youtube.com/watch?v=' + m.v + '&t=' + (undefined !== m.t ? m.t : 0);
               var img = 'images/' + m.s + '.png';
               return React.createElement(
                 'a',
