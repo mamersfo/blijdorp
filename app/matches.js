@@ -2,7 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Accordion, AccordionItem } from 'react-sanfona'
 import { get } from './api'
-import { season } from './constants'
 
 export class Matches extends React.Component {
 
@@ -76,9 +75,13 @@ export class Matches extends React.Component {
     return (
       <div className='container-fluid'>
         <h2>wedstrijden</h2>
+        <div className='row'>
+        <div className='col-md-10'>
         <Accordion>
         { this.renderItems() }
         </Accordion>
+        </div>
+        </div>
       </div>
     )
   }

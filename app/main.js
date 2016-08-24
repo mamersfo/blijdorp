@@ -8,10 +8,11 @@ import Assists from './assists'
 import Matches from './matches'
 import ChooseSeason from './choose-season'
 import Exercises from './exercises.js'
+import Schedule from './schedule.js'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
-function reducer(state = {season: '2015-16'}, action) {
+function reducer(state = {season: '2016-17'}, action) {
   switch(action.type) {
     case 'CHOOSE_SEASON':
       return {season: action.season}
@@ -32,21 +33,26 @@ const childRoutes = [
   },
   {
     id: 2,
+    path: 'programma',
+    component: Schedule
+  },
+  {
+    id: 3,
     path: 'wedstrijden',
     component: Matches
   },
   {
-    id: 3,
+    id: 4,
     path: 'doelpunten',
     component: Goals
   },
   {
-    id: 4,
+    id: 5,
     path: 'assists',
     component: Assists
   },
   {
-    id: 5,
+    id: 6,
     path: 'oefeningen',
     component: Exercises
   }
