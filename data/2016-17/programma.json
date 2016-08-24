@@ -2,6 +2,7 @@
   {
     "date": "2016-08-27",
     "time": "9:30",
+    "gather": "8:45",
     "league": "Groep 2 04",
     "teams": ["Blijdorp JO11-1", "VOC JO11-4"],
     "referee": "Abdel"
@@ -9,35 +10,41 @@
   {
     "date": "2016-09-03",
     "time": "8:30",
+    "gather": "7:15",
     "league": "Groep 2 04",
     "teams": ["BVCB JO11-2", "Blijdorp JO11-1"]
   },
   {
     "date": "2016-09-10",
     "time": "9:30",
+    "gather": "8:45",
     "league": "Groep 2 04",
     "teams": ["Blijdorp JO11-1", "XerxesDZB JO11-2"],
     "referee": "N.n.t.b."
   },
   {
     "date": "2016-09-17",
+    "time": "9:30",
     "league": "Groep 2 04",
     "teams": ["VVOR JO11-1", "Blijdorp JO11-1"]
   },
   {
     "date": "2016-09-24",
     "time": "9:30",
+    "gather": "8:45",
     "league": "Groep 2 04",
     "teams": ["Blijdorp JO11-1", "Hillegersberg JO11-2"],
     "referee": "N.n.t.b."
   },
   {
     "date": "2016-10-01",
+    "time": "8:30",
     "league": "Groep 2 04",
     "teams": ["Zestienhoven JO11-2", "Blijdorp JO11-1"]
   },
   {
     "date": "2016-10-08",
+    "time": "10:00",
     "league": "Groep 2 04",
     "teams": ["TOGB JO11-3", "Blijdorp JO11-1"]
   }

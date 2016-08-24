@@ -12,8 +12,9 @@ export class Schedule extends Seasonal {
   renderMatch(m) {
     return (
       <tr key={m.date}>
-        <td>{m.date}</td>
-        <td>{m.time}</td>
+        <td style={{width: '100px'}}>{m.date}</td>
+        <td style={{textAlign: 'right', width: '100px'}}>{m.time}</td>
+        <td style={{textAlign: 'right', width: '100px'}}>{m.gather}</td>
         <td>{m.teams[0]}</td>
         <td>{m.teams[1]}</td>
         <td>{m.referee}</td>
@@ -25,11 +26,12 @@ export class Schedule extends Seasonal {
     return (
       <div className='container-fluid'>
         <h2>programma</h2>
-        <table className='table table-hover table-condensed'>
+        <table className='table table-hover'>
           <thead>
             <tr>
               <th>Datum</th>
               <th>Tijdstip</th>
+              <th>Verzamelen</th>
               <th>Thuisploeg</th>
               <th>Bezoekers</th>
               <th>Scheidsrechter</th>

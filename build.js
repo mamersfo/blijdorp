@@ -46929,13 +46929,18 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
               { key: m.date },
               React.createElement(
                 'td',
-                null,
+                { style: { width: '100px' } },
                 m.date
               ),
               React.createElement(
                 'td',
-                null,
+                { style: { textAlign: 'right', width: '100px' } },
                 m.time
+              ),
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right', width: '100px' } },
+                m.gather
               ),
               React.createElement(
                 'td',
@@ -46969,7 +46974,7 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
               ),
               React.createElement(
                 'table',
-                { className: 'table table-hover table-condensed' },
+                { className: 'table table-hover' },
                 React.createElement(
                   'thead',
                   null,
@@ -46985,6 +46990,11 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                       'th',
                       null,
                       'Tijdstip'
+                    ),
+                    React.createElement(
+                      'th',
+                      null,
+                      'Verzamelen'
                     ),
                     React.createElement(
                       'th',
