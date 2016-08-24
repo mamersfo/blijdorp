@@ -23,7 +23,7 @@ function reducer(state = {season: '2016-17'}, action) {
 
 const store = createStore(reducer)
 
-const baseUri = '/blijdorp'
+const baseUri = '/blijdorp/'
 
 const childRoutes = [
   {
@@ -62,10 +62,9 @@ class Main extends React.Component {
   
   renderItems() {
     return childRoutes.map((item) => {
-      let uri = baseUri + '/' + item.path
+      let uri = baseUri + item.path
       return (
-        <li key={'item-' + item.id}
-            role='presentation'
+        <li key={'item-' + item.id} role='presentation'
             className={this.props.location.pathname == uri ? 'active' : ''}>
           <Link to={uri}>{item.path}</Link>
         </li>

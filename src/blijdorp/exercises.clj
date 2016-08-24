@@ -1,4 +1,4 @@
-(ns blijdorp.exercices
+(ns blijdorp.exercises
   (:require [cheshire.core :refer :all]))
 
 (def base-pattern #"(^\*+) (\S+)")

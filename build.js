@@ -50862,7 +50862,7 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       'use strict';
 
       store = createStore(reducer);
-      baseUri = '/blijdorp';
+      baseUri = '/blijdorp/';
       childRoutes = [{
         id: 1,
         path: 'home',
@@ -50904,11 +50904,10 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
             var _this = this;
 
             return childRoutes.map(function (item) {
-              var uri = baseUri + '/' + item.path;
+              var uri = baseUri + item.path;
               return React.createElement(
                 'li',
-                { key: 'item-' + item.id,
-                  role: 'presentation',
+                { key: 'item-' + item.id, role: 'presentation',
                   className: _this.props.location.pathname == uri ? 'active' : '' },
                 React.createElement(
                   Link,
