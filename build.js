@@ -46861,23 +46861,24 @@ System.register('app/seasonal.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
 
         _createClass(Seasonal, [{
           key: 'fetchData',
-          value: function fetchData(which) {
+          value: function fetchData(season, filename) {
             var _this = this;
 
-            get(this.props.season + '/' + this.state.filename).then(function (data) {
+            var url = season + '/' + filename;
+            get(url).then(function (data) {
               _this.setState({ data: data });
             });
           }
         }, {
           key: 'componentDidMount',
           value: function componentDidMount() {
-            this.fetchData(this.state.filename);
+            this.fetchData(this.props.season, this.state.filename);
           }
         }, {
           key: 'componentWillReceiveProps',
           value: function componentWillReceiveProps(next) {
             if (this.props.season !== next.season) {
-              this.fetchData(this.state.filename);
+              this.fetchData(next.season, this.state.filename);
             }
           }
         }]);
