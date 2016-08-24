@@ -1,31 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Accordion, AccordionItem } from 'react-sanfona'
-import { get } from './api'
+import Seasonal from './seasonal'
 
-export class Matches extends React.Component {
+export class Matches extends Seasonal {
 
   constructor(props) {
     super(props)
-    this.state = { matches: [] }
+    this.state = { filename: 'matches', data: [] }
   }
 
-  fetchData(season) {
-    get(season + '/matches').then((data) => {
-      this.setState({ matches: data })
-    })
-  }
-
-  componentDidMount() {
-    this.fetchData(this.props.season)
-  }
-
-  componentWillReceiveProps(next) {
-    if ( this.props.season !== next.season ) {
-      this.fetchData(next.season)
-    }
-  }
-  
   renderMap(m) {
     return m ? Object.keys(m).map((k) => k + ' (' + m[k] + ') ') : 'geen'
   }
@@ -58,7 +42,7 @@ export class Matches extends React.Component {
   }
 
   renderItems() {
-    return this.state.matches.map((m) => {
+    return this.state.data.map((m) => {
       let title = m.teams[0] + ' - ' + m.teams[1]
       return (
         <AccordionItem title={title} slug={m.date} key={m.date}>

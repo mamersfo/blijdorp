@@ -1,28 +1,12 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { get } from './api'
+import Seasonal from './seasonal'
 
-export class Schedule extends React.Component {
+export class Schedule extends Seasonal {
 
   constructor(props) {
     super(props)
-    this.state = { matches: [] }
-  }
-
-  fetchData() {
-    get(this.props.season + '/programma').then((data) => {
-      this.setState({ matches: data })
-    })
-  }
-
-  componentDidMount() {
-    this.fetchData(this.props.season)
-  }
-
-  componentWillReceiveProps(next) {
-    if ( this.props.season !== next.season ) {
-      this.fetchData(next.season)
-    }
+    this.state = { filename: 'programma', data: [] }
   }
 
   renderMatch(m) {
@@ -52,7 +36,7 @@ export class Schedule extends React.Component {
             </tr>
           </thead>
           <tbody>
-          { this.state.matches.map((m) => this.renderMatch(m)) }
+          { this.state.data.map((m) => this.renderMatch(m)) }
           </tbody>
         </table>
       </div>

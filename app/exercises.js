@@ -184,8 +184,6 @@ export default class Exercises extends React.Component {
             { this.renderExercises() }
             </Accordion>
           </div>
-          <div className='col-md-1'>
-          </div>
         </div>
       </div>
     )
