@@ -9,14 +9,28 @@ export class Schedule extends Seasonal {
     this.state = { filename: 'programma', data: [] }
   }
 
+  renderTeam(teams, idx) {
+    let team = <td></td>
+
+    if ( undefined != teams && idx < teams.length ) {
+      if ( "Blijdorp JO11-1" === teams[idx] ) {
+        team = <td><strong>{teams[idx]}</strong></td>
+      } else {
+        team = <td>{teams[idx]}</td>
+      }
+    }
+
+    return team
+  }
+
   renderMatch(m) {
     return (
       <tr key={m.date}>
         <td style={{width: '100px'}}>{m.date}</td>
         <td style={{textAlign: 'right', width: '100px'}}>{m.time}</td>
         <td style={{textAlign: 'right', width: '100px'}}>{m.gather}</td>
-        <td>{m.teams[0]}</td>
-        <td>{m.teams[1]}</td>
+        { this.renderTeam(m.teams, 0) }
+        { this.renderTeam(m.teams, 1) }
         <td>{m.referee}</td>
       </tr>
     )

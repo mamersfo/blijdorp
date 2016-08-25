@@ -46923,6 +46923,33 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
         }
 
         _createClass(Schedule, [{
+          key: 'renderTeam',
+          value: function renderTeam(teams, idx) {
+            var team = React.createElement('td', null);
+
+            if (undefined != teams && idx < teams.length) {
+              if ("Blijdorp JO11-1" === teams[idx]) {
+                team = React.createElement(
+                  'td',
+                  null,
+                  React.createElement(
+                    'strong',
+                    null,
+                    teams[idx]
+                  )
+                );
+              } else {
+                team = React.createElement(
+                  'td',
+                  null,
+                  teams[idx]
+                );
+              }
+            }
+
+            return team;
+          }
+        }, {
           key: 'renderMatch',
           value: function renderMatch(m) {
             return React.createElement(
@@ -46943,16 +46970,8 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 { style: { textAlign: 'right', width: '100px' } },
                 m.gather
               ),
-              React.createElement(
-                'td',
-                null,
-                m.teams[0]
-              ),
-              React.createElement(
-                'td',
-                null,
-                m.teams[1]
-              ),
+              this.renderTeam(m.teams, 0),
+              this.renderTeam(m.teams, 1),
               React.createElement(
                 'td',
                 null,

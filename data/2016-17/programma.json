@@ -47,5 +47,13 @@
     "time": "10:00",
     "league": "Groep 2 04",
     "teams": ["TOGB JO11-3", "Blijdorp JO11-1"]
+  },
+  {
+    "date": "2016-10-15",
+    "time": "vrij"
+  },
+  {
+    "date": "2016-10-22",
+    "time": "vrij"
   }
 ]
