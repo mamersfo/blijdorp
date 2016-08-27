@@ -4431,8 +4431,8 @@ System.register('app/team.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
     }
   };
 });
-System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, Home;
+System.register('app/update.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, Update;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -4445,6 +4445,79 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
     }, function (_npmReact1531Js) {
       React = _npmReact1531Js['default'];
+    }],
+    execute: function () {
+      'use strict';
+
+      Update = (function (_React$Component) {
+        _inherits(Update, _React$Component);
+
+        function Update(props) {
+          _classCallCheck(this, Update);
+
+          _get(Object.getPrototypeOf(Update.prototype), 'constructor', this).call(this, props);
+          this.state = { updated: 'undefined', message: 'undefined' };
+        }
+
+        _createClass(Update, [{
+          key: 'componentDidMount',
+          value: function componentDidMount() {
+            var _this = this;
+
+            var baseUrl = 'https://api.github.com';
+            var url = baseUrl + '/repos/mamersfo/blijdorp/commits?path=data';
+
+            this.serverRequest = $.get(url, (function (result) {
+              var commit = result[0].commit;
+              _this.setState({
+                updated: new Date(commit.author.date),
+                message: commit.message
+              });
+            }).bind(this));
+          }
+        }, {
+          key: 'componentWillUnmount',
+          value: function componentWillUnmount() {
+            this.serverRequest.abort();
+          }
+        }, {
+          key: 'render',
+          value: function render() {
+            return React.createElement(
+              'div',
+              {
+                style: { fontSize: 'x-small', marginTop: '75px' } },
+              'Laatste update ',
+              this.state.updated.toLocaleString('NL-nl'),
+              ': ',
+              this.state.message
+            );
+          }
+        }]);
+
+        return Update;
+      })(React.Component);
+
+      _export('default', Update);
+    }
+  };
+});
+System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'app/update.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, Update, Home;
+
+  return {
+    setters: [function (_npmBabelRuntime5838HelpersGetJs) {
+      _get = _npmBabelRuntime5838HelpersGetJs['default'];
+    }, function (_npmBabelRuntime5838HelpersInheritsJs) {
+      _inherits = _npmBabelRuntime5838HelpersInheritsJs['default'];
+    }, function (_npmBabelRuntime5838HelpersCreateClassJs) {
+      _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
+    }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
+      _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
+    }, function (_appUpdateJs) {
+      Update = _appUpdateJs['default'];
     }],
     execute: function () {
       'use strict';
@@ -4491,8 +4564,7 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
               { className: 'container-fluid' },
               React.createElement(
                 'div',
-                { className: 'jumbotron',
-                  style: { height: '500px' } },
+                { className: 'jumbotron', style: { height: '500px', margin: '0px' } },
                 React.createElement('img', { src: 'images/team-1617.png',
                   style: {
                     position: 'relative',
@@ -4514,7 +4586,8 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
                   'div',
                   null,
                   this.renderLinks()
-                )
+                ),
+                React.createElement(Update, null)
               )
             );
           }
@@ -32347,7 +32420,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                   { className: 'col-md-10' },
                   React.createElement(
                     Accordion,
-                    null,
+                    { style: { margin: '0px' } },
                     this.renderItems()
                   )
                 )
@@ -45891,7 +45964,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                   { className: 'col-md-8' },
                   React.createElement(
                     Accordion,
-                    null,
+                    { style: { margin: '0px' } },
                     this.renderExercises()
                   )
                 )
@@ -46287,7 +46360,7 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
               ),
               React.createElement(
                 'table',
-                { className: 'table' },
+                { className: 'table', style: { margin: '0px' } },
                 React.createElement(
                   'thead',
                   null,

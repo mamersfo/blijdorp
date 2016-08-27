@@ -180,7 +180,7 @@ export default class Exercises extends React.Component {
             </fieldset>
           </div>
           <div className='col-md-8'>
-            <Accordion>
+            <Accordion style={{margin: '0px'}}>
             { this.renderExercises() }
             </Accordion>
           </div>

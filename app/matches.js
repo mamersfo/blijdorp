@@ -61,7 +61,7 @@ export class Matches extends Seasonal {
         <h2>wedstrijden</h2>
         <div className='row'>
         <div className='col-md-10'>
-        <Accordion>
+        <Accordion style={{margin: '0px'}}>
         { this.renderItems() }
         </Accordion>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Update from './update'
 
 export default class Home extends React.Component {
 
@@ -28,8 +29,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className='container-fluid'>
-        <div className='jumbotron'
-      style={{height: '500px'}}>
+        <div className='jumbotron' style={{height: '500px', margin: '0px'}}>
 
         <img src='images/team-1617.png'
       style={{
@@ -44,6 +44,7 @@ export default class Home extends React.Component {
         Website gewijd aan het selectieteam voor Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je onder meer wedstrijdverslagen, statistieken en oefenstof.
         </p>
         <div>{ this.renderLinks() }</div>
+        <Update />
         </div>
       </div>
     )
