@@ -1,0 +1,98 @@
+[
+  {
+    "team": "Blijdorp (1)",
+    "matches": {
+      "wins": 1,
+      "draws": 0,
+      "losses": 0
+    },
+    "goals": {
+      "for": 7,
+      "against": 1
+    }
+  },
+  {
+    "team": "BVCB (2)",
+    "matches": {
+      "wins": 0,
+      "draws": 0,
+      "losses": 0
+    },
+    "goals": {
+      "for": 0,
+      "against": 0
+    }
+  },
+  {
+    "team": "Hillegersberg (2)",
+    "matches": {
+      "wins": 0,
+      "draws": 0,
+      "losses": 0
+    },
+    "goals": {
+      "for": 0,
+      "against": 0
+    }
+  },
+  {
+    "team": "TOGB (3)",
+    "matches": {
+      "wins": 0,
+      "draws": 0,
+      "losses": 0
+    },
+    "goals": {
+      "for": 0,
+      "against": 0
+    }
+  },
+  {
+    "team": "VOC (4)",
+    "matches": {
+      "wins": 0,
+      "draws": 0,
+      "losses": 1
+    },
+    "goals": {
+      "for": 1,
+      "against": 7
+    }
+  },
+  {
+    "team": "VVOR (1)",
+    "matches": {
+      "wins": 0,
+      "draws": 0,
+      "losses": 0
+    },
+    "goals": {
+      "for": 0,
+      "against": 0
+    }
+  },
+  {
+    "team": "XerxesDZB (2)",
+    "matches": {
+      "wins": 1,
+      "draws": 0,
+      "losses": 0
+    },
+    "goals": {
+      "for": 8,
+      "against": 0
+    }
+  },
+  {
+    "team": "Zestienhoven (2)",
+    "matches": {
+      "wins": 0,
+      "draws": 0,
+      "losses": 1
+    },
+    "goals": {
+      "for": 0,
+      "against": 8
+    }
+  }
+]

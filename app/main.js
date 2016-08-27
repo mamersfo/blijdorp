@@ -9,6 +9,8 @@ import Matches from './matches'
 import ChooseSeason from './choose-season'
 import Exercises from './exercises.js'
 import Schedule from './schedule.js'
+import Table from './table.js'
+import Results from './results.js'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
@@ -38,21 +40,31 @@ const childRoutes = [
   },
   {
     id: 3,
-    path: 'wedstrijden',
-    component: Matches
+    path: 'uitslagen',
+    component: Results
   },
   {
     id: 4,
-    path: 'doelpunten',
-    component: Goals
+    path: 'stand',
+    component: Table
   },
   {
     id: 5,
+    path: 'verslag',
+    component: Matches
+  },
+  {
+    id: 6,
+    path: 'goals',
+    component: Goals
+  },
+  {
+    id: 7,
     path: 'assists',
     component: Assists
   },
   {
-    id: 6,
+    id: 8,
     path: 'oefeningen',
     component: Exercises
   }

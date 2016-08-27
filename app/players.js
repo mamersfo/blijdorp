@@ -25,7 +25,11 @@ export class Players extends React.Component {
     get(season + '/' + this.props.metric).then((data) => {
       let sorted = data.sort((a, b) => b.total - a.total)
       this.setState({
-        players: sorted,
+        players: sorted.map((p) => {
+          let avg = p.matches ? p.total / p.matches : 0
+          p.average = Math.round( avg * 100) / 100
+          return p
+        }),
         items: this.transform(sorted.filter(player => player.total != 0))
       })
     })

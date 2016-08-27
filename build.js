@@ -4493,12 +4493,12 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
                 'div',
                 { className: 'jumbotron',
                   style: { height: '500px' } },
-                React.createElement('img', { src: 'images/team.png',
+                React.createElement('img', { src: 'images/team-1617.png',
                   style: {
                     position: 'relative',
                     float: 'right',
                     marginLeft: '30px',
-                    '-webkit-filter': 'saturate(20%)'
+                    'WebkitFilter': 'saturate(20%)'
                   } }),
                 React.createElement(
                   'h1',
@@ -4508,7 +4508,7 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
                 React.createElement(
                   'p',
                   null,
-                  'Website gewijd aan het selectieteam voor Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je wedstrijdverslagen, statistieken en oefenstof.'
+                  'Website gewijd aan het selectieteam voor Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je onder meer wedstrijdverslagen, statistieken en oefenstof.'
                 ),
                 React.createElement(
                   'div',
@@ -31936,7 +31936,11 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 return b.total - a.total;
               });
               _this.setState({
-                players: sorted,
+                players: sorted.map(function (p) {
+                  var avg = p.matches ? p.total / p.matches : 0;
+                  p.average = Math.round(avg * 100) / 100;
+                  return p;
+                }),
                 items: _this.transform(sorted.filter(function (player) {
                   return player.total != 0;
                 }))
@@ -45903,6 +45907,421 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
     }
   };
 });
+System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, connect, Seasonal, Schedule;
+
+  return {
+    setters: [function (_npmBabelRuntime5838HelpersGetJs) {
+      _get = _npmBabelRuntime5838HelpersGetJs['default'];
+    }, function (_npmBabelRuntime5838HelpersInheritsJs) {
+      _inherits = _npmBabelRuntime5838HelpersInheritsJs['default'];
+    }, function (_npmBabelRuntime5838HelpersCreateClassJs) {
+      _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
+    }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
+      _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
+    }, function (_npmReactRedux445Js) {
+      connect = _npmReactRedux445Js.connect;
+    }, function (_appSeasonalJs) {
+      Seasonal = _appSeasonalJs['default'];
+    }],
+    execute: function () {
+      'use strict';
+
+      Schedule = (function (_Seasonal) {
+        _inherits(Schedule, _Seasonal);
+
+        function Schedule(props) {
+          _classCallCheck(this, Schedule);
+
+          _get(Object.getPrototypeOf(Schedule.prototype), 'constructor', this).call(this, props);
+          this.state = { filename: 'programma', data: [] };
+        }
+
+        _createClass(Schedule, [{
+          key: 'renderTeam',
+          value: function renderTeam(teams, idx) {
+            var team = React.createElement('td', null);
+
+            if (undefined != teams && idx < teams.length) {
+              if ("Blijdorp JO11-1" === teams[idx]) {
+                team = React.createElement(
+                  'td',
+                  null,
+                  React.createElement(
+                    'strong',
+                    null,
+                    teams[idx]
+                  )
+                );
+              } else {
+                team = React.createElement(
+                  'td',
+                  null,
+                  teams[idx]
+                );
+              }
+            }
+
+            return team;
+          }
+        }, {
+          key: 'renderMatch',
+          value: function renderMatch(m) {
+            return React.createElement(
+              'tr',
+              { key: m.date },
+              React.createElement(
+                'td',
+                { style: { width: '100px' } },
+                m.date
+              ),
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right', width: '100px' } },
+                m.time
+              ),
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right', width: '100px' } },
+                m.gather
+              ),
+              this.renderTeam(m.teams, 0),
+              this.renderTeam(m.teams, 1),
+              React.createElement(
+                'td',
+                null,
+                m.referee
+              )
+            );
+          }
+        }, {
+          key: 'render',
+          value: function render() {
+            var _this = this;
+
+            return React.createElement(
+              'div',
+              { className: 'container-fluid' },
+              React.createElement(
+                'h2',
+                null,
+                'programma'
+              ),
+              React.createElement(
+                'table',
+                { className: 'table table-hover' },
+                React.createElement(
+                  'thead',
+                  null,
+                  React.createElement(
+                    'tr',
+                    null,
+                    React.createElement(
+                      'th',
+                      null,
+                      'Datum'
+                    ),
+                    React.createElement(
+                      'th',
+                      null,
+                      'Tijdstip'
+                    ),
+                    React.createElement(
+                      'th',
+                      null,
+                      'Verzamelen'
+                    ),
+                    React.createElement(
+                      'th',
+                      null,
+                      'Thuisploeg'
+                    ),
+                    React.createElement(
+                      'th',
+                      null,
+                      'Bezoekers'
+                    ),
+                    React.createElement(
+                      'th',
+                      null,
+                      'Scheidsrechter'
+                    )
+                  )
+                ),
+                React.createElement(
+                  'tbody',
+                  null,
+                  this.state.data.map(function (m) {
+                    return _this.renderMatch(m);
+                  })
+                )
+              )
+            );
+          }
+        }]);
+
+        return Schedule;
+      })(Seasonal);
+
+      _export('Schedule', Schedule);
+
+      _export('default', connect(function (state) {
+        return {
+          season: state.season
+        };
+      })(Schedule));
+    }
+  };
+});
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.object-to-array.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.to-iobject.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      toIObject = $__require('npm:core-js@1.2.7/library/modules/$.to-iobject.js'),
+      isEnum = $.isEnum;
+  module.exports = function(isEntries) {
+    return function(it) {
+      var O = toIObject(it),
+          keys = $.getKeys(O),
+          length = keys.length,
+          i = 0,
+          result = [],
+          key;
+      while (length > i)
+        if (isEnum.call(O, key = keys[i++])) {
+          result.push(isEntries ? [key, O[key]] : O[key]);
+        }
+      return result;
+    };
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es7.object.values.js", ["npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.object-to-array.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
+      $values = $__require('npm:core-js@1.2.7/library/modules/$.object-to-array.js')(false);
+  $export($export.S, 'Object', {values: function values(it) {
+      return $values(it);
+    }});
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/object/values.js", ["npm:core-js@1.2.7/library/modules/es7.object.values.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  $__require('npm:core-js@1.2.7/library/modules/es7.object.values.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Object.values;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/values.js", ["npm:core-js@1.2.7/library/fn/object/values.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/object/values.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
+System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/values.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js', 'app/api.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Object$values, React, connect, Seasonal, get, Table;
+
+  return {
+    setters: [function (_npmBabelRuntime5838HelpersGetJs) {
+      _get = _npmBabelRuntime5838HelpersGetJs['default'];
+    }, function (_npmBabelRuntime5838HelpersInheritsJs) {
+      _inherits = _npmBabelRuntime5838HelpersInheritsJs['default'];
+    }, function (_npmBabelRuntime5838HelpersCreateClassJs) {
+      _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
+    }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
+      _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmBabelRuntime5838CoreJsObjectValuesJs) {
+      _Object$values = _npmBabelRuntime5838CoreJsObjectValuesJs['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
+    }, function (_npmReactRedux445Js) {
+      connect = _npmReactRedux445Js.connect;
+    }, function (_appSeasonalJs) {
+      Seasonal = _appSeasonalJs['default'];
+    }, function (_appApiJs) {
+      get = _appApiJs.get;
+    }],
+    execute: function () {
+      'use strict';
+
+      Table = (function (_Seasonal) {
+        _inherits(Table, _Seasonal);
+
+        function Table(props) {
+          _classCallCheck(this, Table);
+
+          _get(Object.getPrototypeOf(Table.prototype), 'constructor', this).call(this, props);
+          this.state = { filename: 'stand', data: [] };
+        }
+
+        _createClass(Table, [{
+          key: 'transform',
+          value: function transform(t) {
+            t.matches['total'] = _Object$values(t.matches).reduce(function (a, b) {
+              return a + b;
+            }, 0);
+            t['points'] = t.matches.wins * 3 + t.matches.draws;
+            t.goals['diff'] = t.goals['for'] - t.goals.against;
+            return t;
+          }
+        }, {
+          key: 'compare',
+          value: function compare(a, b) {
+            var diff = a.points - b.points;
+            if (diff === 0) {
+              diff = b.matches.total - a.matches.total;
+              if (diff === 0) {
+                diff = a.goals.diff - b.goals.diff;
+                if (diff === 0) {
+                  diff = a.team - b.team;
+                }
+              }
+            }
+
+            return diff > 0 ? -1 : 1;
+          }
+        }, {
+          key: 'fetchData',
+          value: function fetchData(season, filename) {
+            var _this = this;
+
+            get(season + '/' + filename).then(function (data) {
+              _this.setState({ data: data.map(_this.transform).sort(_this.compare) });
+            });
+          }
+        }, {
+          key: 'renderTeam',
+          value: function renderTeam(t) {
+            return React.createElement(
+              'tr',
+              { key: t.team },
+              React.createElement(
+                'td',
+                null,
+                t.team
+              ),
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right' } },
+                t.matches.total
+              ),
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right' } },
+                t.matches.wins
+              ),
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right' } },
+                t.matches.draws
+              ),
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right' } },
+                t.matches.losses
+              ),
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right' } },
+                t.points
+              ),
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right' } },
+                t.goals['for']
+              ),
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right' } },
+                t.goals.against
+              ),
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right' } },
+                t.goals.diff
+              )
+            );
+          }
+        }, {
+          key: 'renderHead',
+          value: function renderHead() {
+            var cols = ['', 'G', 'W', 'GL', 'V', 'P', 'DPV', 'DPT', 'DS'];
+            return cols.map(function (c) {
+              return React.createElement(
+                'th',
+                { style: { width: '5%', textAlign: 'right' } },
+                c
+              );
+            });
+          }
+        }, {
+          key: 'render',
+          value: function render() {
+            var _this2 = this;
+
+            return React.createElement(
+              'div',
+              { className: 'container-fluid' },
+              React.createElement(
+                'h2',
+                null,
+                'stand'
+              ),
+              React.createElement(
+                'table',
+                { className: 'table' },
+                React.createElement(
+                  'thead',
+                  null,
+                  React.createElement(
+                    'tr',
+                    null,
+                    this.renderHead()
+                  )
+                ),
+                React.createElement(
+                  'tbody',
+                  null,
+                  this.state.data.map(function (t) {
+                    return _this2.renderTeam(t);
+                  })
+                )
+              )
+            );
+          }
+        }]);
+
+        return Table;
+      })(Seasonal);
+
+      _export('Table', Table);
+
+      _export('default', connect(function (state) {
+        return {
+          season: state.season
+        };
+      })(Table));
+    }
+  };
+});
 System.registerDynamic("npm:core-js@1.2.7/library/modules/$.cof.js", [], true, function($__require, exports, module) {
   ;
   var define,
@@ -46890,8 +47309,8 @@ System.register('app/seasonal.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
     }
   };
 });
-System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, connect, Seasonal, Schedule;
+System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, connect, Seasonal, Results;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -46912,149 +47331,77 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
     execute: function () {
       'use strict';
 
-      Schedule = (function (_Seasonal) {
-        _inherits(Schedule, _Seasonal);
+      Results = (function (_Seasonal) {
+        _inherits(Results, _Seasonal);
 
-        function Schedule(props) {
-          _classCallCheck(this, Schedule);
+        function Results(props) {
+          _classCallCheck(this, Results);
 
-          _get(Object.getPrototypeOf(Schedule.prototype), 'constructor', this).call(this, props);
-          this.state = { filename: 'programma', data: [] };
+          _get(Object.getPrototypeOf(Results.prototype), 'constructor', this).call(this, props);
+          this.state = { filename: 'uitslagen', data: [] };
         }
 
-        _createClass(Schedule, [{
-          key: 'renderTeam',
-          value: function renderTeam(teams, idx) {
-            var team = React.createElement('td', null);
-
-            if (undefined != teams && idx < teams.length) {
-              if ("Blijdorp JO11-1" === teams[idx]) {
-                team = React.createElement(
-                  'td',
-                  null,
-                  React.createElement(
-                    'strong',
-                    null,
-                    teams[idx]
-                  )
-                );
-              } else {
-                team = React.createElement(
-                  'td',
-                  null,
-                  teams[idx]
-                );
-              }
-            }
-
-            return team;
-          }
-        }, {
-          key: 'renderMatch',
-          value: function renderMatch(m) {
-            return React.createElement(
-              'tr',
-              { key: m.date },
-              React.createElement(
-                'td',
-                { style: { width: '100px' } },
-                m.date
-              ),
-              React.createElement(
-                'td',
-                { style: { textAlign: 'right', width: '100px' } },
-                m.time
-              ),
-              React.createElement(
-                'td',
-                { style: { textAlign: 'right', width: '100px' } },
-                m.gather
-              ),
-              this.renderTeam(m.teams, 0),
-              this.renderTeam(m.teams, 1),
-              React.createElement(
-                'td',
+        _createClass(Results, [{
+          key: 'renderResults',
+          value: function renderResults() {
+            return this.state.data.map(function (d) {
+              return React.createElement(
+                'div',
                 null,
-                m.referee
-              )
-            );
+                React.createElement(
+                  'b',
+                  null,
+                  d.date
+                ),
+                React.createElement(
+                  'table',
+                  { className: 'table', style: { width: '300px' } },
+                  d.fixtures.map(function (f) {
+                    return React.createElement(
+                      'tr',
+                      null,
+                      React.createElement(
+                        'td',
+                        null,
+                        f[0] + ' - ' + f[1]
+                      ),
+                      React.createElement(
+                        'td',
+                        null,
+                        f.length === 4 ? f[2] + '-' + f[3] : ''
+                      )
+                    );
+                  })
+                )
+              );
+            });
           }
         }, {
           key: 'render',
           value: function render() {
-            var _this = this;
-
             return React.createElement(
               'div',
               { className: 'container-fluid' },
               React.createElement(
                 'h2',
                 null,
-                'programma'
+                'uitslagen'
               ),
-              React.createElement(
-                'table',
-                { className: 'table table-hover' },
-                React.createElement(
-                  'thead',
-                  null,
-                  React.createElement(
-                    'tr',
-                    null,
-                    React.createElement(
-                      'th',
-                      null,
-                      'Datum'
-                    ),
-                    React.createElement(
-                      'th',
-                      null,
-                      'Tijdstip'
-                    ),
-                    React.createElement(
-                      'th',
-                      null,
-                      'Verzamelen'
-                    ),
-                    React.createElement(
-                      'th',
-                      null,
-                      'Thuisploeg'
-                    ),
-                    React.createElement(
-                      'th',
-                      null,
-                      'Bezoekers'
-                    ),
-                    React.createElement(
-                      'th',
-                      null,
-                      'Scheidsrechter'
-                    )
-                  )
-                ),
-                React.createElement(
-                  'tbody',
-                  null,
-                  this.state.data.map(function (m) {
-                    return _this.renderMatch(m);
-                  })
-                )
-              )
+              this.renderResults()
             );
           }
         }]);
 
-        return Schedule;
+        return Results;
       })(Seasonal);
 
-      _export('Schedule', Schedule);
+      _export('Results', Results);
 
       _export('default', connect(function (state) {
         return {
           season: state.season
         };
-      })(Schedule));
+      })(Results));
     }
   };
 });
@@ -50824,8 +51171,8 @@ System.registerDynamic("npm:redux@3.5.2.js", ["npm:redux@3.5.2/lib/index.js"], t
   return module.exports;
 });
 
-System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-dom@15.3.1.js', 'npm:react-router@2.6.1.js', 'app/team.js', 'app/home.js', 'app/goals.js', 'app/assists.js', 'app/matches.js', 'app/choose-season.js', 'app/exercises.js', 'app/schedule.js', 'npm:react-redux@4.4.5.js', 'npm:redux@3.5.2.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, ReactDOM, Router, Route, IndexRoute, Link, browserHistory, Team, Home, Goals, Assists, Matches, ChooseSeason, Exercises, Schedule, Provider, createStore, store, baseUri, childRoutes, Main, routes;
+System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-dom@15.3.1.js', 'npm:react-router@2.6.1.js', 'app/team.js', 'app/home.js', 'app/goals.js', 'app/assists.js', 'app/matches.js', 'app/choose-season.js', 'app/exercises.js', 'app/schedule.js', 'app/table.js', 'app/results.js', 'npm:react-redux@4.4.5.js', 'npm:redux@3.5.2.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, ReactDOM, Router, Route, IndexRoute, Link, browserHistory, Team, Home, Goals, Assists, Matches, ChooseSeason, Exercises, Schedule, Table, Results, Provider, createStore, store, baseUri, childRoutes, Main, routes;
 
   function reducer(state, action) {
     if (state === undefined) state = { season: '2016-17' };
@@ -50873,6 +51220,10 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       Exercises = _appExercisesJs['default'];
     }, function (_appScheduleJs) {
       Schedule = _appScheduleJs['default'];
+    }, function (_appTableJs) {
+      Table = _appTableJs['default'];
+    }, function (_appResultsJs) {
+      Results = _appResultsJs['default'];
     }, function (_npmReactRedux445Js) {
       Provider = _npmReactRedux445Js.Provider;
     }, function (_npmRedux352Js) {
@@ -50893,18 +51244,26 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
         component: Schedule
       }, {
         id: 3,
-        path: 'wedstrijden',
-        component: Matches
+        path: 'uitslagen',
+        component: Results
       }, {
         id: 4,
-        path: 'doelpunten',
-        component: Goals
+        path: 'stand',
+        component: Table
       }, {
         id: 5,
+        path: 'verslag',
+        component: Matches
+      }, {
+        id: 6,
+        path: 'goals',
+        component: Goals
+      }, {
+        id: 7,
         path: 'assists',
         component: Assists
       }, {
-        id: 6,
+        id: 8,
         path: 'oefeningen',
         component: Exercises
       }];
