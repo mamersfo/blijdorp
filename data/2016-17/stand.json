@@ -26,13 +26,13 @@
   {
     "team": "Hillegersberg (2)",
     "matches": {
-      "wins": 0,
+      "wins": 1,
       "draws": 0,
       "losses": 0
     },
     "goals": {
-      "for": 0,
-      "against": 0
+      "for": 5,
+      "against": 1
     }
   },
   {
@@ -64,11 +64,11 @@
     "matches": {
       "wins": 0,
       "draws": 0,
-      "losses": 0
+      "losses": 1
     },
     "goals": {
-      "for": 0,
-      "against": 0
+      "for": 1,
+      "against": 5
     }
   },
   {
