@@ -47475,9 +47475,9 @@ System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) 
   return {
     setters: [function (_npmWhatwgFetch100Js) {}],
     execute: function () {
-      baseUrl = "http://localhost:3000";
 
-      // const baseUrl = "https://mamersfo.github.io"
+      // const baseUrl = "http://localhost:3000"
+      baseUrl = "https://mamersfo.github.io";
 
       get = function get(which) {
         var url = baseUrl + "/blijdorp/data/" + which + ".json";
