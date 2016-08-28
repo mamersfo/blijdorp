@@ -1,52 +1,35 @@
 [
   {
-    "date": "2016-09-03",
-    "time": "8:30",
-    "gather": "7:15",
-    "league": "Groep 2 04",
+    "date": "2016-09-03T08:30+02:00",
     "teams": ["BVCB (2)", "Blijdorp (1)"]
   },
   {
-    "date": "2016-09-10",
-    "time": "9:30",
-    "gather": "8:45",
-    "league": "Groep 2 04",
+    "date": "2016-09-10T09:30+02:00",
     "teams": ["Blijdorp (1)", "XerxesDZB (2)"],
-    "referee": "N.n.t.b."
+    "absent": "Dieuwe",
+    "referee": "Otto (?)"
   },
   {
-    "date": "2016-09-17",
-    "time": "9:30",
-    "gather": "8:15",
-    "league": "Groep 2 04",
+    "date": "2016-09-17T09:30+02:00",
     "teams": ["VVOR (1)", "Blijdorp (1)"]
   },
   {
-    "date": "2016-09-24",
-    "time": "9:30",
-    "gather": "8:45",
-    "league": "Groep 2 04",
+    "date": "2016-09-24T09:30+02:00",
     "teams": ["Blijdorp (1)", "Hillegersberg (2)"],
-    "referee": "N.n.t.b."
+    "referee": "Remon (?)"
   },
   {
-    "date": "2016-10-01",
-    "time": "8:30",
-    "league": "Groep 2 04",
+    "date": "2016-10-01T08:30+02:00",
     "teams": ["Zestienhoven (2)", "Blijdorp (1)"]
   },
   {
-    "date": "2016-10-08",
-    "time": "10:00",
-    "league": "Groep 2 04",
+    "date": "2016-10-08T10:00+02:00",
     "teams": ["TOGB (3)", "Blijdorp (1)"]
   },
   {
-    "date": "2016-10-15",
-    "time": "vrij"
+    "date": "2016-10-15T00:00+02:00"
   },
   {
-    "date": "2016-10-22",
-    "time": "vrij"
+    "date": "2016-10-22T00:00+02:00"
   }
 ]

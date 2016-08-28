@@ -3,10 +3,14 @@ import { get } from './api'
 
 export default class Seasonal extends React.Component {
 
+  transform(m) {
+    return m
+  }
+
   fetchData(season, filename) {
     let url = season + '/' + filename
     get(url).then((data) => {
-      this.setState({ data: data })
+      this.setState({ data: data.map(this.transform) })
     })
   }
 

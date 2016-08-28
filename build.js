@@ -32182,18 +32182,6 @@ System.register('app/assists.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
     }
   };
 });
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-object.js", ["npm:core-js@1.2.7/library/modules/$.defined.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js');
-  module.exports = function(it) {
-    return Object(defined(it));
-  };
-  return module.exports;
-});
-
 System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.keys.js", ["npm:core-js@1.2.7/library/modules/$.to-object.js", "npm:core-js@1.2.7/library/modules/$.object-sap.js"], true, function($__require, exports, module) {
   ;
   var define,
@@ -45980,8 +45968,94 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
     }
   };
 });
-System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, connect, Seasonal, Schedule;
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-object.js", ["npm:core-js@1.2.7/library/modules/$.defined.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js');
+  module.exports = function(it) {
+    return Object(defined(it));
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.object-assign.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.to-object.js", "npm:core-js@1.2.7/library/modules/$.iobject.js", "npm:core-js@1.2.7/library/modules/$.fails.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      toObject = $__require('npm:core-js@1.2.7/library/modules/$.to-object.js'),
+      IObject = $__require('npm:core-js@1.2.7/library/modules/$.iobject.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.fails.js')(function() {
+    var a = Object.assign,
+        A = {},
+        B = {},
+        S = Symbol(),
+        K = 'abcdefghijklmnopqrst';
+    A[S] = 7;
+    K.split('').forEach(function(k) {
+      B[k] = k;
+    });
+    return a({}, A)[S] != 7 || Object.keys(a({}, B)).join('') != K;
+  }) ? function assign(target, source) {
+    var T = toObject(target),
+        $$ = arguments,
+        $$len = $$.length,
+        index = 1,
+        getKeys = $.getKeys,
+        getSymbols = $.getSymbols,
+        isEnum = $.isEnum;
+    while ($$len > index) {
+      var S = IObject($$[index++]),
+          keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S),
+          length = keys.length,
+          j = 0,
+          key;
+      while (length > j)
+        if (isEnum.call(S, key = keys[j++]))
+          T[key] = S[key];
+    }
+    return T;
+  } : Object.assign;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.assign.js", ["npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.object-assign.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js');
+  $export($export.S + $export.F, 'Object', {assign: $__require('npm:core-js@1.2.7/library/modules/$.object-assign.js')});
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/object/assign.js", ["npm:core-js@1.2.7/library/modules/es6.object.assign.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  $__require('npm:core-js@1.2.7/library/modules/es6.object.assign.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Object.assign;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/assign.js", ["npm:core-js@1.2.7/library/fn/object/assign.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/object/assign.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
+System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, connect, Seasonal, Schedule;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -45992,6 +46066,8 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmBabelRuntime5838CoreJsObjectAssignJs) {
+      _Object$assign = _npmBabelRuntime5838CoreJsObjectAssignJs['default'];
     }, function (_npmReact1531Js) {
       React = _npmReact1531Js['default'];
     }, function (_npmReactRedux445Js) {
@@ -46013,31 +46089,46 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
         }
 
         _createClass(Schedule, [{
+          key: 'transform',
+          value: function transform(m) {
+            var date = new Date(m.date);
+            return _Object$assign(m, { date: date, date: date });
+          }
+        }, {
+          key: 'gatheringTime',
+          value: function gatheringTime(m) {
+            if (undefined !== m.teams) {
+              if ("Blijdorp (1)" === m.teams[0]) {
+                m.date.setMinutes(m.date.getMinutes() - 45);
+              } else {
+                m.date.setMinutes(m.date.getMinutes() - 75);
+              }
+              return m.date.toLocaleTimeString('NL-nl', { hour: '2-digit', minute: '2-digit' });
+            }
+            return '';
+          }
+        }, {
           key: 'renderTeam',
           value: function renderTeam(teams, idx) {
             var team = React.createElement('td', null);
 
             if (undefined != teams && idx < teams.length) {
-              if ("Blijdorp JO11-1" === teams[idx]) {
+              if ("Blijdorp (1)" === teams[idx]) {
                 team = React.createElement(
-                  'td',
-                  null,
-                  React.createElement(
-                    'strong',
-                    null,
-                    teams[idx]
-                  )
-                );
-              } else {
-                team = React.createElement(
-                  'td',
+                  'strong',
                   null,
                   teams[idx]
                 );
+              } else {
+                team = teams[idx];
               }
             }
 
-            return team;
+            return React.createElement(
+              'td',
+              null,
+              team
+            );
           }
         }, {
           key: 'renderMatch',
@@ -46047,25 +46138,73 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
               { key: m.date },
               React.createElement(
                 'td',
-                { style: { width: '100px' } },
-                m.date
+                null,
+                m.date.toLocaleDateString('NL-nl', { day: 'numeric', month: 'long' })
               ),
               React.createElement(
                 'td',
-                { style: { textAlign: 'right', width: '100px' } },
-                m.time
+                null,
+                m.teams ? m.date.toLocaleTimeString('Nl-nl', { hour: '2-digit', minute: '2-digit' }) : 'vrij'
               ),
               React.createElement(
                 'td',
-                { style: { textAlign: 'right', width: '100px' } },
-                m.gather
+                null,
+                this.gatheringTime(m)
               ),
               this.renderTeam(m.teams, 0),
               this.renderTeam(m.teams, 1),
               React.createElement(
                 'td',
                 null,
+                m.absent
+              ),
+              React.createElement(
+                'td',
+                null,
                 m.referee
+              )
+            );
+          }
+        }, {
+          key: 'renderHead',
+          value: function renderHead() {
+            return React.createElement(
+              'tr',
+              null,
+              React.createElement(
+                'th',
+                { style: { width: '15%' } },
+                'Datum'
+              ),
+              React.createElement(
+                'th',
+                { style: { width: '10%' } },
+                'Aftrap'
+              ),
+              React.createElement(
+                'th',
+                { style: { width: '10%' } },
+                'Verzamelen'
+              ),
+              React.createElement(
+                'th',
+                { style: { width: '20%' } },
+                'Thuisploeg'
+              ),
+              React.createElement(
+                'th',
+                { style: { width: '20%' } },
+                'Bezoekers'
+              ),
+              React.createElement(
+                'th',
+                null,
+                'Afmeldingen'
+              ),
+              React.createElement(
+                'th',
+                null,
+                'Scheidsrechter'
               )
             );
           }
@@ -46088,40 +46227,7 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 React.createElement(
                   'thead',
                   null,
-                  React.createElement(
-                    'tr',
-                    null,
-                    React.createElement(
-                      'th',
-                      null,
-                      'Datum'
-                    ),
-                    React.createElement(
-                      'th',
-                      null,
-                      'Tijdstip'
-                    ),
-                    React.createElement(
-                      'th',
-                      null,
-                      'Verzamelen'
-                    ),
-                    React.createElement(
-                      'th',
-                      null,
-                      'Thuisploeg'
-                    ),
-                    React.createElement(
-                      'th',
-                      null,
-                      'Bezoekers'
-                    ),
-                    React.createElement(
-                      'th',
-                      null,
-                      'Scheidsrechter'
-                    )
-                  )
+                  this.renderHead()
                 ),
                 React.createElement(
                   'tbody',
@@ -47352,13 +47458,18 @@ System.register('app/seasonal.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
         }
 
         _createClass(Seasonal, [{
+          key: 'transform',
+          value: function transform(m) {
+            return m;
+          }
+        }, {
           key: 'fetchData',
           value: function fetchData(season, filename) {
             var _this = this;
 
             var url = season + '/' + filename;
             get(url).then(function (data) {
-              _this.setState({ data: data });
+              _this.setState({ data: data.map(_this.transform) });
             });
           }
         }, {
