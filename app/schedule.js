@@ -9,9 +9,11 @@ export class Schedule extends Seasonal {
     this.state = { filename: 'programma', data: [] }
   }
 
-  transform(m) {
-    let date = new Date(m.date)
-    return Object.assign(m, { date, date } )
+  postProcess(data) {
+    return data.map((m) => {
+      let date = new Date(m.date)
+      return Object.assign(m, { date, date } )
+    })
   }
 
   gatheringTime(m) {

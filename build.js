@@ -32218,8 +32218,8 @@ System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/keys.js", ["npm:
   return module.exports;
 });
 
-System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-sanfona@0.0.14.js', 'app/seasonal.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Object$keys, React, connect, Accordion, AccordionItem, Seasonal, Matches;
+System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-sanfona@0.0.14.js', 'app/seasonal.js', 'app/api.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Object$keys, React, connect, Accordion, AccordionItem, Seasonal, get, Matches;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -32241,6 +32241,8 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       AccordionItem = _npmReactSanfona0014Js.AccordionItem;
     }, function (_appSeasonalJs) {
       Seasonal = _appSeasonalJs['default'];
+    }, function (_appApiJs) {
+      get = _appApiJs.get;
     }],
     execute: function () {
       'use strict';
@@ -32253,6 +32255,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
 
           _get(Object.getPrototypeOf(Matches.prototype), 'constructor', this).call(this, props);
           this.state = { filename: 'matches', data: [] };
+          this.handleChange = this.handleChange.bind(this);
         }
 
         _createClass(Matches, [{
@@ -32261,6 +32264,28 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
             return m ? _Object$keys(m).map(function (k) {
               return k + ' (' + m[k] + ') ';
             }) : 'geen';
+          }
+        }, {
+          key: 'renderContent',
+          value: function renderContent(m, idx) {
+            var content = '';
+
+            switch (m.type) {
+              case 'text':
+                content = m.text;
+                break;
+              case 'youtube':
+                content = React.createElement('iframe', { width: 420, height: 236, src: 'https://www.youtube.com/embed/' + m.videoId });
+                break;
+              default:
+                break;
+            }
+
+            return React.createElement(
+              'p',
+              { key: m.date + '-' + idx },
+              content
+            );
           }
         }, {
           key: 'renderReport',
@@ -32272,13 +32297,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 React.createElement(
                   'div',
                   { style: { color: '#ababab' } },
-                  m.report.content ? m.report.content.map(function (p) {
-                    return React.createElement(
-                      'p',
-                      null,
-                      p
-                    );
-                  }) : null
+                  m.report.content ? m.report.content.map(this.renderContent) : null
                 ),
                 React.createElement(
                   'div',
@@ -32299,83 +32318,118 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
               'table',
               { className: 'table' },
               React.createElement(
-                'tr',
+                'tbody',
                 null,
                 React.createElement(
-                  'td',
-                  { style: { width: '100px' } },
-                  'Datum:'
+                  'tr',
+                  null,
+                  React.createElement(
+                    'td',
+                    { style: { width: '100px' } },
+                    'Datum:'
+                  ),
+                  React.createElement(
+                    'td',
+                    null,
+                    m.date
+                  )
                 ),
                 React.createElement(
-                  'td',
+                  'tr',
                   null,
-                  m.date
-                )
-              ),
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  null,
-                  'Competitie:'
+                  React.createElement(
+                    'td',
+                    null,
+                    'Competitie:'
+                  ),
+                  React.createElement(
+                    'td',
+                    null,
+                    m.league
+                  )
                 ),
                 React.createElement(
-                  'td',
+                  'tr',
                   null,
-                  m.league
-                )
-              ),
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  null,
-                  'Uitslag:'
+                  React.createElement(
+                    'td',
+                    null,
+                    'Uitslag:'
+                  ),
+                  React.createElement(
+                    'td',
+                    null,
+                    m.result[0] + ' - ' + m.result[1]
+                  )
                 ),
                 React.createElement(
-                  'td',
+                  'tr',
                   null,
-                  m.result[0] + ' - ' + m.result[1]
-                )
-              ),
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  null,
-                  'Doelpunten:'
+                  React.createElement(
+                    'td',
+                    null,
+                    'Doelpunten:'
+                  ),
+                  React.createElement(
+                    'td',
+                    null,
+                    this.renderMap(m.goals)
+                  )
                 ),
                 React.createElement(
-                  'td',
+                  'tr',
                   null,
-                  this.renderMap(m.goals)
-                )
-              ),
-              React.createElement(
-                'tr',
-                null,
-                React.createElement(
-                  'td',
-                  null,
-                  'Assists:'
-                ),
-                React.createElement(
-                  'td',
-                  null,
-                  this.renderMap(m.assists)
+                  React.createElement(
+                    'td',
+                    null,
+                    'Assists:'
+                  ),
+                  React.createElement(
+                    'td',
+                    null,
+                    this.renderMap(m.assists)
+                  )
                 )
               )
             );
           }
         }, {
-          key: 'renderItems',
-          value: function renderItems() {
+          key: 'postProcess',
+          value: function postProcess(data) {
+            return data.reduce(function (a, b) {
+              a[b.date] = b;return a;
+            }, {});
+          }
+        }, {
+          key: 'handleChange',
+          value: function handleChange(a) {
             var _this = this;
 
-            return this.state.data.map(function (m) {
+            var key = a.activeItems[0];
+            if (key) {
+              (function () {
+                var data = _this.state.data;
+
+                var match = data[key];
+                if (undefined === match.report) {
+                  get('reports/' + key).then(function (json) {
+                    match.report = json;
+                    data[key] = match;
+                    _this.setState({ data: data });
+                  });
+                }
+              })();
+            }
+          }
+        }, {
+          key: 'renderItems',
+          value: function renderItems() {
+            var _this2 = this;
+
+            var data = this.state.data;
+
+            return _Object$keys(data).map(function (k) {
+              var m = data[k];
               var title = m.teams[0] + ' - ' + m.teams[1];
               return React.createElement(
                 AccordionItem,
@@ -32383,8 +32437,8 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 React.createElement(
                   'div',
                   null,
-                  _this.renderTable(m),
-                  _this.renderReport(m)
+                  _this2.renderTable(m),
+                  _this2.renderReport(m)
                 )
               );
             });
@@ -32408,7 +32462,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                   { className: 'col-md-10' },
                   React.createElement(
                     Accordion,
-                    { style: { margin: '0px' } },
+                    { style: { margin: '0px' }, onChange: this.handleChange },
                     this.renderItems()
                   )
                 )
@@ -46089,10 +46143,12 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
         }
 
         _createClass(Schedule, [{
-          key: 'transform',
-          value: function transform(m) {
-            var date = new Date(m.date);
-            return _Object$assign(m, { date: date, date: date });
+          key: 'postProcess',
+          value: function postProcess(data) {
+            return data.map(function (m) {
+              var date = new Date(m.date);
+              return _Object$assign(m, { date: date, date: date });
+            });
           }
         }, {
           key: 'gatheringTime',
@@ -47458,9 +47514,9 @@ System.register('app/seasonal.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
         }
 
         _createClass(Seasonal, [{
-          key: 'transform',
-          value: function transform(m) {
-            return m;
+          key: 'postProcess',
+          value: function postProcess(data) {
+            return data;
           }
         }, {
           key: 'fetchData',
@@ -47469,7 +47525,7 @@ System.register('app/seasonal.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
 
             var url = season + '/' + filename;
             get(url).then(function (data) {
-              _this.setState({ data: data.map(_this.transform) });
+              _this.setState({ data: _this.postProcess(data) });
             });
           }
         }, {
