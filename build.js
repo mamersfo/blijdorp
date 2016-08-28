@@ -32275,7 +32275,11 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 content = m.text;
                 break;
               case 'youtube':
-                content = React.createElement('iframe', { width: 420, height: 236, src: 'https://www.youtube.com/embed/' + m.videoId });
+                var src = 'https://www.youtube.com/embed/' + m.videoId;
+                content = React.createElement('iframe', { width: 420, height: 235, src: src });
+                break;
+              case 'image':
+                content = React.createElement('img', { src: m.src });
                 break;
               default:
                 break;
@@ -32452,7 +32456,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
               React.createElement(
                 'h2',
                 null,
-                'wedstrijden'
+                'verslag'
               ),
               React.createElement(
                 'div',
@@ -46145,6 +46149,7 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
         _createClass(Schedule, [{
           key: 'postProcess',
           value: function postProcess(data) {
+            console.log('postProcess');
             return data.map(function (m) {
               var date = new Date(m.date);
               return _Object$assign(m, { date: date, date: date });
@@ -46154,12 +46159,13 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
           key: 'gatheringTime',
           value: function gatheringTime(m) {
             if (undefined !== m.teams) {
+              var clone = new Date(m.date.getTime());
               if ("Blijdorp (1)" === m.teams[0]) {
-                m.date.setMinutes(m.date.getMinutes() - 45);
+                clone.setMinutes(m.date.getMinutes() - 45);
               } else {
-                m.date.setMinutes(m.date.getMinutes() - 75);
+                clone.setMinutes(m.date.getMinutes() - 75);
               }
-              return m.date.toLocaleTimeString('NL-nl', { hour: '2-digit', minute: '2-digit' });
+              return clone.toLocaleTimeString('NL-nl', { hour: '2-digit', minute: '2-digit' });
             }
             return '';
           }
@@ -47469,9 +47475,9 @@ System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) 
   return {
     setters: [function (_npmWhatwgFetch100Js) {}],
     execute: function () {
+      baseUrl = "http://localhost:3000";
 
-      // const baseUrl = "http://localhost:3000"
-      baseUrl = "https://mamersfo.github.io";
+      // const baseUrl = "https://mamersfo.github.io"
 
       get = function get(which) {
         var url = baseUrl + "/blijdorp/data/" + which + ".json";
@@ -51496,7 +51502,7 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
         component: Matches
       }, {
         id: 6,
-        path: 'goals',
+        path: 'doelpunten',
         component: Goals
       }, {
         id: 7,

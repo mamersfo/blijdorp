@@ -23,10 +23,14 @@ export class Matches extends Seasonal {
       case 'text':
         content = m.text
         break
-    case 'youtube':
-      content = <iframe width={420} height={236} src={'https://www.youtube.com/embed/' + m.videoId}></iframe>
+      case 'youtube':
+        const src = 'https://www.youtube.com/embed/' + m.videoId
+        content = <iframe width={420} height={235} src={src}></iframe>
         break
-    default:
+      case 'image':
+        content = <img src={m.src}></img>
+        break
+      default:
         break
     }
 
@@ -100,7 +104,7 @@ export class Matches extends Seasonal {
   render() {
     return (
       <div className='container-fluid'>
-        <h2>wedstrijden</h2>
+        <h2>verslag</h2>
         <div className='row'>
           <div className='col-md-10'>
             <Accordion style={{margin: '0px'}} onChange={this.handleChange}>

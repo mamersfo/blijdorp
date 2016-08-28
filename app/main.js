@@ -55,7 +55,7 @@ const childRoutes = [
   },
   {
     id: 6,
-    path: 'goals',
+    path: 'doelpunten',
     component: Goals
   },
   {

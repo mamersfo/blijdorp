@@ -10,6 +10,7 @@ export class Schedule extends Seasonal {
   }
 
   postProcess(data) {
+    console.log('postProcess')
     return data.map((m) => {
       let date = new Date(m.date)
       return Object.assign(m, { date, date } )
@@ -18,12 +19,13 @@ export class Schedule extends Seasonal {
 
   gatheringTime(m) {
     if ( undefined !== m.teams ) {
+      const clone = new Date(m.date.getTime())
       if ( "Blijdorp (1)" === m.teams[0] ) {
-        m.date.setMinutes(m.date.getMinutes() - 45)
+        clone.setMinutes(m.date.getMinutes() - 45)
       } else {
-        m.date.setMinutes(m.date.getMinutes() - 75)
+        clone.setMinutes(m.date.getMinutes() - 75)
       }
-      return m.date.toLocaleTimeString(
+      return clone.toLocaleTimeString(
         'NL-nl', { hour: '2-digit', minute: '2-digit' } )
     }
     return ''
