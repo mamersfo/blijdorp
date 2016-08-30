@@ -10,7 +10,6 @@ export class Schedule extends Seasonal {
   }
 
   postProcess(data) {
-    console.log('postProcess')
     return data.map((m) => {
       let date = new Date(m.date)
       return Object.assign(m, { date, date } )

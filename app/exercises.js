@@ -27,6 +27,8 @@ export default class Exercises extends React.Component {
       ],
       selected: []
     }
+
+    this.handleChange = this.handleChange.bind(this)
   }
 
   componentDidMount() {
@@ -38,18 +40,20 @@ export default class Exercises extends React.Component {
   }
 
   parseVariations(s) {
-    if ( s.indexOf(';') != -1 ) {
-      return s.split(';').map((v) => {
-        if ( v.indexOf(',') !== -1 ) {
-          let parts = v.split(',')
-          return parts.slice(1).map((p) => p.split('=')).reduce( (prev, next) => {
-            prev[next[0].trim()] = next[1].trim()
-            return prev }, {n: parts[0]} )
-        }
-        else {
-          return {n: v}
-        }
-      })
+    if ( s ) {
+      if ( s.indexOf(';') != -1 ) {
+        return s.split(';').map((v) => {
+          if ( v.indexOf(',') !== -1 ) {
+            let parts = v.split(',')
+            return parts.slice(1).map((p) => p.split('=')).reduce( (prev, next) => {
+              prev[next[0].trim()] = next[1].trim()
+              return prev }, {n: parts[0]} )
+          }
+          else {
+            return {n: v}
+          }
+        })
+      }
     }
 
     return []
@@ -71,9 +75,13 @@ export default class Exercises extends React.Component {
     }
   }
 
-  renderVariations(s) {
-    let maps = this.parseVariations(s)
+  renderVariations(e) {
+    if ( 'string' === typeof(e.variations) ) {
+      return null
+    }
 
+    let maps = e.variations
+    
     if ( maps.length > 0 ) {
       let items = maps.map((m) => {
         return (
@@ -125,14 +133,29 @@ export default class Exercises extends React.Component {
     }
   }
 
+  handleChange(e) {
+    let idx = e.activeItems[0]
+    if ( idx ) {
+      let { exercises } = this.state
+      let exercise = exercises[idx]
+
+      if ( 'string' === typeof(exercise.variations)) {
+         let maps = this.parseVariations(exercise.variations)
+        exercise.variations = maps
+        exercises[idx] = exercise
+        this.setState({exercises: exercises})
+      }
+    }
+  }
+
   renderExercises() {
     let selected = this.state.selected.length > 0 ?
         this.state.selected : this.state.exercises
-    return selected.map((m) => {
+    return selected.map((m, idx) => {
       return (
-        <AccordionItem title={m.name} slug={m.uuid} key={m.uuid}>
+        <AccordionItem title={m.name} slug={idx} key={m.uuid}>
           { this.renderExerciseText(m) }
-          { this.renderVariations(m.variations) }
+          { this.renderVariations(m) }
         </AccordionItem>  
       )
     })
@@ -180,7 +203,7 @@ export default class Exercises extends React.Component {
             </fieldset>
           </div>
           <div className='col-md-8'>
-            <Accordion style={{margin: '0px'}}>
+            <Accordion style={{margin: '0px'}} onChange={this.handleChange}>
             { this.renderExercises() }
             </Accordion>
           </div>
