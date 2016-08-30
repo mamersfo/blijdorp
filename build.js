@@ -45787,6 +45787,8 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             categories: [{ id: 'c-1', title: 'Looptraining', checked: false }, { id: 'c-2', title: 'Krachttraining', checked: false }, { id: 'c-3', title: 'Motoriektraining', checked: false }, { id: 'c-4', title: 'Samenspelen en druk zetten', checked: false }, { id: 'c-5', title: 'Dribbelen en afpakken', checked: false }, { id: 'c-6', title: 'Scoren en tegenhouden', checked: false }, { id: 'c-7', title: 'Positiespel', checked: false }, { id: 'c-8', title: 'Standaard-situaties', checked: false }],
             selected: []
           };
+
+          this.handleChange = this.handleChange.bind(this);
         }
 
         _createClass(Exercises, [{
@@ -45803,20 +45805,22 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
         }, {
           key: 'parseVariations',
           value: function parseVariations(s) {
-            if (s.indexOf(';') != -1) {
-              return s.split(';').map(function (v) {
-                if (v.indexOf(',') !== -1) {
-                  var parts = v.split(',');
-                  return parts.slice(1).map(function (p) {
-                    return p.split('=');
-                  }).reduce(function (prev, next) {
-                    prev[next[0].trim()] = next[1].trim();
-                    return prev;
-                  }, { n: parts[0] });
-                } else {
-                  return { n: v };
-                }
-              });
+            if (s) {
+              if (s.indexOf(';') != -1) {
+                return s.split(';').map(function (v) {
+                  if (v.indexOf(',') !== -1) {
+                    var parts = v.split(',');
+                    return parts.slice(1).map(function (p) {
+                      return p.split('=');
+                    }).reduce(function (prev, next) {
+                      prev[next[0].trim()] = next[1].trim();
+                      return prev;
+                    }, { n: parts[0] });
+                  } else {
+                    return { n: v };
+                  }
+                });
+              }
             }
 
             return [];
@@ -45848,10 +45852,14 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
           }
         }, {
           key: 'renderVariations',
-          value: function renderVariations(s) {
+          value: function renderVariations(e) {
             var _this2 = this;
 
-            var maps = this.parseVariations(s);
+            if ('string' === typeof e.variations) {
+              return null;
+            }
+
+            var maps = e.variations;
 
             if (maps.length > 0) {
               var items = maps.map(function (m) {
@@ -45923,17 +45931,34 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             }
           }
         }, {
+          key: 'handleChange',
+          value: function handleChange(e) {
+            var idx = e.activeItems[0];
+            if (idx) {
+              var exercises = this.state.exercises;
+
+              var exercise = exercises[idx];
+
+              if ('string' === typeof exercise.variations) {
+                var maps = this.parseVariations(exercise.variations);
+                exercise.variations = maps;
+                exercises[idx] = exercise;
+                this.setState({ exercises: exercises });
+              }
+            }
+          }
+        }, {
           key: 'renderExercises',
           value: function renderExercises() {
             var _this3 = this;
 
             var selected = this.state.selected.length > 0 ? this.state.selected : this.state.exercises;
-            return selected.map(function (m) {
+            return selected.map(function (m, idx) {
               return React.createElement(
                 AccordionItem,
-                { title: m.name, slug: m.uuid, key: m.uuid },
+                { title: m.name, slug: idx, key: m.uuid },
                 _this3.renderExerciseText(m),
-                _this3.renderVariations(m.variations)
+                _this3.renderVariations(m)
               );
             });
           }
@@ -46010,7 +46035,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                   { className: 'col-md-8' },
                   React.createElement(
                     Accordion,
-                    { style: { margin: '0px' } },
+                    { style: { margin: '0px' }, onChange: this.handleChange },
                     this.renderExercises()
                   )
                 )
@@ -46149,7 +46174,6 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
         _createClass(Schedule, [{
           key: 'postProcess',
           value: function postProcess(data) {
-            console.log('postProcess');
             return data.map(function (m) {
               var date = new Date(m.date);
               return _Object$assign(m, { date: date, date: date });
