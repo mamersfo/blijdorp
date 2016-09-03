@@ -59,6 +59,26 @@ export default class Exercises extends React.Component {
     return []
   }
 
+  renderVideo(m) {
+    if ( undefined === m.v ) {
+      return <span>{m.n}</span>
+    } else {
+      let url = 'https://www.youtube.com/embed/' + m.v +
+          '?start=' + ( undefined !== m.t ? m.t : 0 )
+      let img = 'images/' + m.s + '.png'
+      return (
+        <div>
+          <div>{m.n}<img src={img}
+            style={{float: 'right', width: '24px', height: '24px'}}></img>
+          </div>
+          <iframe style={{marginTop: '12px'}}
+            width={420} height={235} src={url}
+            frameborder={0} allowFullscreen={true}></iframe>
+        </div>
+      )      
+    }    
+  }
+
   renderLink(m) {
     if ( undefined === m.v ) {
       return <span>{m.n}</span>
@@ -86,7 +106,7 @@ export default class Exercises extends React.Component {
       let items = maps.map((m) => {
         return (
           <li className='list-group-item'>
-            {this.renderLink(m)}
+            {this.renderVideo(m)}
           </li>
         )
       })

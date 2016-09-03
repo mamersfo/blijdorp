@@ -36,7 +36,7 @@ export default class Home extends React.Component {
         position: 'relative',
         float: 'right',
         marginLeft: '30px',
-        'WebkitFilter': 'saturate(20%)'
+        'WebkitFilter': 'saturate(30%)'
       }}>
         </img>
         <h1>Blijdorp JO11-1</h1>

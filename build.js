@@ -4570,7 +4570,7 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
                     position: 'relative',
                     float: 'right',
                     marginLeft: '30px',
-                    'WebkitFilter': 'saturate(20%)'
+                    'WebkitFilter': 'saturate(30%)'
                   } }),
                 React.createElement(
                   'h1',
@@ -32279,7 +32279,11 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 content = React.createElement('iframe', { width: 420, height: 235, src: src });
                 break;
               case 'image':
-                content = React.createElement('img', { src: m.src });
+                content = m.download ? React.createElement(
+                  'a',
+                  { href: m.download, target: '_blank' },
+                  React.createElement('img', { src: m.src })
+                ) : React.createElement('img', { src: m.src });
                 break;
               default:
                 break;
@@ -45826,6 +45830,34 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             return [];
           }
         }, {
+          key: 'renderVideo',
+          value: function renderVideo(m) {
+            if (undefined === m.v) {
+              return React.createElement(
+                'span',
+                null,
+                m.n
+              );
+            } else {
+              var url = 'https://www.youtube.com/embed/' + m.v + '?start=' + (undefined !== m.t ? m.t : 0);
+              var img = 'images/' + m.s + '.png';
+              return React.createElement(
+                'div',
+                null,
+                React.createElement(
+                  'div',
+                  null,
+                  m.n,
+                  React.createElement('img', { src: img,
+                    style: { float: 'right', width: '24px', height: '24px' } })
+                ),
+                React.createElement('iframe', { style: { marginTop: '12px' },
+                  width: 420, height: 235, src: url,
+                  frameborder: 0, allowFullscreen: true })
+              );
+            }
+          }
+        }, {
           key: 'renderLink',
           value: function renderLink(m) {
             if (undefined === m.v) {
@@ -45866,7 +45898,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                 return React.createElement(
                   'li',
                   { className: 'list-group-item' },
-                  _this2.renderLink(m)
+                  _this2.renderVideo(m)
                 );
               });
 

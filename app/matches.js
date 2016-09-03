@@ -28,7 +28,7 @@ export class Matches extends Seasonal {
         content = <iframe width={420} height={235} src={src}></iframe>
         break
       case 'image':
-        content = <img src={m.src}></img>
+        content = m.download ? <a href={m.download} target='_blank'><img src={m.src}></img></a> : <img src={m.src}></img>
         break
       default:
         break
