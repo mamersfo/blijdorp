@@ -52,11 +52,11 @@
     "matches": {
       "wins": 0,
       "draws": 0,
-      "losses": 1
+      "losses": 2
     },
     "goals": {
-      "for": 1,
-      "against": 7
+      "for": 3,
+      "against": 16
     }
   },
   {
@@ -74,13 +74,13 @@
   {
     "team": "XerxesDZB (2)",
     "matches": {
-      "wins": 1,
+      "wins": 2,
       "draws": 0,
       "losses": 0
     },
     "goals": {
-      "for": 8,
-      "against": 0
+      "for": 17,
+      "against": 2
     }
   },
   {
