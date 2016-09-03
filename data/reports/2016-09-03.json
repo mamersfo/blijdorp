@@ -2,6 +2,22 @@
   "author": "Otto en Luc",
   "content": [
     {
+      "type": "text",
+      "text": "De gelijkmaker (1-1), door Jonas."
+    },
+    {
+      "type": "youtube",
+      "videoId": "M1MaAZnKxHM"
+    },
+    {
+      "type": "text",
+      "text": "De aansluitingstreffer (3-2), door Fadi."
+    },
+    {
+      "type": "youtube",
+      "videoId": "TRRRyl1NgAA"
+    },
+    {
       "type": "image",
       "src": "images/team-1617.png",
       "download": "https://dl.dropboxusercontent.com/u/13853739/IMG_1565.png"
