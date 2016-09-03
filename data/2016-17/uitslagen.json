@@ -1,6 +1,15 @@
 [
   {
-    "date": "2016-09-27",
+    "date": "2016-09-03",
+    "fixtures": [
+      ["XerxesDZB (2)", "VOC (4)"],
+      ["Hillegersberg (2)", "Zestienhoven (2)"],
+      ["TOGB (3)", "VVOR (1)", 2, 7],
+      ["BVCB (2)", "Blijdorp (1)", 4, 2]
+    ]
+  },
+  {
+    "date": "2016-08-27",
     "fixtures": [
       ["BVCV (2)", "TOGB (3)", 9, 0],
       ["VVOR (1)", "Hillegersberg (2)", 1, 5],

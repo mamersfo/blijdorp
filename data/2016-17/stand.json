@@ -4,23 +4,23 @@
     "matches": {
       "wins": 1,
       "draws": 0,
-      "losses": 0
+      "losses": 1
     },
     "goals": {
-      "for": 7,
-      "against": 1
+      "for": 9,
+      "against": 5
     }
   },
   {
     "team": "BVCB (2)",
     "matches": {
-      "wins": 1,
+      "wins": 2,
       "draws": 0,
       "losses": 0
     },
     "goals": {
-      "for": 9,
-      "against": 0
+      "for": 13,
+      "against": 2
     }
   },
   {
@@ -40,11 +40,11 @@
     "matches": {
       "wins": 0,
       "draws": 0,
-      "losses": 1
+      "losses": 2
     },
     "goals": {
-      "for": 0,
-      "against": 9
+      "for": 2,
+      "against": 16
     }
   },
   {
@@ -62,13 +62,13 @@
   {
     "team": "VVOR (1)",
     "matches": {
-      "wins": 0,
+      "wins": 1,
       "draws": 0,
       "losses": 1
     },
     "goals": {
-      "for": 1,
-      "against": 5
+      "for": 8,
+      "against": 7
     }
   },
   {
