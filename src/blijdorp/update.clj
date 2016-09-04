@@ -58,7 +58,7 @@
         table (atom (reduce #(assoc %1 %2 stats) {} teams))]
     (loop [matches matches]
       (if (empty? matches)
-        @table
+        (map #(assoc (get @table %) :team %) (keys @table))
         (let [match (first matches)
               home-team (first match)
               away-team (second match)
