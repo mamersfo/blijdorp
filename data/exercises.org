@@ -1022,6 +1022,19 @@ Partijtje met vier doeltjes, met vier teams van 2 tegen elkaar.
 ***** Tag: tegenhouden
 ***** Tag: vrijlopen
 ***** Variation: 2 tegen 2 tegen 2 tegen 2
+**** Exercise: Omschakelen
+Posities worden aangeduid met zes hoedjes voor verdedigende stelling
+(veld klein maken) en aanvallende stelling (veld groot maken). Bij het
+roepen van 'omschakelen!' veranderen de spelers van stelling, elk voor
+hun eigen positie.
+***** UUID: c75be7da-5412-4ad4-9631-b4a864b847a1
+***** Station: 0
+***** Tag: omschakelen
+***** Tag: organisatie
+***** Tag: compact
+***** Tag: counteren
+***** Variation: Zonder hoedjes
+***** Variation: Voetballen tegen 3 of 4 tegenstanders
 *** Category: Standaard-situaties
 **** Exercise: Keeperbal
 Keeper gooit of passt de bal naar een van de vleugelverdedigers die
