@@ -32076,25 +32076,25 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
               React.createElement(
                 TableHeaderColumn,
                 { dataField: 'name', dataSort: true, width: '100' },
-                'Player'
+                'Speler'
               ),
               React.createElement(
                 TableHeaderColumn,
                 { dataField: 'total', dataSort: true, width: '100',
                   dataAlign: 'end' },
-                'Total'
+                'Totaal'
               ),
               React.createElement(
                 TableHeaderColumn,
                 { dataField: 'matches', dataSort: true, width: '100',
                   dataAlign: 'end' },
-                'Matches'
+                'Wedstrijden'
               ),
               React.createElement(
                 TableHeaderColumn,
                 { dataField: 'average', dataSort: true, width: '100',
                   dataAlign: 'end' },
-                'Average'
+                'Gemiddelde'
               )
             );
           }

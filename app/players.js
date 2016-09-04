@@ -77,19 +77,19 @@ export class Players extends React.Component {
           Id
         </TableHeaderColumn>
         <TableHeaderColumn dataField='name' dataSort={true} width='100'>
-          Player
+          Speler
         </TableHeaderColumn>
         <TableHeaderColumn dataField='total' dataSort={true} width='100'
           dataAlign='end'>
-          Total
+          Totaal
         </TableHeaderColumn>
         <TableHeaderColumn dataField='matches' dataSort={true} width='100'
           dataAlign='end'>
-          Matches
+          Wedstrijden
         </TableHeaderColumn>
         <TableHeaderColumn dataField='average' dataSort={true} width='100'
           dataAlign='end'>
-          Average
+          Gemiddelde
         </TableHeaderColumn>
       </BootstrapTable>      
     )
