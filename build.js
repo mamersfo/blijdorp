@@ -45824,7 +45824,7 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
             var team = React.createElement('td', null);
 
             if (undefined != teams && idx < teams.length) {
-              if ("Blijdorp (1)" === teams[idx]) {
+              if ("Blijdorp" === teams[idx]) {
                 team = React.createElement(
                   'strong',
                   null,

@@ -34,7 +34,7 @@ export class Schedule extends Seasonal {
     let team = <td></td>
 
     if ( undefined != teams && idx < teams.length ) {
-      if ( "Blijdorp (1)" === teams[idx] ) {
+      if ( "Blijdorp" === teams[idx] ) {
         team = <strong>{teams[idx]}</strong>
       } else {
         team = teams[idx]
