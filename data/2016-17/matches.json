@@ -27,6 +27,10 @@
       "Fadi": 1,
       "Jonas": 2,
       "Stijn": 3
+    },
+    "absent": {
+      "Vito": 0.5,
+      "Dieuwe": 1
     }
   }
 ]

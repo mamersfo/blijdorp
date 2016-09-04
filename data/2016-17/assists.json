@@ -1,72 +1,61 @@
-[
-  {
-    "id": 1,
-    "name": "Amine",
-    "position": "defender",
-    "matches": 2,
-    "total": 0
-  },
-  {
-    "id": 2,
-    "name": "Dieuwe",
-    "position": "defender",
-    "matches": 1,
-    "total": 0
-  },
-  {
-    "id": 3,
-    "name": "Fadi",
-    "position": "attacker",
-    "matches": 2,
-    "total": 1
-  },
-  {
-    "id": 4,
-    "name": "Jonas",
-    "position": "attacker",
-    "matches": 2,
-    "total": 2
-  },
-  {
-    "id": 5,
-    "name": "Lenny",
-    "position": "defender",
-    "matches": 2,
-    "total": 0
-  },
-  {
-    "id": 6,
-    "name": "Luc",
-    "position": "midfielder",
-    "matches": 2,
-    "total": 0
-  },
-  {
-    "id": 7,
-    "name": "Quincy",
-    "position": "midfielder",
-    "matches": 2,
-    "total": 0
-  },
-  {
-    "id": 8,
-    "name": "Stijn",
-    "position": "attacker",
-    "matches": 2,
-    "total": 4
-  },
-  {
-    "id": 9,
-    "name": "Vito",
-    "matches": 1.5,
-    "position": "midfielder",
-    "total": 0
-  },
-  {
-    "id": 10,
-    "name": "Xaver",
-    "position": "keeper",
-    "matches": 2,
-    "total": 0
-  }
-]
+[ {
+  "id" : 3,
+  "name" : "Fadi",
+  "matches" : 2,
+  "total" : 1,
+  "position" : "striker"
+}, {
+  "id" : 5,
+  "name" : "Lenny",
+  "matches" : 2,
+  "total" : 0,
+  "position" : "defender"
+}, {
+  "id" : 2,
+  "name" : "Dieuwe",
+  "matches" : 1,
+  "total" : 0,
+  "position" : "defender"
+}, {
+  "id" : 9,
+  "name" : "Vito",
+  "matches" : 1.5,
+  "total" : 0,
+  "position" : "midfielder"
+}, {
+  "id" : 1,
+  "name" : "Amine",
+  "matches" : 2,
+  "total" : 0,
+  "position" : "defender"
+}, {
+  "id" : 8,
+  "name" : "Stijn",
+  "matches" : 2,
+  "total" : 4,
+  "position" : "striker"
+}, {
+  "id" : 6,
+  "name" : "Luc",
+  "matches" : 2,
+  "total" : 0,
+  "position" : "midfielder"
+}, {
+  "id" : 4,
+  "name" : "Jonas",
+  "matches" : 2,
+  "total" : 2,
+  "position" : "striker"
+}, {
+  "id" : 10,
+  "name" : "Xaver ",
+  "matches" : 2,
+  "total" : 0,
+  "position" : "keeper"
+}, {
+  "id" : 7,
+  "name" : "Quincy",
+  "matches" : 2,
+  "total" : 0,
+  "position" : "midfielder"
+} ]
