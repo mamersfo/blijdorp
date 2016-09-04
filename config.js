@@ -19,8 +19,8 @@ System.config({
       "npm:redux@3.5.2/lib/index.js",
       "github:jspm/nodelibs-process@0.1.2.js",
       "github:jspm/nodelibs-process@0.1.2/index.js",
-      "npm:process@0.11.8.js",
-      "npm:process@0.11.8/browser.js",
+      "npm:process@0.11.9.js",
+      "npm:process@0.11.9/browser.js",
       "npm:redux@3.5.2/lib/utils/warning.js",
       "npm:redux@3.5.2/lib/compose.js",
       "npm:redux@3.5.2/lib/applyMiddleware.js",
@@ -115,17 +115,64 @@ System.config({
       "npm:core-js@1.2.7/library/modules/$.defined.js",
       "npm:core-js@1.2.7/library/modules/$.iobject.js",
       "npm:core-js@1.2.7/library/modules/$.cof.js",
+      "npm:react-stonecutter@0.3.3.js",
+      "npm:react-stonecutter@0.3.3/lib/react-stonecutter.js",
+      "npm:react-motion@0.4.4.js",
+      "npm:react-motion@0.4.4/lib/react-motion.js",
+      "npm:react-motion@0.4.4/lib/reorderKeys.js",
+      "npm:react-motion@0.4.4/lib/presets.js",
+      "npm:react-motion@0.4.4/lib/spring.js",
+      "npm:react-motion@0.4.4/lib/TransitionMotion.js",
+      "npm:react-motion@0.4.4/lib/shouldStopAnimation.js",
+      "npm:raf@3.3.0.js",
+      "npm:raf@3.3.0/index.js",
+      "npm:performance-now@0.2.0.js",
+      "npm:performance-now@0.2.0/lib/performance-now.js",
+      "npm:react-motion@0.4.4/lib/mergeDiff.js",
+      "npm:react-motion@0.4.4/lib/stepper.js",
+      "npm:react-motion@0.4.4/lib/stripStyle.js",
+      "npm:react-motion@0.4.4/lib/mapToZero.js",
+      "npm:react-motion@0.4.4/lib/StaggeredMotion.js",
+      "npm:react-motion@0.4.4/lib/Motion.js",
+      "npm:react-addons-transition-group@15.3.1.js",
+      "npm:react-addons-transition-group@15.3.1/index.js",
+      "npm:react@15.3.1/lib/ReactTransitionGroup.js",
+      "npm:react@15.3.1/lib/ReactTransitionChildMapping.js",
+      "npm:react@15.3.1/lib/flattenChildren.js",
+      "npm:react@15.3.1/lib/ReactInstanceMap.js",
+      "npm:lodash.partition@4.6.0.js",
+      "npm:lodash.partition@4.6.0/index.js",
+      "npm:lodash.debounce@4.0.8.js",
+      "npm:lodash.debounce@4.0.8/index.js",
+      "npm:imagesloaded@4.1.1.js",
+      "npm:imagesloaded@4.1.1/imagesloaded.js",
+      "npm:ev-emitter@1.0.3.js",
+      "npm:ev-emitter@1.0.3/ev-emitter.js",
+      "npm:enquire.js@2.1.1.js",
+      "npm:enquire.js@2.1.1/dist/enquire.js",
+      "npm:shallowequal@0.2.2.js",
+      "npm:shallowequal@0.2.2/modules/index.js",
+      "npm:lodash.keys@3.1.2.js",
+      "npm:lodash.keys@3.1.2/index.js",
+      "npm:lodash.isarray@3.0.4.js",
+      "npm:lodash.isarray@3.0.4/index.js",
+      "npm:lodash.isarguments@3.1.0.js",
+      "npm:lodash.isarguments@3.1.0/index.js",
+      "npm:lodash._getnative@3.9.1.js",
+      "npm:lodash._getnative@3.9.1/index.js",
+      "npm:lodash.omit@4.5.0.js",
+      "npm:lodash.omit@4.5.0/index.js",
+      "npm:babel-runtime@5.8.38/core-js/object/assign.js",
+      "npm:core-js@1.2.7/library/fn/object/assign.js",
+      "npm:core-js@1.2.7/library/modules/es6.object.assign.js",
+      "npm:core-js@1.2.7/library/modules/$.object-assign.js",
+      "npm:core-js@1.2.7/library/modules/$.to-object.js",
       "app/table.js",
       "npm:babel-runtime@5.8.38/core-js/object/values.js",
       "npm:core-js@1.2.7/library/fn/object/values.js",
       "npm:core-js@1.2.7/library/modules/es7.object.values.js",
       "npm:core-js@1.2.7/library/modules/$.object-to-array.js",
       "app/schedule.js",
-      "npm:babel-runtime@5.8.38/core-js/object/assign.js",
-      "npm:core-js@1.2.7/library/fn/object/assign.js",
-      "npm:core-js@1.2.7/library/modules/es6.object.assign.js",
-      "npm:core-js@1.2.7/library/modules/$.object-assign.js",
-      "npm:core-js@1.2.7/library/modules/$.to-object.js",
       "app/exercises.js",
       "npm:react-dynamic-modal@1.1.1.js",
       "npm:react-dynamic-modal@1.1.1/lib.js",
@@ -136,14 +183,6 @@ System.config({
       "npm:react-prefixr@0.1.0/stylePrefixr.js",
       "npm:lodash.assign@3.2.0.js",
       "npm:lodash.assign@3.2.0/index.js",
-      "npm:lodash.keys@3.1.2.js",
-      "npm:lodash.keys@3.1.2/index.js",
-      "npm:lodash.isarray@3.0.4.js",
-      "npm:lodash.isarray@3.0.4/index.js",
-      "npm:lodash.isarguments@3.1.0.js",
-      "npm:lodash.isarguments@3.1.0/index.js",
-      "npm:lodash._getnative@3.9.1.js",
-      "npm:lodash._getnative@3.9.1/index.js",
       "npm:lodash._createassigner@3.1.1.js",
       "npm:lodash._createassigner@3.1.1/index.js",
       "npm:lodash.restparam@3.6.1.js",
@@ -186,7 +225,6 @@ System.config({
       "npm:react@15.3.1/lib/ReactRef.js",
       "npm:react@15.3.1/lib/ReactOwner.js",
       "npm:react@15.3.1/lib/ReactNodeTypes.js",
-      "npm:react@15.3.1/lib/ReactInstanceMap.js",
       "npm:react@15.3.1/lib/ReactErrorUtils.js",
       "npm:react@15.3.1/lib/ReactComponentEnvironment.js",
       "npm:react@15.3.1/lib/ReactUpdates.js",
@@ -265,7 +303,6 @@ System.config({
       "npm:react@15.3.1/lib/ReactServerRenderingTransaction.js",
       "npm:react@15.3.1/lib/ReactServerUpdateQueue.js",
       "npm:react@15.3.1/lib/ReactMultiChild.js",
-      "npm:react@15.3.1/lib/flattenChildren.js",
       "npm:react@15.3.1/lib/ReactChildReconciler.js",
       "npm:react@15.3.1/lib/ReactDOMTextarea.js",
       "npm:react@15.3.1/lib/LinkedValueUtils.js",
@@ -562,6 +599,7 @@ System.config({
     "react-redux": "npm:react-redux@4.4.5",
     "react-router": "npm:react-router@2.6.1",
     "react-sanfona": "npm:react-sanfona@0.0.14",
+    "react-stonecutter": "npm:react-stonecutter@0.3.3",
     "react-vis": "npm:react-vis@0.4.2",
     "redux": "npm:redux@3.5.2",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -600,7 +638,7 @@ System.config({
       "path-browserify": "npm:path-browserify@0.0.0"
     },
     "github:jspm/nodelibs-process@0.1.2": {
-      "process": "npm:process@0.11.8"
+      "process": "npm:process@0.11.9"
     },
     "github:jspm/nodelibs-stream@0.1.0": {
       "stream-browserify": "npm:stream-browserify@1.0.0"
@@ -868,6 +906,12 @@ System.config({
       "string_decoder": "github:jspm/nodelibs-string_decoder@0.1.0",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
+    "npm:imagesloaded@4.1.1": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "ev-emitter": "npm:ev-emitter@1.0.3",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
@@ -893,10 +937,19 @@ System.config({
       "lodash._createassigner": "npm:lodash._createassigner@3.1.1",
       "lodash.keys": "npm:lodash.keys@3.1.2"
     },
+    "npm:lodash.debounce@4.0.8": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:lodash.keys@3.1.2": {
       "lodash._getnative": "npm:lodash._getnative@3.9.1",
       "lodash.isarguments": "npm:lodash.isarguments@3.1.0",
       "lodash.isarray": "npm:lodash.isarray@3.0.4"
+    },
+    "npm:lodash.omit@4.5.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:lodash.partition@4.6.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:loose-envify@1.2.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -948,10 +1001,13 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
+    "npm:performance-now@0.2.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:process-nextick-args@1.0.7": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:process@0.11.8": {
+    "npm:process@0.11.9": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "vm": "github:jspm/nodelibs-vm@0.1.0"
@@ -975,12 +1031,19 @@ System.config({
     "npm:query-string@3.0.3": {
       "strict-uri-encode": "npm:strict-uri-encode@1.1.0"
     },
+    "npm:raf@3.3.0": {
+      "performance-now": "npm:performance-now@0.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:randombytes@2.0.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:react-addons-shallow-compare@15.3.0": {
+      "react": "npm:react@15.3.1"
+    },
+    "npm:react-addons-transition-group@15.3.1": {
       "react": "npm:react@15.3.1"
     },
     "npm:react-addons-update@15.3.0": {
@@ -1001,6 +1064,12 @@ System.config({
       "react": "npm:react@15.3.1",
       "react-dom": "npm:react-dom@15.3.1",
       "react-prefixr": "npm:react-prefixr@0.1.0"
+    },
+    "npm:react-motion@0.4.4": {
+      "performance-now": "npm:performance-now@0.2.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "raf": "npm:raf@3.3.0",
+      "react": "npm:react@15.3.1"
     },
     "npm:react-redux@4.4.5": {
       "hoist-non-react-statics": "npm:hoist-non-react-statics@1.2.0",
@@ -1025,6 +1094,18 @@ System.config({
       "react": "npm:react@15.3.1",
       "react-dom": "npm:react-dom@15.3.1",
       "uuid": "npm:uuid@2.0.1"
+    },
+    "npm:react-stonecutter@0.3.3": {
+      "enquire.js": "npm:enquire.js@2.1.1",
+      "imagesloaded": "npm:imagesloaded@4.1.1",
+      "lodash.debounce": "npm:lodash.debounce@4.0.8",
+      "lodash.omit": "npm:lodash.omit@4.5.0",
+      "lodash.partition": "npm:lodash.partition@4.6.0",
+      "react": "npm:react@15.3.1",
+      "react-addons-transition-group": "npm:react-addons-transition-group@15.3.1",
+      "react-dom": "npm:react-dom@15.3.1",
+      "react-motion": "npm:react-motion@0.4.4",
+      "shallowequal": "npm:shallowequal@0.2.2"
     },
     "npm:react-toastr@2.8.0": {
       "classnames": "npm:classnames@2.2.5",
@@ -1094,6 +1175,9 @@ System.config({
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "inherits": "npm:inherits@2.0.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:shallowequal@0.2.2": {
+      "lodash.keys": "npm:lodash.keys@3.1.2"
     },
     "npm:stream-browserify@1.0.0": {
       "events": "github:jspm/nodelibs-events@0.1.1",

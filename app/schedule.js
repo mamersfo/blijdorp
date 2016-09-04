@@ -19,7 +19,7 @@ export class Schedule extends Seasonal {
   gatheringTime(m) {
     if ( undefined !== m.teams ) {
       const clone = new Date(m.date.getTime())
-      if ( "Blijdorp (1)" === m.teams[0] ) {
+      if ( "Blijdorp" === m.teams[0] ) {
         clone.setMinutes(m.date.getMinutes() - 45)
       } else {
         clone.setMinutes(m.date.getMinutes() - 75)

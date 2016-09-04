@@ -1,6 +1,6 @@
 [
   {
-    "team": "Blijdorp (1)",
+    "team": "Blijdorp",
     "matches": {
       "wins": 1,
       "draws": 0,
@@ -12,7 +12,7 @@
     }
   },
   {
-    "team": "BVCB (2)",
+    "team": "BVCB",
     "matches": {
       "wins": 2,
       "draws": 0,
@@ -24,7 +24,7 @@
     }
   },
   {
-    "team": "Hillegersberg (2)",
+    "team": "Hillegersberg",
     "matches": {
       "wins": 1,
       "draws": 0,
@@ -36,7 +36,7 @@
     }
   },
   {
-    "team": "TOGB (3)",
+    "team": "TOGB",
     "matches": {
       "wins": 0,
       "draws": 0,
@@ -48,7 +48,7 @@
     }
   },
   {
-    "team": "VOC (4)",
+    "team": "VOC",
     "matches": {
       "wins": 0,
       "draws": 0,
@@ -60,7 +60,7 @@
     }
   },
   {
-    "team": "VVOR (1)",
+    "team": "VVOR",
     "matches": {
       "wins": 1,
       "draws": 0,
@@ -72,7 +72,7 @@
     }
   },
   {
-    "team": "XerxesDZB (2)",
+    "team": "XerxesDZB",
     "matches": {
       "wins": 2,
       "draws": 0,
@@ -84,7 +84,7 @@
     }
   },
   {
-    "team": "Zestienhoven (2)",
+    "team": "Zestienhoven",
     "matches": {
       "wins": 0,
       "draws": 0,

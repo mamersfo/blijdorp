@@ -36336,56 +36336,6 @@ System.registerDynamic("npm:react@15.3.1/lib/ReactChildReconciler.js", ["npm:rea
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.1/lib/flattenChildren.js", ["npm:react@15.3.1/lib/KeyEscapeUtils.js", "npm:react@15.3.1/lib/traverseAllChildren.js", "npm:fbjs@0.8.4/lib/warning.js", "npm:react@15.3.1/lib/ReactComponentTreeHook.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  (function(process) {
-    'use strict';
-    var KeyEscapeUtils = $__require('npm:react@15.3.1/lib/KeyEscapeUtils.js');
-    var traverseAllChildren = $__require('npm:react@15.3.1/lib/traverseAllChildren.js');
-    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
-    var ReactComponentTreeHook;
-    if (typeof process !== 'undefined' && process.env && "production" === 'test') {
-      ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
-    }
-    function flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID) {
-      if (traverseContext && typeof traverseContext === 'object') {
-        var result = traverseContext;
-        var keyUnique = result[name] === undefined;
-        if ("production" !== 'production') {
-          if (!ReactComponentTreeHook) {
-            ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
-          }
-          if (!keyUnique) {
-            "production" !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
-          }
-        }
-        if (keyUnique && child != null) {
-          result[name] = child;
-        }
-      }
-    }
-    function flattenChildren(children, selfDebugID) {
-      if (children == null) {
-        return children;
-      }
-      var result = {};
-      if ("production" !== 'production') {
-        traverseAllChildren(children, function(traverseContext, child, name) {
-          return flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID);
-        }, result);
-      } else {
-        traverseAllChildren(children, flattenSingleChildIntoContext, result);
-      }
-      return result;
-    }
-    module.exports = flattenChildren;
-  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
-  return module.exports;
-});
-
 System.registerDynamic("npm:react@15.3.1/lib/ReactMultiChild.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactComponentEnvironment.js", "npm:react@15.3.1/lib/ReactInstanceMap.js", "npm:react@15.3.1/lib/ReactInstrumentation.js", "npm:react@15.3.1/lib/ReactMultiChildUpdateTypes.js", "npm:react@15.3.1/lib/ReactCurrentOwner.js", "npm:react@15.3.1/lib/ReactReconciler.js", "npm:react@15.3.1/lib/ReactChildReconciler.js", "npm:fbjs@0.8.4/lib/emptyFunction.js", "npm:react@15.3.1/lib/flattenChildren.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
@@ -42356,30 +42306,6 @@ System.registerDynamic("npm:react@15.3.1/lib/ReactErrorUtils.js", ["github:jspm/
   return module.exports;
 });
 
-System.registerDynamic("npm:react@15.3.1/lib/ReactInstanceMap.js", [], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var ReactInstanceMap = {
-    remove: function(key) {
-      key._reactInternalInstance = undefined;
-    },
-    get: function(key) {
-      return key._reactInternalInstance;
-    },
-    has: function(key) {
-      return key._reactInternalInstance !== undefined;
-    },
-    set: function(key, value) {
-      key._reactInternalInstance = value;
-    }
-  };
-  module.exports = ReactInstanceMap;
-  return module.exports;
-});
-
 System.registerDynamic("npm:react@15.3.1/lib/ReactNodeTypes.js", ["npm:react@15.3.1/lib/reactProdInvariant.js", "npm:react@15.3.1/lib/ReactElement.js", "npm:fbjs@0.8.4/lib/invariant.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
@@ -44927,253 +44853,6 @@ System.registerDynamic("npm:lodash._createassigner@3.1.1.js", ["npm:lodash._crea
   return module.exports;
 });
 
-System.registerDynamic("npm:lodash._getnative@3.9.1/index.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var funcTag = '[object Function]';
-  var reIsHostCtor = /^\[object .+?Constructor\]$/;
-  function isObjectLike(value) {
-    return !!value && typeof value == 'object';
-  }
-  var objectProto = Object.prototype;
-  var fnToString = Function.prototype.toString;
-  var hasOwnProperty = objectProto.hasOwnProperty;
-  var objToString = objectProto.toString;
-  var reIsNative = RegExp('^' + fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
-  function getNative(object, key) {
-    var value = object == null ? undefined : object[key];
-    return isNative(value) ? value : undefined;
-  }
-  function isFunction(value) {
-    return isObject(value) && objToString.call(value) == funcTag;
-  }
-  function isObject(value) {
-    var type = typeof value;
-    return !!value && (type == 'object' || type == 'function');
-  }
-  function isNative(value) {
-    if (value == null) {
-      return false;
-    }
-    if (isFunction(value)) {
-      return reIsNative.test(fnToString.call(value));
-    }
-    return isObjectLike(value) && reIsHostCtor.test(value);
-  }
-  module.exports = getNative;
-  return module.exports;
-});
-
-System.registerDynamic("npm:lodash._getnative@3.9.1.js", ["npm:lodash._getnative@3.9.1/index.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = $__require('npm:lodash._getnative@3.9.1/index.js');
-  return module.exports;
-});
-
-System.registerDynamic("npm:lodash.isarguments@3.1.0/index.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var MAX_SAFE_INTEGER = 9007199254740991;
-  var argsTag = '[object Arguments]',
-      funcTag = '[object Function]',
-      genTag = '[object GeneratorFunction]';
-  var objectProto = Object.prototype;
-  var hasOwnProperty = objectProto.hasOwnProperty;
-  var objectToString = objectProto.toString;
-  var propertyIsEnumerable = objectProto.propertyIsEnumerable;
-  function isArguments(value) {
-    return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') && (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
-  }
-  function isArrayLike(value) {
-    return value != null && isLength(value.length) && !isFunction(value);
-  }
-  function isArrayLikeObject(value) {
-    return isObjectLike(value) && isArrayLike(value);
-  }
-  function isFunction(value) {
-    var tag = isObject(value) ? objectToString.call(value) : '';
-    return tag == funcTag || tag == genTag;
-  }
-  function isLength(value) {
-    return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
-  }
-  function isObject(value) {
-    var type = typeof value;
-    return !!value && (type == 'object' || type == 'function');
-  }
-  function isObjectLike(value) {
-    return !!value && typeof value == 'object';
-  }
-  module.exports = isArguments;
-  return module.exports;
-});
-
-System.registerDynamic("npm:lodash.isarguments@3.1.0.js", ["npm:lodash.isarguments@3.1.0/index.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = $__require('npm:lodash.isarguments@3.1.0/index.js');
-  return module.exports;
-});
-
-System.registerDynamic("npm:lodash.isarray@3.0.4/index.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var arrayTag = '[object Array]',
-      funcTag = '[object Function]';
-  var reIsHostCtor = /^\[object .+?Constructor\]$/;
-  function isObjectLike(value) {
-    return !!value && typeof value == 'object';
-  }
-  var objectProto = Object.prototype;
-  var fnToString = Function.prototype.toString;
-  var hasOwnProperty = objectProto.hasOwnProperty;
-  var objToString = objectProto.toString;
-  var reIsNative = RegExp('^' + fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
-  var nativeIsArray = getNative(Array, 'isArray');
-  var MAX_SAFE_INTEGER = 9007199254740991;
-  function getNative(object, key) {
-    var value = object == null ? undefined : object[key];
-    return isNative(value) ? value : undefined;
-  }
-  function isLength(value) {
-    return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
-  }
-  var isArray = nativeIsArray || function(value) {
-    return isObjectLike(value) && isLength(value.length) && objToString.call(value) == arrayTag;
-  };
-  function isFunction(value) {
-    return isObject(value) && objToString.call(value) == funcTag;
-  }
-  function isObject(value) {
-    var type = typeof value;
-    return !!value && (type == 'object' || type == 'function');
-  }
-  function isNative(value) {
-    if (value == null) {
-      return false;
-    }
-    if (isFunction(value)) {
-      return reIsNative.test(fnToString.call(value));
-    }
-    return isObjectLike(value) && reIsHostCtor.test(value);
-  }
-  module.exports = isArray;
-  return module.exports;
-});
-
-System.registerDynamic("npm:lodash.isarray@3.0.4.js", ["npm:lodash.isarray@3.0.4/index.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = $__require('npm:lodash.isarray@3.0.4/index.js');
-  return module.exports;
-});
-
-System.registerDynamic("npm:lodash.keys@3.1.2/index.js", ["npm:lodash._getnative@3.9.1.js", "npm:lodash.isarguments@3.1.0.js", "npm:lodash.isarray@3.0.4.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var getNative = $__require('npm:lodash._getnative@3.9.1.js'),
-      isArguments = $__require('npm:lodash.isarguments@3.1.0.js'),
-      isArray = $__require('npm:lodash.isarray@3.0.4.js');
-  var reIsUint = /^\d+$/;
-  var objectProto = Object.prototype;
-  var hasOwnProperty = objectProto.hasOwnProperty;
-  var nativeKeys = getNative(Object, 'keys');
-  var MAX_SAFE_INTEGER = 9007199254740991;
-  function baseProperty(key) {
-    return function(object) {
-      return object == null ? undefined : object[key];
-    };
-  }
-  var getLength = baseProperty('length');
-  function isArrayLike(value) {
-    return value != null && isLength(getLength(value));
-  }
-  function isIndex(value, length) {
-    value = (typeof value == 'number' || reIsUint.test(value)) ? +value : -1;
-    length = length == null ? MAX_SAFE_INTEGER : length;
-    return value > -1 && value % 1 == 0 && value < length;
-  }
-  function isLength(value) {
-    return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
-  }
-  function shimKeys(object) {
-    var props = keysIn(object),
-        propsLength = props.length,
-        length = propsLength && object.length;
-    var allowIndexes = !!length && isLength(length) && (isArray(object) || isArguments(object));
-    var index = -1,
-        result = [];
-    while (++index < propsLength) {
-      var key = props[index];
-      if ((allowIndexes && isIndex(key, length)) || hasOwnProperty.call(object, key)) {
-        result.push(key);
-      }
-    }
-    return result;
-  }
-  function isObject(value) {
-    var type = typeof value;
-    return !!value && (type == 'object' || type == 'function');
-  }
-  var keys = !nativeKeys ? shimKeys : function(object) {
-    var Ctor = object == null ? undefined : object.constructor;
-    if ((typeof Ctor == 'function' && Ctor.prototype === object) || (typeof object != 'function' && isArrayLike(object))) {
-      return shimKeys(object);
-    }
-    return isObject(object) ? nativeKeys(object) : [];
-  };
-  function keysIn(object) {
-    if (object == null) {
-      return [];
-    }
-    if (!isObject(object)) {
-      object = Object(object);
-    }
-    var length = object.length;
-    length = (length && isLength(length) && (isArray(object) || isArguments(object)) && length) || 0;
-    var Ctor = object.constructor,
-        index = -1,
-        isProto = typeof Ctor == 'function' && Ctor.prototype === object,
-        result = Array(length),
-        skipIndexes = length > 0;
-    while (++index < length) {
-      result[index] = (index + '');
-    }
-    for (var key in object) {
-      if (!(skipIndexes && isIndex(key, length)) && !(key == 'constructor' && (isProto || !hasOwnProperty.call(object, key)))) {
-        result.push(key);
-      }
-    }
-    return result;
-  }
-  module.exports = keys;
-  return module.exports;
-});
-
-System.registerDynamic("npm:lodash.keys@3.1.2.js", ["npm:lodash.keys@3.1.2/index.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = $__require('npm:lodash.keys@3.1.2/index.js');
-  return module.exports;
-});
-
 System.registerDynamic("npm:lodash.assign@3.2.0/index.js", ["npm:lodash._baseassign@3.2.0.js", "npm:lodash._createassigner@3.1.1.js", "npm:lodash.keys@3.1.2.js"], true, function($__require, exports, module) {
   ;
   var define,
@@ -46083,92 +45762,6 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
     }
   };
 });
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-object.js", ["npm:core-js@1.2.7/library/modules/$.defined.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js');
-  module.exports = function(it) {
-    return Object(defined(it));
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.object-assign.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.to-object.js", "npm:core-js@1.2.7/library/modules/$.iobject.js", "npm:core-js@1.2.7/library/modules/$.fails.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
-      toObject = $__require('npm:core-js@1.2.7/library/modules/$.to-object.js'),
-      IObject = $__require('npm:core-js@1.2.7/library/modules/$.iobject.js');
-  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.fails.js')(function() {
-    var a = Object.assign,
-        A = {},
-        B = {},
-        S = Symbol(),
-        K = 'abcdefghijklmnopqrst';
-    A[S] = 7;
-    K.split('').forEach(function(k) {
-      B[k] = k;
-    });
-    return a({}, A)[S] != 7 || Object.keys(a({}, B)).join('') != K;
-  }) ? function assign(target, source) {
-    var T = toObject(target),
-        $$ = arguments,
-        $$len = $$.length,
-        index = 1,
-        getKeys = $.getKeys,
-        getSymbols = $.getSymbols,
-        isEnum = $.isEnum;
-    while ($$len > index) {
-      var S = IObject($$[index++]),
-          keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S),
-          length = keys.length,
-          j = 0,
-          key;
-      while (length > j)
-        if (isEnum.call(S, key = keys[j++]))
-          T[key] = S[key];
-    }
-    return T;
-  } : Object.assign;
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.assign.js", ["npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.object-assign.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js');
-  $export($export.S + $export.F, 'Object', {assign: $__require('npm:core-js@1.2.7/library/modules/$.object-assign.js')});
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/fn/object/assign.js", ["npm:core-js@1.2.7/library/modules/es6.object.assign.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  $__require('npm:core-js@1.2.7/library/modules/es6.object.assign.js');
-  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Object.assign;
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/assign.js", ["npm:core-js@1.2.7/library/fn/object/assign.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = {
-    "default": $__require('npm:core-js@1.2.7/library/fn/object/assign.js'),
-    __esModule: true
-  };
-  return module.exports;
-});
-
 System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, connect, Seasonal, Schedule;
 
@@ -46216,7 +45809,7 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
           value: function gatheringTime(m) {
             if (undefined !== m.teams) {
               var clone = new Date(m.date.getTime());
-              if ("Blijdorp (1)" === m.teams[0]) {
+              if ("Blijdorp" === m.teams[0]) {
                 clone.setMinutes(m.date.getMinutes() - 45);
               } else {
                 clone.setMinutes(m.date.getMinutes() - 75);
@@ -46619,6 +46212,5172 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
     }
   };
 });
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-object.js", ["npm:core-js@1.2.7/library/modules/$.defined.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js');
+  module.exports = function(it) {
+    return Object(defined(it));
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.object-assign.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.to-object.js", "npm:core-js@1.2.7/library/modules/$.iobject.js", "npm:core-js@1.2.7/library/modules/$.fails.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      toObject = $__require('npm:core-js@1.2.7/library/modules/$.to-object.js'),
+      IObject = $__require('npm:core-js@1.2.7/library/modules/$.iobject.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.fails.js')(function() {
+    var a = Object.assign,
+        A = {},
+        B = {},
+        S = Symbol(),
+        K = 'abcdefghijklmnopqrst';
+    A[S] = 7;
+    K.split('').forEach(function(k) {
+      B[k] = k;
+    });
+    return a({}, A)[S] != 7 || Object.keys(a({}, B)).join('') != K;
+  }) ? function assign(target, source) {
+    var T = toObject(target),
+        $$ = arguments,
+        $$len = $$.length,
+        index = 1,
+        getKeys = $.getKeys,
+        getSymbols = $.getSymbols,
+        isEnum = $.isEnum;
+    while ($$len > index) {
+      var S = IObject($$[index++]),
+          keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S),
+          length = keys.length,
+          j = 0,
+          key;
+      while (length > j)
+        if (isEnum.call(S, key = keys[j++]))
+          T[key] = S[key];
+    }
+    return T;
+  } : Object.assign;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.assign.js", ["npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.object-assign.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js');
+  $export($export.S + $export.F, 'Object', {assign: $__require('npm:core-js@1.2.7/library/modules/$.object-assign.js')});
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/object/assign.js", ["npm:core-js@1.2.7/library/modules/es6.object.assign.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  $__require('npm:core-js@1.2.7/library/modules/es6.object.assign.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Object.assign;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/assign.js", ["npm:core-js@1.2.7/library/fn/object/assign.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/object/assign.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.omit@4.5.0/index.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    var LARGE_ARRAY_SIZE = 200;
+    var HASH_UNDEFINED = '__lodash_hash_undefined__';
+    var INFINITY = 1 / 0,
+        MAX_SAFE_INTEGER = 9007199254740991;
+    var argsTag = '[object Arguments]',
+        funcTag = '[object Function]',
+        genTag = '[object GeneratorFunction]',
+        symbolTag = '[object Symbol]';
+    var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
+    var reIsHostCtor = /^\[object .+?Constructor\]$/;
+    var reIsUint = /^(?:0|[1-9]\d*)$/;
+    var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+    var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+    var root = freeGlobal || freeSelf || Function('return this')();
+    function apply(func, thisArg, args) {
+      switch (args.length) {
+        case 0:
+          return func.call(thisArg);
+        case 1:
+          return func.call(thisArg, args[0]);
+        case 2:
+          return func.call(thisArg, args[0], args[1]);
+        case 3:
+          return func.call(thisArg, args[0], args[1], args[2]);
+      }
+      return func.apply(thisArg, args);
+    }
+    function arrayIncludes(array, value) {
+      var length = array ? array.length : 0;
+      return !!length && baseIndexOf(array, value, 0) > -1;
+    }
+    function arrayIncludesWith(array, value, comparator) {
+      var index = -1,
+          length = array ? array.length : 0;
+      while (++index < length) {
+        if (comparator(value, array[index])) {
+          return true;
+        }
+      }
+      return false;
+    }
+    function arrayMap(array, iteratee) {
+      var index = -1,
+          length = array ? array.length : 0,
+          result = Array(length);
+      while (++index < length) {
+        result[index] = iteratee(array[index], index, array);
+      }
+      return result;
+    }
+    function arrayPush(array, values) {
+      var index = -1,
+          length = values.length,
+          offset = array.length;
+      while (++index < length) {
+        array[offset + index] = values[index];
+      }
+      return array;
+    }
+    function baseFindIndex(array, predicate, fromIndex, fromRight) {
+      var length = array.length,
+          index = fromIndex + (fromRight ? 1 : -1);
+      while ((fromRight ? index-- : ++index < length)) {
+        if (predicate(array[index], index, array)) {
+          return index;
+        }
+      }
+      return -1;
+    }
+    function baseIndexOf(array, value, fromIndex) {
+      if (value !== value) {
+        return baseFindIndex(array, baseIsNaN, fromIndex);
+      }
+      var index = fromIndex - 1,
+          length = array.length;
+      while (++index < length) {
+        if (array[index] === value) {
+          return index;
+        }
+      }
+      return -1;
+    }
+    function baseIsNaN(value) {
+      return value !== value;
+    }
+    function baseTimes(n, iteratee) {
+      var index = -1,
+          result = Array(n);
+      while (++index < n) {
+        result[index] = iteratee(index);
+      }
+      return result;
+    }
+    function baseUnary(func) {
+      return function(value) {
+        return func(value);
+      };
+    }
+    function cacheHas(cache, key) {
+      return cache.has(key);
+    }
+    function getValue(object, key) {
+      return object == null ? undefined : object[key];
+    }
+    function isHostObject(value) {
+      var result = false;
+      if (value != null && typeof value.toString != 'function') {
+        try {
+          result = !!(value + '');
+        } catch (e) {}
+      }
+      return result;
+    }
+    function overArg(func, transform) {
+      return function(arg) {
+        return func(transform(arg));
+      };
+    }
+    var arrayProto = Array.prototype,
+        funcProto = Function.prototype,
+        objectProto = Object.prototype;
+    var coreJsData = root['__core-js_shared__'];
+    var maskSrcKey = (function() {
+      var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
+      return uid ? ('Symbol(src)_1.' + uid) : '';
+    }());
+    var funcToString = funcProto.toString;
+    var hasOwnProperty = objectProto.hasOwnProperty;
+    var objectToString = objectProto.toString;
+    var reIsNative = RegExp('^' + funcToString.call(hasOwnProperty).replace(reRegExpChar, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
+    var Symbol = root.Symbol,
+        getPrototype = overArg(Object.getPrototypeOf, Object),
+        propertyIsEnumerable = objectProto.propertyIsEnumerable,
+        splice = arrayProto.splice,
+        spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined;
+    var nativeGetSymbols = Object.getOwnPropertySymbols,
+        nativeMax = Math.max;
+    var Map = getNative(root, 'Map'),
+        nativeCreate = getNative(Object, 'create');
+    function Hash(entries) {
+      var index = -1,
+          length = entries ? entries.length : 0;
+      this.clear();
+      while (++index < length) {
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+      }
+    }
+    function hashClear() {
+      this.__data__ = nativeCreate ? nativeCreate(null) : {};
+    }
+    function hashDelete(key) {
+      return this.has(key) && delete this.__data__[key];
+    }
+    function hashGet(key) {
+      var data = this.__data__;
+      if (nativeCreate) {
+        var result = data[key];
+        return result === HASH_UNDEFINED ? undefined : result;
+      }
+      return hasOwnProperty.call(data, key) ? data[key] : undefined;
+    }
+    function hashHas(key) {
+      var data = this.__data__;
+      return nativeCreate ? data[key] !== undefined : hasOwnProperty.call(data, key);
+    }
+    function hashSet(key, value) {
+      var data = this.__data__;
+      data[key] = (nativeCreate && value === undefined) ? HASH_UNDEFINED : value;
+      return this;
+    }
+    Hash.prototype.clear = hashClear;
+    Hash.prototype['delete'] = hashDelete;
+    Hash.prototype.get = hashGet;
+    Hash.prototype.has = hashHas;
+    Hash.prototype.set = hashSet;
+    function ListCache(entries) {
+      var index = -1,
+          length = entries ? entries.length : 0;
+      this.clear();
+      while (++index < length) {
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+      }
+    }
+    function listCacheClear() {
+      this.__data__ = [];
+    }
+    function listCacheDelete(key) {
+      var data = this.__data__,
+          index = assocIndexOf(data, key);
+      if (index < 0) {
+        return false;
+      }
+      var lastIndex = data.length - 1;
+      if (index == lastIndex) {
+        data.pop();
+      } else {
+        splice.call(data, index, 1);
+      }
+      return true;
+    }
+    function listCacheGet(key) {
+      var data = this.__data__,
+          index = assocIndexOf(data, key);
+      return index < 0 ? undefined : data[index][1];
+    }
+    function listCacheHas(key) {
+      return assocIndexOf(this.__data__, key) > -1;
+    }
+    function listCacheSet(key, value) {
+      var data = this.__data__,
+          index = assocIndexOf(data, key);
+      if (index < 0) {
+        data.push([key, value]);
+      } else {
+        data[index][1] = value;
+      }
+      return this;
+    }
+    ListCache.prototype.clear = listCacheClear;
+    ListCache.prototype['delete'] = listCacheDelete;
+    ListCache.prototype.get = listCacheGet;
+    ListCache.prototype.has = listCacheHas;
+    ListCache.prototype.set = listCacheSet;
+    function MapCache(entries) {
+      var index = -1,
+          length = entries ? entries.length : 0;
+      this.clear();
+      while (++index < length) {
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+      }
+    }
+    function mapCacheClear() {
+      this.__data__ = {
+        'hash': new Hash,
+        'map': new (Map || ListCache),
+        'string': new Hash
+      };
+    }
+    function mapCacheDelete(key) {
+      return getMapData(this, key)['delete'](key);
+    }
+    function mapCacheGet(key) {
+      return getMapData(this, key).get(key);
+    }
+    function mapCacheHas(key) {
+      return getMapData(this, key).has(key);
+    }
+    function mapCacheSet(key, value) {
+      getMapData(this, key).set(key, value);
+      return this;
+    }
+    MapCache.prototype.clear = mapCacheClear;
+    MapCache.prototype['delete'] = mapCacheDelete;
+    MapCache.prototype.get = mapCacheGet;
+    MapCache.prototype.has = mapCacheHas;
+    MapCache.prototype.set = mapCacheSet;
+    function SetCache(values) {
+      var index = -1,
+          length = values ? values.length : 0;
+      this.__data__ = new MapCache;
+      while (++index < length) {
+        this.add(values[index]);
+      }
+    }
+    function setCacheAdd(value) {
+      this.__data__.set(value, HASH_UNDEFINED);
+      return this;
+    }
+    function setCacheHas(value) {
+      return this.__data__.has(value);
+    }
+    SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
+    SetCache.prototype.has = setCacheHas;
+    function arrayLikeKeys(value, inherited) {
+      var result = (isArray(value) || isArguments(value)) ? baseTimes(value.length, String) : [];
+      var length = result.length,
+          skipIndexes = !!length;
+      for (var key in value) {
+        if ((inherited || hasOwnProperty.call(value, key)) && !(skipIndexes && (key == 'length' || isIndex(key, length)))) {
+          result.push(key);
+        }
+      }
+      return result;
+    }
+    function assocIndexOf(array, key) {
+      var length = array.length;
+      while (length--) {
+        if (eq(array[length][0], key)) {
+          return length;
+        }
+      }
+      return -1;
+    }
+    function baseDifference(array, values, iteratee, comparator) {
+      var index = -1,
+          includes = arrayIncludes,
+          isCommon = true,
+          length = array.length,
+          result = [],
+          valuesLength = values.length;
+      if (!length) {
+        return result;
+      }
+      if (iteratee) {
+        values = arrayMap(values, baseUnary(iteratee));
+      }
+      if (comparator) {
+        includes = arrayIncludesWith;
+        isCommon = false;
+      } else if (values.length >= LARGE_ARRAY_SIZE) {
+        includes = cacheHas;
+        isCommon = false;
+        values = new SetCache(values);
+      }
+      outer: while (++index < length) {
+        var value = array[index],
+            computed = iteratee ? iteratee(value) : value;
+        value = (comparator || value !== 0) ? value : 0;
+        if (isCommon && computed === computed) {
+          var valuesIndex = valuesLength;
+          while (valuesIndex--) {
+            if (values[valuesIndex] === computed) {
+              continue outer;
+            }
+          }
+          result.push(value);
+        } else if (!includes(values, computed, comparator)) {
+          result.push(value);
+        }
+      }
+      return result;
+    }
+    function baseFlatten(array, depth, predicate, isStrict, result) {
+      var index = -1,
+          length = array.length;
+      predicate || (predicate = isFlattenable);
+      result || (result = []);
+      while (++index < length) {
+        var value = array[index];
+        if (depth > 0 && predicate(value)) {
+          if (depth > 1) {
+            baseFlatten(value, depth - 1, predicate, isStrict, result);
+          } else {
+            arrayPush(result, value);
+          }
+        } else if (!isStrict) {
+          result[result.length] = value;
+        }
+      }
+      return result;
+    }
+    function baseGetAllKeys(object, keysFunc, symbolsFunc) {
+      var result = keysFunc(object);
+      return isArray(object) ? result : arrayPush(result, symbolsFunc(object));
+    }
+    function baseIsNative(value) {
+      if (!isObject(value) || isMasked(value)) {
+        return false;
+      }
+      var pattern = (isFunction(value) || isHostObject(value)) ? reIsNative : reIsHostCtor;
+      return pattern.test(toSource(value));
+    }
+    function baseKeysIn(object) {
+      if (!isObject(object)) {
+        return nativeKeysIn(object);
+      }
+      var isProto = isPrototype(object),
+          result = [];
+      for (var key in object) {
+        if (!(key == 'constructor' && (isProto || !hasOwnProperty.call(object, key)))) {
+          result.push(key);
+        }
+      }
+      return result;
+    }
+    function basePick(object, props) {
+      object = Object(object);
+      return basePickBy(object, props, function(value, key) {
+        return key in object;
+      });
+    }
+    function basePickBy(object, props, predicate) {
+      var index = -1,
+          length = props.length,
+          result = {};
+      while (++index < length) {
+        var key = props[index],
+            value = object[key];
+        if (predicate(value, key)) {
+          result[key] = value;
+        }
+      }
+      return result;
+    }
+    function baseRest(func, start) {
+      start = nativeMax(start === undefined ? (func.length - 1) : start, 0);
+      return function() {
+        var args = arguments,
+            index = -1,
+            length = nativeMax(args.length - start, 0),
+            array = Array(length);
+        while (++index < length) {
+          array[index] = args[start + index];
+        }
+        index = -1;
+        var otherArgs = Array(start + 1);
+        while (++index < start) {
+          otherArgs[index] = args[index];
+        }
+        otherArgs[start] = array;
+        return apply(func, this, otherArgs);
+      };
+    }
+    function getAllKeysIn(object) {
+      return baseGetAllKeys(object, keysIn, getSymbolsIn);
+    }
+    function getMapData(map, key) {
+      var data = map.__data__;
+      return isKeyable(key) ? data[typeof key == 'string' ? 'string' : 'hash'] : data.map;
+    }
+    function getNative(object, key) {
+      var value = getValue(object, key);
+      return baseIsNative(value) ? value : undefined;
+    }
+    var getSymbols = nativeGetSymbols ? overArg(nativeGetSymbols, Object) : stubArray;
+    var getSymbolsIn = !nativeGetSymbols ? stubArray : function(object) {
+      var result = [];
+      while (object) {
+        arrayPush(result, getSymbols(object));
+        object = getPrototype(object);
+      }
+      return result;
+    };
+    function isFlattenable(value) {
+      return isArray(value) || isArguments(value) || !!(spreadableSymbol && value && value[spreadableSymbol]);
+    }
+    function isIndex(value, length) {
+      length = length == null ? MAX_SAFE_INTEGER : length;
+      return !!length && (typeof value == 'number' || reIsUint.test(value)) && (value > -1 && value % 1 == 0 && value < length);
+    }
+    function isKeyable(value) {
+      var type = typeof value;
+      return (type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean') ? (value !== '__proto__') : (value === null);
+    }
+    function isMasked(func) {
+      return !!maskSrcKey && (maskSrcKey in func);
+    }
+    function isPrototype(value) {
+      var Ctor = value && value.constructor,
+          proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto;
+      return value === proto;
+    }
+    function nativeKeysIn(object) {
+      var result = [];
+      if (object != null) {
+        for (var key in Object(object)) {
+          result.push(key);
+        }
+      }
+      return result;
+    }
+    function toKey(value) {
+      if (typeof value == 'string' || isSymbol(value)) {
+        return value;
+      }
+      var result = (value + '');
+      return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+    }
+    function toSource(func) {
+      if (func != null) {
+        try {
+          return funcToString.call(func);
+        } catch (e) {}
+        try {
+          return (func + '');
+        } catch (e) {}
+      }
+      return '';
+    }
+    function eq(value, other) {
+      return value === other || (value !== value && other !== other);
+    }
+    function isArguments(value) {
+      return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') && (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+    }
+    var isArray = Array.isArray;
+    function isArrayLike(value) {
+      return value != null && isLength(value.length) && !isFunction(value);
+    }
+    function isArrayLikeObject(value) {
+      return isObjectLike(value) && isArrayLike(value);
+    }
+    function isFunction(value) {
+      var tag = isObject(value) ? objectToString.call(value) : '';
+      return tag == funcTag || tag == genTag;
+    }
+    function isLength(value) {
+      return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+    }
+    function isObject(value) {
+      var type = typeof value;
+      return !!value && (type == 'object' || type == 'function');
+    }
+    function isObjectLike(value) {
+      return !!value && typeof value == 'object';
+    }
+    function isSymbol(value) {
+      return typeof value == 'symbol' || (isObjectLike(value) && objectToString.call(value) == symbolTag);
+    }
+    function keysIn(object) {
+      return isArrayLike(object) ? arrayLikeKeys(object, true) : baseKeysIn(object);
+    }
+    var omit = baseRest(function(object, props) {
+      if (object == null) {
+        return {};
+      }
+      props = arrayMap(baseFlatten(props, 1), toKey);
+      return basePick(object, baseDifference(getAllKeysIn(object), props));
+    });
+    function stubArray() {
+      return [];
+    }
+    module.exports = omit;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.omit@4.5.0.js", ["npm:lodash.omit@4.5.0/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash.omit@4.5.0/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash._getnative@3.9.1/index.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var funcTag = '[object Function]';
+  var reIsHostCtor = /^\[object .+?Constructor\]$/;
+  function isObjectLike(value) {
+    return !!value && typeof value == 'object';
+  }
+  var objectProto = Object.prototype;
+  var fnToString = Function.prototype.toString;
+  var hasOwnProperty = objectProto.hasOwnProperty;
+  var objToString = objectProto.toString;
+  var reIsNative = RegExp('^' + fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
+  function getNative(object, key) {
+    var value = object == null ? undefined : object[key];
+    return isNative(value) ? value : undefined;
+  }
+  function isFunction(value) {
+    return isObject(value) && objToString.call(value) == funcTag;
+  }
+  function isObject(value) {
+    var type = typeof value;
+    return !!value && (type == 'object' || type == 'function');
+  }
+  function isNative(value) {
+    if (value == null) {
+      return false;
+    }
+    if (isFunction(value)) {
+      return reIsNative.test(fnToString.call(value));
+    }
+    return isObjectLike(value) && reIsHostCtor.test(value);
+  }
+  module.exports = getNative;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash._getnative@3.9.1.js", ["npm:lodash._getnative@3.9.1/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash._getnative@3.9.1/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.isarguments@3.1.0/index.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var MAX_SAFE_INTEGER = 9007199254740991;
+  var argsTag = '[object Arguments]',
+      funcTag = '[object Function]',
+      genTag = '[object GeneratorFunction]';
+  var objectProto = Object.prototype;
+  var hasOwnProperty = objectProto.hasOwnProperty;
+  var objectToString = objectProto.toString;
+  var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+  function isArguments(value) {
+    return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') && (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+  }
+  function isArrayLike(value) {
+    return value != null && isLength(value.length) && !isFunction(value);
+  }
+  function isArrayLikeObject(value) {
+    return isObjectLike(value) && isArrayLike(value);
+  }
+  function isFunction(value) {
+    var tag = isObject(value) ? objectToString.call(value) : '';
+    return tag == funcTag || tag == genTag;
+  }
+  function isLength(value) {
+    return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+  }
+  function isObject(value) {
+    var type = typeof value;
+    return !!value && (type == 'object' || type == 'function');
+  }
+  function isObjectLike(value) {
+    return !!value && typeof value == 'object';
+  }
+  module.exports = isArguments;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.isarguments@3.1.0.js", ["npm:lodash.isarguments@3.1.0/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash.isarguments@3.1.0/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.isarray@3.0.4/index.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var arrayTag = '[object Array]',
+      funcTag = '[object Function]';
+  var reIsHostCtor = /^\[object .+?Constructor\]$/;
+  function isObjectLike(value) {
+    return !!value && typeof value == 'object';
+  }
+  var objectProto = Object.prototype;
+  var fnToString = Function.prototype.toString;
+  var hasOwnProperty = objectProto.hasOwnProperty;
+  var objToString = objectProto.toString;
+  var reIsNative = RegExp('^' + fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
+  var nativeIsArray = getNative(Array, 'isArray');
+  var MAX_SAFE_INTEGER = 9007199254740991;
+  function getNative(object, key) {
+    var value = object == null ? undefined : object[key];
+    return isNative(value) ? value : undefined;
+  }
+  function isLength(value) {
+    return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+  }
+  var isArray = nativeIsArray || function(value) {
+    return isObjectLike(value) && isLength(value.length) && objToString.call(value) == arrayTag;
+  };
+  function isFunction(value) {
+    return isObject(value) && objToString.call(value) == funcTag;
+  }
+  function isObject(value) {
+    var type = typeof value;
+    return !!value && (type == 'object' || type == 'function');
+  }
+  function isNative(value) {
+    if (value == null) {
+      return false;
+    }
+    if (isFunction(value)) {
+      return reIsNative.test(fnToString.call(value));
+    }
+    return isObjectLike(value) && reIsHostCtor.test(value);
+  }
+  module.exports = isArray;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.isarray@3.0.4.js", ["npm:lodash.isarray@3.0.4/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash.isarray@3.0.4/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.keys@3.1.2/index.js", ["npm:lodash._getnative@3.9.1.js", "npm:lodash.isarguments@3.1.0.js", "npm:lodash.isarray@3.0.4.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var getNative = $__require('npm:lodash._getnative@3.9.1.js'),
+      isArguments = $__require('npm:lodash.isarguments@3.1.0.js'),
+      isArray = $__require('npm:lodash.isarray@3.0.4.js');
+  var reIsUint = /^\d+$/;
+  var objectProto = Object.prototype;
+  var hasOwnProperty = objectProto.hasOwnProperty;
+  var nativeKeys = getNative(Object, 'keys');
+  var MAX_SAFE_INTEGER = 9007199254740991;
+  function baseProperty(key) {
+    return function(object) {
+      return object == null ? undefined : object[key];
+    };
+  }
+  var getLength = baseProperty('length');
+  function isArrayLike(value) {
+    return value != null && isLength(getLength(value));
+  }
+  function isIndex(value, length) {
+    value = (typeof value == 'number' || reIsUint.test(value)) ? +value : -1;
+    length = length == null ? MAX_SAFE_INTEGER : length;
+    return value > -1 && value % 1 == 0 && value < length;
+  }
+  function isLength(value) {
+    return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+  }
+  function shimKeys(object) {
+    var props = keysIn(object),
+        propsLength = props.length,
+        length = propsLength && object.length;
+    var allowIndexes = !!length && isLength(length) && (isArray(object) || isArguments(object));
+    var index = -1,
+        result = [];
+    while (++index < propsLength) {
+      var key = props[index];
+      if ((allowIndexes && isIndex(key, length)) || hasOwnProperty.call(object, key)) {
+        result.push(key);
+      }
+    }
+    return result;
+  }
+  function isObject(value) {
+    var type = typeof value;
+    return !!value && (type == 'object' || type == 'function');
+  }
+  var keys = !nativeKeys ? shimKeys : function(object) {
+    var Ctor = object == null ? undefined : object.constructor;
+    if ((typeof Ctor == 'function' && Ctor.prototype === object) || (typeof object != 'function' && isArrayLike(object))) {
+      return shimKeys(object);
+    }
+    return isObject(object) ? nativeKeys(object) : [];
+  };
+  function keysIn(object) {
+    if (object == null) {
+      return [];
+    }
+    if (!isObject(object)) {
+      object = Object(object);
+    }
+    var length = object.length;
+    length = (length && isLength(length) && (isArray(object) || isArguments(object)) && length) || 0;
+    var Ctor = object.constructor,
+        index = -1,
+        isProto = typeof Ctor == 'function' && Ctor.prototype === object,
+        result = Array(length),
+        skipIndexes = length > 0;
+    while (++index < length) {
+      result[index] = (index + '');
+    }
+    for (var key in object) {
+      if (!(skipIndexes && isIndex(key, length)) && !(key == 'constructor' && (isProto || !hasOwnProperty.call(object, key)))) {
+        result.push(key);
+      }
+    }
+    return result;
+  }
+  module.exports = keys;
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.keys@3.1.2.js", ["npm:lodash.keys@3.1.2/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash.keys@3.1.2/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:shallowequal@0.2.2/modules/index.js", ["npm:lodash.keys@3.1.2.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var fetchKeys = $__require('npm:lodash.keys@3.1.2.js');
+  module.exports = function shallowEqual(objA, objB, compare, compareContext) {
+    var ret = compare ? compare.call(compareContext, objA, objB) : void 0;
+    if (ret !== void 0) {
+      return !!ret;
+    }
+    if (objA === objB) {
+      return true;
+    }
+    if (typeof objA !== 'object' || objA === null || typeof objB !== 'object' || objB === null) {
+      return false;
+    }
+    var keysA = fetchKeys(objA);
+    var keysB = fetchKeys(objB);
+    var len = keysA.length;
+    if (len !== keysB.length) {
+      return false;
+    }
+    compareContext = compareContext || null;
+    var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
+    for (var i = 0; i < len; i++) {
+      var key = keysA[i];
+      if (!bHasOwnProperty(key)) {
+        return false;
+      }
+      var valueA = objA[key];
+      var valueB = objB[key];
+      var _ret = compare ? compare.call(compareContext, valueA, valueB, key) : void 0;
+      if (_ret === false || _ret === void 0 && valueA !== valueB) {
+        return false;
+      }
+    }
+    return true;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:shallowequal@0.2.2.js", ["npm:shallowequal@0.2.2/modules/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:shallowequal@0.2.2/modules/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:enquire.js@2.1.1/dist/enquire.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  "format cjs";
+  ;
+  (function(name, context, factory) {
+    var matchMedia = window.matchMedia;
+    if (typeof module !== 'undefined' && module.exports) {
+      module.exports = factory(matchMedia);
+    } else if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return (context[name] = factory(matchMedia));
+      });
+    } else {
+      context[name] = factory(matchMedia);
+    }
+  }('enquire', this, function(matchMedia) {
+    'use strict';
+    function each(collection, fn) {
+      var i = 0,
+          length = collection.length,
+          cont;
+      for (i; i < length; i++) {
+        cont = fn(collection[i], i);
+        if (cont === false) {
+          break;
+        }
+      }
+    }
+    function isArray(target) {
+      return Object.prototype.toString.apply(target) === '[object Array]';
+    }
+    function isFunction(target) {
+      return typeof target === 'function';
+    }
+    function QueryHandler(options) {
+      this.options = options;
+      !options.deferSetup && this.setup();
+    }
+    QueryHandler.prototype = {
+      setup: function() {
+        if (this.options.setup) {
+          this.options.setup();
+        }
+        this.initialised = true;
+      },
+      on: function() {
+        !this.initialised && this.setup();
+        this.options.match && this.options.match();
+      },
+      off: function() {
+        this.options.unmatch && this.options.unmatch();
+      },
+      destroy: function() {
+        this.options.destroy ? this.options.destroy() : this.off();
+      },
+      equals: function(target) {
+        return this.options === target || this.options.match === target;
+      }
+    };
+    function MediaQuery(query, isUnconditional) {
+      this.query = query;
+      this.isUnconditional = isUnconditional;
+      this.handlers = [];
+      this.mql = matchMedia(query);
+      var self = this;
+      this.listener = function(mql) {
+        self.mql = mql;
+        self.assess();
+      };
+      this.mql.addListener(this.listener);
+    }
+    MediaQuery.prototype = {
+      addHandler: function(handler) {
+        var qh = new QueryHandler(handler);
+        this.handlers.push(qh);
+        this.matches() && qh.on();
+      },
+      removeHandler: function(handler) {
+        var handlers = this.handlers;
+        each(handlers, function(h, i) {
+          if (h.equals(handler)) {
+            h.destroy();
+            return !handlers.splice(i, 1);
+          }
+        });
+      },
+      matches: function() {
+        return this.mql.matches || this.isUnconditional;
+      },
+      clear: function() {
+        each(this.handlers, function(handler) {
+          handler.destroy();
+        });
+        this.mql.removeListener(this.listener);
+        this.handlers.length = 0;
+      },
+      assess: function() {
+        var action = this.matches() ? 'on' : 'off';
+        each(this.handlers, function(handler) {
+          handler[action]();
+        });
+      }
+    };
+    function MediaQueryDispatch() {
+      if (!matchMedia) {
+        throw new Error('matchMedia not present, legacy browsers require a polyfill');
+      }
+      this.queries = {};
+      this.browserIsIncapable = !matchMedia('only all').matches;
+    }
+    MediaQueryDispatch.prototype = {
+      register: function(q, options, shouldDegrade) {
+        var queries = this.queries,
+            isUnconditional = shouldDegrade && this.browserIsIncapable;
+        if (!queries[q]) {
+          queries[q] = new MediaQuery(q, isUnconditional);
+        }
+        if (isFunction(options)) {
+          options = {match: options};
+        }
+        if (!isArray(options)) {
+          options = [options];
+        }
+        each(options, function(handler) {
+          queries[q].addHandler(handler);
+        });
+        return this;
+      },
+      unregister: function(q, handler) {
+        var query = this.queries[q];
+        if (query) {
+          if (handler) {
+            query.removeHandler(handler);
+          } else {
+            query.clear();
+            delete this.queries[q];
+          }
+        }
+        return this;
+      }
+    };
+    return new MediaQueryDispatch();
+  }));
+  return module.exports;
+});
+
+System.registerDynamic("npm:enquire.js@2.1.1.js", ["npm:enquire.js@2.1.1/dist/enquire.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:enquire.js@2.1.1/dist/enquire.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:ev-emitter@1.0.3/ev-emitter.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(global, factory) {
+    if (typeof define == 'function' && define.amd) {
+      define(factory);
+    } else if (typeof module == 'object' && module.exports) {
+      module.exports = factory();
+    } else {
+      global.EvEmitter = factory();
+    }
+  }(typeof window != 'undefined' ? window : this, function() {
+    "use strict";
+    function EvEmitter() {}
+    var proto = EvEmitter.prototype;
+    proto.on = function(eventName, listener) {
+      if (!eventName || !listener) {
+        return;
+      }
+      var events = this._events = this._events || {};
+      var listeners = events[eventName] = events[eventName] || [];
+      if (listeners.indexOf(listener) == -1) {
+        listeners.push(listener);
+      }
+      return this;
+    };
+    proto.once = function(eventName, listener) {
+      if (!eventName || !listener) {
+        return;
+      }
+      this.on(eventName, listener);
+      var onceEvents = this._onceEvents = this._onceEvents || {};
+      var onceListeners = onceEvents[eventName] = onceEvents[eventName] || {};
+      onceListeners[listener] = true;
+      return this;
+    };
+    proto.off = function(eventName, listener) {
+      var listeners = this._events && this._events[eventName];
+      if (!listeners || !listeners.length) {
+        return;
+      }
+      var index = listeners.indexOf(listener);
+      if (index != -1) {
+        listeners.splice(index, 1);
+      }
+      return this;
+    };
+    proto.emitEvent = function(eventName, args) {
+      var listeners = this._events && this._events[eventName];
+      if (!listeners || !listeners.length) {
+        return;
+      }
+      var i = 0;
+      var listener = listeners[i];
+      args = args || [];
+      var onceListeners = this._onceEvents && this._onceEvents[eventName];
+      while (listener) {
+        var isOnce = onceListeners && onceListeners[listener];
+        if (isOnce) {
+          this.off(eventName, listener);
+          delete onceListeners[listener];
+        }
+        listener.apply(this, args);
+        i += isOnce ? 0 : 1;
+        listener = listeners[i];
+      }
+      return this;
+    };
+    return EvEmitter;
+  }));
+  return module.exports;
+});
+
+System.registerDynamic("npm:ev-emitter@1.0.3.js", ["npm:ev-emitter@1.0.3/ev-emitter.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:ev-emitter@1.0.3/ev-emitter.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:imagesloaded@4.1.1/imagesloaded.js", ["npm:ev-emitter@1.0.3.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  "format cjs";
+  (function(window, factory) {
+    'use strict';
+    if (typeof define == 'function' && define.amd) {
+      define(['ev-emitter/ev-emitter'], function(EvEmitter) {
+        return factory(window, EvEmitter);
+      });
+    } else if (typeof module == 'object' && module.exports) {
+      module.exports = factory(window, $__require('npm:ev-emitter@1.0.3.js'));
+    } else {
+      window.imagesLoaded = factory(window, window.EvEmitter);
+    }
+  })(window, function factory(window, EvEmitter) {
+    'use strict';
+    var $ = window.jQuery;
+    var console = window.console;
+    function extend(a, b) {
+      for (var prop in b) {
+        a[prop] = b[prop];
+      }
+      return a;
+    }
+    function makeArray(obj) {
+      var ary = [];
+      if (Array.isArray(obj)) {
+        ary = obj;
+      } else if (typeof obj.length == 'number') {
+        for (var i = 0; i < obj.length; i++) {
+          ary.push(obj[i]);
+        }
+      } else {
+        ary.push(obj);
+      }
+      return ary;
+    }
+    function ImagesLoaded(elem, options, onAlways) {
+      if (!(this instanceof ImagesLoaded)) {
+        return new ImagesLoaded(elem, options, onAlways);
+      }
+      if (typeof elem == 'string') {
+        elem = document.querySelectorAll(elem);
+      }
+      this.elements = makeArray(elem);
+      this.options = extend({}, this.options);
+      if (typeof options == 'function') {
+        onAlways = options;
+      } else {
+        extend(this.options, options);
+      }
+      if (onAlways) {
+        this.on('always', onAlways);
+      }
+      this.getImages();
+      if ($) {
+        this.jqDeferred = new $.Deferred();
+      }
+      setTimeout(function() {
+        this.check();
+      }.bind(this));
+    }
+    ImagesLoaded.prototype = Object.create(EvEmitter.prototype);
+    ImagesLoaded.prototype.options = {};
+    ImagesLoaded.prototype.getImages = function() {
+      this.images = [];
+      this.elements.forEach(this.addElementImages, this);
+    };
+    ImagesLoaded.prototype.addElementImages = function(elem) {
+      if (elem.nodeName == 'IMG') {
+        this.addImage(elem);
+      }
+      if (this.options.background === true) {
+        this.addElementBackgroundImages(elem);
+      }
+      var nodeType = elem.nodeType;
+      if (!nodeType || !elementNodeTypes[nodeType]) {
+        return;
+      }
+      var childImgs = elem.querySelectorAll('img');
+      for (var i = 0; i < childImgs.length; i++) {
+        var img = childImgs[i];
+        this.addImage(img);
+      }
+      if (typeof this.options.background == 'string') {
+        var children = elem.querySelectorAll(this.options.background);
+        for (i = 0; i < children.length; i++) {
+          var child = children[i];
+          this.addElementBackgroundImages(child);
+        }
+      }
+    };
+    var elementNodeTypes = {
+      1: true,
+      9: true,
+      11: true
+    };
+    ImagesLoaded.prototype.addElementBackgroundImages = function(elem) {
+      var style = getComputedStyle(elem);
+      if (!style) {
+        return;
+      }
+      var reURL = /url\((['"])?(.*?)\1\)/gi;
+      var matches = reURL.exec(style.backgroundImage);
+      while (matches !== null) {
+        var url = matches && matches[2];
+        if (url) {
+          this.addBackground(url, elem);
+        }
+        matches = reURL.exec(style.backgroundImage);
+      }
+    };
+    ImagesLoaded.prototype.addImage = function(img) {
+      var loadingImage = new LoadingImage(img);
+      this.images.push(loadingImage);
+    };
+    ImagesLoaded.prototype.addBackground = function(url, elem) {
+      var background = new Background(url, elem);
+      this.images.push(background);
+    };
+    ImagesLoaded.prototype.check = function() {
+      var _this = this;
+      this.progressedCount = 0;
+      this.hasAnyBroken = false;
+      if (!this.images.length) {
+        this.complete();
+        return;
+      }
+      function onProgress(image, elem, message) {
+        setTimeout(function() {
+          _this.progress(image, elem, message);
+        });
+      }
+      this.images.forEach(function(loadingImage) {
+        loadingImage.once('progress', onProgress);
+        loadingImage.check();
+      });
+    };
+    ImagesLoaded.prototype.progress = function(image, elem, message) {
+      this.progressedCount++;
+      this.hasAnyBroken = this.hasAnyBroken || !image.isLoaded;
+      this.emitEvent('progress', [this, image, elem]);
+      if (this.jqDeferred && this.jqDeferred.notify) {
+        this.jqDeferred.notify(this, image);
+      }
+      if (this.progressedCount == this.images.length) {
+        this.complete();
+      }
+      if (this.options.debug && console) {
+        console.log('progress: ' + message, image, elem);
+      }
+    };
+    ImagesLoaded.prototype.complete = function() {
+      var eventName = this.hasAnyBroken ? 'fail' : 'done';
+      this.isComplete = true;
+      this.emitEvent(eventName, [this]);
+      this.emitEvent('always', [this]);
+      if (this.jqDeferred) {
+        var jqMethod = this.hasAnyBroken ? 'reject' : 'resolve';
+        this.jqDeferred[jqMethod](this);
+      }
+    };
+    function LoadingImage(img) {
+      this.img = img;
+    }
+    LoadingImage.prototype = Object.create(EvEmitter.prototype);
+    LoadingImage.prototype.check = function() {
+      var isComplete = this.getIsImageComplete();
+      if (isComplete) {
+        this.confirm(this.img.naturalWidth !== 0, 'naturalWidth');
+        return;
+      }
+      this.proxyImage = new Image();
+      this.proxyImage.addEventListener('load', this);
+      this.proxyImage.addEventListener('error', this);
+      this.img.addEventListener('load', this);
+      this.img.addEventListener('error', this);
+      this.proxyImage.src = this.img.src;
+    };
+    LoadingImage.prototype.getIsImageComplete = function() {
+      return this.img.complete && this.img.naturalWidth !== undefined;
+    };
+    LoadingImage.prototype.confirm = function(isLoaded, message) {
+      this.isLoaded = isLoaded;
+      this.emitEvent('progress', [this, this.img, message]);
+    };
+    LoadingImage.prototype.handleEvent = function(event) {
+      var method = 'on' + event.type;
+      if (this[method]) {
+        this[method](event);
+      }
+    };
+    LoadingImage.prototype.onload = function() {
+      this.confirm(true, 'onload');
+      this.unbindEvents();
+    };
+    LoadingImage.prototype.onerror = function() {
+      this.confirm(false, 'onerror');
+      this.unbindEvents();
+    };
+    LoadingImage.prototype.unbindEvents = function() {
+      this.proxyImage.removeEventListener('load', this);
+      this.proxyImage.removeEventListener('error', this);
+      this.img.removeEventListener('load', this);
+      this.img.removeEventListener('error', this);
+    };
+    function Background(url, element) {
+      this.url = url;
+      this.element = element;
+      this.img = new Image();
+    }
+    Background.prototype = Object.create(LoadingImage.prototype);
+    Background.prototype.check = function() {
+      this.img.addEventListener('load', this);
+      this.img.addEventListener('error', this);
+      this.img.src = this.url;
+      var isComplete = this.getIsImageComplete();
+      if (isComplete) {
+        this.confirm(this.img.naturalWidth !== 0, 'naturalWidth');
+        this.unbindEvents();
+      }
+    };
+    Background.prototype.unbindEvents = function() {
+      this.img.removeEventListener('load', this);
+      this.img.removeEventListener('error', this);
+    };
+    Background.prototype.confirm = function(isLoaded, message) {
+      this.isLoaded = isLoaded;
+      this.emitEvent('progress', [this, this.element, message]);
+    };
+    ImagesLoaded.makeJQueryPlugin = function(jQuery) {
+      jQuery = jQuery || window.jQuery;
+      if (!jQuery) {
+        return;
+      }
+      $ = jQuery;
+      $.fn.imagesLoaded = function(options, callback) {
+        var instance = new ImagesLoaded(this, options, callback);
+        return instance.jqDeferred.promise($(this));
+      };
+    };
+    ImagesLoaded.makeJQueryPlugin();
+    return ImagesLoaded;
+  });
+  return module.exports;
+});
+
+System.registerDynamic("npm:imagesloaded@4.1.1.js", ["npm:imagesloaded@4.1.1/imagesloaded.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:imagesloaded@4.1.1/imagesloaded.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.debounce@4.0.8/index.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    var FUNC_ERROR_TEXT = 'Expected a function';
+    var NAN = 0 / 0;
+    var symbolTag = '[object Symbol]';
+    var reTrim = /^\s+|\s+$/g;
+    var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
+    var reIsBinary = /^0b[01]+$/i;
+    var reIsOctal = /^0o[0-7]+$/i;
+    var freeParseInt = parseInt;
+    var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+    var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+    var root = freeGlobal || freeSelf || Function('return this')();
+    var objectProto = Object.prototype;
+    var objectToString = objectProto.toString;
+    var nativeMax = Math.max,
+        nativeMin = Math.min;
+    var now = function() {
+      return root.Date.now();
+    };
+    function debounce(func, wait, options) {
+      var lastArgs,
+          lastThis,
+          maxWait,
+          result,
+          timerId,
+          lastCallTime,
+          lastInvokeTime = 0,
+          leading = false,
+          maxing = false,
+          trailing = true;
+      if (typeof func != 'function') {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      wait = toNumber(wait) || 0;
+      if (isObject(options)) {
+        leading = !!options.leading;
+        maxing = 'maxWait' in options;
+        maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
+        trailing = 'trailing' in options ? !!options.trailing : trailing;
+      }
+      function invokeFunc(time) {
+        var args = lastArgs,
+            thisArg = lastThis;
+        lastArgs = lastThis = undefined;
+        lastInvokeTime = time;
+        result = func.apply(thisArg, args);
+        return result;
+      }
+      function leadingEdge(time) {
+        lastInvokeTime = time;
+        timerId = setTimeout(timerExpired, wait);
+        return leading ? invokeFunc(time) : result;
+      }
+      function remainingWait(time) {
+        var timeSinceLastCall = time - lastCallTime,
+            timeSinceLastInvoke = time - lastInvokeTime,
+            result = wait - timeSinceLastCall;
+        return maxing ? nativeMin(result, maxWait - timeSinceLastInvoke) : result;
+      }
+      function shouldInvoke(time) {
+        var timeSinceLastCall = time - lastCallTime,
+            timeSinceLastInvoke = time - lastInvokeTime;
+        return (lastCallTime === undefined || (timeSinceLastCall >= wait) || (timeSinceLastCall < 0) || (maxing && timeSinceLastInvoke >= maxWait));
+      }
+      function timerExpired() {
+        var time = now();
+        if (shouldInvoke(time)) {
+          return trailingEdge(time);
+        }
+        timerId = setTimeout(timerExpired, remainingWait(time));
+      }
+      function trailingEdge(time) {
+        timerId = undefined;
+        if (trailing && lastArgs) {
+          return invokeFunc(time);
+        }
+        lastArgs = lastThis = undefined;
+        return result;
+      }
+      function cancel() {
+        if (timerId !== undefined) {
+          clearTimeout(timerId);
+        }
+        lastInvokeTime = 0;
+        lastArgs = lastCallTime = lastThis = timerId = undefined;
+      }
+      function flush() {
+        return timerId === undefined ? result : trailingEdge(now());
+      }
+      function debounced() {
+        var time = now(),
+            isInvoking = shouldInvoke(time);
+        lastArgs = arguments;
+        lastThis = this;
+        lastCallTime = time;
+        if (isInvoking) {
+          if (timerId === undefined) {
+            return leadingEdge(lastCallTime);
+          }
+          if (maxing) {
+            timerId = setTimeout(timerExpired, wait);
+            return invokeFunc(lastCallTime);
+          }
+        }
+        if (timerId === undefined) {
+          timerId = setTimeout(timerExpired, wait);
+        }
+        return result;
+      }
+      debounced.cancel = cancel;
+      debounced.flush = flush;
+      return debounced;
+    }
+    function isObject(value) {
+      var type = typeof value;
+      return !!value && (type == 'object' || type == 'function');
+    }
+    function isObjectLike(value) {
+      return !!value && typeof value == 'object';
+    }
+    function isSymbol(value) {
+      return typeof value == 'symbol' || (isObjectLike(value) && objectToString.call(value) == symbolTag);
+    }
+    function toNumber(value) {
+      if (typeof value == 'number') {
+        return value;
+      }
+      if (isSymbol(value)) {
+        return NAN;
+      }
+      if (isObject(value)) {
+        var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
+        value = isObject(other) ? (other + '') : other;
+      }
+      if (typeof value != 'string') {
+        return value === 0 ? value : +value;
+      }
+      value = value.replace(reTrim, '');
+      var isBinary = reIsBinary.test(value);
+      return (isBinary || reIsOctal.test(value)) ? freeParseInt(value.slice(2), isBinary ? 2 : 8) : (reIsBadHex.test(value) ? NAN : +value);
+    }
+    module.exports = debounce;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.debounce@4.0.8.js", ["npm:lodash.debounce@4.0.8/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash.debounce@4.0.8/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.partition@4.6.0/index.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    var LARGE_ARRAY_SIZE = 200;
+    var FUNC_ERROR_TEXT = 'Expected a function';
+    var HASH_UNDEFINED = '__lodash_hash_undefined__';
+    var UNORDERED_COMPARE_FLAG = 1,
+        PARTIAL_COMPARE_FLAG = 2;
+    var INFINITY = 1 / 0,
+        MAX_SAFE_INTEGER = 9007199254740991;
+    var argsTag = '[object Arguments]',
+        arrayTag = '[object Array]',
+        boolTag = '[object Boolean]',
+        dateTag = '[object Date]',
+        errorTag = '[object Error]',
+        funcTag = '[object Function]',
+        genTag = '[object GeneratorFunction]',
+        mapTag = '[object Map]',
+        numberTag = '[object Number]',
+        objectTag = '[object Object]',
+        promiseTag = '[object Promise]',
+        regexpTag = '[object RegExp]',
+        setTag = '[object Set]',
+        stringTag = '[object String]',
+        symbolTag = '[object Symbol]',
+        weakMapTag = '[object WeakMap]';
+    var arrayBufferTag = '[object ArrayBuffer]',
+        dataViewTag = '[object DataView]',
+        float32Tag = '[object Float32Array]',
+        float64Tag = '[object Float64Array]',
+        int8Tag = '[object Int8Array]',
+        int16Tag = '[object Int16Array]',
+        int32Tag = '[object Int32Array]',
+        uint8Tag = '[object Uint8Array]',
+        uint8ClampedTag = '[object Uint8ClampedArray]',
+        uint16Tag = '[object Uint16Array]',
+        uint32Tag = '[object Uint32Array]';
+    var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
+        reIsPlainProp = /^\w*$/,
+        reLeadingDot = /^\./,
+        rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
+    var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
+    var reEscapeChar = /\\(\\)?/g;
+    var reIsHostCtor = /^\[object .+?Constructor\]$/;
+    var reIsUint = /^(?:0|[1-9]\d*)$/;
+    var typedArrayTags = {};
+    typedArrayTags[float32Tag] = typedArrayTags[float64Tag] = typedArrayTags[int8Tag] = typedArrayTags[int16Tag] = typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] = typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] = typedArrayTags[uint32Tag] = true;
+    typedArrayTags[argsTag] = typedArrayTags[arrayTag] = typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] = typedArrayTags[dataViewTag] = typedArrayTags[dateTag] = typedArrayTags[errorTag] = typedArrayTags[funcTag] = typedArrayTags[mapTag] = typedArrayTags[numberTag] = typedArrayTags[objectTag] = typedArrayTags[regexpTag] = typedArrayTags[setTag] = typedArrayTags[stringTag] = typedArrayTags[weakMapTag] = false;
+    var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+    var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+    var root = freeGlobal || freeSelf || Function('return this')();
+    var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
+    var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
+    var moduleExports = freeModule && freeModule.exports === freeExports;
+    var freeProcess = moduleExports && freeGlobal.process;
+    var nodeUtil = (function() {
+      try {
+        return freeProcess && freeProcess.binding('util');
+      } catch (e) {}
+    }());
+    var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
+    function arrayAggregator(array, setter, iteratee, accumulator) {
+      var index = -1,
+          length = array ? array.length : 0;
+      while (++index < length) {
+        var value = array[index];
+        setter(accumulator, value, iteratee(value), array);
+      }
+      return accumulator;
+    }
+    function arraySome(array, predicate) {
+      var index = -1,
+          length = array ? array.length : 0;
+      while (++index < length) {
+        if (predicate(array[index], index, array)) {
+          return true;
+        }
+      }
+      return false;
+    }
+    function baseProperty(key) {
+      return function(object) {
+        return object == null ? undefined : object[key];
+      };
+    }
+    function baseTimes(n, iteratee) {
+      var index = -1,
+          result = Array(n);
+      while (++index < n) {
+        result[index] = iteratee(index);
+      }
+      return result;
+    }
+    function baseUnary(func) {
+      return function(value) {
+        return func(value);
+      };
+    }
+    function getValue(object, key) {
+      return object == null ? undefined : object[key];
+    }
+    function isHostObject(value) {
+      var result = false;
+      if (value != null && typeof value.toString != 'function') {
+        try {
+          result = !!(value + '');
+        } catch (e) {}
+      }
+      return result;
+    }
+    function mapToArray(map) {
+      var index = -1,
+          result = Array(map.size);
+      map.forEach(function(value, key) {
+        result[++index] = [key, value];
+      });
+      return result;
+    }
+    function overArg(func, transform) {
+      return function(arg) {
+        return func(transform(arg));
+      };
+    }
+    function setToArray(set) {
+      var index = -1,
+          result = Array(set.size);
+      set.forEach(function(value) {
+        result[++index] = value;
+      });
+      return result;
+    }
+    var arrayProto = Array.prototype,
+        funcProto = Function.prototype,
+        objectProto = Object.prototype;
+    var coreJsData = root['__core-js_shared__'];
+    var maskSrcKey = (function() {
+      var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
+      return uid ? ('Symbol(src)_1.' + uid) : '';
+    }());
+    var funcToString = funcProto.toString;
+    var hasOwnProperty = objectProto.hasOwnProperty;
+    var objectToString = objectProto.toString;
+    var reIsNative = RegExp('^' + funcToString.call(hasOwnProperty).replace(reRegExpChar, '\\$&').replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$');
+    var Symbol = root.Symbol,
+        Uint8Array = root.Uint8Array,
+        propertyIsEnumerable = objectProto.propertyIsEnumerable,
+        splice = arrayProto.splice;
+    var nativeKeys = overArg(Object.keys, Object);
+    var DataView = getNative(root, 'DataView'),
+        Map = getNative(root, 'Map'),
+        Promise = getNative(root, 'Promise'),
+        Set = getNative(root, 'Set'),
+        WeakMap = getNative(root, 'WeakMap'),
+        nativeCreate = getNative(Object, 'create');
+    var dataViewCtorString = toSource(DataView),
+        mapCtorString = toSource(Map),
+        promiseCtorString = toSource(Promise),
+        setCtorString = toSource(Set),
+        weakMapCtorString = toSource(WeakMap);
+    var symbolProto = Symbol ? Symbol.prototype : undefined,
+        symbolValueOf = symbolProto ? symbolProto.valueOf : undefined,
+        symbolToString = symbolProto ? symbolProto.toString : undefined;
+    function Hash(entries) {
+      var index = -1,
+          length = entries ? entries.length : 0;
+      this.clear();
+      while (++index < length) {
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+      }
+    }
+    function hashClear() {
+      this.__data__ = nativeCreate ? nativeCreate(null) : {};
+    }
+    function hashDelete(key) {
+      return this.has(key) && delete this.__data__[key];
+    }
+    function hashGet(key) {
+      var data = this.__data__;
+      if (nativeCreate) {
+        var result = data[key];
+        return result === HASH_UNDEFINED ? undefined : result;
+      }
+      return hasOwnProperty.call(data, key) ? data[key] : undefined;
+    }
+    function hashHas(key) {
+      var data = this.__data__;
+      return nativeCreate ? data[key] !== undefined : hasOwnProperty.call(data, key);
+    }
+    function hashSet(key, value) {
+      var data = this.__data__;
+      data[key] = (nativeCreate && value === undefined) ? HASH_UNDEFINED : value;
+      return this;
+    }
+    Hash.prototype.clear = hashClear;
+    Hash.prototype['delete'] = hashDelete;
+    Hash.prototype.get = hashGet;
+    Hash.prototype.has = hashHas;
+    Hash.prototype.set = hashSet;
+    function ListCache(entries) {
+      var index = -1,
+          length = entries ? entries.length : 0;
+      this.clear();
+      while (++index < length) {
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+      }
+    }
+    function listCacheClear() {
+      this.__data__ = [];
+    }
+    function listCacheDelete(key) {
+      var data = this.__data__,
+          index = assocIndexOf(data, key);
+      if (index < 0) {
+        return false;
+      }
+      var lastIndex = data.length - 1;
+      if (index == lastIndex) {
+        data.pop();
+      } else {
+        splice.call(data, index, 1);
+      }
+      return true;
+    }
+    function listCacheGet(key) {
+      var data = this.__data__,
+          index = assocIndexOf(data, key);
+      return index < 0 ? undefined : data[index][1];
+    }
+    function listCacheHas(key) {
+      return assocIndexOf(this.__data__, key) > -1;
+    }
+    function listCacheSet(key, value) {
+      var data = this.__data__,
+          index = assocIndexOf(data, key);
+      if (index < 0) {
+        data.push([key, value]);
+      } else {
+        data[index][1] = value;
+      }
+      return this;
+    }
+    ListCache.prototype.clear = listCacheClear;
+    ListCache.prototype['delete'] = listCacheDelete;
+    ListCache.prototype.get = listCacheGet;
+    ListCache.prototype.has = listCacheHas;
+    ListCache.prototype.set = listCacheSet;
+    function MapCache(entries) {
+      var index = -1,
+          length = entries ? entries.length : 0;
+      this.clear();
+      while (++index < length) {
+        var entry = entries[index];
+        this.set(entry[0], entry[1]);
+      }
+    }
+    function mapCacheClear() {
+      this.__data__ = {
+        'hash': new Hash,
+        'map': new (Map || ListCache),
+        'string': new Hash
+      };
+    }
+    function mapCacheDelete(key) {
+      return getMapData(this, key)['delete'](key);
+    }
+    function mapCacheGet(key) {
+      return getMapData(this, key).get(key);
+    }
+    function mapCacheHas(key) {
+      return getMapData(this, key).has(key);
+    }
+    function mapCacheSet(key, value) {
+      getMapData(this, key).set(key, value);
+      return this;
+    }
+    MapCache.prototype.clear = mapCacheClear;
+    MapCache.prototype['delete'] = mapCacheDelete;
+    MapCache.prototype.get = mapCacheGet;
+    MapCache.prototype.has = mapCacheHas;
+    MapCache.prototype.set = mapCacheSet;
+    function SetCache(values) {
+      var index = -1,
+          length = values ? values.length : 0;
+      this.__data__ = new MapCache;
+      while (++index < length) {
+        this.add(values[index]);
+      }
+    }
+    function setCacheAdd(value) {
+      this.__data__.set(value, HASH_UNDEFINED);
+      return this;
+    }
+    function setCacheHas(value) {
+      return this.__data__.has(value);
+    }
+    SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
+    SetCache.prototype.has = setCacheHas;
+    function Stack(entries) {
+      this.__data__ = new ListCache(entries);
+    }
+    function stackClear() {
+      this.__data__ = new ListCache;
+    }
+    function stackDelete(key) {
+      return this.__data__['delete'](key);
+    }
+    function stackGet(key) {
+      return this.__data__.get(key);
+    }
+    function stackHas(key) {
+      return this.__data__.has(key);
+    }
+    function stackSet(key, value) {
+      var cache = this.__data__;
+      if (cache instanceof ListCache) {
+        var pairs = cache.__data__;
+        if (!Map || (pairs.length < LARGE_ARRAY_SIZE - 1)) {
+          pairs.push([key, value]);
+          return this;
+        }
+        cache = this.__data__ = new MapCache(pairs);
+      }
+      cache.set(key, value);
+      return this;
+    }
+    Stack.prototype.clear = stackClear;
+    Stack.prototype['delete'] = stackDelete;
+    Stack.prototype.get = stackGet;
+    Stack.prototype.has = stackHas;
+    Stack.prototype.set = stackSet;
+    function arrayLikeKeys(value, inherited) {
+      var result = (isArray(value) || isArguments(value)) ? baseTimes(value.length, String) : [];
+      var length = result.length,
+          skipIndexes = !!length;
+      for (var key in value) {
+        if ((inherited || hasOwnProperty.call(value, key)) && !(skipIndexes && (key == 'length' || isIndex(key, length)))) {
+          result.push(key);
+        }
+      }
+      return result;
+    }
+    function assocIndexOf(array, key) {
+      var length = array.length;
+      while (length--) {
+        if (eq(array[length][0], key)) {
+          return length;
+        }
+      }
+      return -1;
+    }
+    function baseAggregator(collection, setter, iteratee, accumulator) {
+      baseEach(collection, function(value, key, collection) {
+        setter(accumulator, value, iteratee(value), collection);
+      });
+      return accumulator;
+    }
+    var baseEach = createBaseEach(baseForOwn);
+    var baseFor = createBaseFor();
+    function baseForOwn(object, iteratee) {
+      return object && baseFor(object, iteratee, keys);
+    }
+    function baseGet(object, path) {
+      path = isKey(path, object) ? [path] : castPath(path);
+      var index = 0,
+          length = path.length;
+      while (object != null && index < length) {
+        object = object[toKey(path[index++])];
+      }
+      return (index && index == length) ? object : undefined;
+    }
+    function baseGetTag(value) {
+      return objectToString.call(value);
+    }
+    function baseHasIn(object, key) {
+      return object != null && key in Object(object);
+    }
+    function baseIsEqual(value, other, customizer, bitmask, stack) {
+      if (value === other) {
+        return true;
+      }
+      if (value == null || other == null || (!isObject(value) && !isObjectLike(other))) {
+        return value !== value && other !== other;
+      }
+      return baseIsEqualDeep(value, other, baseIsEqual, customizer, bitmask, stack);
+    }
+    function baseIsEqualDeep(object, other, equalFunc, customizer, bitmask, stack) {
+      var objIsArr = isArray(object),
+          othIsArr = isArray(other),
+          objTag = arrayTag,
+          othTag = arrayTag;
+      if (!objIsArr) {
+        objTag = getTag(object);
+        objTag = objTag == argsTag ? objectTag : objTag;
+      }
+      if (!othIsArr) {
+        othTag = getTag(other);
+        othTag = othTag == argsTag ? objectTag : othTag;
+      }
+      var objIsObj = objTag == objectTag && !isHostObject(object),
+          othIsObj = othTag == objectTag && !isHostObject(other),
+          isSameTag = objTag == othTag;
+      if (isSameTag && !objIsObj) {
+        stack || (stack = new Stack);
+        return (objIsArr || isTypedArray(object)) ? equalArrays(object, other, equalFunc, customizer, bitmask, stack) : equalByTag(object, other, objTag, equalFunc, customizer, bitmask, stack);
+      }
+      if (!(bitmask & PARTIAL_COMPARE_FLAG)) {
+        var objIsWrapped = objIsObj && hasOwnProperty.call(object, '__wrapped__'),
+            othIsWrapped = othIsObj && hasOwnProperty.call(other, '__wrapped__');
+        if (objIsWrapped || othIsWrapped) {
+          var objUnwrapped = objIsWrapped ? object.value() : object,
+              othUnwrapped = othIsWrapped ? other.value() : other;
+          stack || (stack = new Stack);
+          return equalFunc(objUnwrapped, othUnwrapped, customizer, bitmask, stack);
+        }
+      }
+      if (!isSameTag) {
+        return false;
+      }
+      stack || (stack = new Stack);
+      return equalObjects(object, other, equalFunc, customizer, bitmask, stack);
+    }
+    function baseIsMatch(object, source, matchData, customizer) {
+      var index = matchData.length,
+          length = index,
+          noCustomizer = !customizer;
+      if (object == null) {
+        return !length;
+      }
+      object = Object(object);
+      while (index--) {
+        var data = matchData[index];
+        if ((noCustomizer && data[2]) ? data[1] !== object[data[0]] : !(data[0] in object)) {
+          return false;
+        }
+      }
+      while (++index < length) {
+        data = matchData[index];
+        var key = data[0],
+            objValue = object[key],
+            srcValue = data[1];
+        if (noCustomizer && data[2]) {
+          if (objValue === undefined && !(key in object)) {
+            return false;
+          }
+        } else {
+          var stack = new Stack;
+          if (customizer) {
+            var result = customizer(objValue, srcValue, key, object, source, stack);
+          }
+          if (!(result === undefined ? baseIsEqual(srcValue, objValue, customizer, UNORDERED_COMPARE_FLAG | PARTIAL_COMPARE_FLAG, stack) : result)) {
+            return false;
+          }
+        }
+      }
+      return true;
+    }
+    function baseIsNative(value) {
+      if (!isObject(value) || isMasked(value)) {
+        return false;
+      }
+      var pattern = (isFunction(value) || isHostObject(value)) ? reIsNative : reIsHostCtor;
+      return pattern.test(toSource(value));
+    }
+    function baseIsTypedArray(value) {
+      return isObjectLike(value) && isLength(value.length) && !!typedArrayTags[objectToString.call(value)];
+    }
+    function baseIteratee(value) {
+      if (typeof value == 'function') {
+        return value;
+      }
+      if (value == null) {
+        return identity;
+      }
+      if (typeof value == 'object') {
+        return isArray(value) ? baseMatchesProperty(value[0], value[1]) : baseMatches(value);
+      }
+      return property(value);
+    }
+    function baseKeys(object) {
+      if (!isPrototype(object)) {
+        return nativeKeys(object);
+      }
+      var result = [];
+      for (var key in Object(object)) {
+        if (hasOwnProperty.call(object, key) && key != 'constructor') {
+          result.push(key);
+        }
+      }
+      return result;
+    }
+    function baseMatches(source) {
+      var matchData = getMatchData(source);
+      if (matchData.length == 1 && matchData[0][2]) {
+        return matchesStrictComparable(matchData[0][0], matchData[0][1]);
+      }
+      return function(object) {
+        return object === source || baseIsMatch(object, source, matchData);
+      };
+    }
+    function baseMatchesProperty(path, srcValue) {
+      if (isKey(path) && isStrictComparable(srcValue)) {
+        return matchesStrictComparable(toKey(path), srcValue);
+      }
+      return function(object) {
+        var objValue = get(object, path);
+        return (objValue === undefined && objValue === srcValue) ? hasIn(object, path) : baseIsEqual(srcValue, objValue, undefined, UNORDERED_COMPARE_FLAG | PARTIAL_COMPARE_FLAG);
+      };
+    }
+    function basePropertyDeep(path) {
+      return function(object) {
+        return baseGet(object, path);
+      };
+    }
+    function baseToString(value) {
+      if (typeof value == 'string') {
+        return value;
+      }
+      if (isSymbol(value)) {
+        return symbolToString ? symbolToString.call(value) : '';
+      }
+      var result = (value + '');
+      return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+    }
+    function castPath(value) {
+      return isArray(value) ? value : stringToPath(value);
+    }
+    function createAggregator(setter, initializer) {
+      return function(collection, iteratee) {
+        var func = isArray(collection) ? arrayAggregator : baseAggregator,
+            accumulator = initializer ? initializer() : {};
+        return func(collection, setter, baseIteratee(iteratee, 2), accumulator);
+      };
+    }
+    function createBaseEach(eachFunc, fromRight) {
+      return function(collection, iteratee) {
+        if (collection == null) {
+          return collection;
+        }
+        if (!isArrayLike(collection)) {
+          return eachFunc(collection, iteratee);
+        }
+        var length = collection.length,
+            index = fromRight ? length : -1,
+            iterable = Object(collection);
+        while ((fromRight ? index-- : ++index < length)) {
+          if (iteratee(iterable[index], index, iterable) === false) {
+            break;
+          }
+        }
+        return collection;
+      };
+    }
+    function createBaseFor(fromRight) {
+      return function(object, iteratee, keysFunc) {
+        var index = -1,
+            iterable = Object(object),
+            props = keysFunc(object),
+            length = props.length;
+        while (length--) {
+          var key = props[fromRight ? length : ++index];
+          if (iteratee(iterable[key], key, iterable) === false) {
+            break;
+          }
+        }
+        return object;
+      };
+    }
+    function equalArrays(array, other, equalFunc, customizer, bitmask, stack) {
+      var isPartial = bitmask & PARTIAL_COMPARE_FLAG,
+          arrLength = array.length,
+          othLength = other.length;
+      if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
+        return false;
+      }
+      var stacked = stack.get(array);
+      if (stacked && stack.get(other)) {
+        return stacked == other;
+      }
+      var index = -1,
+          result = true,
+          seen = (bitmask & UNORDERED_COMPARE_FLAG) ? new SetCache : undefined;
+      stack.set(array, other);
+      stack.set(other, array);
+      while (++index < arrLength) {
+        var arrValue = array[index],
+            othValue = other[index];
+        if (customizer) {
+          var compared = isPartial ? customizer(othValue, arrValue, index, other, array, stack) : customizer(arrValue, othValue, index, array, other, stack);
+        }
+        if (compared !== undefined) {
+          if (compared) {
+            continue;
+          }
+          result = false;
+          break;
+        }
+        if (seen) {
+          if (!arraySome(other, function(othValue, othIndex) {
+            if (!seen.has(othIndex) && (arrValue === othValue || equalFunc(arrValue, othValue, customizer, bitmask, stack))) {
+              return seen.add(othIndex);
+            }
+          })) {
+            result = false;
+            break;
+          }
+        } else if (!(arrValue === othValue || equalFunc(arrValue, othValue, customizer, bitmask, stack))) {
+          result = false;
+          break;
+        }
+      }
+      stack['delete'](array);
+      stack['delete'](other);
+      return result;
+    }
+    function equalByTag(object, other, tag, equalFunc, customizer, bitmask, stack) {
+      switch (tag) {
+        case dataViewTag:
+          if ((object.byteLength != other.byteLength) || (object.byteOffset != other.byteOffset)) {
+            return false;
+          }
+          object = object.buffer;
+          other = other.buffer;
+        case arrayBufferTag:
+          if ((object.byteLength != other.byteLength) || !equalFunc(new Uint8Array(object), new Uint8Array(other))) {
+            return false;
+          }
+          return true;
+        case boolTag:
+        case dateTag:
+        case numberTag:
+          return eq(+object, +other);
+        case errorTag:
+          return object.name == other.name && object.message == other.message;
+        case regexpTag:
+        case stringTag:
+          return object == (other + '');
+        case mapTag:
+          var convert = mapToArray;
+        case setTag:
+          var isPartial = bitmask & PARTIAL_COMPARE_FLAG;
+          convert || (convert = setToArray);
+          if (object.size != other.size && !isPartial) {
+            return false;
+          }
+          var stacked = stack.get(object);
+          if (stacked) {
+            return stacked == other;
+          }
+          bitmask |= UNORDERED_COMPARE_FLAG;
+          stack.set(object, other);
+          var result = equalArrays(convert(object), convert(other), equalFunc, customizer, bitmask, stack);
+          stack['delete'](object);
+          return result;
+        case symbolTag:
+          if (symbolValueOf) {
+            return symbolValueOf.call(object) == symbolValueOf.call(other);
+          }
+      }
+      return false;
+    }
+    function equalObjects(object, other, equalFunc, customizer, bitmask, stack) {
+      var isPartial = bitmask & PARTIAL_COMPARE_FLAG,
+          objProps = keys(object),
+          objLength = objProps.length,
+          othProps = keys(other),
+          othLength = othProps.length;
+      if (objLength != othLength && !isPartial) {
+        return false;
+      }
+      var index = objLength;
+      while (index--) {
+        var key = objProps[index];
+        if (!(isPartial ? key in other : hasOwnProperty.call(other, key))) {
+          return false;
+        }
+      }
+      var stacked = stack.get(object);
+      if (stacked && stack.get(other)) {
+        return stacked == other;
+      }
+      var result = true;
+      stack.set(object, other);
+      stack.set(other, object);
+      var skipCtor = isPartial;
+      while (++index < objLength) {
+        key = objProps[index];
+        var objValue = object[key],
+            othValue = other[key];
+        if (customizer) {
+          var compared = isPartial ? customizer(othValue, objValue, key, other, object, stack) : customizer(objValue, othValue, key, object, other, stack);
+        }
+        if (!(compared === undefined ? (objValue === othValue || equalFunc(objValue, othValue, customizer, bitmask, stack)) : compared)) {
+          result = false;
+          break;
+        }
+        skipCtor || (skipCtor = key == 'constructor');
+      }
+      if (result && !skipCtor) {
+        var objCtor = object.constructor,
+            othCtor = other.constructor;
+        if (objCtor != othCtor && ('constructor' in object && 'constructor' in other) && !(typeof objCtor == 'function' && objCtor instanceof objCtor && typeof othCtor == 'function' && othCtor instanceof othCtor)) {
+          result = false;
+        }
+      }
+      stack['delete'](object);
+      stack['delete'](other);
+      return result;
+    }
+    function getMapData(map, key) {
+      var data = map.__data__;
+      return isKeyable(key) ? data[typeof key == 'string' ? 'string' : 'hash'] : data.map;
+    }
+    function getMatchData(object) {
+      var result = keys(object),
+          length = result.length;
+      while (length--) {
+        var key = result[length],
+            value = object[key];
+        result[length] = [key, value, isStrictComparable(value)];
+      }
+      return result;
+    }
+    function getNative(object, key) {
+      var value = getValue(object, key);
+      return baseIsNative(value) ? value : undefined;
+    }
+    var getTag = baseGetTag;
+    if ((DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag) || (Map && getTag(new Map) != mapTag) || (Promise && getTag(Promise.resolve()) != promiseTag) || (Set && getTag(new Set) != setTag) || (WeakMap && getTag(new WeakMap) != weakMapTag)) {
+      getTag = function(value) {
+        var result = objectToString.call(value),
+            Ctor = result == objectTag ? value.constructor : undefined,
+            ctorString = Ctor ? toSource(Ctor) : undefined;
+        if (ctorString) {
+          switch (ctorString) {
+            case dataViewCtorString:
+              return dataViewTag;
+            case mapCtorString:
+              return mapTag;
+            case promiseCtorString:
+              return promiseTag;
+            case setCtorString:
+              return setTag;
+            case weakMapCtorString:
+              return weakMapTag;
+          }
+        }
+        return result;
+      };
+    }
+    function hasPath(object, path, hasFunc) {
+      path = isKey(path, object) ? [path] : castPath(path);
+      var result,
+          index = -1,
+          length = path.length;
+      while (++index < length) {
+        var key = toKey(path[index]);
+        if (!(result = object != null && hasFunc(object, key))) {
+          break;
+        }
+        object = object[key];
+      }
+      if (result) {
+        return result;
+      }
+      var length = object ? object.length : 0;
+      return !!length && isLength(length) && isIndex(key, length) && (isArray(object) || isArguments(object));
+    }
+    function isIndex(value, length) {
+      length = length == null ? MAX_SAFE_INTEGER : length;
+      return !!length && (typeof value == 'number' || reIsUint.test(value)) && (value > -1 && value % 1 == 0 && value < length);
+    }
+    function isKey(value, object) {
+      if (isArray(value)) {
+        return false;
+      }
+      var type = typeof value;
+      if (type == 'number' || type == 'symbol' || type == 'boolean' || value == null || isSymbol(value)) {
+        return true;
+      }
+      return reIsPlainProp.test(value) || !reIsDeepProp.test(value) || (object != null && value in Object(object));
+    }
+    function isKeyable(value) {
+      var type = typeof value;
+      return (type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean') ? (value !== '__proto__') : (value === null);
+    }
+    function isMasked(func) {
+      return !!maskSrcKey && (maskSrcKey in func);
+    }
+    function isPrototype(value) {
+      var Ctor = value && value.constructor,
+          proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto;
+      return value === proto;
+    }
+    function isStrictComparable(value) {
+      return value === value && !isObject(value);
+    }
+    function matchesStrictComparable(key, srcValue) {
+      return function(object) {
+        if (object == null) {
+          return false;
+        }
+        return object[key] === srcValue && (srcValue !== undefined || (key in Object(object)));
+      };
+    }
+    var stringToPath = memoize(function(string) {
+      string = toString(string);
+      var result = [];
+      if (reLeadingDot.test(string)) {
+        result.push('');
+      }
+      string.replace(rePropName, function(match, number, quote, string) {
+        result.push(quote ? string.replace(reEscapeChar, '$1') : (number || match));
+      });
+      return result;
+    });
+    function toKey(value) {
+      if (typeof value == 'string' || isSymbol(value)) {
+        return value;
+      }
+      var result = (value + '');
+      return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+    }
+    function toSource(func) {
+      if (func != null) {
+        try {
+          return funcToString.call(func);
+        } catch (e) {}
+        try {
+          return (func + '');
+        } catch (e) {}
+      }
+      return '';
+    }
+    var partition = createAggregator(function(result, value, key) {
+      result[key ? 0 : 1].push(value);
+    }, function() {
+      return [[], []];
+    });
+    function memoize(func, resolver) {
+      if (typeof func != 'function' || (resolver && typeof resolver != 'function')) {
+        throw new TypeError(FUNC_ERROR_TEXT);
+      }
+      var memoized = function() {
+        var args = arguments,
+            key = resolver ? resolver.apply(this, args) : args[0],
+            cache = memoized.cache;
+        if (cache.has(key)) {
+          return cache.get(key);
+        }
+        var result = func.apply(this, args);
+        memoized.cache = cache.set(key, result);
+        return result;
+      };
+      memoized.cache = new (memoize.Cache || MapCache);
+      return memoized;
+    }
+    memoize.Cache = MapCache;
+    function eq(value, other) {
+      return value === other || (value !== value && other !== other);
+    }
+    function isArguments(value) {
+      return isArrayLikeObject(value) && hasOwnProperty.call(value, 'callee') && (!propertyIsEnumerable.call(value, 'callee') || objectToString.call(value) == argsTag);
+    }
+    var isArray = Array.isArray;
+    function isArrayLike(value) {
+      return value != null && isLength(value.length) && !isFunction(value);
+    }
+    function isArrayLikeObject(value) {
+      return isObjectLike(value) && isArrayLike(value);
+    }
+    function isFunction(value) {
+      var tag = isObject(value) ? objectToString.call(value) : '';
+      return tag == funcTag || tag == genTag;
+    }
+    function isLength(value) {
+      return typeof value == 'number' && value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+    }
+    function isObject(value) {
+      var type = typeof value;
+      return !!value && (type == 'object' || type == 'function');
+    }
+    function isObjectLike(value) {
+      return !!value && typeof value == 'object';
+    }
+    function isSymbol(value) {
+      return typeof value == 'symbol' || (isObjectLike(value) && objectToString.call(value) == symbolTag);
+    }
+    var isTypedArray = nodeIsTypedArray ? baseUnary(nodeIsTypedArray) : baseIsTypedArray;
+    function toString(value) {
+      return value == null ? '' : baseToString(value);
+    }
+    function get(object, path, defaultValue) {
+      var result = object == null ? undefined : baseGet(object, path);
+      return result === undefined ? defaultValue : result;
+    }
+    function hasIn(object, path) {
+      return object != null && hasPath(object, path, baseHasIn);
+    }
+    function keys(object) {
+      return isArrayLike(object) ? arrayLikeKeys(object) : baseKeys(object);
+    }
+    function identity(value) {
+      return value;
+    }
+    function property(path) {
+      return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
+    }
+    module.exports = partition;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:lodash.partition@4.6.0.js", ["npm:lodash.partition@4.6.0/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:lodash.partition@4.6.0/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/ReactInstanceMap.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var ReactInstanceMap = {
+    remove: function(key) {
+      key._reactInternalInstance = undefined;
+    },
+    get: function(key) {
+      return key._reactInternalInstance;
+    },
+    has: function(key) {
+      return key._reactInternalInstance !== undefined;
+    },
+    set: function(key, value) {
+      key._reactInternalInstance = value;
+    }
+  };
+  module.exports = ReactInstanceMap;
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/flattenChildren.js", ["npm:react@15.3.1/lib/KeyEscapeUtils.js", "npm:react@15.3.1/lib/traverseAllChildren.js", "npm:fbjs@0.8.4/lib/warning.js", "npm:react@15.3.1/lib/ReactComponentTreeHook.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var KeyEscapeUtils = $__require('npm:react@15.3.1/lib/KeyEscapeUtils.js');
+    var traverseAllChildren = $__require('npm:react@15.3.1/lib/traverseAllChildren.js');
+    var warning = $__require('npm:fbjs@0.8.4/lib/warning.js');
+    var ReactComponentTreeHook;
+    if (typeof process !== 'undefined' && process.env && "production" === 'test') {
+      ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
+    }
+    function flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID) {
+      if (traverseContext && typeof traverseContext === 'object') {
+        var result = traverseContext;
+        var keyUnique = result[name] === undefined;
+        if ("production" !== 'production') {
+          if (!ReactComponentTreeHook) {
+            ReactComponentTreeHook = $__require('npm:react@15.3.1/lib/ReactComponentTreeHook.js');
+          }
+          if (!keyUnique) {
+            "production" !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
+          }
+        }
+        if (keyUnique && child != null) {
+          result[name] = child;
+        }
+      }
+    }
+    function flattenChildren(children, selfDebugID) {
+      if (children == null) {
+        return children;
+      }
+      var result = {};
+      if ("production" !== 'production') {
+        traverseAllChildren(children, function(traverseContext, child, name) {
+          return flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID);
+        }, result);
+      } else {
+        traverseAllChildren(children, flattenSingleChildIntoContext, result);
+      }
+      return result;
+    }
+    module.exports = flattenChildren;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/ReactTransitionChildMapping.js", ["npm:react@15.3.1/lib/flattenChildren.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var flattenChildren = $__require('npm:react@15.3.1/lib/flattenChildren.js');
+    var ReactTransitionChildMapping = {
+      getChildMapping: function(children, selfDebugID) {
+        if (!children) {
+          return children;
+        }
+        if ("production" !== 'production') {
+          return flattenChildren(children, selfDebugID);
+        }
+        return flattenChildren(children);
+      },
+      mergeChildMappings: function(prev, next) {
+        prev = prev || {};
+        next = next || {};
+        function getValueForKey(key) {
+          if (next.hasOwnProperty(key)) {
+            return next[key];
+          } else {
+            return prev[key];
+          }
+        }
+        var nextKeysPending = {};
+        var pendingKeys = [];
+        for (var prevKey in prev) {
+          if (next.hasOwnProperty(prevKey)) {
+            if (pendingKeys.length) {
+              nextKeysPending[prevKey] = pendingKeys;
+              pendingKeys = [];
+            }
+          } else {
+            pendingKeys.push(prevKey);
+          }
+        }
+        var i;
+        var childMapping = {};
+        for (var nextKey in next) {
+          if (nextKeysPending.hasOwnProperty(nextKey)) {
+            for (i = 0; i < nextKeysPending[nextKey].length; i++) {
+              var pendingNextKey = nextKeysPending[nextKey][i];
+              childMapping[nextKeysPending[nextKey][i]] = getValueForKey(pendingNextKey);
+            }
+          }
+          childMapping[nextKey] = getValueForKey(nextKey);
+        }
+        for (i = 0; i < pendingKeys.length; i++) {
+          childMapping[pendingKeys[i]] = getValueForKey(pendingKeys[i]);
+        }
+        return childMapping;
+      }
+    };
+    module.exports = ReactTransitionChildMapping;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react@15.3.1/lib/ReactTransitionGroup.js", ["npm:object-assign@4.1.0.js", "npm:react@15.3.1/lib/React.js", "npm:react@15.3.1/lib/ReactInstanceMap.js", "npm:react@15.3.1/lib/ReactTransitionChildMapping.js", "npm:fbjs@0.8.4/lib/emptyFunction.js", "github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    var _assign = $__require('npm:object-assign@4.1.0.js');
+    var React = $__require('npm:react@15.3.1/lib/React.js');
+    var ReactInstanceMap = $__require('npm:react@15.3.1/lib/ReactInstanceMap.js');
+    var ReactTransitionChildMapping = $__require('npm:react@15.3.1/lib/ReactTransitionChildMapping.js');
+    var emptyFunction = $__require('npm:fbjs@0.8.4/lib/emptyFunction.js');
+    var ReactTransitionGroup = React.createClass({
+      displayName: 'ReactTransitionGroup',
+      propTypes: {
+        component: React.PropTypes.any,
+        childFactory: React.PropTypes.func
+      },
+      getDefaultProps: function() {
+        return {
+          component: 'span',
+          childFactory: emptyFunction.thatReturnsArgument
+        };
+      },
+      getInitialState: function() {
+        return {children: ReactTransitionChildMapping.getChildMapping(this.props.children)};
+      },
+      componentWillMount: function() {
+        this.currentlyTransitioningKeys = {};
+        this.keysToEnter = [];
+        this.keysToLeave = [];
+      },
+      componentDidMount: function() {
+        var initialChildMapping = this.state.children;
+        for (var key in initialChildMapping) {
+          if (initialChildMapping[key]) {
+            this.performAppear(key);
+          }
+        }
+      },
+      componentWillReceiveProps: function(nextProps) {
+        var nextChildMapping;
+        if ("production" !== 'production') {
+          nextChildMapping = ReactTransitionChildMapping.getChildMapping(nextProps.children, ReactInstanceMap.get(this)._debugID);
+        } else {
+          nextChildMapping = ReactTransitionChildMapping.getChildMapping(nextProps.children);
+        }
+        var prevChildMapping = this.state.children;
+        this.setState({children: ReactTransitionChildMapping.mergeChildMappings(prevChildMapping, nextChildMapping)});
+        var key;
+        for (key in nextChildMapping) {
+          var hasPrev = prevChildMapping && prevChildMapping.hasOwnProperty(key);
+          if (nextChildMapping[key] && !hasPrev && !this.currentlyTransitioningKeys[key]) {
+            this.keysToEnter.push(key);
+          }
+        }
+        for (key in prevChildMapping) {
+          var hasNext = nextChildMapping && nextChildMapping.hasOwnProperty(key);
+          if (prevChildMapping[key] && !hasNext && !this.currentlyTransitioningKeys[key]) {
+            this.keysToLeave.push(key);
+          }
+        }
+      },
+      componentDidUpdate: function() {
+        var keysToEnter = this.keysToEnter;
+        this.keysToEnter = [];
+        keysToEnter.forEach(this.performEnter);
+        var keysToLeave = this.keysToLeave;
+        this.keysToLeave = [];
+        keysToLeave.forEach(this.performLeave);
+      },
+      performAppear: function(key) {
+        this.currentlyTransitioningKeys[key] = true;
+        var component = this.refs[key];
+        if (component.componentWillAppear) {
+          component.componentWillAppear(this._handleDoneAppearing.bind(this, key));
+        } else {
+          this._handleDoneAppearing(key);
+        }
+      },
+      _handleDoneAppearing: function(key) {
+        var component = this.refs[key];
+        if (component.componentDidAppear) {
+          component.componentDidAppear();
+        }
+        delete this.currentlyTransitioningKeys[key];
+        var currentChildMapping;
+        if ("production" !== 'production') {
+          currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children, ReactInstanceMap.get(this)._debugID);
+        } else {
+          currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
+        }
+        if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
+          this.performLeave(key);
+        }
+      },
+      performEnter: function(key) {
+        this.currentlyTransitioningKeys[key] = true;
+        var component = this.refs[key];
+        if (component.componentWillEnter) {
+          component.componentWillEnter(this._handleDoneEntering.bind(this, key));
+        } else {
+          this._handleDoneEntering(key);
+        }
+      },
+      _handleDoneEntering: function(key) {
+        var component = this.refs[key];
+        if (component.componentDidEnter) {
+          component.componentDidEnter();
+        }
+        delete this.currentlyTransitioningKeys[key];
+        var currentChildMapping;
+        if ("production" !== 'production') {
+          currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children, ReactInstanceMap.get(this)._debugID);
+        } else {
+          currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
+        }
+        if (!currentChildMapping || !currentChildMapping.hasOwnProperty(key)) {
+          this.performLeave(key);
+        }
+      },
+      performLeave: function(key) {
+        this.currentlyTransitioningKeys[key] = true;
+        var component = this.refs[key];
+        if (component.componentWillLeave) {
+          component.componentWillLeave(this._handleDoneLeaving.bind(this, key));
+        } else {
+          this._handleDoneLeaving(key);
+        }
+      },
+      _handleDoneLeaving: function(key) {
+        var component = this.refs[key];
+        if (component.componentDidLeave) {
+          component.componentDidLeave();
+        }
+        delete this.currentlyTransitioningKeys[key];
+        var currentChildMapping;
+        if ("production" !== 'production') {
+          currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children, ReactInstanceMap.get(this)._debugID);
+        } else {
+          currentChildMapping = ReactTransitionChildMapping.getChildMapping(this.props.children);
+        }
+        if (currentChildMapping && currentChildMapping.hasOwnProperty(key)) {
+          this.performEnter(key);
+        } else {
+          this.setState(function(state) {
+            var newChildren = _assign({}, state.children);
+            delete newChildren[key];
+            return {children: newChildren};
+          });
+        }
+      },
+      render: function() {
+        var childrenToRender = [];
+        for (var key in this.state.children) {
+          var child = this.state.children[key];
+          if (child) {
+            childrenToRender.push(React.cloneElement(this.props.childFactory(child), {
+              ref: key,
+              key: key
+            }));
+          }
+        }
+        var props = _assign({}, this.props);
+        delete props.transitionLeave;
+        delete props.transitionName;
+        delete props.transitionAppear;
+        delete props.transitionEnter;
+        delete props.childFactory;
+        delete props.transitionLeaveTimeout;
+        delete props.transitionEnterTimeout;
+        delete props.transitionAppearTimeout;
+        delete props.component;
+        return React.createElement(this.props.component, props, childrenToRender);
+      }
+    });
+    module.exports = ReactTransitionGroup;
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-addons-transition-group@15.3.1/index.js", ["npm:react@15.3.1/lib/ReactTransitionGroup.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:react@15.3.1/lib/ReactTransitionGroup.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-addons-transition-group@15.3.1.js", ["npm:react-addons-transition-group@15.3.1/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:react-addons-transition-group@15.3.1/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/Motion.js", ["npm:react-motion@0.4.4/lib/mapToZero.js", "npm:react-motion@0.4.4/lib/stripStyle.js", "npm:react-motion@0.4.4/lib/stepper.js", "npm:performance-now@0.2.0.js", "npm:raf@3.3.0.js", "npm:react-motion@0.4.4/lib/shouldStopAnimation.js", "npm:react@15.3.1.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.__esModule = true;
+  var _extends = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {'default': obj};
+  }
+  var _mapToZero = $__require('npm:react-motion@0.4.4/lib/mapToZero.js');
+  var _mapToZero2 = _interopRequireDefault(_mapToZero);
+  var _stripStyle = $__require('npm:react-motion@0.4.4/lib/stripStyle.js');
+  var _stripStyle2 = _interopRequireDefault(_stripStyle);
+  var _stepper3 = $__require('npm:react-motion@0.4.4/lib/stepper.js');
+  var _stepper4 = _interopRequireDefault(_stepper3);
+  var _performanceNow = $__require('npm:performance-now@0.2.0.js');
+  var _performanceNow2 = _interopRequireDefault(_performanceNow);
+  var _raf = $__require('npm:raf@3.3.0.js');
+  var _raf2 = _interopRequireDefault(_raf);
+  var _shouldStopAnimation = $__require('npm:react-motion@0.4.4/lib/shouldStopAnimation.js');
+  var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
+  var _react = $__require('npm:react@15.3.1.js');
+  var _react2 = _interopRequireDefault(_react);
+  var msPerFrame = 1000 / 60;
+  var Motion = _react2['default'].createClass({
+    displayName: 'Motion',
+    propTypes: {
+      defaultStyle: _react.PropTypes.objectOf(_react.PropTypes.number),
+      style: _react.PropTypes.objectOf(_react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.object])).isRequired,
+      children: _react.PropTypes.func.isRequired,
+      onRest: _react.PropTypes.func
+    },
+    getInitialState: function getInitialState() {
+      var _props = this.props;
+      var defaultStyle = _props.defaultStyle;
+      var style = _props.style;
+      var currentStyle = defaultStyle || _stripStyle2['default'](style);
+      var currentVelocity = _mapToZero2['default'](currentStyle);
+      return {
+        currentStyle: currentStyle,
+        currentVelocity: currentVelocity,
+        lastIdealStyle: currentStyle,
+        lastIdealVelocity: currentVelocity
+      };
+    },
+    wasAnimating: false,
+    animationID: null,
+    prevTime: 0,
+    accumulatedTime: 0,
+    unreadPropStyle: null,
+    clearUnreadPropStyle: function clearUnreadPropStyle(destStyle) {
+      var dirty = false;
+      var _state = this.state;
+      var currentStyle = _state.currentStyle;
+      var currentVelocity = _state.currentVelocity;
+      var lastIdealStyle = _state.lastIdealStyle;
+      var lastIdealVelocity = _state.lastIdealVelocity;
+      for (var key in destStyle) {
+        if (!destStyle.hasOwnProperty(key)) {
+          continue;
+        }
+        var styleValue = destStyle[key];
+        if (typeof styleValue === 'number') {
+          if (!dirty) {
+            dirty = true;
+            currentStyle = _extends({}, currentStyle);
+            currentVelocity = _extends({}, currentVelocity);
+            lastIdealStyle = _extends({}, lastIdealStyle);
+            lastIdealVelocity = _extends({}, lastIdealVelocity);
+          }
+          currentStyle[key] = styleValue;
+          currentVelocity[key] = 0;
+          lastIdealStyle[key] = styleValue;
+          lastIdealVelocity[key] = 0;
+        }
+      }
+      if (dirty) {
+        this.setState({
+          currentStyle: currentStyle,
+          currentVelocity: currentVelocity,
+          lastIdealStyle: lastIdealStyle,
+          lastIdealVelocity: lastIdealVelocity
+        });
+      }
+    },
+    startAnimationIfNecessary: function startAnimationIfNecessary() {
+      var _this = this;
+      this.animationID = _raf2['default'](function() {
+        var propsStyle = _this.props.style;
+        if (_shouldStopAnimation2['default'](_this.state.currentStyle, propsStyle, _this.state.currentVelocity)) {
+          if (_this.wasAnimating && _this.props.onRest) {
+            _this.props.onRest();
+          }
+          _this.animationID = null;
+          _this.wasAnimating = false;
+          _this.accumulatedTime = 0;
+          return;
+        }
+        _this.wasAnimating = true;
+        var currentTime = _performanceNow2['default']();
+        var timeDelta = currentTime - _this.prevTime;
+        _this.prevTime = currentTime;
+        _this.accumulatedTime = _this.accumulatedTime + timeDelta;
+        if (_this.accumulatedTime > msPerFrame * 10) {
+          _this.accumulatedTime = 0;
+        }
+        if (_this.accumulatedTime === 0) {
+          _this.animationID = null;
+          _this.startAnimationIfNecessary();
+          return;
+        }
+        var currentFrameCompletion = (_this.accumulatedTime - Math.floor(_this.accumulatedTime / msPerFrame) * msPerFrame) / msPerFrame;
+        var framesToCatchUp = Math.floor(_this.accumulatedTime / msPerFrame);
+        var newLastIdealStyle = {};
+        var newLastIdealVelocity = {};
+        var newCurrentStyle = {};
+        var newCurrentVelocity = {};
+        for (var key in propsStyle) {
+          if (!propsStyle.hasOwnProperty(key)) {
+            continue;
+          }
+          var styleValue = propsStyle[key];
+          if (typeof styleValue === 'number') {
+            newCurrentStyle[key] = styleValue;
+            newCurrentVelocity[key] = 0;
+            newLastIdealStyle[key] = styleValue;
+            newLastIdealVelocity[key] = 0;
+          } else {
+            var newLastIdealStyleValue = _this.state.lastIdealStyle[key];
+            var newLastIdealVelocityValue = _this.state.lastIdealVelocity[key];
+            for (var i = 0; i < framesToCatchUp; i++) {
+              var _stepper = _stepper4['default'](msPerFrame / 1000, newLastIdealStyleValue, newLastIdealVelocityValue, styleValue.val, styleValue.stiffness, styleValue.damping, styleValue.precision);
+              newLastIdealStyleValue = _stepper[0];
+              newLastIdealVelocityValue = _stepper[1];
+            }
+            var _stepper2 = _stepper4['default'](msPerFrame / 1000, newLastIdealStyleValue, newLastIdealVelocityValue, styleValue.val, styleValue.stiffness, styleValue.damping, styleValue.precision);
+            var nextIdealX = _stepper2[0];
+            var nextIdealV = _stepper2[1];
+            newCurrentStyle[key] = newLastIdealStyleValue + (nextIdealX - newLastIdealStyleValue) * currentFrameCompletion;
+            newCurrentVelocity[key] = newLastIdealVelocityValue + (nextIdealV - newLastIdealVelocityValue) * currentFrameCompletion;
+            newLastIdealStyle[key] = newLastIdealStyleValue;
+            newLastIdealVelocity[key] = newLastIdealVelocityValue;
+          }
+        }
+        _this.animationID = null;
+        _this.accumulatedTime -= framesToCatchUp * msPerFrame;
+        _this.setState({
+          currentStyle: newCurrentStyle,
+          currentVelocity: newCurrentVelocity,
+          lastIdealStyle: newLastIdealStyle,
+          lastIdealVelocity: newLastIdealVelocity
+        });
+        _this.unreadPropStyle = null;
+        _this.startAnimationIfNecessary();
+      });
+    },
+    componentDidMount: function componentDidMount() {
+      this.prevTime = _performanceNow2['default']();
+      this.startAnimationIfNecessary();
+    },
+    componentWillReceiveProps: function componentWillReceiveProps(props) {
+      if (this.unreadPropStyle != null) {
+        this.clearUnreadPropStyle(this.unreadPropStyle);
+      }
+      this.unreadPropStyle = props.style;
+      if (this.animationID == null) {
+        this.prevTime = _performanceNow2['default']();
+        this.startAnimationIfNecessary();
+      }
+    },
+    componentWillUnmount: function componentWillUnmount() {
+      if (this.animationID != null) {
+        _raf2['default'].cancel(this.animationID);
+        this.animationID = null;
+      }
+    },
+    render: function render() {
+      var renderedChildren = this.props.children(this.state.currentStyle);
+      return renderedChildren && _react2['default'].Children.only(renderedChildren);
+    }
+  });
+  exports['default'] = Motion;
+  module.exports = exports['default'];
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/StaggeredMotion.js", ["npm:react-motion@0.4.4/lib/mapToZero.js", "npm:react-motion@0.4.4/lib/stripStyle.js", "npm:react-motion@0.4.4/lib/stepper.js", "npm:performance-now@0.2.0.js", "npm:raf@3.3.0.js", "npm:react-motion@0.4.4/lib/shouldStopAnimation.js", "npm:react@15.3.1.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.__esModule = true;
+  var _extends = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {'default': obj};
+  }
+  var _mapToZero = $__require('npm:react-motion@0.4.4/lib/mapToZero.js');
+  var _mapToZero2 = _interopRequireDefault(_mapToZero);
+  var _stripStyle = $__require('npm:react-motion@0.4.4/lib/stripStyle.js');
+  var _stripStyle2 = _interopRequireDefault(_stripStyle);
+  var _stepper3 = $__require('npm:react-motion@0.4.4/lib/stepper.js');
+  var _stepper4 = _interopRequireDefault(_stepper3);
+  var _performanceNow = $__require('npm:performance-now@0.2.0.js');
+  var _performanceNow2 = _interopRequireDefault(_performanceNow);
+  var _raf = $__require('npm:raf@3.3.0.js');
+  var _raf2 = _interopRequireDefault(_raf);
+  var _shouldStopAnimation = $__require('npm:react-motion@0.4.4/lib/shouldStopAnimation.js');
+  var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
+  var _react = $__require('npm:react@15.3.1.js');
+  var _react2 = _interopRequireDefault(_react);
+  var msPerFrame = 1000 / 60;
+  function shouldStopAnimationAll(currentStyles, styles, currentVelocities) {
+    for (var i = 0; i < currentStyles.length; i++) {
+      if (!_shouldStopAnimation2['default'](currentStyles[i], styles[i], currentVelocities[i])) {
+        return false;
+      }
+    }
+    return true;
+  }
+  var StaggeredMotion = _react2['default'].createClass({
+    displayName: 'StaggeredMotion',
+    propTypes: {
+      defaultStyles: _react.PropTypes.arrayOf(_react.PropTypes.objectOf(_react.PropTypes.number)),
+      styles: _react.PropTypes.func.isRequired,
+      children: _react.PropTypes.func.isRequired
+    },
+    getInitialState: function getInitialState() {
+      var _props = this.props;
+      var defaultStyles = _props.defaultStyles;
+      var styles = _props.styles;
+      var currentStyles = defaultStyles || styles().map(_stripStyle2['default']);
+      var currentVelocities = currentStyles.map(function(currentStyle) {
+        return _mapToZero2['default'](currentStyle);
+      });
+      return {
+        currentStyles: currentStyles,
+        currentVelocities: currentVelocities,
+        lastIdealStyles: currentStyles,
+        lastIdealVelocities: currentVelocities
+      };
+    },
+    animationID: null,
+    prevTime: 0,
+    accumulatedTime: 0,
+    unreadPropStyles: null,
+    clearUnreadPropStyle: function clearUnreadPropStyle(unreadPropStyles) {
+      var _state = this.state;
+      var currentStyles = _state.currentStyles;
+      var currentVelocities = _state.currentVelocities;
+      var lastIdealStyles = _state.lastIdealStyles;
+      var lastIdealVelocities = _state.lastIdealVelocities;
+      var someDirty = false;
+      for (var i = 0; i < unreadPropStyles.length; i++) {
+        var unreadPropStyle = unreadPropStyles[i];
+        var dirty = false;
+        for (var key in unreadPropStyle) {
+          if (!unreadPropStyle.hasOwnProperty(key)) {
+            continue;
+          }
+          var styleValue = unreadPropStyle[key];
+          if (typeof styleValue === 'number') {
+            if (!dirty) {
+              dirty = true;
+              someDirty = true;
+              currentStyles[i] = _extends({}, currentStyles[i]);
+              currentVelocities[i] = _extends({}, currentVelocities[i]);
+              lastIdealStyles[i] = _extends({}, lastIdealStyles[i]);
+              lastIdealVelocities[i] = _extends({}, lastIdealVelocities[i]);
+            }
+            currentStyles[i][key] = styleValue;
+            currentVelocities[i][key] = 0;
+            lastIdealStyles[i][key] = styleValue;
+            lastIdealVelocities[i][key] = 0;
+          }
+        }
+      }
+      if (someDirty) {
+        this.setState({
+          currentStyles: currentStyles,
+          currentVelocities: currentVelocities,
+          lastIdealStyles: lastIdealStyles,
+          lastIdealVelocities: lastIdealVelocities
+        });
+      }
+    },
+    startAnimationIfNecessary: function startAnimationIfNecessary() {
+      var _this = this;
+      this.animationID = _raf2['default'](function() {
+        var destStyles = _this.props.styles(_this.state.lastIdealStyles);
+        if (shouldStopAnimationAll(_this.state.currentStyles, destStyles, _this.state.currentVelocities)) {
+          _this.animationID = null;
+          _this.accumulatedTime = 0;
+          return;
+        }
+        var currentTime = _performanceNow2['default']();
+        var timeDelta = currentTime - _this.prevTime;
+        _this.prevTime = currentTime;
+        _this.accumulatedTime = _this.accumulatedTime + timeDelta;
+        if (_this.accumulatedTime > msPerFrame * 10) {
+          _this.accumulatedTime = 0;
+        }
+        if (_this.accumulatedTime === 0) {
+          _this.animationID = null;
+          _this.startAnimationIfNecessary();
+          return;
+        }
+        var currentFrameCompletion = (_this.accumulatedTime - Math.floor(_this.accumulatedTime / msPerFrame) * msPerFrame) / msPerFrame;
+        var framesToCatchUp = Math.floor(_this.accumulatedTime / msPerFrame);
+        var newLastIdealStyles = [];
+        var newLastIdealVelocities = [];
+        var newCurrentStyles = [];
+        var newCurrentVelocities = [];
+        for (var i = 0; i < destStyles.length; i++) {
+          var destStyle = destStyles[i];
+          var newCurrentStyle = {};
+          var newCurrentVelocity = {};
+          var newLastIdealStyle = {};
+          var newLastIdealVelocity = {};
+          for (var key in destStyle) {
+            if (!destStyle.hasOwnProperty(key)) {
+              continue;
+            }
+            var styleValue = destStyle[key];
+            if (typeof styleValue === 'number') {
+              newCurrentStyle[key] = styleValue;
+              newCurrentVelocity[key] = 0;
+              newLastIdealStyle[key] = styleValue;
+              newLastIdealVelocity[key] = 0;
+            } else {
+              var newLastIdealStyleValue = _this.state.lastIdealStyles[i][key];
+              var newLastIdealVelocityValue = _this.state.lastIdealVelocities[i][key];
+              for (var j = 0; j < framesToCatchUp; j++) {
+                var _stepper = _stepper4['default'](msPerFrame / 1000, newLastIdealStyleValue, newLastIdealVelocityValue, styleValue.val, styleValue.stiffness, styleValue.damping, styleValue.precision);
+                newLastIdealStyleValue = _stepper[0];
+                newLastIdealVelocityValue = _stepper[1];
+              }
+              var _stepper2 = _stepper4['default'](msPerFrame / 1000, newLastIdealStyleValue, newLastIdealVelocityValue, styleValue.val, styleValue.stiffness, styleValue.damping, styleValue.precision);
+              var nextIdealX = _stepper2[0];
+              var nextIdealV = _stepper2[1];
+              newCurrentStyle[key] = newLastIdealStyleValue + (nextIdealX - newLastIdealStyleValue) * currentFrameCompletion;
+              newCurrentVelocity[key] = newLastIdealVelocityValue + (nextIdealV - newLastIdealVelocityValue) * currentFrameCompletion;
+              newLastIdealStyle[key] = newLastIdealStyleValue;
+              newLastIdealVelocity[key] = newLastIdealVelocityValue;
+            }
+          }
+          newCurrentStyles[i] = newCurrentStyle;
+          newCurrentVelocities[i] = newCurrentVelocity;
+          newLastIdealStyles[i] = newLastIdealStyle;
+          newLastIdealVelocities[i] = newLastIdealVelocity;
+        }
+        _this.animationID = null;
+        _this.accumulatedTime -= framesToCatchUp * msPerFrame;
+        _this.setState({
+          currentStyles: newCurrentStyles,
+          currentVelocities: newCurrentVelocities,
+          lastIdealStyles: newLastIdealStyles,
+          lastIdealVelocities: newLastIdealVelocities
+        });
+        _this.unreadPropStyles = null;
+        _this.startAnimationIfNecessary();
+      });
+    },
+    componentDidMount: function componentDidMount() {
+      this.prevTime = _performanceNow2['default']();
+      this.startAnimationIfNecessary();
+    },
+    componentWillReceiveProps: function componentWillReceiveProps(props) {
+      if (this.unreadPropStyles != null) {
+        this.clearUnreadPropStyle(this.unreadPropStyles);
+      }
+      this.unreadPropStyles = props.styles(this.state.lastIdealStyles);
+      if (this.animationID == null) {
+        this.prevTime = _performanceNow2['default']();
+        this.startAnimationIfNecessary();
+      }
+    },
+    componentWillUnmount: function componentWillUnmount() {
+      if (this.animationID != null) {
+        _raf2['default'].cancel(this.animationID);
+        this.animationID = null;
+      }
+    },
+    render: function render() {
+      var renderedChildren = this.props.children(this.state.currentStyles);
+      return renderedChildren && _react2['default'].Children.only(renderedChildren);
+    }
+  });
+  exports['default'] = StaggeredMotion;
+  module.exports = exports['default'];
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/mapToZero.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.__esModule = true;
+  exports['default'] = mapToZero;
+  function mapToZero(obj) {
+    var ret = {};
+    for (var key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        ret[key] = 0;
+      }
+    }
+    return ret;
+  }
+  module.exports = exports['default'];
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/stripStyle.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.__esModule = true;
+  exports['default'] = stripStyle;
+  function stripStyle(style) {
+    var ret = {};
+    for (var key in style) {
+      if (!style.hasOwnProperty(key)) {
+        continue;
+      }
+      ret[key] = typeof style[key] === 'number' ? style[key] : style[key].val;
+    }
+    return ret;
+  }
+  module.exports = exports['default'];
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/stepper.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.__esModule = true;
+  exports["default"] = stepper;
+  var reusedTuple = [];
+  function stepper(secondPerFrame, x, v, destX, k, b, precision) {
+    var Fspring = -k * (x - destX);
+    var Fdamper = -b * v;
+    var a = Fspring + Fdamper;
+    var newV = v + a * secondPerFrame;
+    var newX = x + newV * secondPerFrame;
+    if (Math.abs(newV) < precision && Math.abs(newX - destX) < precision) {
+      reusedTuple[0] = destX;
+      reusedTuple[1] = 0;
+      return reusedTuple;
+    }
+    reusedTuple[0] = newX;
+    reusedTuple[1] = newV;
+    return reusedTuple;
+  }
+  module.exports = exports["default"];
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/mergeDiff.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.__esModule = true;
+  exports['default'] = mergeDiff;
+  function mergeDiff(prev, next, onRemove) {
+    var prevKeyIndex = {};
+    for (var i = 0; i < prev.length; i++) {
+      prevKeyIndex[prev[i].key] = i;
+    }
+    var nextKeyIndex = {};
+    for (var i = 0; i < next.length; i++) {
+      nextKeyIndex[next[i].key] = i;
+    }
+    var ret = [];
+    for (var i = 0; i < next.length; i++) {
+      ret[i] = next[i];
+    }
+    for (var i = 0; i < prev.length; i++) {
+      if (!nextKeyIndex.hasOwnProperty(prev[i].key)) {
+        var fill = onRemove(i, prev[i]);
+        if (fill != null) {
+          ret.push(fill);
+        }
+      }
+    }
+    return ret.sort(function(a, b) {
+      var nextOrderA = nextKeyIndex[a.key];
+      var nextOrderB = nextKeyIndex[b.key];
+      var prevOrderA = prevKeyIndex[a.key];
+      var prevOrderB = prevKeyIndex[b.key];
+      if (nextOrderA != null && nextOrderB != null) {
+        return nextKeyIndex[a.key] - nextKeyIndex[b.key];
+      } else if (prevOrderA != null && prevOrderB != null) {
+        return prevKeyIndex[a.key] - prevKeyIndex[b.key];
+      } else if (nextOrderA != null) {
+        for (var i = 0; i < next.length; i++) {
+          var pivot = next[i].key;
+          if (!prevKeyIndex.hasOwnProperty(pivot)) {
+            continue;
+          }
+          if (nextOrderA < nextKeyIndex[pivot] && prevOrderB > prevKeyIndex[pivot]) {
+            return -1;
+          } else if (nextOrderA > nextKeyIndex[pivot] && prevOrderB < prevKeyIndex[pivot]) {
+            return 1;
+          }
+        }
+        return 1;
+      }
+      for (var i = 0; i < next.length; i++) {
+        var pivot = next[i].key;
+        if (!prevKeyIndex.hasOwnProperty(pivot)) {
+          continue;
+        }
+        if (nextOrderB < nextKeyIndex[pivot] && prevOrderA > prevKeyIndex[pivot]) {
+          return 1;
+        } else if (nextOrderB > nextKeyIndex[pivot] && prevOrderA < prevKeyIndex[pivot]) {
+          return -1;
+        }
+      }
+      return -1;
+    });
+  }
+  module.exports = exports['default'];
+  return module.exports;
+});
+
+System.registerDynamic("npm:performance-now@0.2.0/lib/performance-now.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    (function() {
+      var getNanoSeconds,
+          hrtime,
+          loadTime;
+      if ((typeof performance !== "undefined" && performance !== null) && performance.now) {
+        module.exports = function() {
+          return performance.now();
+        };
+      } else if ((typeof process !== "undefined" && process !== null) && process.hrtime) {
+        module.exports = function() {
+          return (getNanoSeconds() - loadTime) / 1e6;
+        };
+        hrtime = process.hrtime;
+        getNanoSeconds = function() {
+          var hr;
+          hr = hrtime();
+          return hr[0] * 1e9 + hr[1];
+        };
+        loadTime = getNanoSeconds();
+      } else if (Date.now) {
+        module.exports = function() {
+          return Date.now() - loadTime;
+        };
+        loadTime = Date.now();
+      } else {
+        module.exports = function() {
+          return new Date().getTime() - loadTime;
+        };
+        loadTime = new Date().getTime();
+      }
+    }).call(this);
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:performance-now@0.2.0.js", ["npm:performance-now@0.2.0/lib/performance-now.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:performance-now@0.2.0/lib/performance-now.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:raf@3.3.0/index.js", ["npm:performance-now@0.2.0.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var now = $__require('npm:performance-now@0.2.0.js'),
+      root = typeof window === 'undefined' ? global : window,
+      vendors = ['moz', 'webkit'],
+      suffix = 'AnimationFrame',
+      raf = root['request' + suffix],
+      caf = root['cancel' + suffix] || root['cancelRequest' + suffix];
+  for (var i = 0; !raf && i < vendors.length; i++) {
+    raf = root[vendors[i] + 'Request' + suffix];
+    caf = root[vendors[i] + 'Cancel' + suffix] || root[vendors[i] + 'CancelRequest' + suffix];
+  }
+  if (!raf || !caf) {
+    var last = 0,
+        id = 0,
+        queue = [],
+        frameDuration = 1000 / 60;
+    raf = function(callback) {
+      if (queue.length === 0) {
+        var _now = now(),
+            next = Math.max(0, frameDuration - (_now - last));
+        last = next + _now;
+        setTimeout(function() {
+          var cp = queue.slice(0);
+          queue.length = 0;
+          for (var i = 0; i < cp.length; i++) {
+            if (!cp[i].cancelled) {
+              try {
+                cp[i].callback(last);
+              } catch (e) {
+                setTimeout(function() {
+                  throw e;
+                }, 0);
+              }
+            }
+          }
+        }, Math.round(next));
+      }
+      queue.push({
+        handle: ++id,
+        callback: callback,
+        cancelled: false
+      });
+      return id;
+    };
+    caf = function(handle) {
+      for (var i = 0; i < queue.length; i++) {
+        if (queue[i].handle === handle) {
+          queue[i].cancelled = true;
+        }
+      }
+    };
+  }
+  module.exports = function(fn) {
+    return raf.call(root, fn);
+  };
+  module.exports.cancel = function() {
+    caf.apply(root, arguments);
+  };
+  module.exports.polyfill = function() {
+    root.requestAnimationFrame = raf;
+    root.cancelAnimationFrame = caf;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:raf@3.3.0.js", ["npm:raf@3.3.0/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:raf@3.3.0/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/shouldStopAnimation.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.__esModule = true;
+  exports['default'] = shouldStopAnimation;
+  function shouldStopAnimation(currentStyle, style, currentVelocity) {
+    for (var key in style) {
+      if (!style.hasOwnProperty(key)) {
+        continue;
+      }
+      if (currentVelocity[key] !== 0) {
+        return false;
+      }
+      var styleValue = typeof style[key] === 'number' ? style[key] : style[key].val;
+      if (currentStyle[key] !== styleValue) {
+        return false;
+      }
+    }
+    return true;
+  }
+  module.exports = exports['default'];
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/TransitionMotion.js", ["npm:react-motion@0.4.4/lib/mapToZero.js", "npm:react-motion@0.4.4/lib/stripStyle.js", "npm:react-motion@0.4.4/lib/stepper.js", "npm:react-motion@0.4.4/lib/mergeDiff.js", "npm:performance-now@0.2.0.js", "npm:raf@3.3.0.js", "npm:react-motion@0.4.4/lib/shouldStopAnimation.js", "npm:react@15.3.1.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.__esModule = true;
+  var _extends = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {'default': obj};
+  }
+  var _mapToZero = $__require('npm:react-motion@0.4.4/lib/mapToZero.js');
+  var _mapToZero2 = _interopRequireDefault(_mapToZero);
+  var _stripStyle = $__require('npm:react-motion@0.4.4/lib/stripStyle.js');
+  var _stripStyle2 = _interopRequireDefault(_stripStyle);
+  var _stepper3 = $__require('npm:react-motion@0.4.4/lib/stepper.js');
+  var _stepper4 = _interopRequireDefault(_stepper3);
+  var _mergeDiff = $__require('npm:react-motion@0.4.4/lib/mergeDiff.js');
+  var _mergeDiff2 = _interopRequireDefault(_mergeDiff);
+  var _performanceNow = $__require('npm:performance-now@0.2.0.js');
+  var _performanceNow2 = _interopRequireDefault(_performanceNow);
+  var _raf = $__require('npm:raf@3.3.0.js');
+  var _raf2 = _interopRequireDefault(_raf);
+  var _shouldStopAnimation = $__require('npm:react-motion@0.4.4/lib/shouldStopAnimation.js');
+  var _shouldStopAnimation2 = _interopRequireDefault(_shouldStopAnimation);
+  var _react = $__require('npm:react@15.3.1.js');
+  var _react2 = _interopRequireDefault(_react);
+  var msPerFrame = 1000 / 60;
+  function rehydrateStyles(mergedPropsStyles, unreadPropStyles, plainStyles) {
+    if (unreadPropStyles == null) {
+      return mergedPropsStyles.map(function(mergedPropsStyle, i) {
+        return {
+          key: mergedPropsStyle.key,
+          data: mergedPropsStyle.data,
+          style: plainStyles[i]
+        };
+      });
+    }
+    return mergedPropsStyles.map(function(mergedPropsStyle, i) {
+      for (var j = 0; j < unreadPropStyles.length; j++) {
+        if (unreadPropStyles[j].key === mergedPropsStyle.key) {
+          return {
+            key: unreadPropStyles[j].key,
+            data: unreadPropStyles[j].data,
+            style: plainStyles[i]
+          };
+        }
+      }
+      return {
+        key: mergedPropsStyle.key,
+        data: mergedPropsStyle.data,
+        style: plainStyles[i]
+      };
+    });
+  }
+  function shouldStopAnimationAll(currentStyles, destStyles, currentVelocities, mergedPropsStyles) {
+    if (mergedPropsStyles.length !== destStyles.length) {
+      return false;
+    }
+    for (var i = 0; i < mergedPropsStyles.length; i++) {
+      if (mergedPropsStyles[i].key !== destStyles[i].key) {
+        return false;
+      }
+    }
+    for (var i = 0; i < mergedPropsStyles.length; i++) {
+      if (!_shouldStopAnimation2['default'](currentStyles[i], destStyles[i].style, currentVelocities[i])) {
+        return false;
+      }
+    }
+    return true;
+  }
+  function mergeAndSync(willEnter, willLeave, oldMergedPropsStyles, destStyles, oldCurrentStyles, oldCurrentVelocities, oldLastIdealStyles, oldLastIdealVelocities) {
+    var newMergedPropsStyles = _mergeDiff2['default'](oldMergedPropsStyles, destStyles, function(oldIndex, oldMergedPropsStyle) {
+      var leavingStyle = willLeave(oldMergedPropsStyle);
+      if (leavingStyle == null) {
+        return null;
+      }
+      if (_shouldStopAnimation2['default'](oldCurrentStyles[oldIndex], leavingStyle, oldCurrentVelocities[oldIndex])) {
+        return null;
+      }
+      return {
+        key: oldMergedPropsStyle.key,
+        data: oldMergedPropsStyle.data,
+        style: leavingStyle
+      };
+    });
+    var newCurrentStyles = [];
+    var newCurrentVelocities = [];
+    var newLastIdealStyles = [];
+    var newLastIdealVelocities = [];
+    for (var i = 0; i < newMergedPropsStyles.length; i++) {
+      var newMergedPropsStyleCell = newMergedPropsStyles[i];
+      var foundOldIndex = null;
+      for (var j = 0; j < oldMergedPropsStyles.length; j++) {
+        if (oldMergedPropsStyles[j].key === newMergedPropsStyleCell.key) {
+          foundOldIndex = j;
+          break;
+        }
+      }
+      if (foundOldIndex == null) {
+        var plainStyle = willEnter(newMergedPropsStyleCell);
+        newCurrentStyles[i] = plainStyle;
+        newLastIdealStyles[i] = plainStyle;
+        var velocity = _mapToZero2['default'](newMergedPropsStyleCell.style);
+        newCurrentVelocities[i] = velocity;
+        newLastIdealVelocities[i] = velocity;
+      } else {
+        newCurrentStyles[i] = oldCurrentStyles[foundOldIndex];
+        newLastIdealStyles[i] = oldLastIdealStyles[foundOldIndex];
+        newCurrentVelocities[i] = oldCurrentVelocities[foundOldIndex];
+        newLastIdealVelocities[i] = oldLastIdealVelocities[foundOldIndex];
+      }
+    }
+    return [newMergedPropsStyles, newCurrentStyles, newCurrentVelocities, newLastIdealStyles, newLastIdealVelocities];
+  }
+  var TransitionMotion = _react2['default'].createClass({
+    displayName: 'TransitionMotion',
+    propTypes: {
+      defaultStyles: _react.PropTypes.arrayOf(_react.PropTypes.shape({
+        key: _react.PropTypes.string.isRequired,
+        data: _react.PropTypes.any,
+        style: _react.PropTypes.objectOf(_react.PropTypes.number).isRequired
+      })),
+      styles: _react.PropTypes.oneOfType([_react.PropTypes.func, _react.PropTypes.arrayOf(_react.PropTypes.shape({
+        key: _react.PropTypes.string.isRequired,
+        data: _react.PropTypes.any,
+        style: _react.PropTypes.objectOf(_react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.object])).isRequired
+      }))]).isRequired,
+      children: _react.PropTypes.func.isRequired,
+      willLeave: _react.PropTypes.func,
+      willEnter: _react.PropTypes.func
+    },
+    getDefaultProps: function getDefaultProps() {
+      return {
+        willEnter: function willEnter(styleThatEntered) {
+          return _stripStyle2['default'](styleThatEntered.style);
+        },
+        willLeave: function willLeave() {
+          return null;
+        }
+      };
+    },
+    getInitialState: function getInitialState() {
+      var _props = this.props;
+      var defaultStyles = _props.defaultStyles;
+      var styles = _props.styles;
+      var willEnter = _props.willEnter;
+      var willLeave = _props.willLeave;
+      var destStyles = typeof styles === 'function' ? styles(defaultStyles) : styles;
+      var oldMergedPropsStyles = undefined;
+      if (defaultStyles == null) {
+        oldMergedPropsStyles = destStyles;
+      } else {
+        oldMergedPropsStyles = defaultStyles.map(function(defaultStyleCell) {
+          for (var i = 0; i < destStyles.length; i++) {
+            if (destStyles[i].key === defaultStyleCell.key) {
+              return destStyles[i];
+            }
+          }
+          return defaultStyleCell;
+        });
+      }
+      var oldCurrentStyles = defaultStyles == null ? destStyles.map(function(s) {
+        return _stripStyle2['default'](s.style);
+      }) : defaultStyles.map(function(s) {
+        return _stripStyle2['default'](s.style);
+      });
+      var oldCurrentVelocities = defaultStyles == null ? destStyles.map(function(s) {
+        return _mapToZero2['default'](s.style);
+      }) : defaultStyles.map(function(s) {
+        return _mapToZero2['default'](s.style);
+      });
+      var _mergeAndSync = mergeAndSync(willEnter, willLeave, oldMergedPropsStyles, destStyles, oldCurrentStyles, oldCurrentVelocities, oldCurrentStyles, oldCurrentVelocities);
+      var mergedPropsStyles = _mergeAndSync[0];
+      var currentStyles = _mergeAndSync[1];
+      var currentVelocities = _mergeAndSync[2];
+      var lastIdealStyles = _mergeAndSync[3];
+      var lastIdealVelocities = _mergeAndSync[4];
+      return {
+        currentStyles: currentStyles,
+        currentVelocities: currentVelocities,
+        lastIdealStyles: lastIdealStyles,
+        lastIdealVelocities: lastIdealVelocities,
+        mergedPropsStyles: mergedPropsStyles
+      };
+    },
+    animationID: null,
+    prevTime: 0,
+    accumulatedTime: 0,
+    unreadPropStyles: null,
+    clearUnreadPropStyle: function clearUnreadPropStyle(unreadPropStyles) {
+      var _mergeAndSync2 = mergeAndSync(this.props.willEnter, this.props.willLeave, this.state.mergedPropsStyles, unreadPropStyles, this.state.currentStyles, this.state.currentVelocities, this.state.lastIdealStyles, this.state.lastIdealVelocities);
+      var mergedPropsStyles = _mergeAndSync2[0];
+      var currentStyles = _mergeAndSync2[1];
+      var currentVelocities = _mergeAndSync2[2];
+      var lastIdealStyles = _mergeAndSync2[3];
+      var lastIdealVelocities = _mergeAndSync2[4];
+      for (var i = 0; i < unreadPropStyles.length; i++) {
+        var unreadPropStyle = unreadPropStyles[i].style;
+        var dirty = false;
+        for (var key in unreadPropStyle) {
+          if (!unreadPropStyle.hasOwnProperty(key)) {
+            continue;
+          }
+          var styleValue = unreadPropStyle[key];
+          if (typeof styleValue === 'number') {
+            if (!dirty) {
+              dirty = true;
+              currentStyles[i] = _extends({}, currentStyles[i]);
+              currentVelocities[i] = _extends({}, currentVelocities[i]);
+              lastIdealStyles[i] = _extends({}, lastIdealStyles[i]);
+              lastIdealVelocities[i] = _extends({}, lastIdealVelocities[i]);
+              mergedPropsStyles[i] = {
+                key: mergedPropsStyles[i].key,
+                data: mergedPropsStyles[i].data,
+                style: _extends({}, mergedPropsStyles[i].style)
+              };
+            }
+            currentStyles[i][key] = styleValue;
+            currentVelocities[i][key] = 0;
+            lastIdealStyles[i][key] = styleValue;
+            lastIdealVelocities[i][key] = 0;
+            mergedPropsStyles[i].style[key] = styleValue;
+          }
+        }
+      }
+      this.setState({
+        currentStyles: currentStyles,
+        currentVelocities: currentVelocities,
+        mergedPropsStyles: mergedPropsStyles,
+        lastIdealStyles: lastIdealStyles,
+        lastIdealVelocities: lastIdealVelocities
+      });
+    },
+    startAnimationIfNecessary: function startAnimationIfNecessary() {
+      var _this = this;
+      this.animationID = _raf2['default'](function() {
+        var propStyles = _this.props.styles;
+        var destStyles = typeof propStyles === 'function' ? propStyles(rehydrateStyles(_this.state.mergedPropsStyles, _this.unreadPropStyles, _this.state.lastIdealStyles)) : propStyles;
+        if (shouldStopAnimationAll(_this.state.currentStyles, destStyles, _this.state.currentVelocities, _this.state.mergedPropsStyles)) {
+          _this.animationID = null;
+          _this.accumulatedTime = 0;
+          return;
+        }
+        var currentTime = _performanceNow2['default']();
+        var timeDelta = currentTime - _this.prevTime;
+        _this.prevTime = currentTime;
+        _this.accumulatedTime = _this.accumulatedTime + timeDelta;
+        if (_this.accumulatedTime > msPerFrame * 10) {
+          _this.accumulatedTime = 0;
+        }
+        if (_this.accumulatedTime === 0) {
+          _this.animationID = null;
+          _this.startAnimationIfNecessary();
+          return;
+        }
+        var currentFrameCompletion = (_this.accumulatedTime - Math.floor(_this.accumulatedTime / msPerFrame) * msPerFrame) / msPerFrame;
+        var framesToCatchUp = Math.floor(_this.accumulatedTime / msPerFrame);
+        var _mergeAndSync3 = mergeAndSync(_this.props.willEnter, _this.props.willLeave, _this.state.mergedPropsStyles, destStyles, _this.state.currentStyles, _this.state.currentVelocities, _this.state.lastIdealStyles, _this.state.lastIdealVelocities);
+        var newMergedPropsStyles = _mergeAndSync3[0];
+        var newCurrentStyles = _mergeAndSync3[1];
+        var newCurrentVelocities = _mergeAndSync3[2];
+        var newLastIdealStyles = _mergeAndSync3[3];
+        var newLastIdealVelocities = _mergeAndSync3[4];
+        for (var i = 0; i < newMergedPropsStyles.length; i++) {
+          var newMergedPropsStyle = newMergedPropsStyles[i].style;
+          var newCurrentStyle = {};
+          var newCurrentVelocity = {};
+          var newLastIdealStyle = {};
+          var newLastIdealVelocity = {};
+          for (var key in newMergedPropsStyle) {
+            if (!newMergedPropsStyle.hasOwnProperty(key)) {
+              continue;
+            }
+            var styleValue = newMergedPropsStyle[key];
+            if (typeof styleValue === 'number') {
+              newCurrentStyle[key] = styleValue;
+              newCurrentVelocity[key] = 0;
+              newLastIdealStyle[key] = styleValue;
+              newLastIdealVelocity[key] = 0;
+            } else {
+              var newLastIdealStyleValue = newLastIdealStyles[i][key];
+              var newLastIdealVelocityValue = newLastIdealVelocities[i][key];
+              for (var j = 0; j < framesToCatchUp; j++) {
+                var _stepper = _stepper4['default'](msPerFrame / 1000, newLastIdealStyleValue, newLastIdealVelocityValue, styleValue.val, styleValue.stiffness, styleValue.damping, styleValue.precision);
+                newLastIdealStyleValue = _stepper[0];
+                newLastIdealVelocityValue = _stepper[1];
+              }
+              var _stepper2 = _stepper4['default'](msPerFrame / 1000, newLastIdealStyleValue, newLastIdealVelocityValue, styleValue.val, styleValue.stiffness, styleValue.damping, styleValue.precision);
+              var nextIdealX = _stepper2[0];
+              var nextIdealV = _stepper2[1];
+              newCurrentStyle[key] = newLastIdealStyleValue + (nextIdealX - newLastIdealStyleValue) * currentFrameCompletion;
+              newCurrentVelocity[key] = newLastIdealVelocityValue + (nextIdealV - newLastIdealVelocityValue) * currentFrameCompletion;
+              newLastIdealStyle[key] = newLastIdealStyleValue;
+              newLastIdealVelocity[key] = newLastIdealVelocityValue;
+            }
+          }
+          newLastIdealStyles[i] = newLastIdealStyle;
+          newLastIdealVelocities[i] = newLastIdealVelocity;
+          newCurrentStyles[i] = newCurrentStyle;
+          newCurrentVelocities[i] = newCurrentVelocity;
+        }
+        _this.animationID = null;
+        _this.accumulatedTime -= framesToCatchUp * msPerFrame;
+        _this.setState({
+          currentStyles: newCurrentStyles,
+          currentVelocities: newCurrentVelocities,
+          lastIdealStyles: newLastIdealStyles,
+          lastIdealVelocities: newLastIdealVelocities,
+          mergedPropsStyles: newMergedPropsStyles
+        });
+        _this.unreadPropStyles = null;
+        _this.startAnimationIfNecessary();
+      });
+    },
+    componentDidMount: function componentDidMount() {
+      this.prevTime = _performanceNow2['default']();
+      this.startAnimationIfNecessary();
+    },
+    componentWillReceiveProps: function componentWillReceiveProps(props) {
+      if (this.unreadPropStyles) {
+        this.clearUnreadPropStyle(this.unreadPropStyles);
+      }
+      if (typeof props.styles === 'function') {
+        this.unreadPropStyles = props.styles(rehydrateStyles(this.state.mergedPropsStyles, this.unreadPropStyles, this.state.lastIdealStyles));
+      } else {
+        this.unreadPropStyles = props.styles;
+      }
+      if (this.animationID == null) {
+        this.prevTime = _performanceNow2['default']();
+        this.startAnimationIfNecessary();
+      }
+    },
+    componentWillUnmount: function componentWillUnmount() {
+      if (this.animationID != null) {
+        _raf2['default'].cancel(this.animationID);
+        this.animationID = null;
+      }
+    },
+    render: function render() {
+      var hydratedStyles = rehydrateStyles(this.state.mergedPropsStyles, this.unreadPropStyles, this.state.currentStyles);
+      var renderedChildren = this.props.children(hydratedStyles);
+      return renderedChildren && _react2['default'].Children.only(renderedChildren);
+    }
+  });
+  exports['default'] = TransitionMotion;
+  module.exports = exports['default'];
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/spring.js", ["npm:react-motion@0.4.4/lib/presets.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.__esModule = true;
+  var _extends = Object.assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  exports['default'] = spring;
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {'default': obj};
+  }
+  var _presets = $__require('npm:react-motion@0.4.4/lib/presets.js');
+  var _presets2 = _interopRequireDefault(_presets);
+  var defaultConfig = _extends({}, _presets2['default'].noWobble, {precision: 0.01});
+  function spring(val, config) {
+    return _extends({}, defaultConfig, config, {val: val});
+  }
+  module.exports = exports['default'];
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/presets.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.__esModule = true;
+  exports["default"] = {
+    noWobble: {
+      stiffness: 170,
+      damping: 26
+    },
+    gentle: {
+      stiffness: 120,
+      damping: 14
+    },
+    wobbly: {
+      stiffness: 180,
+      damping: 12
+    },
+    stiff: {
+      stiffness: 210,
+      damping: 20
+    }
+  };
+  module.exports = exports["default"];
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/reorderKeys.js", ["github:jspm/nodelibs-process@0.1.2.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  (function(process) {
+    'use strict';
+    exports.__esModule = true;
+    exports['default'] = reorderKeys;
+    var hasWarned = false;
+    function reorderKeys() {
+      if ("production" === 'development') {
+        if (!hasWarned) {
+          hasWarned = true;
+          console.error('`reorderKeys` has been removed, since it is no longer needed for TransitionMotion\'s new styles array API.');
+        }
+      }
+    }
+    module.exports = exports['default'];
+  })($__require('github:jspm/nodelibs-process@0.1.2.js'));
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4/lib/react-motion.js", ["npm:react-motion@0.4.4/lib/Motion.js", "npm:react-motion@0.4.4/lib/StaggeredMotion.js", "npm:react-motion@0.4.4/lib/TransitionMotion.js", "npm:react-motion@0.4.4/lib/spring.js", "npm:react-motion@0.4.4/lib/presets.js", "npm:react-motion@0.4.4/lib/reorderKeys.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.__esModule = true;
+  function _interopRequire(obj) {
+    return obj && obj.__esModule ? obj['default'] : obj;
+  }
+  var _Motion = $__require('npm:react-motion@0.4.4/lib/Motion.js');
+  exports.Motion = _interopRequire(_Motion);
+  var _StaggeredMotion = $__require('npm:react-motion@0.4.4/lib/StaggeredMotion.js');
+  exports.StaggeredMotion = _interopRequire(_StaggeredMotion);
+  var _TransitionMotion = $__require('npm:react-motion@0.4.4/lib/TransitionMotion.js');
+  exports.TransitionMotion = _interopRequire(_TransitionMotion);
+  var _spring = $__require('npm:react-motion@0.4.4/lib/spring.js');
+  exports.spring = _interopRequire(_spring);
+  var _presets = $__require('npm:react-motion@0.4.4/lib/presets.js');
+  exports.presets = _interopRequire(_presets);
+  var _reorderKeys = $__require('npm:react-motion@0.4.4/lib/reorderKeys.js');
+  exports.reorderKeys = _interopRequire(_reorderKeys);
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-motion@0.4.4.js", ["npm:react-motion@0.4.4/lib/react-motion.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:react-motion@0.4.4/lib/react-motion.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-stonecutter@0.3.3/lib/react-stonecutter.js", ["npm:react@15.3.1.js", "npm:lodash.omit@4.5.0.js", "npm:shallowequal@0.2.2.js", "npm:enquire.js@2.1.1.js", "npm:imagesloaded@4.1.1.js", "npm:lodash.debounce@4.0.8.js", "npm:lodash.partition@4.6.0.js", "npm:react-addons-transition-group@15.3.1.js", "npm:react-motion@0.4.4.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = (function(modules) {
+    var installedModules = {};
+    function __webpack_require__(moduleId) {
+      if (installedModules[moduleId])
+        return installedModules[moduleId].exports;
+      var module = installedModules[moduleId] = {
+        exports: {},
+        id: moduleId,
+        loaded: false
+      };
+      modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+      module.loaded = true;
+      return module.exports;
+    }
+    __webpack_require__.m = modules;
+    __webpack_require__.c = installedModules;
+    __webpack_require__.p = "";
+    return __webpack_require__(0);
+  })([function(module, exports, __webpack_require__) {
+    'use strict';
+    Object.defineProperty(exports, "__esModule", {value: true});
+    exports.easings = exports.makeResponsive = exports.measureItems = exports.SpringGrid = exports.CSSGrid = exports.enterExitStyle = exports.layout = undefined;
+    var _CSSGrid = __webpack_require__(9);
+    var _CSSGrid2 = _interopRequireDefault(_CSSGrid);
+    var _SpringGrid = __webpack_require__(11);
+    var _SpringGrid2 = _interopRequireDefault(_SpringGrid);
+    var _makeResponsive = __webpack_require__(19);
+    var _makeResponsive2 = _interopRequireDefault(_makeResponsive);
+    var _measureItems = __webpack_require__(20);
+    var _measureItems2 = _interopRequireDefault(_measureItems);
+    var _pinterest = __webpack_require__(21);
+    var _pinterest2 = _interopRequireDefault(_pinterest);
+    var _simple = __webpack_require__(6);
+    var _simple2 = _interopRequireDefault(_simple);
+    var _foldUp = __webpack_require__(12);
+    var foldUp = _interopRequireWildcard(_foldUp);
+    var _fromCenter = __webpack_require__(14);
+    var fromCenter = _interopRequireWildcard(_fromCenter);
+    var _fromLeftToRight = __webpack_require__(15);
+    var fromLeftToRight = _interopRequireWildcard(_fromLeftToRight);
+    var _fromTop = __webpack_require__(16);
+    var fromTop = _interopRequireWildcard(_fromTop);
+    var _fromBottom = __webpack_require__(13);
+    var fromBottom = _interopRequireWildcard(_fromBottom);
+    var _newspaper = __webpack_require__(17);
+    var newspaper = _interopRequireWildcard(_newspaper);
+    var _simple3 = __webpack_require__(5);
+    var simpleEnterExit = _interopRequireWildcard(_simple3);
+    var _skew = __webpack_require__(18);
+    var skew = _interopRequireWildcard(_skew);
+    var _easings = __webpack_require__(7);
+    var easings = _interopRequireWildcard(_easings);
+    function _interopRequireWildcard(obj) {
+      if (obj && obj.__esModule) {
+        return obj;
+      } else {
+        var newObj = {};
+        if (obj != null) {
+          for (var key in obj) {
+            if (Object.prototype.hasOwnProperty.call(obj, key))
+              newObj[key] = obj[key];
+          }
+        }
+        newObj.default = obj;
+        return newObj;
+      }
+    }
+    function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : {default: obj};
+    }
+    var layout = exports.layout = {
+      pinterest: _pinterest2.default,
+      simple: _simple2.default
+    };
+    var enterExitStyle = exports.enterExitStyle = {
+      foldUp: foldUp,
+      fromCenter: fromCenter,
+      fromLeftToRight: fromLeftToRight,
+      fromTop: fromTop,
+      fromBottom: fromBottom,
+      newspaper: newspaper,
+      simple: simpleEnterExit,
+      skew: skew
+    };
+    exports.CSSGrid = _CSSGrid2.default;
+    exports.SpringGrid = _SpringGrid2.default;
+    exports.measureItems = _measureItems2.default;
+    exports.makeResponsive = _makeResponsive2.default;
+    exports.easings = easings;
+    exports.default = {
+      CSSGrid: _CSSGrid2.default,
+      SpringGrid: _SpringGrid2.default,
+      measureItems: _measureItems2.default,
+      makeResponsive: _makeResponsive2.default,
+      easings: easings,
+      layout: layout,
+      enterExitStyle: enterExitStyle
+    };
+  }, function(module, exports) {
+    module.exports = $__require('npm:react@15.3.1.js');
+  }, function(module, exports, __webpack_require__) {
+    'use strict';
+    Object.defineProperty(exports, "__esModule", {value: true});
+    exports.commonDefaultProps = exports.commonPropTypes = undefined;
+    var _react = __webpack_require__(1);
+    var _react2 = _interopRequireDefault(_react);
+    var _simple = __webpack_require__(6);
+    var _simple2 = _interopRequireDefault(_simple);
+    var _simple3 = __webpack_require__(5);
+    var simpleEnterExit = _interopRequireWildcard(_simple3);
+    function _interopRequireWildcard(obj) {
+      if (obj && obj.__esModule) {
+        return obj;
+      } else {
+        var newObj = {};
+        if (obj != null) {
+          for (var key in obj) {
+            if (Object.prototype.hasOwnProperty.call(obj, key))
+              newObj[key] = obj[key];
+          }
+        }
+        newObj.default = obj;
+        return newObj;
+      }
+    }
+    function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : {default: obj};
+    }
+    var commonPropTypes = exports.commonPropTypes = {
+      columns: _react2.default.PropTypes.number.isRequired,
+      columnWidth: _react2.default.PropTypes.number.isRequired,
+      gutterWidth: _react2.default.PropTypes.number,
+      gutterHeight: _react2.default.PropTypes.number,
+      component: _react2.default.PropTypes.string,
+      layout: _react2.default.PropTypes.func,
+      enter: _react2.default.PropTypes.func,
+      entered: _react2.default.PropTypes.func,
+      exit: _react2.default.PropTypes.func,
+      perspective: _react2.default.PropTypes.number,
+      lengthUnit: _react2.default.PropTypes.string,
+      angleUnit: _react2.default.PropTypes.string
+    };
+    var commonDefaultProps = exports.commonDefaultProps = {
+      lengthUnit: 'px',
+      angleUnit: 'deg',
+      component: 'div',
+      gutterWidth: 0,
+      gutterHeight: 0,
+      layout: _simple2.default,
+      enter: simpleEnterExit.enter,
+      entered: simpleEnterExit.entered,
+      exit: simpleEnterExit.exit
+    };
+  }, function(module, exports) {
+    module.exports = $__require('npm:lodash.omit@4.5.0.js');
+  }, function(module, exports) {
+    module.exports = $__require('npm:shallowequal@0.2.2.js');
+  }, function(module, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var enterExit = function enterExit() {
+      return {
+        scale: 0,
+        opacity: 0
+      };
+    };
+    var enter = exports.enter = enterExit;
+    var exit = exports.exit = enterExit;
+    var entered = exports.entered = function entered() {
+      return {
+        scale: 1,
+        opacity: 1
+      };
+    };
+  }, function(module, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {value: true});
+    exports.default = function(items, props) {
+      var columnWidth = props.columnWidth;
+      var _props$itemHeight = props.itemHeight;
+      var itemHeight = _props$itemHeight === undefined ? 150 : _props$itemHeight;
+      var columns = props.columns;
+      var gutterWidth = props.gutterWidth;
+      var gutterHeight = props.gutterHeight;
+      var positions = items.map(function(itemProps, i) {
+        var column = i % columns;
+        var row = Math.floor(i / columns);
+        var x = column * columnWidth + column * gutterWidth;
+        var y = row * itemHeight + row * gutterHeight;
+        return [x, y];
+      });
+      var gridWidth = columns * columnWidth + (columns - 1) * gutterWidth;
+      var gridHeight = Math.ceil(items.length / columns) * (itemHeight + gutterHeight) - gutterHeight;
+      return {
+        positions: positions,
+        gridWidth: gridWidth,
+        gridHeight: gridHeight
+      };
+    };
+  }, function(module, exports) {
+    'use strict';
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var quadIn = exports.quadIn = 'cubic-bezier(0.55, 0.085, 0.68, 0.53)';
+    var quadOut = exports.quadOut = 'cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+    var quadInOut = exports.quadInOut = 'cubic-bezier(0.455, 0.03, 0.515, 0.955)';
+    var cubicIn = exports.cubicIn = 'cubic-bezier(0.55, 0.055, 0.675, 0.19)';
+    var cubicOut = exports.cubicOut = 'cubic-bezier(0.215, 0.61, 0.355, 1)';
+    var cubicInOut = exports.cubicInOut = 'cubic-bezier(0.645, 0.045, 0.355, 1)';
+    var quartIn = exports.quartIn = 'cubic-bezier(0.895, 0.03, 0.685, 0.22)';
+    var quartOut = exports.quartOut = 'cubic-bezier(0.165, 0.84, 0.44, 1)';
+    var quartInOut = exports.quartInOut = 'cubic-bezier(0.77, 0, 0.175, 1)';
+    var quintIn = exports.quintIn = 'cubic-bezier(0.755, 0.05, 0.855, 0.06)';
+    var quintOut = exports.quintOut = 'cubic-bezier(0.23, 1, 0.32, 1)';
+    var quintInOut = exports.quintInOut = 'cubic-bezier(0.86, 0, 0.07, 1)';
+    var sineIn = exports.sineIn = 'cubic-bezier(0.47, 0, 0.745, 0.715)';
+    var sineOut = exports.sineOut = 'cubic-bezier(0.39, 0.575, 0.565, 1)';
+    var sineInOut = exports.sineInOut = 'cubic-bezier(0.445, 0.05, 0.55, 0.95)';
+    var expoIn = exports.expoIn = 'cubic-bezier(0.95, 0.05, 0.795, 0.035)';
+    var expoOut = exports.expoOut = 'cubic-bezier(0.19, 1, 0.22, 1)';
+    var expoInOut = exports.expoInOut = 'cubic-bezier(1, 0, 0, 1)';
+    var circIn = exports.circIn = 'cubic-bezier(0.6, 0.04, 0.98, 0.335)';
+    var circOut = exports.circOut = 'cubic-bezier(0.075, 0.82, 0.165, 1)';
+    var circInOut = exports.circInOut = 'cubic-bezier(0.785, 0.135, 0.15, 0.86)';
+    var backIn = exports.backIn = 'cubic-bezier(0.6, -0.28, 0.735, 0.045)';
+    var backOut = exports.backOut = 'cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+    var backInOut = exports.backInOut = 'cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+  }, function(module, exports) {
+    'use strict';
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var properties = [{
+      name: 'translateX',
+      unit: 'length'
+    }, {
+      name: 'translateY',
+      unit: 'length'
+    }, {
+      name: 'perspective',
+      unit: 'length'
+    }, {
+      name: 'translateZ',
+      unit: 'length'
+    }, {
+      name: 'skew',
+      unit: 'angle'
+    }, {
+      name: 'skewX',
+      unit: 'angle'
+    }, {
+      name: 'skewY',
+      unit: 'angle'
+    }, {name: 'scale'}, {name: 'scaleX'}, {name: 'scaleY'}, {name: 'scaleZ'}, {
+      name: 'rotate',
+      unit: 'angle'
+    }, {
+      name: 'rotateX',
+      unit: 'angle'
+    }, {
+      name: 'rotateY',
+      unit: 'angle'
+    }];
+    var positionToProperties = exports.positionToProperties = function positionToProperties(position) {
+      return {
+        translateX: position[0],
+        translateY: position[1]
+      };
+    };
+    var buildTransform = exports.buildTransform = function buildTransform(style, perspective, units) {
+      var arr = [];
+      properties.forEach(function(prop) {
+        if (prop.name === 'perspective') {
+          if (typeof perspective !== 'undefined') {
+            arr.push('perspective(' + perspective + units[prop.unit] + ')');
+          }
+        } else if (typeof style[prop.name] !== 'undefined') {
+          var val = isNaN(style[prop.name]) ? 0 : style[prop.name];
+          arr.push(prop.name + '(' + val + (prop.unit ? units[prop.unit] : '') + ')');
+        }
+      });
+      return arr.join(' ');
+    };
+  }, function(module, exports, __webpack_require__) {
+    'use strict';
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var _extends = Object.assign || function(target) {
+      for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+      return target;
+    };
+    var _react = __webpack_require__(1);
+    var _react2 = _interopRequireDefault(_react);
+    var _reactAddonsTransitionGroup = __webpack_require__(27);
+    var _reactAddonsTransitionGroup2 = _interopRequireDefault(_reactAddonsTransitionGroup);
+    var _shallowequal = __webpack_require__(4);
+    var _shallowequal2 = _interopRequireDefault(_shallowequal);
+    var _lodash = __webpack_require__(3);
+    var _lodash2 = _interopRequireDefault(_lodash);
+    var _commonProps = __webpack_require__(2);
+    var _easings = __webpack_require__(7);
+    var _CSSGridItem = __webpack_require__(10);
+    var _CSSGridItem2 = _interopRequireDefault(_CSSGridItem);
+    function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : {default: obj};
+    }
+    function _objectWithoutProperties(obj, keys) {
+      var target = {};
+      for (var i in obj) {
+        if (keys.indexOf(i) >= 0)
+          continue;
+        if (!Object.prototype.hasOwnProperty.call(obj, i))
+          continue;
+        target[i] = obj[i];
+      }
+      return target;
+    }
+    exports.default = _react2.default.createClass({
+      displayName: 'CSSGrid',
+      propTypes: _extends({}, _commonProps.commonPropTypes, {
+        duration: _react2.default.PropTypes.number.isRequired,
+        easing: _react2.default.PropTypes.string
+      }),
+      getDefaultProps: function getDefaultProps() {
+        return _extends({}, _commonProps.commonDefaultProps, {easing: _easings.cubicOut});
+      },
+      componentWillMount: function componentWillMount() {
+        this.setState(this.doLayout(this.props));
+      },
+      componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+        if (!(0, _shallowequal2.default)(nextProps, this.props)) {
+          this.setState(this.doLayout(nextProps));
+        }
+      },
+      doLayout: function doLayout(props) {
+        var _props$layout = props.layout(_react2.default.Children.toArray(props.children).map(function(item) {
+          return _extends({}, item.props, {key: item.key});
+        }), props);
+        var positions = _props$layout.positions;
+        var gridWidth = _props$layout.gridWidth;
+        var gridHeight = _props$layout.gridHeight;
+        return {
+          gridWidth: gridWidth,
+          gridHeight: gridHeight,
+          positions: positions
+        };
+      },
+      render: function render() {
+        var _this = this;
+        var _omit = (0, _lodash2.default)(this.props, ['itemHeight', 'measured', 'columns', 'columnWidth', 'gutterWidth', 'gutterHeight', 'layout', 'enter', 'entered', 'exit', 'perspective', 'springConfig', 'angleUnit']);
+        var component = _omit.component;
+        var style = _omit.style;
+        var children = _omit.children;
+        var duration = _omit.duration;
+        var easing = _omit.easing;
+        var lengthUnit = _omit.lengthUnit;
+        var rest = _objectWithoutProperties(_omit, ['component', 'style', 'children', 'duration', 'easing', 'lengthUnit']);
+        var items = _react2.default.Children.toArray(children);
+        var _state = this.state;
+        var positions = _state.positions;
+        var gridWidth = _state.gridWidth;
+        var gridHeight = _state.gridHeight;
+        var transition = ['opacity', 'transform'].map(function(prop) {
+          return prop + ' ' + duration + 'ms ' + easing;
+        }).join(', ');
+        var wrappedItems = items.map(function(item, i) {
+          return _react2.default.createElement(_CSSGridItem2.default, _extends({
+            key: item.key,
+            position: positions[i]
+          }, _this.props, {
+            transition: transition,
+            gridProps: _this.props,
+            gridState: _this.state
+          }), item);
+        });
+        return _react2.default.createElement(_reactAddonsTransitionGroup2.default, _extends({
+          component: component,
+          style: _extends({position: 'relative'}, style, {
+            width: '' + gridWidth + lengthUnit,
+            height: '' + gridHeight + lengthUnit
+          })
+        }, rest), wrappedItems);
+      }
+    });
+  }, function(module, exports, __webpack_require__) {
+    'use strict';
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var _extends = Object.assign || function(target) {
+      for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+      return target;
+    };
+    var _react = __webpack_require__(1);
+    var _react2 = _interopRequireDefault(_react);
+    var _shallowequal = __webpack_require__(4);
+    var _shallowequal2 = _interopRequireDefault(_shallowequal);
+    var _lodash = __webpack_require__(3);
+    var _lodash2 = _interopRequireDefault(_lodash);
+    var _transformHelpers = __webpack_require__(8);
+    function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : {default: obj};
+    }
+    exports.default = _react2.default.createClass({
+      displayName: 'CSSGridItem',
+      getInitialState: function getInitialState() {
+        return {style: {zIndex: 2}};
+      },
+      componentDidMount: function componentDidMount() {
+        this._isMounted = true;
+      },
+      componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+        var _this = this;
+        if (!(0, _shallowequal2.default)(nextProps, this.props)) {
+          requestAnimationFrame(function() {
+            _this.setEndStyle(nextProps, 2);
+          });
+        }
+      },
+      componentWillUnmount: function componentWillUnmount() {
+        this._isMounted = false;
+        clearTimeout(this.leaveTimeout);
+      },
+      componentWillAppear: function componentWillAppear(done) {
+        this.setEndStyle(this.props, 2);
+        done();
+      },
+      componentWillEnter: function componentWillEnter(done) {
+        var _this2 = this;
+        var wasLeaving = this._isLeaving;
+        this._isLeaving = false;
+        clearTimeout(this.leaveTimeout);
+        var _props = this.props;
+        var position = _props.position;
+        var gridProps = _props.gridProps;
+        var gridState = _props.gridState;
+        requestAnimationFrame(function() {
+          if (!wasLeaving) {
+            _this2.setState({style: _extends({}, _this2.state.style, (0, _transformHelpers.positionToProperties)(position), {zIndex: 1}, gridProps.enter(_this2.props, gridProps, gridState))});
+          }
+          done();
+        });
+      },
+      componentDidEnter: function componentDidEnter() {
+        var _this3 = this;
+        requestAnimationFrame(function() {
+          requestAnimationFrame(function() {
+            _this3.setEndStyle(_this3.props, 1);
+          });
+        });
+      },
+      componentWillLeave: function componentWillLeave(done) {
+        var _this4 = this;
+        this._remove = done;
+        var _props2 = this.props;
+        var gridProps = _props2.gridProps;
+        var gridState = _props2.gridState;
+        requestAnimationFrame(function() {
+          if (_this4._isMounted) {
+            _this4._isLeaving = true;
+            _this4.setState({style: _extends({}, _this4.state.style, {zIndex: 0}, gridProps.exit(_this4.props, gridProps, gridState))});
+            _this4.leaveTimeout = setTimeout(done, _this4.props.duration);
+          }
+        });
+      },
+      setEndStyle: function setEndStyle(props, zIndex) {
+        clearTimeout(this.leaveTimeout);
+        if (this._remove) {
+          this._remove();
+          this._remove = null;
+          return;
+        }
+        if (!this._isMounted)
+          return;
+        var position = props.position;
+        var gridProps = props.gridProps;
+        var gridState = props.gridState;
+        this.setState({style: _extends({}, this.state.style, {zIndex: zIndex}, gridProps.entered(props, gridProps, gridState), (0, _transformHelpers.positionToProperties)(position))});
+      },
+      render: function render() {
+        var item = _react2.default.Children.only(this.props.children);
+        var _props3 = this.props;
+        var transition = _props3.transition;
+        var perspective = _props3.perspective;
+        var lengthUnit = _props3.lengthUnit;
+        var angleUnit = _props3.angleUnit;
+        var _state$style = this.state.style;
+        var translateX = _state$style.translateX;
+        var translateY = _state$style.translateY;
+        var opacity = _state$style.opacity;
+        var zIndex = _state$style.zIndex;
+        if (typeof translateX === 'undefined' || typeof translateY === 'undefined') {
+          return null;
+        }
+        var transform = (0, _transformHelpers.buildTransform)(this.state.style, perspective, {
+          length: lengthUnit,
+          angle: angleUnit
+        });
+        var itemProps = (0, _lodash2.default)(item.props, ['itemRect', 'itemHeight']);
+        return _react2.default.createElement(item.type, _extends({}, itemProps, {style: _extends({}, itemProps.style, {
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            zIndex: zIndex,
+            opacity: opacity,
+            transform: transform,
+            transition: transition,
+            WebkitTransform: transform,
+            WebkitTransition: transition
+          })}));
+      }
+    });
+  }, function(module, exports, __webpack_require__) {
+    'use strict';
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var _extends = Object.assign || function(target) {
+      for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+      return target;
+    };
+    var _react = __webpack_require__(1);
+    var _react2 = _interopRequireDefault(_react);
+    var _reactMotion = __webpack_require__(28);
+    var _stripStyle = __webpack_require__(22);
+    var _stripStyle2 = _interopRequireDefault(_stripStyle);
+    var _transformHelpers = __webpack_require__(8);
+    var _shallowequal = __webpack_require__(4);
+    var _shallowequal2 = _interopRequireDefault(_shallowequal);
+    var _lodash = __webpack_require__(3);
+    var _lodash2 = _interopRequireDefault(_lodash);
+    var _commonProps = __webpack_require__(2);
+    function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : {default: obj};
+    }
+    function _objectWithoutProperties(obj, keys) {
+      var target = {};
+      for (var i in obj) {
+        if (keys.indexOf(i) >= 0)
+          continue;
+        if (!Object.prototype.hasOwnProperty.call(obj, i))
+          continue;
+        target[i] = obj[i];
+      }
+      return target;
+    }
+    exports.default = _react2.default.createClass({
+      displayName: 'SpringGrid',
+      propTypes: _extends({}, _commonProps.commonPropTypes, {springConfig: _react2.default.PropTypes.shape({
+          stiffness: _react2.default.PropTypes.number,
+          damping: _react2.default.PropTypes.number,
+          precision: _react2.default.PropTypes.number
+        })}),
+      getDefaultProps: function getDefaultProps() {
+        return _extends({}, _commonProps.commonDefaultProps, {springConfig: {
+            stiffness: 60,
+            damping: 14,
+            precision: 0.1
+          }});
+      },
+      componentWillMount: function componentWillMount() {
+        this.setState(this.doLayout(this.props));
+      },
+      componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+        if (!(0, _shallowequal2.default)(nextProps, this.props)) {
+          this.setState(this.doLayout(nextProps));
+        }
+      },
+      doLayout: function doLayout(props) {
+        var items = _react2.default.Children.toArray(props.children).map(function(element) {
+          return {
+            key: element.key,
+            data: {element: element}
+          };
+        });
+        var _props$layout = props.layout(items.map(function(item) {
+          return _extends({}, item.data.element.props, {key: item.data.element.key});
+        }), props);
+        var positions = _props$layout.positions;
+        var gridWidth = _props$layout.gridWidth;
+        var gridHeight = _props$layout.gridHeight;
+        var styles = positions.map(function(position, i) {
+          return _extends({}, items[i], {style: _extends({}, items[i].style, {zIndex: 2}, springify(props.entered(items[i].data.element.props, props, {
+              gridWidth: gridWidth,
+              gridHeight: gridHeight
+            }), props.springConfig), springify((0, _transformHelpers.positionToProperties)(position), props.springConfig))});
+        });
+        return {
+          styles: styles,
+          gridWidth: gridWidth,
+          gridHeight: gridHeight
+        };
+      },
+      willEnter: function willEnter(transitionStyle) {
+        var _state = this.state;
+        var gridWidth = _state.gridWidth;
+        var gridHeight = _state.gridHeight;
+        return _extends({}, (0, _stripStyle2.default)(transitionStyle.style), {zIndex: 1}, this.props.enter(transitionStyle.data.element.props, this.props, {
+          gridWidth: gridWidth,
+          gridHeight: gridHeight
+        }));
+      },
+      willLeave: function willLeave(transitionStyle) {
+        var _state2 = this.state;
+        var gridWidth = _state2.gridWidth;
+        var gridHeight = _state2.gridHeight;
+        var exitStyle = this.props.exit(transitionStyle.data.element.props, this.props, {
+          gridWidth: gridWidth,
+          gridHeight: gridHeight
+        });
+        return _extends({}, transitionStyle.style, {zIndex: 0}, springify(exitStyle, this.props.springConfig));
+      },
+      render: function render() {
+        var _this = this;
+        var _omit = (0, _lodash2.default)(this.props, ['itemHeight', 'measured', 'columns', 'columnWidth', 'gutterWidth', 'gutterHeight', 'layout', 'enter', 'entered', 'exit', 'springConfig', 'duration', 'easing']);
+        var component = _omit.component;
+        var style = _omit.style;
+        var perspective = _omit.perspective;
+        var lengthUnit = _omit.lengthUnit;
+        var angleUnit = _omit.angleUnit;
+        var rest = _objectWithoutProperties(_omit, ['component', 'style', 'perspective', 'lengthUnit', 'angleUnit']);
+        return _react2.default.createElement(_reactMotion.TransitionMotion, {
+          styles: this.state.styles,
+          willEnter: this.willEnter,
+          willLeave: this.willLeave
+        }, function(interpolatedStyles) {
+          return _react2.default.createElement(component, _extends({style: _extends({position: 'relative'}, style, {
+              width: '' + _this.state.gridWidth + lengthUnit,
+              height: '' + _this.state.gridHeight + lengthUnit
+            })}, rest), interpolatedStyles.map(function(config) {
+            var _config$style = config.style;
+            var opacity = _config$style.opacity;
+            var zIndex = _config$style.zIndex;
+            var data = config.data;
+            var transform = (0, _transformHelpers.buildTransform)(config.style, perspective, {
+              length: lengthUnit,
+              angle: angleUnit
+            });
+            var itemProps = (0, _lodash2.default)(data.element.props, ['itemRect', 'itemHeight']);
+            return _react2.default.createElement(data.element.type, _extends({key: data.element.key}, itemProps, {style: _extends({}, itemProps.style, {
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                zIndex: zIndex,
+                opacity: opacity,
+                transform: transform,
+                WebkitTransform: transform,
+                msTransform: transform
+              })}));
+          }));
+        });
+      }
+    });
+    function springify(style, springConfig) {
+      return Object.keys(style).reduce(function(obj, key) {
+        obj[key] = (0, _reactMotion.spring)(style[key], springConfig);
+        return obj;
+      }, {});
+    }
+  }, function(module, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var enter = exports.enter = function enter() {
+      return {
+        rotateX: -90,
+        scale: 1,
+        opacity: 1
+      };
+    };
+    var exit = exports.exit = function exit() {
+      return {
+        rotateX: -90,
+        scale: 0,
+        opacity: 0
+      };
+    };
+    var entered = exports.entered = function entered() {
+      return {
+        rotateX: 0,
+        scale: 1,
+        opacity: 1
+      };
+    };
+  }, function(module, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var enterExit = exports.enterExit = function enterExit(itemProps, gridProps, gridState) {
+      return {
+        translateY: gridState.gridHeight + 500,
+        opacity: 0
+      };
+    };
+    var enter = exports.enter = enterExit;
+    var exit = exports.exit = enterExit;
+    var entered = exports.entered = function entered() {
+      return {opacity: 1};
+    };
+  }, function(module, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var enterExit = function enterExit(itemProps, gridProps, gridState) {
+      var columns = gridProps.columns;
+      var columnWidth = gridProps.columnWidth;
+      var gutterWidth = gridProps.gutterWidth;
+      return {
+        translateX: (columns * columnWidth + (columns - 1) * gutterWidth - columnWidth) / 2,
+        translateY: gridState.gridHeight / 2,
+        scale: 0,
+        opacity: 0
+      };
+    };
+    var enter = exports.enter = enterExit;
+    var exit = exports.exit = enterExit;
+    var entered = exports.entered = function entered() {
+      return {
+        scale: 1,
+        opacity: 1
+      };
+    };
+  }, function(module, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var enter = exports.enter = function enter() {
+      return {
+        translateX: -500,
+        opacity: 0
+      };
+    };
+    var exit = exports.exit = function exit(itemProps, gridProps, gridState) {
+      return {
+        translateX: gridState.gridWidth + 500,
+        opacity: 0
+      };
+    };
+    var entered = exports.entered = function entered() {
+      return {opacity: 1};
+    };
+  }, function(module, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var enterExit = function enterExit() {
+      return {
+        translateY: 0,
+        opacity: 0
+      };
+    };
+    var enter = exports.enter = enterExit;
+    var exit = exports.exit = enterExit;
+    var entered = exports.entered = function entered() {
+      return {opacity: 1};
+    };
+  }, function(module, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var enter = exports.enter = function enter() {
+      return {
+        scale: 0,
+        opacity: 0,
+        rotate: -720
+      };
+    };
+    var exit = exports.exit = function exit() {
+      return {
+        scale: 0,
+        opacity: 0
+      };
+    };
+    var entered = exports.entered = function entered() {
+      return {
+        scale: 1,
+        opacity: 1,
+        rotate: 0
+      };
+    };
+  }, function(module, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var enter = exports.enter = function enter() {
+      return {
+        skew: 90,
+        rotate: 45,
+        scale: 0,
+        opacity: 0
+      };
+    };
+    var exit = exports.exit = function exit() {
+      return {
+        skew: -90,
+        rotate: -45,
+        scale: 0,
+        opacity: 0
+      };
+    };
+    var entered = exports.entered = function entered() {
+      return {
+        skew: 0,
+        rotate: 0,
+        scale: 1,
+        opacity: 1
+      };
+    };
+  }, function(module, exports, __webpack_require__) {
+    'use strict';
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var _extends = Object.assign || function(target) {
+      for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+      return target;
+    };
+    var _react = __webpack_require__(1);
+    var _react2 = _interopRequireDefault(_react);
+    function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : {default: obj};
+    }
+    var enquire = typeof window !== 'undefined' ? __webpack_require__(23) : null;
+    exports.default = function(Grid) {
+      var _ref = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+      var maxWidth = _ref.maxWidth;
+      var _ref$minPadding = _ref.minPadding;
+      var minPadding = _ref$minPadding === undefined ? 0 : _ref$minPadding;
+      var _ref$defaultColumns = _ref.defaultColumns;
+      var defaultColumns = _ref$defaultColumns === undefined ? 4 : _ref$defaultColumns;
+      return _react2.default.createClass({
+        getInitialState: function getInitialState() {
+          return {columns: defaultColumns};
+        },
+        componentDidMount: function componentDidMount() {
+          var _this = this;
+          var _props = this.props;
+          var columnWidth = _props.columnWidth;
+          var gutterWidth = _props.gutterWidth;
+          var breakpoints = [];
+          var getWidth = function getWidth(i) {
+            return i * (columnWidth + gutterWidth) - gutterWidth + minPadding;
+          };
+          for (var i = 1; getWidth(i) <= maxWidth + columnWidth + gutterWidth; i++) {
+            breakpoints.push(getWidth(i));
+          }
+          this.breakpoints = breakpoints.map(function(width, i, arr) {
+            return ['screen', i > 0 && '(min-width: ' + arr[i - 1] + 'px)', i < arr.length - 1 && '(max-width: ' + width + 'px)'].filter(Boolean).join(' and ');
+          }).map(function(breakpoint, i) {
+            return {
+              breakpoint: breakpoint,
+              handler: function handler() {
+                return _this.setState({columns: i});
+              }
+            };
+          });
+          this.breakpoints.forEach(function(_ref2) {
+            var breakpoint = _ref2.breakpoint;
+            var handler = _ref2.handler;
+            return enquire.register(breakpoint, {match: handler});
+          });
+        },
+        componentWillUnmount: function componentWillUnmount() {
+          this.breakpoints.forEach(function(_ref3) {
+            var breakpoint = _ref3.breakpoint;
+            var handler = _ref3.handler;
+            return enquire.unregister(breakpoint, handler);
+          });
+        },
+        render: function render() {
+          return _react2.default.createElement(Grid, _extends({}, this.props, this.state));
+        }
+      });
+    };
+  }, function(module, exports, __webpack_require__) {
+    'use strict';
+    Object.defineProperty(exports, "__esModule", {value: true});
+    var _slicedToArray = function() {
+      function sliceIterator(arr, i) {
+        var _arr = [];
+        var _n = true;
+        var _d = false;
+        var _e = undefined;
+        try {
+          for (var _i = arr[Symbol.iterator](),
+              _s; !(_n = (_s = _i.next()).done); _n = true) {
+            _arr.push(_s.value);
+            if (i && _arr.length === i)
+              break;
+          }
+        } catch (err) {
+          _d = true;
+          _e = err;
+        } finally {
+          try {
+            if (!_n && _i["return"])
+              _i["return"]();
+          } finally {
+            if (_d)
+              throw _e;
+          }
+        }
+        return _arr;
+      }
+      return function(arr, i) {
+        if (Array.isArray(arr)) {
+          return arr;
+        } else if (Symbol.iterator in Object(arr)) {
+          return sliceIterator(arr, i);
+        } else {
+          throw new TypeError("Invalid attempt to destructure non-iterable instance");
+        }
+      };
+    }();
+    var _extends = Object.assign || function(target) {
+      for (var i = 1; i < arguments.length; i++) {
+        var source = arguments[i];
+        for (var key in source) {
+          if (Object.prototype.hasOwnProperty.call(source, key)) {
+            target[key] = source[key];
+          }
+        }
+      }
+      return target;
+    };
+    var _react = __webpack_require__(1);
+    var _react2 = _interopRequireDefault(_react);
+    var _lodash = __webpack_require__(26);
+    var _lodash2 = _interopRequireDefault(_lodash);
+    var _lodash3 = __webpack_require__(25);
+    var _lodash4 = _interopRequireDefault(_lodash3);
+    var _commonProps = __webpack_require__(2);
+    function _interopRequireDefault(obj) {
+      return obj && obj.__esModule ? obj : {default: obj};
+    }
+    var imagesLoaded = typeof window !== 'undefined' ? __webpack_require__(24) : null;
+    exports.default = function(Grid) {
+      var _ref = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+      var measureImages = _ref.measureImages;
+      var background = _ref.background;
+      return _react2.default.createClass({
+        getDefaultProps: function getDefaultProps() {
+          return {component: _commonProps.commonDefaultProps.component};
+        },
+        getInitialState: function getInitialState() {
+          return {rects: {}};
+        },
+        componentWillMount: function componentWillMount() {
+          this._rects = {};
+          this._loading = {};
+          this._retryTimeouts = {};
+        },
+        componentDidMount: function componentDidMount() {
+          this._updateRectsDebounced = (0, _lodash4.default)(this.updateRects, 20);
+          this.measureElements();
+        },
+        componentDidUpdate: function componentDidUpdate() {
+          this.measureElements();
+        },
+        componentWillUnmount: function componentWillUnmount() {
+          var _this = this;
+          Object.keys(this._retryTimeouts).forEach(function(key) {
+            clearTimeout(_this._retryTimeouts[key]);
+          });
+        },
+        measureElements: function measureElements() {
+          var _this2 = this;
+          if (this._elementsToMeasureContainer) {
+            var elements = this._elementsToMeasureContainer.children;
+            if (elements.length) {
+              if (measureImages) {
+                Array.from(elements).filter(function(el) {
+                  return !_this2._loading[el.dataset.stonecutterkey];
+                }).forEach(function(el) {
+                  _this2._loading[el.dataset.stonecutterkey] = true;
+                  imagesLoaded(el, {background: background}, function() {
+                    _this2.measureElementWithImages(el, 5);
+                  });
+                });
+              } else {
+                this._rects = Array.from(elements).reduce(function(acc, el) {
+                  acc[el.dataset.stonecutterkey] = el.getBoundingClientRect();
+                  return acc;
+                }, {});
+                this.updateRects();
+              }
+            }
+          }
+        },
+        measureElementWithImages: function measureElementWithImages(el, retries) {
+          var clientRect = el.getBoundingClientRect();
+          if (clientRect && clientRect.height > 0) {
+            this._rects[el.dataset.stonecutterkey] = clientRect;
+            delete this._loading[el.dataset.stonecutterkey];
+            this._updateRectsDebounced();
+          } else if (retries > 0) {
+            clearTimeout(this._retryTimeouts[el.dataset.stonecutterkey]);
+            this._retryTimeouts[el.dataset.stonecutterkey] = setTimeout(this.measureElement, 20, el, --retries);
+          }
+        },
+        updateRects: function updateRects() {
+          this.setState({rects: _extends({}, this.state.rects, this._rects)});
+          this._rects = {};
+        },
+        render: function render() {
+          var _this3 = this;
+          var component = this.props.component;
+          var _partition = (0, _lodash2.default)(_react2.default.Children.toArray(this.props.children), function(element) {
+            return !_this3.state.rects[element.key];
+          });
+          var _partition2 = _slicedToArray(_partition, 2);
+          var newElements = _partition2[0];
+          var existingElements = _partition2[1];
+          var elementsToMeasure = newElements.map(function(element) {
+            return _react2.default.cloneElement(element, {
+              'style': _extends({}, element.props.style, {width: _this3.props.columnWidth}),
+              'data-stonecutterkey': element.key
+            });
+          });
+          var measuredElements = existingElements.map(function(element) {
+            return _react2.default.cloneElement(element, {itemRect: _this3.state.rects[element.key]});
+          });
+          return _react2.default.createElement('span', null, measuredElements.length > 0 && _react2.default.createElement(Grid, this.props, measuredElements), elementsToMeasure.length > 0 && _react2.default.createElement(component, {
+            style: {
+              width: 0,
+              height: 0,
+              padding: 0,
+              margin: 0,
+              overflow: 'hidden',
+              visibility: 'hidden'
+            },
+            ref: function ref(el) {
+              _this3._elementsToMeasureContainer = el;
+            }
+          }, elementsToMeasure));
+        }
+      });
+    };
+  }, function(module, exports) {
+    'use strict';
+    Object.defineProperty(exports, "__esModule", {value: true});
+    exports.default = function(items, props) {
+      var columns = props.columns;
+      var columnWidth = props.columnWidth;
+      var gutterWidth = props.gutterWidth;
+      var gutterHeight = props.gutterHeight;
+      var columnHeights = [];
+      for (var i = 0; i < columns; i++) {
+        columnHeights.push(0);
+      }
+      var positions = items.map(function(itemProps) {
+        var column = columnHeights.indexOf(Math.min.apply(null, columnHeights));
+        var height = itemProps.itemHeight || itemProps.itemRect && itemProps.itemRect.height;
+        if (!(height && typeof height === 'number')) {
+          throw new Error('Each child must have an "itemHeight" prop or an "itemRect.height" prop.');
+        }
+        var x = column * columnWidth + column * gutterWidth;
+        var y = columnHeights[column];
+        columnHeights[column] += Math.round(height) + gutterHeight;
+        return [x, y];
+      });
+      var gridWidth = columns * columnWidth + (columns - 1) * gutterWidth;
+      var gridHeight = Math.max.apply(null, columnHeights) - gutterHeight;
+      return {
+        positions: positions,
+        gridWidth: gridWidth,
+        gridHeight: gridHeight
+      };
+    };
+  }, function(module, exports) {
+    'use strict';
+    exports.__esModule = true;
+    exports['default'] = stripStyle;
+    function stripStyle(style) {
+      var ret = {};
+      for (var key in style) {
+        if (!style.hasOwnProperty(key)) {
+          continue;
+        }
+        ret[key] = typeof style[key] === 'number' ? style[key] : style[key].val;
+      }
+      return ret;
+    }
+    module.exports = exports['default'];
+  }, function(module, exports) {
+    module.exports = $__require('npm:enquire.js@2.1.1.js');
+  }, function(module, exports) {
+    module.exports = $__require('npm:imagesloaded@4.1.1.js');
+  }, function(module, exports) {
+    module.exports = $__require('npm:lodash.debounce@4.0.8.js');
+  }, function(module, exports) {
+    module.exports = $__require('npm:lodash.partition@4.6.0.js');
+  }, function(module, exports) {
+    module.exports = $__require('npm:react-addons-transition-group@15.3.1.js');
+  }, function(module, exports) {
+    module.exports = $__require('npm:react-motion@0.4.4.js');
+  }]);
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-stonecutter@0.3.3.js", ["npm:react-stonecutter@0.3.3/lib/react-stonecutter.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:react-stonecutter@0.3.3/lib/react-stonecutter.js');
+  return module.exports;
+});
+
 System.registerDynamic("npm:core-js@1.2.7/library/modules/$.cof.js", [], true, function($__require, exports, module) {
   ;
   var define,
@@ -47611,8 +52370,8 @@ System.register('app/seasonal.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
     }
   };
 });
-System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, connect, Seasonal, Results;
+System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-stonecutter@0.3.3.js', 'app/seasonal.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, connect, SpringGrid, Seasonal, Results;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -47623,10 +52382,14 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmBabelRuntime5838CoreJsObjectAssignJs) {
+      _Object$assign = _npmBabelRuntime5838CoreJsObjectAssignJs['default'];
     }, function (_npmReact1531Js) {
       React = _npmReact1531Js['default'];
     }, function (_npmReactRedux445Js) {
       connect = _npmReactRedux445Js.connect;
+    }, function (_npmReactStonecutter033Js) {
+      SpringGrid = _npmReactStonecutter033Js.SpringGrid;
     }, function (_appSeasonalJs) {
       Seasonal = _appSeasonalJs['default'];
     }],
@@ -47644,20 +52407,33 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
         }
 
         _createClass(Results, [{
+          key: 'postProcess',
+          value: function postProcess(data) {
+            return data.map(function (m) {
+              var date = new Date(m.date);
+              return _Object$assign(m, { date: date, date: date });
+            });
+          }
+        }, {
           key: 'renderResults',
           value: function renderResults() {
-            return this.state.data.map(function (d) {
+            var content = this.state.data.map(function (d) {
               return React.createElement(
-                'div',
-                null,
+                'li',
+                { key: d.date, className: 'grid-item',
+                  style: { backgroundColor: d.latest ? '#99ccff' : '#eee' } },
                 React.createElement(
-                  'b',
-                  null,
-                  d.date
+                  'div',
+                  { style: { textAlign: 'center', paddingBottom: '5px' } },
+                  React.createElement(
+                    'b',
+                    null,
+                    d.date.toLocaleDateString('NL-nl', { day: 'numeric', month: 'long' })
+                  )
                 ),
                 React.createElement(
                   'table',
-                  { className: 'table', style: { width: '300px' } },
+                  { className: 'table', style: { width: '100%' } },
                   d.fixtures.map(function (f) {
                     return React.createElement(
                       'tr',
@@ -47667,6 +52443,7 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                         null,
                         f[0] + ' - ' + f[1]
                       ),
+                      React.createElement('td', { style: { width: 10 } }),
                       React.createElement(
                         'td',
                         null,
@@ -47677,6 +52454,20 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 )
               );
             });
+
+            return React.createElement(
+              SpringGrid,
+              {
+                className: 'grid',
+                component: 'ul',
+                columns: 3,
+                columnWidth: 250,
+                gutterWidth: 10,
+                gutterHeight: 10,
+                springConfig: { stiffness: 170, damping: 26 }
+              },
+              content
+            );
           }
         }, {
           key: 'render',
@@ -51260,7 +56051,7 @@ System.registerDynamic("npm:redux@3.5.2/lib/utils/warning.js", [], true, functio
   return module.exports;
 });
 
-System.registerDynamic("npm:process@0.11.8/browser.js", [], true, function($__require, exports, module) {
+System.registerDynamic("npm:process@0.11.9/browser.js", [], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
@@ -51268,24 +56059,38 @@ System.registerDynamic("npm:process@0.11.8/browser.js", [], true, function($__re
   var process = module.exports = {};
   var cachedSetTimeout;
   var cachedClearTimeout;
+  function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+  }
+  function defaultClearTimeout() {
+    throw new Error('clearTimeout has not been defined');
+  }
   (function() {
     try {
-      cachedSetTimeout = setTimeout;
+      if (typeof setTimeout === 'function') {
+        cachedSetTimeout = setTimeout;
+      } else {
+        cachedSetTimeout = defaultSetTimout;
+      }
     } catch (e) {
-      cachedSetTimeout = function() {
-        throw new Error('setTimeout is not defined');
-      };
+      cachedSetTimeout = defaultSetTimout;
     }
     try {
-      cachedClearTimeout = clearTimeout;
+      if (typeof clearTimeout === 'function') {
+        cachedClearTimeout = clearTimeout;
+      } else {
+        cachedClearTimeout = defaultClearTimeout;
+      }
     } catch (e) {
-      cachedClearTimeout = function() {
-        throw new Error('clearTimeout is not defined');
-      };
+      cachedClearTimeout = defaultClearTimeout;
     }
   }());
   function runTimeout(fun) {
     if (cachedSetTimeout === setTimeout) {
+      return setTimeout(fun, 0);
+    }
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+      cachedSetTimeout = setTimeout;
       return setTimeout(fun, 0);
     }
     try {
@@ -51300,6 +56105,10 @@ System.registerDynamic("npm:process@0.11.8/browser.js", [], true, function($__re
   }
   function runClearTimeout(marker) {
     if (cachedClearTimeout === clearTimeout) {
+      return clearTimeout(marker);
+    }
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+      cachedClearTimeout = clearTimeout;
       return clearTimeout(marker);
     }
     try {
@@ -51400,21 +56209,21 @@ System.registerDynamic("npm:process@0.11.8/browser.js", [], true, function($__re
   return module.exports;
 });
 
-System.registerDynamic("npm:process@0.11.8.js", ["npm:process@0.11.8/browser.js"], true, function($__require, exports, module) {
+System.registerDynamic("npm:process@0.11.9.js", ["npm:process@0.11.9/browser.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = $__require('npm:process@0.11.8/browser.js');
+  module.exports = $__require('npm:process@0.11.9/browser.js');
   return module.exports;
 });
 
-System.registerDynamic("github:jspm/nodelibs-process@0.1.2/index.js", ["npm:process@0.11.8.js"], true, function($__require, exports, module) {
+System.registerDynamic("github:jspm/nodelibs-process@0.1.2/index.js", ["npm:process@0.11.9.js"], true, function($__require, exports, module) {
   ;
   var define,
       global = this || self,
       GLOBAL = global;
-  module.exports = System._nodeRequire ? process : $__require('npm:process@0.11.8.js');
+  module.exports = System._nodeRequire ? process : $__require('npm:process@0.11.9.js');
   return module.exports;
 });
 

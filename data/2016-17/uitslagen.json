@@ -1,20 +1,80 @@
 [
   {
-    "date": "2016-09-03",
+    "competition": "Groep 2 04",
+    "matchday": 7,
+    "date": "2016-08-27",
     "fixtures": [
-      ["XerxesDZB (2)", "VOC (4)", 9, 2],
-      ["Hillegersberg (2)", "Zestienhoven (2)"],
-      ["TOGB (3)", "VVOR (1)", 2, 7],
-      ["BVCB (2)", "Blijdorp (1)", 4, 2]
+      ["BVCV", "TOGB", 9, 0],
+      ["VVOR", "Hillegersberg", 1, 5],
+      ["Blijdorp", "VOC", 7, 1],
+      ["Zestienhoven", "XerxesDZB", 0, 8]
     ]
   },
   {
-    "date": "2016-08-27",
+    "competition": "Groep 2 04",
+    "matchday": 1,
+    "date": "2016-09-03",
+    "latest": true,
     "fixtures": [
-      ["BVCV (2)", "TOGB (3)", 9, 0],
-      ["VVOR (1)", "Hillegersberg (2)", 1, 5],
-      ["Blijdorp (1)", "VOC (4)", 7, 1],
-      ["Zestienhoven (2)", "XerxesDZB (2)", 0, 8]
+      ["XerxesDZB", "VOC", 9, 2],
+      ["Hillegersberg", "Zestienhoven"],
+      ["TOGB", "VVOR", 2, 7],
+      ["BVCB", "Blijdorp", 4, 2]
+    ]
+  },
+  {
+    "competition": "Groep 2 04",
+    "matchday": 2,
+    "date": "2016-09-10",
+    "fixtures": [
+      ["Zestienhoven", "TOGB"],
+      ["VVOR", "BVCB"],
+      ["Blijdorp", "XerxesDZB"],
+      ["VOC", "Hillegersberg"]
+    ]
+  },
+  {
+    "competition": "Groep 2 04",
+    "matchday": 3,
+    "date": "2016-09-17",
+    "fixtures": [
+      ["VVOR", "Blijdorp"],
+      ["TOGB", "VOC"],
+      ["BVCB", "Zestienhoven"],
+      ["Hillegersberg", "XerxesDZB"]
+    ]
+  },
+  {
+    "competition": "Groep 2 04",
+    "matchday": 4,
+    "date": "2016-09-24",
+    "fixtures": [
+      ["XerxesDZB", "TOGB"],
+      ["Blijdorp", "Hillegersberg"],
+      ["Zestienhoven", "VVOR"],
+      ["VOC", "BVCB"]
+    ]
+  },
+  {
+    "competition": "Groep 2 04",
+    "matchday": 5,
+    "date": "2016-10-01",
+    "fixtures": [
+      ["BVCB", "XerxesDZB"],
+      ["TOGB", "Hillegersberg"],
+      ["Zestienhoven", "Blijdorp"],
+      ["VVOR", "VOC"]
+    ]
+  },
+  {
+    "competition": "Groep 2 04",
+    "matchday": 6,
+    "date": "2016-10-08",
+    "fixtures": [
+      ["TOGB", "Blijdorp"],
+      ["Hillegersberg", "BVCB"],
+      ["XerxesDZB", "VVOR"],
+      ["VOC", "Zestienhoven"]
     ]
   }
 ]
