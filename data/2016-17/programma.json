@@ -1,31 +1,31 @@
 [
   {
-    "date": "2016-09-10T09:30+02:00",
-    "teams": ["Blijdorp ", "XerxesDZB "],
-    "absent": "Dieuwe",
-    "referee": "Otto"
+   "date":"2016-09-10T09:30+02:00",
+   "teams": ["Blijdorp","XerxesDZB"],
+   "absent":"Dieuwe",
+   "referee":"Otto"
   },
   {
-    "date": "2016-09-17T09:30+02:00",
-    "teams": ["VVOR ", "Blijdorp "]
+   "date":"2016-09-17T09:30+02:00",
+   "teams": ["VVOR","Blijdorp"]
   },
   {
-    "date": "2016-09-24T09:30+02:00",
-    "teams": ["Blijdorp ", "Hillegersberg "],
-    "referee": "Remon"
+   "date":"2016-09-24T09:30+02:00",
+   "teams": ["Blijdorp","Hillegersberg"],
+   "referee":"Remon"
   },
   {
-    "date": "2016-10-01T08:30+02:00",
-    "teams": ["Zestienhoven ", "Blijdorp "]
+   "date":"2016-10-01T08:30+02:00",
+   "teams": ["Zestienhoven","Blijdorp"]
   },
   {
-    "date": "2016-10-08T10:00+02:00",
-    "teams": ["TOGB", "Blijdorp "]
+   "date":"2016-10-08T10:00+02:00",
+   "teams": ["TOGB","Blijdorp"]
   },
   {
-    "date": "2016-10-15T00:00+02:00"
+   "date":"2016-10-15T00:00+02:00"
   },
   {
-    "date": "2016-10-22T00:00+02:00"
+   "date":"2016-10-22T00:00+02:00"
   }
 ]
