@@ -32310,9 +32310,8 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 React.createElement(
                   'div',
                   null,
-                  '(verslag: ',
-                  m.report.author,
-                  ')'
+                  'Verslag: ',
+                  m.report.author
                 )
               );
             }
