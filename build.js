@@ -46104,10 +46104,15 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
           }
         }, {
           key: 'renderTeam',
-          value: function renderTeam(t) {
+          value: function renderTeam(t, idx) {
             return React.createElement(
               'tr',
-              { key: t.team, className: t.team === 'Blijdorp' ? 'active' : '' },
+              { key: idx, className: t.team === 'Blijdorp' ? 'active' : '' },
+              React.createElement(
+                'td',
+                { style: { textAlign: 'right' } },
+                idx + 1 + '.'
+              ),
               React.createElement(
                 'td',
                 null,
@@ -46162,14 +46167,26 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
         }, {
           key: 'renderHead',
           value: function renderHead() {
-            var cols = ['', 'G', 'W', 'GL', 'V', 'P', 'DPV', 'DPT', 'DS'];
-            return cols.map(function (c) {
+            var cols = ['G', 'W', 'GL', 'V', 'P', 'DPV', 'DPT', 'DS'];
+            var headers = cols.map(function (c) {
               return React.createElement(
                 'th',
-                { style: { width: '5%', textAlign: 'right' } },
+                { style: { width: '10%', textAlign: 'right' } },
                 c
               );
             });
+
+            return React.createElement(
+              'tr',
+              null,
+              React.createElement(
+                'th',
+                { style: { width: '10px' } },
+                '#'
+              ),
+              React.createElement('th', null),
+              headers
+            );
           }
         }, {
           key: 'render',
@@ -46190,17 +46207,13 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
                 React.createElement(
                   'thead',
                   null,
-                  React.createElement(
-                    'tr',
-                    null,
-                    this.renderHead()
-                  )
+                  this.renderHead()
                 ),
                 React.createElement(
                   'tbody',
                   null,
-                  this.state.data.map(function (t) {
-                    return _this2.renderTeam(t);
+                  this.state.data.map(function (t, idx) {
+                    return _this2.renderTeam(t, idx);
                   })
                 )
               )

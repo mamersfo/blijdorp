@@ -38,9 +38,10 @@ export class Table extends Seasonal {
     })
   }
 
-  renderTeam(t) {
+  renderTeam(t, idx) {
     return (
-      <tr key={t.team} className={t.team === 'Blijdorp' ? 'active' : ''}>
+      <tr key={idx} className={t.team === 'Blijdorp' ? 'active' : ''}>
+        <td style={{textAlign: 'right'}}>{idx + 1 + '.'}</td>
         <td>{t.team === 'Blijdorp' ? <b>{t.team}</b> : t.team}</td>
         <td style={{textAlign: 'right'}}>{t.matches.total}</td>
         <td style={{textAlign: 'right'}}>{t.matches.wins}</td>
@@ -55,12 +56,20 @@ export class Table extends Seasonal {
   }
 
   renderHead() {
-    let cols = ['', 'G', 'W', 'GL', 'V', 'P', 'DPV', 'DPT', 'DS']
-    return cols.map((c) => {
+    let cols = ['G', 'W', 'GL', 'V', 'P', 'DPV', 'DPT', 'DS']
+    let headers = cols.map((c) => {
       return (
-        <th style={{width: '5%', textAlign: 'right'}}>{c}</th>
+        <th style={{width: '10%', textAlign: 'right'}}>{c}</th>
       )
     })
+
+    return (
+      <tr>
+        <th style={{width: '10px'}}>#</th>
+        <th></th>
+        {headers}
+      </tr>
+    )
   }
 
   render() {
@@ -69,10 +78,10 @@ export class Table extends Seasonal {
         <h2>stand</h2>
         <table className='table' style={{margin: '0px'}}>
           <thead>
-            <tr>{ this.renderHead() }</tr>
+            { this.renderHead() }
           </thead>
           <tbody>
-            { this.state.data.map((t) => this.renderTeam(t)) }
+            { this.state.data.map((t, idx) => this.renderTeam(t, idx)) }
           </tbody>
         </table>
       </div>
