@@ -17,7 +17,7 @@
     "latest": true,
     "fixtures": [
       ["XerxesDZB", "VOC", 9, 2],
-      ["Hillegersberg", "Zestienhoven"],
+      ["Hillegersberg", "Zestienhoven", 4, 2],
       ["TOGB", "VVOR", 2, 7],
       ["BVCB", "Blijdorp", 4, 2]
     ]

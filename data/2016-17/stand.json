@@ -22,13 +22,13 @@
   "team" : "XerxesDZB"
 }, {
   "matches" : {
-    "wins" : 1,
+    "wins" : 2,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 5,
-    "against" : 1
+    "for" : 9,
+    "against" : 3
   },
   "team" : "Hillegersberg"
 }, {
@@ -68,11 +68,11 @@
   "matches" : {
     "wins" : 0,
     "draws" : 0,
-    "losses" : 1
+    "losses" : 2
   },
   "goals" : {
-    "for" : 0,
-    "against" : 8
+    "for" : 2,
+    "against" : 12
   },
   "team" : "Zestienhoven"
 }, {
