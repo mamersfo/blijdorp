@@ -45811,6 +45811,7 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
               if ("Blijdorp" === m.teams[0]) {
                 clone.setMinutes(m.date.getMinutes() - 45);
               } else {
+
                 clone.setMinutes(m.date.getMinutes() - 75);
               }
               return clone.toLocaleTimeString('NL-nl', { hour: '2-digit', minute: '2-digit' });
@@ -45819,26 +45820,31 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
           }
         }, {
           key: 'renderTeam',
-          value: function renderTeam(teams, idx) {
-            var team = React.createElement('td', null);
-
-            if (undefined != teams && idx < teams.length) {
-              if ("Blijdorp" === teams[idx]) {
-                team = React.createElement(
-                  'strong',
+          value: function renderTeam(m, idx) {
+            if (m && m.teams && idx < m.teams.length) {
+              var team = m.teams[idx];
+              if ("Blijdorp" === team) {
+                return React.createElement(
+                  'td',
                   null,
-                  teams[idx]
+                  React.createElement(
+                    'strong',
+                    null,
+                    team
+                  )
                 );
               } else {
-                team = teams[idx];
+                return React.createElement(
+                  'td',
+                  null,
+                  React.createElement(
+                    'a',
+                    { href: m.website, dataToggle: 'tooltip', title: m.location, target: '_blank' },
+                    team
+                  )
+                );
               }
             }
-
-            return React.createElement(
-              'td',
-              null,
-              team
-            );
           }
         }, {
           key: 'renderMatch',
@@ -45861,8 +45867,8 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 null,
                 this.gatheringTime(m)
               ),
-              this.renderTeam(m.teams, 0),
-              this.renderTeam(m.teams, 1),
+              this.renderTeam(m, 0),
+              this.renderTeam(m, 1),
               React.createElement(
                 'td',
                 null,
@@ -46101,11 +46107,15 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
           value: function renderTeam(t) {
             return React.createElement(
               'tr',
-              { key: t.team },
+              { key: t.team, className: t.team === 'Blijdorp' ? 'active' : '' },
               React.createElement(
                 'td',
                 null,
-                t.team
+                t.team === 'Blijdorp' ? React.createElement(
+                  'b',
+                  null,
+                  t.team
+                ) : t.team
               ),
               React.createElement(
                 'td',
@@ -46145,7 +46155,7 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
               React.createElement(
                 'td',
                 { style: { textAlign: 'right' } },
-                t.goals.diff
+                t.goals.diff > 0 ? '+' + t.goals.diff : t.goals.diff
               )
             );
           }

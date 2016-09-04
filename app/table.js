@@ -40,8 +40,8 @@ export class Table extends Seasonal {
 
   renderTeam(t) {
     return (
-      <tr key={t.team}>
-        <td>{t.team}</td>
+      <tr key={t.team} className={t.team === 'Blijdorp' ? 'active' : ''}>
+        <td>{t.team === 'Blijdorp' ? <b>{t.team}</b> : t.team}</td>
         <td style={{textAlign: 'right'}}>{t.matches.total}</td>
         <td style={{textAlign: 'right'}}>{t.matches.wins}</td>
         <td style={{textAlign: 'right'}}>{t.matches.draws}</td>
@@ -49,7 +49,7 @@ export class Table extends Seasonal {
         <td style={{textAlign: 'right'}}>{t.points}</td>
         <td style={{textAlign: 'right'}}>{t.goals.for}</td>
         <td style={{textAlign: 'right'}}>{t.goals.against}</td>
-        <td style={{textAlign: 'right'}}>{t.goals.diff}</td>
+        <td style={{textAlign: 'right'}}>{t.goals.diff > 0 ? '+' + t.goals.diff : t.goals.diff}</td>
       </tr>
     )
   }

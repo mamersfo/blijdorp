@@ -22,6 +22,7 @@ export class Schedule extends Seasonal {
       if ( "Blijdorp" === m.teams[0] ) {
         clone.setMinutes(m.date.getMinutes() - 45)
       } else {
+        
         clone.setMinutes(m.date.getMinutes() - 75)
       }
       return clone.toLocaleTimeString(
@@ -30,18 +31,21 @@ export class Schedule extends Seasonal {
     return ''
   }
 
-  renderTeam(teams, idx) {
-    let team = <td></td>
-
-    if ( undefined != teams && idx < teams.length ) {
-      if ( "Blijdorp" === teams[idx] ) {
-        team = <strong>{teams[idx]}</strong>
+  renderTeam(m, idx) {
+    if ( m && m.teams && idx < m.teams.length ) {
+      let team = m.teams[idx]
+      if ( "Blijdorp" === team ) {
+        return <td><strong>{team}</strong></td>
       } else {
-        team = teams[idx]
+        return (
+          <td>
+            <a href={m.website} dataToggle='tooltip' title={m.location} target='_blank'>
+              {team}
+            </a>
+          </td>
+        )
       }
     }
-
-    return <td>{team}</td>
   }
 
   renderMatch(m) {
@@ -56,8 +60,8 @@ export class Schedule extends Seasonal {
           'Nl-nl', {hour: '2-digit', minute: '2-digit'}) : 'vrij'}
         </td>
         <td>{this.gatheringTime(m)}</td>
-        { this.renderTeam(m.teams, 0) }
-        { this.renderTeam(m.teams, 1) }
+        { this.renderTeam(m, 0) }
+        { this.renderTeam(m, 1) }
         <td>{m.absent}</td>
         <td>{m.referee}</td>
       </tr>
