@@ -45832,29 +45832,33 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
               'Tactiek': []
             });
 
-            return _Object$keys(types).map(function (t) {
-              return React.createElement(
-                'div',
+            return React.createElement(
+              'div',
+              null,
+              React.createElement(
+                'h4',
                 null,
-                React.createElement(
-                  'h4',
-                  null,
-                  'Categorie'
-                ),
-                React.createElement(
+                'Categorie'
+              ),
+              _Object$keys(types).map(function (t) {
+                return React.createElement(
                   'div',
-                  { style: { marginTop: '10px' } },
+                  null,
                   React.createElement(
-                    'b',
-                    null,
-                    t
-                  )
-                ),
-                types[t].map(function (c) {
-                  return _this4.renderCategory(c);
-                })
-              );
-            });
+                    'div',
+                    { style: { marginTop: '10px' } },
+                    React.createElement(
+                      'b',
+                      null,
+                      t
+                    )
+                  ),
+                  types[t].map(function (c) {
+                    return _this4.renderCategory(c);
+                  })
+                );
+              })
+            );
           }
         }, {
           key: 'handleChange',

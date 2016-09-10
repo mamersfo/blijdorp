@@ -190,15 +190,21 @@ export default class Exercises extends React.Component {
       'Tactiek': []
     })
     
-    return Object.keys(types).map((t) => {
-      return (
-        <div>
-          <h4>Categorie</h4>
-          <div style={{marginTop: '10px'}}><b>{t}</b></div>
-          { types[t].map((c) => this.renderCategory(c)) }
-        </div>
-      )
-    })
+    return (
+      <div>
+        <h4>Categorie</h4>
+        {
+          Object.keys(types).map((t) => {
+            return (
+                <div>
+                <div style={{marginTop: '10px'}}><b>{t}</b></div>
+                { types[t].map((c) => this.renderCategory(c)) }
+              </div>
+            )
+          })
+        }
+      </div>
+    )
   }
 
   handleChange(e) {
