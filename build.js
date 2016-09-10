@@ -45844,6 +45844,8 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                   )
                 );
               }
+            } else {
+              return React.createElement('td', null);
             }
           }
         }, {
@@ -52313,7 +52315,7 @@ System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) 
     setters: [function (_npmWhatwgFetch100Js) {}],
     execute: function () {
 
-      // baseUrl = "http://localhost:3000"
+      // const baseUrl = "http://localhost:3000"
       baseUrl = "https://mamersfo.github.io";
 
       get = function get(which) {

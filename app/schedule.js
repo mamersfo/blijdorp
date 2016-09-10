@@ -45,6 +45,8 @@ export class Schedule extends Seasonal {
           </td>
         )
       }
+    } else {
+      return <td></td>
     }
   }
 
