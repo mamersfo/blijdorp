@@ -1,5 +1,24 @@
 [
   {
+    "date": "2016-09-10",
+    "league": "Groep 2 04",
+    "teams": ["Blijdorp", "XerxesDZB"],
+    "result": [5, 0],
+    "goals":{
+      "Fadi": 2,
+      "Jonas": 1,
+      "Luc": 2
+    },
+    "assists": {
+      "Quincy": 1,
+      "Stijn": 2
+    },
+    "absent": {
+      "Amine": 1,
+      "Dieuwe": 1
+    }
+  },
+  {
     "date": "2016-09-03",
     "league": "Groep 2 04",
     "teams": ["BVCB", "Blijdorp"],

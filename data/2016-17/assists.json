@@ -1,13 +1,13 @@
 [ {
   "id" : 3,
   "name" : "Fadi",
-  "matches" : 2,
+  "matches" : 3,
   "total" : 1,
   "position" : "striker"
 }, {
   "id" : 5,
   "name" : "Lenny",
-  "matches" : 2,
+  "matches" : 3,
   "total" : 0,
   "position" : "defender"
 }, {
@@ -19,7 +19,7 @@
 }, {
   "id" : 9,
   "name" : "Vito",
-  "matches" : 1.5,
+  "matches" : 2.5,
   "total" : 0,
   "position" : "midfielder"
 }, {
@@ -31,31 +31,31 @@
 }, {
   "id" : 8,
   "name" : "Stijn",
-  "matches" : 2,
-  "total" : 4,
+  "matches" : 3,
+  "total" : 6,
   "position" : "striker"
 }, {
   "id" : 6,
   "name" : "Luc",
-  "matches" : 2,
+  "matches" : 3,
   "total" : 0,
   "position" : "midfielder"
 }, {
   "id" : 4,
   "name" : "Jonas",
-  "matches" : 2,
+  "matches" : 3,
   "total" : 2,
   "position" : "striker"
 }, {
   "id" : 10,
   "name" : "Xaver ",
-  "matches" : 2,
+  "matches" : 3,
   "total" : 0,
   "position" : "keeper"
 }, {
   "id" : 7,
   "name" : "Quincy",
-  "matches" : 2,
-  "total" : 0,
+  "matches" : 3,
+  "total" : 1,
   "position" : "midfielder"
 } ]

@@ -2,33 +2,33 @@
   "matches" : {
     "wins" : 0,
     "draws" : 0,
-    "losses" : 2
+    "losses" : 3
   },
   "goals" : {
-    "for" : 3,
-    "against" : 16
+    "for" : 5,
+    "against" : 21
   },
   "team" : "VOC"
 }, {
   "matches" : {
     "wins" : 2,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
     "for" : 17,
-    "against" : 2
+    "against" : 7
   },
   "team" : "XerxesDZB"
 }, {
   "matches" : {
-    "wins" : 2,
+    "wins" : 3,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 9,
-    "against" : 3
+    "for" : 14,
+    "against" : 5
   },
   "team" : "Hillegersberg"
 }, {
@@ -55,35 +55,35 @@
   "team" : "VVOR"
 }, {
   "matches" : {
-    "wins" : 1,
+    "wins" : 2,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 9,
+    "for" : 14,
     "against" : 5
   },
   "team" : "Blijdorp"
 }, {
   "matches" : {
     "wins" : 0,
-    "draws" : 0,
+    "draws" : 1,
     "losses" : 2
   },
   "goals" : {
-    "for" : 2,
-    "against" : 12
+    "for" : 5,
+    "against" : 15
   },
   "team" : "Zestienhoven"
 }, {
   "matches" : {
     "wins" : 0,
-    "draws" : 0,
+    "draws" : 1,
     "losses" : 2
   },
   "goals" : {
-    "for" : 2,
-    "against" : 16
+    "for" : 5,
+    "against" : 19
   },
   "team" : "TOGB"
 } ]
