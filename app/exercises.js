@@ -39,26 +39,6 @@ export default class Exercises extends React.Component {
     })
   }
 
-  parseVariations(s) {
-    if ( s ) {
-      if ( s.indexOf(';') != -1 ) {
-        return s.split(';').map((v) => {
-          if ( v.indexOf(',') !== -1 ) {
-            let parts = v.split(',')
-            return parts.slice(1).map((p) => p.split('=')).reduce( (prev, next) => {
-              prev[next[0].trim()] = next[1].trim()
-              return prev }, {n: parts[0]} )
-          }
-          else {
-            return {n: v}
-          }
-        })
-      }
-    }
-
-    return []
-  }
-
   renderVideo(m) {
     if ( undefined === m.v ) {
       return <span>{m.n}</span>
@@ -96,10 +76,6 @@ export default class Exercises extends React.Component {
   }
 
   renderVariations(e) {
-    if ( 'string' === typeof(e.variations) ) {
-      return null
-    }
-
     let maps = e.variations
     
     if ( maps.length > 0 ) {
@@ -150,21 +126,6 @@ export default class Exercises extends React.Component {
       return <a href={imgSrc} onClick={this.runModal.bind(this)}>{m.text}</a>
     } else {
       return <div>{m.text}</div>
-    }
-  }
-
-  handleChange(e) {
-    let idx = e.activeItems[0]
-    if ( idx ) {
-      let { exercises } = this.state
-      let exercise = exercises[idx]
-
-      if ( 'string' === typeof(exercise.variations)) {
-         let maps = this.parseVariations(exercise.variations)
-        exercise.variations = maps
-        exercises[idx] = exercise
-        this.setState({exercises: exercises})
-      }
     }
   }
 
@@ -223,7 +184,7 @@ export default class Exercises extends React.Component {
             </fieldset>
           </div>
           <div className='col-md-8'>
-            <Accordion style={{margin: '0px'}} onChange={this.handleChange}>
+            <Accordion style={{margin: '0px'}}>
             { this.renderExercises() }
             </Accordion>
           </div>

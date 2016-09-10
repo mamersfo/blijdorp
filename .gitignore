@@ -16,3 +16,4 @@ node_modules/
 target/
 .lein-repl-history
 .DS_Store
+data/current

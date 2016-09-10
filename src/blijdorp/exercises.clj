@@ -1,5 +1,6 @@
 (ns blijdorp.exercises
-  (:require [cheshire.core :refer :all]))
+  (:require [cheshire.core :refer :all]
+            [clojure.string :refer (lower-case split join trim)]))
 
 (def base-pattern #"(^\*+) (\S+)")
 (def ext-pattern #"(^\*+) (\S+): ([ \S]+$)")
@@ -15,7 +16,7 @@
   [parts]
   (if (seq parts)
     {:level (count (first parts))
-     :type (keyword (clojure.string/lower-case (second parts)))
+     :type (keyword (lower-case (second parts)))
      :name (last parts)
      :text []}))
 
@@ -46,7 +47,7 @@
 (defn join-text
   [nodes]
   (map #(if (seq (:text %))
-          (update-in % [:text] (partial clojure.string/join " "))
+          (update-in % [:text] (partial join " "))
           (dissoc % :text)) nodes))
 
 (defn parse
@@ -61,8 +62,18 @@
 (def images
   (let [dir (str (System/getProperty "user.dir") "/images/exercises")]
     (set
-     (map #(first (clojure.string/split (.getName %) #"\."))
+     (map #(first (split (.getName %) #"\."))
           (file-seq (clojure.java.io/file dir))))))
+
+(defn process-variations
+  [coll]
+  (->> coll
+       (filter #(= :variation (:type %)))
+       (map :name)
+       (map (fn [s] (split s #"\,")))
+       (map (fn [s] (merge
+                    {:name (first s)}
+                    (into {} (map #(split (trim %) #"\=") (rest s))))))))
 
 (defn exercises
   [root]
@@ -80,14 +91,10 @@
                          :text (:text exercise)
                          :image (contains? images uuid)
                          :tags (string-for-type :tag children)
-                         :variations (string-for-type :variation children)
-                         :station (-> (filter #(= :station (:type %)) children)
-                                      first :name)
-                         })))))))
+                         :variations (process-variations children)})))))))
 
 (defn random-uuid []
   (.toString (java.util.UUID/randomUUID)))
-
 
 (defn print-uuids [count]
   (repeatedly count #(println (random-uuid))))
@@ -114,4 +121,4 @@
    (export-json (parse input-file)))
   ([root]
    (with-open [out (clojure.java.io/writer output-file)]
-     (generate-stream (exercises root) out))))
+     (generate-stream (exercises root) out {:pretty true}))))
