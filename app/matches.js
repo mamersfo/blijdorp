@@ -44,7 +44,7 @@ export class Matches extends Seasonal {
           <div style={{color: '#ababab'}}>
             { m.report.content ? m.report.content.map(this.renderContent) : null }
           </div>
-          <div>Verslag: { m.report.author }</div>
+          { m.report.author && ( <div>Verslag: { m.report.author }</div> ) }
         </div>
       )
     }

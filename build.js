@@ -32307,7 +32307,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                   { style: { color: '#ababab' } },
                   m.report.content ? m.report.content.map(this.renderContent) : null
                 ),
-                React.createElement(
+                m.report.author && React.createElement(
                   'div',
                   null,
                   'Verslag: ',
@@ -52313,7 +52313,7 @@ System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) 
     setters: [function (_npmWhatwgFetch100Js) {}],
     execute: function () {
 
-      // const baseUrl = "http://localhost:3000"
+      // baseUrl = "http://localhost:3000"
       baseUrl = "https://mamersfo.github.io";
 
       get = function get(which) {
