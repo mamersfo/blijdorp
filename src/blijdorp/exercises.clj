@@ -75,6 +75,12 @@
                     {:name (first s)}
                     (into {} (map #(split (trim %) #"\=") (rest s))))))))
 
+(defn process-tags
+  [coll]
+  (->> coll
+       (filter #(= :tag (:type %)))
+       (map :name)))
+
 (defn exercises
   [root]
   (apply concat
@@ -90,7 +96,7 @@
                          :category (:name category)
                          :text (:text exercise)
                          :image (contains? images uuid)
-                         :tags (string-for-type :tag children)
+                         :tags (process-tags children)
                          :variations (process-variations children)})))))))
 
 (defn random-uuid []

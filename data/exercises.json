@@ -4,7 +4,7 @@
   "category" : "Looptraining",
   "text" : "Twee-aan-twee tegelijk sprinten tot aan pion, daarna rustig uitlopen richting de startpositie en daarna weer opnieuw.",
   "image" : true,
-  "tags" : "sprinten;feyenoord",
+  "tags" : [ "sprinten", "feyenoord" ],
   "variations" : [ {
     "name" : "Hip Out",
     "v" : "rPugh9vf9Hg",
@@ -37,7 +37,7 @@
   "category" : "Looptraining",
   "text" : "In een vierkant rennen spelers op afroep naar zijde 1, 2, 3, resp. 4.",
   "image" : true,
-  "tags" : "vierkant;rennen",
+  "tags" : [ "vierkant", "rennen" ],
   "variations" : [ ]
 }, {
   "uuid" : "780ff4fb-f7f8-4cd7-bc80-d69371254f7b",
@@ -45,7 +45,7 @@
   "category" : "Looptraining",
   "text" : "Oefeningen voor de kleine ruimte, bijvoorbeeld langs de lijn.",
   "image" : false,
-  "tags" : "lopen;loopscholing;souplesse",
+  "tags" : [ "lopen", "loopscholing", "souplesse" ],
   "variations" : [ {
     "name" : "Triplings",
     "v" : "CDR9yetcp-0",
@@ -88,7 +88,7 @@
   "category" : "Looptraining",
   "text" : "Diverse loopoefeningen voor als er meer ruimte beschikbaar is. Aandachtspunten: snelle acceleratie en decelleratie.",
   "image" : true,
-  "tags" : "loopscholing;souplesse;lopen;explosiviteit",
+  "tags" : [ "loopscholing", "souplesse", "lopen", "explosiviteit" ],
   "variations" : [ {
     "name" : "Huppelpas"
   }, {
@@ -121,7 +121,7 @@
   "category" : "Looptraining",
   "text" : "Zes minuten hardlopen rond het veld. Dit wordt eens per seizoen door de clubgeorganiseerd.",
   "image" : true,
-  "tags" : "conditie;uithoudingsvermogen;hardlopen",
+  "tags" : [ "conditie", "uithoudingsvermogen", "hardlopen" ],
   "variations" : [ ]
 }, {
   "uuid" : "464d7c78-cfa0-4ff8-94fd-fe8542cc05b2",
@@ -129,7 +129,7 @@
   "category" : "Looptraining",
   "text" : "Sprinten naar eerste hoedje, er omheen draaien, daarna naar andere hoedje, daaromheen en tenslotte op volle snelheid terug. Aandachtspunt: sterke lichaamshouding, hoge startsnelheid, snelle wendingen, snelle sprint.",
   "image" : true,
-  "tags" : "sprinten;wendbaarheid;estafette;draaien;explosiviteit",
+  "tags" : [ "sprinten", "wendbaarheid", "estafette", "draaien", "explosiviteit" ],
   "variations" : [ {
     "name" : "Groepsgewijs"
   }, {
@@ -143,7 +143,7 @@
   "category" : "Looptraining",
   "text" : "Twee spelers, door de trainer bij de pols vastgehouden, zetten zich schrap. Trainer laat vervolgens los en de spelers rennen wie het snelst is op een korte sprintafstand. Aandachtspunten: snelle startsnelheid.",
   "image" : false,
-  "tags" : "sprinten;explosiviteit;battle;feyenoord",
+  "tags" : [ "sprinten", "explosiviteit", "battle", "feyenoord" ],
   "variations" : [ {
     "name" : "Als eerste bij de bal"
   }, {
@@ -155,7 +155,7 @@
   "category" : "Looptraining",
   "text" : "Slalomsprint langs hoedjes. Aandachtspunt: snelle wendingen.",
   "image" : true,
-  "tags" : "slalom;sprinten;wendbaarheid;battle;coordinatie;balans;stabiliteit",
+  "tags" : [ "slalom", "sprinten", "wendbaarheid", "battle", "coordinatie", "balans", "stabiliteit" ],
   "variations" : [ {
     "name" : "Estafette"
   }, {
@@ -176,7 +176,7 @@
   "category" : "Looptraining",
   "text" : "Sprintwedstrijd vanuit stand, daarna direct uitlopen over ongeveer tien meter. Aandachtspunt: sterke lichaamshouding van waaruit explosieve acties kunnen beginnen, hogere startsnelheid.",
   "image" : false,
-  "tags" : "sprinten;explosiviteit",
+  "tags" : [ "sprinten", "explosiviteit" ],
   "variations" : [ {
     "name" : "Met de groep tegelijk"
   }, {
@@ -190,7 +190,7 @@
   "category" : "Looptraining",
   "text" : "In een vierkant proberen de tikkers de anderen te pakken door ze aan te tikken.",
   "image" : true,
-  "tags" : "wendbaarheid;battle;vierkant;aftikken",
+  "tags" : [ "wendbaarheid", "battle", "vierkant", "aftikken" ],
   "variations" : [ {
     "name" : "Twee tikkers"
   }, {
@@ -217,7 +217,7 @@
   "category" : "Looptraining",
   "text" : "Hele team rent rond een vierkant, wordt achtervolgd door één tikker. Zodra de tikker de eerste heeft getikt stoppen.",
   "image" : true,
-  "tags" : "wendbaarheid;vierkant;sprinten;aftikken",
+  "tags" : [ "wendbaarheid", "vierkant", "sprinten", "aftikken" ],
   "variations" : [ ]
 }, {
   "uuid" : "036fa445-ce5d-4f63-8b56-48763c9f0ddb",
@@ -225,7 +225,7 @@
   "category" : "Krachttraining",
   "text" : "Over een lijn springen, met één of twee benen, voorwaarts of zijwaarts.",
   "image" : false,
-  "tags" : "hinkelen;springen",
+  "tags" : [ "hinkelen", "springen" ],
   "variations" : [ {
     "name" : "Voorwaarts"
   }, {
@@ -243,7 +243,7 @@
   "category" : "Krachttraining",
   "text" : "Springoefeningen, met één been of twee benen, horizontaal, verticaal of zijwaarts, gewone sprong of wisselsprong.",
   "image" : false,
-  "tags" : "springen",
+  "tags" : [ "springen" ],
   "variations" : [ {
     "name" : "Sprong-ABC",
     "v" : "Y28kxV5YiCA",
@@ -275,7 +275,7 @@
   "category" : "Krachttraining",
   "text" : "Maatje op de rug nemen en dragen of optillen, van de ene kant naar de andere kant dragen",
   "image" : false,
-  "tags" : "kracht",
+  "tags" : [ "kracht" ],
   "variations" : [ ]
 }, {
   "uuid" : "b8957469-dabd-4b07-b5b8-9172e376d4f3",
@@ -283,7 +283,7 @@
   "category" : "Krachttraining",
   "text" : "Met de borst vooruit tegen elkaar opspringen.",
   "image" : false,
-  "tags" : "kracht;battle;duel;balans",
+  "tags" : [ "kracht", "battle", "duel", "balans" ],
   "variations" : [ {
     "name" : "Met aanloop",
     "v" : "ZbEhAXMASN8"
@@ -294,7 +294,7 @@
   "category" : "Krachttraining",
   "text" : "Proberen zo snel mogelijk vooruit te komen terwijl je door de ander wordt tegengehouden.",
   "image" : false,
-  "tags" : "kracht;weerstand;balans",
+  "tags" : [ "kracht", "weerstand", "balans" ],
   "variations" : [ ]
 }, {
   "uuid" : "eb7514a5-92de-4e9e-8488-fe0c531dcbdb",
@@ -302,7 +302,7 @@
   "category" : "Krachttraining",
   "text" : "Uit stand zo ver mogelijk springen.",
   "image" : false,
-  "tags" : "springen;kracht;explosiviteit;balans;stabiliteit",
+  "tags" : [ "springen", "kracht", "explosiviteit", "balans", "stabiliteit" ],
   "variations" : [ {
     "name" : "Lateral Jumps",
     "v" : "V76W_0EaKcg",
@@ -341,7 +341,7 @@
   "category" : "Krachttraining",
   "text" : "Krachtoefening voor bovenbeen- en bilspieren gericht op veerkracht",
   "image" : false,
-  "tags" : "beenspieren;bilspieren;veerkracht;balans;stabiliteit",
+  "tags" : [ "beenspieren", "bilspieren", "veerkracht", "balans", "stabiliteit" ],
   "variations" : [ {
     "name" : "Hoogtesprongen",
     "v" : "g3avDXQgZHI",
@@ -359,7 +359,7 @@
   "category" : "Krachttraining",
   "text" : "Pas op de plaats, armen naar voren, door de knieën omlaag en weer omhoog komen. One leg squat kan met of zonder steun van maatje.",
   "image" : false,
-  "tags" : "kracht;springen;balans;stabiliteit;hamstrings;core",
+  "tags" : [ "kracht", "springen", "balans", "stabiliteit", "hamstrings", "core" ],
   "variations" : [ {
     "name" : "Russian squat"
   }, {
@@ -389,7 +389,7 @@
   "category" : "Krachttraining",
   "text" : "Krachtoefening voor bovenbeen- en bilspieren en hamstrings.",
   "image" : false,
-  "tags" : "kracht;beenspieren;bilspieren;hamstrings",
+  "tags" : [ "kracht", "beenspieren", "bilspieren", "hamstrings" ],
   "variations" : [ {
     "name" : "Lunges",
     "v" : "ob9V2G8-qeE",
@@ -410,7 +410,7 @@
   "category" : "Krachttraining",
   "text" : "Tweetal loopt naar voren en bij een hoedje lopen zijwaarts naar elkaar toe en doen een duel met de 'tegenstander' - bijvoorbeeld door met de schouder tegen elkaar op te springen. Lopen vervolgens zijwaarts terug en komen elkaar weer tegen bij het volgende hoedje.",
   "image" : false,
-  "tags" : "duel;kracht;fifatv",
+  "tags" : [ "duel", "kracht", "fifatv" ],
   "variations" : [ {
     "name" : "Jumping with Shoulder",
     "v" : "DlWuFO1e4Xc",
@@ -428,7 +428,7 @@
   "category" : "Krachttraining",
   "text" : "Oefeningen ter versterking van de romp.",
   "image" : false,
-  "tags" : "kracht;romp;core",
+  "tags" : [ "kracht", "romp", "core" ],
   "variations" : [ {
     "name" : "The Bench",
     "v" : "gf-XEapqXPU",
@@ -482,7 +482,7 @@
   "category" : "Krachttraining",
   "text" : "Oefeningen ter versterking van de hamstrings.",
   "image" : false,
-  "tags" : "kracht;hamstrings",
+  "tags" : [ "kracht", "hamstrings" ],
   "variations" : [ {
     "name" : "Hamstrings",
     "v" : "rfZ-i7erbaY",
@@ -504,7 +504,7 @@
   "category" : "Krachttraining",
   "text" : "Op één been staan, met bal in de hand en balanceren.",
   "image" : false,
-  "tags" : "kracht;balans;beenspieren;duel;battle;duwen",
+  "tags" : [ "kracht", "balans", "beenspieren", "duel", "battle", "duwen" ],
   "variations" : [ {
     "name" : "Single-Leg Stance",
     "v" : "oN15EId6A3U",
@@ -527,7 +527,7 @@
   "category" : "Krachttraining",
   "text" : null,
   "image" : false,
-  "tags" : "kracht;kuitspieren",
+  "tags" : [ "kracht", "kuitspieren" ],
   "variations" : [ {
     "name" : "Met gestrekte knie",
     "v" : "JDSSLoh7a50",
@@ -547,7 +547,7 @@
   "category" : "Krachttraining",
   "text" : "Krachtoefening voor bovenbeen-, bilspieren, gericht op veerkracht.",
   "image" : false,
-  "tags" : "beenspieren;bilspieren;veerkracht",
+  "tags" : [ "beenspieren", "bilspieren", "veerkracht" ],
   "variations" : [ {
     "name" : "Diepe sprongen",
     "v" : "BpdGENOTlJ4",
@@ -563,7 +563,7 @@
   "category" : "Krachttraining",
   "text" : "Rekken van de peesplaat bij een lopersknie",
   "image" : false,
-  "tags" : "peesplaat;lopersknie",
+  "tags" : [ "peesplaat", "lopersknie" ],
   "variations" : [ {
     "name" : "Staand zijwaarts",
     "v" : "uNPNPejsjBI",
@@ -583,7 +583,7 @@
   "category" : "Krachttraining",
   "text" : "Kracht- en stabiliteitstraining van hamstrings en rugspieren.",
   "image" : false,
-  "tags" : "kracht;balans;stabiliteit;hamstrings;rug",
+  "tags" : [ "kracht", "balans", "stabiliteit", "hamstrings", "rug" ],
   "variations" : [ {
     "name" : "Eénbenig",
     "v" : "CyErXElgZbk",
@@ -595,7 +595,7 @@
   "category" : "Krachttraining",
   "text" : "Krachtoefening voor voet- en onderbeenspieren",
   "image" : false,
-  "tags" : "warm up cool down;kracht;voeten;onderbenen;balans;stabiliteit",
+  "tags" : [ "warm up cool down", "kracht", "voeten", "onderbenen", "balans", "stabiliteit" ],
   "variations" : [ {
     "name" : "Huppen",
     "v" : "9h1MH2zKB8Q",
@@ -631,7 +631,7 @@
   "category" : "Motoriektraining",
   "text" : "De bal met de zool, dus de onderkant van de voet bewegen.",
   "image" : false,
-  "tags" : "motoriek;coerver",
+  "tags" : [ "motoriek", "coerver" ],
   "variations" : [ {
     "name" : "#1 Sole taps",
     "s" : "coerver",
@@ -646,7 +646,7 @@
   "category" : "Motoriektraining",
   "text" : "De bal heen en weer bewegen met binnenkant voet. Take: de bal met de buitenkant van de voet opzij bewegen.",
   "image" : false,
-  "tags" : "motoriek;coerver",
+  "tags" : [ "motoriek", "coerver" ],
   "variations" : [ {
     "name" : "#2 Shuffle",
     "s" : "coerver",
@@ -674,7 +674,7 @@
   "category" : "Motoriektraining",
   "text" : "Roll up: bal met binnen- of buitenkant voet van beneden naar boven beroeren. Roll over: bovenkant bal met voetzool 'aaien'. ",
   "image" : false,
-  "tags" : "motoriek;coerver",
+  "tags" : [ "motoriek", "coerver" ],
   "variations" : [ {
     "name" : "#9 Roll up inside",
     "s" : "coerver",
@@ -692,7 +692,7 @@
   "category" : "Motoriektraining",
   "text" : "De bal van boven naar beneden beroeren en opzij schuiven.",
   "image" : false,
-  "tags" : "motoriek;coerver",
+  "tags" : [ "motoriek", "coerver" ],
   "variations" : [ {
     "name" : "#8 Slides",
     "s" : "coerver",
@@ -705,7 +705,7 @@
   "category" : "Motoriektraining",
   "text" : null,
   "image" : false,
-  "tags" : "motoriek;coerver",
+  "tags" : [ "motoriek", "coerver" ],
   "variations" : [ {
     "name" : "Step on",
     "s" : "coerver",
@@ -757,7 +757,7 @@
   "category" : "Motoriektraining",
   "text" : "Bal van de ene naar de andere kant dribbelen, halverwege 360 graden kappen en draaien.",
   "image" : false,
-  "tags" : "motoriek;coerver",
+  "tags" : [ "motoriek", "coerver" ],
   "variations" : [ {
     "name" : "Kappen en draaien",
     "v" : "MaWRhDbvvaE",
@@ -770,7 +770,7 @@
   "category" : "Motoriektraining",
   "text" : "Met de bal op verschillende manieren van de ene naar de andere kant dribbelen. Aandachtspunten: (1) controle over de bal, (2) handelingssnelheid, (3) bovenlichaam meebewegen.",
   "image" : true,
-  "tags" : "balcontrole;passeren;passeerbeweging;schijnbeweging;schaarbeweging;overstap;kappen;draaien;afrollen",
+  "tags" : [ "balcontrole", "passeren", "passeerbeweging", "schijnbeweging", "schaarbeweging", "overstap", "kappen", "draaien", "afrollen" ],
   "variations" : [ {
     "name" : "Schijnbeweging",
     "v" : "rEcfED495_k",
@@ -859,7 +859,7 @@
   "category" : "Motoriektraining",
   "text" : "Met de bal op verschillende manieren van de ene naar de andere kant dribbelen.",
   "image" : true,
-  "tags" : "dribbelen;controleren",
+  "tags" : [ "dribbelen", "controleren" ],
   "variations" : [ {
     "name" : "Bal onder de voet",
     "v" : "24gVCVDPklg",
@@ -902,7 +902,7 @@
   "category" : "Samenspelen en druk zetten",
   "text" : "Drie spelers staan bij een van de vier hoedjes, speler in het midden proberen 'm af te pakken. Telkens driehoekje maken door naar vrijstaande hoedje te rennen.",
   "image" : true,
-  "tags" : "vrijlopen;aannemen;passen;druk zetten;vierkant",
+  "tags" : [ "vrijlopen", "aannemen", "passen", "druk zetten", "vierkant" ],
   "variations" : [ {
     "name" : "Met keeper"
   } ]
@@ -912,7 +912,7 @@
   "category" : "Samenspelen en druk zetten",
   "text" : "Pilonnen in een driehoek. Speler begint bij pilon 0 en loopt linksom of rechtsom naar pilon 1. Hij kapt de bal met zijn ene been en passt met zijn andere been naar de speler die start vanaf pilon 2. Deze neemt de bal aan, en dribbelt naar pilon 0.",
   "image" : true,
-  "tags" : "aannemen;passen;kappen",
+  "tags" : [ "aannemen", "passen", "kappen" ],
   "variations" : [ {
     "name" : "Linksom",
     "s" : "feyenoord"
@@ -926,7 +926,7 @@
   "category" : "Samenspelen en druk zetten",
   "text" : "Pilonnen staan in de vorm van een kruis opgesteld. Speler bij buitenste pilon passt naar speler in het midden. Die kaatst terug terwijl de eerste speler naar de volgende pilon aan de buitenkant loopt. Deze neemt de bal terug aan en dribbelt naar het midden. De ontvangende speler loopt naar de pilon aan de buitenkant tegenovergesteld aan de eerste pilon.",
   "image" : true,
-  "tags" : "aannemen;kaatsen;dribbelen",
+  "tags" : [ "aannemen", "kaatsen", "dribbelen" ],
   "variations" : [ {
     "name" : "Linksom",
     "s" : "feyenoord"
@@ -940,7 +940,7 @@
   "category" : "Samenspelen en druk zetten",
   "text" : "Spelers staan in een cirkel en spelen de bal rond, terwijl speler in het midden 'm probeert af te pakken.",
   "image" : true,
-  "tags" : "aannemen;passen;druk zetten",
+  "tags" : [ "aannemen", "passen", "druk zetten" ],
   "variations" : [ {
     "name" : "Meerdere afpakkers"
   }, {
@@ -952,7 +952,7 @@
   "category" : "Samenspelen en druk zetten",
   "text" : "Spelers staan bij x-aantal hoedjes, de eerste speelt naar de tweede en loopt naar de volgende positie, evenzo van de tweede naar de derde, derde naar vierde enzovoort, tot de laatste die op het doel afwerkt.",
   "image" : true,
-  "tags" : "opbouwen;aannemen;passen;vrijlopen;afwerken;storen",
+  "tags" : [ "opbouwen", "aannemen", "passen", "vrijlopen", "afwerken", "storen" ],
   "variations" : [ ]
 }, {
   "uuid" : "4718c80c-7822-4292-a4af-45669fecdd6f",
@@ -960,7 +960,7 @@
   "category" : "Samenspelen en druk zetten",
   "text" : "Twee spelers proberen de pion halverwege te raken door te passen, op vaste dan wel variabele afstand.",
   "image" : true,
-  "tags" : "mikken;passen",
+  "tags" : [ "mikken", "passen" ],
   "variations" : [ {
     "name" : "Binnenkant"
   }, {
@@ -974,7 +974,7 @@
   "category" : "Samenspelen en druk zetten",
   "text" : "Drie spelers, twee aan weerszijden, één in het midden. De een gooit de bal omhoog, de ander kopt terug. Aandachtspunten: (1) gebruik armen om een spanboog te maken, (2) maak een knikbeweging.",
   "image" : true,
-  "tags" : "koppen;mikken;kaatsen",
+  "tags" : [ "koppen", "mikken", "kaatsen" ],
   "variations" : [ {
     "name" : "Middenspeler is kopper"
   }, {
@@ -992,7 +992,7 @@
   "category" : "Samenspelen en druk zetten",
   "text" : "Spelers aan weerszijden gooien de bal, de speler in het midden speelt 'm terug. Daarbij rent de speler van de ene naar de andere kant.",
   "image" : true,
-  "tags" : "aannemen;kaatsen;tripling",
+  "tags" : [ "aannemen", "kaatsen", "tripling" ],
   "variations" : [ {
     "name" : "Voorwaarts lopen",
     "v" : "16gjEpcmLmY",
@@ -1035,7 +1035,7 @@
   "category" : "Samenspelen en druk zetten",
   "text" : "Drie verdedigers bakenen een gebied af in de vorm van een driehoek, afgezet met hoedjes. De verdedigers mogen daar niet buiten komen. De aanvallers mogen daar niet binnen komen, maar proberen de bal rond te spelen en op doel te schieten. De verdedigers moeten dat voorkomen door compact te verdedigen, dus als blok dicht bij elkaar de bal te volgen en bij gevaar naar de bal te gaan.",
   "image" : true,
-  "tags" : "",
+  "tags" : [ ],
   "variations" : [ {
     "name" : "Staying Compact",
     "v" : "D72gPqw3ILA",
@@ -1048,7 +1048,7 @@
   "category" : "Samenspelen en druk zetten",
   "text" : "Speler loopt in richting het midden, bal wordt strak ingespeeld en direct na de aanname versnelt de speler zijwaarts door de poortjes. Sluit na het bereiken van het einde aan in de rij van degenen die inspelen; de ander sluit aan in de rij van spelers die de bal krijgt aangespeeld.",
   "image" : true,
-  "tags" : "passen;aannemen",
+  "tags" : [ "passen", "aannemen" ],
   "variations" : [ {
     "name" : "Eerste aanname",
     "v" : "apY39wSq8XE",
@@ -1060,7 +1060,7 @@
   "category" : "Samenspelen en druk zetten",
   "text" : "Spelers aan de zijden van een vierkant spelen op balbezit, één of twee lummels in het vierkant proberen af te pakken.",
   "image" : true,
-  "tags" : "",
+  "tags" : [ ],
   "variations" : [ ]
 }, {
   "uuid" : "762f272d-b629-4696-b59b-191d011a573b",
@@ -1068,7 +1068,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Speler dribbelt naar eerste hoedje, draait er omheen, dribbelt naar tweede hoedje en daarna op volle snelheid terug.",
   "image" : true,
-  "tags" : "battle;estafette;dribbelen",
+  "tags" : [ "battle", "estafette", "dribbelen" ],
   "variations" : [ {
     "name" : "Estafette"
   }, {
@@ -1080,7 +1080,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Slalommend dribbelen langs hoedjes.",
   "image" : true,
-  "tags" : "dribbelen;estafette;battle;slalom;estafette",
+  "tags" : [ "dribbelen", "estafette", "battle", "slalom", "estafette" ],
   "variations" : [ {
     "name" : "Estafette"
   }, {
@@ -1098,7 +1098,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Alle spelers proberen één of twee spelers te passeren, om vervolgens te scoren in doeltjes halverwege het veld, dan wel de achterlijn te halen.",
   "image" : true,
-  "tags" : "dribbelen;mikken;afpakken",
+  "tags" : [ "dribbelen", "mikken", "afpakken" ],
   "variations" : [ {
     "name" : "Eén verdediger"
   }, {
@@ -1114,7 +1114,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Diverse passeerbewegingen uitvoeren, met als doel: de tegenstander uitspelen, door poortje gaan en vervolgens op doel afwerken. Aandachtspunten: (1) timing is belangrijk, dus beweging niet te vroeg of te laat inzetten, (2) passeerbeweging kan één of meerdere keren achter elkaar worden uitgevoerd, (3) de bal niet te lang bij je houden, te bereiken door binnen 10 seconden het poortje te bereiken.",
   "image" : true,
-  "tags" : "afwerken;passeren",
+  "tags" : [ "afwerken", "passeren" ],
   "variations" : [ {
     "name" : "Kappen en draaien",
     "v" : "gWIca-POBso",
@@ -1126,7 +1126,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Twee spelers aan weerszijden, speler in het midden neemt aan van de ene, draait en passt naar de andere. Aandachtspunten: (1) maak een schijnbeweging, (2) neem de bal mee in de ruimte.",
   "image" : true,
-  "tags" : "kappen;uitschakelen;opendraaien",
+  "tags" : [ "kappen", "uitschakelen", "opendraaien" ],
   "variations" : [ {
     "name" : "Achter standbeen",
     "v" : "62XufKgBUuA",
@@ -1150,7 +1150,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Partijtje, één tegen één.",
   "image" : true,
-  "tags" : "dribbelen;passeren;afpakken;scoren;tegenhouden;battle",
+  "tags" : [ "dribbelen", "passeren", "afpakken", "scoren", "tegenhouden", "battle" ],
   "variations" : [ {
     "name" : "Doeltjes"
   }, {
@@ -1164,7 +1164,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Verdediger speelt de bal naar de aanvaller, die dribbelt naar voren en de verdediger moet hem zien af te stoppen. Aanvaller scoort punt door achterlijn te halen. Verdediger scoort punt door binnen de gestelde tijd de aanvaller van scoren af te houden. Aandachtspunten: (1) zet je lichaam tussen tegenstander en de bal, (2) beweeg in een verdedigende houding, (3) gebruik je armen om je tegenstander van je af te houden, (4) pak de bal af door je voet voor de bal te zetten.",
   "image" : true,
-  "tags" : "dribbelen;verdedigen",
+  "tags" : [ "dribbelen", "verdedigen" ],
   "variations" : [ {
     "name" : "Body position",
     "v" : "ZqDfqIDid8I",
@@ -1198,7 +1198,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Duel van twee spelers in vierkant. Aanvaller krijgt bal frontaal of schuin frontaal ingespeeld en probeert via lijndribbel in bovenste twee doeltjes te scoren. Verdediger kan afpakken en kan scoren in onderste twee doeltjes. Na een doelpunt sluiten de spelers aan in de rij en komen twee nieuwe spelers in het vierkant om het duel uit te spelen. Aanvaller kan ook bal ingespeeld krijgen met speler naast zich of met speler in de rug.",
   "image" : true,
-  "tags" : "dribbelen;passeren",
+  "tags" : [ "dribbelen", "passeren" ],
   "variations" : [ {
     "name" : "Frontaal",
     "v" : "k85xY6fLGgg",
@@ -1222,7 +1222,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Verdedigers staan achter elkaar opgesteld in twee of drie vierkanten, elke verdediger bewaakt daarbij zijn eigen vierkant. Aanvallers gaan één voor één door de vierkanten en proberen de verdedigers te passeren, hetgeen kan worden voorkomen door de bal simpelweg uit het vierkant te tikken.",
   "image" : true,
-  "tags" : "dribbelen;passeren",
+  "tags" : [ "dribbelen", "passeren" ],
   "variations" : [ ]
 }, {
   "uuid" : "f94a6fdd-90e9-4e00-adb7-96557378f483",
@@ -1230,7 +1230,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Twee spelers aan weerszijden van een klein vierkant (2x2) tikken de bal op verschillende manieren naar elkaar.",
   "image" : true,
-  "tags" : "passen;vrijlopen",
+  "tags" : [ "passen", "vrijlopen" ],
   "variations" : [ {
     "name" : "Coerver personal training",
     "s" : "coerver",
@@ -1243,7 +1243,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Spelers staan in een cirkel richting het midden en doen een beweging van Coerver. Wanneer het teken wordt gegeven bewegen de spelers richting het midden en bij een volgend teken weer terug. Na een ander signaal schuiven ze allemaal een plaatsje op naar rechts.",
   "image" : true,
-  "tags" : "",
+  "tags" : [ ],
   "variations" : [ {
     "name" : "Coerver personal training",
     "s" : "coerver",
@@ -1255,7 +1255,7 @@
   "category" : "Dribbelen en afpakken",
   "text" : "Aanvaller doet stops & starts, verdediger reageert. Doel is over de lijn te dribbelen. Als de lijn is gehaald, eventueel proberen in doeltje dat haaks op de looplijn staat te scoren.",
   "image" : false,
-  "tags" : "dribbelen;afpakken",
+  "tags" : [ "dribbelen", "afpakken" ],
   "variations" : [ {
     "name" : "(Achter)lijn halen"
   }, {
@@ -1267,7 +1267,7 @@
   "category" : "Scoren en tegenhouden",
   "text" : "Spelers werken af op groot doel met keeper. Bal wordt diep gespeeld naar drie mogelijke plekken, aangegeven door respectievelijk 7 (links), 9 (midden) of 11 (rechts) te roepen. Speler rent om het hoedje heen, controleert en werkt af.",
   "image" : true,
-  "tags" : "afwerken;scoren;passen;vrijlopen;loopactie;tegenhouden",
+  "tags" : [ "afwerken", "scoren", "passen", "vrijlopen", "loopactie", "tegenhouden" ],
   "variations" : [ {
     "name" : "Direct schieten"
   } ]
@@ -1277,7 +1277,7 @@
   "category" : "Scoren en tegenhouden",
   "text" : "Verdediger wordt 'losgelaten' op aanvaller die in groot doel met keeper probeert te scoren. Tegenstander komt van achteren, van de zijkant of van voren.",
   "image" : true,
-  "tags" : "afwerken;scoren;dribbelen;afpakken;sliding;duel",
+  "tags" : [ "afwerken", "scoren", "dribbelen", "afpakken", "sliding", "duel" ],
   "variations" : [ {
     "name" : "Tegenstander van achteren",
     "v" : "Tugn4mc2M6E",
@@ -1299,7 +1299,7 @@
   "category" : "Scoren en tegenhouden",
   "text" : "Ene speler staat met gezicht naar de ander, ontvangt de bal en kaatst telkens terug naar de opkomende man.",
   "image" : true,
-  "tags" : "passen;inspelen;kaatsen;afwerken;scoren;tegenhouden",
+  "tags" : [ "passen", "inspelen", "kaatsen", "afwerken", "scoren", "tegenhouden" ],
   "variations" : [ {
     "name" : "Achterlijn"
   }, {
@@ -1313,7 +1313,7 @@
   "category" : "Scoren en tegenhouden",
   "text" : "Met z'n allen op een rij tegelijk proberen op de lat te schieten. Kan overal worden gespeeld waar een doel staat, maar beste plek is het grote doel bij de kantine, omdat de ballen hier niet over het hek kunnen vliegen.",
   "image" : false,
-  "tags" : "afwerken;mikken;battle",
+  "tags" : [ "afwerken", "mikken", "battle" ],
   "variations" : [ ]
 }, {
   "uuid" : "b7aee7d1-7a45-4a85-8f1b-3dc640b7f9ca",
@@ -1321,7 +1321,7 @@
   "category" : "Scoren en tegenhouden",
   "text" : "Bij groot doel met keeper passt de ene de bal in de hoek, de andere rent er achteraan en geeft de voorzet weer terug naar de opkomende man. Bij een variatie met twee inlopende spelers beginnen de spelers even 'hoog', maar gaat er één diep en gaat de ander er een paar meter achter.",
   "image" : true,
-  "tags" : "voorzetten;passen;afwerken;schieten;koppen;vrijlopen;tegenhouden",
+  "tags" : [ "voorzetten", "passen", "afwerken", "schieten", "koppen", "vrijlopen", "tegenhouden" ],
   "variations" : [ {
     "name" : "Eén inlopende speler"
   }, {
@@ -1333,7 +1333,7 @@
   "category" : "Scoren en tegenhouden",
   "text" : "Alle spelers proberen langs twee verdedigers pionnen te raken die aan de achterlijn staan opgesteld.",
   "image" : true,
-  "tags" : "mikken;scoren;dribbelen;tegenhouden",
+  "tags" : [ "mikken", "scoren", "dribbelen", "tegenhouden" ],
   "variations" : [ {
     "name" : "Pionnenschietspel",
     "v" : "3itMO9TfNRw",
@@ -1347,7 +1347,7 @@
   "category" : "Scoren en tegenhouden",
   "text" : "Twee spelers proberen vanaf hun lijn te scoren in het doel halverwege, met en zonder keeper, op vaste en variabele afstand.",
   "image" : true,
-  "tags" : "mikken;scoren;tegenhouden",
+  "tags" : [ "mikken", "scoren", "tegenhouden" ],
   "variations" : [ {
     "name" : "Poortschietspel",
     "v" : "2HopwRrOtV8",
@@ -1367,7 +1367,7 @@
   "category" : "Scoren en tegenhouden",
   "text" : "Schieten op doel met variabele afstand, op groot doel of kleine doeltjes, met of zonder keeper.",
   "image" : true,
-  "tags" : "schieten;scoren;tegenhouden",
+  "tags" : [ "schieten", "scoren", "tegenhouden" ],
   "variations" : [ {
     "name" : "Vaste afstand"
   }, {
@@ -1391,7 +1391,7 @@
   "category" : "Scoren en tegenhouden",
   "text" : "Strafschoppen nemen.",
   "image" : false,
-  "tags" : "schieten;tegenhouden",
+  "tags" : [ "schieten", "tegenhouden" ],
   "variations" : [ {
     "name" : "Laag schieten"
   }, {
@@ -1409,7 +1409,7 @@
   "category" : "Scoren en tegenhouden",
   "text" : "Uitgaande van de posities 7-9-11, wordt 7 of 9 of 11 geroepen en gaat de aanvaller naar die positie en biedt zich aan. De speler wordt daar aangespeeld, maar achter zich staat een verdediger die hem dekt en probeert om de bal van hem af te pakken. Idee is dan dat de aanvaller een actie maakt om de verdediger van zich af te schudden. Vervolgens werkt de aanvaller af op doel.",
   "image" : true,
-  "tags" : "vrijlopen;aannemen;wegdraaien;opendraaien;schieten;scoren;afpakken;tegenhouden",
+  "tags" : [ "vrijlopen", "aannemen", "wegdraaien", "opendraaien", "schieten", "scoren", "afpakken", "tegenhouden" ],
   "variations" : [ {
     "name" : "Wegdraaien op het middenveld",
     "v" : "3kVAdMe4it4",
@@ -1422,7 +1422,7 @@
   "category" : "Scoren en tegenhouden",
   "text" : "Vanaf de achterlijn naar de aangever nadat hij een actie heeft gemaakt, en vervolgens naar degene die afwerkt op doel.",
   "image" : true,
-  "tags" : "opendraaien;aanleggen;schieten",
+  "tags" : [ "opendraaien", "aanleggen", "schieten" ],
   "variations" : [ {
     "name" : "Aanspelen in de voet",
     "s" : "feyenoord"
@@ -1436,7 +1436,7 @@
   "category" : "Positiespel",
   "text" : "Twee teams (1-1, 2-1, 2-2, 3-2, 4-4) zonder keeper op daartoe aangewezen plek in het circuit.",
   "image" : true,
-  "tags" : "battle;positiespel",
+  "tags" : [ "battle", "positiespel" ],
   "variations" : [ {
     "name" : "1 tegen 1",
     "v" : "ovzgsV0Jlj8",
@@ -1462,7 +1462,7 @@
   "category" : "Positiespel",
   "text" : "Verdedigers spelen met keeper en 3 spelers in ruit en proberen in de kleine doeltjes te scoren. Aanvallers spelen met 3 of 4 spelers in ruit en proberen in grote doel te scoren.",
   "image" : true,
-  "tags" : "positiespel;opbouwen;passen;vrijlopen;scoren;tegenhouden",
+  "tags" : [ "positiespel", "opbouwen", "passen", "vrijlopen", "scoren", "tegenhouden" ],
   "variations" : [ {
     "name" : "3 Aanvallers"
   }, {
@@ -1474,7 +1474,7 @@
   "category" : "Positiespel",
   "text" : "Partijtje op twee grote doelen met keepers (2-2, 3-2, 3-3, 4-3, 4-4, 5-5, inclusief keeper).",
   "image" : true,
-  "tags" : "positiespel;scoren;tegenhouden",
+  "tags" : [ "positiespel", "scoren", "tegenhouden" ],
   "variations" : [ {
     "name" : "1 tegen 1",
     "v" : "CB1HROQd3og",
@@ -1506,7 +1506,7 @@
   "category" : "Positiespel",
   "text" : "Twee teams (4-3, 4-4, 5-4) zonder keeper.",
   "image" : true,
-  "tags" : "positiespel;scoren;tegenhouden",
+  "tags" : [ "positiespel", "scoren", "tegenhouden" ],
   "variations" : [ {
     "name" : "4 tegen 3"
   }, {
@@ -1522,7 +1522,7 @@
   "category" : "Positiespel",
   "text" : "Op een lang veld met 1 of 2 tegen elkaar, of een breed veld met 4 tegen elkaar proberen de bal over de achterlijn te dribbelen.",
   "image" : true,
-  "tags" : "positiespel;dribbelen;scoren;tegenhouden",
+  "tags" : [ "positiespel", "dribbelen", "scoren", "tegenhouden" ],
   "variations" : [ {
     "name" : "1 tegen 1 op lang veld",
     "v" : "SW_KORV9ql4",
@@ -1538,7 +1538,7 @@
   "category" : "Positiespel",
   "text" : "Twee teams (2-2, 4-4) proberen pionnen die bij de achterlijn van de tegenstander staan opgesteld te raken (1 punt), dan wel omver te schieten (2 punten).",
   "image" : true,
-  "tags" : "mikken;scoren;tegenhouden",
+  "tags" : [ "mikken", "scoren", "tegenhouden" ],
   "variations" : [ {
     "name" : "1 tegen 1",
     "v" : "lAqmlO-vnVc",
@@ -1556,7 +1556,7 @@
   "category" : "Positiespel",
   "text" : "Partijtje met twee doeltjes, team van 2 tegen team van 1, 2 of 3.",
   "image" : true,
-  "tags" : "scoren;tegenhouden",
+  "tags" : [ "scoren", "tegenhouden" ],
   "variations" : [ {
     "name" : "2 tegen 1"
   }, {
@@ -1572,7 +1572,7 @@
   "category" : "Positiespel",
   "text" : "Partijtje met vier doeltjes, met vier teams van 2 tegen elkaar.",
   "image" : true,
-  "tags" : "scoren;tegenhouden;vrijlopen",
+  "tags" : [ "scoren", "tegenhouden", "vrijlopen" ],
   "variations" : [ {
     "name" : "2 tegen 2 tegen 2 tegen 2"
   } ]
@@ -1582,7 +1582,7 @@
   "category" : "Positiespel",
   "text" : "Posities worden aangeduid met zes hoedjes voor verdedigende stelling (veld klein maken) en aanvallende stelling (veld groot maken). Bij het roepen van 'omschakelen!' veranderen de spelers van stelling, elk voor hun eigen positie.",
   "image" : true,
-  "tags" : "omschakelen;organisatie;compact;counteren",
+  "tags" : [ "omschakelen", "organisatie", "compact", "counteren" ],
   "variations" : [ {
     "name" : "Zonder hoedjes"
   }, {
@@ -1594,7 +1594,7 @@
   "category" : "Standaard-situaties",
   "text" : "Keeper gooit of passt de bal naar een van de vleugelverdedigers die zich aanbieden aan de zijkanten. Verdediger neemt de bal aan, en na een eventuele dribbel passt hij naar de nummer 10 die zich ook richting zijkant aanbiedt. Oefening eindigt wanneer de nummer 10 de bal onder de voet controleert en zo een punt verdient. De tegenstanders proberen deze combinatie te verstoren, en krijgen een punt als ze in het doel scoren.",
   "image" : true,
-  "tags" : "opbouwen;gooien;passen;vrijlopen",
+  "tags" : [ "opbouwen", "gooien", "passen", "vrijlopen" ],
   "variations" : [ ]
 }, {
   "uuid" : "dddf3af3-347f-42e5-b241-1b2a08c51016",
@@ -1602,7 +1602,7 @@
   "category" : "Standaard-situaties",
   "text" : "Oefening voor mandakking bij corner. Verdediger moet dicht bij zijn tegenstander staan, tussen de tegenstander en het doel, zodanig dat hij zowel de bal als de tegenstander kan zien.",
   "image" : true,
-  "tags" : "hoekschop;corner;koppen;schieten;positiespel;tegenhouden",
+  "tags" : [ "hoekschop", "corner", "koppen", "schieten", "positiespel", "tegenhouden" ],
   "variations" : [ {
     "name" : "Defending corner kicks",
     "v" : "uTZTKdRO908",
@@ -1617,7 +1617,7 @@
   "category" : "Standaard-situaties",
   "text" : "Twee aanvallers staan bij de bal om een vrije trap te nemen. Keeper verdedigt het doel, drie verdedigers staan in de muur. De derde aanvaller staat in de buurt van de muur om een eventuele rebound in te schieten. De vrije trap kan met links of rechts worden genomen. De verdedigende partij kan uitverdedigen en scoren in één van de doeltjes.",
   "image" : true,
-  "tags" : "schieten;scoren;tegenhouden;vrije trap;rebound",
+  "tags" : [ "schieten", "scoren", "tegenhouden", "vrije trap", "rebound" ],
   "variations" : [ {
     "name" : "Direct Free Kicks",
     "v" : "TFQAur1y9WM",
@@ -1633,7 +1633,7 @@
   "category" : "Standaard-situaties",
   "text" : "Speler gooit in naar medespeler die zich komt aanbieden, die neemt de bal aan en kaatst 'm weer terug naar de eerste speler. Speler die aanneemt wordt gehinderd door tegenstander. Aandachtspunten: (1) onverwachts naar vrije ruimte komen om aan te bieden, (2) arm naar achteren om de tegenstander af te houden, (3) bij aanname lichtjes raken zodat de bal 'valt'.",
   "image" : true,
-  "tags" : "ingooien;kaatsen;vrijlopen",
+  "tags" : [ "ingooien", "kaatsen", "vrijlopen" ],
   "variations" : [ {
     "name" : "Aanname borst",
     "v" : "f6OYXNg8DrI",

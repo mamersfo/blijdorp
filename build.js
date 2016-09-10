@@ -32182,42 +32182,6 @@ System.register('app/assists.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
     }
   };
 });
-System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.keys.js", ["npm:core-js@1.2.7/library/modules/$.to-object.js", "npm:core-js@1.2.7/library/modules/$.object-sap.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var toObject = $__require('npm:core-js@1.2.7/library/modules/$.to-object.js');
-  $__require('npm:core-js@1.2.7/library/modules/$.object-sap.js')('keys', function($keys) {
-    return function keys(it) {
-      return $keys(toObject(it));
-    };
-  });
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/fn/object/keys.js", ["npm:core-js@1.2.7/library/modules/es6.object.keys.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  $__require('npm:core-js@1.2.7/library/modules/es6.object.keys.js');
-  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Object.keys;
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/keys.js", ["npm:core-js@1.2.7/library/fn/object/keys.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = {
-    "default": $__require('npm:core-js@1.2.7/library/fn/object/keys.js'),
-    __esModule: true
-  };
-  return module.exports;
-});
-
 System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-sanfona@0.0.14.js', 'app/seasonal.js', 'app/api.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, _Object$keys, React, connect, Accordion, AccordionItem, Seasonal, get, Matches;
 
@@ -32591,6 +32555,132 @@ System.register('app/choose-season.js', ['npm:babel-runtime@5.8.38/helpers/get.j
     }
   };
 });
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-detect.js", ["npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
+      SAFE_CLOSING = false;
+  try {
+    var riter = [7][ITERATOR]();
+    riter['return'] = function() {
+      SAFE_CLOSING = true;
+    };
+    Array.from(riter, function() {
+      throw 2;
+    });
+  } catch (e) {}
+  module.exports = function(exec, skipClosing) {
+    if (!skipClosing && !SAFE_CLOSING)
+      return false;
+    var safe = false;
+    try {
+      var arr = [7],
+          iter = arr[ITERATOR]();
+      iter.next = function() {
+        return {done: safe = true};
+      };
+      arr[ITERATOR] = function() {
+        return iter;
+      };
+      exec(arr);
+    } catch (e) {}
+    return safe;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.array.from.js", ["npm:core-js@1.2.7/library/modules/$.ctx.js", "npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.to-object.js", "npm:core-js@1.2.7/library/modules/$.iter-call.js", "npm:core-js@1.2.7/library/modules/$.is-array-iter.js", "npm:core-js@1.2.7/library/modules/$.to-length.js", "npm:core-js@1.2.7/library/modules/core.get-iterator-method.js", "npm:core-js@1.2.7/library/modules/$.iter-detect.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
+      $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
+      toObject = $__require('npm:core-js@1.2.7/library/modules/$.to-object.js'),
+      call = $__require('npm:core-js@1.2.7/library/modules/$.iter-call.js'),
+      isArrayIter = $__require('npm:core-js@1.2.7/library/modules/$.is-array-iter.js'),
+      toLength = $__require('npm:core-js@1.2.7/library/modules/$.to-length.js'),
+      getIterFn = $__require('npm:core-js@1.2.7/library/modules/core.get-iterator-method.js');
+  $export($export.S + $export.F * !$__require('npm:core-js@1.2.7/library/modules/$.iter-detect.js')(function(iter) {
+    Array.from(iter);
+  }), 'Array', {from: function from(arrayLike) {
+      var O = toObject(arrayLike),
+          C = typeof this == 'function' ? this : Array,
+          $$ = arguments,
+          $$len = $$.length,
+          mapfn = $$len > 1 ? $$[1] : undefined,
+          mapping = mapfn !== undefined,
+          index = 0,
+          iterFn = getIterFn(O),
+          length,
+          result,
+          step,
+          iterator;
+      if (mapping)
+        mapfn = ctx(mapfn, $$len > 2 ? $$[2] : undefined, 2);
+      if (iterFn != undefined && !(C == Array && isArrayIter(iterFn))) {
+        for (iterator = iterFn.call(O), result = new C; !(step = iterator.next()).done; index++) {
+          result[index] = mapping ? call(iterator, mapfn, [step.value, index], true) : step.value;
+        }
+      } else {
+        length = toLength(O.length);
+        for (result = new C(length); length > index; index++) {
+          result[index] = mapping ? mapfn(O[index], index) : O[index];
+        }
+      }
+      result.length = index;
+      return result;
+    }});
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/array/from.js", ["npm:core-js@1.2.7/library/modules/es6.string.iterator.js", "npm:core-js@1.2.7/library/modules/es6.array.from.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  $__require('npm:core-js@1.2.7/library/modules/es6.string.iterator.js');
+  $__require('npm:core-js@1.2.7/library/modules/es6.array.from.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Array.from;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/array/from.js", ["npm:core-js@1.2.7/library/fn/array/from.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/array/from.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/helpers/to-consumable-array.js", ["npm:babel-runtime@5.8.38/core-js/array/from.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var _Array$from = $__require('npm:babel-runtime@5.8.38/core-js/array/from.js')["default"];
+  exports["default"] = function(arr) {
+    if (Array.isArray(arr)) {
+      for (var i = 0,
+          arr2 = Array(arr.length); i < arr.length; i++)
+        arr2[i] = arr[i];
+      return arr2;
+    } else {
+      return _Array$from(arr);
+    }
+  };
+  exports.__esModule = true;
+  return module.exports;
+});
+
 System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.to-string.js", [], true, function($__require, exports, module) {
   ;
   var define,
@@ -33433,6 +33523,42 @@ System.registerDynamic("npm:babel-runtime@5.8.38/core-js/set.js", ["npm:core-js@
       GLOBAL = global;
   module.exports = {
     "default": $__require('npm:core-js@1.2.7/library/fn/set.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.keys.js", ["npm:core-js@1.2.7/library/modules/$.to-object.js", "npm:core-js@1.2.7/library/modules/$.object-sap.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var toObject = $__require('npm:core-js@1.2.7/library/modules/$.to-object.js');
+  $__require('npm:core-js@1.2.7/library/modules/$.object-sap.js')('keys', function($keys) {
+    return function keys(it) {
+      return $keys(toObject(it));
+    };
+  });
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/object/keys.js", ["npm:core-js@1.2.7/library/modules/es6.object.keys.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  $__require('npm:core-js@1.2.7/library/modules/es6.object.keys.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Object.keys;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/keys.js", ["npm:core-js@1.2.7/library/fn/object/keys.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/object/keys.js'),
     __esModule: true
   };
   return module.exports;
@@ -45422,8 +45548,8 @@ System.registerDynamic("npm:react-dynamic-modal@1.1.1.js", ["npm:react-dynamic-m
   return module.exports;
 });
 
-System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/set.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-sanfona@0.0.14.js', 'npm:react-dynamic-modal@1.1.1.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Set, React, get, Accordion, AccordionItem, Modal, ModalManager, Effect, Exercises;
+System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/helpers/to-consumable-array.js', 'npm:babel-runtime@5.8.38/core-js/set.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-sanfona@0.0.14.js', 'npm:react-dynamic-modal@1.1.1.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _toConsumableArray, _Set, _Object$keys, _Object$assign, React, get, Accordion, AccordionItem, Modal, ModalManager, Effect, Exercises;
 
   function compare(a, b) {
     if (a.name < b.name) return -1;
@@ -45440,8 +45566,14 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmBabelRuntime5838HelpersToConsumableArrayJs) {
+      _toConsumableArray = _npmBabelRuntime5838HelpersToConsumableArrayJs['default'];
     }, function (_npmBabelRuntime5838CoreJsSetJs) {
       _Set = _npmBabelRuntime5838CoreJsSetJs['default'];
+    }, function (_npmBabelRuntime5838CoreJsObjectKeysJs) {
+      _Object$keys = _npmBabelRuntime5838CoreJsObjectKeysJs['default'];
+    }, function (_npmBabelRuntime5838CoreJsObjectAssignJs) {
+      _Object$assign = _npmBabelRuntime5838CoreJsObjectAssignJs['default'];
     }, function (_npmReact1531Js) {
       React = _npmReact1531Js['default'];
     }, function (_appApiJs) {
@@ -45466,7 +45598,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
           _get(Object.getPrototypeOf(Exercises.prototype), 'constructor', this).call(this, props);
           this.state = {
             exercises: [],
-            categories: [{ id: 'c-1', title: 'Looptraining', checked: false }, { id: 'c-2', title: 'Krachttraining', checked: false }, { id: 'c-3', title: 'Motoriektraining', checked: false }, { id: 'c-4', title: 'Samenspelen en druk zetten', checked: false }, { id: 'c-5', title: 'Dribbelen en afpakken', checked: false }, { id: 'c-6', title: 'Scoren en tegenhouden', checked: false }, { id: 'c-7', title: 'Positiespel', checked: false }, { id: 'c-8', title: 'Standaard-situaties', checked: false }],
+            categories: [{ id: 'c-1', title: 'Looptraining', checked: false, type: 'Fysiek' }, { id: 'c-2', title: 'Krachttraining', checked: false, type: 'Fysiek' }, { id: 'c-3', title: 'Motoriektraining', checked: false, type: 'Fysiek' }, { id: 'c-4', title: 'Samenspelen en druk zetten', checked: false, type: 'Techniek' }, { id: 'c-5', title: 'Dribbelen en afpakken', checked: false, type: 'Techniek' }, { id: 'c-6', title: 'Scoren en tegenhouden', checked: false, type: 'Techniek' }, { id: 'c-7', title: 'Positiespel', checked: false, type: 'Tactiek' }, { id: 'c-8', title: 'Standaard-situaties', checked: false, type: 'Tactiek' }],
             selected: []
           };
 
@@ -45485,36 +45617,13 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             });
           }
         }, {
-          key: 'parseVariations',
-          value: function parseVariations(s) {
-            if (s) {
-              if (s.indexOf(';') != -1) {
-                return s.split(';').map(function (v) {
-                  if (v.indexOf(',') !== -1) {
-                    var parts = v.split(',');
-                    return parts.slice(1).map(function (p) {
-                      return p.split('=');
-                    }).reduce(function (prev, next) {
-                      prev[next[0].trim()] = next[1].trim();
-                      return prev;
-                    }, { n: parts[0] });
-                  } else {
-                    return { n: v };
-                  }
-                });
-              }
-            }
-
-            return [];
-          }
-        }, {
           key: 'renderVideo',
           value: function renderVideo(m) {
             if (undefined === m.v) {
               return React.createElement(
                 'span',
                 null,
-                m.n
+                m.name
               );
             } else {
               var url = 'https://www.youtube.com/embed/' + m.v + '?start=' + (undefined !== m.t ? m.t : 0);
@@ -45525,7 +45634,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                 React.createElement(
                   'div',
                   null,
-                  m.n,
+                  m.name,
                   React.createElement('img', { src: img,
                     style: { float: 'right', width: '24px', height: '24px' } })
                 ),
@@ -45565,28 +45674,25 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
           value: function renderVariations(e) {
             var _this2 = this;
 
-            if ('string' === typeof e.variations) {
-              return null;
-            }
+            if (e.visited) {
+              var maps = e.variations;
 
-            var maps = e.variations;
+              if (maps.length > 0) {
+                var items = maps.map(function (m) {
+                  return React.createElement(
+                    'li',
+                    { className: 'list-group-item' },
+                    _this2.renderVideo(m)
+                  );
+                });
 
-            if (maps.length > 0) {
-              var items = maps.map(function (m) {
                 return React.createElement(
-                  'li',
-                  { className: 'list-group-item' },
-                  _this2.renderVideo(m)
+                  'ul',
+                  { style: { marginTop: '20px', marginBottom: '0px' },
+                    className: 'list-group' },
+                  items
                 );
-              });
-
-              return React.createElement(
-                'ul',
-                {
-                  style: { marginTop: '20px', marginBottom: '0px' },
-                  className: 'list-group' },
-                items
-              );
+              }
             }
 
             return null;
@@ -45626,11 +45732,25 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
           key: 'renderExerciseText',
           value: function renderExerciseText(m) {
             if (m.image) {
+              React.createElement(
+                'div',
+                null,
+                m.text
+              );
               var imgSrc = 'images/exercises/' + m.uuid + '.png';
               return React.createElement(
-                'a',
-                { href: imgSrc, onClick: this.runModal.bind(this) },
-                m.text
+                'div',
+                null,
+                React.createElement(
+                  'div',
+                  { style: { marginBottom: '10px' } },
+                  m.text
+                ),
+                React.createElement(
+                  'a',
+                  { href: imgSrc, onClick: this.runModal.bind(this) },
+                  'Schema'
+                )
               );
             } else {
               return React.createElement(
@@ -45638,23 +45758,6 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                 null,
                 m.text
               );
-            }
-          }
-        }, {
-          key: 'handleChange',
-          value: function handleChange(e) {
-            var idx = e.activeItems[0];
-            if (idx) {
-              var exercises = this.state.exercises;
-
-              var exercise = exercises[idx];
-
-              if ('string' === typeof exercise.variations) {
-                var maps = this.parseVariations(exercise.variations);
-                exercise.variations = maps;
-                exercises[idx] = exercise;
-                this.setState({ exercises: exercises });
-              }
             }
           }
         }, {
@@ -45679,7 +45782,9 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
               return {
                 id: c.id,
                 title: c.title,
-                checked: c.id === id ? !c.checked : c.checked };
+                checked: c.id === id ? !c.checked : c.checked,
+                type: c.type
+              };
             });
 
             var checked = new _Set(categories.filter(function (c) {
@@ -45696,26 +45801,72 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             });
           }
         }, {
+          key: 'renderCategory',
+          value: function renderCategory(c) {
+            return React.createElement(
+              'div',
+              { key: c.id },
+              React.createElement('input', { type: 'checkbox',
+                'data-id': c.id,
+                checked: c.checked,
+                onChange: this.updateFilters.bind(this, c.id)
+              }),
+              React.createElement(
+                'span',
+                { style: { marginLeft: '10px' } },
+                c.title
+              )
+            );
+          }
+        }, {
           key: 'renderFilters',
           value: function renderFilters() {
             var _this4 = this;
 
-            return this.state.categories.map(function (c) {
+            var types = this.state.categories.reduce(function (m, c) {
+              m[c.type] = [].concat(_toConsumableArray(m[c.type]), [c]);
+              return m;
+            }, {
+              'Fysiek': [],
+              'Techniek': [],
+              'Tactiek': []
+            });
+
+            return _Object$keys(types).map(function (t) {
               return React.createElement(
                 'div',
-                { key: c.id },
-                React.createElement('input', { type: 'checkbox',
-                  'data-id': c.id,
-                  checked: c.checked,
-                  onChange: _this4.updateFilters.bind(_this4, c.id)
-                }),
+                null,
                 React.createElement(
-                  'span',
-                  { style: { marginLeft: '10px' } },
-                  c.title
-                )
+                  'h4',
+                  null,
+                  'Categorie'
+                ),
+                React.createElement(
+                  'div',
+                  { style: { marginTop: '10px' } },
+                  React.createElement(
+                    'b',
+                    null,
+                    t
+                  )
+                ),
+                types[t].map(function (c) {
+                  return _this4.renderCategory(c);
+                })
               );
             });
+          }
+        }, {
+          key: 'handleChange',
+          value: function handleChange(e) {
+            var idx = e.activeItems[0];
+            if (idx) {
+              var exercises = this.state.exercises;
+
+              var exercise = exercises[idx];
+              exercises[idx] = _Object$assign(exercise, { visited: true });
+              this.setState({ exercises: exercises });
+            }
           }
         }, {
           key: 'render',
@@ -52315,7 +52466,7 @@ System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) 
     setters: [function (_npmWhatwgFetch100Js) {}],
     execute: function () {
 
-      // const baseUrl = "http://localhost:3000"
+      // baseUrl = "http://localhost:3000"
       baseUrl = "https://mamersfo.github.io";
 
       get = function get(which) {
