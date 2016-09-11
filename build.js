@@ -31176,58 +31176,6 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/filters/Select.js", 
   return module.exports;
 });
 
-System.registerDynamic("npm:classnames@2.2.5/index.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  "format cjs";
-  (function() {
-    'use strict';
-    var hasOwn = {}.hasOwnProperty;
-    function classNames() {
-      var classes = [];
-      for (var i = 0; i < arguments.length; i++) {
-        var arg = arguments[i];
-        if (!arg)
-          continue;
-        var argType = typeof arg;
-        if (argType === 'string' || argType === 'number') {
-          classes.push(arg);
-        } else if (Array.isArray(arg)) {
-          classes.push(classNames.apply(null, arg));
-        } else if (argType === 'object') {
-          for (var key in arg) {
-            if (hasOwn.call(arg, key) && arg[key]) {
-              classes.push(key);
-            }
-          }
-        }
-      }
-      return classes.join(' ');
-    }
-    if (typeof module !== 'undefined' && module.exports) {
-      module.exports = classNames;
-    } else if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
-      define('classnames', [], function() {
-        return classNames;
-      });
-    } else {
-      window.classNames = classNames;
-    }
-  }());
-  return module.exports;
-});
-
-System.registerDynamic("npm:classnames@2.2.5.js", ["npm:classnames@2.2.5/index.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = $__require('npm:classnames@2.2.5/index.js');
-  return module.exports;
-});
-
 System.registerDynamic("npm:react-bootstrap-table@2.4.2/lib/Const.js", [], true, function($__require, exports, module) {
   "use strict";
   ;
@@ -32555,6 +32503,27 @@ System.register('app/choose-season.js', ['npm:babel-runtime@5.8.38/helpers/get.j
     }
   };
 });
+System.registerDynamic("npm:babel-runtime@5.8.38/helpers/to-consumable-array.js", ["npm:babel-runtime@5.8.38/core-js/array/from.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var _Array$from = $__require('npm:babel-runtime@5.8.38/core-js/array/from.js')["default"];
+  exports["default"] = function(arr) {
+    if (Array.isArray(arr)) {
+      for (var i = 0,
+          arr2 = Array(arr.length); i < arr.length; i++)
+        arr2[i] = arr[i];
+      return arr2;
+    } else {
+      return _Array$from(arr);
+    }
+  };
+  exports.__esModule = true;
+  return module.exports;
+});
+
 System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-detect.js", ["npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
   ;
   var define,
@@ -32657,27 +32626,6 @@ System.registerDynamic("npm:babel-runtime@5.8.38/core-js/array/from.js", ["npm:c
     "default": $__require('npm:core-js@1.2.7/library/fn/array/from.js'),
     __esModule: true
   };
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/helpers/to-consumable-array.js", ["npm:babel-runtime@5.8.38/core-js/array/from.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var _Array$from = $__require('npm:babel-runtime@5.8.38/core-js/array/from.js')["default"];
-  exports["default"] = function(arr) {
-    if (Array.isArray(arr)) {
-      for (var i = 0,
-          arr2 = Array(arr.length); i < arr.length; i++)
-        arr2[i] = arr[i];
-      return arr2;
-    } else {
-      return _Array$from(arr);
-    }
-  };
-  exports.__esModule = true;
   return module.exports;
 });
 
@@ -45548,8 +45496,603 @@ System.registerDynamic("npm:react-dynamic-modal@1.1.1.js", ["npm:react-dynamic-m
   return module.exports;
 });
 
-System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/helpers/to-consumable-array.js', 'npm:babel-runtime@5.8.38/core-js/set.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-sanfona@0.0.14.js', 'npm:react-dynamic-modal@1.1.1.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _toConsumableArray, _Set, _Object$keys, _Object$assign, React, get, Accordion, AccordionItem, Modal, ModalManager, Effect, Exercises;
+System.registerDynamic("npm:react-tokeninput@2.1.1/lib/add-class.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = addClass;
+  function addClass(existing, added) {
+    if (!existing)
+      return added;
+    if (existing.indexOf(added) > -1)
+      return existing;
+    return existing + ' ' + added;
+  }
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-tokeninput@2.1.1/lib/option.js", ["npm:react@15.3.1.js", "npm:react-tokeninput@2.1.1/lib/add-class.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var React = $__require('npm:react@15.3.1.js');
+  var addClass = $__require('npm:react-tokeninput@2.1.1/lib/add-class.js');
+  var div = React.createFactory('div');
+  module.exports = React.createClass({
+    displayName: 'exports',
+    propTypes: {
+      value: React.PropTypes.any.isRequired,
+      label: React.PropTypes.string
+    },
+    getDefaultProps: function getDefaultProps() {
+      return {
+        role: 'option',
+        tabIndex: '-1',
+        className: 'ic-tokeninput-option',
+        isSelected: false
+      };
+    },
+    render: function render() {
+      var props = this.props;
+      if (props.isSelected) {
+        props.className = addClass(props.className, 'ic-tokeninput-selected');
+        props.ariaSelected = true;
+      }
+      return div(props);
+    }
+  });
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-tokeninput@2.1.1/lib/combobox.js", ["npm:react@15.3.1.js", "npm:react-tokeninput@2.1.1/lib/add-class.js", "npm:react-tokeninput@2.1.1/lib/option.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var React = $__require('npm:react@15.3.1.js');
+  var guid = 0;
+  var k = function k() {};
+  var addClass = $__require('npm:react-tokeninput@2.1.1/lib/add-class.js');
+  var ComboboxOption = $__require('npm:react-tokeninput@2.1.1/lib/option.js');
+  var div = React.createFactory('div');
+  var span = React.createFactory('span');
+  var input = React.createFactory('input');
+  module.exports = React.createClass({
+    displayName: 'exports',
+    propTypes: {
+      onInput: React.PropTypes.func,
+      onSelect: React.PropTypes.func,
+      placeholder: React.PropTypes.string
+    },
+    getDefaultProps: function getDefaultProps() {
+      return {
+        autocomplete: 'both',
+        onInput: k,
+        onSelect: k,
+        value: null,
+        showListOnFocus: false
+      };
+    },
+    getInitialState: function getInitialState() {
+      return {
+        value: this.props.value,
+        inputValue: this.findInitialInputValue(),
+        isOpen: false,
+        focusedIndex: null,
+        matchedAutocompleteOption: null,
+        usingKeyboard: false,
+        activedescendant: null,
+        listId: 'ic-tokeninput-list-' + ++guid,
+        menu: {
+          children: [],
+          activedescendant: null,
+          isEmpty: true
+        }
+      };
+    },
+    componentWillMount: function componentWillMount() {
+      this.setState({menu: this.makeMenu(this.props.children)});
+    },
+    componentWillReceiveProps: function componentWillReceiveProps(newProps) {
+      this.setState({menu: this.makeMenu(newProps.children)}, function() {
+        if (newProps.children.length && (this.isOpen || document.activeElement === this.refs.input)) {
+          if (!this.state.menu.children.length) {
+            return;
+          }
+          this.setState({isOpen: true}, function() {
+            this.refs.list.scrollTop = 0;
+          }.bind(this));
+        } else {
+          this.hideList();
+        }
+      }.bind(this));
+    },
+    makeMenu: function makeMenu(children) {
+      var activedescendant;
+      var isEmpty = true;
+      var _children = React.Children.map(children, function(child, index) {
+        if (child.type !== ComboboxOption) {
+          return child;
+        }
+        isEmpty = false;
+        var props = child.props;
+        var newProps = {};
+        if (this.state.value === child.props.value) {
+          newProps.id = props.id || 'ic-tokeninput-selected-' + ++guid;
+          newProps.isSelected = true;
+          activedescendant = props.id;
+        }
+        newProps.onBlur = this.handleOptionBlur;
+        newProps.onClick = this.selectOption.bind(this, child);
+        newProps.onFocus = this.handleOptionFocus;
+        newProps.onKeyDown = this.handleOptionKeyDown.bind(this, child);
+        newProps.onMouseEnter = this.handleOptionMouseEnter.bind(this, index);
+        return React.cloneElement(child, newProps);
+      }.bind(this));
+      return {
+        children: _children,
+        activedescendant: activedescendant,
+        isEmpty: isEmpty
+      };
+    },
+    getClassName: function getClassName() {
+      var className = addClass(this.props.className, 'ic-tokeninput');
+      if (this.state.isOpen)
+        className = addClass(className, 'ic-tokeninput-is-open');
+      return className;
+    },
+    clearSelectedState: function clearSelectedState(cb) {
+      this.setState({
+        focusedIndex: null,
+        inputValue: null,
+        value: null,
+        matchedAutocompleteOption: null,
+        activedescendant: null
+      }, cb);
+    },
+    handleInputChange: function handleInputChange() {
+      var value = this.refs.input.value;
+      this.clearSelectedState(function() {
+        this.props.onInput(value);
+      }.bind(this));
+    },
+    handleInputFocus: function handleInputFocus() {
+      this.maybeShowList();
+    },
+    handleInputClick: function handleInputClick() {
+      this.maybeShowList();
+    },
+    maybeShowList: function maybeShowList() {
+      if (this.props.showListOnFocus) {
+        this.showList();
+      }
+    },
+    handleInputBlur: function handleInputBlur() {
+      var focusedAnOption = this.state.focusedIndex != null;
+      if (focusedAnOption)
+        return;
+      this.maybeSelectAutocompletedOption();
+      this.hideList();
+    },
+    handleOptionBlur: function handleOptionBlur() {
+      this.blurTimer = setTimeout(this.hideList, 0);
+    },
+    handleOptionFocus: function handleOptionFocus() {
+      clearTimeout(this.blurTimer);
+    },
+    handleInputKeyUp: function handleInputKeyUp(event) {
+      if (this.state.menu.isEmpty || event.keyCode === 8 || !this.props.autocomplete.match(/both|inline/))
+        return;
+    },
+    handleButtonClick: function handleButtonClick() {
+      this.state.isOpen ? this.hideList() : this.showList();
+      this.focusInput();
+    },
+    showList: function showList() {
+      if (!this.state.menu.children.length) {
+        return;
+      }
+      this.setState({isOpen: true});
+    },
+    hideList: function hideList() {
+      this.setState({
+        isOpen: false,
+        focusedIndex: null
+      });
+    },
+    hideOnEscape: function hideOnEscape(event) {
+      this.hideList();
+      this.focusInput();
+      event.preventDefault();
+    },
+    focusInput: function focusInput() {
+      this.refs.input.focus();
+    },
+    selectInput: function selectInput() {
+      this.refs.input.select();
+    },
+    inputKeydownMap: {
+      8: 'removeLastToken',
+      13: 'selectOnEnter',
+      188: 'selectOnEnter',
+      27: 'hideOnEscape',
+      38: 'focusPrevious',
+      40: 'focusNext'
+    },
+    optionKeydownMap: {
+      13: 'selectOption',
+      27: 'hideOnEscape',
+      38: 'focusPrevious',
+      40: 'focusNext'
+    },
+    handleKeydown: function handleKeydown(event) {
+      var handlerName = this.inputKeydownMap[event.keyCode];
+      if (!handlerName)
+        return;
+      this.setState({usingKeyboard: true});
+      return this[handlerName].call(this, event);
+    },
+    handleOptionKeyDown: function handleOptionKeyDown(child, event) {
+      var handlerName = this.optionKeydownMap[event.keyCode];
+      if (!handlerName) {
+        this.selectInput();
+        return;
+      }
+      event.preventDefault();
+      this.setState({usingKeyboard: true});
+      this[handlerName].call(this, child);
+    },
+    handleOptionMouseEnter: function handleOptionMouseEnter(index) {
+      if (this.state.usingKeyboard)
+        this.setState({usingKeyboard: false});
+      else
+        this.focusOptionAtIndex(index);
+    },
+    selectOnEnter: function selectOnEnter(event) {
+      event.preventDefault();
+      this.maybeSelectAutocompletedOption();
+    },
+    maybeSelectAutocompletedOption: function maybeSelectAutocompletedOption() {
+      if (!this.state.matchedAutocompleteOption) {
+        this.selectText();
+      } else {
+        this.selectOption(this.state.matchedAutocompleteOption, {focus: false});
+      }
+    },
+    selectOption: function selectOption(child, options) {
+      options = options || {};
+      this.setState({matchedAutocompleteOption: null}, function() {
+        this.props.onSelect(child.props.value, child);
+        this.hideList();
+        this.clearSelectedState();
+        if (options.focus !== false)
+          this.selectInput();
+      }.bind(this));
+      this.refs.input.value = '';
+    },
+    selectText: function selectText() {
+      var value = this.refs.input.value;
+      if (!value)
+        return;
+      this.props.onSelect(value);
+      this.clearSelectedState();
+      this.refs.input.value = '';
+    },
+    focusNext: function focusNext(event) {
+      if (event.preventDefault)
+        event.preventDefault();
+      if (this.state.menu.isEmpty)
+        return;
+      var index = this.state.focusedIndex == null ? 0 : this.state.focusedIndex + 1;
+      this.focusOptionAtIndex(index);
+    },
+    removeLastToken: function removeLastToken() {
+      if (this.props.onRemoveLast && !this.refs.input.value) {
+        this.props.onRemoveLast();
+      }
+      return true;
+    },
+    focusPrevious: function focusPrevious(event) {
+      if (event.preventDefault)
+        event.preventDefault();
+      if (this.state.menu.isEmpty)
+        return;
+      var last = this.props.children.length - 1;
+      var index = this.state.focusedIndex == null ? last : this.state.focusedIndex - 1;
+      this.focusOptionAtIndex(index);
+    },
+    focusSelectedOption: function focusSelectedOption() {
+      var selectedIndex;
+      React.Children.forEach(this.props.children, function(child, index) {
+        if (child.props.value === this.state.value)
+          selectedIndex = index;
+      }.bind(this));
+      this.showList();
+      this.setState({focusedIndex: selectedIndex}, this.focusOption);
+    },
+    findInitialInputValue: function findInitialInputValue() {
+      var inputValue;
+      React.Children.forEach(this.props.children, function(child) {
+        if (child.props.value === this.props.value)
+          inputValue = getLabel(child);
+      }.bind(this));
+      return inputValue;
+    },
+    focusOptionAtIndex: function focusOptionAtIndex(index) {
+      if (!this.state.isOpen && this.state.value)
+        return this.focusSelectedOption();
+      this.showList();
+      var length = this.props.children.length;
+      if (index === -1)
+        index = length - 1;
+      else if (index === length)
+        index = 0;
+      this.setState({focusedIndex: index}, this.focusOption);
+    },
+    focusOption: function focusOption() {
+      var index = this.state.focusedIndex;
+      this.refs.list.childNodes[index].focus();
+    },
+    render: function render() {
+      var ariaLabel = this.props['aria-label'] || 'Start typing to search. ' + 'Press the down arrow to navigate results. If you don\'t find an ' + 'acceptable option, you can input an alternative. Once you find or ' + 'input the tag you want, press Enter or Comma to add it.';
+      return div({className: this.getClassName()}, this.props.value, this.state.inputValue, input({
+        ref: 'input',
+        autoComplete: 'off',
+        spellCheck: 'false',
+        'aria-label': ariaLabel,
+        'aria-expanded': this.state.isOpen + '',
+        'aria-haspopup': 'true',
+        'aria-activedescendant': this.state.menu.activedescendant,
+        'aria-autocomplete': 'list',
+        'aria-owns': this.state.listId,
+        id: this.props.id,
+        disabled: this.props.isDisabled,
+        className: 'ic-tokeninput-input',
+        onFocus: this.handleInputFocus,
+        onClick: this.handleInputClick,
+        onChange: this.handleInputChange,
+        onBlur: this.handleInputBlur,
+        onKeyDown: this.handleKeydown,
+        onKeyUp: this.handleInputKeyUp,
+        placeholder: this.props.placeholder,
+        role: 'combobox'
+      }), span({
+        'aria-hidden': 'true',
+        className: 'ic-tokeninput-button',
+        onClick: this.handleButtonClick
+      }, '▾'), div({
+        id: this.state.listId,
+        ref: 'list',
+        className: 'ic-tokeninput-list',
+        role: 'listbox'
+      }, this.state.menu.children));
+    }
+  });
+  function getLabel(component) {
+    return component.props.label || component.props.children;
+  }
+  function matchFragment(userInput, firstChildLabel) {
+    userInput = userInput.toLowerCase();
+    firstChildLabel = firstChildLabel.toLowerCase();
+    if (userInput === '' || userInput === firstChildLabel)
+      return false;
+    if (firstChildLabel.toLowerCase().indexOf(userInput.toLowerCase()) === -1)
+      return false;
+    return true;
+  }
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-tokeninput@2.1.1/lib/token.js", ["npm:react@15.3.1.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var React = $__require('npm:react@15.3.1.js');
+  var span = React.DOM.span;
+  var li = React.createFactory('li');
+  module.exports = React.createClass({
+    displayName: 'exports',
+    handleClick: function handleClick() {
+      this.props.onRemove(this.props.value);
+    },
+    handleKeyDown: function handleKeyDown(key) {
+      var enterKey = 13;
+      if (key.keyCode === enterKey)
+        this.props.onRemove(this.props.value);
+    },
+    render: function render() {
+      return li({className: "ic-token inline-flex"}, span({
+        role: 'button',
+        onClick: this.handleClick,
+        onKeyDown: this.handleKeyDown,
+        'aria-label': 'Remove \'' + this.props.name + '\'',
+        className: "ic-token-delete-button",
+        tabIndex: 0
+      }, "✕"), span({className: "ic-token-label"}, this.props.name));
+    }
+  });
+  return module.exports;
+});
+
+System.registerDynamic("npm:classnames@2.2.5/index.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  "format cjs";
+  (function() {
+    'use strict';
+    var hasOwn = {}.hasOwnProperty;
+    function classNames() {
+      var classes = [];
+      for (var i = 0; i < arguments.length; i++) {
+        var arg = arguments[i];
+        if (!arg)
+          continue;
+        var argType = typeof arg;
+        if (argType === 'string' || argType === 'number') {
+          classes.push(arg);
+        } else if (Array.isArray(arg)) {
+          classes.push(classNames.apply(null, arg));
+        } else if (argType === 'object') {
+          for (var key in arg) {
+            if (hasOwn.call(arg, key) && arg[key]) {
+              classes.push(key);
+            }
+          }
+        }
+      }
+      return classes.join(' ');
+    }
+    if (typeof module !== 'undefined' && module.exports) {
+      module.exports = classNames;
+    } else if (typeof define === 'function' && typeof define.amd === 'object' && define.amd) {
+      define('classnames', [], function() {
+        return classNames;
+      });
+    } else {
+      window.classNames = classNames;
+    }
+  }());
+  return module.exports;
+});
+
+System.registerDynamic("npm:classnames@2.2.5.js", ["npm:classnames@2.2.5/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:classnames@2.2.5/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-tokeninput@2.1.1/lib/main.js", ["npm:react@15.3.1.js", "npm:react-tokeninput@2.1.1/lib/combobox.js", "npm:react-tokeninput@2.1.1/lib/token.js", "npm:classnames@2.2.5.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var React = $__require('npm:react@15.3.1.js');
+  var Combobox = React.createFactory($__require('npm:react-tokeninput@2.1.1/lib/combobox.js'));
+  var Token = React.createFactory($__require('npm:react-tokeninput@2.1.1/lib/token.js'));
+  var classnames = $__require('npm:classnames@2.2.5.js');
+  var ul = React.DOM.ul;
+  var li = React.DOM.li;
+  module.exports = React.createClass({
+    displayName: 'exports',
+    propTypes: {
+      isLoading: React.PropTypes.bool,
+      loadingComponent: React.PropTypes.any,
+      onInput: React.PropTypes.func,
+      onSelect: React.PropTypes.func.isRequired,
+      onRemove: React.PropTypes.func.isRequired,
+      selected: React.PropTypes.array.isRequired,
+      menuContent: React.PropTypes.any,
+      showListOnFocus: React.PropTypes.bool,
+      placeholder: React.PropTypes.string
+    },
+    getInitialState: function getInitialState() {
+      return {selectedToken: null};
+    },
+    handleClick: function handleClick() {
+      this.refs['combo-li'].querySelector('input').focus();
+    },
+    handleInput: function handleInput(inputValue) {
+      this.props.onInput(inputValue);
+    },
+    handleSelect: function handleSelect(event) {
+      var input = this.refs['combo-li'].querySelector('input');
+      this.props.onSelect(event);
+      this.setState({selectedToken: null});
+      this.props.onInput(input.value);
+    },
+    handleRemove: function handleRemove(value) {
+      var input = this.refs['combo-li'].querySelector('input');
+      this.props.onRemove(value);
+      input.focus();
+    },
+    handleRemoveLast: function handleRemoveLast() {
+      this.props.onRemove(this.props.selected[this.props.selected.length - 1]);
+    },
+    render: function render() {
+      var isDisabled = this.props.isDisabled;
+      var tokens = this.props.selected.map(function(token) {
+        return Token({
+          onRemove: this.handleRemove,
+          value: token,
+          name: token.name,
+          key: token.id
+        });
+      }.bind(this));
+      var classes = classnames('ic-tokens flex', {'ic-tokens-disabled': isDisabled});
+      return ul({
+        className: classes,
+        onClick: this.handleClick
+      }, tokens, li({
+        className: 'inline-flex',
+        ref: 'combo-li'
+      }, Combobox({
+        id: this.props.id,
+        ariaLabel: this.props['combobox-aria-label'],
+        ariaDisabled: isDisabled,
+        onInput: this.handleInput,
+        showListOnFocus: this.props.showListOnFocus,
+        onSelect: this.handleSelect,
+        onRemoveLast: this.handleRemoveLast,
+        value: this.state.selectedToken,
+        isDisabled: isDisabled,
+        placeholder: this.props.placeholder
+      }, this.props.menuContent)), this.props.isLoading && li({className: 'ic-tokeninput-loading flex'}, this.props.loadingComponent));
+    }
+  });
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-tokeninput@2.1.1/lib/index.js", ["npm:react-tokeninput@2.1.1/lib/combobox.js", "npm:react-tokeninput@2.1.1/lib/option.js", "npm:react-tokeninput@2.1.1/lib/token.js", "npm:react-tokeninput@2.1.1/lib/main.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  Object.defineProperty(exports, "__esModule", {value: true});
+  exports.Token = exports.Option = exports.Combobox = undefined;
+  var _combobox = $__require('npm:react-tokeninput@2.1.1/lib/combobox.js');
+  var _combobox2 = _interopRequireDefault(_combobox);
+  var _option = $__require('npm:react-tokeninput@2.1.1/lib/option.js');
+  var _option2 = _interopRequireDefault(_option);
+  var _token = $__require('npm:react-tokeninput@2.1.1/lib/token.js');
+  var _token2 = _interopRequireDefault(_token);
+  var _main = $__require('npm:react-tokeninput@2.1.1/lib/main.js');
+  var _main2 = _interopRequireDefault(_main);
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {default: obj};
+  }
+  exports.Combobox = _combobox2.default;
+  exports.Option = _option2.default;
+  exports.Token = _token2.default;
+  var TokenInput = _main2.default;
+  exports.default = TokenInput;
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-tokeninput@2.1.1.js", ["npm:react-tokeninput@2.1.1/lib/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:react-tokeninput@2.1.1/lib/index.js');
+  return module.exports;
+});
+
+System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/helpers/to-consumable-array.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'npm:babel-runtime@5.8.38/core-js/set.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-sanfona@0.0.14.js', 'npm:react-dynamic-modal@1.1.1.js', 'npm:react-tokeninput@2.1.1.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _toConsumableArray, _Array$from, _Set, _Object$assign, _Object$keys, React, get, Accordion, AccordionItem, Modal, ModalManager, Effect, TokenInput, Combobox, Exercises;
 
   function compare(a, b) {
     if (a.name < b.name) return -1;
@@ -45568,12 +46111,14 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
     }, function (_npmBabelRuntime5838HelpersToConsumableArrayJs) {
       _toConsumableArray = _npmBabelRuntime5838HelpersToConsumableArrayJs['default'];
+    }, function (_npmBabelRuntime5838CoreJsArrayFromJs) {
+      _Array$from = _npmBabelRuntime5838CoreJsArrayFromJs['default'];
     }, function (_npmBabelRuntime5838CoreJsSetJs) {
       _Set = _npmBabelRuntime5838CoreJsSetJs['default'];
-    }, function (_npmBabelRuntime5838CoreJsObjectKeysJs) {
-      _Object$keys = _npmBabelRuntime5838CoreJsObjectKeysJs['default'];
     }, function (_npmBabelRuntime5838CoreJsObjectAssignJs) {
       _Object$assign = _npmBabelRuntime5838CoreJsObjectAssignJs['default'];
+    }, function (_npmBabelRuntime5838CoreJsObjectKeysJs) {
+      _Object$keys = _npmBabelRuntime5838CoreJsObjectKeysJs['default'];
     }, function (_npmReact1531Js) {
       React = _npmReact1531Js['default'];
     }, function (_appApiJs) {
@@ -45585,6 +46130,9 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
       Modal = _npmReactDynamicModal111Js.Modal;
       ModalManager = _npmReactDynamicModal111Js.ModalManager;
       Effect = _npmReactDynamicModal111Js.Effect;
+    }, function (_npmReactTokeninput211Js) {
+      TokenInput = _npmReactTokeninput211Js['default'];
+      Combobox = _npmReactTokeninput211Js;
     }],
     execute: function () {
       'use strict';
@@ -45599,10 +46147,15 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
           this.state = {
             exercises: [],
             categories: [{ id: 'c-1', title: 'Looptraining', checked: false, type: 'Fysiek' }, { id: 'c-2', title: 'Krachttraining', checked: false, type: 'Fysiek' }, { id: 'c-3', title: 'Motoriektraining', checked: false, type: 'Fysiek' }, { id: 'c-4', title: 'Samenspelen en druk zetten', checked: false, type: 'Techniek' }, { id: 'c-5', title: 'Dribbelen en afpakken', checked: false, type: 'Techniek' }, { id: 'c-6', title: 'Scoren en tegenhouden', checked: false, type: 'Techniek' }, { id: 'c-7', title: 'Positiespel', checked: false, type: 'Tactiek' }, { id: 'c-8', title: 'Standaard-situaties', checked: false, type: 'Tactiek' }],
-            selected: []
+            selected: [],
+            tokens: [],
+            options: []
           };
 
-          this.handleChange = this.handleChange.bind(this);
+          this.handleAccordionChange = this.handleAccordionChange.bind(this);
+          this.handleTokenInput = this.handleTokenInput.bind(this);
+          this.handleTokenSelect = this.handleTokenSelect.bind(this);
+          this.handleTokenRemove = this.handleTokenRemove.bind(this);
         }
 
         _createClass(Exercises, [{
@@ -45611,8 +46164,13 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             var _this = this;
 
             get('exercises').then(function (data) {
+              var exercises = data.sort(compare);
               _this.setState({
-                exercises: data.sort(compare)
+                exercises: exercises,
+                selected: exercises,
+                tags: _Array$from(new _Set(data.reduce(function (m, e) {
+                  return m.concat(e.tags);
+                }, []))).sort()
               });
             });
           }
@@ -45743,9 +46301,17 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                 null,
                 React.createElement(
                   'div',
-                  { style: { marginBottom: '10px' } },
+                  null,
+                  'Categorie: ',
+                  m.category
+                ),
+                React.createElement('br', null),
+                React.createElement(
+                  'div',
+                  null,
                   m.text
                 ),
+                React.createElement('br', null),
                 React.createElement(
                   'a',
                   { href: imgSrc, onClick: this.runModal.bind(this) },
@@ -45765,8 +46331,10 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
           value: function renderExercises() {
             var _this3 = this;
 
-            var selected = this.state.selected.length > 0 ? this.state.selected : this.state.exercises;
-            return selected.map(function (m, idx) {
+            // let selected = this.state.selected.length > 0 ?
+            //     this.state.selected : this.state.exercises
+
+            return this.state.selected.map(function (m, idx) {
               return React.createElement(
                 AccordionItem,
                 { title: m.name, slug: idx, key: m.uuid },
@@ -45776,29 +46344,55 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             });
           }
         }, {
+          key: 'filterExercises',
+          value: function filterExercises(_ref) {
+            var categories = _ref.categories;
+            var tokens = _ref.tokens;
+
+            var selected = this.state.exercises;
+
+            // filter by checked categories, if any
+            var checked = categories.filter(function (c) {
+              return c.checked;
+            });
+
+            if (checked.length) {
+              (function () {
+                var titles = new _Set(checked.map(function (c) {
+                  return c.title;
+                }));
+                selected = selected.filter(function (e) {
+                  return titles.has(e.category);
+                });
+              })();
+            }
+
+            // filter by tokens, if any
+            if (tokens.length) {
+              (function () {
+                var tags = new _Set(tokens.map(function (t) {
+                  return t.name;
+                }));
+                selected = selected.filter(function (e) {
+                  return e.tags.find(function (t) {
+                    return tags.has(t);
+                  }) !== undefined;
+                });
+              })();
+            }
+
+            this.setState({ selected: selected });
+          }
+        }, {
           key: 'updateFilters',
           value: function updateFilters(id) {
+            var tokens = this.state.tokens;
             var categories = this.state.categories.map(function (c) {
-              return {
-                id: c.id,
-                title: c.title,
-                checked: c.id === id ? !c.checked : c.checked,
-                type: c.type
-              };
+              return _Object$assign(c, { checked: c.id === id ? !c.checked : c.checked });
             });
 
-            var checked = new _Set(categories.filter(function (c) {
-              return c.checked;
-            }).map(function (c) {
-              return c.title;
-            }));
-
-            this.setState({
-              categories: categories,
-              selected: this.state.exercises.filter(function (e) {
-                return checked.has(e.category);
-              })
-            });
+            this.setState({ categories: categories });
+            this.filterExercises({ categories: categories, tokens: tokens });
           }
         }, {
           key: 'renderCategory',
@@ -45819,6 +46413,43 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             );
           }
         }, {
+          key: 'handleTokenSelect',
+          value: function handleTokenSelect(value) {
+            var tokens = [].concat(_toConsumableArray(this.state.tokens), [{ id: value, name: value }]);
+            this.setState({ tokens: tokens });
+            this.filterExercises({ categories: this.state.categories, tokens: tokens });
+          }
+        }, {
+          key: 'handleTokenRemove',
+          value: function handleTokenRemove(value) {
+            var tokens = this.state.tokens.filter(function (v) {
+              return v.id !== value.id;
+            });
+            this.setState({ tokens: tokens });
+            this.filterExercises({ categories: this.state.categories, tokens: tokens });
+          }
+        }, {
+          key: 'handleTokenInput',
+          value: function handleTokenInput(value) {
+            if (value === '') return this.setState({ options: [] });
+            var filter = new RegExp('^' + value, 'i');
+            var result = this.state.tags.filter(function (t) {
+              return filter.test(t);
+            });
+            this.setState({ options: result });
+          }
+        }, {
+          key: 'renderOptions',
+          value: function renderOptions() {
+            return this.state.options.map(function (o) {
+              return React.createElement(
+                Combobox.Option,
+                { key: o, value: o },
+                o
+              );
+            });
+          }
+        }, {
           key: 'renderFilters',
           value: function renderFilters() {
             var _this4 = this;
@@ -45836,40 +46467,60 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
               'div',
               null,
               React.createElement(
-                'h4',
-                null,
-                'Categorie'
-              ),
-              _Object$keys(types).map(function (t) {
-                return React.createElement(
-                  'div',
+                'div',
+                { style: { marginBottom: '20px' } },
+                React.createElement(
+                  'h4',
                   null,
-                  React.createElement(
+                  'Categorie'
+                ),
+                _Object$keys(types).map(function (t) {
+                  return React.createElement(
                     'div',
-                    { style: { marginTop: '10px' } },
+                    { key: t, style: { marginBottom: '10px' } },
                     React.createElement(
-                      'b',
+                      'div',
                       null,
-                      t
-                    )
-                  ),
-                  types[t].map(function (c) {
-                    return _this4.renderCategory(c);
-                  })
-                );
-              })
+                      React.createElement(
+                        'b',
+                        null,
+                        t
+                      )
+                    ),
+                    types[t].map(function (c) {
+                      return _this4.renderCategory(c);
+                    })
+                  );
+                })
+              ),
+              React.createElement(
+                'div',
+                null,
+                React.createElement(
+                  'h4',
+                  null,
+                  'Tags'
+                ),
+                React.createElement(TokenInput, {
+                  menuContent: this.renderOptions(),
+                  onSelect: this.handleTokenSelect,
+                  onRemove: this.handleTokenRemove,
+                  selected: this.state.tokens,
+                  onInput: this.handleTokenInput
+                })
+              )
             );
           }
         }, {
-          key: 'handleChange',
-          value: function handleChange(e) {
+          key: 'handleAccordionChange',
+          value: function handleAccordionChange(e) {
             var idx = e.activeItems[0];
             if (idx) {
-              var exercises = this.state.exercises;
+              var selected = this.state.selected;
 
-              var exercise = exercises[idx];
-              exercises[idx] = _Object$assign(exercise, { visited: true });
-              this.setState({ exercises: exercises });
+              var exercise = selected[idx];
+              selected[idx] = _Object$assign(exercise, { visited: true });
+              this.setState({ selected: selected });
             }
           }
         }, {
@@ -45900,7 +46551,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                   { className: 'col-md-8' },
                   React.createElement(
                     Accordion,
-                    { style: { margin: '0px' }, onChange: this.handleChange },
+                    { style: { margin: '0px' }, onChange: this.handleAccordionChange },
                     this.renderExercises()
                   )
                 )

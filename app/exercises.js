@@ -2,6 +2,8 @@ import React from 'react'
 import { get } from './api'
 import { Accordion, AccordionItem } from 'react-sanfona'
 import { Modal,ModalManager,Effect} from 'react-dynamic-modal'
+import TokenInput from 'react-tokeninput'
+import * as Combobox from 'react-tokeninput'
 
 function compare(a, b) {
   if (a.name < b.name) return -1
@@ -25,16 +27,25 @@ export default class Exercises extends React.Component {
         {id: 'c-7', title: 'Positiespel',                checked: false, type: 'Tactiek'},
         {id: 'c-8', title: 'Standaard-situaties',        checked: false, type: 'Tactiek'}
       ],
-      selected: []
+      selected: [],
+      tokens: [],
+      options: []
     }
 
-    this.handleChange = this.handleChange.bind(this)
+    this.handleAccordionChange = this.handleAccordionChange.bind(this)
+    this.handleTokenInput = this.handleTokenInput.bind(this)
+    this.handleTokenSelect = this.handleTokenSelect.bind(this)
+    this.handleTokenRemove = this.handleTokenRemove.bind(this)
   }
 
   componentDidMount() {
     get('exercises').then((data) => {
+      let exercises = data.sort(compare)
       this.setState({
-        exercises: data.sort(compare)
+        exercises: exercises,
+        selected: exercises,
+        tags: Array.from(
+          new Set( data.reduce((m, e) => m.concat(e.tags), []) ) ).sort()
       })
     })
   }
@@ -93,8 +104,8 @@ export default class Exercises extends React.Component {
             className='list-group'>
             {items}
           </ul>
-      )
-    }
+        )
+      }
     }
 
     return null
@@ -127,7 +138,10 @@ export default class Exercises extends React.Component {
       let imgSrc = 'images/exercises/' + m.uuid + '.png'
       return (
         <div>
-          <div style={{marginBottom: '10px'}}>{m.text}</div>
+          <div>Categorie: {m.category}</div>
+          <br/>
+          <div>{m.text}</div>
+          <br/>
           <a href={imgSrc} onClick={this.runModal.bind(this)}>Schema</a>
         </div>
       )
@@ -137,9 +151,10 @@ export default class Exercises extends React.Component {
   }
 
   renderExercises() {
-    let selected = this.state.selected.length > 0 ?
-        this.state.selected : this.state.exercises
-    return selected.map((m, idx) => {
+    // let selected = this.state.selected.length > 0 ?
+    //     this.state.selected : this.state.exercises
+    
+    return this.state.selected.map((m, idx) => {
       return (
         <AccordionItem title={m.name} slug={idx} key={m.uuid}>
           { this.renderExerciseText(m) }
@@ -149,22 +164,34 @@ export default class Exercises extends React.Component {
     })
   }
 
+  filterExercises({categories, tokens}) {
+    let selected = this.state.exercises
+    
+    // filter by checked categories, if any
+    let checked = categories.filter((c) => c.checked)
+
+    if ( checked.length ) {
+      let titles = new Set( checked.map((c) => c.title) )
+      selected = selected.filter((e) => titles.has(e.category))
+    }
+    
+    // filter by tokens, if any
+    if ( tokens.length ) {
+      let tags = new Set( tokens.map((t) => t.name) )
+      selected = selected.filter((e) => e.tags.find((t) => tags.has(t)) !== undefined )
+    }
+
+    this.setState({ selected: selected })
+  }
+
   updateFilters(id) {
+    let tokens = this.state.tokens
     let categories = this.state.categories.map((c) => {
-      return {
-        id: c.id,
-        title: c.title,
-        checked: ( c.id === id ? !c.checked : c.checked ),
-        type: c.type
-      }
+      return Object.assign( c, { checked: ( c.id === id ? !c.checked : c.checked ) } )
     })
 
-    let checked = new Set(categories.filter((c) => c.checked).map((c) => c.title))
-
-    this.setState({
-      categories: categories,
-      selected: this.state.exercises.filter((e) => checked.has(e.category))
-    })
+    this.setState({categories: categories})
+    this.filterExercises({categories, tokens})
   }
 
   renderCategory(c) {
@@ -180,6 +207,30 @@ export default class Exercises extends React.Component {
     )
   }
 
+  handleTokenSelect( value ) {
+    let tokens = [...this.state.tokens, {id: value, name: value}]
+    this.setState({ tokens: tokens })
+    this.filterExercises({categories: this.state.categories, tokens})
+  }
+
+  handleTokenRemove(value) {
+    let tokens = this.state.tokens.filter((v) => v.id !== value.id)
+    this.setState({tokens: tokens})
+    this.filterExercises({categories: this.state.categories, tokens})
+  }
+
+  handleTokenInput(value) {
+    if ( value === '' ) return this.setState({ options: [] })
+    let filter = new RegExp('^' + value, 'i')
+    let result = this.state.tags.filter((t) => filter.test(t))
+    this.setState({ options: result })
+  }
+
+  renderOptions() {
+    return this.state.options.map((o) =>
+      <Combobox.Option key={o} value={o}>{o}</Combobox.Option> )
+  }
+  
   renderFilters() {
     let types = this.state.categories.reduce((m, c) => {
       m[c.type] = [...m[c.type], c]
@@ -189,31 +240,43 @@ export default class Exercises extends React.Component {
       'Techniek': [],
       'Tactiek': []
     })
-    
+
     return (
       <div>
-        <h4>Categorie</h4>
-        {
-          Object.keys(types).map((t) => {
-            return (
-                <div>
-                <div style={{marginTop: '10px'}}><b>{t}</b></div>
-                { types[t].map((c) => this.renderCategory(c)) }
-              </div>
-            )
-          })
-        }
+        <div style={{marginBottom: '20px'}}>
+          <h4>Categorie</h4>
+          {
+            Object.keys(types).map((t) => {
+              return (
+                <div key={t} style={{marginBottom: '10px'}}>
+                  <div><b>{t}</b></div>
+                  { types[t].map((c) => this.renderCategory(c)) }
+                </div>
+              )
+            })
+          }
+        </div>
+        <div>
+          <h4>Tags</h4>
+          <TokenInput
+            menuContent={this.renderOptions()}
+            onSelect={this.handleTokenSelect}
+            onRemove={this.handleTokenRemove}
+            selected={this.state.tokens}
+            onInput={this.handleTokenInput}
+          />
+        </div>
       </div>
     )
   }
 
-  handleChange(e) {
+  handleAccordionChange(e) {
     let idx = e.activeItems[0]
     if ( idx ) {
-      let { exercises } = this.state
-      let exercise = exercises[idx]
-      exercises[idx] = Object.assign(exercise, {visited: true})
-      this.setState({exercises: exercises})
+      let { selected } = this.state
+      let exercise = selected[idx]
+      selected[idx] = Object.assign(exercise, {visited: true})
+      this.setState({selected: selected})
     }
   }
 
@@ -228,7 +291,7 @@ export default class Exercises extends React.Component {
             </fieldset>
           </div>
           <div className='col-md-8'>
-          <Accordion style={{margin: '0px'}} onChange={this.handleChange}>
+          <Accordion style={{margin: '0px'}} onChange={this.handleAccordionChange}>
             { this.renderExercises() }
             </Accordion>
           </div>

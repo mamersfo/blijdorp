@@ -174,6 +174,15 @@ System.config({
       "npm:core-js@1.2.7/library/modules/$.object-to-array.js",
       "app/schedule.js",
       "app/exercises.js",
+      "npm:react-tokeninput@2.1.1.js",
+      "npm:react-tokeninput@2.1.1/lib/index.js",
+      "npm:react-tokeninput@2.1.1/lib/main.js",
+      "npm:classnames@2.2.5.js",
+      "npm:classnames@2.2.5/index.js",
+      "npm:react-tokeninput@2.1.1/lib/token.js",
+      "npm:react-tokeninput@2.1.1/lib/combobox.js",
+      "npm:react-tokeninput@2.1.1/lib/option.js",
+      "npm:react-tokeninput@2.1.1/lib/add-class.js",
       "npm:react-dynamic-modal@1.1.1.js",
       "npm:react-dynamic-modal@1.1.1/lib.js",
       "npm:react-dynamic-modal@1.1.1/lib/index.js",
@@ -383,11 +392,11 @@ System.config({
       "npm:core-js@1.2.7/library/modules/es6.string.iterator.js",
       "npm:core-js@1.2.7/library/modules/$.string-at.js",
       "npm:core-js@1.2.7/library/modules/es6.object.to-string.js",
-      "npm:babel-runtime@5.8.38/helpers/to-consumable-array.js",
       "npm:babel-runtime@5.8.38/core-js/array/from.js",
       "npm:core-js@1.2.7/library/fn/array/from.js",
       "npm:core-js@1.2.7/library/modules/es6.array.from.js",
       "npm:core-js@1.2.7/library/modules/$.iter-detect.js",
+      "npm:babel-runtime@5.8.38/helpers/to-consumable-array.js",
       "app/choose-season.js",
       "app/matches.js",
       "app/assists.js",
@@ -397,8 +406,6 @@ System.config({
       "npm:react-bootstrap-table@2.4.2/lib/TableHeaderColumn.js",
       "npm:react-bootstrap-table@2.4.2/lib/filters/Number.js",
       "npm:react-bootstrap-table@2.4.2/lib/Const.js",
-      "npm:classnames@2.2.5.js",
-      "npm:classnames@2.2.5/index.js",
       "npm:react-bootstrap-table@2.4.2/lib/filters/Select.js",
       "npm:react-bootstrap-table@2.4.2/lib/filters/Regex.js",
       "npm:react-bootstrap-table@2.4.2/lib/filters/Text.js",
@@ -605,8 +612,10 @@ System.config({
     "react-router": "npm:react-router@2.6.1",
     "react-sanfona": "npm:react-sanfona@0.0.14",
     "react-stonecutter": "npm:react-stonecutter@0.3.3",
+    "react-tokeninput": "npm:react-tokeninput@2.1.1",
     "react-vis": "npm:react-vis@0.4.2",
     "redux": "npm:redux@3.5.2",
+    "whatwg-fetch": "npm:whatwg-fetch@1.0.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -864,7 +873,7 @@ System.config({
     },
     "npm:elliptic@6.3.1": {
       "bn.js": "npm:bn.js@4.11.6",
-      "brorand": "npm:brorand@1.0.5",
+      "brorand": "npm:brorand@1.0.6",
       "hash.js": "npm:hash.js@1.0.3",
       "inherits": "npm:inherits@2.0.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
@@ -965,7 +974,7 @@ System.config({
     },
     "npm:miller-rabin@4.0.0": {
       "bn.js": "npm:bn.js@4.11.6",
-      "brorand": "npm:brorand@1.0.5"
+      "brorand": "npm:brorand@1.0.6"
     },
     "npm:node-fetch@1.6.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -1119,6 +1128,9 @@ System.config({
       "react": "npm:react@15.3.1",
       "react-addons-update": "npm:react-addons-update@15.3.0",
       "react-dom": "npm:react-dom@15.3.1"
+    },
+    "npm:react-tokeninput@2.1.1": {
+      "classnames": "npm:classnames@2.2.5"
     },
     "npm:react-vis@0.4.2": {
       "d3-array": "npm:d3-array@0.7.1",
