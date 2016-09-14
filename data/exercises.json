@@ -1274,6 +1274,35 @@
     "name" : "Scoren in doel haaks op de looplijn"
   } ]
 }, {
+  "uuid" : "f0baa3e3-dacc-49da-ab05-1c0b4e18141d",
+  "name" : "Tackles inzetten en ontwijken",
+  "category" : "Dribbelen en afpakken",
+  "text" : "Overgenomen van FIFA16. Verdediger moet in zijn zone blijven - een brede strook voor het doel. Aanvaller steken om beurten deze zone over, op afroep van de trainer. Daarbij worden spelers opgeroepn die op enige afstand van de verdediger staan, dus zal de laatste een sprintje moeten trekken om de bal te ontfutselen - wat zal neerkomen op een tackle of een sliding. De aanvaller moet deze tackle ontwijken. Na het oversteken kan op doel worden geschoten.",
+  "image" : true,
+  "tags" : [ "tackle", "sliding", "afwerken", "FIFA16" ],
+  "variations" : [ {
+    "name" : "Zonder doel",
+    "s" : "easports"
+  }, {
+    "name" : "Met doel"
+  } ]
+}, {
+  "uuid" : "040a5c00-e480-4414-957f-9f47cdfe2db3",
+  "name" : "1:1 of 2:2  met meerdere doeltjes",
+  "category" : "Dribbelen en afpakken",
+  "text" : "In een vierkant spelen twee of vier spelers tegen elkaar, met vier of zes doeltjes.",
+  "image" : true,
+  "tags" : [ "duel", "FIFA17" ],
+  "variations" : [ {
+    "name" : "Eén tegen één"
+  }, {
+    "name" : "Twee tegen twee"
+  }, {
+    "name" : "Met vier doeltjes"
+  }, {
+    "name" : "Met zes doeltjes"
+  } ]
+}, {
   "uuid" : "bd04a3fc-1ae3-45e0-ae28-9ee537af9514",
   "name" : "7-9-11",
   "category" : "Scoren en tegenhouden",
@@ -1442,6 +1471,14 @@
     "name" : "Kaatsen",
     "s" : "feyenoord"
   } ]
+}, {
+  "uuid" : "59323758-924f-4d44-a9de-d3b126b5e056",
+  "name" : "Schieten op doel met volleys voor bonus",
+  "category" : "Scoren en tegenhouden",
+  "text" : "Overgenomen van FIFA16. Speler in vierkant krijgt bal vanuit verschillende hoeken aangespeeld (bij FIFA16 met een machine, op de training door trainer of medespeler), controleert de bal, en moet direct - of indirect - schieten op doel. Speler krijgt vast aantal ballen toegespeeld, zeg 3. Doelpunten uit een volley tellen voor twee.",
+  "image" : true,
+  "tags" : [ "schieten", "volley", "FIFA16" ],
+  "variations" : [ ]
 }, {
   "uuid" : "eeaca8fd-8f6e-40b6-aab3-9bb2ba3984ef",
   "name" : "Partijtje met vier doeltjes",

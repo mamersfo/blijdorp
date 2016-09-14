@@ -690,6 +690,31 @@ doeltje dat haaks op de looplijn staat te scoren.
 ***** Tag: afpakken
 ***** Variation: (Achter)lijn halen
 ***** Variation: Scoren in doel haaks op de looplijn
+**** Exercise: Tackles inzetten en ontwijken
+Overgenomen van FIFA16. Verdediger moet in zijn zone blijven - een
+brede strook voor het doel. Aanvaller steken om beurten deze zone
+over, op afroep van de trainer. Daarbij worden spelers opgeroepn die
+op enige afstand van de verdediger staan, dus zal de laatste een
+sprintje moeten trekken om de bal te ontfutselen - wat zal neerkomen
+op een tackle of een sliding. De aanvaller moet deze tackle ontwijken.
+Na het oversteken kan op doel worden geschoten.
+***** UUID: f0baa3e3-dacc-49da-ab05-1c0b4e18141d
+***** Tag: tackle
+***** Tag: sliding
+***** Tag: afwerken
+***** Tag: FIFA16
+***** Variation: Zonder doel, s=easports
+***** Variation: Met doel
+**** Exercise: 1:1 of 2:2  met meerdere doeltjes
+In een vierkant spelen twee of vier spelers tegen elkaar, met vier of
+zes doeltjes.
+***** UUID: 040a5c00-e480-4414-957f-9f47cdfe2db3
+***** Tag: duel
+***** Tag: FIFA17
+***** Variation: Eén tegen één
+***** Variation: Twee tegen twee
+***** Variation: Met vier doeltjes
+***** Variation: Met zes doeltjes
 *** Category: Scoren en tegenhouden
 **** Exercise: 7-9-11
 Spelers werken af op groot doel met keeper. Bal wordt diep gespeeld naar
@@ -842,6 +867,16 @@ gemaakt, en vervolgens naar degene die afwerkt op doel.
 ***** Tag: schieten
 ***** Variation: Aanspelen in de voet, s=feyenoord
 ***** Variation: Kaatsen, s=feyenoord
+**** Exercise: Schieten op doel met volleys voor bonus
+Overgenomen van FIFA16. Speler in vierkant krijgt bal vanuit
+verschillende hoeken aangespeeld (bij FIFA16 met een machine, op de
+training door trainer of medespeler), controleert de bal, en moet
+direct - of indirect - schieten op doel. Speler krijgt vast aantal
+ballen toegespeeld, zeg 3. Doelpunten uit een volley tellen voor twee.
+***** UUID: 59323758-924f-4d44-a9de-d3b126b5e056
+***** Tag: schieten
+***** Tag: volley
+***** Tag: FIFA16
 ** Training: Tactiek
 *** Category: Positiespel
 **** Exercise: Partijtje met vier doeltjes

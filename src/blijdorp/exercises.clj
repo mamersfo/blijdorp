@@ -59,7 +59,7 @@
   [t coll]
   (apply str (interpose ";" (map :name (filter #(= t (:type %)) coll)))))
 
-(def images
+(defn images []
   (let [dir (str (System/getProperty "user.dir") "/images/exercises")]
     (set
      (map #(first (split (.getName %) #"\."))
@@ -83,21 +83,22 @@
 
 (defn exercises
   [root]
-  (apply concat
-         (for [training (:children root)]
-           (apply concat
-                  (for [category (:children training)]
-                    (for [exercise (:children category)]
-                      (let [children (:children exercise)
-                            uuid (-> (filter #(= :uuid (:type %)) children)
-                                     first :name)]
-                        {:uuid uuid
-                         :name (:name exercise)
-                         :category (:name category)
-                         :text (:text exercise)
-                         :image (contains? images uuid)
-                         :tags (process-tags children)
-                         :variations (process-variations children)})))))))
+  (let [images (images)]
+    (apply concat
+           (for [training (:children root)]
+             (apply concat
+                    (for [category (:children training)]
+                      (for [exercise (:children category)]
+                        (let [children (:children exercise)
+                              uuid (-> (filter #(= :uuid (:type %)) children)
+                                       first :name)]
+                          {:uuid uuid
+                           :name (:name exercise)
+                           :category (:name category)
+                           :text (:text exercise)
+                           :image (contains? images uuid)
+                           :tags (process-tags children)
+                           :variations (process-variations children)}))))))))
 
 (defn random-uuid []
   (.toString (java.util.UUID/randomUUID)))
@@ -127,4 +128,5 @@
    (export-json (parse input-file)))
   ([root]
    (with-open [out (clojure.java.io/writer output-file)]
-     (generate-stream (exercises root) out {:pretty true}))))
+     (generate-stream (exercises root) out {:pretty true})
+     (println "Exercises written to" output-file))))
