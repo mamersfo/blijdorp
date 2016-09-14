@@ -285,7 +285,7 @@ export default class Exercises extends React.Component {
       <div className='container-fluid'>
         <h2>oefeningen</h2>
         <div className='row'>
-          <div className='col-md-2'>
+          <div className='col-md-3'>
             <fieldset>
               { this.renderFilters() }
             </fieldset>

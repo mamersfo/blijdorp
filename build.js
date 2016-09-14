@@ -4569,7 +4569,7 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
                 { className: 'row' },
                 React.createElement(
                   'div',
-                  { className: 'col-md-8' },
+                  { className: 'col-md-9' },
                   React.createElement(
                     'div',
                     { className: 'jumbotron', style: { height: '500px', margin: '0px' } },
@@ -17707,7 +17707,7 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 { className: 'row' },
                 React.createElement(
                   'div',
-                  { className: 'col-md-4' },
+                  { className: 'col-md-5' },
                   this.renderTable()
                 ),
                 React.createElement(
@@ -18027,7 +18027,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 { className: 'row' },
                 React.createElement(
                   'div',
-                  { className: 'col-md-8' },
+                  { className: 'col-md-9' },
                   React.createElement(
                     Accordion,
                     { style: { margin: '0px' }, onChange: this.handleChange },
@@ -32151,7 +32151,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                 { className: 'row' },
                 React.createElement(
                   'div',
-                  { className: 'col-md-2' },
+                  { className: 'col-md-3' },
                   React.createElement(
                     'fieldset',
                     null,
@@ -32362,7 +32362,7 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 { className: 'row' },
                 React.createElement(
                   'div',
-                  { className: 'col-md-8' },
+                  { className: 'col-md-9' },
                   React.createElement(
                     'table',
                     { className: 'table table-hover' },
@@ -32634,7 +32634,7 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
                 { className: 'row' },
                 React.createElement(
                   'div',
-                  { className: 'col-md-8' },
+                  { className: 'col-md-9' },
                   React.createElement(
                     'table',
                     { className: 'table', style: { margin: '0px' } },
@@ -37930,7 +37930,7 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 { className: 'row' },
                 React.createElement(
                   'div',
-                  { className: 'col-md-8' },
+                  { className: 'col-md-9' },
                   this.renderResults()
                 )
               )
@@ -53542,7 +53542,7 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 { className: 'row' },
                 React.createElement(
                   'div',
-                  { className: 'col-md-12' },
+                  { className: 'col-md-9' },
                   React.createElement(
                     'span',
                     null,

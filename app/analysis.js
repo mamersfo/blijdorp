@@ -123,7 +123,7 @@ export class Analysis extends React.Component {
       <div className='container-fluid'>
         { this.renderHeader() }
         <div className='row'>
-        <div className='col-md-12'>
+        <div className='col-md-9'>
         <span>
         {
           this.renderBarChart({

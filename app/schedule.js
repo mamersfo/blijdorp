@@ -89,7 +89,7 @@ export class Schedule extends Seasonal {
       <div className='container-fluid'>
         <h2>programma</h2>
         <div className='row'>
-        <div className='col-md-8'>
+        <div className='col-md-9'>
         <table className='table table-hover'>
           <thead>
           {this.renderHead()}
