@@ -104,7 +104,7 @@ export class Matches extends Seasonal {
   render() {
     return (
       <div className='container-fluid'>
-        <h2>verslag</h2>
+        <h2>verslagen</h2>
         <div className='row'>
           <div className='col-md-10'>
             <Accordion style={{margin: '0px'}} onChange={this.handleChange}>

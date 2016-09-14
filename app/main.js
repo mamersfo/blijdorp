@@ -26,7 +26,7 @@ function reducer(state = {season: '2016-17'}, action) {
 
 const store = createStore(reducer)
 
-const baseUri = '/blijdorp/'
+const baseUri = '/blijdorp'
 
 const childRoutes = [
   {
@@ -36,57 +36,88 @@ const childRoutes = [
   },
   {
     id: 2,
-    path: 'programma',
-    component: Schedule
-  },
-  {
-    id: 3,
-    path: 'uitslagen',
-    component: Results
-  },
-  {
-    id: 4,
-    path: 'stand',
-    component: Table
-  },
-  {
-    id: 5,
-    path: 'verslag',
-    component: Matches
+    path: 'competitie',
+    childRoutes: [
+      {
+        id: 3,
+        path: 'programma',
+        component: Schedule
+      },
+      {
+        id: 4,
+        path: 'uitslagen',
+        component: Results
+      },
+      {
+        id: 5,
+        path: 'stand',
+        component: Table
+      }
+    ]
   },
   {
     id: 6,
-    path: 'doelpunten',
-    component: Goals
+    path: 'verslagen',
+    component: Matches
   },
   {
     id: 7,
-    path: 'assists',
-    component: Assists
+    path: 'statistieken',
+    childRoutes: [
+      {
+        id: 8,
+        path: 'doelpunten',
+        component: Goals
+      },
+      {
+        id: 9,
+        path: 'assists',
+        component: Assists
+      },
+      {
+        id: 10,
+        path: 'analyse',
+        component: Analysis
+      }
+    ]
   },
   {
-    id: 8,
-    path: 'analyse',
-    component: Analysis
-  },
-  {
-    id: 9,
+    id: 10,
     path: 'oefeningen',
     component: Exercises
   }
 ]
 
 class Main extends React.Component {
+
+  renderItem(baseUri, item) {
+    let uri = baseUri + '/' + item.path
+    return (
+      <li key={'item-' + item.id} role='presentation'
+        className={this.props.location.pathname == uri ? 'active' : ''}>
+        <Link to={uri}>{item.path}</Link>
+      </li>
+    )
+  }
   
   renderItems() {
     return childRoutes.map((item) => {
-      let uri = baseUri + item.path
-      return (
-        <li key={'item-' + item.id} role='presentation'
-            className={this.props.location.pathname == uri ? 'active' : ''}>
-          <Link to={uri}>{item.path}</Link>
-        </li>
-      )
+      if ( item.childRoutes ) {
+        let className = 'dropdown'
+        if ( this.props.location.pathname.startsWith(baseUri + '/' + item.path) )
+          className += ' active'
+        return (
+          <li key={'item-' + item.id} className={className}>
+            <a className='dropdown-toggle' data-toggle='dropdown' href='#'
+            role='button' aria-haspopup='true' aria-expanded='false'>{item.path}</a>
+            <ul className='dropdown-menu'>
+            { item.childRoutes.map((i) => this.renderItem(baseUri + '/' + item.path, i) ) }
+            </ul>
+          </li>
+        )
+       } else {
+         return this.renderItem(baseUri, item)
+      }
     })    
   }
 
