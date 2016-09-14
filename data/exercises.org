@@ -542,6 +542,19 @@ aangespeeld.
 Spelers aan de zijden van een vierkant spelen op balbezit, één of twee
 lummels in het vierkant proberen af te pakken.
 ***** UUID: fdbeb81b-1449-4022-998f-f2ec41e11512
+**** Exercise: Omschakelen in de richting van het spel
+Spelvorm van 4 tegen 4, met 5 doeltjes opgesteld in een cirkel,
+ontleend aan Arrigo Sacchi. Er is één doel meer dan er spelers zijn,
+dus is er altijd een doel over dat niet wordt verdedigd. Het
+aanvallende team moet dan snel naar dat doel om te scoren. Scoren doe
+je door tussen de pilonnen te plaatsen, maar doelpunt geldt pas als er
+een medespeler is aan de andere kant die de bal aanraakt. Zo is er een
+continue verandering van de richting van het spel, en de spelers
+moeten zich daarop aanpassen.
+***** UUID: e5cd56b0-b291-4e15-b951-87f0d1096f32
+***** Tag: omschakelen
+***** Tag: vrije ruimte
+***** Variation: Esercitazione tecnico-tattica finalizzata al cambio di gioco, v=e53nGPMqQTE, t=1489
 *** Category: Dribbelen en afpakken
 **** Exercise: Draaidribbel
 Speler dribbelt naar eerste hoedje, draait er omheen, dribbelt naar

@@ -1063,6 +1063,18 @@
   "tags" : [ ],
   "variations" : [ ]
 }, {
+  "uuid" : "e5cd56b0-b291-4e15-b951-87f0d1096f32",
+  "name" : "Omschakelen in de richting van het spel",
+  "category" : "Samenspelen en druk zetten",
+  "text" : "Spelvorm van 4 tegen 4, met 5 doeltjes opgesteld in een cirkel, ontleend aan Arrigo Sacchi. Er is één doel meer dan er spelers zijn, dus is er altijd een doel over dat niet wordt verdedigd. Het aanvallende team moet dan snel naar dat doel om te scoren. Scoren doe je door tussen de pilonnen te plaatsen, maar doelpunt geldt pas als er een medespeler is aan de andere kant die de bal aanraakt. Zo is er een continue verandering van de richting van het spel, en de spelers moeten zich daarop aanpassen.",
+  "image" : true,
+  "tags" : [ "omschakelen", "vrije ruimte" ],
+  "variations" : [ {
+    "name" : "Esercitazione tecnico-tattica finalizzata al cambio di gioco",
+    "v" : "e53nGPMqQTE",
+    "t" : "1489"
+  } ]
+}, {
   "uuid" : "762f272d-b629-4696-b59b-191d011a573b",
   "name" : "Draaidribbel",
   "category" : "Dribbelen en afpakken",
