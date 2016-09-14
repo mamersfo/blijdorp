@@ -99,12 +99,12 @@ export class Players extends React.Component {
   renderCarousel() {
     return (
       <Carousel>
-        <div style={{width: '400px', height: '450px', margin: '0 auto'}}>
-          { this.renderTreeMap() }
+        <div style={{width: '450px', height: '450px', margin: '0 auto'}}>
+        { this.renderTable() }
         </div>
         <div style={{width: '450px', height: '450px', margin: '0 auto'}}>
-          { this.renderTable() }
-        </div>
+        { this.renderTreeMap() }
+      </div>
       </Carousel>
     )
   }
