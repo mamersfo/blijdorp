@@ -4566,42 +4566,50 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
               { className: 'container-fluid' },
               React.createElement(
                 'div',
-                { className: 'jumbotron', style: { height: '500px', margin: '0px' } },
-                React.createElement('img', { src: 'images/team-1617.png',
-                  style: {
-                    position: 'relative',
-                    float: 'right',
-                    marginLeft: '30px',
-                    'WebkitFilter': 'saturate(30%)'
-                  } }),
-                React.createElement(
-                  'h1',
-                  null,
-                  'Blijdorp JO11-1'
-                ),
-                React.createElement(
-                  'p',
-                  null,
-                  'Website gewijd aan het selectieteam voor Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je onder meer ',
-                  React.createElement(
-                    Link,
-                    { to: '/blijdorp/verslag' },
-                    'wedstrijdverslagen'
-                  ),
-                  ', statistieken en ',
-                  React.createElement(
-                    Link,
-                    { to: '/blijdorp/oefeningen' },
-                    'oefenstof'
-                  ),
-                  '.'
-                ),
+                { className: 'row' },
                 React.createElement(
                   'div',
-                  null,
-                  this.renderLinks()
-                ),
-                React.createElement(Update, null)
+                  { className: 'col-md-8' },
+                  React.createElement(
+                    'div',
+                    { className: 'jumbotron', style: { height: '500px', margin: '0px' } },
+                    React.createElement('img', { src: 'images/team-1617.png',
+                      style: {
+                        position: 'relative',
+                        float: 'right',
+                        marginLeft: '30px',
+                        'WebkitFilter': 'saturate(30%)'
+                      } }),
+                    React.createElement(
+                      'h1',
+                      null,
+                      'Blijdorp JO11-1'
+                    ),
+                    React.createElement(
+                      'p',
+                      null,
+                      'Website gewijd aan het selectieteam voor Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je onder meer ',
+                      React.createElement(
+                        Link,
+                        { to: '/blijdorp/verslag' },
+                        'wedstrijdverslagen'
+                      ),
+                      ', statistieken en ',
+                      React.createElement(
+                        Link,
+                        { to: '/blijdorp/oefeningen' },
+                        'oefenstof'
+                      ),
+                      '.'
+                    ),
+                    React.createElement(
+                      'div',
+                      null,
+                      this.renderLinks()
+                    ),
+                    React.createElement(Update, null)
+                  )
+                )
               )
             );
           }
@@ -17699,12 +17707,12 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 { className: 'row' },
                 React.createElement(
                   'div',
-                  { className: 'col-md-6' },
+                  { className: 'col-md-4' },
                   this.renderTable()
                 ),
                 React.createElement(
                   'div',
-                  { className: 'col-md-6' },
+                  { className: 'col-md-4' },
                   this.renderTreeMap()
                 )
               )
@@ -18019,7 +18027,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 { className: 'row' },
                 React.createElement(
                   'div',
-                  { className: 'col-md-10' },
+                  { className: 'col-md-8' },
                   React.createElement(
                     Accordion,
                     { style: { margin: '0px' }, onChange: this.handleChange },
@@ -32143,7 +32151,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                 { className: 'row' },
                 React.createElement(
                   'div',
-                  { className: 'col-md-3' },
+                  { className: 'col-md-2' },
                   React.createElement(
                     'fieldset',
                     null,
@@ -32152,7 +32160,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                 ),
                 React.createElement(
                   'div',
-                  { className: 'col-md-8' },
+                  { className: 'col-md-6' },
                   React.createElement(
                     Accordion,
                     { style: { margin: '0px' }, onChange: this.handleAccordionChange },
@@ -32350,19 +32358,27 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 'programma'
               ),
               React.createElement(
-                'table',
-                { className: 'table table-hover' },
+                'div',
+                { className: 'row' },
                 React.createElement(
-                  'thead',
-                  null,
-                  this.renderHead()
-                ),
-                React.createElement(
-                  'tbody',
-                  null,
-                  this.state.data.map(function (m) {
-                    return _this.renderMatch(m);
-                  })
+                  'div',
+                  { className: 'col-md-8' },
+                  React.createElement(
+                    'table',
+                    { className: 'table table-hover' },
+                    React.createElement(
+                      'thead',
+                      null,
+                      this.renderHead()
+                    ),
+                    React.createElement(
+                      'tbody',
+                      null,
+                      this.state.data.map(function (m) {
+                        return _this.renderMatch(m);
+                      })
+                    )
+                  )
                 )
               )
             );
@@ -32614,19 +32630,27 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
                 'stand'
               ),
               React.createElement(
-                'table',
-                { className: 'table', style: { margin: '0px' } },
+                'div',
+                { className: 'row' },
                 React.createElement(
-                  'thead',
-                  null,
-                  this.renderHead()
-                ),
-                React.createElement(
-                  'tbody',
-                  null,
-                  this.state.data.map(function (t, idx) {
-                    return _this2.renderTeam(t, idx);
-                  })
+                  'div',
+                  { className: 'col-md-8' },
+                  React.createElement(
+                    'table',
+                    { className: 'table', style: { margin: '0px' } },
+                    React.createElement(
+                      'thead',
+                      null,
+                      this.renderHead()
+                    ),
+                    React.createElement(
+                      'tbody',
+                      null,
+                      this.state.data.map(function (t, idx) {
+                        return _this2.renderTeam(t, idx);
+                      })
+                    )
+                  )
                 )
               )
             );
@@ -37901,7 +37925,15 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 null,
                 'uitslagen'
               ),
-              this.renderResults()
+              React.createElement(
+                'div',
+                { className: 'row' },
+                React.createElement(
+                  'div',
+                  { className: 'col-md-8' },
+                  this.renderResults()
+                )
+              )
             );
           }
         }]);
@@ -38918,7 +38950,7 @@ System.register("app/api.js", ["npm:whatwg-fetch@1.0.0.js"], function (_export) 
     setters: [function (_npmWhatwgFetch100Js) {}],
     execute: function () {
 
-      // baseUrl = "http://localhost:3000"
+      // const baseUrl = "http://localhost:3000"
       baseUrl = "https://mamersfo.github.io";
 
       get = function get(which) {

@@ -100,10 +100,10 @@ export class Players extends React.Component {
       <div className='container-fluid'>
         { this.renderHeader() }
         <div className='row'>
-          <div className='col-md-6'>
+          <div className='col-md-4'>
             { this.renderTable() }
           </div>
-          <div className='col-md-6'>
+          <div className='col-md-4'>
             { this.renderTreeMap() }
           </div>
         </div>

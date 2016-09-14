@@ -76,6 +76,8 @@ export class Table extends Seasonal {
     return (
       <div className='container-fluid'>
         <h2>stand</h2>
+        <div className='row'>
+        <div className='col-md-8'>
         <table className='table' style={{margin: '0px'}}>
           <thead>
             { this.renderHead() }
@@ -84,6 +86,8 @@ export class Table extends Seasonal {
             { this.state.data.map((t, idx) => this.renderTeam(t, idx)) }
           </tbody>
         </table>
+        </div>
+        </div>
       </div>
     )
   }

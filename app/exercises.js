@@ -285,12 +285,12 @@ export default class Exercises extends React.Component {
       <div className='container-fluid'>
         <h2>oefeningen</h2>
         <div className='row'>
-          <div className='col-md-3'>
+          <div className='col-md-2'>
             <fieldset>
               { this.renderFilters() }
             </fieldset>
           </div>
-          <div className='col-md-8'>
+          <div className='col-md-6'>
           <Accordion style={{margin: '0px'}} onChange={this.handleAccordionChange}>
             { this.renderExercises() }
             </Accordion>

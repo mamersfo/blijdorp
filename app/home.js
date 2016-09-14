@@ -29,9 +29,10 @@ export default class Home extends React.Component {
   
   render() {
     return (
-      <div className='container-fluid'>
+        <div className='container-fluid'>
+        <div className='row'>
+        <div className='col-md-8'>
         <div className='jumbotron' style={{height: '500px', margin: '0px'}}>
-
         <img src='images/team-1617.png'
       style={{
         position: 'relative',
@@ -46,6 +47,8 @@ export default class Home extends React.Component {
         </p>
         <div>{ this.renderLinks() }</div>
         <Update />
+        </div>
+        </div>
         </div>
       </div>
     )
