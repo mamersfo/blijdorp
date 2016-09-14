@@ -1,0 +1,21 @@
+[
+  [ "VOC"      ,  2, true,  "Luc",    "Stijn",  "attack",   null,        "right",  "shot"],
+  [ "VOC"      ,  5, true,  "Stijn",  null,     "counter",  null,         "center", "shoot-out"],
+  [ "VOC"      ,  8, true,  "Fadi",   "Stijn",  "counter",  null,        "center", "shoot-out"],
+  [ "VOC"      , 22, true,  "Quincy", "Jonas",  "attack",   null,        "right",  "shoot-out"],
+  [ "VOC"      , 25, true,  "Luc",    "Jonas",  "attack",   null,        "left",   "long shot"],
+  [ "VOC"      , 32, true,  "Fadi",   "Stijn",  "attack",   null,        "right",  "tip-in"],
+  [ "VOC"      , 33, true,  "Luc",    "Fadi",   "attack",   null,        "left",   "shot"],
+  [ "VOC"      , 45, false, null,     null,     "standard", "corner",    "left",   "tip-in"],
+  [ "BVCB"     ,  4, false, null,     null,     "attack",   null,        "right",  "shot"],
+  [ "BVCB"     , 13, true,  "Jonas",  "Stijn",  "attack",   null,        "left",   "long shot"],
+  [ "BVCB"     , 14, false, null,     null,     "standard", "corner",    "left",   "tip-in"],
+  [ "BVCB"     , 20, false,  null,    null,     "attack",   null,        "right",  "long shot"],
+  [ "BVCB"     , 22, true,  "Fadi",   null,     "attack",   null,        "left",   "long shot"],
+  [ "BVCB"     , 45, false, null,     null,     "attack",   null,        "right",  "shot"],
+  [ "XerxesDZB",  8, true,  "Jonas",  null    , "attack",   null,        "left",   "shoot-out"],
+  [ "XerxesDZB", 21, true,  "Luc",    "Quincy", "standard", "free-kick", "right",  "long shot"],
+  [ "XerxesDZB", 25, true,  "Fadi",   "Stijn",  "counter",  null,        "left",   "long shot"],
+  [ "XerxesDZB", 28, true,  "Luc",    null,     "attack",   null,        "right",  "tip-in"],
+  [ "XerxesDZB", 46, true,  "Fadi",   "Stijn",  "counter",  null,        "center", "shoot-out"]
+]

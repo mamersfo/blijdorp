@@ -11,6 +11,7 @@ import Exercises from './exercises.js'
 import Schedule from './schedule.js'
 import Table from './table.js'
 import Results from './results.js'
+import Analysis from './analysis'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
@@ -65,6 +66,11 @@ const childRoutes = [
   },
   {
     id: 8,
+    path: 'analyse',
+    component: Analysis
+  },
+  {
+    id: 9,
     path: 'oefeningen',
     component: Exercises
   }
