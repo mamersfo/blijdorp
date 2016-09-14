@@ -1,8 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import {Treemap} from 'react-vis'
+import { Treemap } from 'react-vis'
 import { get } from './api'
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table'
+import Carousel from 'nuka-carousel'
 
 export class Players extends React.Component {
 
@@ -61,18 +62,18 @@ export class Players extends React.Component {
     return (
         <Treemap
           data={{title: '', children: this.state.items}}
-          height={414}
-          width={414}
+          height={400}
+          width={400}
           colorDomain={this.props.colorDomain || [0, 1]}
           colorRange={this.props.colorRange || ['white', 'green']}
           colorType={this.props.colorType || 'linear'}
-        />      
+        />
     )
   }
 
   renderTable() {
     return (
-        <BootstrapTable tableStyle={{margin: 0}} height={414} data={this.state.players} striped={true}>
+      <BootstrapTable tableStyle={{margin: 0}} data={this.state.players} striped={true}>
         <TableHeaderColumn isKey={true} dataField='id' hidden={true}>
           Id
         </TableHeaderColumn>
@@ -91,20 +92,30 @@ export class Players extends React.Component {
           dataAlign='end'>
           Gemiddelde
         </TableHeaderColumn>
-      </BootstrapTable>      
+      </BootstrapTable>
     )
   }
-  
+
+  renderCarousel() {
+    return (
+      <Carousel>
+        <div style={{width: '400px', height: '450px', margin: '0 auto'}}>
+          { this.renderTreeMap() }
+        </div>
+        <div style={{width: '450px', height: '450px', margin: '0 auto'}}>
+          { this.renderTable() }
+        </div>
+      </Carousel>
+    )
+  }
+
   render() {
     return (
       <div className='container-fluid'>
         { this.renderHeader() }
         <div className='row'>
-          <div className='col-md-5'>
-            { this.renderTable() }
-          </div>
-          <div className='col-md-4'>
-            { this.renderTreeMap() }
+          <div className='col-md-9'>
+          { this.renderCarousel() }
           </div>
         </div>
       </div>

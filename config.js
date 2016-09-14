@@ -482,6 +482,14 @@ System.config({
       "app/matches.js",
       "app/assists.js",
       "app/players.js",
+      "npm:nuka-carousel@2.0.3.js",
+      "npm:nuka-carousel@2.0.3/index.js",
+      "npm:nuka-carousel@2.0.3/lib/carousel.js",
+      "npm:exenv@1.2.1.js",
+      "npm:exenv@1.2.1/index.js",
+      "npm:nuka-carousel@2.0.3/lib/decorators.js",
+      "npm:kw-react-tween-state@0.1.5.js",
+      "npm:kw-react-tween-state@0.1.5/lib/index.js",
       "npm:react-bootstrap-table@2.4.2.js",
       "npm:react-bootstrap-table@2.4.2/lib/index.js",
       "npm:react-bootstrap-table@2.4.2/lib/TableHeaderColumn.js",
@@ -605,6 +613,7 @@ System.config({
     "d3-scale": "npm:d3-scale@0.7.2",
     "fetch": "npm:whatwg-fetch@1.0.0",
     "history": "npm:history@2.1.2",
+    "nuka-carousel": "npm:nuka-carousel@2.0.3",
     "react": "npm:react@15.3.1",
     "react-bootstrap-table": "npm:react-bootstrap-table@2.4.2",
     "react-dom": "npm:react-dom@15.3.1",
@@ -612,10 +621,12 @@ System.config({
     "react-redux": "npm:react-redux@4.4.5",
     "react-router": "npm:react-router@2.6.1",
     "react-sanfona": "npm:react-sanfona@0.0.14",
+    "react-slick": "npm:react-slick@0.14.3",
     "react-stonecutter": "npm:react-stonecutter@0.3.3",
     "react-tokeninput": "npm:react-tokeninput@2.1.1",
     "react-vis": "npm:react-vis@0.4.2",
     "redux": "npm:redux@3.5.2",
+    "slick-carousel": "npm:slick-carousel@1.6.0",
     "whatwg-fetch": "npm:whatwg-fetch@1.0.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -674,7 +685,7 @@ System.config({
       "browserify-zlib": "npm:browserify-zlib@0.1.4"
     },
     "github:twbs/bootstrap@3.3.7": {
-      "jquery": "npm:jquery@2.2.4"
+      "jquery": "npm:jquery@3.1.0"
     },
     "npm:asap@2.0.4": {
       "domain": "github:jspm/nodelibs-domain@0.1.0",
@@ -935,8 +946,18 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:isomorphic-fetch@2.2.1": {
-      "node-fetch": "npm:node-fetch@1.6.0",
+      "node-fetch": "npm:node-fetch@1.6.1",
       "whatwg-fetch": "npm:whatwg-fetch@1.0.0"
+    },
+    "npm:json2mq@0.2.0": {
+      "string-convert": "npm:string-convert@0.2.1"
+    },
+    "npm:kw-react-tween-state@0.1.5": {
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "raf": "npm:raf@3.3.0",
+      "react": "npm:react@15.3.1",
+      "react-dom": "npm:react-dom@15.3.1",
+      "tween-functions": "npm:tween-functions@1.2.0"
     },
     "npm:lodash._baseassign@3.2.0": {
       "lodash._basecopy": "npm:lodash._basecopy@3.0.1",
@@ -977,7 +998,7 @@ System.config({
       "bn.js": "npm:bn.js@4.11.6",
       "brorand": "npm:brorand@1.0.6"
     },
-    "npm:node-fetch@1.6.0": {
+    "npm:node-fetch@1.6.1": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "encoding": "npm:encoding@0.1.12",
       "http": "github:jspm/nodelibs-http@1.7.1",
@@ -987,6 +1008,14 @@ System.config({
       "url": "github:jspm/nodelibs-url@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0",
       "zlib": "github:jspm/nodelibs-zlib@0.1.0"
+    },
+    "npm:nuka-carousel@2.0.3": {
+      "exenv": "npm:exenv@1.2.1",
+      "kw-react-tween-state": "npm:kw-react-tween-state@0.1.5",
+      "object-assign": "npm:object-assign@4.1.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "react": "npm:react@15.3.1",
+      "react-dom": "npm:react-dom@15.3.1"
     },
     "npm:os-browserify@0.1.2": {
       "os": "github:jspm/nodelibs-os@0.1.0"
@@ -1095,6 +1124,13 @@ System.config({
       "react": "npm:react@15.3.1",
       "redux": "npm:redux@3.5.2"
     },
+    "npm:react-responsive-mixin@0.4.0": {
+      "can-use-dom": "npm:can-use-dom@0.1.0",
+      "enquire.js": "npm:enquire.js@2.1.1",
+      "json2mq": "npm:json2mq@0.2.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:react-router@2.6.1": {
       "history": "npm:history@2.1.2",
       "hoist-non-react-statics": "npm:hoist-non-react-statics@1.2.0",
@@ -1109,6 +1145,16 @@ System.config({
       "react": "npm:react@15.3.1",
       "react-dom": "npm:react-dom@15.3.1",
       "uuid": "npm:uuid@2.0.1"
+    },
+    "npm:react-slick@0.14.3": {
+      "classnames": "npm:classnames@2.2.5",
+      "json2mq": "npm:json2mq@0.2.0",
+      "object-assign": "npm:object-assign@4.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "react": "npm:react@15.3.1",
+      "react-dom": "npm:react-dom@15.3.1",
+      "react-responsive-mixin": "npm:react-responsive-mixin@0.4.0",
+      "slick-carousel": "npm:slick-carousel@1.6.0"
     },
     "npm:react-stonecutter@0.3.3": {
       "enquire.js": "npm:enquire.js@2.1.1",
@@ -1196,6 +1242,9 @@ System.config({
     },
     "npm:shallowequal@0.2.2": {
       "lodash.keys": "npm:lodash.keys@3.1.2"
+    },
+    "npm:slick-carousel@1.6.0": {
+      "jquery": "npm:jquery@3.1.0"
     },
     "npm:stream-browserify@1.0.0": {
       "events": "github:jspm/nodelibs-events@0.1.1",
