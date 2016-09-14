@@ -1,5 +1,6 @@
 import React from 'react'
 import Update from './update'
+import { Link } from 'react-router'
 
 export default class Home extends React.Component {
 
@@ -41,7 +42,7 @@ export default class Home extends React.Component {
         </img>
         <h1>Blijdorp JO11-1</h1>
         <p>
-        Website gewijd aan het selectieteam voor Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je onder meer wedstrijdverslagen, statistieken en oefenstof.
+        Website gewijd aan het selectieteam voor Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je onder meer <Link to='/blijdorp/verslag'>wedstrijdverslagen</Link>, statistieken en <Link to='/blijdorp/oefeningen'>oefenstof</Link>.
         </p>
         <div>{ this.renderLinks() }</div>
         <Update />
