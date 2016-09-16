@@ -22,7 +22,6 @@
     ]
   },
   {
-    "latest": true,
     "competition": "Groep 2 04",
     "matchday": 2,
     "date": "2016-09-10",
@@ -33,11 +32,12 @@
     ]
   },
   {
+    "latest": true,
     "competition": "Groep 2 04",
     "matchday": 2,
     "date": "2016-09-15",
     "fixtures": [
-      ["VVOR", "BVCB"]
+      ["VVOR", "BVCB", 0, 5]
     ]
   },
   {
