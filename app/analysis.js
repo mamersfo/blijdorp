@@ -3,6 +3,7 @@ import { get } from './api'
 import { connect } from 'react-redux'
 import { XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, HeatmapSeries } from 'react-vis'
 import Carousel from 'nuka-carousel'
+import 'react-vis/main.css!'
 
 export class Analysis extends React.Component {
 
@@ -215,14 +216,11 @@ export class Analysis extends React.Component {
 
   render() {
     return (
-      <div className='container-fluid'>
-        { this.renderHeader() }
-        <div className='row'>
-          <div className='col-md-9'>
-          { this.renderCarousel() }
-          </div>
-        </div>
+      <div className='row'>
+      <div className='col-xs-12 col-md-12'>
+        { this.renderCarousel() }
       </div>
+        </div>
     )
   }
 }

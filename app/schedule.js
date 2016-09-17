@@ -86,10 +86,8 @@ export class Schedule extends Seasonal {
 
   render() {
     return (
-      <div className='container-fluid'>
-        <h2>programma</h2>
-        <div className='row'>
-        <div className='col-md-9'>
+      <div className='row'>
+        <div className='col-xs-12 col-md-12'>
         <table className='table table-hover'>
           <thead>
           {this.renderHead()}
@@ -98,7 +96,6 @@ export class Schedule extends Seasonal {
           { this.state.data.map((m) => this.renderMatch(m)) }
           </tbody>
         </table>
-        </div>
         </div>
       </div>
     )

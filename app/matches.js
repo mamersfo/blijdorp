@@ -103,16 +103,13 @@ export class Matches extends Seasonal {
   
   render() {
     return (
-      <div className='container-fluid'>
-        <h2>verslagen</h2>
-        <div className='row'>
-          <div className='col-md-9'>
-            <Accordion style={{margin: '0px'}} onChange={this.handleChange}>
-              { this.renderItems() }
-            </Accordion>
-          </div>
+      <div className='row'>
+      <div className='col-xs-12 col-md-12'>
+        <Accordion style={{margin: '0px'}} onChange={this.handleChange}>
+        { this.renderItems() }
+        </Accordion>
         </div>
-      </div>
+        </div>
     )
   }
 }

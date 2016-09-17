@@ -4,6 +4,8 @@ import { Treemap } from 'react-vis'
 import { get } from './api'
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table'
 import Carousel from 'nuka-carousel'
+import 'react-vis/main.css!'
+import 'react-bootstrap-table/css/react-bootstrap-table.min.css!'
 
 export class Players extends React.Component {
 
@@ -111,12 +113,9 @@ export class Players extends React.Component {
 
   render() {
     return (
-      <div className='container-fluid'>
-        { this.renderHeader() }
-        <div className='row'>
-          <div className='col-md-9'>
+      <div className='row'>
+        <div className='col-xs-12 col-md-12'>
           { this.renderCarousel() }
-          </div>
         </div>
       </div>
     )

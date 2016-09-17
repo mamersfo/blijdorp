@@ -30,11 +30,6 @@ const baseUri = '/blijdorp'
 
 const childRoutes = [
   {
-    id: 1,
-    path: 'home',
-    component: Home
-  },
-  {
     id: 2,
     path: 'competitie',
     childRoutes: [
@@ -124,11 +119,27 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <ul className='nav nav-tabs'>
-        {this.renderItems()}
-        <ChooseSeason />
-        </ul>
-        {this.props.children}
+        <nav className='navbar navbar-default'>
+          <div className='navbar-header'>
+            <button type='button'
+              className='navbar-toggle'
+              data-toggle='collapse'
+              data-target='.navbar-collapse'>
+            </button>
+            <div className='navbar-brand'>
+              <Link to='blijdorp/home'>Blijdorp JO11-1</Link>
+            </div>
+          </div>
+          <div className='navbar-collapse collapse'>
+            <ul className='nav navbar-nav'>
+              {this.renderItems()}
+              <ChooseSeason />
+            </ul>
+          </div>
+        </nav>
+        <div className='container-fluid'>
+          {this.props.children}
+        </div>
       </div>
     )
   }
@@ -138,7 +149,13 @@ const routes = {
   path: baseUri,
   component: Main,
   indexRoute: { component: Home },
-  childRoutes: childRoutes
+  childRoutes: [
+    {
+      path: 'home',
+      component: Home
+    },
+      ...childRoutes
+  ]
 }
 
 ReactDOM.render(

@@ -74,10 +74,8 @@ export class Table extends Seasonal {
 
   render() {
     return (
-      <div className='container-fluid'>
-        <h2>stand</h2>
-        <div className='row'>
-        <div className='col-md-9'>
+      <div className='row'>
+      <div className='col-xs-12 col-md-12'>
         <table className='table' style={{margin: '0px'}}>
           <thead>
             { this.renderHead() }
@@ -88,7 +86,6 @@ export class Table extends Seasonal {
         </table>
         </div>
         </div>
-      </div>
     )
   }
 }

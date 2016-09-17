@@ -2,6 +2,7 @@
   "jspm": {
     "dependencies": {
       "bootstrap": "github:twbs/bootstrap@^3.3.7",
+      "css": "github:systemjs/plugin-css@^0.1.27",
       "d3-color": "npm:d3-color@0.4.2",
       "d3-scale": "npm:d3-scale@0.7.2",
       "history": "npm:history@2.1.2",

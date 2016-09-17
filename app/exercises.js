@@ -282,19 +282,16 @@ export default class Exercises extends React.Component {
 
   render() {
     return (
-      <div className='container-fluid'>
-        <h2>oefeningen</h2>
-        <div className='row'>
-          <div className='col-md-3'>
-            <fieldset>
-              { this.renderFilters() }
-            </fieldset>
-          </div>
-          <div className='col-md-6'>
+      <div className='row'>
+        <div className='col-xs-3 col-md-3'>
+          <fieldset>
+            { this.renderFilters() }
+          </fieldset>
+        </div>
+        <div className='col-xs-9 col-md-9'>
           <Accordion style={{margin: '0px'}} onChange={this.handleAccordionChange}>
-            { this.renderExercises() }
-            </Accordion>
-          </div>
+          { this.renderExercises() }
+          </Accordion>
         </div>
       </div>
     )

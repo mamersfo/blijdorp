@@ -9,12 +9,12 @@ export default class Home extends React.Component {
       {
         id: 1,
         href: 'http://www.rvv-blijdorp.nl',
-        img: 'images/geography-24.png'
+        img: '/blijdorp/images/geography-24.png'
       },
       {
         id: 2,
         href: 'https://twitter.com/BlijdorpSelec06',
-        img: 'images/twitter-24.png'
+        img: '/blijdorp/images/twitter-24.png'
       }
     ]
 
@@ -29,17 +29,15 @@ export default class Home extends React.Component {
   
   render() {
     return (
-        <div className='container-fluid'>
-        <div className='row'>
-        <div className='col-md-9'>
-        <div className='jumbotron' style={{height: '500px', margin: '0px'}}>
-        <img src='images/team-1617.png'
-      style={{
-        position: 'relative',
-        float: 'right',
-        marginLeft: '30px',
-        'WebkitFilter': 'saturate(30%)'
-      }}>
+      <div className='col-xs-12 col-md-12'>
+        <div className='jumbotron' style={{margin: '0px'}}>
+        <img src='/blijdorp/images/team-1617.png'
+          style={{
+          position: 'relative',
+          float: 'right',
+          marginLeft: '30px',
+          'WebkitFilter': 'saturate(30%)'
+        }}>
         </img>
         <h1>Blijdorp JO11-1</h1>
         <p>
@@ -47,8 +45,6 @@ export default class Home extends React.Component {
         </p>
         <div>{ this.renderLinks() }</div>
         <Update />
-        </div>
-        </div>
         </div>
       </div>
     )

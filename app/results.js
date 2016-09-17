@@ -59,13 +59,10 @@ export class Results extends Seasonal {
 
   render() {
     return (
-      <div className='container-fluid'>
-        <h2>uitslagen</h2>
-        <div className='row'>
-          <div className='col-md-9'>
-          { this.renderResults() }
-          </div>
-        </div>
+      <div className='row'>
+      <div className='col-xs-12 col-md-12'>
+        { this.renderResults() }
+      </div>
       </div>
     )
   }
