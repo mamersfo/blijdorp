@@ -4571,18 +4571,13 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
                   style: {
                     position: 'relative',
                     float: 'right',
-                    marginLeft: '30px',
+                    margin: '0px 20px 20px 20px',
                     'WebkitFilter': 'saturate(30%)'
                   } }),
                 React.createElement(
-                  'h1',
-                  null,
-                  'Blijdorp JO11-1'
-                ),
-                React.createElement(
                   'p',
                   null,
-                  'Website gewijd aan het selectieteam voor Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je onder meer ',
+                  'Website gewijd aan het selectieteam voor Blijdorp-spelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je onder meer ',
                   React.createElement(
                     Link,
                     { to: '/blijdorp/verslag' },
@@ -17547,8 +17542,8 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/css/react-bootstrap-tabl
 
   return _retrieveGlobal();
 });
-System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'app/api.js', 'npm:react-bootstrap-table@2.4.2.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@0.1.27.js', 'npm:react-bootstrap-table@2.4.2/css/react-bootstrap-table.min.css!github:systemjs/plugin-css@0.1.27.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, connect, Treemap, get, BootstrapTable, TableHeaderColumn, Carousel, Players;
+System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'app/api.js', 'npm:react-bootstrap-table@2.4.2.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@0.1.27.js', 'npm:react-bootstrap-table@2.4.2/css/react-bootstrap-table.min.css!github:systemjs/plugin-css@0.1.27.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, connect, Treemap, get, BootstrapTable, TableHeaderColumn, Carousel, MediaQuery, Players;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -17572,7 +17567,9 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       TableHeaderColumn = _npmReactBootstrapTable242Js.TableHeaderColumn;
     }, function (_npmNukaCarousel203Js) {
       Carousel = _npmNukaCarousel203Js['default'];
-    }, function (_npmReactVis042MainCssGithubSystemjsPluginCss0127Js) {}, function (_npmReactBootstrapTable242CssReactBootstrapTableMinCssGithubSystemjsPluginCss0127Js) {}],
+    }, function (_npmReactVis042MainCssGithubSystemjsPluginCss0127Js) {}, function (_npmReactBootstrapTable242CssReactBootstrapTableMinCssGithubSystemjsPluginCss0127Js) {}, function (_npmReactResponsive115Js) {
+      MediaQuery = _npmReactResponsive115Js['default'];
+    }],
     execute: function () {
       'use strict';
 
@@ -17631,68 +17628,68 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
             }
           }
         }, {
-          key: 'renderHeader',
-          value: function renderHeader() {
-            return React.createElement(
-              'div',
-              { className: 'row' },
-              React.createElement(
-                'div',
-                { className: 'col-md-6' },
-                React.createElement(
-                  'h2',
-                  null,
-                  this.props.metric
-                )
-              ),
-              React.createElement('div', { className: 'col-md-6' })
-            );
-          }
-        }, {
           key: 'renderTreeMap',
           value: function renderTreeMap() {
-            return React.createElement(Treemap, {
-              data: { title: '', children: this.state.items },
-              height: 400,
-              width: 400,
-              colorDomain: this.props.colorDomain || [0, 1],
-              colorRange: this.props.colorRange || ['white', 'green'],
-              colorType: this.props.colorType || 'linear'
-            });
+            return React.createElement(
+              'div',
+              null,
+              React.createElement(
+                'h4',
+                null,
+                this.props.metric
+              ),
+              React.createElement(Treemap, {
+                data: { title: '', children: this.state.items },
+                height: 400,
+                width: 400,
+                colorDomain: this.props.colorDomain || [0, 1],
+                colorRange: this.props.colorRange || ['white', 'green'],
+                colorType: this.props.colorType || 'linear'
+              })
+            );
           }
         }, {
           key: 'renderTable',
           value: function renderTable() {
             return React.createElement(
-              BootstrapTable,
-              { tableStyle: { margin: 0 }, data: this.state.players, striped: true },
+              'div',
+              null,
               React.createElement(
-                TableHeaderColumn,
-                { isKey: true, dataField: 'id', hidden: true },
-                'Id'
+                'h4',
+                null,
+                this.props.metric
               ),
               React.createElement(
-                TableHeaderColumn,
-                { dataField: 'name', dataSort: true, width: '100' },
-                'Speler'
-              ),
-              React.createElement(
-                TableHeaderColumn,
-                { dataField: 'total', dataSort: true, width: '100',
-                  dataAlign: 'end' },
-                'Totaal'
-              ),
-              React.createElement(
-                TableHeaderColumn,
-                { dataField: 'matches', dataSort: true, width: '100',
-                  dataAlign: 'end' },
-                'Wedstrijden'
-              ),
-              React.createElement(
-                TableHeaderColumn,
-                { dataField: 'average', dataSort: true, width: '100',
-                  dataAlign: 'end' },
-                'Gemiddelde'
+                BootstrapTable,
+                { tableStyle: { margin: 0 }, data: this.state.players, striped: true },
+                React.createElement(
+                  TableHeaderColumn,
+                  { isKey: true, dataField: 'id', hidden: true },
+                  'Id'
+                ),
+                React.createElement(
+                  TableHeaderColumn,
+                  { dataField: 'name', dataSort: true, width: '100' },
+                  'Speler'
+                ),
+                React.createElement(
+                  TableHeaderColumn,
+                  { dataField: 'total', dataSort: true, width: '100',
+                    dataAlign: 'end' },
+                  'Totaal'
+                ),
+                React.createElement(
+                  TableHeaderColumn,
+                  { dataField: 'matches', dataSort: true, width: '100',
+                    dataAlign: 'end' },
+                  'Wedstrijden'
+                ),
+                React.createElement(
+                  TableHeaderColumn,
+                  { dataField: 'average', dataSort: true, width: '100',
+                    dataAlign: 'end' },
+                  'Gemiddelde'
+                )
               )
             );
           }
@@ -17704,12 +17701,48 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
               null,
               React.createElement(
                 'div',
-                { style: { width: '450px', height: '450px', margin: '0 auto' } },
-                this.renderTable()
+                { style: { width: '450px', height: '500px', margin: '0 auto' } },
+                React.createElement(
+                  'h4',
+                  null,
+                  this.props.metric
+                ),
+                React.createElement(
+                  BootstrapTable,
+                  { tableStyle: { margin: 0 }, data: this.state.players, striped: true },
+                  React.createElement(
+                    TableHeaderColumn,
+                    { isKey: true, dataField: 'id', hidden: true },
+                    'Id'
+                  ),
+                  React.createElement(
+                    TableHeaderColumn,
+                    { dataField: 'name', dataSort: true, width: '100' },
+                    'Speler'
+                  ),
+                  React.createElement(
+                    TableHeaderColumn,
+                    { dataField: 'total', dataSort: true, width: '100',
+                      dataAlign: 'end' },
+                    'Totaal'
+                  ),
+                  React.createElement(
+                    TableHeaderColumn,
+                    { dataField: 'matches', dataSort: true, width: '100',
+                      dataAlign: 'end' },
+                    'Wedstrijden'
+                  ),
+                  React.createElement(
+                    TableHeaderColumn,
+                    { dataField: 'average', dataSort: true, width: '100',
+                      dataAlign: 'end' },
+                    'Gemiddelde'
+                  )
+                )
               ),
               React.createElement(
                 'div',
-                { style: { width: '450px', height: '450px', margin: '0 auto' } },
+                { style: { width: '450px', height: '500px', margin: '0 auto' } },
                 this.renderTreeMap()
               )
             );
@@ -17719,11 +17752,44 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'row' },
+              { className: 'row-fluid' },
               React.createElement(
                 'div',
                 { className: 'col-xs-12 col-md-12' },
-                this.renderCarousel()
+                React.createElement(
+                  MediaQuery,
+                  { query: '(min-device-width: 1224px)' },
+                  this.renderCarousel()
+                ),
+                React.createElement(
+                  MediaQuery,
+                  { query: '(max-device-width: 1224px)' },
+                  React.createElement(
+                    'h4',
+                    null,
+                    this.props.metric
+                  ),
+                  React.createElement(
+                    BootstrapTable,
+                    { tableStyle: { margin: 0 }, data: this.state.players, striped: true },
+                    React.createElement(
+                      TableHeaderColumn,
+                      { isKey: true, dataField: 'id', hidden: true },
+                      'Id'
+                    ),
+                    React.createElement(
+                      TableHeaderColumn,
+                      { dataField: 'name', dataSort: true, width: '100' },
+                      'Speler'
+                    ),
+                    React.createElement(
+                      TableHeaderColumn,
+                      { dataField: 'total', dataSort: true, width: '100',
+                        dataAlign: 'end' },
+                      'Totaal'
+                    )
+                  )
+                )
               )
             );
           }
@@ -17788,8 +17854,8 @@ System.register('app/assists.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
     }
   };
 });
-System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-sanfona@0.0.14.js', 'app/seasonal.js', 'app/api.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Object$keys, React, connect, Accordion, AccordionItem, Seasonal, get, Matches;
+System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-sanfona@0.0.14.js', 'app/seasonal.js', 'app/api.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Object$keys, React, connect, Accordion, AccordionItem, Seasonal, get, MediaQuery, Matches;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -17813,6 +17879,8 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       Seasonal = _appSeasonalJs['default'];
     }, function (_appApiJs) {
       get = _appApiJs.get;
+    }, function (_npmReactResponsive115Js) {
+      MediaQuery = _npmReactResponsive115Js['default'];
     }],
     execute: function () {
       'use strict';
@@ -17826,6 +17894,8 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           _get(Object.getPrototypeOf(Matches.prototype), 'constructor', this).call(this, props);
           this.state = { filename: 'matches', data: [] };
           this.handleChange = this.handleChange.bind(this);
+          this.renderContent = this.renderContent.bind(this);
+          this.renderVideo = this.renderVideo.bind(this);
         }
 
         _createClass(Matches, [{
@@ -17834,6 +17904,26 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
             return m ? _Object$keys(m).map(function (k) {
               return k + ' (' + m[k] + ') ';
             }) : 'geen';
+          }
+        }, {
+          key: 'renderVideo',
+          value: function renderVideo(id) {
+            var src = 'https://www.youtube.com/embed/' + id;
+
+            return React.createElement(
+              'div',
+              null,
+              React.createElement(
+                MediaQuery,
+                { query: '(min-device-width: 1224px)' },
+                React.createElement('iframe', { width: 420, height: 235, src: src })
+              ),
+              React.createElement(
+                MediaQuery,
+                { query: '(max-device-width: 1224px)' },
+                React.createElement('iframe', { width: 275, height: 154, src: src })
+              )
+            );
           }
         }, {
           key: 'renderContent',
@@ -17845,8 +17935,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 content = m.text;
                 break;
               case 'youtube':
-                var src = 'https://www.youtube.com/embed/' + m.videoId;
-                content = React.createElement('iframe', { width: 420, height: 235, src: src });
+                content = this.renderVideo(m.videoId);
                 break;
               case 'image':
                 content = m.download ? React.createElement(
@@ -18025,7 +18114,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'row' },
+              { className: 'row-fluid' },
               React.createElement(
                 'div',
                 { className: 'col-xs-12 col-md-12' },
@@ -21370,8 +21459,8 @@ System.registerDynamic("npm:react-tokeninput@2.1.1.js", ["npm:react-tokeninput@2
   return module.exports;
 });
 
-System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/helpers/to-consumable-array.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'npm:babel-runtime@5.8.38/core-js/set.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-sanfona@0.0.14.js', 'npm:react-dynamic-modal@1.1.1.js', 'npm:react-tokeninput@2.1.1.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _toConsumableArray, _Array$from, _Set, _Object$assign, _Object$keys, React, get, Accordion, AccordionItem, Modal, ModalManager, Effect, TokenInput, Combobox, Exercises;
+System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/helpers/to-consumable-array.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'npm:babel-runtime@5.8.38/core-js/set.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:babel-runtime@5.8.38/core-js/object/keys.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-sanfona@0.0.14.js', 'npm:react-dynamic-modal@1.1.1.js', 'npm:react-tokeninput@2.1.1.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _toConsumableArray, _Array$from, _Set, _Object$assign, _Object$keys, React, get, Accordion, AccordionItem, Modal, ModalManager, Effect, TokenInput, Combobox, MediaQuery, Exercises;
 
   function compare(a, b) {
     if (a.name < b.name) return -1;
@@ -21412,6 +21501,8 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
     }, function (_npmReactTokeninput211Js) {
       TokenInput = _npmReactTokeninput211Js['default'];
       Combobox = _npmReactTokeninput211Js;
+    }, function (_npmReactResponsive115Js) {
+      MediaQuery = _npmReactResponsive115Js['default'];
     }],
     execute: function () {
       'use strict';
@@ -21454,6 +21545,28 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             });
           }
         }, {
+          key: 'renderYoutube',
+          value: function renderYoutube(url) {
+            return React.createElement(
+              'div',
+              null,
+              React.createElement(
+                MediaQuery,
+                { query: '(min-device-width: 1224px)' },
+                React.createElement('iframe', { style: { marginTop: '12px' },
+                  width: 420, height: 235, src: url,
+                  frameborder: 0, allowFullscreen: true })
+              ),
+              React.createElement(
+                MediaQuery,
+                { query: '(max-device-width: 1224px)' },
+                React.createElement('iframe', { style: { marginTop: '12px' },
+                  width: 245, height: 137, src: url,
+                  frameborder: 0, allowFullscreen: true })
+              )
+            );
+          }
+        }, {
           key: 'renderVideo',
           value: function renderVideo(m) {
             if (undefined === m.v) {
@@ -21475,9 +21588,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                   React.createElement('img', { src: img,
                     style: { float: 'right', width: '24px', height: '24px' } })
                 ),
-                React.createElement('iframe', { style: { marginTop: '12px' },
-                  width: 420, height: 235, src: url,
-                  frameborder: 0, allowFullscreen: true })
+                this.renderYoutube(url)
               );
             }
           }
@@ -21610,17 +21721,18 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
           value: function renderExercises() {
             var _this3 = this;
 
-            // let selected = this.state.selected.length > 0 ?
-            //     this.state.selected : this.state.exercises
-
-            return this.state.selected.map(function (m, idx) {
-              return React.createElement(
-                AccordionItem,
-                { title: m.name, slug: idx, key: m.uuid },
-                _this3.renderExerciseText(m),
-                _this3.renderVariations(m)
-              );
-            });
+            return React.createElement(
+              Accordion,
+              { style: { margin: '0px' }, onChange: this.handleAccordionChange },
+              this.state.selected.map(function (m, idx) {
+                return React.createElement(
+                  AccordionItem,
+                  { title: m.name, slug: idx, key: m.uuid },
+                  _this3.renderExerciseText(m),
+                  _this3.renderVariations(m)
+                );
+              })
+            );
           }
         }, {
           key: 'filterExercises',
@@ -21743,7 +21855,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
             });
 
             return React.createElement(
-              'div',
+              'fieldset',
               null,
               React.createElement(
                 'div',
@@ -21807,22 +21919,32 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'row' },
+              { className: 'row-fluid' },
               React.createElement(
-                'div',
-                { className: 'col-xs-3 col-md-3' },
+                MediaQuery,
+                { query: '(min-device-width: 1224px)' },
                 React.createElement(
-                  'fieldset',
-                  null,
+                  'div',
+                  { className: 'col-xs-3 col-md-3' },
                   this.renderFilters()
+                ),
+                React.createElement(
+                  'div',
+                  { className: 'col-xs-9 col-md-9' },
+                  this.renderExercises()
                 )
               ),
               React.createElement(
-                'div',
-                { className: 'col-xs-9 col-md-9' },
+                MediaQuery,
+                { query: '(max-device-width: 1224px)' },
                 React.createElement(
-                  Accordion,
-                  { style: { margin: '0px' }, onChange: this.handleAccordionChange },
+                  'div',
+                  { className: 'col-xs-12 col-md-12' },
+                  this.renderFilters()
+                ),
+                React.createElement(
+                  'div',
+                  { className: 'col-xs-12 col-md-12' },
                   this.renderExercises()
                 )
               )
@@ -21837,8 +21959,8 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
     }
   };
 });
-System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, connect, Seasonal, Schedule;
+System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, connect, Seasonal, MediaQuery, Schedule;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -21857,6 +21979,8 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
       connect = _npmReactRedux445Js.connect;
     }, function (_appSeasonalJs) {
       Seasonal = _appSeasonalJs['default'];
+    }, function (_npmReactResponsive115Js) {
+      MediaQuery = _npmReactResponsive115Js['default'];
     }],
     execute: function () {
       'use strict';
@@ -21925,109 +22049,173 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
             }
           }
         }, {
-          key: 'renderMatch',
-          value: function renderMatch(m) {
+          key: 'renderForDesktop',
+          value: function renderForDesktop() {
+            var _this = this;
+
             return React.createElement(
-              'tr',
-              { key: m.date },
+              'table',
+              { className: 'table table-hover' },
               React.createElement(
-                'td',
+                'thead',
                 null,
-                m.date.toLocaleDateString('NL-nl', { day: 'numeric', month: 'long' })
+                React.createElement(
+                  'tr',
+                  null,
+                  React.createElement(
+                    'th',
+                    { style: { width: '15%' } },
+                    'Datum'
+                  ),
+                  React.createElement(
+                    'th',
+                    { style: { width: '10%' } },
+                    'Aftrap'
+                  ),
+                  React.createElement(
+                    'th',
+                    { style: { width: '10%' } },
+                    'Verzamelen'
+                  ),
+                  React.createElement(
+                    'th',
+                    { style: { width: '20%' } },
+                    'Thuisploeg'
+                  ),
+                  React.createElement(
+                    'th',
+                    { style: { width: '20%' } },
+                    'Bezoekers'
+                  ),
+                  React.createElement(
+                    'th',
+                    null,
+                    'Afmeldingen'
+                  ),
+                  React.createElement(
+                    'th',
+                    null,
+                    'Scheidsrechter'
+                  )
+                )
               ),
               React.createElement(
-                'td',
+                'tbody',
                 null,
-                m.teams ? m.date.toLocaleTimeString('Nl-nl', { hour: '2-digit', minute: '2-digit' }) : 'vrij'
-              ),
-              React.createElement(
-                'td',
-                null,
-                this.gatheringTime(m)
-              ),
-              this.renderTeam(m, 0),
-              this.renderTeam(m, 1),
-              React.createElement(
-                'td',
-                null,
-                m.absent
-              ),
-              React.createElement(
-                'td',
-                null,
-                m.referee
+                this.state.data.map(function (m) {
+                  return React.createElement(
+                    'tr',
+                    null,
+                    React.createElement(
+                      'td',
+                      null,
+                      m.date.toLocaleDateString('NL-nl', { day: 'numeric', month: 'long' })
+                    ),
+                    React.createElement(
+                      'td',
+                      null,
+                      m.teams ? m.date.toLocaleTimeString('Nl-nl', { hour: '2-digit', minute: '2-digit' }) : 'vrij'
+                    ),
+                    React.createElement(
+                      'td',
+                      null,
+                      _this.gatheringTime(m)
+                    ),
+                    _this.renderTeam(m, 0),
+                    _this.renderTeam(m, 1),
+                    React.createElement(
+                      'td',
+                      null,
+                      m.absent
+                    ),
+                    React.createElement(
+                      'td',
+                      null,
+                      m.referee
+                    )
+                  );
+                })
               )
             );
           }
         }, {
-          key: 'renderHead',
-          value: function renderHead() {
+          key: 'renderForMobile',
+          value: function renderForMobile() {
+            var _this2 = this;
+
             return React.createElement(
-              'tr',
-              null,
+              'table',
+              { className: 'table table-hover' },
               React.createElement(
-                'th',
-                { style: { width: '15%' } },
-                'Datum'
-              ),
-              React.createElement(
-                'th',
-                { style: { width: '10%' } },
-                'Aftrap'
-              ),
-              React.createElement(
-                'th',
-                { style: { width: '10%' } },
-                'Verzamelen'
-              ),
-              React.createElement(
-                'th',
-                { style: { width: '20%' } },
-                'Thuisploeg'
-              ),
-              React.createElement(
-                'th',
-                { style: { width: '20%' } },
-                'Bezoekers'
-              ),
-              React.createElement(
-                'th',
+                'thead',
                 null,
-                'Afmeldingen'
+                React.createElement(
+                  'tr',
+                  null,
+                  React.createElement(
+                    'th',
+                    { style: { width: '20%' } },
+                    'Datum'
+                  ),
+                  React.createElement(
+                    'th',
+                    { style: { width: '20%' } },
+                    'Aftrap'
+                  ),
+                  React.createElement(
+                    'th',
+                    { style: { width: '30%' } },
+                    'Thuisploeg'
+                  ),
+                  React.createElement(
+                    'th',
+                    { style: { width: '30%' } },
+                    'Bezoekers'
+                  )
+                )
               ),
               React.createElement(
-                'th',
+                'tbody',
                 null,
-                'Scheidsrechter'
+                this.state.data.map(function (m) {
+                  return React.createElement(
+                    'tr',
+                    null,
+                    React.createElement(
+                      'td',
+                      null,
+                      m.date.toLocaleDateString('NL-nl', { day: 'numeric', month: 'short' })
+                    ),
+                    React.createElement(
+                      'td',
+                      null,
+                      m.teams ? m.date.toLocaleTimeString('NL-nl', { hour: '2-digit', minute: '2-digit' }) : 'vrij'
+                    ),
+                    _this2.renderTeam(m, 0),
+                    _this2.renderTeam(m, 1)
+                  );
+                })
               )
             );
           }
         }, {
           key: 'render',
           value: function render() {
-            var _this = this;
-
             return React.createElement(
               'div',
-              { className: 'row' },
+              { className: 'row-fluid' },
               React.createElement(
                 'div',
                 { className: 'col-xs-12 col-md-12' },
                 React.createElement(
-                  'table',
-                  { className: 'table table-hover' },
-                  React.createElement(
-                    'thead',
-                    null,
-                    this.renderHead()
-                  ),
-                  React.createElement(
-                    'tbody',
-                    null,
-                    this.state.data.map(function (m) {
-                      return _this.renderMatch(m);
-                    })
-                  )
+                  MediaQuery,
+                  { query: '(min-device-width: 1224px)' },
+                  this.renderForDesktop()
+                ),
+                React.createElement(
+                  MediaQuery,
+                  { query: '(max-device-width: 1224px)' },
+                  this.renderForMobile()
                 )
               )
             );
@@ -22108,8 +22296,8 @@ System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/values.js", ["np
   return module.exports;
 });
 
-System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/values.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js', 'app/api.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Object$values, React, connect, Seasonal, get, Table;
+System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/values.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js', 'app/api.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Object$values, React, connect, Seasonal, get, MediaQuery, Table;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -22130,6 +22318,8 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
       Seasonal = _appSeasonalJs['default'];
     }, function (_appApiJs) {
       get = _appApiJs.get;
+    }, function (_npmReactResponsive115Js) {
+      MediaQuery = _npmReactResponsive115Js['default'];
     }],
     execute: function () {
       'use strict';
@@ -22180,71 +22370,8 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
             });
           }
         }, {
-          key: 'renderTeam',
-          value: function renderTeam(t, idx) {
-            return React.createElement(
-              'tr',
-              { key: idx, className: t.team === 'Blijdorp' ? 'active' : '' },
-              React.createElement(
-                'td',
-                { style: { textAlign: 'right' } },
-                idx + 1 + '.'
-              ),
-              React.createElement(
-                'td',
-                null,
-                t.team === 'Blijdorp' ? React.createElement(
-                  'b',
-                  null,
-                  t.team
-                ) : t.team
-              ),
-              React.createElement(
-                'td',
-                { style: { textAlign: 'right' } },
-                t.matches.total
-              ),
-              React.createElement(
-                'td',
-                { style: { textAlign: 'right' } },
-                t.matches.wins
-              ),
-              React.createElement(
-                'td',
-                { style: { textAlign: 'right' } },
-                t.matches.draws
-              ),
-              React.createElement(
-                'td',
-                { style: { textAlign: 'right' } },
-                t.matches.losses
-              ),
-              React.createElement(
-                'td',
-                { style: { textAlign: 'right' } },
-                t.points
-              ),
-              React.createElement(
-                'td',
-                { style: { textAlign: 'right' } },
-                t.goals['for']
-              ),
-              React.createElement(
-                'td',
-                { style: { textAlign: 'right' } },
-                t.goals.against
-              ),
-              React.createElement(
-                'td',
-                { style: { textAlign: 'right' } },
-                t.goals.diff > 0 ? '+' + t.goals.diff : t.goals.diff
-              )
-            );
-          }
-        }, {
           key: 'renderHead',
-          value: function renderHead() {
-            var cols = ['G', 'W', 'GL', 'V', 'P', 'DPV', 'DPT', 'DS'];
+          value: function renderHead(cols) {
             var headers = cols.map(function (c) {
               return React.createElement(
                 'th',
@@ -22266,31 +22393,148 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
             );
           }
         }, {
+          key: 'renderForMobile',
+          value: function renderForMobile() {
+            return React.createElement(
+              'table',
+              { className: 'table', style: { margin: '0px' } },
+              React.createElement(
+                'thead',
+                null,
+                this.renderHead(['G', 'P'])
+              ),
+              React.createElement(
+                'tbody',
+                null,
+                this.state.data.map(function (t, idx) {
+                  return React.createElement(
+                    'tr',
+                    { key: idx, className: t.team === 'Blijdorp' ? 'active' : '' },
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      idx + 1 + '.'
+                    ),
+                    React.createElement(
+                      'td',
+                      null,
+                      t.team === 'Blijdorp' ? React.createElement(
+                        'b',
+                        null,
+                        t.team
+                      ) : t.team
+                    ),
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      t.matches.total
+                    ),
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      t.points
+                    )
+                  );
+                })
+              )
+            );
+          }
+        }, {
+          key: 'renderForDesktop',
+          value: function renderForDesktop() {
+            return React.createElement(
+              'table',
+              { className: 'table', style: { margin: '0px' } },
+              React.createElement(
+                'thead',
+                null,
+                this.renderHead(['G', 'W', 'GL', 'V', 'P', 'DPV', 'DPT', 'DS'])
+              ),
+              React.createElement(
+                'tbody',
+                null,
+                this.state.data.map(function (t, idx) {
+                  var diff = t.goals.diff > 0 ? '+' + t.goals.diff : t.goals.diff;
+                  return React.createElement(
+                    'tr',
+                    { key: idx, className: t.team === 'Blijdorp' ? 'active' : '' },
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      idx + 1 + '.'
+                    ),
+                    React.createElement(
+                      'td',
+                      null,
+                      t.team === 'Blijdorp' ? React.createElement(
+                        'b',
+                        null,
+                        t.team
+                      ) : t.team
+                    ),
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      t.matches.total
+                    ),
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      t.matches.wins
+                    ),
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      t.matches.draws
+                    ),
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      t.matches.losses
+                    ),
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      t.points
+                    ),
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      t.goals['for']
+                    ),
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      t.goals.against
+                    ),
+                    React.createElement(
+                      'td',
+                      { style: { textAlign: 'right' } },
+                      diff
+                    )
+                  );
+                })
+              )
+            );
+          }
+        }, {
           key: 'render',
           value: function render() {
-            var _this2 = this;
-
             return React.createElement(
               'div',
-              { className: 'row' },
+              { className: 'row-fluid' },
               React.createElement(
                 'div',
                 { className: 'col-xs-12 col-md-12' },
                 React.createElement(
-                  'table',
-                  { className: 'table', style: { margin: '0px' } },
-                  React.createElement(
-                    'thead',
-                    null,
-                    this.renderHead()
-                  ),
-                  React.createElement(
-                    'tbody',
-                    null,
-                    this.state.data.map(function (t, idx) {
-                      return _this2.renderTeam(t, idx);
-                    })
-                  )
+                  MediaQuery,
+                  { query: '(min-device-width: 1224px)' },
+                  this.renderForDesktop()
+                ),
+                React.createElement(
+                  MediaQuery,
+                  { query: '(max-device-width: 1224px)' },
+                  this.renderForMobile()
                 )
               )
             );
@@ -27381,8 +27625,8 @@ System.register('app/seasonal.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
     }
   };
 });
-System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-stonecutter@0.3.3.js', 'app/seasonal.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, connect, SpringGrid, Seasonal, Results;
+System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-stonecutter@0.3.3.js', 'app/seasonal.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, connect, SpringGrid, Seasonal, MediaQuery, Results;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -27403,6 +27647,8 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       SpringGrid = _npmReactStonecutter033Js.SpringGrid;
     }, function (_appSeasonalJs) {
       Seasonal = _appSeasonalJs['default'];
+    }, function (_npmReactResponsive115Js) {
+      MediaQuery = _npmReactResponsive115Js['default'];
     }],
     execute: function () {
       'use strict';
@@ -27427,42 +27673,53 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           }
         }, {
           key: 'renderResults',
-          value: function renderResults() {
+          value: function renderResults(d) {
+            return React.createElement(
+              'div',
+              null,
+              React.createElement(
+                'div',
+                { style: { textAlign: 'center', paddingBottom: '5px' } },
+                React.createElement(
+                  'b',
+                  null,
+                  d.date.toLocaleDateString('NL-nl', { day: 'numeric', month: 'long' })
+                )
+              ),
+              React.createElement(
+                'table',
+                { className: 'table', style: { width: '100%' } },
+                d.fixtures.map(function (f) {
+                  return React.createElement(
+                    'tr',
+                    null,
+                    React.createElement(
+                      'td',
+                      null,
+                      f[0] + ' - ' + f[1]
+                    ),
+                    React.createElement('td', { style: { width: 10 } }),
+                    React.createElement(
+                      'td',
+                      null,
+                      f.length === 4 ? f[2] + '-' + f[3] : ''
+                    )
+                  );
+                })
+              )
+            );
+          }
+        }, {
+          key: 'renderForDesktop',
+          value: function renderForDesktop() {
+            var _this = this;
+
             var content = this.state.data.map(function (d) {
               return React.createElement(
                 'li',
                 { key: d.date, className: 'grid-item',
                   style: { backgroundColor: d.latest ? '#99ccff' : '#eee' } },
-                React.createElement(
-                  'div',
-                  { style: { textAlign: 'center', paddingBottom: '5px' } },
-                  React.createElement(
-                    'b',
-                    null,
-                    d.date.toLocaleDateString('NL-nl', { day: 'numeric', month: 'long' })
-                  )
-                ),
-                React.createElement(
-                  'table',
-                  { className: 'table', style: { width: '100%' } },
-                  d.fixtures.map(function (f) {
-                    return React.createElement(
-                      'tr',
-                      null,
-                      React.createElement(
-                        'td',
-                        null,
-                        f[0] + ' - ' + f[1]
-                      ),
-                      React.createElement('td', { style: { width: 10 } }),
-                      React.createElement(
-                        'td',
-                        null,
-                        f.length === 4 ? f[2] + '-' + f[3] : ''
-                      )
-                    );
-                  })
-                )
+                _this.renderResults(d)
               );
             });
 
@@ -27475,21 +27732,38 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 columnWidth: 250,
                 gutterWidth: 10,
                 gutterHeight: 10,
-                springConfig: { stiffness: 170, damping: 26 }
-              },
+                springConfig: { stiffness: 170, damping: 26 } },
               content
             );
+          }
+        }, {
+          key: 'renderForMobile',
+          value: function renderForMobile() {
+            var latest = this.state.data.find(function (r) {
+              return r.latest;
+            });
+            if (latest) return this.renderResults(latest);
+            return null;
           }
         }, {
           key: 'render',
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'row' },
+              { className: 'row-fluid' },
               React.createElement(
                 'div',
                 { className: 'col-xs-12 col-md-12' },
-                this.renderResults()
+                React.createElement(
+                  MediaQuery,
+                  { query: '(min-device-width: 1224px)' },
+                  this.renderForDesktop()
+                ),
+                React.createElement(
+                  MediaQuery,
+                  { query: '(max-device-width: 1224px)' },
+                  this.renderForMobile()
+                )
               )
             );
           }
@@ -27829,6 +28103,28 @@ System.registerDynamic("npm:babel-runtime@5.8.38/helpers/class-call-check.js", [
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
+  };
+  exports.__esModule = true;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/helpers/extends.js", ["npm:babel-runtime@5.8.38/core-js/object/assign.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var _Object$assign = $__require('npm:babel-runtime@5.8.38/core-js/object/assign.js')["default"];
+  exports["default"] = _Object$assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
   };
   exports.__esModule = true;
   return module.exports;
@@ -54963,8 +55259,448 @@ System.registerDynamic("npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@
 
   return _retrieveGlobal();
 });
-System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@0.1.27.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, get, connect, XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, HeatmapSeries, Carousel, Analysis;
+System.registerDynamic("npm:css-mediaquery@0.1.2/index.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  exports.match = matchQuery;
+  exports.parse = parseQuery;
+  var RE_MEDIA_QUERY = /(?:(only|not)?\s*([^\s\(\)]+)(?:\s*and)?\s*)?(.+)?/i,
+      RE_MQ_EXPRESSION = /\(\s*([^\s\:\)]+)\s*(?:\:\s*([^\s\)]+))?\s*\)/,
+      RE_MQ_FEATURE = /^(?:(min|max)-)?(.+)/,
+      RE_LENGTH_UNIT = /(em|rem|px|cm|mm|in|pt|pc)?$/,
+      RE_RESOLUTION_UNIT = /(dpi|dpcm|dppx)?$/;
+  function matchQuery(mediaQuery, values) {
+    return parseQuery(mediaQuery).some(function(query) {
+      var inverse = query.inverse;
+      var typeMatch = query.type === 'all' || values.type === query.type;
+      if ((typeMatch && inverse) || !(typeMatch || inverse)) {
+        return false;
+      }
+      var expressionsMatch = query.expressions.every(function(expression) {
+        var feature = expression.feature,
+            modifier = expression.modifier,
+            expValue = expression.value,
+            value = values[feature];
+        if (!value) {
+          return false;
+        }
+        switch (feature) {
+          case 'orientation':
+          case 'scan':
+            return value.toLowerCase() === expValue.toLowerCase();
+          case 'width':
+          case 'height':
+          case 'device-width':
+          case 'device-height':
+            expValue = toPx(expValue);
+            value = toPx(value);
+            break;
+          case 'resolution':
+            expValue = toDpi(expValue);
+            value = toDpi(value);
+            break;
+          case 'aspect-ratio':
+          case 'device-aspect-ratio':
+          case 'device-pixel-ratio':
+            expValue = toDecimal(expValue);
+            value = toDecimal(value);
+            break;
+          case 'grid':
+          case 'color':
+          case 'color-index':
+          case 'monochrome':
+            expValue = parseInt(expValue, 10) || 1;
+            value = parseInt(value, 10) || 0;
+            break;
+        }
+        switch (modifier) {
+          case 'min':
+            return value >= expValue;
+          case 'max':
+            return value <= expValue;
+          default:
+            return value === expValue;
+        }
+      });
+      return (expressionsMatch && !inverse) || (!expressionsMatch && inverse);
+    });
+  }
+  function parseQuery(mediaQuery) {
+    return mediaQuery.split(',').map(function(query) {
+      query = query.trim();
+      var captures = query.match(RE_MEDIA_QUERY),
+          modifier = captures[1],
+          type = captures[2],
+          expressions = captures[3] || '',
+          parsed = {};
+      parsed.inverse = !!modifier && modifier.toLowerCase() === 'not';
+      parsed.type = type ? type.toLowerCase() : 'all';
+      expressions = expressions.match(/\([^\)]+\)/g) || [];
+      parsed.expressions = expressions.map(function(expression) {
+        var captures = expression.match(RE_MQ_EXPRESSION),
+            feature = captures[1].toLowerCase().match(RE_MQ_FEATURE);
+        return {
+          modifier: feature[1],
+          feature: feature[2],
+          value: captures[2]
+        };
+      });
+      return parsed;
+    });
+  }
+  function toDecimal(ratio) {
+    var decimal = Number(ratio),
+        numbers;
+    if (!decimal) {
+      numbers = ratio.match(/^(\d+)\s*\/\s*(\d+)$/);
+      decimal = numbers[1] / numbers[2];
+    }
+    return decimal;
+  }
+  function toDpi(resolution) {
+    var value = parseFloat(resolution),
+        units = String(resolution).match(RE_RESOLUTION_UNIT)[1];
+    switch (units) {
+      case 'dpcm':
+        return value / 2.54;
+      case 'dppx':
+        return value * 96;
+      default:
+        return value;
+    }
+  }
+  function toPx(length) {
+    var value = parseFloat(length),
+        units = String(length).match(RE_LENGTH_UNIT)[1];
+    switch (units) {
+      case 'em':
+        return value * 16;
+      case 'rem':
+        return value * 16;
+      case 'cm':
+        return value * 96 / 2.54;
+      case 'mm':
+        return value * 96 / 2.54 / 10;
+      case 'in':
+        return value * 96;
+      case 'pt':
+        return value * 72;
+      case 'pc':
+        return value * 72 / 12;
+      default:
+        return value;
+    }
+  }
+  return module.exports;
+});
+
+System.registerDynamic("npm:css-mediaquery@0.1.2.js", ["npm:css-mediaquery@0.1.2/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:css-mediaquery@0.1.2/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:matchmedia@0.1.2/index.js", ["npm:css-mediaquery@0.1.2.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var staticMatch = $__require('npm:css-mediaquery@0.1.2.js').match;
+  var dynamicMatch = typeof window !== 'undefined' ? window.matchMedia : null;
+  function Mql(query, values) {
+    var self = this;
+    if (dynamicMatch) {
+      var mql = dynamicMatch.call(window, query);
+      this.matches = mql.matches;
+      this.media = mql.media;
+      mql.addListener(update);
+    } else {
+      this.matches = staticMatch(query, values);
+      this.media = query;
+    }
+    this.addListener = addListener;
+    this.removeListener = removeListener;
+    function addListener(listener) {
+      if (mql) {
+        mql.addListener(listener);
+      }
+    }
+    function removeListener(listener) {
+      if (mql) {
+        mql.removeListener(listener);
+      }
+    }
+    function update(evt) {
+      self.matches = evt.matches;
+      self.media = evt.media;
+    }
+  }
+  function matchMedia(query, values) {
+    return new Mql(query, values);
+  }
+  module.exports = matchMedia;
+  return module.exports;
+});
+
+System.registerDynamic("npm:matchmedia@0.1.2.js", ["npm:matchmedia@0.1.2/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:matchmedia@0.1.2/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:hyphenate-style-name@1.0.1/index.js", [], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var uppercasePattern = /[A-Z]/g;
+  var msPattern = /^ms-/;
+  function hyphenateStyleName(string) {
+    return string.replace(uppercasePattern, '-$&').toLowerCase().replace(msPattern, '-ms-');
+  }
+  module.exports = hyphenateStyleName;
+  return module.exports;
+});
+
+System.registerDynamic("npm:hyphenate-style-name@1.0.1.js", ["npm:hyphenate-style-name@1.0.1/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:hyphenate-style-name@1.0.1/index.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-responsive@1.1.5/src/mediaQuery.js", ["npm:react@15.3.1.js", "npm:object-assign@4.1.0.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var PropTypes = $__require('npm:react@15.3.1.js').PropTypes;
+  var assign = $__require('npm:object-assign@4.1.0.js');
+  var stringOrNumber = PropTypes.oneOfType([PropTypes.string, PropTypes.number]);
+  var matchers = {
+    orientation: PropTypes.oneOf(['portrait', 'landscape']),
+    scan: PropTypes.oneOf(['progressive', 'interlace']),
+    aspectRatio: PropTypes.string,
+    deviceAspectRatio: PropTypes.string,
+    height: stringOrNumber,
+    deviceHeight: stringOrNumber,
+    width: stringOrNumber,
+    deviceWidth: stringOrNumber,
+    color: PropTypes.bool,
+    colorIndex: PropTypes.bool,
+    monochrome: PropTypes.bool,
+    resolution: stringOrNumber
+  };
+  var features = {
+    minAspectRatio: PropTypes.string,
+    maxAspectRatio: PropTypes.string,
+    minDeviceAspectRatio: PropTypes.string,
+    maxDeviceAspectRatio: PropTypes.string,
+    minHeight: stringOrNumber,
+    maxHeight: stringOrNumber,
+    minDeviceHeight: stringOrNumber,
+    maxDeviceHeight: stringOrNumber,
+    minWidth: stringOrNumber,
+    maxWidth: stringOrNumber,
+    minDeviceWidth: stringOrNumber,
+    maxDeviceWidth: stringOrNumber,
+    minColor: PropTypes.number,
+    maxColor: PropTypes.number,
+    minColorIndex: PropTypes.number,
+    maxColorIndex: PropTypes.number,
+    minMonochrome: PropTypes.number,
+    maxMonochrome: PropTypes.number,
+    minResolution: stringOrNumber,
+    maxResolution: stringOrNumber
+  };
+  assign(features, matchers);
+  var types = {
+    all: PropTypes.bool,
+    grid: PropTypes.bool,
+    aural: PropTypes.bool,
+    braille: PropTypes.bool,
+    handheld: PropTypes.bool,
+    print: PropTypes.bool,
+    projection: PropTypes.bool,
+    screen: PropTypes.bool,
+    tty: PropTypes.bool,
+    tv: PropTypes.bool,
+    embossed: PropTypes.bool
+  };
+  var all = {};
+  assign(all, types);
+  assign(all, features);
+  assign(matchers, {type: Object.keys(types)});
+  module.exports = {
+    all: all,
+    types: types,
+    matchers: matchers,
+    features: features
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-responsive@1.1.5/src/toQuery.js", ["npm:hyphenate-style-name@1.0.1.js", "npm:react-responsive@1.1.5/src/mediaQuery.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var hyphenate = $__require('npm:hyphenate-style-name@1.0.1.js');
+  var mq = $__require('npm:react-responsive@1.1.5/src/mediaQuery.js');
+  function negate(cond) {
+    return 'not ' + cond;
+  }
+  function keyVal(k, v) {
+    var realKey = hyphenate(k);
+    if (typeof v === 'number') {
+      v = v + 'px';
+    }
+    if (v === true) {
+      return k;
+    }
+    if (v === false) {
+      return negate(k);
+    }
+    return '(' + realKey + ': ' + v + ')';
+  }
+  function join(conds) {
+    return conds.join(' and ');
+  }
+  module.exports = function(obj) {
+    var rules = [];
+    Object.keys(mq.all).forEach(function(k) {
+      var v = obj[k];
+      if (v != null) {
+        rules.push(keyVal(k, v));
+      }
+    });
+    return join(rules);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-responsive@1.1.5/src/index.js", ["npm:react@15.3.1.js", "npm:matchmedia@0.1.2.js", "npm:hyphenate-style-name@1.0.1.js", "npm:react-responsive@1.1.5/src/mediaQuery.js", "npm:react-responsive@1.1.5/src/toQuery.js", "npm:object-assign@4.1.0.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var React = $__require('npm:react@15.3.1.js');
+  var matchMedia = $__require('npm:matchmedia@0.1.2.js');
+  var hyphenate = $__require('npm:hyphenate-style-name@1.0.1.js');
+  var mediaQuery = $__require('npm:react-responsive@1.1.5/src/mediaQuery.js');
+  var toQuery = $__require('npm:react-responsive@1.1.5/src/toQuery.js');
+  var assign = $__require('npm:object-assign@4.1.0.js');
+  var defaultTypes = {
+    component: React.PropTypes.node,
+    query: React.PropTypes.string,
+    values: React.PropTypes.shape(mediaQuery.matchers),
+    children: React.PropTypes.array
+  };
+  var mediaKeys = Object.keys(mediaQuery.all);
+  var excludedQueryKeys = Object.keys(defaultTypes);
+  var excludedPropKeys = excludedQueryKeys.concat(mediaKeys);
+  function omit(object, keys) {
+    var newObject = assign({}, object);
+    keys.forEach(function(key) {
+      delete newObject[key];
+    });
+    return newObject;
+  }
+  var mq = React.createClass({
+    displayName: 'MediaQuery',
+    getDefaultProps: function() {
+      return {values: {}};
+    },
+    getInitialState: function() {
+      return {matches: false};
+    },
+    componentWillMount: function() {
+      this.updateQuery(this.props);
+    },
+    componentWillReceiveProps: function(props) {
+      this.updateQuery(props);
+    },
+    updateQuery: function(props) {
+      var values;
+      if (props.query) {
+        this.query = props.query;
+      } else {
+        this.query = toQuery(omit(props, excludedQueryKeys));
+      }
+      if (!this.query) {
+        throw new Error('Invalid or missing MediaQuery!');
+      }
+      if (props.values) {
+        values = Object.keys(props.values).reduce(function(result, key) {
+          result[hyphenate(key)] = props.values[key];
+          return result;
+        }, {});
+      }
+      if (this._mql) {
+        this._mql.removeListener(this.updateMatches);
+      }
+      this._mql = matchMedia(this.query, values);
+      this._mql.addListener(this.updateMatches);
+      this.updateMatches();
+    },
+    componentWillUnmount: function() {
+      this._mql.removeListener(this.updateMatches);
+    },
+    updateMatches: function() {
+      if (this._mql.matches === this.state.matches) {
+        return;
+      }
+      this.setState({matches: this._mql.matches});
+    },
+    render: function() {
+      if (this.state.matches === false) {
+        return null;
+      }
+      var props = omit(this.props, excludedPropKeys);
+      var hasMergeProps = Object.keys(props).length > 0;
+      var childrenCount = React.Children.count(this.props.children);
+      var wrapChildren = this.props.component || childrenCount > 1 || typeof this.props.children === 'string' || this.props.children === undefined;
+      if (wrapChildren) {
+        return React.createElement(this.props.component || 'div', props, this.props.children);
+      } else if (hasMergeProps) {
+        return React.cloneElement(this.props.children, props);
+      } else if (childrenCount) {
+        return this.props.children;
+      } else {
+        return null;
+      }
+    }
+  });
+  module.exports = mq;
+  return module.exports;
+});
+
+System.registerDynamic("npm:react-responsive@1.1.5.js", ["npm:react-responsive@1.1.5/src/index.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:react-responsive@1.1.5/src/index.js');
+  return module.exports;
+});
+
+System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/helpers/extends.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@0.1.27.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _extends, _Object$assign, React, get, connect, XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, HeatmapSeries, Carousel, MediaQuery, Analysis;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -54975,6 +55711,8 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmBabelRuntime5838HelpersExtendsJs) {
+      _extends = _npmBabelRuntime5838HelpersExtendsJs['default'];
     }, function (_npmBabelRuntime5838CoreJsObjectAssignJs) {
       _Object$assign = _npmBabelRuntime5838CoreJsObjectAssignJs['default'];
     }, function (_npmReact1531Js) {
@@ -54993,7 +55731,9 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
       HeatmapSeries = _npmReactVis042Js.HeatmapSeries;
     }, function (_npmNukaCarousel203Js) {
       Carousel = _npmNukaCarousel203Js['default'];
-    }, function (_npmReactVis042MainCssGithubSystemjsPluginCss0127Js) {}],
+    }, function (_npmReactVis042MainCssGithubSystemjsPluginCss0127Js) {}, function (_npmReactResponsive115Js) {
+      MediaQuery = _npmReactResponsive115Js['default'];
+    }],
     execute: function () {
       'use strict';
 
@@ -55115,6 +55855,8 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
             var yType = _ref$yType === undefined ? 'linear' : _ref$yType;
             var _ref$stackBy = _ref.stackBy;
             var stackBy = _ref$stackBy === undefined ? '' : _ref$stackBy;
+            var width = _ref.width;
+            var height = _ref.height;
 
             return React.createElement(
               'div',
@@ -55126,7 +55868,7 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
               ),
               React.createElement(
                 XYPlot,
-                { width: 400, height: 400, xType: xType, yType: yType, stackBy: stackBy },
+                { width: width, height: height, xType: xType, yType: yType, stackBy: stackBy },
                 React.createElement(VerticalGridLines, null),
                 React.createElement(HorizontalGridLines, null),
                 React.createElement(XAxis, null),
@@ -55138,86 +55880,67 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
             );
           }
         }, {
-          key: 'renderHeader',
-          value: function renderHeader() {
-            return React.createElement(
-              'div',
-              { className: 'row' },
-              React.createElement(
+          key: 'renderCharts',
+          value: function renderCharts(_ref2) {
+            var _this2 = this;
+
+            var charts = _ref2.charts;
+            var width = _ref2.width;
+            var height = _ref2.height;
+
+            return charts.map(function (c) {
+              return React.createElement(
                 'div',
-                { className: 'col-md-6' },
-                React.createElement(
-                  'h2',
-                  null,
-                  'Analyse'
-                )
-              ),
-              React.createElement('div', { className: 'col-md-6' })
-            );
-          }
-        }, {
-          key: 'renderCarousel',
-          value: function renderCarousel() {
-            return React.createElement(
-              Carousel,
-              null,
-              React.createElement(
-                'div',
-                { style: { width: '400px', height: '500px', margin: '0 auto' } },
-                this.renderBarChart({
-                  title: 'aantal doelpunten per tijdseenheid (5 minuten), Blijdorp vs. tegenstander',
-                  series: this.state.minute,
-                  stackBy: 'y'
-                })
-              ),
-              React.createElement(
-                'div',
-                { style: { width: '400px', height: '500px', margin: '0 auto' } },
-                this.renderBarChart({
-                  title: 'aantal doelpunten per tactische situatie, Blijdorp vs. tegenstander',
-                  series: this.state.situation,
-                  xType: 'ordinal'
-                })
-              ),
-              React.createElement(
-                'div',
-                { style: { width: '400px', height: '500px', margin: '0 auto' } },
-                this.renderBarChart({
-                  title: 'aantal doelpunten per type inzet, Blijdorp vs. tegenstander',
-                  series: this.state.shots,
-                  xType: 'ordinal'
-                })
-              ),
-              React.createElement(
-                'div',
-                { style: { width: '400px', height: '500px', margin: '0 auto' } },
-                this.renderBarChart({
-                  title: 'aantal doelpunten uit standaardsituaties, Blijdorp vs. tegenstander',
-                  series: this.state.standard,
-                  xType: 'ordinal'
-                })
-              ),
-              React.createElement(
-                'div',
-                { style: { width: '400px', height: '500px', margin: '0 auto' } },
-                this.renderBarChart({
-                  title: 'aantal doelpunten per flank, aanval opgezet vs. afgerond',
-                  series: this.state.flank,
-                  xType: 'ordinal'
-                })
-              )
-            );
+                { style: { width: width, height: height + 100, margin: '0 auto' } },
+                _this2.renderBarChart(_extends({}, c, { width: width, height: height }))
+              );
+            });
           }
         }, {
           key: 'render',
           value: function render() {
+            var charts = [{
+              title: 'aantal doelpunten per tijdseenheid (5 minuten), Blijdorp vs. tegenstander',
+              series: this.state.minute,
+              stackBy: 'y'
+            }, {
+              title: 'aantal doelpunten per tactische situatie, Blijdorp vs. tegenstander',
+              series: this.state.situation,
+              xType: 'ordinal'
+            }, {
+              title: 'aantal doelpunten per type inzet, Blijdorp vs. tegenstander',
+              series: this.state.shots,
+              xType: 'ordinal'
+            }, {
+              title: 'aantal doelpunten uit standaardsituaties, Blijdorp vs. tegenstander',
+              series: this.state.standard,
+              xType: 'ordinal'
+            }, {
+              title: 'aantal doelpunten per flank, aanval opgezet vs. afgerond',
+              series: this.state.flank,
+              xType: 'ordinal'
+            }];
+
             return React.createElement(
               'div',
-              { className: 'row' },
+              { className: 'row-fluid' },
               React.createElement(
                 'div',
                 { className: 'col-xs-12 col-md-12' },
-                this.renderCarousel()
+                React.createElement(
+                  MediaQuery,
+                  { query: '(min-device-width: 1224px)' },
+                  React.createElement(
+                    Carousel,
+                    null,
+                    this.renderCharts({ charts: charts, width: 400, height: 400 })
+                  )
+                ),
+                React.createElement(
+                  MediaQuery,
+                  { query: '(max-device-width: 1224px)' },
+                  this.renderCharts({ charts: charts, width: 300, height: 300 })
+                )
               )
             );
           }
@@ -59193,29 +59916,40 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
                 { className: 'navbar navbar-default' },
                 React.createElement(
                   'div',
-                  { className: 'navbar-header' },
-                  React.createElement('button', { type: 'button',
-                    className: 'navbar-toggle',
-                    'data-toggle': 'collapse',
-                    'data-target': '.navbar-collapse' }),
+                  { className: 'container-fluid' },
                   React.createElement(
                     'div',
-                    { className: 'navbar-brand' },
+                    { className: 'navbar-header' },
                     React.createElement(
-                      Link,
-                      { to: 'blijdorp/home' },
-                      'Blijdorp JO11-1'
+                      'button',
+                      { type: 'button',
+                        className: 'navbar-toggle',
+                        'data-toggle': 'collapse',
+                        'data-target': '.navbar-collapse',
+                        'aria-controls': 'navbar' },
+                      React.createElement('span', { className: 'icon-bar' }),
+                      React.createElement('span', { className: 'icon-bar' }),
+                      React.createElement('span', { className: 'icon-bar' })
+                    ),
+                    React.createElement(
+                      'div',
+                      { className: 'navbar-brand' },
+                      React.createElement(
+                        Link,
+                        { to: 'blijdorp/home' },
+                        'Blijdorp JO11-1'
+                      )
                     )
-                  )
-                ),
-                React.createElement(
-                  'div',
-                  { className: 'navbar-collapse collapse' },
+                  ),
                   React.createElement(
-                    'ul',
-                    { className: 'nav navbar-nav' },
-                    this.renderItems(),
-                    React.createElement(ChooseSeason, null)
+                    'div',
+                    { className: 'navbar-collapse collapse' },
+                    React.createElement(
+                      'ul',
+                      { className: 'nav navbar-nav' },
+                      this.renderItems(),
+                      React.createElement(ChooseSeason, null)
+                    )
                   )
                 )
               ),
