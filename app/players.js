@@ -48,20 +48,10 @@ export class Players extends React.Component {
     }
   }
   
-  renderHeader() {
-    return (
-        <div className='row'>
-          <div className='col-md-6'>
-            <h2>{this.props.metric}</h2>
-          </div>
-          <div className='col-md-6'>
-          </div>
-        </div>
-    )
-  }
-
   renderTreeMap() {
     return (
+      <div>
+        <h4>{this.props.metric}</h4>
         <Treemap
           data={{title: '', children: this.state.items}}
           height={400}
@@ -70,12 +60,15 @@ export class Players extends React.Component {
           colorRange={this.props.colorRange || ['white', 'green']}
           colorType={this.props.colorType || 'linear'}
         />
+      </div>
     )
   }
 
   renderTable() {
     return (
-      <BootstrapTable tableStyle={{margin: 0}} data={this.state.players} striped={true}>
+      <div>
+        <h4>{this.props.metric}</h4>
+        <BootstrapTable tableStyle={{margin: 0}} data={this.state.players} striped={true}>
         <TableHeaderColumn isKey={true} dataField='id' hidden={true}>
           Id
         </TableHeaderColumn>
@@ -95,16 +88,17 @@ export class Players extends React.Component {
           Gemiddelde
         </TableHeaderColumn>
       </BootstrapTable>
+      </div>
     )
   }
 
   renderCarousel() {
     return (
       <Carousel>
-        <div style={{width: '450px', height: '450px', margin: '0 auto'}}>
+        <div style={{width: '450px', height: '500px', margin: '0 auto'}}>
         { this.renderTable() }
         </div>
-        <div style={{width: '450px', height: '450px', margin: '0 auto'}}>
+        <div style={{width: '450px', height: '500px', margin: '0 auto'}}>
         { this.renderTreeMap() }
       </div>
       </Carousel>
