@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Seasonal from './seasonal'
 import { get } from './api'
+import MediaQuery from 'react-responsive'
 
 export class Table extends Seasonal {
 
@@ -38,25 +39,7 @@ export class Table extends Seasonal {
     })
   }
 
-  renderTeam(t, idx) {
-    return (
-      <tr key={idx} className={t.team === 'Blijdorp' ? 'active' : ''}>
-        <td style={{textAlign: 'right'}}>{idx + 1 + '.'}</td>
-        <td>{t.team === 'Blijdorp' ? <b>{t.team}</b> : t.team}</td>
-        <td style={{textAlign: 'right'}}>{t.matches.total}</td>
-        <td style={{textAlign: 'right'}}>{t.matches.wins}</td>
-        <td style={{textAlign: 'right'}}>{t.matches.draws}</td>
-        <td style={{textAlign: 'right'}}>{t.matches.losses}</td>
-        <td style={{textAlign: 'right'}}>{t.points}</td>
-        <td style={{textAlign: 'right'}}>{t.goals.for}</td>
-        <td style={{textAlign: 'right'}}>{t.goals.against}</td>
-        <td style={{textAlign: 'right'}}>{t.goals.diff > 0 ? '+' + t.goals.diff : t.goals.diff}</td>
-      </tr>
-    )
-  }
-
-  renderHead() {
-    let cols = ['G', 'W', 'GL', 'V', 'P', 'DPV', 'DPT', 'DS']
+  renderHead(cols) {
     let headers = cols.map((c) => {
       return (
         <th style={{width: '10%', textAlign: 'right'}}>{c}</th>
@@ -72,20 +55,75 @@ export class Table extends Seasonal {
     )
   }
 
+  renderForMobile() {
+    return (
+      <table className='table' style={{margin: '0px'}}>
+        <thead>
+        { this.renderHead(['G', 'P']) }
+        </thead>
+        <tbody>
+        {
+          this.state.data.map((t, idx) => {
+            return (
+              <tr key={idx} className={t.team === 'Blijdorp' ? 'active' : ''}>
+                <td style={{textAlign: 'right'}}>{idx + 1 + '.'}</td>
+                <td>{t.team === 'Blijdorp' ? <b>{t.team}</b> : t.team}</td>
+                <td style={{textAlign: 'right'}}>{t.matches.total}</td>
+                <td style={{textAlign: 'right'}}>{t.points}</td>
+              </tr>
+            )
+          })
+        }
+        </tbody>
+      </table>
+    )
+  }
+
+  renderForDesktop() {
+    return (
+      <table className='table' style={{margin: '0px'}}>
+        <thead>
+        {
+          this.renderHead(['G', 'W', 'GL', 'V', 'P', 'DPV', 'DPT', 'DS'])
+        }
+        </thead>
+        <tbody>
+        {
+          this.state.data.map((t, idx) => {
+            let diff = t.goals.diff > 0 ? '+' + t.goals.diff : t.goals.diff
+            return (
+              <tr key={idx} className={t.team === 'Blijdorp' ? 'active' : ''}>
+                <td style={{textAlign: 'right'}}>{idx + 1 + '.'}</td>
+                <td>{t.team === 'Blijdorp' ? <b>{t.team}</b> : t.team}</td>
+                <td style={{textAlign: 'right'}}>{t.matches.total}</td>
+                <td style={{textAlign: 'right'}}>{t.matches.wins}</td>
+                <td style={{textAlign: 'right'}}>{t.matches.draws}</td>
+                <td style={{textAlign: 'right'}}>{t.matches.losses}</td>
+                <td style={{textAlign: 'right'}}>{t.points}</td>
+                <td style={{textAlign: 'right'}}>{t.goals.for}</td>
+                <td style={{textAlign: 'right'}}>{t.goals.against}</td>
+                <td style={{textAlign: 'right'}}>{diff}</td>
+              </tr>
+            )
+          })
+        }
+        </tbody>
+      </table>
+    )
+  }
+
   render() {
     return (
-      <div className='row'>
-      <div className='col-xs-12 col-md-12'>
-        <table className='table' style={{margin: '0px'}}>
-          <thead>
-            { this.renderHead() }
-          </thead>
-          <tbody>
-            { this.state.data.map((t, idx) => this.renderTeam(t, idx)) }
-          </tbody>
-        </table>
+      <div className='row-fluid'>
+        <div className='col-xs-12 col-md-12'>
+          <MediaQuery query='(min-device-width: 1224px)'>
+            { this.renderForDesktop() }
+          </MediaQuery>
+          <MediaQuery query='(max-device-width: 1224px)'>
+            { this.renderForMobile() }
+          </MediaQuery>      
         </div>
-        </div>
+      </div>
     )
   }
 }

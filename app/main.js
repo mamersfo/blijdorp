@@ -120,21 +120,27 @@ class Main extends React.Component {
     return (
       <div>
         <nav className='navbar navbar-default'>
-          <div className='navbar-header'>
-            <button type='button'
-              className='navbar-toggle'
-              data-toggle='collapse'
-              data-target='.navbar-collapse'>
-            </button>
-            <div className='navbar-brand'>
-              <Link to='blijdorp/home'>Blijdorp JO11-1</Link>
+          <div className='container-fluid'>
+            <div className='navbar-header'>
+              <button type='button'
+                className='navbar-toggle'
+                data-toggle='collapse'
+                data-target='.navbar-collapse'
+                aria-controls='navbar'>
+                <span className='icon-bar'></span>
+                <span className='icon-bar'></span>
+                <span className='icon-bar'></span>
+              </button>
+              <div className='navbar-brand'>
+                <Link to='blijdorp/home'>Blijdorp JO11-1</Link>
+              </div>
             </div>
-          </div>
-          <div className='navbar-collapse collapse'>
-            <ul className='nav navbar-nav'>
-              {this.renderItems()}
-              <ChooseSeason />
-            </ul>
+            <div className='navbar-collapse collapse'>
+              <ul className='nav navbar-nav'>
+                {this.renderItems()}
+                <ChooseSeason />
+              </ul>
+            </div>
           </div>
         </nav>
         <div className='container-fluid'>

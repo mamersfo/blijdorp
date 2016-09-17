@@ -6,6 +6,7 @@ import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table'
 import Carousel from 'nuka-carousel'
 import 'react-vis/main.css!'
 import 'react-bootstrap-table/css/react-bootstrap-table.min.css!'
+import MediaQuery from 'react-responsive'
 
 export class Players extends React.Component {
 
@@ -96,20 +97,57 @@ export class Players extends React.Component {
     return (
       <Carousel>
         <div style={{width: '450px', height: '500px', margin: '0 auto'}}>
-        { this.renderTable() }
+          <h4>{this.props.metric}</h4>
+          <BootstrapTable tableStyle={{margin: 0}} data={this.state.players} striped={true}>
+            <TableHeaderColumn isKey={true} dataField='id' hidden={true}>
+              Id
+            </TableHeaderColumn>
+            <TableHeaderColumn dataField='name' dataSort={true} width='100'>
+              Speler
+            </TableHeaderColumn>
+            <TableHeaderColumn dataField='total' dataSort={true} width='100'
+              dataAlign='end'>
+              Totaal
+            </TableHeaderColumn>
+            <TableHeaderColumn dataField='matches' dataSort={true} width='100'
+              dataAlign='end'>
+              Wedstrijden
+            </TableHeaderColumn>
+            <TableHeaderColumn dataField='average' dataSort={true} width='100'
+              dataAlign='end'>
+              Gemiddelde
+            </TableHeaderColumn>
+          </BootstrapTable>
         </div>
         <div style={{width: '450px', height: '500px', margin: '0 auto'}}>
-        { this.renderTreeMap() }
-      </div>
+          { this.renderTreeMap() }
+        </div>
       </Carousel>
     )
   }
 
   render() {
     return (
-      <div className='row'>
+      <div className='row-fluid'>
         <div className='col-xs-12 col-md-12'>
-          { this.renderCarousel() }
+          <MediaQuery query='(min-device-width: 1224px)'>
+            { this.renderCarousel() }
+          </MediaQuery>
+          <MediaQuery query='(max-device-width: 1224px)'>
+            <h4>{this.props.metric}</h4>
+            <BootstrapTable tableStyle={{margin: 0}} data={this.state.players} striped={true}>
+              <TableHeaderColumn isKey={true} dataField='id' hidden={true}>
+                Id
+              </TableHeaderColumn>
+              <TableHeaderColumn dataField='name' dataSort={true} width='100'>
+                Speler
+              </TableHeaderColumn>
+              <TableHeaderColumn dataField='total' dataSort={true} width='100'
+                dataAlign='end'>
+                Totaal
+              </TableHeaderColumn>
+            </BootstrapTable>
+          </MediaQuery>
         </div>
       </div>
     )

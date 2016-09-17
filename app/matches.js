@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Accordion, AccordionItem } from 'react-sanfona'
 import Seasonal from './seasonal'
 import { get } from './api'
+import MediaQuery from 'react-responsive'
 
 export class Matches extends Seasonal {
 
@@ -10,10 +11,27 @@ export class Matches extends Seasonal {
     super(props)
     this.state = { filename: 'matches', data: [] }
     this.handleChange = this.handleChange.bind(this)
+    this.renderContent = this.renderContent.bind(this)
+    this.renderVideo = this.renderVideo.bind(this)
   }
 
   renderMap(m) {
     return m ? Object.keys(m).map((k) => k + ' (' + m[k] + ') ') : 'geen'
+  }
+
+  renderVideo(id) {
+    const src = 'https://www.youtube.com/embed/' + id
+
+    return (
+      <div>
+        <MediaQuery query='(min-device-width: 1224px)'>
+          <iframe width={420} height={235} src={src}></iframe>
+        </MediaQuery>
+        <MediaQuery query='(max-device-width: 1224px)'>
+          <iframe width={275} height={154} src={src}></iframe>
+        </MediaQuery>      
+      </div>
+    )
   }
 
   renderContent(m, idx) {
@@ -24,8 +42,7 @@ export class Matches extends Seasonal {
         content = m.text
         break
       case 'youtube':
-        const src = 'https://www.youtube.com/embed/' + m.videoId
-        content = <iframe width={420} height={235} src={src}></iframe>
+        content = this.renderVideo(m.videoId)
         break
       case 'image':
         content = m.download ? <a href={m.download} target='_blank'><img src={m.src}></img></a> : <img src={m.src}></img>
@@ -103,13 +120,13 @@ export class Matches extends Seasonal {
   
   render() {
     return (
-      <div className='row'>
-      <div className='col-xs-12 col-md-12'>
-        <Accordion style={{margin: '0px'}} onChange={this.handleChange}>
-        { this.renderItems() }
-        </Accordion>
+      <div className='row-fluid'>
+        <div className='col-xs-12 col-md-12'>
+          <Accordion style={{margin: '0px'}} onChange={this.handleChange}>
+          { this.renderItems() }
+          </Accordion>
         </div>
-        </div>
+      </div>
     )
   }
 }

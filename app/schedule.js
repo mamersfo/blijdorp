@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Seasonal from './seasonal'
+import MediaQuery from 'react-responsive'
 
 export class Schedule extends Seasonal {
 
@@ -50,52 +51,84 @@ export class Schedule extends Seasonal {
     }
   }
 
-  renderMatch(m) {
+  renderForDesktop() {
     return (
-      <tr key={m.date}>
-        <td>
-          {m.date.toLocaleDateString(
-            'NL-nl', {day: 'numeric', month: 'long'})}
-        </td>
-        <td>
-        {m.teams ? m.date.toLocaleTimeString(
-          'Nl-nl', {hour: '2-digit', minute: '2-digit'}) : 'vrij'}
-        </td>
-        <td>{this.gatheringTime(m)}</td>
-        { this.renderTeam(m, 0) }
-        { this.renderTeam(m, 1) }
-        <td>{m.absent}</td>
-        <td>{m.referee}</td>
-      </tr>
-    )
+      <table className='table table-hover'>
+        <thead>
+          <tr>
+            <th style={{width: '15%'}}>Datum</th>
+            <th style={{width: '10%'}}>Aftrap</th>
+            <th style={{width: '10%'}}>Verzamelen</th>
+            <th style={{width: '20%'}}>Thuisploeg</th>
+            <th style={{width: '20%'}}>Bezoekers</th>
+            <th>Afmeldingen</th>
+            <th>Scheidsrechter</th>
+          </tr>
+        </thead>
+        <tbody>
+        {
+          this.state.data.map((m) => {
+            return (
+              <tr>
+                <td>{m.date.toLocaleDateString(
+                  'NL-nl', {day: 'numeric', month: 'long'})}</td>
+                <td>{m.teams ? m.date.toLocaleTimeString(
+                  'Nl-nl', {hour: '2-digit', minute: '2-digit'}) : 'vrij'}</td>
+                <td>{this.gatheringTime(m)}</td>
+                { this.renderTeam(m, 0) }
+                { this.renderTeam(m, 1) }
+                <td>{m.absent}</td>
+                <td>{m.referee}</td>
+              </tr>
+            )
+          })
+        }
+        </tbody>
+      </table>
+    )      
   }
-
-  renderHead() {
+  
+  renderForMobile() {
     return (
-      <tr>
-        <th style={{width: '15%'}}>Datum</th>
-        <th style={{width: '10%'}}>Aftrap</th>
-        <th style={{width: '10%'}}>Verzamelen</th>
-        <th style={{width: '20%'}}>Thuisploeg</th>
-        <th style={{width: '20%'}}>Bezoekers</th>
-        <th>Afmeldingen</th>
-        <th>Scheidsrechter</th>
-      </tr>
-    )
+      <table className='table table-hover'>
+        <thead>
+          <tr>
+            <th style={{width: '20%'}}>Datum</th>
+            <th style={{width: '20%'}}>Aftrap</th>
+            <th style={{width: '30%'}}>Thuisploeg</th>
+            <th style={{width: '30%'}}>Bezoekers</th>
+          </tr>
+        </thead>
+        <tbody>
+        {
+          this.state.data.map((m) => {
+            return (
+              <tr>
+                <td>{m.date.toLocaleDateString(
+                  'NL-nl', {day: 'numeric', month: 'short'})}</td>
+                <td>{m.teams ? m.date.toLocaleTimeString(
+                  'NL-nl', {hour: '2-digit', minute: '2-digit'}) : 'vrij'}</td>
+                { this.renderTeam(m, 0) }
+                { this.renderTeam(m, 1) }
+              </tr>
+            )
+          })
+        }
+        </tbody>
+      </table>
+    )      
   }
 
   render() {
     return (
-      <div className='row'>
+      <div className='row-fluid'>
         <div className='col-xs-12 col-md-12'>
-        <table className='table table-hover'>
-          <thead>
-          {this.renderHead()}
-          </thead>
-          <tbody>
-          { this.state.data.map((m) => this.renderMatch(m)) }
-          </tbody>
-        </table>
+          <MediaQuery query='(min-device-width: 1224px)'>
+            { this.renderForDesktop() }
+          </MediaQuery>
+          <MediaQuery query='(max-device-width: 1224px)'>
+            { this.renderForMobile() }
+          </MediaQuery>
         </div>
       </div>
     )

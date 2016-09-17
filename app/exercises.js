@@ -4,6 +4,7 @@ import { Accordion, AccordionItem } from 'react-sanfona'
 import { Modal,ModalManager,Effect} from 'react-dynamic-modal'
 import TokenInput from 'react-tokeninput'
 import * as Combobox from 'react-tokeninput'
+import MediaQuery from 'react-responsive'
 
 function compare(a, b) {
   if (a.name < b.name) return -1
@@ -50,6 +51,23 @@ export default class Exercises extends React.Component {
     })
   }
 
+  renderYoutube(url) {
+    return (
+      <div>
+        <MediaQuery query='(min-device-width: 1224px)'>
+          <iframe style={{marginTop: '12px'}}
+            width={420} height={235} src={url}
+            frameborder={0} allowFullscreen={true}></iframe>
+        </MediaQuery>
+        <MediaQuery query='(max-device-width: 1224px)'>
+          <iframe style={{marginTop: '12px'}}
+            width={245} height={137} src={url}
+            frameborder={0} allowFullscreen={true}></iframe>
+        </MediaQuery>      
+      </div>
+    )
+  }
+
   renderVideo(m) {
     if ( undefined === m.v ) {
       return <span>{m.name}</span>
@@ -62,9 +80,7 @@ export default class Exercises extends React.Component {
           <div>{m.name}<img src={img}
             style={{float: 'right', width: '24px', height: '24px'}}></img>
           </div>
-          <iframe style={{marginTop: '12px'}}
-            width={420} height={235} src={url}
-            frameborder={0} allowFullscreen={true}></iframe>
+          { this.renderYoutube(url) }
         </div>
       )      
     }    
@@ -151,17 +167,20 @@ export default class Exercises extends React.Component {
   }
 
   renderExercises() {
-    // let selected = this.state.selected.length > 0 ?
-    //     this.state.selected : this.state.exercises
-    
-    return this.state.selected.map((m, idx) => {
-      return (
-        <AccordionItem title={m.name} slug={idx} key={m.uuid}>
-          { this.renderExerciseText(m) }
-          { this.renderVariations(m) }
-        </AccordionItem>  
-      )
-    })
+    return (
+      <Accordion style={{margin: '0px'}} onChange={this.handleAccordionChange}>
+        { 
+          this.state.selected.map((m, idx) => {
+            return (
+                <AccordionItem title={m.name} slug={idx} key={m.uuid}>
+                { this.renderExerciseText(m) }
+              { this.renderVariations(m) }
+              </AccordionItem>  
+            )
+          })
+        }
+      </Accordion>
+    )
   }
 
   filterExercises({categories, tokens}) {
@@ -242,7 +261,7 @@ export default class Exercises extends React.Component {
     })
 
     return (
-      <div>
+      <fieldset>
         <div style={{marginBottom: '20px'}}>
           <h4>Categorie</h4>
           {
@@ -266,7 +285,7 @@ export default class Exercises extends React.Component {
             onInput={this.handleTokenInput}
           />
         </div>
-      </div>
+      </fieldset>
     )
   }
 
@@ -282,17 +301,23 @@ export default class Exercises extends React.Component {
 
   render() {
     return (
-      <div className='row'>
-        <div className='col-xs-3 col-md-3'>
-          <fieldset>
+      <div className='row-fluid'>
+        <MediaQuery query='(min-device-width: 1224px)'>
+          <div className='col-xs-3 col-md-3'>
             { this.renderFilters() }
-          </fieldset>
-        </div>
-        <div className='col-xs-9 col-md-9'>
-          <Accordion style={{margin: '0px'}} onChange={this.handleAccordionChange}>
-          { this.renderExercises() }
-          </Accordion>
-        </div>
+          </div>
+          <div className='col-xs-9 col-md-9'>
+            { this.renderExercises() }
+          </div>
+        </MediaQuery>
+        <MediaQuery query='(max-device-width: 1224px)'>
+          <div className='col-xs-12 col-md-12'>
+            { this.renderFilters() }
+          </div>
+          <div className='col-xs-12 col-md-12'>
+            { this.renderExercises() }
+          </div>
+        </MediaQuery>
       </div>
     )
   }

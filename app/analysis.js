@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, HeatmapSeries } from 'react-vis'
 import Carousel from 'nuka-carousel'
 import 'react-vis/main.css!'
+import MediaQuery from 'react-responsive'
 
 export class Analysis extends React.Component {
 
@@ -134,11 +135,11 @@ export class Analysis extends React.Component {
     })
   }
 
-  renderBarChart({title, series, xType='linear', yType='linear', stackBy=''}) {
+  renderBarChart({title, series, xType='linear', yType='linear', stackBy='', width, height}) {
     return (
       <div>
         <h4>{title}</h4>
-        <XYPlot width={400} height={400} xType={xType} yType={yType} stackBy={stackBy}>
+        <XYPlot width={width} height={height} xType={xType} yType={yType} stackBy={stackBy}>
           <VerticalGridLines />
           <HorizontalGridLines />
           <XAxis />
@@ -149,78 +150,60 @@ export class Analysis extends React.Component {
     )
   }
 
-  renderHeader() {
+  renderCharts({charts, width, height}) {
     return (
-      <div className='row'>
-        <div className='col-md-6'>
-          <h2>Analyse</h2>
-        </div>
-        <div className='col-md-6'>
-        </div>
-      </div>
-    )
-  }
-
-  renderCarousel() {
-    return (
-      <Carousel>
-        <div style={{width: '400px', height: '500px', margin: '0 auto'}}>
-        {
-          this.renderBarChart({
-            title: 'aantal doelpunten per tijdseenheid (5 minuten), Blijdorp vs. tegenstander',
-            series: this.state.minute,
-            stackBy: 'y'
-          })
-        }
-        </div>
-        <div style={{width: '400px', height: '500px', margin: '0 auto'}}>
-        {
-          this.renderBarChart({
-            title: 'aantal doelpunten per tactische situatie, Blijdorp vs. tegenstander',
-            series: this.state.situation,
-            xType: 'ordinal'
-          })
-        }  
-        </div>
-        <div style={{width: '400px', height: '500px', margin: '0 auto'}}>
-        {
-          this.renderBarChart({
-            title: 'aantal doelpunten per type inzet, Blijdorp vs. tegenstander',
-            series: this.state.shots,
-            xType: 'ordinal'
-          })
-        }  
-        </div>
-        <div style={{width: '400px', height: '500px', margin: '0 auto'}}>
-        {
-          this.renderBarChart({
-            title: 'aantal doelpunten uit standaardsituaties, Blijdorp vs. tegenstander',
-            series: this.state.standard,
-            xType: 'ordinal'
-          })
-        }  
-        </div>
-
-        <div style={{width: '400px', height: '500px', margin: '0 auto'}}>
-        {
-          this.renderBarChart({
-            title: 'aantal doelpunten per flank, aanval opgezet vs. afgerond',
-            series: this.state.flank,
-            xType: 'ordinal'
-          })
-        }  
-        </div>
-      </Carousel>
+      charts.map((c) => {
+        return (
+          <div style={{width: width, height: height+100, margin: '0 auto'}}>
+            { this.renderBarChart({...c, width: width, height: height}) }
+          </div>
+        )
+      })
     )
   }
 
   render() {
+    let charts = [
+      {
+        title: 'aantal doelpunten per tijdseenheid (5 minuten), Blijdorp vs. tegenstander',
+        series: this.state.minute,
+        stackBy: 'y'
+      },
+      {
+        title: 'aantal doelpunten per tactische situatie, Blijdorp vs. tegenstander',
+        series: this.state.situation,
+        xType: 'ordinal'
+      },
+      {
+        title: 'aantal doelpunten per type inzet, Blijdorp vs. tegenstander',
+        series: this.state.shots,
+        xType: 'ordinal'
+      },
+      {
+        title: 'aantal doelpunten uit standaardsituaties, Blijdorp vs. tegenstander',
+        series: this.state.standard,
+        xType: 'ordinal'
+      },
+      {
+        title: 'aantal doelpunten per flank, aanval opgezet vs. afgerond',
+        series: this.state.flank,
+        xType: 'ordinal'
+      }
+    ]
+    
     return (
-      <div className='row'>
-      <div className='col-xs-12 col-md-12'>
-        { this.renderCarousel() }
-      </div>
+      <div className='row-fluid'>
+        <div className='col-xs-12 col-md-12'>
+          <MediaQuery query='(min-device-width: 1224px)'>
+            <Carousel>
+              { this.renderCharts({charts, width: 400, height: 400}) }
+            </Carousel>
+          </MediaQuery>
+          <MediaQuery query='(max-device-width: 1224px)'>
+            { this.renderCharts({charts, width: 300, height: 300}) }
+          </MediaQuery>
         </div>
+      </div>
     )
   }
 }
