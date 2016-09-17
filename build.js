@@ -4539,11 +4539,11 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
             var links = [{
               id: 1,
               href: 'http://www.rvv-blijdorp.nl',
-              img: 'images/geography-24.png'
+              img: '/blijdorp/images/geography-24.png'
             }, {
               id: 2,
               href: 'https://twitter.com/BlijdorpSelec06',
-              img: 'images/twitter-24.png'
+              img: '/blijdorp/images/twitter-24.png'
             }];
 
             return links.map(function (link) {
@@ -4563,53 +4563,45 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'container-fluid' },
+              { className: 'col-xs-12 col-md-12' },
               React.createElement(
                 'div',
-                { className: 'row' },
+                { className: 'jumbotron', style: { margin: '0px' } },
+                React.createElement('img', { src: '/blijdorp/images/team-1617.png',
+                  style: {
+                    position: 'relative',
+                    float: 'right',
+                    marginLeft: '30px',
+                    'WebkitFilter': 'saturate(30%)'
+                  } }),
+                React.createElement(
+                  'h1',
+                  null,
+                  'Blijdorp JO11-1'
+                ),
+                React.createElement(
+                  'p',
+                  null,
+                  'Website gewijd aan het selectieteam voor Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je onder meer ',
+                  React.createElement(
+                    Link,
+                    { to: '/blijdorp/verslag' },
+                    'wedstrijdverslagen'
+                  ),
+                  ', statistieken en ',
+                  React.createElement(
+                    Link,
+                    { to: '/blijdorp/oefeningen' },
+                    'oefenstof'
+                  ),
+                  '.'
+                ),
                 React.createElement(
                   'div',
-                  { className: 'col-md-9' },
-                  React.createElement(
-                    'div',
-                    { className: 'jumbotron', style: { height: '500px', margin: '0px' } },
-                    React.createElement('img', { src: 'images/team-1617.png',
-                      style: {
-                        position: 'relative',
-                        float: 'right',
-                        marginLeft: '30px',
-                        'WebkitFilter': 'saturate(30%)'
-                      } }),
-                    React.createElement(
-                      'h1',
-                      null,
-                      'Blijdorp JO11-1'
-                    ),
-                    React.createElement(
-                      'p',
-                      null,
-                      'Website gewijd aan het selectieteam voor Blijdorpspelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je onder meer ',
-                      React.createElement(
-                        Link,
-                        { to: '/blijdorp/verslag' },
-                        'wedstrijdverslagen'
-                      ),
-                      ', statistieken en ',
-                      React.createElement(
-                        Link,
-                        { to: '/blijdorp/oefeningen' },
-                        'oefenstof'
-                      ),
-                      '.'
-                    ),
-                    React.createElement(
-                      'div',
-                      null,
-                      this.renderLinks()
-                    ),
-                    React.createElement(Update, null)
-                  )
-                )
+                  null,
+                  this.renderLinks()
+                ),
+                React.createElement(Update, null)
               )
             );
           }
@@ -17548,7 +17540,14 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2.js", ["npm:react-bootstr
   return module.exports;
 });
 
-System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'app/api.js', 'npm:react-bootstrap-table@2.4.2.js', 'npm:nuka-carousel@2.0.3.js'], function (_export) {
+System.registerDynamic("npm:react-bootstrap-table@2.4.2/css/react-bootstrap-table.min.css!github:systemjs/plugin-css@0.1.27.js", [], false, function ($__require, $__exports, $__module) {
+  var _retrieveGlobal = System.get("@@global-helpers").prepareGlobal($__module.id, null, null);
+
+  (function ($__global) {})(this);
+
+  return _retrieveGlobal();
+});
+System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'app/api.js', 'npm:react-bootstrap-table@2.4.2.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@0.1.27.js', 'npm:react-bootstrap-table@2.4.2/css/react-bootstrap-table.min.css!github:systemjs/plugin-css@0.1.27.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, React, connect, Treemap, get, BootstrapTable, TableHeaderColumn, Carousel, Players;
 
   return {
@@ -17573,7 +17572,7 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       TableHeaderColumn = _npmReactBootstrapTable242Js.TableHeaderColumn;
     }, function (_npmNukaCarousel203Js) {
       Carousel = _npmNukaCarousel203Js['default'];
-    }],
+    }, function (_npmReactVis042MainCssGithubSystemjsPluginCss0127Js) {}, function (_npmReactBootstrapTable242CssReactBootstrapTableMinCssGithubSystemjsPluginCss0127Js) {}],
     execute: function () {
       'use strict';
 
@@ -17720,16 +17719,11 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'container-fluid' },
-              this.renderHeader(),
+              { className: 'row' },
               React.createElement(
                 'div',
-                { className: 'row' },
-                React.createElement(
-                  'div',
-                  { className: 'col-md-9' },
-                  this.renderCarousel()
-                )
+                { className: 'col-xs-12 col-md-12' },
+                this.renderCarousel()
               )
             );
           }
@@ -18031,23 +18025,14 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'container-fluid' },
-              React.createElement(
-                'h2',
-                null,
-                'verslagen'
-              ),
+              { className: 'row' },
               React.createElement(
                 'div',
-                { className: 'row' },
+                { className: 'col-xs-12 col-md-12' },
                 React.createElement(
-                  'div',
-                  { className: 'col-md-9' },
-                  React.createElement(
-                    Accordion,
-                    { style: { margin: '0px' }, onChange: this.handleChange },
-                    this.renderItems()
-                  )
+                  Accordion,
+                  { style: { margin: '0px' }, onChange: this.handleChange },
+                  this.renderItems()
                 )
               )
             );
@@ -21822,32 +21807,23 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'container-fluid' },
+              { className: 'row' },
               React.createElement(
-                'h2',
-                null,
-                'oefeningen'
+                'div',
+                { className: 'col-xs-3 col-md-3' },
+                React.createElement(
+                  'fieldset',
+                  null,
+                  this.renderFilters()
+                )
               ),
               React.createElement(
                 'div',
-                { className: 'row' },
+                { className: 'col-xs-9 col-md-9' },
                 React.createElement(
-                  'div',
-                  { className: 'col-md-3' },
-                  React.createElement(
-                    'fieldset',
-                    null,
-                    this.renderFilters()
-                  )
-                ),
-                React.createElement(
-                  'div',
-                  { className: 'col-md-6' },
-                  React.createElement(
-                    Accordion,
-                    { style: { margin: '0px' }, onChange: this.handleAccordionChange },
-                    this.renderExercises()
-                  )
+                  Accordion,
+                  { style: { margin: '0px' }, onChange: this.handleAccordionChange },
+                  this.renderExercises()
                 )
               )
             );
@@ -22033,33 +22009,24 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
 
             return React.createElement(
               'div',
-              { className: 'container-fluid' },
-              React.createElement(
-                'h2',
-                null,
-                'programma'
-              ),
+              { className: 'row' },
               React.createElement(
                 'div',
-                { className: 'row' },
+                { className: 'col-xs-12 col-md-12' },
                 React.createElement(
-                  'div',
-                  { className: 'col-md-9' },
+                  'table',
+                  { className: 'table table-hover' },
                   React.createElement(
-                    'table',
-                    { className: 'table table-hover' },
-                    React.createElement(
-                      'thead',
-                      null,
-                      this.renderHead()
-                    ),
-                    React.createElement(
-                      'tbody',
-                      null,
-                      this.state.data.map(function (m) {
-                        return _this.renderMatch(m);
-                      })
-                    )
+                    'thead',
+                    null,
+                    this.renderHead()
+                  ),
+                  React.createElement(
+                    'tbody',
+                    null,
+                    this.state.data.map(function (m) {
+                      return _this.renderMatch(m);
+                    })
                   )
                 )
               )
@@ -22305,33 +22272,24 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
 
             return React.createElement(
               'div',
-              { className: 'container-fluid' },
-              React.createElement(
-                'h2',
-                null,
-                'stand'
-              ),
+              { className: 'row' },
               React.createElement(
                 'div',
-                { className: 'row' },
+                { className: 'col-xs-12 col-md-12' },
                 React.createElement(
-                  'div',
-                  { className: 'col-md-9' },
+                  'table',
+                  { className: 'table', style: { margin: '0px' } },
                   React.createElement(
-                    'table',
-                    { className: 'table', style: { margin: '0px' } },
-                    React.createElement(
-                      'thead',
-                      null,
-                      this.renderHead()
-                    ),
-                    React.createElement(
-                      'tbody',
-                      null,
-                      this.state.data.map(function (t, idx) {
-                        return _this2.renderTeam(t, idx);
-                      })
-                    )
+                    'thead',
+                    null,
+                    this.renderHead()
+                  ),
+                  React.createElement(
+                    'tbody',
+                    null,
+                    this.state.data.map(function (t, idx) {
+                      return _this2.renderTeam(t, idx);
+                    })
                   )
                 )
               )
@@ -27527,20 +27485,11 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'container-fluid' },
-              React.createElement(
-                'h2',
-                null,
-                'uitslagen'
-              ),
+              { className: 'row' },
               React.createElement(
                 'div',
-                { className: 'row' },
-                React.createElement(
-                  'div',
-                  { className: 'col-md-9' },
-                  this.renderResults()
-                )
+                { className: 'col-xs-12 col-md-12' },
+                this.renderResults()
               )
             );
           }
@@ -55007,7 +54956,14 @@ System.registerDynamic("npm:nuka-carousel@2.0.3.js", ["npm:nuka-carousel@2.0.3/i
   return module.exports;
 });
 
-System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'npm:nuka-carousel@2.0.3.js'], function (_export) {
+System.registerDynamic("npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@0.1.27.js", [], false, function ($__require, $__exports, $__module) {
+  var _retrieveGlobal = System.get("@@global-helpers").prepareGlobal($__module.id, null, null);
+
+  (function ($__global) {})(this);
+
+  return _retrieveGlobal();
+});
+System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@0.1.27.js'], function (_export) {
   var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, get, connect, XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, HeatmapSeries, Carousel, Analysis;
 
   return {
@@ -55037,7 +54993,7 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
       HeatmapSeries = _npmReactVis042Js.HeatmapSeries;
     }, function (_npmNukaCarousel203Js) {
       Carousel = _npmNukaCarousel203Js['default'];
-    }],
+    }, function (_npmReactVis042MainCssGithubSystemjsPluginCss0127Js) {}],
     execute: function () {
       'use strict';
 
@@ -55257,16 +55213,11 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
           value: function render() {
             return React.createElement(
               'div',
-              { className: 'container-fluid' },
-              this.renderHeader(),
+              { className: 'row' },
               React.createElement(
                 'div',
-                { className: 'row' },
-                React.createElement(
-                  'div',
-                  { className: 'col-md-9' },
-                  this.renderCarousel()
-                )
+                { className: 'col-xs-12 col-md-12' },
+                this.renderCarousel()
               )
             );
           }
@@ -59135,10 +59086,6 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       store = createStore(reducer);
       baseUri = '/blijdorp';
       childRoutes = [{
-        id: 1,
-        path: 'home',
-        component: Home
-      }, {
         id: 2,
         path: 'competitie',
         childRoutes: [{
@@ -59242,12 +59189,41 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
               'div',
               null,
               React.createElement(
-                'ul',
-                { className: 'nav nav-tabs' },
-                this.renderItems(),
-                React.createElement(ChooseSeason, null)
+                'nav',
+                { className: 'navbar navbar-default' },
+                React.createElement(
+                  'div',
+                  { className: 'navbar-header' },
+                  React.createElement('button', { type: 'button',
+                    className: 'navbar-toggle',
+                    'data-toggle': 'collapse',
+                    'data-target': '.navbar-collapse' }),
+                  React.createElement(
+                    'div',
+                    { className: 'navbar-brand' },
+                    React.createElement(
+                      Link,
+                      { to: 'blijdorp/home' },
+                      'Blijdorp JO11-1'
+                    )
+                  )
+                ),
+                React.createElement(
+                  'div',
+                  { className: 'navbar-collapse collapse' },
+                  React.createElement(
+                    'ul',
+                    { className: 'nav navbar-nav' },
+                    this.renderItems(),
+                    React.createElement(ChooseSeason, null)
+                  )
+                )
               ),
-              this.props.children
+              React.createElement(
+                'div',
+                { className: 'container-fluid' },
+                this.props.children
+              )
             );
           }
         }]);
@@ -59259,7 +59235,10 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
         path: baseUri,
         component: Main,
         indexRoute: { component: Home },
-        childRoutes: childRoutes
+        childRoutes: [{
+          path: 'home',
+          component: Home
+        }].concat(childRoutes)
       };
 
       ReactDOM.render(React.createElement(
@@ -59270,4 +59249,6 @@ System.register('app/main.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
     }
   };
 });
+(function(c){if (typeof document == 'undefined') return; var d=document,a='appendChild',i='styleSheet',s=d.createElement('style');s.type='text/css';d.getElementsByTagName('head')[0][a](s);s[i]?s[i].cssText=c:s[a](d.createTextNode(c));})
+(".rv-crosshair,.rv-hint{pointer-events:none;position:absolute}.react-bs-table-container .react-bs-table-search-form{margin-bottom:0}.react-bs-table table{margin-bottom:0;table-layout:fixed}.react-bs-table table td,.react-bs-table table th{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.react-bs-table{border:1px solid #ddd;border-radius:5px;margin:5px 10px}.react-bs-table-pagination{margin:10px}.react-bs-table-tool-bar{margin:10px 10px 0}.react-bs-container-header{overflow:hidden;width:100%}.react-bs-container-body{overflow:auto;width:100%}.react-bs-table .table-bordered{border:0}.react-bs-table .table-bordered>thead>tr>td,.react-bs-table .table-bordered>thead>tr>th{border-bottom-width:2px}.react-bs-table .table-bordered>tfoot>tr>td,.react-bs-table .table-bordered>tfoot>tr>th{border-top-width:2px;border-bottom-width:0}.react-bs-table .table-bordered>tbody>tr>td:first-child,.react-bs-table .table-bordered>tbody>tr>th:first-child,.react-bs-table .table-bordered>tfoot>tr>td:first-child,.react-bs-table .table-bordered>tfoot>tr>th:first-child,.react-bs-table .table-bordered>thead>tr>td:first-child,.react-bs-table .table-bordered>thead>tr>th:first-child{border-left-width:0}.react-bs-table .table-bordered>tbody>tr>td:last-child,.react-bs-table .table-bordered>tbody>tr>th:last-child,.react-bs-table .table-bordered>tfoot>tr>td:last-child,.react-bs-table .table-bordered>tfoot>tr>th:last-child,.react-bs-table .table-bordered>thead>tr>td:last-child,.react-bs-table .table-bordered>thead>tr>th:last-child{border-right-width:0}.react-bs-table .table-bordered>thead>tr:first-child>td,.react-bs-table .table-bordered>thead>tr:first-child>th{border-top-width:0}.react-bs-table .table-bordered>tfoot>tr:last-child>td,.react-bs-table .table-bordered>tfoot>tr:last-child>th{border-bottom-width:0}.react-bs-table .react-bs-container-header>table>thead>tr>th{vertical-align:middle}.react-bs-table .react-bs-container-header>table>thead>tr>th .filter{font-weight:400}.react-bs-table .react-bs-container-header>table>thead>tr>th .filter::-webkit-input-placeholder,.react-bs-table .react-bs-container-header>table>thead>tr>th .number-filter-input::-webkit-input-placeholder,.react-bs-table .react-bs-container-header>table>thead>tr>th .select-filter option[value=''],.react-bs-table .react-bs-container-header>table>thead>tr>th .select-filter.placeholder-selected{color:#d3d3d3;font-style:italic}.react-bs-table .react-bs-container-header>table>thead>tr>th .select-filter.placeholder-selected option:not([value='']){color:initial;font-style:initial}.react-bs-table .react-bs-container-header>table>thead>tr>th .date-filter,.react-bs-table .react-bs-container-header>table>thead>tr>th .number-filter{display:flex}.react-bs-table .react-bs-container-header>table>thead>tr>th .date-filter-input,.react-bs-table .react-bs-container-header>table>thead>tr>th .number-filter-input{margin-left:5px;float:left;width:calc(100% - 67px - 5px)}.react-bs-table .react-bs-container-header>table>thead>tr>th .date-filter-comparator,.react-bs-table .react-bs-container-header>table>thead>tr>th .number-filter-comparator{width:67px;float:left}.react-bs-table .react-bs-container-header .sort-column{cursor:pointer}.react-bs-container .textarea-save-btn{position:absolute;z-index:100;right:0;top:-21px}.react-bs-table-no-data{text-align:center}.animated{animation-fill-mode:both}.animated.bounceIn,.animated.bounceOut{animation-duration:.75s}.animated.shake{animation-duration:.3s}@keyframes shake{from,to{transform:translate3d(0,0,0)}10%,50%,90%{transform:translate3d(-10px,0,0)}30%,70%{transform:translate3d(10px,0,0)}}.shake{animation-name:shake}@keyframes bounceIn{20%,40%,60%,80%,from,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:scale3d(.3,.3,.3)}20%{transform:scale3d(1.1,1.1,1.1)}40%{transform:scale3d(.9,.9,.9)}60%{opacity:1;transform:scale3d(1.03,1.03,1.03)}80%{transform:scale3d(.97,.97,.97)}to{opacity:1;transform:scale3d(1,1,1)}}.bounceIn{animation-name:bounceIn}@keyframes bounceOut{20%{transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;transform:scale3d(1.1,1.1,1.1)}to{opacity:0;transform:scale3d(.3,.3,.3)}}.bounceOut{animation-name:bounceOut}.rv-treemap{font-size:12px;position:relative}.rv-treemap__leaf{position:absolute;overflow:hidden}.rv-treemap__leaf__content{padding:10px;overflow:hidden;text-overflow:ellipsis}.rv-table{overflow:hidden}.rv-table__header{position:relative;z-index:100}.rv-table__header__cell{background:#fff;border:1px solid #ccc;position:absolute;font-weight:700;overflow:hidden}.rv-table__header__cell__content{margin:0 4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rv-table__data{overflow:auto}.rv-table__data-inner{position:relative}.rv-table__data__cell{position:absolute;border:1px solid #ccc;overflow:hidden}.rv-table__data__cell__content{margin:0 4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rv-xy-plot{color:#c3c3c3;position:relative}.rv-xy-plot__inner{display:block}.rv-xy-plot__axis path{stroke-width:2px;stroke:#e6e6e9;fill:none}.rv-xy-plot__axis__ticks .tick,.rv-xy-plot__grid-lines line{stroke:#e6e6e9}.rv-xy-plot__axis .tick,.rv-xy-plot__axis__title text{fill:#6B6B76;font-size:11px}.rv-xy-plot__grid-lines .domain{display:none}.rv-xy-plot__series--line{fill:none;stroke:#000;stroke-width:2px}.rv-crosshair{font-size:11px}.rv-crosshair__line{background:#47d3d9;width:1px}.rv-crosshair__inner__content,.rv-hint__content{border-radius:4px;padding:7px 10px;font-size:12px;background:#3A3A48;box-shadow:0 2px 4px rgba(0,0,0,.5);color:#fff}.rv-crosshair__inner{position:absolute;text-align:left;top:0}.rv-crosshair__inner--left{right:4px}.rv-crosshair__inner--right{left:4px}.rv-crosshair__title{font-weight:700;white-space:nowrap}.rv-crosshair__item{white-space:nowrap}.rv-hint__content{text-align:left;white-space:nowrap}.rv-radial-chart__svg{display:block}.rv-radial-chart__series--pie>path{stroke:#fff;stroke-width:1px}");
 //# sourceMappingURL=build.js.map
