@@ -27,7 +27,7 @@ export default class Update extends React.Component {
   render() {
     return (
       <div
-        style={{fontSize: 'x-small', marginTop: '75px'}}>
+        style={{fontSize: 'x-small', marginTop: '50px'}}>
         Laatste update {this.state.updated.toLocaleString('NL-nl')}: {this.state.message}
       </div>
     )

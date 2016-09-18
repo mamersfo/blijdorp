@@ -129,20 +129,22 @@ export default class Exercises extends React.Component {
 
   runModal(e) {
     e.preventDefault()
+
+    let mq = window.matchMedia('@media all and (max-width: 375px)')
+    
     ModalManager.open(
       <Modal
         onRequestClose={() => true}
-        style={{content: {width: '430px', background: 'rgba(191,191,191,0.95)'}}}
+        style={{content: {width: mq.matches ? '430px' : '375px',
+                          background: 'rgba(191,191,191,0.95)',
+                          margin: '10% auto'}}}
         effect={Effect.ScaleUp}>
-          <div className='modal-body'>
-            <img src={e.target.href}/>
-          </div>
-          <div className='modal-footer'>
-          <button
-            type='button'
-            className='btn btn-primary btn-sm'
-            onClick={ModalManager.close}>Sluiten
-          </button>
+        <div className='modal-body'>
+        <img src={e.target.href}
+          width={mq.matches ? '400px' : '345px'}
+          height={mq.matches ? '300px' : '259px'}
+          onClick={ModalManager.close}
+        />
         </div>
       </Modal>
     )
@@ -302,7 +304,7 @@ export default class Exercises extends React.Component {
   render() {
     return (
       <div className='row-fluid'>
-        <MediaQuery query='(min-device-width: 1224px)'>
+        <MediaQuery query='(min-device-width: 768px)'>
           <div className='col-xs-3 col-md-3'>
             { this.renderFilters() }
           </div>
@@ -310,7 +312,7 @@ export default class Exercises extends React.Component {
             { this.renderExercises() }
           </div>
         </MediaQuery>
-        <MediaQuery query='(max-device-width: 1224px)'>
+        <MediaQuery query='(max-device-width: 667px)'>
           <div className='col-xs-12 col-md-12'>
             { this.renderFilters() }
           </div>

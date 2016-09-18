@@ -194,12 +194,12 @@ export class Analysis extends React.Component {
     return (
       <div className='row-fluid'>
         <div className='col-xs-12 col-md-12'>
-          <MediaQuery query='(min-device-width: 1224px)'>
+          <MediaQuery query='(min-device-width: 768px)'>
             <Carousel>
               { this.renderCharts({charts, width: 400, height: 400}) }
             </Carousel>
           </MediaQuery>
-          <MediaQuery query='(max-device-width: 1224px)'>
+          <MediaQuery query='(max-device-width: 667px)'>
             { this.renderCharts({charts, width: 300, height: 300}) }
           </MediaQuery>
         </div>

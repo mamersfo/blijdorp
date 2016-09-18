@@ -41,7 +41,7 @@ export class Results extends Seasonal {
     )
   }
 
-  renderForDesktop() {
+  renderDefault() {
     let content = this.state.data.map((d) => {
       return (
         <li key={d.date} className='grid-item'
@@ -65,7 +65,7 @@ export class Results extends Seasonal {
     )
   }
 
-  renderForMobile() {
+  renderCompact() {
     let latest = this.state.data.find((r) => r.latest)
     if ( latest ) return this.renderResults(latest)
     return null
@@ -75,11 +75,11 @@ export class Results extends Seasonal {
     return (
       <div className='row-fluid'>
         <div className='col-xs-12 col-md-12'>
-          <MediaQuery query='(min-device-width: 1224px)'>
-            { this.renderForDesktop() }
+          <MediaQuery query='(min-device-width: 768px)'>
+            { this.renderDefault() }
           </MediaQuery>
-          <MediaQuery query='(max-device-width: 1224px)'>
-            { this.renderForMobile() }
+          <MediaQuery query='(max-device-width: 667px)'>
+            { this.renderCompact() }
           </MediaQuery>
         </div>
       </div>

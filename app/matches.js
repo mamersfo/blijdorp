@@ -24,10 +24,10 @@ export class Matches extends Seasonal {
 
     return (
       <div>
-        <MediaQuery query='(min-device-width: 1224px)'>
+        <MediaQuery query='(min-device-width: 768px)'>
           <iframe width={420} height={235} src={src}></iframe>
         </MediaQuery>
-        <MediaQuery query='(max-device-width: 1224px)'>
+        <MediaQuery query='(max-device-width: 667px)'>
           <iframe width={275} height={154} src={src}></iframe>
         </MediaQuery>      
       </div>
@@ -58,7 +58,7 @@ export class Matches extends Seasonal {
     if ( m && m.report ) {
       return (
         <div>
-          <div style={{color: '#ababab'}}>
+          <div style={{color: '#333'}}>
             { m.report.content ? m.report.content.map(this.renderContent) : null }
           </div>
           { m.report.author && ( <div>Verslag: { m.report.author }</div> ) }

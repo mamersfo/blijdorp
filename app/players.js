@@ -126,27 +126,35 @@ export class Players extends React.Component {
     )
   }
 
+  renderCompact() {
+    return (
+      <div>
+        <h4>{this.props.metric}</h4>
+        <BootstrapTable tableStyle={{margin: 0}} data={this.state.players} striped={true}>
+          <TableHeaderColumn isKey={true} dataField='id' hidden={true}>
+            Id
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField='name' dataSort={true} width='100'>
+            Speler
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField='total' dataSort={true} width='100'
+            dataAlign='end'>
+            Totaal
+          </TableHeaderColumn>
+        </BootstrapTable>
+      </div>
+    )
+  }
+
   render() {
     return (
       <div className='row-fluid'>
         <div className='col-xs-12 col-md-12'>
-          <MediaQuery query='(min-device-width: 1224px)'>
+          <MediaQuery query='(min-device-width: 768px)'>
             { this.renderCarousel() }
           </MediaQuery>
-          <MediaQuery query='(max-device-width: 1224px)'>
-            <h4>{this.props.metric}</h4>
-            <BootstrapTable tableStyle={{margin: 0}} data={this.state.players} striped={true}>
-              <TableHeaderColumn isKey={true} dataField='id' hidden={true}>
-                Id
-              </TableHeaderColumn>
-              <TableHeaderColumn dataField='name' dataSort={true} width='100'>
-                Speler
-              </TableHeaderColumn>
-              <TableHeaderColumn dataField='total' dataSort={true} width='100'
-                dataAlign='end'>
-                Totaal
-              </TableHeaderColumn>
-            </BootstrapTable>
+          <MediaQuery query='(max-device-width: 667px)'>
+            { this.renderCompact() }
           </MediaQuery>
         </div>
       </div>

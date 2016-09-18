@@ -411,6 +411,7 @@ System.config({
       "npm:core-js@1.2.7/library/modules/es7.object.values.js",
       "npm:core-js@1.2.7/library/modules/$.object-to-array.js",
       "app/schedule.js",
+      "app/datetime.js",
       "app/exercises.js",
       "npm:react-tokeninput@2.1.1.js",
       "npm:react-tokeninput@2.1.1/lib/index.js",

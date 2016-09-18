@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Seasonal from './seasonal'
+import { LocalDate, LocalTime } from './datetime'
 import MediaQuery from 'react-responsive'
 
 export class Schedule extends Seasonal {
@@ -26,8 +27,7 @@ export class Schedule extends Seasonal {
         
         clone.setMinutes(m.date.getMinutes() - 75)
       }
-      return clone.toLocaleTimeString(
-        'NL-nl', { hour: '2-digit', minute: '2-digit' } )
+      return <LocalTime date={clone} />
     }
     return ''
   }
@@ -40,7 +40,7 @@ export class Schedule extends Seasonal {
       } else {
         return (
           <td>
-            <a href={m.website} dataToggle='tooltip' title={m.location} target='_blank'>
+            <a href={m.website} data-toggle='tooltip' title={m.location} target='_blank'>
               {team}
             </a>
           </td>
@@ -51,11 +51,11 @@ export class Schedule extends Seasonal {
     }
   }
 
-  renderForDesktop() {
+  renderDefault() {
     return (
       <table className='table table-hover'>
         <thead>
-          <tr>
+          <tr key={0}>
             <th style={{width: '15%'}}>Datum</th>
             <th style={{width: '10%'}}>Aftrap</th>
             <th style={{width: '10%'}}>Verzamelen</th>
@@ -69,11 +69,9 @@ export class Schedule extends Seasonal {
         {
           this.state.data.map((m) => {
             return (
-              <tr>
-                <td>{m.date.toLocaleDateString(
-                  'NL-nl', {day: 'numeric', month: 'long'})}</td>
-                <td>{m.teams ? m.date.toLocaleTimeString(
-                  'Nl-nl', {hour: '2-digit', minute: '2-digit'}) : 'vrij'}</td>
+              <tr key={m.matchday}>
+                <td><LocalDate date={m.date} month='long'/></td>
+                <td><LocalTime date={m.date} /></td>
                 <td>{this.gatheringTime(m)}</td>
                 { this.renderTeam(m, 0) }
                 { this.renderTeam(m, 1) }
@@ -88,11 +86,11 @@ export class Schedule extends Seasonal {
     )      
   }
   
-  renderForMobile() {
+  renderCompact() {
     return (
       <table className='table table-hover'>
         <thead>
-          <tr>
+          <tr key={0}>
             <th style={{width: '20%'}}>Datum</th>
             <th style={{width: '20%'}}>Aftrap</th>
             <th style={{width: '30%'}}>Thuisploeg</th>
@@ -103,11 +101,9 @@ export class Schedule extends Seasonal {
         {
           this.state.data.map((m) => {
             return (
-              <tr>
-                <td>{m.date.toLocaleDateString(
-                  'NL-nl', {day: 'numeric', month: 'short'})}</td>
-                <td>{m.teams ? m.date.toLocaleTimeString(
-                  'NL-nl', {hour: '2-digit', minute: '2-digit'}) : 'vrij'}</td>
+              <tr key={m.matchday}>
+                <td><LocalDate date={m.date} month='numeric' /></td>
+                <td><LocalTime date={m.date} /></td>
                 { this.renderTeam(m, 0) }
                 { this.renderTeam(m, 1) }
               </tr>
@@ -123,11 +119,11 @@ export class Schedule extends Seasonal {
     return (
       <div className='row-fluid'>
         <div className='col-xs-12 col-md-12'>
-          <MediaQuery query='(min-device-width: 1224px)'>
-            { this.renderForDesktop() }
+          <MediaQuery query='(min-device-width: 768px)'>
+            { this.renderDefault() }
           </MediaQuery>
-          <MediaQuery query='(max-device-width: 1224px)'>
-            { this.renderForMobile() }
+          <MediaQuery query='(max-device-width: 667px)'>
+            { this.renderCompact() }
           </MediaQuery>
         </div>
       </div>

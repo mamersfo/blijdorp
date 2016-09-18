@@ -173,7 +173,7 @@ System.register('app/update.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'np
             return React.createElement(
               'div',
               {
-                style: { fontSize: 'x-small', marginTop: '75px' } },
+                style: { fontSize: 'x-small', marginTop: '50px' } },
               'Laatste update ',
               this.state.updated.toLocaleString('NL-nl'),
               ': ',
@@ -4502,8 +4502,8 @@ System.registerDynamic("npm:react-router@2.6.1.js", ["npm:react-router@2.6.1/lib
   return module.exports;
 });
 
-System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'app/update.js', 'npm:react-router@2.6.1.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, Update, Link, Home;
+System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'app/update.js', 'npm:react-router@2.6.1.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, Update, Link, MediaQuery, Home;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -4520,6 +4520,8 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
       Update = _appUpdateJs['default'];
     }, function (_npmReactRouter261Js) {
       Link = _npmReactRouter261Js.Link;
+    }, function (_npmReactResponsive115Js) {
+      MediaQuery = _npmReactResponsive115Js['default'];
     }],
     execute: function () {
       'use strict';
@@ -4567,13 +4569,17 @@ System.register('app/home.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:
               React.createElement(
                 'div',
                 { className: 'jumbotron', style: { margin: '0px' } },
-                React.createElement('img', { src: '/blijdorp/images/team-1617.png',
-                  style: {
-                    position: 'relative',
-                    float: 'right',
-                    margin: '0px 20px 20px 20px',
-                    'WebkitFilter': 'saturate(30%)'
-                  } }),
+                React.createElement(
+                  MediaQuery,
+                  { query: '(min-device-width: 375px)' },
+                  React.createElement('img', { src: '/blijdorp/images/team-1617.png',
+                    style: {
+                      position: 'relative',
+                      float: 'right',
+                      margin: '0px 20px 20px 20px',
+                      'WebkitFilter': 'saturate(30%)'
+                    } })
+                ),
                 React.createElement(
                   'p',
                   null,
@@ -17748,6 +17754,39 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
             );
           }
         }, {
+          key: 'renderCompact',
+          value: function renderCompact() {
+            return React.createElement(
+              'div',
+              null,
+              React.createElement(
+                'h4',
+                null,
+                this.props.metric
+              ),
+              React.createElement(
+                BootstrapTable,
+                { tableStyle: { margin: 0 }, data: this.state.players, striped: true },
+                React.createElement(
+                  TableHeaderColumn,
+                  { isKey: true, dataField: 'id', hidden: true },
+                  'Id'
+                ),
+                React.createElement(
+                  TableHeaderColumn,
+                  { dataField: 'name', dataSort: true, width: '100' },
+                  'Speler'
+                ),
+                React.createElement(
+                  TableHeaderColumn,
+                  { dataField: 'total', dataSort: true, width: '100',
+                    dataAlign: 'end' },
+                  'Totaal'
+                )
+              )
+            );
+          }
+        }, {
           key: 'render',
           value: function render() {
             return React.createElement(
@@ -17758,37 +17797,13 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 { className: 'col-xs-12 col-md-12' },
                 React.createElement(
                   MediaQuery,
-                  { query: '(min-device-width: 1224px)' },
+                  { query: '(min-device-width: 768px)' },
                   this.renderCarousel()
                 ),
                 React.createElement(
                   MediaQuery,
-                  { query: '(max-device-width: 1224px)' },
-                  React.createElement(
-                    'h4',
-                    null,
-                    this.props.metric
-                  ),
-                  React.createElement(
-                    BootstrapTable,
-                    { tableStyle: { margin: 0 }, data: this.state.players, striped: true },
-                    React.createElement(
-                      TableHeaderColumn,
-                      { isKey: true, dataField: 'id', hidden: true },
-                      'Id'
-                    ),
-                    React.createElement(
-                      TableHeaderColumn,
-                      { dataField: 'name', dataSort: true, width: '100' },
-                      'Speler'
-                    ),
-                    React.createElement(
-                      TableHeaderColumn,
-                      { dataField: 'total', dataSort: true, width: '100',
-                        dataAlign: 'end' },
-                      'Totaal'
-                    )
-                  )
+                  { query: '(max-device-width: 667px)' },
+                  this.renderCompact()
                 )
               )
             );
@@ -17915,12 +17930,12 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
               null,
               React.createElement(
                 MediaQuery,
-                { query: '(min-device-width: 1224px)' },
+                { query: '(min-device-width: 768px)' },
                 React.createElement('iframe', { width: 420, height: 235, src: src })
               ),
               React.createElement(
                 MediaQuery,
-                { query: '(max-device-width: 1224px)' },
+                { query: '(max-device-width: 667px)' },
                 React.createElement('iframe', { width: 275, height: 154, src: src })
               )
             );
@@ -17963,7 +17978,7 @@ System.register('app/matches.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 null,
                 React.createElement(
                   'div',
-                  { style: { color: '#ababab' } },
+                  { style: { color: '#333' } },
                   m.report.content ? m.report.content.map(this.renderContent) : null
                 ),
                 m.report.author && React.createElement(
@@ -21649,30 +21664,27 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
           key: 'runModal',
           value: function runModal(e) {
             e.preventDefault();
+
+            var mq = window.matchMedia('@media all and (max-width: 375px)');
+
             ModalManager.open(React.createElement(
               Modal,
               {
                 onRequestClose: function () {
                   return true;
                 },
-                style: { content: { width: '430px', background: 'rgba(191,191,191,0.95)' } },
+                style: { content: { width: mq.matches ? '430px' : '375px',
+                    background: 'rgba(191,191,191,0.95)',
+                    margin: '10% auto' } },
                 effect: Effect.ScaleUp },
               React.createElement(
                 'div',
                 { className: 'modal-body' },
-                React.createElement('img', { src: e.target.href })
-              ),
-              React.createElement(
-                'div',
-                { className: 'modal-footer' },
-                React.createElement(
-                  'button',
-                  {
-                    type: 'button',
-                    className: 'btn btn-primary btn-sm',
-                    onClick: ModalManager.close },
-                  'Sluiten'
-                )
+                React.createElement('img', { src: e.target.href,
+                  width: mq.matches ? '400px' : '345px',
+                  height: mq.matches ? '300px' : '259px',
+                  onClick: ModalManager.close
+                })
               )
             ));
           }
@@ -21922,7 +21934,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
               { className: 'row-fluid' },
               React.createElement(
                 MediaQuery,
-                { query: '(min-device-width: 1224px)' },
+                { query: '(min-device-width: 768px)' },
                 React.createElement(
                   'div',
                   { className: 'col-xs-3 col-md-3' },
@@ -21936,7 +21948,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
               ),
               React.createElement(
                 MediaQuery,
-                { query: '(max-device-width: 1224px)' },
+                { query: '(max-device-width: 667px)' },
                 React.createElement(
                   'div',
                   { className: 'col-xs-12 col-md-12' },
@@ -21959,8 +21971,92 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
     }
   };
 });
-System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, connect, Seasonal, MediaQuery, Schedule;
+System.register('app/datetime.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, LocalDate, LocalTime;
+
+  return {
+    setters: [function (_npmBabelRuntime5838HelpersGetJs) {
+      _get = _npmBabelRuntime5838HelpersGetJs['default'];
+    }, function (_npmBabelRuntime5838HelpersInheritsJs) {
+      _inherits = _npmBabelRuntime5838HelpersInheritsJs['default'];
+    }, function (_npmBabelRuntime5838HelpersCreateClassJs) {
+      _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
+    }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
+      _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmReact1531Js) {
+      React = _npmReact1531Js['default'];
+    }],
+    execute: function () {
+      'use strict';
+
+      LocalDate = (function (_React$Component) {
+        _inherits(LocalDate, _React$Component);
+
+        function LocalDate(props) {
+          _classCallCheck(this, LocalDate);
+
+          _get(Object.getPrototypeOf(LocalDate.prototype), 'constructor', this).call(this, props);
+          this.state = {
+            locale: props.locale || 'NL-nl',
+            day: props.day || 'numeric',
+            month: props.month || 'long'
+          };
+        }
+
+        _createClass(LocalDate, [{
+          key: 'render',
+          value: function render() {
+            var s = this.props.date ? this.props.date.toLocaleDateString(this.state.locale, { day: this.state.day, month: this.state.month }) : '';
+
+            return React.createElement(
+              'span',
+              null,
+              s
+            );
+          }
+        }]);
+
+        return LocalDate;
+      })(React.Component);
+
+      _export('LocalDate', LocalDate);
+
+      LocalTime = (function (_React$Component2) {
+        _inherits(LocalTime, _React$Component2);
+
+        function LocalTime(props) {
+          _classCallCheck(this, LocalTime);
+
+          _get(Object.getPrototypeOf(LocalTime.prototype), 'constructor', this).call(this, props);
+          this.state = {
+            locale: props.locale || 'NL-nl',
+            hour: props.hour || '2-digit',
+            minute: props.minute || '2-digit'
+          };
+        }
+
+        _createClass(LocalTime, [{
+          key: 'render',
+          value: function render() {
+            var s = this.props.date ? this.props.date.toLocaleTimeString(this.state.locale, { hour: this.state.hour, minute: this.state.minute }) : '';
+
+            return React.createElement(
+              'span',
+              null,
+              s
+            );
+          }
+        }]);
+
+        return LocalTime;
+      })(React.Component);
+
+      _export('LocalTime', LocalTime);
+    }
+  };
+});
+System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/seasonal.js', 'app/datetime.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, connect, Seasonal, LocalDate, LocalTime, MediaQuery, Schedule;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -21979,6 +22075,9 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
       connect = _npmReactRedux445Js.connect;
     }, function (_appSeasonalJs) {
       Seasonal = _appSeasonalJs['default'];
+    }, function (_appDatetimeJs) {
+      LocalDate = _appDatetimeJs.LocalDate;
+      LocalTime = _appDatetimeJs.LocalTime;
     }, function (_npmReactResponsive115Js) {
       MediaQuery = _npmReactResponsive115Js['default'];
     }],
@@ -22014,7 +22113,7 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
 
                 clone.setMinutes(m.date.getMinutes() - 75);
               }
-              return clone.toLocaleTimeString('NL-nl', { hour: '2-digit', minute: '2-digit' });
+              return React.createElement(LocalTime, { date: clone });
             }
             return '';
           }
@@ -22039,7 +22138,7 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                   null,
                   React.createElement(
                     'a',
-                    { href: m.website, dataToggle: 'tooltip', title: m.location, target: '_blank' },
+                    { href: m.website, 'data-toggle': 'tooltip', title: m.location, target: '_blank' },
                     team
                   )
                 );
@@ -22049,8 +22148,8 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
             }
           }
         }, {
-          key: 'renderForDesktop',
-          value: function renderForDesktop() {
+          key: 'renderDefault',
+          value: function renderDefault() {
             var _this = this;
 
             return React.createElement(
@@ -22061,7 +22160,7 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 null,
                 React.createElement(
                   'tr',
-                  null,
+                  { key: 0 },
                   React.createElement(
                     'th',
                     { style: { width: '15%' } },
@@ -22105,16 +22204,16 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 this.state.data.map(function (m) {
                   return React.createElement(
                     'tr',
-                    null,
+                    { key: m.matchday },
                     React.createElement(
                       'td',
                       null,
-                      m.date.toLocaleDateString('NL-nl', { day: 'numeric', month: 'long' })
+                      React.createElement(LocalDate, { date: m.date, month: 'long' })
                     ),
                     React.createElement(
                       'td',
                       null,
-                      m.teams ? m.date.toLocaleTimeString('Nl-nl', { hour: '2-digit', minute: '2-digit' }) : 'vrij'
+                      React.createElement(LocalTime, { date: m.date })
                     ),
                     React.createElement(
                       'td',
@@ -22139,8 +22238,8 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
             );
           }
         }, {
-          key: 'renderForMobile',
-          value: function renderForMobile() {
+          key: 'renderCompact',
+          value: function renderCompact() {
             var _this2 = this;
 
             return React.createElement(
@@ -22151,7 +22250,7 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 null,
                 React.createElement(
                   'tr',
-                  null,
+                  { key: 0 },
                   React.createElement(
                     'th',
                     { style: { width: '20%' } },
@@ -22180,16 +22279,16 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 this.state.data.map(function (m) {
                   return React.createElement(
                     'tr',
-                    null,
+                    { key: m.matchday },
                     React.createElement(
                       'td',
                       null,
-                      m.date.toLocaleDateString('NL-nl', { day: 'numeric', month: 'short' })
+                      React.createElement(LocalDate, { date: m.date, month: 'numeric' })
                     ),
                     React.createElement(
                       'td',
                       null,
-                      m.teams ? m.date.toLocaleTimeString('NL-nl', { hour: '2-digit', minute: '2-digit' }) : 'vrij'
+                      React.createElement(LocalTime, { date: m.date })
                     ),
                     _this2.renderTeam(m, 0),
                     _this2.renderTeam(m, 1)
@@ -22209,13 +22308,13 @@ System.register('app/schedule.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 { className: 'col-xs-12 col-md-12' },
                 React.createElement(
                   MediaQuery,
-                  { query: '(min-device-width: 1224px)' },
-                  this.renderForDesktop()
+                  { query: '(min-device-width: 768px)' },
+                  this.renderDefault()
                 ),
                 React.createElement(
                   MediaQuery,
-                  { query: '(max-device-width: 1224px)' },
-                  this.renderForMobile()
+                  { query: '(max-device-width: 667px)' },
+                  this.renderCompact()
                 )
               )
             );
@@ -22393,8 +22492,8 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
             );
           }
         }, {
-          key: 'renderForMobile',
-          value: function renderForMobile() {
+          key: 'renderCompact',
+          value: function renderCompact() {
             return React.createElement(
               'table',
               { className: 'table', style: { margin: '0px' } },
@@ -22440,8 +22539,8 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
             );
           }
         }, {
-          key: 'renderForDesktop',
-          value: function renderForDesktop() {
+          key: 'renderDefault',
+          value: function renderDefault() {
             return React.createElement(
               'table',
               { className: 'table', style: { margin: '0px' } },
@@ -22528,13 +22627,13 @@ System.register('app/table.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm
                 { className: 'col-xs-12 col-md-12' },
                 React.createElement(
                   MediaQuery,
-                  { query: '(min-device-width: 1224px)' },
-                  this.renderForDesktop()
+                  { query: '(min-device-width: 768px)' },
+                  this.renderDefault()
                 ),
                 React.createElement(
                   MediaQuery,
-                  { query: '(max-device-width: 1224px)' },
-                  this.renderForMobile()
+                  { query: '(max-device-width: 667px)' },
+                  this.renderCompact()
                 )
               )
             );
@@ -27710,8 +27809,8 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
             );
           }
         }, {
-          key: 'renderForDesktop',
-          value: function renderForDesktop() {
+          key: 'renderDefault',
+          value: function renderDefault() {
             var _this = this;
 
             var content = this.state.data.map(function (d) {
@@ -27737,8 +27836,8 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
             );
           }
         }, {
-          key: 'renderForMobile',
-          value: function renderForMobile() {
+          key: 'renderCompact',
+          value: function renderCompact() {
             var latest = this.state.data.find(function (r) {
               return r.latest;
             });
@@ -27756,13 +27855,13 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
                 { className: 'col-xs-12 col-md-12' },
                 React.createElement(
                   MediaQuery,
-                  { query: '(min-device-width: 1224px)' },
-                  this.renderForDesktop()
+                  { query: '(min-device-width: 768px)' },
+                  this.renderDefault()
                 ),
                 React.createElement(
                   MediaQuery,
-                  { query: '(max-device-width: 1224px)' },
-                  this.renderForMobile()
+                  { query: '(max-device-width: 667px)' },
+                  this.renderCompact()
                 )
               )
             );
@@ -55929,7 +56028,7 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 { className: 'col-xs-12 col-md-12' },
                 React.createElement(
                   MediaQuery,
-                  { query: '(min-device-width: 1224px)' },
+                  { query: '(min-device-width: 768px)' },
                   React.createElement(
                     Carousel,
                     null,
@@ -55938,7 +56037,7 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
                 ),
                 React.createElement(
                   MediaQuery,
-                  { query: '(max-device-width: 1224px)' },
+                  { query: '(max-device-width: 667px)' },
                   this.renderCharts({ charts: charts, width: 300, height: 300 })
                 )
               )

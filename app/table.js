@@ -55,7 +55,7 @@ export class Table extends Seasonal {
     )
   }
 
-  renderForMobile() {
+  renderCompact() {
     return (
       <table className='table' style={{margin: '0px'}}>
         <thead>
@@ -79,7 +79,7 @@ export class Table extends Seasonal {
     )
   }
 
-  renderForDesktop() {
+  renderDefault() {
     return (
       <table className='table' style={{margin: '0px'}}>
         <thead>
@@ -116,11 +116,11 @@ export class Table extends Seasonal {
     return (
       <div className='row-fluid'>
         <div className='col-xs-12 col-md-12'>
-          <MediaQuery query='(min-device-width: 1224px)'>
-            { this.renderForDesktop() }
+          <MediaQuery query='(min-device-width: 768px)'>
+            { this.renderDefault() }
           </MediaQuery>
-          <MediaQuery query='(max-device-width: 1224px)'>
-            { this.renderForMobile() }
+          <MediaQuery query='(max-device-width: 667px)'>
+            { this.renderCompact() }
           </MediaQuery>      
         </div>
       </div>
