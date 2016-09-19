@@ -33,12 +33,12 @@
   "team" : "Hillegersberg"
 }, {
   "matches" : {
-    "wins" : 3,
+    "wins" : 4,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 18,
+    "for" : 27,
     "against" : 2
   },
   "team" : "BVCB"
@@ -68,11 +68,11 @@
   "matches" : {
     "wins" : 0,
     "draws" : 1,
-    "losses" : 2
+    "losses" : 3
   },
   "goals" : {
     "for" : 5,
-    "against" : 15
+    "against" : 24
   },
   "team" : "Zestienhoven"
 }, {

@@ -47,7 +47,7 @@
     "fixtures": [
       ["VVOR", "Blijdorp", 2, 7],
       ["TOGB", "VOC", 2, 4],
-      ["BVCB", "Zestienhoven"],
+      ["BVCB", "Zestienhoven", 9, 0],
       ["Hillegersberg", "XerxesDZB", 4, 2]
     ]
   },
