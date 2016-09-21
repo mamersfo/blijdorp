@@ -55798,8 +55798,27 @@ System.registerDynamic("npm:react-responsive@1.1.5.js", ["npm:react-responsive@1
   return module.exports;
 });
 
-System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/helpers/extends.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@0.1.27.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _extends, _Object$assign, React, get, connect, XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, HeatmapSeries, Carousel, MediaQuery, Analysis;
+System.register("app/util.js", [], function (_export) {
+  "use strict";
+
+  _export("range", range);
+
+  function range(from, to) {
+    var a = Array(to - from);
+    var idx = 0;
+    do {
+      a[idx++] = from++;
+    } while (from <= to);
+    return a;
+  }
+
+  return {
+    setters: [],
+    execute: function () {}
+  };
+});
+System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/helpers/extends.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@0.1.27.js', 'npm:react-responsive@1.1.5.js', 'app/util.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _extends, _Object$assign, React, get, connect, XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, HeatmapSeries, Carousel, MediaQuery, range, Analysis;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -55832,6 +55851,8 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
       Carousel = _npmNukaCarousel203Js['default'];
     }, function (_npmReactVis042MainCssGithubSystemjsPluginCss0127Js) {}, function (_npmReactResponsive115Js) {
       MediaQuery = _npmReactResponsive115Js['default'];
+    }, function (_appUtilJs) {
+      range = _appUtilJs.range;
     }],
     execute: function () {
       'use strict';
@@ -55848,7 +55869,8 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
             situation: [],
             flank: [],
             standard: [],
-            shots: []
+            shots: [],
+            heatmap: []
           };
         }
 
@@ -55890,7 +55912,7 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
             return data.reduce(function (m, n) {
               if (n[2] === flag) {
                 var entry = m.find(function (e) {
-                  return e.x === n[9];
+                  return e.x === n[8];
                 });
                 if (entry) entry.y += 1;
               }
@@ -55911,6 +55933,37 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
               }
               return m;
             }, series);
+          }
+        }, {
+          key: 'heatmapSeries',
+          value: function heatmapSeries(data, flag) {
+            var xs = range(-6, 6);
+            var ys = range(1, 9);
+
+            var series = xs.map(function (x) {
+              return ys.map(function (y) {
+                return { x: x, y: y, color: 0 };
+              });
+            });
+
+            series = data.reduce(function (m, n) {
+              if (n[2] === flag) {
+                var xIdx = n[9] + 6;
+                var yIdx = n[10] - 1;
+
+                var x = m[xIdx];
+                var y = x[yIdx];
+
+                y.color++;
+              }
+              return m;
+            }, series);
+
+            series = series.reduce(function (x, y) {
+              return x.concat(y);
+            }, []);
+
+            return series;
           }
         }, {
           key: 'minuteSeries',
@@ -55937,15 +55990,18 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
               _this.setState({
                 minute: [_this.minuteSeries(data, true), _this.minuteSeries(data, false)],
                 situation: [_this.situationSeries(data, true), _this.situationSeries(data, false)],
-                flank: [_this.flankSeries(data, true, 7), _this.flankSeries(data, true, 8)],
+                flank: [_this.flankSeries(data, true, 7)],
                 standard: [_this.standardSeries(data, true), _this.standardSeries(data, false)],
-                shots: [_this.shotSeries(data, true), _this.shotSeries(data, false)]
+                shots: [_this.shotSeries(data, true), _this.shotSeries(data, false)],
+                heatmap: [_this.heatmapSeries(data, true)]
               });
             });
           }
         }, {
-          key: 'renderBarChart',
-          value: function renderBarChart(_ref) {
+          key: 'renderChart',
+          value: function renderChart(_ref) {
+            var _ref$type = _ref.type;
+            var type = _ref$type === undefined ? 'barchart' : _ref$type;
             var title = _ref.title;
             var series = _ref.series;
             var _ref$xType = _ref.xType;
@@ -55957,26 +56013,60 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
             var width = _ref.width;
             var height = _ref.height;
 
-            return React.createElement(
-              'div',
-              null,
-              React.createElement(
-                'h4',
+            if (type === 'barchart') {
+              var _ret = (function () {
+                var colors = ['#339933', '99ccff'];
+                return {
+                  v: React.createElement(
+                    'div',
+                    null,
+                    React.createElement(
+                      'h4',
+                      null,
+                      title
+                    ),
+                    React.createElement(
+                      XYPlot,
+                      { width: width, height: height, xType: xType, yType: yType, stackBy: stackBy },
+                      React.createElement(VerticalGridLines, null),
+                      React.createElement(HorizontalGridLines, null),
+                      React.createElement(XAxis, null),
+                      React.createElement(YAxis, null),
+                      series.map(function (data, idx) {
+                        return React.createElement(VerticalBarSeries, { data: data, color: colors[idx] });
+                      })
+                    )
+                  )
+                };
+              })();
+
+              if (typeof _ret === 'object') return _ret.v;
+            } else if (type === 'heatmap') {
+              var max = series[0] ? series[0].reduce(function (a, b) {
+                return a > b.color ? a : b.color;
+              }, 0) : 0;
+              return React.createElement(
+                'div',
                 null,
-                title
-              ),
-              React.createElement(
-                XYPlot,
-                { width: width, height: height, xType: xType, yType: yType, stackBy: stackBy },
-                React.createElement(VerticalGridLines, null),
-                React.createElement(HorizontalGridLines, null),
-                React.createElement(XAxis, null),
-                React.createElement(YAxis, null),
-                series.map(function (data) {
-                  return React.createElement(VerticalBarSeries, { data: data });
-                })
-              )
-            );
+                React.createElement(
+                  'h4',
+                  null,
+                  title
+                ),
+                React.createElement(
+                  XYPlot,
+                  { width: width, height: height,
+                    colorDomain: [0, max],
+                    colorRange: ['#339933', 'white'],
+                    colorType: 'linear' },
+                  React.createElement(VerticalGridLines, null),
+                  React.createElement(HorizontalGridLines, null),
+                  series.map(function (data) {
+                    return React.createElement(HeatmapSeries, { data: data });
+                  })
+                )
+              );
+            }
           }
         }, {
           key: 'renderCharts',
@@ -55991,7 +56081,7 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
               return React.createElement(
                 'div',
                 { style: { width: width, height: height + 100, margin: '0 auto' } },
-                _this2.renderBarChart(_extends({}, c, { width: width, height: height }))
+                _this2.renderChart(_extends({}, c, { width: width, height: height }))
               );
             });
           }
@@ -55999,25 +56089,29 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
           key: 'render',
           value: function render() {
             var charts = [{
-              title: 'aantal doelpunten per tijdseenheid (5 minuten), Blijdorp vs. tegenstander',
+              title: 'aantal doelpunten per tijdseenheid (5 minuten), Blijdorp (groen) vs. tegenstanders (blauw)',
               series: this.state.minute,
               stackBy: 'y'
             }, {
-              title: 'aantal doelpunten per tactische situatie, Blijdorp vs. tegenstander',
+              title: 'aantal doelpunten per tactische situatie, Blijdorp (groen) vs. tegenstanders (blauw)',
               series: this.state.situation,
               xType: 'ordinal'
             }, {
-              title: 'aantal doelpunten per type inzet, Blijdorp vs. tegenstander',
+              title: 'aantal doelpunten per type inzet, Blijdorp (groen) vs. tegenstanders (blauw)',
               series: this.state.shots,
               xType: 'ordinal'
             }, {
-              title: 'aantal doelpunten uit standaardsituaties, Blijdorp vs. tegenstander',
+              title: 'aantal doelpunten uit standaardsituaties, Blijdorp (groen) vs. tegenstanders (blauw)',
               series: this.state.standard,
               xType: 'ordinal'
             }, {
-              title: 'aantal doelpunten per flank, aanval opgezet vs. afgerond',
+              title: 'aantal doelpunten van Blijdorp, per flank waar aanval is opgezet',
               series: this.state.flank,
               xType: 'ordinal'
+            }, {
+              type: 'heatmap',
+              title: 'heatmap van posities van waaruit Blijdorp heeft gescoord',
+              series: this.state.heatmap
             }];
 
             return React.createElement(

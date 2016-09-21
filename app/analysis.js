@@ -5,6 +5,7 @@ import { XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalB
 import Carousel from 'nuka-carousel'
 import 'react-vis/main.css!'
 import MediaQuery from 'react-responsive'
+import { range } from './util'
 
 export class Analysis extends React.Component {
 
@@ -15,7 +16,8 @@ export class Analysis extends React.Component {
       situation: [],
       flank: [],
       standard: [],
-      shots: []
+      shots: [],
+      heatmap: []
     }
   }
 
@@ -59,7 +61,7 @@ export class Analysis extends React.Component {
   
     return data.reduce((m, n) => {
       if ( n[2] === flag ) {
-        let entry = m.find((e) => e.x === n[9])
+        let entry = m.find((e) => e.x === n[8])
         if ( entry ) entry.y += 1
       }
       return m
@@ -80,6 +82,34 @@ export class Analysis extends React.Component {
       }
       return m
     }, series )
+  }
+
+  heatmapSeries(data, flag) {
+    let xs = range(-6, 6)
+    let ys = range( 1, 9)
+
+    let series = xs.map((x) => {
+      return ys.map((y) => {
+        return { x: x, y: y, color: 0 }
+      })
+    })
+
+    series = data.reduce((m, n) => {
+      if ( n[2] === flag ) {
+        let xIdx = n[9] + 6
+        let yIdx = n[10] - 1
+
+        let x = m[xIdx]
+        let y = x[yIdx]
+
+        y.color++
+      }
+      return m
+    }, series)
+
+    series = series.reduce((x, y) => x.concat(y), [])
+
+    return series
   }
 
   minuteSeries(data, flag) {
@@ -120,8 +150,7 @@ export class Analysis extends React.Component {
           this.situationSeries(data, false)
         ],
         flank: [
-          this.flankSeries(data, true, 7),
-          this.flankSeries(data, true, 8)
+          this.flankSeries(data, true, 7)
         ],
         standard: [
           this.standardSeries(data, true),
@@ -130,24 +159,45 @@ export class Analysis extends React.Component {
         shots: [
           this.shotSeries(data, true),
           this.shotSeries(data, false)
+        ],
+        heatmap: [
+          this.heatmapSeries(data, true)
         ]
       })
     })
   }
 
-  renderBarChart({title, series, xType='linear', yType='linear', stackBy='', width, height}) {
-    return (
-      <div>
-        <h4>{title}</h4>
-        <XYPlot width={width} height={height} xType={xType} yType={yType} stackBy={stackBy}>
-          <VerticalGridLines />
-          <HorizontalGridLines />
-          <XAxis />
-          <YAxis />
-          { series.map((data) => <VerticalBarSeries data={data} /> ) }
-        </XYPlot>
-      </div>
-    )
+  renderChart({type='barchart', title, series, xType='linear', yType='linear', stackBy='', width, height}) {
+    if ( type === 'barchart' ) {
+      let colors = ['#339933', '99ccff']
+      return (
+        <div>
+          <h4>{title}</h4>
+          <XYPlot width={width} height={height} xType={xType} yType={yType} stackBy={stackBy}>
+            <VerticalGridLines />
+            <HorizontalGridLines />
+            <XAxis />
+            <YAxis />
+            { series.map((data, idx) => <VerticalBarSeries data={data} color={colors[idx]} /> ) }
+          </XYPlot>
+        </div>
+      )
+    } else if ( type === 'heatmap' ) {
+      let max = series[0] ? series[0].reduce((a,b) => a > b.color ? a : b.color, 0) : 0
+      return (
+        <div>
+          <h4>{title}</h4>
+          <XYPlot width={width} height={height}
+            colorDomain={[0,max]}
+            colorRange={['#339933', 'white']}
+            colorType={'linear'}>
+            <VerticalGridLines />
+            <HorizontalGridLines />
+            { series.map((data) => <HeatmapSeries data={data} /> ) }
+          </XYPlot>
+        </div>
+      )
+    }
   }
 
   renderCharts({charts, width, height}) {
@@ -155,7 +205,7 @@ export class Analysis extends React.Component {
       charts.map((c) => {
         return (
           <div style={{width: width, height: height+100, margin: '0 auto'}}>
-            { this.renderBarChart({...c, width: width, height: height}) }
+            { this.renderChart({...c, width: width, height: height}) }
           </div>
         )
       })
@@ -165,29 +215,34 @@ export class Analysis extends React.Component {
   render() {
     let charts = [
       {
-        title: 'aantal doelpunten per tijdseenheid (5 minuten), Blijdorp vs. tegenstander',
+        title: 'aantal doelpunten per tijdseenheid (5 minuten), Blijdorp (groen) vs. tegenstanders (blauw)',
         series: this.state.minute,
         stackBy: 'y'
       },
       {
-        title: 'aantal doelpunten per tactische situatie, Blijdorp vs. tegenstander',
+        title: 'aantal doelpunten per tactische situatie, Blijdorp (groen) vs. tegenstanders (blauw)',
         series: this.state.situation,
         xType: 'ordinal'
       },
       {
-        title: 'aantal doelpunten per type inzet, Blijdorp vs. tegenstander',
+        title: 'aantal doelpunten per type inzet, Blijdorp (groen) vs. tegenstanders (blauw)',
         series: this.state.shots,
         xType: 'ordinal'
       },
       {
-        title: 'aantal doelpunten uit standaardsituaties, Blijdorp vs. tegenstander',
+        title: 'aantal doelpunten uit standaardsituaties, Blijdorp (groen) vs. tegenstanders (blauw)',
         series: this.state.standard,
         xType: 'ordinal'
       },
       {
-        title: 'aantal doelpunten per flank, aanval opgezet vs. afgerond',
+        title: 'aantal doelpunten van Blijdorp, per flank waar aanval is opgezet',
         series: this.state.flank,
         xType: 'ordinal'
+      },
+      {
+        type: 'heatmap',
+        title: 'heatmap van posities van waaruit Blijdorp heeft gescoord',
+        series: this.state.heatmap
       }
     ]
     

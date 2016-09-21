@@ -82,6 +82,7 @@ System.config({
       "npm:react@15.3.1/lib/PooledClass.js",
       "npm:react-redux@4.4.5/lib/components/Provider.js",
       "app/analysis.js",
+      "app/util.js",
       "npm:react-responsive@1.1.5.js",
       "npm:react-responsive@1.1.5/src/index.js",
       "npm:react-responsive@1.1.5/src/toQuery.js",
