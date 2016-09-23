@@ -1,13 +1,40 @@
 import React from 'react'
-import { XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, HeatmapSeries } from 'react-vis'
+import { XYPlot, Treemap, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, HeatmapSeries } from 'react-vis'
 import 'react-vis/main.css!'
+
+export class TreeMap extends React.Component {
+  render() {
+    
+    let children = this.props.children
+    let title = this.props.title || ''
+    let width = this.props.width || 400
+    let height = this.props.height || 400
+    let colorDomain = this.props.colorDomain || [0, 1]
+    let colorRange = this.props.colorRange || ['white', '#339933']
+    let colorType = this.props.colorType || 'linear'
+
+    return (
+      <div>
+        <h4>{this.props.metric}</h4>
+        <Treemap
+          data={{title: title, children: children}}
+          height={height}
+          width={width}
+          colorDomain={colorDomain}
+          colorRange={colorRange}
+          colorType={colorType}
+        />
+      </div>
+    )
+  }
+}
 
 export class Heatmap extends React.Component {
   render() {
     let series = this.props.series
     let title = this.props.title || 'Untitled'
     let width = this.props.width || 400
-    let height = this.props.height || 500
+    let height = this.props.height || 400
     let colorRange = this.props.colorRange || ['#339933', 'white']
     let colorType = this.props.colorType || 'linear'
     

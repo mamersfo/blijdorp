@@ -11,41 +11,65 @@ export class Analysis extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      minute: [],
-      situation: [],
-      flank: [],
-      standard: [],
-      shots: [],
-      heatmap: []
+      data: [],
+      charts: [
+        {
+          idx: 0,
+          title: 'Tactische situatie',
+          options: ['aanval', 'counter', 'standaard'],
+          column: 5,
+          xType: 'ordinal'
+        },
+        {
+          idx: 1,
+          title: 'Standaardsituatie',
+          options: ['hoekschop', 'vrije trap'],
+          column: 6,
+          xType: 'ordinal'
+        },
+        {
+          idx: 2,
+          title: 'Aanval ingezet',
+          options: ['links', 'centrum', 'rechts'],
+          column: 7,
+          xType: 'ordinal'
+        },
+        {
+          idx: 3,
+          title: 'Wijze van scoren',
+          options: ['schot', 'shoot-out', 'intikker', 'kopbal'],
+          column: 8,
+          xType: 'ordinal'
+        },
+        {
+          idx: 4,
+          title: 'Wedstrijdverloop',
+          column: 2,
+          stackBy: 'y',
+          type: 'minute'
+        },
+        {
+          idx: 5,
+          title: 'Scoringspositie',
+          type: 'heatmap'
+        }
+      ],
+      selectedChart: 0,
+      selectedTeams: new Set(['blijdorp', 'opponent']),
+      teams: [
+        {
+          key: 'blijdorp',
+          title: 'Blijdorp',
+          color: '#339933'
+        },
+        {
+          key: 'opponent',
+          title: 'Tegenstander',
+          color: '#99ccff'
+        }
+      ],
+      players: new Set(['Fadi', 'Jonas', 'Luc', 'Quincy', 'Stijn'])
     }
-  }
-
-  flankSeries(data, flag, idx) {
-    let filtered = data.filter((d) => d[2] === flag)
-    let values = filtered.map((d) => d[idx])
-    let freqs = frequencies(values)
-    return series(freqs, ['links', 'centrum', 'rechts'])
-  }
-
-  standardSeries(data, flag) {
-    let filtered = data.filter((d) => d[2] === flag)
-    let values = filtered.map((d) => d[6])
-    let freqs = frequencies(values)
-    return series(freqs, ['hoekschop', 'vrije trap'])
-  }
-
-  shotSeries(data, flag) {
-    let filtered = data.filter((d) => d[2] === flag)
-    let values = filtered.map((d) => d[8])
-    let freqs = frequencies(values)
-    return series(freqs, ['schot', 'shoot-out', 'intikker', 'kopbal'])
-  }
-
-  situationSeries(data, flag) {
-    let filtered = data.filter((d) => d[2] === flag)
-    let values = filtered.map((d) => d[5])
-    let freqs = frequencies(values)
-    return series(freqs, ['aanval', 'counter', 'standaard'])
   }
 
   heatmapSeries(data, flag) {
@@ -88,55 +112,164 @@ export class Analysis extends React.Component {
     let uri = this.props.season + '/scores'
     get(uri).then((data) => {
       this.setState({
-        minute: [
-          this.minuteSeries(data, true),
-          this.minuteSeries(data, false)
-        ],
-        situation: [
-          this.situationSeries(data, true),
-          this.situationSeries(data, false)
-        ],
-        flank: [
-          this.flankSeries(data, true, 7)
-        ],
-        standard: [
-          this.standardSeries(data, true),
-          this.standardSeries(data, false)
-        ],
-        shots: [
-          this.shotSeries(data, true),
-          this.shotSeries(data, false)
-        ],
-        heatmap: [
-          this.heatmapSeries(data, true)
-        ]
+        data: data
       })
     })
+  }
+
+  handleChartChange(e) {
+    this.setState({selectedChart: e.target.value})
+  }
+
+  renderChartSelect() {
+    return (
+      <div className='form-group'>
+        <label for='chartSelect'>Grafiek</label>
+        <select id='chartSelect'
+          className='form-control'
+          defaultValue={this.state.selectedChart}
+          onChange={this.handleChartChange.bind(this)}>
+        {
+          this.state.charts.map((o) => {
+            return (
+              <option key={o.idx} value={o.idx}>{o.title}</option>
+            )
+          })
+        }
+        </select>
+      </div>
+    )
+  }
+
+  handleTeamChange(team) {
+    let teams = this.state.selectedTeams
+    if ( teams.has( team ) ) teams.delete( team )
+    else teams.add( team )
+    this.setState({selectedTeams: teams})
+  }
+
+  renderTeamSelect() {
+    return (
+      <div className='form-group'>
+        <label for='teamSelect'>Team</label>
+        {
+          this.state.teams.map((t) => {
+            return (
+              <div>
+                <input type='checkbox' checked={this.state.selectedTeams.has(t.key)}
+                  onChange={this.handleTeamChange.bind(this, t.key)} />
+                <span style={{marginLeft: '10px'}}>{t.title}</span>
+                <span style={{width: '50px', backgroundColor: t.color, float: 'right'}} ><br/></span>
+              </div>
+            )        
+          })
+        }
+      </div>
+    )
+  }
+
+  handlePlayerChange(player) {
+    let players = this.state.players
+    if ( players.has( player ) ) players.delete( player )
+    else players.add( player )
+    this.setState({players: players})
+  }
+
+  renderPlayerSelect() {
+    let players = new Set()
+    this.state.data.map((d) => { if (d[3]) players.add(d[3]) })
+    players = Array.from(players).sort()
+    
+    return (
+      <div className='form-group'>
+        <label for='playerSelect'>Speler</label>
+        {
+          players.map((p) => {
+            return (
+              <div>
+              <input type='checkbox' checked={this.state.players.has(p)}
+                onChange={this.handlePlayerChange.bind(this, p)} />
+                <span style={{marginLeft: '10px'}}>{p}</span>
+              </div>
+            )
+          })
+        }
+      </div>
+    )
+  }
+
+  renderForm() {
+    return (
+      <form>
+        { this.renderChartSelect() }
+        { this.renderTeamSelect() }
+        { this.renderPlayerSelect() }
+      </form>
+    )
+  }
+
+  makeSeries(data, flag, m) {
+    switch ( m.type ) {
+    case 'minute':
+      return this.minuteSeries(data, flag)
+    case 'heatmap':
+      return this.heatmapSeries(data, flag)
+    default:
+      let filtered = data.filter((d) => d[2] === flag)
+      let values = filtered.map((d) => d[m.column])
+      let freqs = frequencies(values)
+      return series(freqs, m.options)
+    }
+  }
+
+  renderChart(size) {
+    let chart = this.state.charts[this.state.selectedChart]
+    let colors = []
+    let series = []
+    let idx = 0
+
+    let data = this.state.data.filter((d) => !d[2] || this.state.players.has(d[3]))
+
+    if ( this.state.selectedTeams.has('blijdorp') ) {
+      series[idx] = this.makeSeries(data, true, chart)
+      colors[idx] = this.state.teams[0].color
+      idx++
+    }
+
+    if ( this.state.selectedTeams.has('opponent') ) {
+      series[idx] = this.makeSeries(data, false, chart)
+      colors[idx] = this.state.teams[1].color
+    }
+
+    if ( 'heatmap' === chart.type ) {
+      let colorRange = [colors[colors.length-1], 'white']
+      return <Heatmap {...chart} series={series} colorRange={colorRange} width={size} height={size * 0.6932}/>
+    } else {
+      return <Barchart {...chart} series={series} colors={colors} width={size} height={size} />
+    }
   }
 
   render() {    
     return (
       <div className='row-fluid'>
-        <div className='col-xs-12 col-md-12'>
-          <MediaQuery query='(min-device-width: 768px)'>
-            <Carousel>
-              <Barchart title='doelpunten per 5 minuten' series={this.state.minute} stackBy='y' />
-              <Barchart title='doelpunten per tactische situatie' series={this.state.situation} xType='ordinal' />
-              <Barchart title='doelpunten per type inzet' series={this.state.shots} xType='ordinal' />
-              <Barchart title='doelpunten uit standaardsituatie' series={this.state.standard} xType='ordinal' />
-              <Barchart title='doelpunten per aanval ingezet op flank' series={this.state.flank} xType='ordinal' />
-              <Heatmap title='doelpunten vanuit positie' series={this.state.heatmap} width={577} height={400}/>
-            </Carousel>
-          </MediaQuery>
-          <MediaQuery query='(max-device-width: 667px)'>
-            <Barchart title='doelpunten per 5 minuten' series={this.state.minute} stackBy='y' width={300} height={300}/>
-            <Barchart title='doelpunten per tactische situatie' series={this.state.situation} xType='ordinal' width={300} height={300} />
-            <Barchart title='doelpunten per type inzet' series={this.state.shots} xType='ordinal' width={300} height={300} />
-            <Barchart title='doelpunten uit standaardsituatie' series={this.state.standard} xType='ordinal' width={300} height={300} />
-            <Barchart title='doelpunten per aanval ingezet op flank' series={this.state.flank} xType='ordinal' width={300} height={300} />
-            <Heatmap title='doelpunten vanuit positie' series={this.state.heatmap} width={300} height={208}/>
-          </MediaQuery>
-        </div>
+
+        <MediaQuery query='(min-device-width: 768px)'>
+          <div className='col-xs-3 col-md-3'>
+            { this.renderForm() }
+          </div>
+          <div className='col-xs-9 col-md-9'>
+            { this.renderChart(400) }
+          </div>
+        </MediaQuery>
+        <MediaQuery query='(max-device-width: 667px)'>
+          <div className='col-xs-12 col-md-12'>
+            { this.renderForm() }
+          </div>
+          <div className='col-xs-12 col-md-12'>
+            { this.renderChart(300) }
+          </div>
+        </MediaQuery>
+
       </div>
     )
   }

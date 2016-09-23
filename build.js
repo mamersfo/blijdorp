@@ -17428,8 +17428,8 @@ System.registerDynamic("npm:react-bootstrap-table@2.4.2/css/react-bootstrap-tabl
 
   return _retrieveGlobal();
 });
-System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'npm:react-vis@0.4.2.js', 'app/api.js', 'npm:react-bootstrap-table@2.4.2.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@0.1.27.js', 'npm:react-bootstrap-table@2.4.2/css/react-bootstrap-table.min.css!github:systemjs/plugin-css@0.1.27.js', 'npm:react-responsive@1.1.5.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, connect, Treemap, get, BootstrapTable, TableHeaderColumn, Carousel, MediaQuery, Players;
+System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-redux@4.4.5.js', 'app/api.js', 'app/charts.js', 'npm:react-bootstrap-table@2.4.2.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-responsive@1.1.5.js', 'npm:react-bootstrap-table@2.4.2/css/react-bootstrap-table.min.css!github:systemjs/plugin-css@0.1.27.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, React, connect, get, TreeMap, BootstrapTable, TableHeaderColumn, Carousel, MediaQuery, Players;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -17444,18 +17444,18 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
       React = _npmReact1531Js['default'];
     }, function (_npmReactRedux445Js) {
       connect = _npmReactRedux445Js.connect;
-    }, function (_npmReactVis042Js) {
-      Treemap = _npmReactVis042Js.Treemap;
     }, function (_appApiJs) {
       get = _appApiJs.get;
+    }, function (_appChartsJs) {
+      TreeMap = _appChartsJs.TreeMap;
     }, function (_npmReactBootstrapTable242Js) {
       BootstrapTable = _npmReactBootstrapTable242Js.BootstrapTable;
       TableHeaderColumn = _npmReactBootstrapTable242Js.TableHeaderColumn;
     }, function (_npmNukaCarousel203Js) {
       Carousel = _npmNukaCarousel203Js['default'];
-    }, function (_npmReactVis042MainCssGithubSystemjsPluginCss0127Js) {}, function (_npmReactBootstrapTable242CssReactBootstrapTableMinCssGithubSystemjsPluginCss0127Js) {}, function (_npmReactResponsive115Js) {
+    }, function (_npmReactResponsive115Js) {
       MediaQuery = _npmReactResponsive115Js['default'];
-    }],
+    }, function (_npmReactBootstrapTable242CssReactBootstrapTableMinCssGithubSystemjsPluginCss0127Js) {}],
     execute: function () {
       'use strict';
 
@@ -17514,72 +17514,6 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
             }
           }
         }, {
-          key: 'renderTreeMap',
-          value: function renderTreeMap() {
-            return React.createElement(
-              'div',
-              null,
-              React.createElement(
-                'h4',
-                null,
-                this.props.metric
-              ),
-              React.createElement(Treemap, {
-                data: { title: '', children: this.state.items },
-                height: 400,
-                width: 400,
-                colorDomain: this.props.colorDomain || [0, 1],
-                colorRange: this.props.colorRange || ['white', 'green'],
-                colorType: this.props.colorType || 'linear'
-              })
-            );
-          }
-        }, {
-          key: 'renderTable',
-          value: function renderTable() {
-            return React.createElement(
-              'div',
-              null,
-              React.createElement(
-                'h4',
-                null,
-                this.props.metric
-              ),
-              React.createElement(
-                BootstrapTable,
-                { tableStyle: { margin: 0 }, data: this.state.players, striped: true },
-                React.createElement(
-                  TableHeaderColumn,
-                  { isKey: true, dataField: 'id', hidden: true },
-                  'Id'
-                ),
-                React.createElement(
-                  TableHeaderColumn,
-                  { dataField: 'name', dataSort: true, width: '100' },
-                  'Speler'
-                ),
-                React.createElement(
-                  TableHeaderColumn,
-                  { dataField: 'total', dataSort: true, width: '100',
-                    dataAlign: 'end' },
-                  'Totaal'
-                ),
-                React.createElement(
-                  TableHeaderColumn,
-                  { dataField: 'matches', dataSort: true, width: '100',
-                    dataAlign: 'end' },
-                  'Wedstrijden'
-                ),
-                React.createElement(
-                  TableHeaderColumn,
-                  { dataField: 'average', dataSort: true, width: '100',
-                    dataAlign: 'end' },
-                  'Gemiddelde'
-                )
-              )
-            );
-          }
-        }, {
           key: 'renderCarousel',
           value: function renderCarousel() {
             return React.createElement(
@@ -17629,7 +17563,7 @@ System.register('app/players.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
               React.createElement(
                 'div',
                 { style: { width: '450px', height: '500px', margin: '0 auto' } },
-                this.renderTreeMap()
+                React.createElement(TreeMap, { title: this.props.metric, children: this.state.items, colorDomain: this.props.colorDomain, colorRange: this.props.colorRange, colorType: this.props.colorType })
               )
             );
           }
@@ -18154,958 +18088,6 @@ System.registerDynamic("npm:babel-runtime@5.8.38/helpers/to-consumable-array.js"
     }
   };
   exports.__esModule = true;
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-detect.js", ["npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
-      SAFE_CLOSING = false;
-  try {
-    var riter = [7][ITERATOR]();
-    riter['return'] = function() {
-      SAFE_CLOSING = true;
-    };
-    Array.from(riter, function() {
-      throw 2;
-    });
-  } catch (e) {}
-  module.exports = function(exec, skipClosing) {
-    if (!skipClosing && !SAFE_CLOSING)
-      return false;
-    var safe = false;
-    try {
-      var arr = [7],
-          iter = arr[ITERATOR]();
-      iter.next = function() {
-        return {done: safe = true};
-      };
-      arr[ITERATOR] = function() {
-        return iter;
-      };
-      exec(arr);
-    } catch (e) {}
-    return safe;
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.array.from.js", ["npm:core-js@1.2.7/library/modules/$.ctx.js", "npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.to-object.js", "npm:core-js@1.2.7/library/modules/$.iter-call.js", "npm:core-js@1.2.7/library/modules/$.is-array-iter.js", "npm:core-js@1.2.7/library/modules/$.to-length.js", "npm:core-js@1.2.7/library/modules/core.get-iterator-method.js", "npm:core-js@1.2.7/library/modules/$.iter-detect.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
-      $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
-      toObject = $__require('npm:core-js@1.2.7/library/modules/$.to-object.js'),
-      call = $__require('npm:core-js@1.2.7/library/modules/$.iter-call.js'),
-      isArrayIter = $__require('npm:core-js@1.2.7/library/modules/$.is-array-iter.js'),
-      toLength = $__require('npm:core-js@1.2.7/library/modules/$.to-length.js'),
-      getIterFn = $__require('npm:core-js@1.2.7/library/modules/core.get-iterator-method.js');
-  $export($export.S + $export.F * !$__require('npm:core-js@1.2.7/library/modules/$.iter-detect.js')(function(iter) {
-    Array.from(iter);
-  }), 'Array', {from: function from(arrayLike) {
-      var O = toObject(arrayLike),
-          C = typeof this == 'function' ? this : Array,
-          $$ = arguments,
-          $$len = $$.length,
-          mapfn = $$len > 1 ? $$[1] : undefined,
-          mapping = mapfn !== undefined,
-          index = 0,
-          iterFn = getIterFn(O),
-          length,
-          result,
-          step,
-          iterator;
-      if (mapping)
-        mapfn = ctx(mapfn, $$len > 2 ? $$[2] : undefined, 2);
-      if (iterFn != undefined && !(C == Array && isArrayIter(iterFn))) {
-        for (iterator = iterFn.call(O), result = new C; !(step = iterator.next()).done; index++) {
-          result[index] = mapping ? call(iterator, mapfn, [step.value, index], true) : step.value;
-        }
-      } else {
-        length = toLength(O.length);
-        for (result = new C(length); length > index; index++) {
-          result[index] = mapping ? mapfn(O[index], index) : O[index];
-        }
-      }
-      result.length = index;
-      return result;
-    }});
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/fn/array/from.js", ["npm:core-js@1.2.7/library/modules/es6.string.iterator.js", "npm:core-js@1.2.7/library/modules/es6.array.from.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  $__require('npm:core-js@1.2.7/library/modules/es6.string.iterator.js');
-  $__require('npm:core-js@1.2.7/library/modules/es6.array.from.js');
-  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Array.from;
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/core-js/array/from.js", ["npm:core-js@1.2.7/library/fn/array/from.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = {
-    "default": $__require('npm:core-js@1.2.7/library/fn/array/from.js'),
-    __esModule: true
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.to-string.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  "format cjs";
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.string-at.js", ["npm:core-js@1.2.7/library/modules/$.to-integer.js", "npm:core-js@1.2.7/library/modules/$.defined.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var toInteger = $__require('npm:core-js@1.2.7/library/modules/$.to-integer.js'),
-      defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js');
-  module.exports = function(TO_STRING) {
-    return function(that, pos) {
-      var s = String(defined(that)),
-          i = toInteger(pos),
-          l = s.length,
-          a,
-          b;
-      if (i < 0 || i >= l)
-        return TO_STRING ? '' : undefined;
-      a = s.charCodeAt(i);
-      return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff ? TO_STRING ? s.charAt(i) : a : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
-    };
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.string.iterator.js", ["npm:core-js@1.2.7/library/modules/$.string-at.js", "npm:core-js@1.2.7/library/modules/$.iter-define.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $at = $__require('npm:core-js@1.2.7/library/modules/$.string-at.js')(true);
-  $__require('npm:core-js@1.2.7/library/modules/$.iter-define.js')(String, 'String', function(iterated) {
-    this._t = String(iterated);
-    this._i = 0;
-  }, function() {
-    var O = this._t,
-        index = this._i,
-        point;
-    if (index >= O.length)
-      return {
-        value: undefined,
-        done: true
-      };
-    point = $at(O, index);
-    this._i += point.length;
-    return {
-      value: point,
-      done: false
-    };
-  });
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.add-to-unscopables.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = function() {};
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.array.iterator.js", ["npm:core-js@1.2.7/library/modules/$.add-to-unscopables.js", "npm:core-js@1.2.7/library/modules/$.iter-step.js", "npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.to-iobject.js", "npm:core-js@1.2.7/library/modules/$.iter-define.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var addToUnscopables = $__require('npm:core-js@1.2.7/library/modules/$.add-to-unscopables.js'),
-      step = $__require('npm:core-js@1.2.7/library/modules/$.iter-step.js'),
-      Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js'),
-      toIObject = $__require('npm:core-js@1.2.7/library/modules/$.to-iobject.js');
-  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.iter-define.js')(Array, 'Array', function(iterated, kind) {
-    this._t = toIObject(iterated);
-    this._i = 0;
-    this._k = kind;
-  }, function() {
-    var O = this._t,
-        kind = this._k,
-        index = this._i++;
-    if (!O || index >= O.length) {
-      this._t = undefined;
-      return step(1);
-    }
-    if (kind == 'keys')
-      return step(0, index);
-    if (kind == 'values')
-      return step(0, O[index]);
-    return step(0, [index, O[index]]);
-  }, 'values');
-  Iterators.Arguments = Iterators.Array;
-  addToUnscopables('keys');
-  addToUnscopables('values');
-  addToUnscopables('entries');
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/web.dom.iterable.js", ["npm:core-js@1.2.7/library/modules/es6.array.iterator.js", "npm:core-js@1.2.7/library/modules/$.iterators.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  $__require('npm:core-js@1.2.7/library/modules/es6.array.iterator.js');
-  var Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js');
-  Iterators.NodeList = Iterators.HTMLCollection = Iterators.Array;
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.library.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = true;
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-create.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.property-desc.js", "npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
-      descriptor = $__require('npm:core-js@1.2.7/library/modules/$.property-desc.js'),
-      setToStringTag = $__require('npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js'),
-      IteratorPrototype = {};
-  $__require('npm:core-js@1.2.7/library/modules/$.hide.js')(IteratorPrototype, $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'), function() {
-    return this;
-  });
-  module.exports = function(Constructor, NAME, next) {
-    Constructor.prototype = $.create(IteratorPrototype, {next: descriptor(1, next)});
-    setToStringTag(Constructor, NAME + ' Iterator');
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-define.js", ["npm:core-js@1.2.7/library/modules/$.library.js", "npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.redefine.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.has.js", "npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.iter-create.js", "npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", "npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var LIBRARY = $__require('npm:core-js@1.2.7/library/modules/$.library.js'),
-      $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
-      redefine = $__require('npm:core-js@1.2.7/library/modules/$.redefine.js'),
-      hide = $__require('npm:core-js@1.2.7/library/modules/$.hide.js'),
-      has = $__require('npm:core-js@1.2.7/library/modules/$.has.js'),
-      Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js'),
-      $iterCreate = $__require('npm:core-js@1.2.7/library/modules/$.iter-create.js'),
-      setToStringTag = $__require('npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js'),
-      getProto = $__require('npm:core-js@1.2.7/library/modules/$.js').getProto,
-      ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
-      BUGGY = !([].keys && 'next' in [].keys()),
-      FF_ITERATOR = '@@iterator',
-      KEYS = 'keys',
-      VALUES = 'values';
-  var returnThis = function() {
-    return this;
-  };
-  module.exports = function(Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED) {
-    $iterCreate(Constructor, NAME, next);
-    var getMethod = function(kind) {
-      if (!BUGGY && kind in proto)
-        return proto[kind];
-      switch (kind) {
-        case KEYS:
-          return function keys() {
-            return new Constructor(this, kind);
-          };
-        case VALUES:
-          return function values() {
-            return new Constructor(this, kind);
-          };
-      }
-      return function entries() {
-        return new Constructor(this, kind);
-      };
-    };
-    var TAG = NAME + ' Iterator',
-        DEF_VALUES = DEFAULT == VALUES,
-        VALUES_BUG = false,
-        proto = Base.prototype,
-        $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT],
-        $default = $native || getMethod(DEFAULT),
-        methods,
-        key;
-    if ($native) {
-      var IteratorPrototype = getProto($default.call(new Base));
-      setToStringTag(IteratorPrototype, TAG, true);
-      if (!LIBRARY && has(proto, FF_ITERATOR))
-        hide(IteratorPrototype, ITERATOR, returnThis);
-      if (DEF_VALUES && $native.name !== VALUES) {
-        VALUES_BUG = true;
-        $default = function values() {
-          return $native.call(this);
-        };
-      }
-    }
-    if ((!LIBRARY || FORCED) && (BUGGY || VALUES_BUG || !proto[ITERATOR])) {
-      hide(proto, ITERATOR, $default);
-    }
-    Iterators[NAME] = $default;
-    Iterators[TAG] = returnThis;
-    if (DEFAULT) {
-      methods = {
-        values: DEF_VALUES ? $default : getMethod(VALUES),
-        keys: IS_SET ? $default : getMethod(KEYS),
-        entries: !DEF_VALUES ? $default : getMethod('entries')
-      };
-      if (FORCED)
-        for (key in methods) {
-          if (!(key in proto))
-            redefine(proto, key, methods[key]);
-        }
-      else
-        $export($export.P + $export.F * (BUGGY || VALUES_BUG), NAME, methods);
-    }
-    return methods;
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-step.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = function(done, value) {
-    return {
-      value: value,
-      done: !!done
-    };
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.set-species.js", ["npm:core-js@1.2.7/library/modules/$.core.js", "npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var core = $__require('npm:core-js@1.2.7/library/modules/$.core.js'),
-      $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
-      DESCRIPTORS = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js'),
-      SPECIES = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('species');
-  module.exports = function(KEY) {
-    var C = core[KEY];
-    if (DESCRIPTORS && C && !C[SPECIES])
-      $.setDesc(C, SPECIES, {
-        configurable: true,
-        get: function() {
-          return this;
-        }
-      });
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.collection-strong.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.redefine-all.js", "npm:core-js@1.2.7/library/modules/$.ctx.js", "npm:core-js@1.2.7/library/modules/$.strict-new.js", "npm:core-js@1.2.7/library/modules/$.defined.js", "npm:core-js@1.2.7/library/modules/$.for-of.js", "npm:core-js@1.2.7/library/modules/$.iter-define.js", "npm:core-js@1.2.7/library/modules/$.iter-step.js", "npm:core-js@1.2.7/library/modules/$.uid.js", "npm:core-js@1.2.7/library/modules/$.has.js", "npm:core-js@1.2.7/library/modules/$.is-object.js", "npm:core-js@1.2.7/library/modules/$.set-species.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
-      hide = $__require('npm:core-js@1.2.7/library/modules/$.hide.js'),
-      redefineAll = $__require('npm:core-js@1.2.7/library/modules/$.redefine-all.js'),
-      ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
-      strictNew = $__require('npm:core-js@1.2.7/library/modules/$.strict-new.js'),
-      defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js'),
-      forOf = $__require('npm:core-js@1.2.7/library/modules/$.for-of.js'),
-      $iterDefine = $__require('npm:core-js@1.2.7/library/modules/$.iter-define.js'),
-      step = $__require('npm:core-js@1.2.7/library/modules/$.iter-step.js'),
-      ID = $__require('npm:core-js@1.2.7/library/modules/$.uid.js')('id'),
-      $has = $__require('npm:core-js@1.2.7/library/modules/$.has.js'),
-      isObject = $__require('npm:core-js@1.2.7/library/modules/$.is-object.js'),
-      setSpecies = $__require('npm:core-js@1.2.7/library/modules/$.set-species.js'),
-      DESCRIPTORS = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js'),
-      isExtensible = Object.isExtensible || isObject,
-      SIZE = DESCRIPTORS ? '_s' : 'size',
-      id = 0;
-  var fastKey = function(it, create) {
-    if (!isObject(it))
-      return typeof it == 'symbol' ? it : (typeof it == 'string' ? 'S' : 'P') + it;
-    if (!$has(it, ID)) {
-      if (!isExtensible(it))
-        return 'F';
-      if (!create)
-        return 'E';
-      hide(it, ID, ++id);
-    }
-    return 'O' + it[ID];
-  };
-  var getEntry = function(that, key) {
-    var index = fastKey(key),
-        entry;
-    if (index !== 'F')
-      return that._i[index];
-    for (entry = that._f; entry; entry = entry.n) {
-      if (entry.k == key)
-        return entry;
-    }
-  };
-  module.exports = {
-    getConstructor: function(wrapper, NAME, IS_MAP, ADDER) {
-      var C = wrapper(function(that, iterable) {
-        strictNew(that, C, NAME);
-        that._i = $.create(null);
-        that._f = undefined;
-        that._l = undefined;
-        that[SIZE] = 0;
-        if (iterable != undefined)
-          forOf(iterable, IS_MAP, that[ADDER], that);
-      });
-      redefineAll(C.prototype, {
-        clear: function clear() {
-          for (var that = this,
-              data = that._i,
-              entry = that._f; entry; entry = entry.n) {
-            entry.r = true;
-            if (entry.p)
-              entry.p = entry.p.n = undefined;
-            delete data[entry.i];
-          }
-          that._f = that._l = undefined;
-          that[SIZE] = 0;
-        },
-        'delete': function(key) {
-          var that = this,
-              entry = getEntry(that, key);
-          if (entry) {
-            var next = entry.n,
-                prev = entry.p;
-            delete that._i[entry.i];
-            entry.r = true;
-            if (prev)
-              prev.n = next;
-            if (next)
-              next.p = prev;
-            if (that._f == entry)
-              that._f = next;
-            if (that._l == entry)
-              that._l = prev;
-            that[SIZE]--;
-          }
-          return !!entry;
-        },
-        forEach: function forEach(callbackfn) {
-          var f = ctx(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3),
-              entry;
-          while (entry = entry ? entry.n : this._f) {
-            f(entry.v, entry.k, this);
-            while (entry && entry.r)
-              entry = entry.p;
-          }
-        },
-        has: function has(key) {
-          return !!getEntry(this, key);
-        }
-      });
-      if (DESCRIPTORS)
-        $.setDesc(C.prototype, 'size', {get: function() {
-            return defined(this[SIZE]);
-          }});
-      return C;
-    },
-    def: function(that, key, value) {
-      var entry = getEntry(that, key),
-          prev,
-          index;
-      if (entry) {
-        entry.v = value;
-      } else {
-        that._l = entry = {
-          i: index = fastKey(key, true),
-          k: key,
-          v: value,
-          p: prev = that._l,
-          n: undefined,
-          r: false
-        };
-        if (!that._f)
-          that._f = entry;
-        if (prev)
-          prev.n = entry;
-        that[SIZE]++;
-        if (index !== 'F')
-          that._i[index] = entry;
-      }
-      return that;
-    },
-    getEntry: getEntry,
-    setStrong: function(C, NAME, IS_MAP) {
-      $iterDefine(C, NAME, function(iterated, kind) {
-        this._t = iterated;
-        this._k = kind;
-        this._l = undefined;
-      }, function() {
-        var that = this,
-            kind = that._k,
-            entry = that._l;
-        while (entry && entry.r)
-          entry = entry.p;
-        if (!that._t || !(that._l = entry = entry ? entry.n : that._t._f)) {
-          that._t = undefined;
-          return step(1);
-        }
-        if (kind == 'keys')
-          return step(0, entry.k);
-        if (kind == 'values')
-          return step(0, entry.v);
-        return step(0, [entry.k, entry.v]);
-      }, IS_MAP ? 'entries' : 'values', !IS_MAP, true);
-      setSpecies(NAME);
-    }
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.property-desc.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = function(bitmap, value) {
-    return {
-      enumerable: !(bitmap & 1),
-      configurable: !(bitmap & 2),
-      writable: !(bitmap & 4),
-      value: value
-    };
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.hide.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.property-desc.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
-      createDesc = $__require('npm:core-js@1.2.7/library/modules/$.property-desc.js');
-  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js') ? function(object, key, value) {
-    return $.setDesc(object, key, createDesc(1, value));
-  } : function(object, key, value) {
-    object[key] = value;
-    return object;
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.redefine.js", ["npm:core-js@1.2.7/library/modules/$.hide.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.hide.js');
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.redefine-all.js", ["npm:core-js@1.2.7/library/modules/$.redefine.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var redefine = $__require('npm:core-js@1.2.7/library/modules/$.redefine.js');
-  module.exports = function(target, src) {
-    for (var key in src)
-      redefine(target, key, src[key]);
-    return target;
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.strict-new.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = function(it, Constructor, name) {
-    if (!(it instanceof Constructor))
-      throw TypeError(name + ": use the 'new' operator!");
-    return it;
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.has.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var hasOwnProperty = {}.hasOwnProperty;
-  module.exports = function(it, key) {
-    return hasOwnProperty.call(it, key);
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.has.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var def = $__require('npm:core-js@1.2.7/library/modules/$.js').setDesc,
-      has = $__require('npm:core-js@1.2.7/library/modules/$.has.js'),
-      TAG = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('toStringTag');
-  module.exports = function(it, tag, stat) {
-    if (it && !has(it = stat ? it : it.prototype, TAG))
-      def(it, TAG, {
-        configurable: true,
-        value: tag
-      });
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.descriptors.js", ["npm:core-js@1.2.7/library/modules/$.fails.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = !$__require('npm:core-js@1.2.7/library/modules/$.fails.js')(function() {
-    return Object.defineProperty({}, 'a', {get: function() {
-        return 7;
-      }}).a != 7;
-  });
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.collection.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.global.js", "npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.fails.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.redefine-all.js", "npm:core-js@1.2.7/library/modules/$.for-of.js", "npm:core-js@1.2.7/library/modules/$.strict-new.js", "npm:core-js@1.2.7/library/modules/$.is-object.js", "npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
-      global = $__require('npm:core-js@1.2.7/library/modules/$.global.js'),
-      $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
-      fails = $__require('npm:core-js@1.2.7/library/modules/$.fails.js'),
-      hide = $__require('npm:core-js@1.2.7/library/modules/$.hide.js'),
-      redefineAll = $__require('npm:core-js@1.2.7/library/modules/$.redefine-all.js'),
-      forOf = $__require('npm:core-js@1.2.7/library/modules/$.for-of.js'),
-      strictNew = $__require('npm:core-js@1.2.7/library/modules/$.strict-new.js'),
-      isObject = $__require('npm:core-js@1.2.7/library/modules/$.is-object.js'),
-      setToStringTag = $__require('npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js'),
-      DESCRIPTORS = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js');
-  module.exports = function(NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
-    var Base = global[NAME],
-        C = Base,
-        ADDER = IS_MAP ? 'set' : 'add',
-        proto = C && C.prototype,
-        O = {};
-    if (!DESCRIPTORS || typeof C != 'function' || !(IS_WEAK || proto.forEach && !fails(function() {
-      new C().entries().next();
-    }))) {
-      C = common.getConstructor(wrapper, NAME, IS_MAP, ADDER);
-      redefineAll(C.prototype, methods);
-    } else {
-      C = wrapper(function(target, iterable) {
-        strictNew(target, C, NAME);
-        target._c = new Base;
-        if (iterable != undefined)
-          forOf(iterable, IS_MAP, target[ADDER], target);
-      });
-      $.each.call('add,clear,delete,forEach,get,has,set,keys,values,entries'.split(','), function(KEY) {
-        var IS_ADDER = KEY == 'add' || KEY == 'set';
-        if (KEY in proto && !(IS_WEAK && KEY == 'clear'))
-          hide(C.prototype, KEY, function(a, b) {
-            if (!IS_ADDER && IS_WEAK && !isObject(a))
-              return KEY == 'get' ? undefined : false;
-            var result = this._c[KEY](a === 0 ? 0 : a, b);
-            return IS_ADDER ? this : result;
-          });
-      });
-      if ('size' in proto)
-        $.setDesc(C.prototype, 'size', {get: function() {
-            return this._c.size;
-          }});
-    }
-    setToStringTag(C, NAME);
-    O[NAME] = C;
-    $export($export.G + $export.W + $export.F, O);
-    if (!IS_WEAK)
-      common.setStrong(C, NAME, IS_MAP);
-    return C;
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.set.js", ["npm:core-js@1.2.7/library/modules/$.collection-strong.js", "npm:core-js@1.2.7/library/modules/$.collection.js"], true, function($__require, exports, module) {
-  "use strict";
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var strong = $__require('npm:core-js@1.2.7/library/modules/$.collection-strong.js');
-  $__require('npm:core-js@1.2.7/library/modules/$.collection.js')('Set', function(get) {
-    return function Set() {
-      return get(this, arguments.length > 0 ? arguments[0] : undefined);
-    };
-  }, {add: function add(value) {
-      return strong.def(this, value = value === 0 ? 0 : value, value);
-    }}, strong);
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-call.js", ["npm:core-js@1.2.7/library/modules/$.an-object.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var anObject = $__require('npm:core-js@1.2.7/library/modules/$.an-object.js');
-  module.exports = function(iterator, fn, value, entries) {
-    try {
-      return entries ? fn(anObject(value)[0], value[1]) : fn(value);
-    } catch (e) {
-      var ret = iterator['return'];
-      if (ret !== undefined)
-        anObject(ret.call(iterator));
-      throw e;
-    }
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.is-array-iter.js", ["npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js'),
-      ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
-      ArrayProto = Array.prototype;
-  module.exports = function(it) {
-    return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-integer.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var ceil = Math.ceil,
-      floor = Math.floor;
-  module.exports = function(it) {
-    return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-length.js", ["npm:core-js@1.2.7/library/modules/$.to-integer.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var toInteger = $__require('npm:core-js@1.2.7/library/modules/$.to-integer.js'),
-      min = Math.min;
-  module.exports = function(it) {
-    return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0;
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iterators.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = {};
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/core.get-iterator-method.js", ["npm:core-js@1.2.7/library/modules/$.classof.js", "npm:core-js@1.2.7/library/modules/$.wks.js", "npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var classof = $__require('npm:core-js@1.2.7/library/modules/$.classof.js'),
-      ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
-      Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js');
-  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').getIteratorMethod = function(it) {
-    if (it != undefined)
-      return it[ITERATOR] || it['@@iterator'] || Iterators[classof(it)];
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.for-of.js", ["npm:core-js@1.2.7/library/modules/$.ctx.js", "npm:core-js@1.2.7/library/modules/$.iter-call.js", "npm:core-js@1.2.7/library/modules/$.is-array-iter.js", "npm:core-js@1.2.7/library/modules/$.an-object.js", "npm:core-js@1.2.7/library/modules/$.to-length.js", "npm:core-js@1.2.7/library/modules/core.get-iterator-method.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
-      call = $__require('npm:core-js@1.2.7/library/modules/$.iter-call.js'),
-      isArrayIter = $__require('npm:core-js@1.2.7/library/modules/$.is-array-iter.js'),
-      anObject = $__require('npm:core-js@1.2.7/library/modules/$.an-object.js'),
-      toLength = $__require('npm:core-js@1.2.7/library/modules/$.to-length.js'),
-      getIterFn = $__require('npm:core-js@1.2.7/library/modules/core.get-iterator-method.js');
-  module.exports = function(iterable, entries, fn, that) {
-    var iterFn = getIterFn(iterable),
-        f = ctx(fn, that, entries ? 2 : 1),
-        index = 0,
-        length,
-        step,
-        iterator;
-    if (typeof iterFn != 'function')
-      throw TypeError(iterable + ' is not iterable!');
-    if (isArrayIter(iterFn))
-      for (length = toLength(iterable.length); length > index; index++) {
-        entries ? f(anObject(step = iterable[index])[0], step[1]) : f(iterable[index]);
-      }
-    else
-      for (iterator = iterFn.call(iterable); !(step = iterator.next()).done; ) {
-        call(iterator, f, step.value, entries);
-      }
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.shared.js", ["npm:core-js@1.2.7/library/modules/$.global.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var global = $__require('npm:core-js@1.2.7/library/modules/$.global.js'),
-      SHARED = '__core-js_shared__',
-      store = global[SHARED] || (global[SHARED] = {});
-  module.exports = function(key) {
-    return store[key] || (store[key] = {});
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.uid.js", [], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var id = 0,
-      px = Math.random();
-  module.exports = function(key) {
-    return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.wks.js", ["npm:core-js@1.2.7/library/modules/$.shared.js", "npm:core-js@1.2.7/library/modules/$.uid.js", "npm:core-js@1.2.7/library/modules/$.global.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var store = $__require('npm:core-js@1.2.7/library/modules/$.shared.js')('wks'),
-      uid = $__require('npm:core-js@1.2.7/library/modules/$.uid.js'),
-      Symbol = $__require('npm:core-js@1.2.7/library/modules/$.global.js').Symbol;
-  module.exports = function(name) {
-    return store[name] || (store[name] = Symbol && Symbol[name] || (Symbol || uid)('Symbol.' + name));
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.classof.js", ["npm:core-js@1.2.7/library/modules/$.cof.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var cof = $__require('npm:core-js@1.2.7/library/modules/$.cof.js'),
-      TAG = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('toStringTag'),
-      ARG = cof(function() {
-        return arguments;
-      }()) == 'Arguments';
-  module.exports = function(it) {
-    var O,
-        T,
-        B;
-    return it === undefined ? 'Undefined' : it === null ? 'Null' : typeof(T = (O = Object(it))[TAG]) == 'string' ? T : ARG ? cof(O) : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/$.collection-to-json.js", ["npm:core-js@1.2.7/library/modules/$.for-of.js", "npm:core-js@1.2.7/library/modules/$.classof.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var forOf = $__require('npm:core-js@1.2.7/library/modules/$.for-of.js'),
-      classof = $__require('npm:core-js@1.2.7/library/modules/$.classof.js');
-  module.exports = function(NAME) {
-    return function toJSON() {
-      if (classof(this) != NAME)
-        throw TypeError(NAME + "#toJSON isn't generic");
-      var arr = [];
-      forOf(this, false, arr.push, arr);
-      return arr;
-    };
-  };
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/modules/es7.set.to-json.js", ["npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.collection-to-json.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  var $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js');
-  $export($export.P, 'Set', {toJSON: $__require('npm:core-js@1.2.7/library/modules/$.collection-to-json.js')('Set')});
-  return module.exports;
-});
-
-System.registerDynamic("npm:core-js@1.2.7/library/fn/set.js", ["npm:core-js@1.2.7/library/modules/es6.object.to-string.js", "npm:core-js@1.2.7/library/modules/es6.string.iterator.js", "npm:core-js@1.2.7/library/modules/web.dom.iterable.js", "npm:core-js@1.2.7/library/modules/es6.set.js", "npm:core-js@1.2.7/library/modules/es7.set.to-json.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  $__require('npm:core-js@1.2.7/library/modules/es6.object.to-string.js');
-  $__require('npm:core-js@1.2.7/library/modules/es6.string.iterator.js');
-  $__require('npm:core-js@1.2.7/library/modules/web.dom.iterable.js');
-  $__require('npm:core-js@1.2.7/library/modules/es6.set.js');
-  $__require('npm:core-js@1.2.7/library/modules/es7.set.to-json.js');
-  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Set;
-  return module.exports;
-});
-
-System.registerDynamic("npm:babel-runtime@5.8.38/core-js/set.js", ["npm:core-js@1.2.7/library/fn/set.js"], true, function($__require, exports, module) {
-  ;
-  var define,
-      global = this || self,
-      GLOBAL = global;
-  module.exports = {
-    "default": $__require('npm:core-js@1.2.7/library/fn/set.js'),
-    __esModule: true
-  };
   return module.exports;
 });
 
@@ -27725,6 +26707,481 @@ System.register('app/results.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'n
     }
   };
 });
+System.registerDynamic("npm:babel-runtime@5.8.38/helpers/extends.js", ["npm:babel-runtime@5.8.38/core-js/object/assign.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var _Object$assign = $__require('npm:babel-runtime@5.8.38/core-js/object/assign.js')["default"];
+  exports["default"] = _Object$assign || function(target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  };
+  exports.__esModule = true;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.object.to-string.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  "format cjs";
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.add-to-unscopables.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function() {};
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.array.iterator.js", ["npm:core-js@1.2.7/library/modules/$.add-to-unscopables.js", "npm:core-js@1.2.7/library/modules/$.iter-step.js", "npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.to-iobject.js", "npm:core-js@1.2.7/library/modules/$.iter-define.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var addToUnscopables = $__require('npm:core-js@1.2.7/library/modules/$.add-to-unscopables.js'),
+      step = $__require('npm:core-js@1.2.7/library/modules/$.iter-step.js'),
+      Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js'),
+      toIObject = $__require('npm:core-js@1.2.7/library/modules/$.to-iobject.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.iter-define.js')(Array, 'Array', function(iterated, kind) {
+    this._t = toIObject(iterated);
+    this._i = 0;
+    this._k = kind;
+  }, function() {
+    var O = this._t,
+        kind = this._k,
+        index = this._i++;
+    if (!O || index >= O.length) {
+      this._t = undefined;
+      return step(1);
+    }
+    if (kind == 'keys')
+      return step(0, index);
+    if (kind == 'values')
+      return step(0, O[index]);
+    return step(0, [index, O[index]]);
+  }, 'values');
+  Iterators.Arguments = Iterators.Array;
+  addToUnscopables('keys');
+  addToUnscopables('values');
+  addToUnscopables('entries');
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/web.dom.iterable.js", ["npm:core-js@1.2.7/library/modules/es6.array.iterator.js", "npm:core-js@1.2.7/library/modules/$.iterators.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  $__require('npm:core-js@1.2.7/library/modules/es6.array.iterator.js');
+  var Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js');
+  Iterators.NodeList = Iterators.HTMLCollection = Iterators.Array;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-step.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function(done, value) {
+    return {
+      value: value,
+      done: !!done
+    };
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.set-species.js", ["npm:core-js@1.2.7/library/modules/$.core.js", "npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var core = $__require('npm:core-js@1.2.7/library/modules/$.core.js'),
+      $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      DESCRIPTORS = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js'),
+      SPECIES = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('species');
+  module.exports = function(KEY) {
+    var C = core[KEY];
+    if (DESCRIPTORS && C && !C[SPECIES])
+      $.setDesc(C, SPECIES, {
+        configurable: true,
+        get: function() {
+          return this;
+        }
+      });
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.collection-strong.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.redefine-all.js", "npm:core-js@1.2.7/library/modules/$.ctx.js", "npm:core-js@1.2.7/library/modules/$.strict-new.js", "npm:core-js@1.2.7/library/modules/$.defined.js", "npm:core-js@1.2.7/library/modules/$.for-of.js", "npm:core-js@1.2.7/library/modules/$.iter-define.js", "npm:core-js@1.2.7/library/modules/$.iter-step.js", "npm:core-js@1.2.7/library/modules/$.uid.js", "npm:core-js@1.2.7/library/modules/$.has.js", "npm:core-js@1.2.7/library/modules/$.is-object.js", "npm:core-js@1.2.7/library/modules/$.set-species.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      hide = $__require('npm:core-js@1.2.7/library/modules/$.hide.js'),
+      redefineAll = $__require('npm:core-js@1.2.7/library/modules/$.redefine-all.js'),
+      ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
+      strictNew = $__require('npm:core-js@1.2.7/library/modules/$.strict-new.js'),
+      defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js'),
+      forOf = $__require('npm:core-js@1.2.7/library/modules/$.for-of.js'),
+      $iterDefine = $__require('npm:core-js@1.2.7/library/modules/$.iter-define.js'),
+      step = $__require('npm:core-js@1.2.7/library/modules/$.iter-step.js'),
+      ID = $__require('npm:core-js@1.2.7/library/modules/$.uid.js')('id'),
+      $has = $__require('npm:core-js@1.2.7/library/modules/$.has.js'),
+      isObject = $__require('npm:core-js@1.2.7/library/modules/$.is-object.js'),
+      setSpecies = $__require('npm:core-js@1.2.7/library/modules/$.set-species.js'),
+      DESCRIPTORS = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js'),
+      isExtensible = Object.isExtensible || isObject,
+      SIZE = DESCRIPTORS ? '_s' : 'size',
+      id = 0;
+  var fastKey = function(it, create) {
+    if (!isObject(it))
+      return typeof it == 'symbol' ? it : (typeof it == 'string' ? 'S' : 'P') + it;
+    if (!$has(it, ID)) {
+      if (!isExtensible(it))
+        return 'F';
+      if (!create)
+        return 'E';
+      hide(it, ID, ++id);
+    }
+    return 'O' + it[ID];
+  };
+  var getEntry = function(that, key) {
+    var index = fastKey(key),
+        entry;
+    if (index !== 'F')
+      return that._i[index];
+    for (entry = that._f; entry; entry = entry.n) {
+      if (entry.k == key)
+        return entry;
+    }
+  };
+  module.exports = {
+    getConstructor: function(wrapper, NAME, IS_MAP, ADDER) {
+      var C = wrapper(function(that, iterable) {
+        strictNew(that, C, NAME);
+        that._i = $.create(null);
+        that._f = undefined;
+        that._l = undefined;
+        that[SIZE] = 0;
+        if (iterable != undefined)
+          forOf(iterable, IS_MAP, that[ADDER], that);
+      });
+      redefineAll(C.prototype, {
+        clear: function clear() {
+          for (var that = this,
+              data = that._i,
+              entry = that._f; entry; entry = entry.n) {
+            entry.r = true;
+            if (entry.p)
+              entry.p = entry.p.n = undefined;
+            delete data[entry.i];
+          }
+          that._f = that._l = undefined;
+          that[SIZE] = 0;
+        },
+        'delete': function(key) {
+          var that = this,
+              entry = getEntry(that, key);
+          if (entry) {
+            var next = entry.n,
+                prev = entry.p;
+            delete that._i[entry.i];
+            entry.r = true;
+            if (prev)
+              prev.n = next;
+            if (next)
+              next.p = prev;
+            if (that._f == entry)
+              that._f = next;
+            if (that._l == entry)
+              that._l = prev;
+            that[SIZE]--;
+          }
+          return !!entry;
+        },
+        forEach: function forEach(callbackfn) {
+          var f = ctx(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3),
+              entry;
+          while (entry = entry ? entry.n : this._f) {
+            f(entry.v, entry.k, this);
+            while (entry && entry.r)
+              entry = entry.p;
+          }
+        },
+        has: function has(key) {
+          return !!getEntry(this, key);
+        }
+      });
+      if (DESCRIPTORS)
+        $.setDesc(C.prototype, 'size', {get: function() {
+            return defined(this[SIZE]);
+          }});
+      return C;
+    },
+    def: function(that, key, value) {
+      var entry = getEntry(that, key),
+          prev,
+          index;
+      if (entry) {
+        entry.v = value;
+      } else {
+        that._l = entry = {
+          i: index = fastKey(key, true),
+          k: key,
+          v: value,
+          p: prev = that._l,
+          n: undefined,
+          r: false
+        };
+        if (!that._f)
+          that._f = entry;
+        if (prev)
+          prev.n = entry;
+        that[SIZE]++;
+        if (index !== 'F')
+          that._i[index] = entry;
+      }
+      return that;
+    },
+    getEntry: getEntry,
+    setStrong: function(C, NAME, IS_MAP) {
+      $iterDefine(C, NAME, function(iterated, kind) {
+        this._t = iterated;
+        this._k = kind;
+        this._l = undefined;
+      }, function() {
+        var that = this,
+            kind = that._k,
+            entry = that._l;
+        while (entry && entry.r)
+          entry = entry.p;
+        if (!that._t || !(that._l = entry = entry ? entry.n : that._t._f)) {
+          that._t = undefined;
+          return step(1);
+        }
+        if (kind == 'keys')
+          return step(0, entry.k);
+        if (kind == 'values')
+          return step(0, entry.v);
+        return step(0, [entry.k, entry.v]);
+      }, IS_MAP ? 'entries' : 'values', !IS_MAP, true);
+      setSpecies(NAME);
+    }
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.redefine-all.js", ["npm:core-js@1.2.7/library/modules/$.redefine.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var redefine = $__require('npm:core-js@1.2.7/library/modules/$.redefine.js');
+  module.exports = function(target, src) {
+    for (var key in src)
+      redefine(target, key, src[key]);
+    return target;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.strict-new.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function(it, Constructor, name) {
+    if (!(it instanceof Constructor))
+      throw TypeError(name + ": use the 'new' operator!");
+    return it;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.collection.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.global.js", "npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.fails.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.redefine-all.js", "npm:core-js@1.2.7/library/modules/$.for-of.js", "npm:core-js@1.2.7/library/modules/$.strict-new.js", "npm:core-js@1.2.7/library/modules/$.is-object.js", "npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      global = $__require('npm:core-js@1.2.7/library/modules/$.global.js'),
+      $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
+      fails = $__require('npm:core-js@1.2.7/library/modules/$.fails.js'),
+      hide = $__require('npm:core-js@1.2.7/library/modules/$.hide.js'),
+      redefineAll = $__require('npm:core-js@1.2.7/library/modules/$.redefine-all.js'),
+      forOf = $__require('npm:core-js@1.2.7/library/modules/$.for-of.js'),
+      strictNew = $__require('npm:core-js@1.2.7/library/modules/$.strict-new.js'),
+      isObject = $__require('npm:core-js@1.2.7/library/modules/$.is-object.js'),
+      setToStringTag = $__require('npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js'),
+      DESCRIPTORS = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js');
+  module.exports = function(NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
+    var Base = global[NAME],
+        C = Base,
+        ADDER = IS_MAP ? 'set' : 'add',
+        proto = C && C.prototype,
+        O = {};
+    if (!DESCRIPTORS || typeof C != 'function' || !(IS_WEAK || proto.forEach && !fails(function() {
+      new C().entries().next();
+    }))) {
+      C = common.getConstructor(wrapper, NAME, IS_MAP, ADDER);
+      redefineAll(C.prototype, methods);
+    } else {
+      C = wrapper(function(target, iterable) {
+        strictNew(target, C, NAME);
+        target._c = new Base;
+        if (iterable != undefined)
+          forOf(iterable, IS_MAP, target[ADDER], target);
+      });
+      $.each.call('add,clear,delete,forEach,get,has,set,keys,values,entries'.split(','), function(KEY) {
+        var IS_ADDER = KEY == 'add' || KEY == 'set';
+        if (KEY in proto && !(IS_WEAK && KEY == 'clear'))
+          hide(C.prototype, KEY, function(a, b) {
+            if (!IS_ADDER && IS_WEAK && !isObject(a))
+              return KEY == 'get' ? undefined : false;
+            var result = this._c[KEY](a === 0 ? 0 : a, b);
+            return IS_ADDER ? this : result;
+          });
+      });
+      if ('size' in proto)
+        $.setDesc(C.prototype, 'size', {get: function() {
+            return this._c.size;
+          }});
+    }
+    setToStringTag(C, NAME);
+    O[NAME] = C;
+    $export($export.G + $export.W + $export.F, O);
+    if (!IS_WEAK)
+      common.setStrong(C, NAME, IS_MAP);
+    return C;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.set.js", ["npm:core-js@1.2.7/library/modules/$.collection-strong.js", "npm:core-js@1.2.7/library/modules/$.collection.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var strong = $__require('npm:core-js@1.2.7/library/modules/$.collection-strong.js');
+  $__require('npm:core-js@1.2.7/library/modules/$.collection.js')('Set', function(get) {
+    return function Set() {
+      return get(this, arguments.length > 0 ? arguments[0] : undefined);
+    };
+  }, {add: function add(value) {
+      return strong.def(this, value = value === 0 ? 0 : value, value);
+    }}, strong);
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.for-of.js", ["npm:core-js@1.2.7/library/modules/$.ctx.js", "npm:core-js@1.2.7/library/modules/$.iter-call.js", "npm:core-js@1.2.7/library/modules/$.is-array-iter.js", "npm:core-js@1.2.7/library/modules/$.an-object.js", "npm:core-js@1.2.7/library/modules/$.to-length.js", "npm:core-js@1.2.7/library/modules/core.get-iterator-method.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
+      call = $__require('npm:core-js@1.2.7/library/modules/$.iter-call.js'),
+      isArrayIter = $__require('npm:core-js@1.2.7/library/modules/$.is-array-iter.js'),
+      anObject = $__require('npm:core-js@1.2.7/library/modules/$.an-object.js'),
+      toLength = $__require('npm:core-js@1.2.7/library/modules/$.to-length.js'),
+      getIterFn = $__require('npm:core-js@1.2.7/library/modules/core.get-iterator-method.js');
+  module.exports = function(iterable, entries, fn, that) {
+    var iterFn = getIterFn(iterable),
+        f = ctx(fn, that, entries ? 2 : 1),
+        index = 0,
+        length,
+        step,
+        iterator;
+    if (typeof iterFn != 'function')
+      throw TypeError(iterable + ' is not iterable!');
+    if (isArrayIter(iterFn))
+      for (length = toLength(iterable.length); length > index; index++) {
+        entries ? f(anObject(step = iterable[index])[0], step[1]) : f(iterable[index]);
+      }
+    else
+      for (iterator = iterFn.call(iterable); !(step = iterator.next()).done; ) {
+        call(iterator, f, step.value, entries);
+      }
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.collection-to-json.js", ["npm:core-js@1.2.7/library/modules/$.for-of.js", "npm:core-js@1.2.7/library/modules/$.classof.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var forOf = $__require('npm:core-js@1.2.7/library/modules/$.for-of.js'),
+      classof = $__require('npm:core-js@1.2.7/library/modules/$.classof.js');
+  module.exports = function(NAME) {
+    return function toJSON() {
+      if (classof(this) != NAME)
+        throw TypeError(NAME + "#toJSON isn't generic");
+      var arr = [];
+      forOf(this, false, arr.push, arr);
+      return arr;
+    };
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es7.set.to-json.js", ["npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.collection-to-json.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js');
+  $export($export.P, 'Set', {toJSON: $__require('npm:core-js@1.2.7/library/modules/$.collection-to-json.js')('Set')});
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/set.js", ["npm:core-js@1.2.7/library/modules/es6.object.to-string.js", "npm:core-js@1.2.7/library/modules/es6.string.iterator.js", "npm:core-js@1.2.7/library/modules/web.dom.iterable.js", "npm:core-js@1.2.7/library/modules/es6.set.js", "npm:core-js@1.2.7/library/modules/es7.set.to-json.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  $__require('npm:core-js@1.2.7/library/modules/es6.object.to-string.js');
+  $__require('npm:core-js@1.2.7/library/modules/es6.string.iterator.js');
+  $__require('npm:core-js@1.2.7/library/modules/web.dom.iterable.js');
+  $__require('npm:core-js@1.2.7/library/modules/es6.set.js');
+  $__require('npm:core-js@1.2.7/library/modules/es7.set.to-json.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Set;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/set.js", ["npm:core-js@1.2.7/library/fn/set.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/set.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
 System.registerDynamic("npm:core-js@1.2.7/library/modules/$.object-assign.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.to-object.js", "npm:core-js@1.2.7/library/modules/$.iobject.js", "npm:core-js@1.2.7/library/modules/$.fails.js"], true, function($__require, exports, module) {
   ;
   var define,
@@ -27794,6 +27251,505 @@ System.registerDynamic("npm:babel-runtime@5.8.38/core-js/object/assign.js", ["np
       GLOBAL = global;
   module.exports = {
     "default": $__require('npm:core-js@1.2.7/library/fn/object/assign.js'),
+    __esModule: true
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.string-at.js", ["npm:core-js@1.2.7/library/modules/$.to-integer.js", "npm:core-js@1.2.7/library/modules/$.defined.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var toInteger = $__require('npm:core-js@1.2.7/library/modules/$.to-integer.js'),
+      defined = $__require('npm:core-js@1.2.7/library/modules/$.defined.js');
+  module.exports = function(TO_STRING) {
+    return function(that, pos) {
+      var s = String(defined(that)),
+          i = toInteger(pos),
+          l = s.length,
+          a,
+          b;
+      if (i < 0 || i >= l)
+        return TO_STRING ? '' : undefined;
+      a = s.charCodeAt(i);
+      return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff ? TO_STRING ? s.charAt(i) : a : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
+    };
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.library.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = true;
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.redefine.js", ["npm:core-js@1.2.7/library/modules/$.hide.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.hide.js');
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.property-desc.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = function(bitmap, value) {
+    return {
+      enumerable: !(bitmap & 1),
+      configurable: !(bitmap & 2),
+      writable: !(bitmap & 4),
+      value: value
+    };
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.descriptors.js", ["npm:core-js@1.2.7/library/modules/$.fails.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = !$__require('npm:core-js@1.2.7/library/modules/$.fails.js')(function() {
+    return Object.defineProperty({}, 'a', {get: function() {
+        return 7;
+      }}).a != 7;
+  });
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.hide.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.property-desc.js", "npm:core-js@1.2.7/library/modules/$.descriptors.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      createDesc = $__require('npm:core-js@1.2.7/library/modules/$.property-desc.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.descriptors.js') ? function(object, key, value) {
+    return $.setDesc(object, key, createDesc(1, value));
+  } : function(object, key, value) {
+    object[key] = value;
+    return object;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-create.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.property-desc.js", "npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $ = $__require('npm:core-js@1.2.7/library/modules/$.js'),
+      descriptor = $__require('npm:core-js@1.2.7/library/modules/$.property-desc.js'),
+      setToStringTag = $__require('npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js'),
+      IteratorPrototype = {};
+  $__require('npm:core-js@1.2.7/library/modules/$.hide.js')(IteratorPrototype, $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'), function() {
+    return this;
+  });
+  module.exports = function(Constructor, NAME, next) {
+    Constructor.prototype = $.create(IteratorPrototype, {next: descriptor(1, next)});
+    setToStringTag(Constructor, NAME + ' Iterator');
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.has.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var hasOwnProperty = {}.hasOwnProperty;
+  module.exports = function(it, key) {
+    return hasOwnProperty.call(it, key);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", ["npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.has.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var def = $__require('npm:core-js@1.2.7/library/modules/$.js').setDesc,
+      has = $__require('npm:core-js@1.2.7/library/modules/$.has.js'),
+      TAG = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('toStringTag');
+  module.exports = function(it, tag, stat) {
+    if (it && !has(it = stat ? it : it.prototype, TAG))
+      def(it, TAG, {
+        configurable: true,
+        value: tag
+      });
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-define.js", ["npm:core-js@1.2.7/library/modules/$.library.js", "npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.redefine.js", "npm:core-js@1.2.7/library/modules/$.hide.js", "npm:core-js@1.2.7/library/modules/$.has.js", "npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.iter-create.js", "npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js", "npm:core-js@1.2.7/library/modules/$.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var LIBRARY = $__require('npm:core-js@1.2.7/library/modules/$.library.js'),
+      $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
+      redefine = $__require('npm:core-js@1.2.7/library/modules/$.redefine.js'),
+      hide = $__require('npm:core-js@1.2.7/library/modules/$.hide.js'),
+      has = $__require('npm:core-js@1.2.7/library/modules/$.has.js'),
+      Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js'),
+      $iterCreate = $__require('npm:core-js@1.2.7/library/modules/$.iter-create.js'),
+      setToStringTag = $__require('npm:core-js@1.2.7/library/modules/$.set-to-string-tag.js'),
+      getProto = $__require('npm:core-js@1.2.7/library/modules/$.js').getProto,
+      ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
+      BUGGY = !([].keys && 'next' in [].keys()),
+      FF_ITERATOR = '@@iterator',
+      KEYS = 'keys',
+      VALUES = 'values';
+  var returnThis = function() {
+    return this;
+  };
+  module.exports = function(Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED) {
+    $iterCreate(Constructor, NAME, next);
+    var getMethod = function(kind) {
+      if (!BUGGY && kind in proto)
+        return proto[kind];
+      switch (kind) {
+        case KEYS:
+          return function keys() {
+            return new Constructor(this, kind);
+          };
+        case VALUES:
+          return function values() {
+            return new Constructor(this, kind);
+          };
+      }
+      return function entries() {
+        return new Constructor(this, kind);
+      };
+    };
+    var TAG = NAME + ' Iterator',
+        DEF_VALUES = DEFAULT == VALUES,
+        VALUES_BUG = false,
+        proto = Base.prototype,
+        $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT],
+        $default = $native || getMethod(DEFAULT),
+        methods,
+        key;
+    if ($native) {
+      var IteratorPrototype = getProto($default.call(new Base));
+      setToStringTag(IteratorPrototype, TAG, true);
+      if (!LIBRARY && has(proto, FF_ITERATOR))
+        hide(IteratorPrototype, ITERATOR, returnThis);
+      if (DEF_VALUES && $native.name !== VALUES) {
+        VALUES_BUG = true;
+        $default = function values() {
+          return $native.call(this);
+        };
+      }
+    }
+    if ((!LIBRARY || FORCED) && (BUGGY || VALUES_BUG || !proto[ITERATOR])) {
+      hide(proto, ITERATOR, $default);
+    }
+    Iterators[NAME] = $default;
+    Iterators[TAG] = returnThis;
+    if (DEFAULT) {
+      methods = {
+        values: DEF_VALUES ? $default : getMethod(VALUES),
+        keys: IS_SET ? $default : getMethod(KEYS),
+        entries: !DEF_VALUES ? $default : getMethod('entries')
+      };
+      if (FORCED)
+        for (key in methods) {
+          if (!(key in proto))
+            redefine(proto, key, methods[key]);
+        }
+      else
+        $export($export.P + $export.F * (BUGGY || VALUES_BUG), NAME, methods);
+    }
+    return methods;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.string.iterator.js", ["npm:core-js@1.2.7/library/modules/$.string-at.js", "npm:core-js@1.2.7/library/modules/$.iter-define.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var $at = $__require('npm:core-js@1.2.7/library/modules/$.string-at.js')(true);
+  $__require('npm:core-js@1.2.7/library/modules/$.iter-define.js')(String, 'String', function(iterated) {
+    this._t = String(iterated);
+    this._i = 0;
+  }, function() {
+    var O = this._t,
+        index = this._i,
+        point;
+    if (index >= O.length)
+      return {
+        value: undefined,
+        done: true
+      };
+    point = $at(O, index);
+    this._i += point.length;
+    return {
+      value: point,
+      done: false
+    };
+  });
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-call.js", ["npm:core-js@1.2.7/library/modules/$.an-object.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var anObject = $__require('npm:core-js@1.2.7/library/modules/$.an-object.js');
+  module.exports = function(iterator, fn, value, entries) {
+    try {
+      return entries ? fn(anObject(value)[0], value[1]) : fn(value);
+    } catch (e) {
+      var ret = iterator['return'];
+      if (ret !== undefined)
+        anObject(ret.call(iterator));
+      throw e;
+    }
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.is-array-iter.js", ["npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js'),
+      ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
+      ArrayProto = Array.prototype;
+  module.exports = function(it) {
+    return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-integer.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var ceil = Math.ceil,
+      floor = Math.floor;
+  module.exports = function(it) {
+    return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.to-length.js", ["npm:core-js@1.2.7/library/modules/$.to-integer.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var toInteger = $__require('npm:core-js@1.2.7/library/modules/$.to-integer.js'),
+      min = Math.min;
+  module.exports = function(it) {
+    return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.classof.js", ["npm:core-js@1.2.7/library/modules/$.cof.js", "npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var cof = $__require('npm:core-js@1.2.7/library/modules/$.cof.js'),
+      TAG = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('toStringTag'),
+      ARG = cof(function() {
+        return arguments;
+      }()) == 'Arguments';
+  module.exports = function(it) {
+    var O,
+        T,
+        B;
+    return it === undefined ? 'Undefined' : it === null ? 'Null' : typeof(T = (O = Object(it))[TAG]) == 'string' ? T : ARG ? cof(O) : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iterators.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {};
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/core.get-iterator-method.js", ["npm:core-js@1.2.7/library/modules/$.classof.js", "npm:core-js@1.2.7/library/modules/$.wks.js", "npm:core-js@1.2.7/library/modules/$.iterators.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var classof = $__require('npm:core-js@1.2.7/library/modules/$.classof.js'),
+      ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
+      Iterators = $__require('npm:core-js@1.2.7/library/modules/$.iterators.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').getIteratorMethod = function(it) {
+    if (it != undefined)
+      return it[ITERATOR] || it['@@iterator'] || Iterators[classof(it)];
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.shared.js", ["npm:core-js@1.2.7/library/modules/$.global.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var global = $__require('npm:core-js@1.2.7/library/modules/$.global.js'),
+      SHARED = '__core-js_shared__',
+      store = global[SHARED] || (global[SHARED] = {});
+  module.exports = function(key) {
+    return store[key] || (store[key] = {});
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.uid.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var id = 0,
+      px = Math.random();
+  module.exports = function(key) {
+    return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.wks.js", ["npm:core-js@1.2.7/library/modules/$.shared.js", "npm:core-js@1.2.7/library/modules/$.uid.js", "npm:core-js@1.2.7/library/modules/$.global.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var store = $__require('npm:core-js@1.2.7/library/modules/$.shared.js')('wks'),
+      uid = $__require('npm:core-js@1.2.7/library/modules/$.uid.js'),
+      Symbol = $__require('npm:core-js@1.2.7/library/modules/$.global.js').Symbol;
+  module.exports = function(name) {
+    return store[name] || (store[name] = Symbol && Symbol[name] || (Symbol || uid)('Symbol.' + name));
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/$.iter-detect.js", ["npm:core-js@1.2.7/library/modules/$.wks.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var ITERATOR = $__require('npm:core-js@1.2.7/library/modules/$.wks.js')('iterator'),
+      SAFE_CLOSING = false;
+  try {
+    var riter = [7][ITERATOR]();
+    riter['return'] = function() {
+      SAFE_CLOSING = true;
+    };
+    Array.from(riter, function() {
+      throw 2;
+    });
+  } catch (e) {}
+  module.exports = function(exec, skipClosing) {
+    if (!skipClosing && !SAFE_CLOSING)
+      return false;
+    var safe = false;
+    try {
+      var arr = [7],
+          iter = arr[ITERATOR]();
+      iter.next = function() {
+        return {done: safe = true};
+      };
+      arr[ITERATOR] = function() {
+        return iter;
+      };
+      exec(arr);
+    } catch (e) {}
+    return safe;
+  };
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/modules/es6.array.from.js", ["npm:core-js@1.2.7/library/modules/$.ctx.js", "npm:core-js@1.2.7/library/modules/$.export.js", "npm:core-js@1.2.7/library/modules/$.to-object.js", "npm:core-js@1.2.7/library/modules/$.iter-call.js", "npm:core-js@1.2.7/library/modules/$.is-array-iter.js", "npm:core-js@1.2.7/library/modules/$.to-length.js", "npm:core-js@1.2.7/library/modules/core.get-iterator-method.js", "npm:core-js@1.2.7/library/modules/$.iter-detect.js"], true, function($__require, exports, module) {
+  "use strict";
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  var ctx = $__require('npm:core-js@1.2.7/library/modules/$.ctx.js'),
+      $export = $__require('npm:core-js@1.2.7/library/modules/$.export.js'),
+      toObject = $__require('npm:core-js@1.2.7/library/modules/$.to-object.js'),
+      call = $__require('npm:core-js@1.2.7/library/modules/$.iter-call.js'),
+      isArrayIter = $__require('npm:core-js@1.2.7/library/modules/$.is-array-iter.js'),
+      toLength = $__require('npm:core-js@1.2.7/library/modules/$.to-length.js'),
+      getIterFn = $__require('npm:core-js@1.2.7/library/modules/core.get-iterator-method.js');
+  $export($export.S + $export.F * !$__require('npm:core-js@1.2.7/library/modules/$.iter-detect.js')(function(iter) {
+    Array.from(iter);
+  }), 'Array', {from: function from(arrayLike) {
+      var O = toObject(arrayLike),
+          C = typeof this == 'function' ? this : Array,
+          $$ = arguments,
+          $$len = $$.length,
+          mapfn = $$len > 1 ? $$[1] : undefined,
+          mapping = mapfn !== undefined,
+          index = 0,
+          iterFn = getIterFn(O),
+          length,
+          result,
+          step,
+          iterator;
+      if (mapping)
+        mapfn = ctx(mapfn, $$len > 2 ? $$[2] : undefined, 2);
+      if (iterFn != undefined && !(C == Array && isArrayIter(iterFn))) {
+        for (iterator = iterFn.call(O), result = new C; !(step = iterator.next()).done; index++) {
+          result[index] = mapping ? call(iterator, mapfn, [step.value, index], true) : step.value;
+        }
+      } else {
+        length = toLength(O.length);
+        for (result = new C(length); length > index; index++) {
+          result[index] = mapping ? mapfn(O[index], index) : O[index];
+        }
+      }
+      result.length = index;
+      return result;
+    }});
+  return module.exports;
+});
+
+System.registerDynamic("npm:core-js@1.2.7/library/fn/array/from.js", ["npm:core-js@1.2.7/library/modules/es6.string.iterator.js", "npm:core-js@1.2.7/library/modules/es6.array.from.js", "npm:core-js@1.2.7/library/modules/$.core.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  $__require('npm:core-js@1.2.7/library/modules/es6.string.iterator.js');
+  $__require('npm:core-js@1.2.7/library/modules/es6.array.from.js');
+  module.exports = $__require('npm:core-js@1.2.7/library/modules/$.core.js').Array.from;
+  return module.exports;
+});
+
+System.registerDynamic("npm:babel-runtime@5.8.38/core-js/array/from.js", ["npm:core-js@1.2.7/library/fn/array/from.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this || self,
+      GLOBAL = global;
+  module.exports = {
+    "default": $__require('npm:core-js@1.2.7/library/fn/array/from.js'),
     __esModule: true
   };
   return module.exports;
@@ -55701,7 +55657,7 @@ System.registerDynamic("npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@
   return _retrieveGlobal();
 });
 System.register('app/charts.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:react@15.3.1.js', 'npm:react-vis@0.4.2.js', 'npm:react-vis@0.4.2/main.css!github:systemjs/plugin-css@0.1.27.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, React, XYPlot, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, HeatmapSeries, Heatmap, Barchart;
+  var _get, _inherits, _createClass, _classCallCheck, React, XYPlot, Treemap, XAxis, YAxis, VerticalGridLines, HorizontalGridLines, VerticalBarSeries, HeatmapSeries, TreeMap, Heatmap, Barchart;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -55716,6 +55672,7 @@ System.register('app/charts.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'np
       React = _npmReact1531Js['default'];
     }, function (_npmReactVis042Js) {
       XYPlot = _npmReactVis042Js.XYPlot;
+      Treemap = _npmReactVis042Js.Treemap;
       XAxis = _npmReactVis042Js.XAxis;
       YAxis = _npmReactVis042Js.YAxis;
       VerticalGridLines = _npmReactVis042Js.VerticalGridLines;
@@ -55726,8 +55683,54 @@ System.register('app/charts.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'np
     execute: function () {
       'use strict';
 
-      Heatmap = (function (_React$Component) {
-        _inherits(Heatmap, _React$Component);
+      TreeMap = (function (_React$Component) {
+        _inherits(TreeMap, _React$Component);
+
+        function TreeMap() {
+          _classCallCheck(this, TreeMap);
+
+          _get(Object.getPrototypeOf(TreeMap.prototype), 'constructor', this).apply(this, arguments);
+        }
+
+        _createClass(TreeMap, [{
+          key: 'render',
+          value: function render() {
+
+            var children = this.props.children;
+            var title = this.props.title || '';
+            var width = this.props.width || 400;
+            var height = this.props.height || 400;
+            var colorDomain = this.props.colorDomain || [0, 1];
+            var colorRange = this.props.colorRange || ['white', '#339933'];
+            var colorType = this.props.colorType || 'linear';
+
+            return React.createElement(
+              'div',
+              null,
+              React.createElement(
+                'h4',
+                null,
+                this.props.metric
+              ),
+              React.createElement(Treemap, {
+                data: { title: title, children: children },
+                height: height,
+                width: width,
+                colorDomain: colorDomain,
+                colorRange: colorRange,
+                colorType: colorType
+              })
+            );
+          }
+        }]);
+
+        return TreeMap;
+      })(React.Component);
+
+      _export('TreeMap', TreeMap);
+
+      Heatmap = (function (_React$Component2) {
+        _inherits(Heatmap, _React$Component2);
 
         function Heatmap() {
           _classCallCheck(this, Heatmap);
@@ -55741,7 +55744,7 @@ System.register('app/charts.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'np
             var series = this.props.series;
             var title = this.props.title || 'Untitled';
             var width = this.props.width || 400;
-            var height = this.props.height || 500;
+            var height = this.props.height || 400;
             var colorRange = this.props.colorRange || ['#339933', 'white'];
             var colorType = this.props.colorType || 'linear';
 
@@ -55778,8 +55781,8 @@ System.register('app/charts.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'np
 
       _export('Heatmap', Heatmap);
 
-      Barchart = (function (_React$Component2) {
-        _inherits(Barchart, _React$Component2);
+      Barchart = (function (_React$Component3) {
+        _inherits(Barchart, _React$Component3);
 
         function Barchart() {
           _classCallCheck(this, Barchart);
@@ -55832,8 +55835,8 @@ System.register('app/charts.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'np
     }
   };
 });
-System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-redux@4.4.5.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-responsive@1.1.5.js', 'app/util.js', 'app/charts.js'], function (_export) {
-  var _get, _inherits, _createClass, _classCallCheck, _Object$assign, React, get, connect, Carousel, MediaQuery, frequencies, range, series, Barchart, Heatmap, Analysis;
+System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 'npm:babel-runtime@5.8.38/helpers/inherits.js', 'npm:babel-runtime@5.8.38/helpers/create-class.js', 'npm:babel-runtime@5.8.38/helpers/class-call-check.js', 'npm:babel-runtime@5.8.38/helpers/extends.js', 'npm:babel-runtime@5.8.38/core-js/set.js', 'npm:babel-runtime@5.8.38/core-js/object/assign.js', 'npm:babel-runtime@5.8.38/core-js/array/from.js', 'npm:react@15.3.1.js', 'app/api.js', 'npm:react-redux@4.4.5.js', 'npm:nuka-carousel@2.0.3.js', 'npm:react-responsive@1.1.5.js', 'app/util.js', 'app/charts.js'], function (_export) {
+  var _get, _inherits, _createClass, _classCallCheck, _extends, _Set, _Object$assign, _Array$from, React, get, connect, Carousel, MediaQuery, frequencies, range, series, Barchart, Heatmap, Analysis;
 
   return {
     setters: [function (_npmBabelRuntime5838HelpersGetJs) {
@@ -55844,8 +55847,14 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
       _createClass = _npmBabelRuntime5838HelpersCreateClassJs['default'];
     }, function (_npmBabelRuntime5838HelpersClassCallCheckJs) {
       _classCallCheck = _npmBabelRuntime5838HelpersClassCallCheckJs['default'];
+    }, function (_npmBabelRuntime5838HelpersExtendsJs) {
+      _extends = _npmBabelRuntime5838HelpersExtendsJs['default'];
+    }, function (_npmBabelRuntime5838CoreJsSetJs) {
+      _Set = _npmBabelRuntime5838CoreJsSetJs['default'];
     }, function (_npmBabelRuntime5838CoreJsObjectAssignJs) {
       _Object$assign = _npmBabelRuntime5838CoreJsObjectAssignJs['default'];
+    }, function (_npmBabelRuntime5838CoreJsArrayFromJs) {
+      _Array$from = _npmBabelRuntime5838CoreJsArrayFromJs['default'];
     }, function (_npmReact1531Js) {
       React = _npmReact1531Js['default'];
     }, function (_appApiJs) {
@@ -55875,64 +55884,58 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
 
           _get(Object.getPrototypeOf(Analysis.prototype), 'constructor', this).call(this, props);
           this.state = {
-            minute: [],
-            situation: [],
-            flank: [],
-            standard: [],
-            shots: [],
-            heatmap: []
+            data: [],
+            charts: [{
+              idx: 0,
+              title: 'Tactische situatie',
+              options: ['aanval', 'counter', 'standaard'],
+              column: 5,
+              xType: 'ordinal'
+            }, {
+              idx: 1,
+              title: 'Standaardsituatie',
+              options: ['hoekschop', 'vrije trap'],
+              column: 6,
+              xType: 'ordinal'
+            }, {
+              idx: 2,
+              title: 'Aanval ingezet',
+              options: ['links', 'centrum', 'rechts'],
+              column: 7,
+              xType: 'ordinal'
+            }, {
+              idx: 3,
+              title: 'Wijze van scoren',
+              options: ['schot', 'shoot-out', 'intikker', 'kopbal'],
+              column: 8,
+              xType: 'ordinal'
+            }, {
+              idx: 4,
+              title: 'Wedstrijdverloop',
+              column: 2,
+              stackBy: 'y',
+              type: 'minute'
+            }, {
+              idx: 5,
+              title: 'Scoringspositie',
+              type: 'heatmap'
+            }],
+            selectedChart: 0,
+            selectedTeams: new _Set(['blijdorp', 'opponent']),
+            teams: [{
+              key: 'blijdorp',
+              title: 'Blijdorp',
+              color: '#339933'
+            }, {
+              key: 'opponent',
+              title: 'Tegenstander',
+              color: '#99ccff'
+            }],
+            players: new _Set(['Fadi', 'Jonas', 'Luc', 'Quincy', 'Stijn'])
           };
         }
 
         _createClass(Analysis, [{
-          key: 'flankSeries',
-          value: function flankSeries(data, flag, idx) {
-            var filtered = data.filter(function (d) {
-              return d[2] === flag;
-            });
-            var values = filtered.map(function (d) {
-              return d[idx];
-            });
-            var freqs = frequencies(values);
-            return series(freqs, ['links', 'centrum', 'rechts']);
-          }
-        }, {
-          key: 'standardSeries',
-          value: function standardSeries(data, flag) {
-            var filtered = data.filter(function (d) {
-              return d[2] === flag;
-            });
-            var values = filtered.map(function (d) {
-              return d[6];
-            });
-            var freqs = frequencies(values);
-            return series(freqs, ['hoekschop', 'vrije trap']);
-          }
-        }, {
-          key: 'shotSeries',
-          value: function shotSeries(data, flag) {
-            var filtered = data.filter(function (d) {
-              return d[2] === flag;
-            });
-            var values = filtered.map(function (d) {
-              return d[8];
-            });
-            var freqs = frequencies(values);
-            return series(freqs, ['schot', 'shoot-out', 'intikker', 'kopbal']);
-          }
-        }, {
-          key: 'situationSeries',
-          value: function situationSeries(data, flag) {
-            var filtered = data.filter(function (d) {
-              return d[2] === flag;
-            });
-            var values = filtered.map(function (d) {
-              return d[5];
-            });
-            var freqs = frequencies(values);
-            return series(freqs, ['aanval', 'counter', 'standaard']);
-          }
-        }, {
           key: 'heatmapSeries',
           value: function heatmapSeries(data, flag) {
             var xs = range(-6, 6);
@@ -55986,14 +55989,184 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
             var uri = this.props.season + '/scores';
             get(uri).then(function (data) {
               _this.setState({
-                minute: [_this.minuteSeries(data, true), _this.minuteSeries(data, false)],
-                situation: [_this.situationSeries(data, true), _this.situationSeries(data, false)],
-                flank: [_this.flankSeries(data, true, 7)],
-                standard: [_this.standardSeries(data, true), _this.standardSeries(data, false)],
-                shots: [_this.shotSeries(data, true), _this.shotSeries(data, false)],
-                heatmap: [_this.heatmapSeries(data, true)]
+                data: data
               });
             });
+          }
+        }, {
+          key: 'handleChartChange',
+          value: function handleChartChange(e) {
+            this.setState({ selectedChart: e.target.value });
+          }
+        }, {
+          key: 'renderChartSelect',
+          value: function renderChartSelect() {
+            return React.createElement(
+              'div',
+              { className: 'form-group' },
+              React.createElement(
+                'label',
+                { 'for': 'chartSelect' },
+                'Grafiek'
+              ),
+              React.createElement(
+                'select',
+                { id: 'chartSelect',
+                  className: 'form-control',
+                  defaultValue: this.state.selectedChart,
+                  onChange: this.handleChartChange.bind(this) },
+                this.state.charts.map(function (o) {
+                  return React.createElement(
+                    'option',
+                    { key: o.idx, value: o.idx },
+                    o.title
+                  );
+                })
+              )
+            );
+          }
+        }, {
+          key: 'handleTeamChange',
+          value: function handleTeamChange(team) {
+            var teams = this.state.selectedTeams;
+            if (teams.has(team)) teams['delete'](team);else teams.add(team);
+            this.setState({ selectedTeams: teams });
+          }
+        }, {
+          key: 'renderTeamSelect',
+          value: function renderTeamSelect() {
+            var _this2 = this;
+
+            return React.createElement(
+              'div',
+              { className: 'form-group' },
+              React.createElement(
+                'label',
+                { 'for': 'teamSelect' },
+                'Team'
+              ),
+              this.state.teams.map(function (t) {
+                return React.createElement(
+                  'div',
+                  null,
+                  React.createElement('input', { type: 'checkbox', checked: _this2.state.selectedTeams.has(t.key),
+                    onChange: _this2.handleTeamChange.bind(_this2, t.key) }),
+                  React.createElement(
+                    'span',
+                    { style: { marginLeft: '10px' } },
+                    t.title
+                  ),
+                  React.createElement(
+                    'span',
+                    { style: { width: '50px', backgroundColor: t.color, float: 'right' } },
+                    React.createElement('br', null)
+                  )
+                );
+              })
+            );
+          }
+        }, {
+          key: 'handlePlayerChange',
+          value: function handlePlayerChange(player) {
+            var players = this.state.players;
+            if (players.has(player)) players['delete'](player);else players.add(player);
+            this.setState({ players: players });
+          }
+        }, {
+          key: 'renderPlayerSelect',
+          value: function renderPlayerSelect() {
+            var _this3 = this;
+
+            var players = new _Set();
+            this.state.data.map(function (d) {
+              if (d[3]) players.add(d[3]);
+            });
+            players = _Array$from(players).sort();
+
+            return React.createElement(
+              'div',
+              { className: 'form-group' },
+              React.createElement(
+                'label',
+                { 'for': 'playerSelect' },
+                'Speler'
+              ),
+              players.map(function (p) {
+                return React.createElement(
+                  'div',
+                  null,
+                  React.createElement('input', { type: 'checkbox', checked: _this3.state.players.has(p),
+                    onChange: _this3.handlePlayerChange.bind(_this3, p) }),
+                  React.createElement(
+                    'span',
+                    { style: { marginLeft: '10px' } },
+                    p
+                  )
+                );
+              })
+            );
+          }
+        }, {
+          key: 'renderForm',
+          value: function renderForm() {
+            return React.createElement(
+              'form',
+              null,
+              this.renderChartSelect(),
+              this.renderTeamSelect(),
+              this.renderPlayerSelect()
+            );
+          }
+        }, {
+          key: 'makeSeries',
+          value: function makeSeries(data, flag, m) {
+            switch (m.type) {
+              case 'minute':
+                return this.minuteSeries(data, flag);
+              case 'heatmap':
+                return this.heatmapSeries(data, flag);
+              default:
+                var filtered = data.filter(function (d) {
+                  return d[2] === flag;
+                });
+                var values = filtered.map(function (d) {
+                  return d[m.column];
+                });
+                var freqs = frequencies(values);
+                return series(freqs, m.options);
+            }
+          }
+        }, {
+          key: 'renderChart',
+          value: function renderChart(size) {
+            var _this4 = this;
+
+            var chart = this.state.charts[this.state.selectedChart];
+            var colors = [];
+            var series = [];
+            var idx = 0;
+
+            var data = this.state.data.filter(function (d) {
+              return !d[2] || _this4.state.players.has(d[3]);
+            });
+
+            if (this.state.selectedTeams.has('blijdorp')) {
+              series[idx] = this.makeSeries(data, true, chart);
+              colors[idx] = this.state.teams[0].color;
+              idx++;
+            }
+
+            if (this.state.selectedTeams.has('opponent')) {
+              series[idx] = this.makeSeries(data, false, chart);
+              colors[idx] = this.state.teams[1].color;
+            }
+
+            if ('heatmap' === chart.type) {
+              var colorRange = [colors[colors.length - 1], 'white'];
+              return React.createElement(Heatmap, _extends({}, chart, { series: series, colorRange: colorRange, width: size, height: size * 0.6932 }));
+            } else {
+              return React.createElement(Barchart, _extends({}, chart, { series: series, colors: colors, width: size, height: size }));
+            }
           }
         }, {
           key: 'render',
@@ -56002,31 +56175,31 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
               'div',
               { className: 'row-fluid' },
               React.createElement(
-                'div',
-                { className: 'col-xs-12 col-md-12' },
+                MediaQuery,
+                { query: '(min-device-width: 768px)' },
                 React.createElement(
-                  MediaQuery,
-                  { query: '(min-device-width: 768px)' },
-                  React.createElement(
-                    Carousel,
-                    null,
-                    React.createElement(Barchart, { title: 'doelpunten per 5 minuten', series: this.state.minute, stackBy: 'y' }),
-                    React.createElement(Barchart, { title: 'doelpunten per tactische situatie', series: this.state.situation, xType: 'ordinal' }),
-                    React.createElement(Barchart, { title: 'doelpunten per type inzet', series: this.state.shots, xType: 'ordinal' }),
-                    React.createElement(Barchart, { title: 'doelpunten uit standaardsituatie', series: this.state.standard, xType: 'ordinal' }),
-                    React.createElement(Barchart, { title: 'doelpunten per aanval ingezet op flank', series: this.state.flank, xType: 'ordinal' }),
-                    React.createElement(Heatmap, { title: 'doelpunten vanuit positie', series: this.state.heatmap, width: 577, height: 400 })
-                  )
+                  'div',
+                  { className: 'col-xs-3 col-md-3' },
+                  this.renderForm()
                 ),
                 React.createElement(
-                  MediaQuery,
-                  { query: '(max-device-width: 667px)' },
-                  React.createElement(Barchart, { title: 'doelpunten per 5 minuten', series: this.state.minute, stackBy: 'y', width: 300, height: 300 }),
-                  React.createElement(Barchart, { title: 'doelpunten per tactische situatie', series: this.state.situation, xType: 'ordinal', width: 300, height: 300 }),
-                  React.createElement(Barchart, { title: 'doelpunten per type inzet', series: this.state.shots, xType: 'ordinal', width: 300, height: 300 }),
-                  React.createElement(Barchart, { title: 'doelpunten uit standaardsituatie', series: this.state.standard, xType: 'ordinal', width: 300, height: 300 }),
-                  React.createElement(Barchart, { title: 'doelpunten per aanval ingezet op flank', series: this.state.flank, xType: 'ordinal', width: 300, height: 300 }),
-                  React.createElement(Heatmap, { title: 'doelpunten vanuit positie', series: this.state.heatmap, width: 300, height: 208 })
+                  'div',
+                  { className: 'col-xs-9 col-md-9' },
+                  this.renderChart(400)
+                )
+              ),
+              React.createElement(
+                MediaQuery,
+                { query: '(max-device-width: 667px)' },
+                React.createElement(
+                  'div',
+                  { className: 'col-xs-12 col-md-12' },
+                  this.renderForm()
+                ),
+                React.createElement(
+                  'div',
+                  { className: 'col-xs-12 col-md-12' },
+                  this.renderChart(300)
                 )
               )
             );

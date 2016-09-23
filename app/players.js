@@ -1,12 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Treemap } from 'react-vis'
 import { get } from './api'
+import { TreeMap } from './charts'
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table'
 import Carousel from 'nuka-carousel'
-import 'react-vis/main.css!'
-import 'react-bootstrap-table/css/react-bootstrap-table.min.css!'
 import MediaQuery from 'react-responsive'
+import 'react-bootstrap-table/css/react-bootstrap-table.min.css!'
 
 export class Players extends React.Component {
 
@@ -49,50 +48,6 @@ export class Players extends React.Component {
     }
   }
   
-  renderTreeMap() {
-    return (
-      <div>
-        <h4>{this.props.metric}</h4>
-        <Treemap
-          data={{title: '', children: this.state.items}}
-          height={400}
-          width={400}
-          colorDomain={this.props.colorDomain || [0, 1]}
-          colorRange={this.props.colorRange || ['white', 'green']}
-          colorType={this.props.colorType || 'linear'}
-        />
-      </div>
-    )
-  }
-
-  renderTable() {
-    return (
-      <div>
-        <h4>{this.props.metric}</h4>
-        <BootstrapTable tableStyle={{margin: 0}} data={this.state.players} striped={true}>
-        <TableHeaderColumn isKey={true} dataField='id' hidden={true}>
-          Id
-        </TableHeaderColumn>
-        <TableHeaderColumn dataField='name' dataSort={true} width='100'>
-          Speler
-        </TableHeaderColumn>
-        <TableHeaderColumn dataField='total' dataSort={true} width='100'
-          dataAlign='end'>
-          Totaal
-        </TableHeaderColumn>
-        <TableHeaderColumn dataField='matches' dataSort={true} width='100'
-          dataAlign='end'>
-          Wedstrijden
-        </TableHeaderColumn>
-        <TableHeaderColumn dataField='average' dataSort={true} width='100'
-          dataAlign='end'>
-          Gemiddelde
-        </TableHeaderColumn>
-      </BootstrapTable>
-      </div>
-    )
-  }
-
   renderCarousel() {
     return (
       <Carousel>
@@ -120,7 +75,7 @@ export class Players extends React.Component {
           </BootstrapTable>
         </div>
         <div style={{width: '450px', height: '500px', margin: '0 auto'}}>
-          { this.renderTreeMap() }
+          <TreeMap title={this.props.metric} children={this.state.items} colorDomain={this.props.colorDomain} colorRange={this.props.colorRange} colorType={this.props.colorType} />
         </div>
       </Carousel>
     )
