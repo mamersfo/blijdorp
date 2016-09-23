@@ -1,42 +1,35 @@
 [
   {
     "competition": "Groep 2 04",
-    "matchday": 7,
-    "date": "2016-08-27",
+    "matchday": 6,
+    "date": "2016-10-08",
     "fixtures": [
-      ["BVCB", "TOGB", 9, 0],
-      ["VVOR", "Hillegersberg", 1, 5],
-      ["Blijdorp", "VOC", 7, 1],
-      ["Zestienhoven", "XerxesDZB", 0, 8]
+      ["TOGB", "Blijdorp"],
+      ["Hillegersberg", "BVCB"],
+      ["XerxesDZB", "VVOR"],
+      ["VOC", "Zestienhoven"]
     ]
   },
   {
     "competition": "Groep 2 04",
-    "matchday": 1,
-    "date": "2016-09-03",
+    "matchday": 5,
+    "date": "2016-10-01",
     "fixtures": [
-      ["XerxesDZB", "VOC", 9, 2],
-      ["Hillegersberg", "Zestienhoven", 4, 2],
-      ["TOGB", "VVOR", 2, 7],
-      ["BVCB", "Blijdorp", 4, 2]
+      ["BVCB", "XerxesDZB"],
+      ["TOGB", "Hillegersberg"],
+      ["Zestienhoven", "Blijdorp"],
+      ["VVOR", "VOC"]
     ]
   },
   {
     "competition": "Groep 2 04",
-    "matchday": 2,
-    "date": "2016-09-10",
+    "matchday": 4,
+    "date": "2016-09-24",
     "fixtures": [
-      ["Zestienhoven", "TOGB", 3, 3],
-      ["Blijdorp", "XerxesDZB", 5, 0],
-      ["VOC", "Hillegersberg", 2, 5]
-    ]
-  },
-  {
-    "competition": "Groep 2 04",
-    "matchday": 2,
-    "date": "2016-09-15",
-    "fixtures": [
-      ["VVOR", "BVCB", 0, 5]
+      ["XerxesDZB", "TOGB"],
+      ["Blijdorp", "Hillegersberg"],
+      ["Zestienhoven", "VVOR"],
+      ["VOC", "BVCB"]
     ]
   },
   {
@@ -53,35 +46,42 @@
   },
   {
     "competition": "Groep 2 04",
-    "matchday": 4,
-    "date": "2016-09-24",
+    "matchday": 2,
+    "date": "2016-09-15",
     "fixtures": [
-      ["XerxesDZB", "TOGB"],
-      ["Blijdorp", "Hillegersberg"],
-      ["Zestienhoven", "VVOR"],
-      ["VOC", "BVCB"]
+      ["VVOR", "BVCB", 0, 5]
     ]
   },
   {
     "competition": "Groep 2 04",
-    "matchday": 5,
-    "date": "2016-10-01",
+    "matchday": 2,
+    "date": "2016-09-10",
     "fixtures": [
-      ["BVCB", "XerxesDZB"],
-      ["TOGB", "Hillegersberg"],
-      ["Zestienhoven", "Blijdorp"],
-      ["VVOR", "VOC"]
+      ["Zestienhoven", "TOGB", 3, 3],
+      ["Blijdorp", "XerxesDZB", 5, 0],
+      ["VOC", "Hillegersberg", 2, 5]
     ]
   },
   {
     "competition": "Groep 2 04",
-    "matchday": 6,
-    "date": "2016-10-08",
+    "matchday": 1,
+    "date": "2016-09-03",
     "fixtures": [
-      ["TOGB", "Blijdorp"],
-      ["Hillegersberg", "BVCB"],
-      ["XerxesDZB", "VVOR"],
-      ["VOC", "Zestienhoven"]
+      ["XerxesDZB", "VOC", 9, 2],
+      ["Hillegersberg", "Zestienhoven", 4, 2],
+      ["TOGB", "VVOR", 2, 7],
+      ["BVCB", "Blijdorp", 4, 2]
+    ]
+  },
+  {
+    "competition": "Groep 2 04",
+    "matchday": 7,
+    "date": "2016-08-27",
+    "fixtures": [
+      ["BVCB", "TOGB", 9, 0],
+      ["VVOR", "Hillegersberg", 1, 5],
+      ["Blijdorp", "VOC", 7, 1],
+      ["Zestienhoven", "XerxesDZB", 0, 8]
     ]
   }
 ]
