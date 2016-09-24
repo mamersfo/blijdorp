@@ -55950,7 +55950,7 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
             });
             return filtered.reduce(function (m, n) {
               var minute = n[1];
-              var idx = Math.floor((minute + 1) / 5);
+              var idx = Math.min(Math.floor((minute + 1) / 5), 9);
               var entry = m[idx];
               m[idx] = _Object$assign(m[idx], { y: entry.y + 1 });
               return m;
