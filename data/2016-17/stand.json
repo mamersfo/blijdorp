@@ -2,22 +2,22 @@
   "matches" : {
     "wins" : 1,
     "draws" : 0,
-    "losses" : 3
+    "losses" : 4
   },
   "goals" : {
-    "for" : 9,
-    "against" : 23
+    "for" : 10,
+    "against" : 26
   },
   "team" : "VOC"
 }, {
   "matches" : {
-    "wins" : 2,
+    "wins" : 3,
     "draws" : 0,
     "losses" : 2
   },
   "goals" : {
-    "for" : 19,
-    "against" : 11
+    "for" : 27,
+    "against" : 13
   },
   "team" : "XerxesDZB"
 }, {
@@ -33,13 +33,13 @@
   "team" : "Hillegersberg"
 }, {
   "matches" : {
-    "wins" : 4,
+    "wins" : 5,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 27,
-    "against" : 2
+    "for" : 30,
+    "against" : 3
   },
   "team" : "BVCB"
 }, {
@@ -79,11 +79,11 @@
   "matches" : {
     "wins" : 0,
     "draws" : 1,
-    "losses" : 3
+    "losses" : 4
   },
   "goals" : {
-    "for" : 7,
-    "against" : 23
+    "for" : 9,
+    "against" : 31
   },
   "team" : "TOGB"
 } ]
