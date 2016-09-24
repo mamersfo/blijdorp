@@ -1,12 +1,5 @@
 [
   {
-    "matchday": 4,
-    "date":"2016-09-24T09:30+02:00",
-    "teams": ["Blijdorp","Hillegersberg"],
-    "website": "http://www.vvhillegersberg.nl/JO11-2",
-    "referee":"Remon"
-  },
-  {
     "matchday": 5,
     "date":"2016-10-01T11:15+02:00",
     "teams": ["Zestienhoven","Blijdorp"],

@@ -1,5 +1,19 @@
 [
   {
+    "date": "2016-09-24",
+    "league": "Groep 2 04",
+    "teams": ["Blijdorp", "Hillegersberg"],
+    "result": [1, 1],
+    "goals":{
+      "Fadi": 1
+    },
+    "assists": {
+      "Jonas": 1
+    },
+    "absent": {
+    }
+  },
+  {
     "date": "2016-09-17",
     "league": "Groep 2 04",
     "teams": ["VVOR", "Blijdorp"],

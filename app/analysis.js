@@ -101,7 +101,7 @@ export class Analysis extends React.Component {
     let filtered = data.filter((d) => d[2] === flag)
     return filtered.reduce((m, n) => {
       let minute = n[1]
-      let idx = Math.floor( (minute+1) / 5 )
+      let idx = Math.min( Math.floor( (minute+1) / 5 ), 9 )
       let entry = m[idx]
       m[idx] = Object.assign( m[idx], {y: entry.y + 1} )
       return m

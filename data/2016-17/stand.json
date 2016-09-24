@@ -23,12 +23,12 @@
 }, {
   "matches" : {
     "wins" : 4,
-    "draws" : 0,
+    "draws" : 1,
     "losses" : 0
   },
   "goals" : {
-    "for" : 18,
-    "against" : 7
+    "for" : 19,
+    "against" : 8
   },
   "team" : "Hillegersberg"
 }, {
@@ -44,35 +44,35 @@
   "team" : "BVCB"
 }, {
   "matches" : {
-    "wins" : 1,
+    "wins" : 2,
     "draws" : 0,
     "losses" : 3
   },
   "goals" : {
-    "for" : 10,
-    "against" : 19
+    "for" : 14,
+    "against" : 20
   },
   "team" : "VVOR"
 }, {
   "matches" : {
     "wins" : 3,
-    "draws" : 0,
+    "draws" : 1,
     "losses" : 1
   },
   "goals" : {
-    "for" : 21,
-    "against" : 7
+    "for" : 22,
+    "against" : 8
   },
   "team" : "Blijdorp"
 }, {
   "matches" : {
     "wins" : 0,
     "draws" : 1,
-    "losses" : 3
+    "losses" : 4
   },
   "goals" : {
-    "for" : 5,
-    "against" : 24
+    "for" : 6,
+    "against" : 28
   },
   "team" : "Zestienhoven"
 }, {
