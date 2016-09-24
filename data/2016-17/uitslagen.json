@@ -22,6 +22,7 @@
     ]
   },
   {
+    "latest": true,
     "competition": "Groep 2 04",
     "matchday": 4,
     "date": "2016-09-24",
@@ -33,7 +34,6 @@
     ]
   },
   {
-    "latest": true,
     "competition": "Groep 2 04",
     "matchday": 3,
     "date": "2016-09-17",
