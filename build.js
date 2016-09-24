@@ -20444,7 +20444,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
               );
             } else {
               var url = 'https://www.youtube.com/watch?v=' + m.v + '&t=' + (undefined !== m.t ? m.t : 0);
-              var img = 'images/' + m.s + '.png';
+              var img = 'images/sources/' + m.s + '.png';
               return React.createElement(
                 'a',
                 { href: url, target: '_blank' },

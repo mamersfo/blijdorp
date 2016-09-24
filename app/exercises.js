@@ -91,7 +91,7 @@ export default class Exercises extends React.Component {
       return <span>{m.n}</span>
     } else {
       let url = 'https://www.youtube.com/watch?v=' + m.v + '&t=' + ( undefined !== m.t ? m.t : 0 )
-      let img = 'images/' + m.s + '.png'
+      let img = 'images/sources/' + m.s + '.png'
       return (
         <a href={url} target='_blank'>
           <span>{m.n}<img src={img}
