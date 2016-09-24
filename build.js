@@ -20418,7 +20418,7 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
               );
             } else {
               var url = 'https://www.youtube.com/embed/' + m.v + '?start=' + (undefined !== m.t ? m.t : 0);
-              var img = 'images/' + m.s + '.png';
+              var img = 'images/sources/' + m.s + '.png';
               return React.createElement(
                 'div',
                 null,
@@ -20430,31 +20430,6 @@ System.register('app/exercises.js', ['npm:babel-runtime@5.8.38/helpers/get.js', 
                     style: { float: 'right', width: '24px', height: '24px' } })
                 ),
                 this.renderYoutube(url)
-              );
-            }
-          }
-        }, {
-          key: 'renderLink',
-          value: function renderLink(m) {
-            if (undefined === m.v) {
-              return React.createElement(
-                'span',
-                null,
-                m.n
-              );
-            } else {
-              var url = 'https://www.youtube.com/watch?v=' + m.v + '&t=' + (undefined !== m.t ? m.t : 0);
-              var img = 'images/sources/' + m.s + '.png';
-              return React.createElement(
-                'a',
-                { href: url, target: '_blank' },
-                React.createElement(
-                  'span',
-                  null,
-                  m.n,
-                  React.createElement('img', { src: img,
-                    style: { float: 'right', width: '24px', height: '24px' } })
-                )
               );
             }
           }

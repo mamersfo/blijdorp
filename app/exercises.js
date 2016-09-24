@@ -74,7 +74,7 @@ export default class Exercises extends React.Component {
     } else {
       let url = 'https://www.youtube.com/embed/' + m.v +
           '?start=' + ( undefined !== m.t ? m.t : 0 )
-      let img = 'images/' + m.s + '.png'
+      let img = 'images/sources/' + m.s + '.png'
       return (
         <div>
           <div>{m.name}<img src={img}
@@ -84,22 +84,6 @@ export default class Exercises extends React.Component {
         </div>
       )      
     }    
-  }
-
-  renderLink(m) {
-    if ( undefined === m.v ) {
-      return <span>{m.n}</span>
-    } else {
-      let url = 'https://www.youtube.com/watch?v=' + m.v + '&t=' + ( undefined !== m.t ? m.t : 0 )
-      let img = 'images/sources/' + m.s + '.png'
-      return (
-        <a href={url} target='_blank'>
-          <span>{m.n}<img src={img}
-            style={{float: 'right', width: '24px', height: '24px'}}></img>
-          </span>
-        </a>
-      )
-    }
   }
 
   renderVariations(e) {
