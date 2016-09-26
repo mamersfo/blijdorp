@@ -55928,7 +55928,7 @@ System.register('app/analysis.js', ['npm:babel-runtime@5.8.38/helpers/get.js', '
 
             series = filtered.reduce(function (m, n) {
               var xIdx = n[9] + 6;
-              var yIdx = n[10] - 1;
+              var yIdx = n[10];
               var x = m[xIdx];
               var y = x[yIdx];
               y.color++;

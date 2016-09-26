@@ -86,7 +86,7 @@ export class Analysis extends React.Component {
 
     series = filtered.reduce((m, n) => {
       let xIdx = n[9] + 6
-      let yIdx = n[10] - 1
+      let yIdx = n[10]
       let x = m[xIdx]
       let y = x[yIdx]
       y.color++
