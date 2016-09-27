@@ -62,9 +62,11 @@
                  "&nbsp;&nbsp;"
                  (first (:result match)) "-" (second (:result match)))]
        (map (fn [c]
-              (condp :type c
+              (condp = (:type c)
                 "text" [:div {:style "margin-bottom: 10px"} (:text c)]
-                :default [:div ("Foo")]))
+                "youtube" [:iframe {:width 275 :height 154
+                                    :src (str "https://www.youtube.com/embed/" (:videoId c))}]
+                :default [:div]))
             (:content report))]])))
 
 (defn table [ctx]
