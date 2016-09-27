@@ -9,7 +9,9 @@
    {:uri "/schedule.html" :name "Programma"}
    {:uri "/results.html"  :name "Uitslagen"}
    {:uri "/table.html"    :name "Stand"}
-   {:uri "/report.html"   :name "Verslag"}])
+   {:uri "/report.html"   :name "Verslag"}
+   {:uri "/goals.html"    :name "Doelpunten"}
+   {:uri "/assists.html"  :name "Assists"}])
 
 (def base-uri "/blijdorp/static")
 
@@ -54,7 +56,6 @@
         match (first matches)
         path (str "data/reports/" (:date match) ".json")
         report (parse-stream (reader path) true)]
-    (println match)
     (layout-page
      [:div.row-fluid
       [:div.col-xs-12
@@ -124,7 +125,7 @@
      [:div.row-fluid
       [:div.col-xs-12
        [:h4 "Programma"]
-       [:table.table.table.hover
+       [:table.table
         [:thead
          [:tr
           [:th {:style "width: 20%"} "Datum"]
@@ -141,11 +142,57 @@
                    [:td (second (:teams m))]]))
               matches)]]]])))
 
+(defn compare-players
+  [x y]
+  (let [result (- (compare (:total x) (:total y)))]
+    (if (= result 0) (compare (:matches x) (:matches y)) result)))
+
+(def thead
+  [:thead
+   [:tr
+    [:th {:style "width: 50%"} "Speler"]
+    [:th {:style "width: 25%; text-align: right"} "Wedstr."]
+    [:th {:style "width: 25%; text-align: right"} "Totaal"]]])
+
+(defn goals [ctx]
+  (let [data (parse-stream (reader "data/current/doelpunten.json") true)]
+    (layout-page
+     [:div.row-fluid
+      [:div.col-xs-12
+       [:h4 "Doelpunten"]
+       [:table.table
+        thead
+        [:tbody
+         (map (fn [m]
+                [:tr
+                 [:td (:name m)]
+                 [:td {:style "text-align: right"} (:matches m)]
+                 [:td {:style "text-align: right"} (:total m)]])
+              (sort compare-players data))]]]])))
+
+(defn assists [ctx]
+  (let [data (parse-stream (reader "data/current/assists.json") true)]
+    (layout-page
+     [:div.row-fluid
+      [:div.col-xs-12
+       [:h4 "Assists"]
+       [:table.table
+        thead
+        [:tbody
+         (map (fn [m]
+                [:tr
+                 [:td (:name m)]
+                 [:td {:style "text-align: right"} (:matches m)]
+                 [:td {:style "text-align: right"} (:total m)]])
+              (sort compare-players data))]]]])))
+
 (def pages {"/index.html" home
             "/schedule.html" schedule
             "/results.html" results
             "/table.html" table
-            "/report.html" report})
+            "/report.html" report
+            "/goals.html" goals
+            "/assists.html" assists})
 
 (def app (stasis/serve-pages pages))
 
