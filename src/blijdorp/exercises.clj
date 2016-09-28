@@ -123,9 +123,9 @@
 (def output-file
   (str (System/getProperty "user.dir") "/data/exercises.json"))
 
-(defn export-json
+(defn export
   ([]
-   (export-json (parse input-file)))
+   (export (parse input-file)))
   ([root]
    (with-open [out (clojure.java.io/writer output-file)]
      (generate-stream (exercises root) out {:pretty true})

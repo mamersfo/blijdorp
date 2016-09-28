@@ -425,6 +425,53 @@ dribbelen.
 ***** Variation: Binnen- en buitenkant - twee benen, v=utTweeEcagE, s=az, t=4
 ***** Variation: Dribbelen buitenkant voet, v=1MPPOA2UfIE, s=az, t=4
 ***** Variation: Drijven buitenkant voet, v=Ya7VtCURx2I, s=az, t=4
+**** Exercise: Agility ladder (beginner)
+Oefeningen met de Agility Ladder, voor beginners.
+***** UUID: 9b899272-e9db-4b50-9496-2de330d7fd50
+***** Tag: agility
+***** Tag: ladder
+***** Tag: beginner
+***** Variation: Two-foot run, v=67XP-AekUoA, s=rs, t=8
+***** Variation: Ladder taps, v=67XP-AekUoA, s=rs, t=21
+***** Variation: Lateral single leg hops, v=67XP-AekUoA, s=rs, t=31
+***** Variation: Single leg forward hop, v=67XP-AekUoA, s=rs, t=44
+***** Variation: Two-foot lateral run, v=67XP-AekUoA, s=rs, t=53
+***** Variation: Fight shuffle, v=67XP-AekUoA, s=rs, t=64
+***** Variation: Skiers, v=67XP-AekUoA, s=rs, t=76
+***** Variation: Carioca, v=67XP-AekUoA, s=rs, t=91
+***** Variation: Lateral in in out out, v=67XP-AekUoA, s=rs, t=102
+***** Variation: Two-foot lateral hops in and out, v=67XP-AekUoA, s=rs, t=115
+**** Exercise: Agility ladder (half-gevorderd)
+Oefeningen met de Agility Ladder, voor half-gevorderd.
+***** UUID: 8f538528-ffda-4a16-bbac-a93a6589726d
+***** Tag: agility
+***** Tag: ladder
+***** Tag: half-gevorderd
+***** Variation: High knee run, v=67XP-AekUoA, s=rs, t=129
+***** Variation: Straddle squat hops, v=67XP-AekUoA, s=rs, t=139
+***** Variation: Quick hopscotch, v=67XP-AekUoA, s=rs, t=154
+***** Variation: Two-foot lateral hop, v=67XP-AekUoA, s=rs, t=167
+***** Variation: Ali shuffle, v=67XP-AekUoA, s=rs, t=180
+***** Variation: 180 degree rotations, v=67XP-AekUoA, s=rs, t=201
+***** Variation: Jumping jack variations, v=67XP-AekUoA, s=rs, t=216
+**** Exercise: Agility adder (gevorderd)
+Oefeningen met de Agility Ladder, voor beginners.
+***** UUID: be03cfd2-8d14-4c74-8c32-6d32cc7679f9
+***** Tag: agility
+***** Tag: ladder
+***** Tag: gevorderd
+***** Variation: In in out out, v=67XP-AekUoA, s=rs, t=241
+***** Variation: Icky shuffle, v=67XP-AekUoA, s=rs, t=254
+***** Variation: Icky shuffle variation, v=67XP-AekUoA, s=rs, t=266
+***** Variation: Heisman shuffle, v=67XP-AekUoA, s=rs, t=281
+***** Variation: 2 in 2 out weaving, v=67XP-AekUoA, s=rs, t=296
+***** Variation: Forward backward hops, v=67XP-AekUoA, s=rs, t=310
+***** Variation: Cross behind, v=67XP-AekUoA, s=rs, t=323
+***** Variation: Backward cross in front, v=67XP-AekUoA, s=rs, t=337
+***** Variation: Quarter turns, v=67XP-AekUoA, s=rs, t=352
+***** Variation: Two forward one back, v=67XP-AekUoA, s=rs, t=364
+***** Variation: Hopscotch, v=67XP-AekUoA, s=rs, t=37
+***** Variation: Single double rotations, v=67XP-AekUoA, s=rs, t=388
 ** Training: Techniek
 *** Category: Samenspelen en druk zetten
 **** Exercise: Drie bij vier

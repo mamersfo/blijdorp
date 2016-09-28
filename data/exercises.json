@@ -897,6 +897,175 @@
     "t" : "4"
   } ]
 }, {
+  "uuid" : "9b899272-e9db-4b50-9496-2de330d7fd50",
+  "name" : "Agility ladder (beginner)",
+  "category" : "Motoriektraining",
+  "text" : "Oefeningen met de Agility Ladder, voor beginners.",
+  "image" : false,
+  "tags" : [ "agility", "ladder", "beginner" ],
+  "variations" : [ {
+    "name" : "Two-foot run",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "8"
+  }, {
+    "name" : "Ladder taps",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "21"
+  }, {
+    "name" : "Lateral single leg hops",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "31"
+  }, {
+    "name" : "Single leg forward hop",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "44"
+  }, {
+    "name" : "Two-foot lateral run",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "53"
+  }, {
+    "name" : "Fight shuffle",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "64"
+  }, {
+    "name" : "Skiers",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "76"
+  }, {
+    "name" : "Carioca",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "91"
+  }, {
+    "name" : "Lateral in in out out",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "102"
+  }, {
+    "name" : "Two-foot lateral hops in and out",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "115"
+  } ]
+}, {
+  "uuid" : "8f538528-ffda-4a16-bbac-a93a6589726d",
+  "name" : "Agility ladder (half-gevorderd)",
+  "category" : "Motoriektraining",
+  "text" : "Oefeningen met de Agility Ladder, voor half-gevorderd.",
+  "image" : false,
+  "tags" : [ "agility", "ladder", "half-gevorderd" ],
+  "variations" : [ {
+    "name" : "High knee run",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "129"
+  }, {
+    "name" : "Straddle squat hops",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "139"
+  }, {
+    "name" : "Quick hopscotch",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "154"
+  }, {
+    "name" : "Two-foot lateral hop",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "167"
+  }, {
+    "name" : "Ali shuffle",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "180"
+  }, {
+    "name" : "180 degree rotations",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "201"
+  }, {
+    "name" : "Jumping jack variations",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "216"
+  } ]
+}, {
+  "uuid" : "be03cfd2-8d14-4c74-8c32-6d32cc7679f9",
+  "name" : "Agility adder (gevorderd)",
+  "category" : "Motoriektraining",
+  "text" : "Oefeningen met de Agility Ladder, voor beginners.",
+  "image" : false,
+  "tags" : [ "agility", "ladder", "gevorderd" ],
+  "variations" : [ {
+    "name" : "In in out out",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "241"
+  }, {
+    "name" : "Icky shuffle",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "254"
+  }, {
+    "name" : "Icky shuffle variation",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "266"
+  }, {
+    "name" : "Heisman shuffle",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "281"
+  }, {
+    "name" : "2 in 2 out weaving",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "296"
+  }, {
+    "name" : "Forward backward hops",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "310"
+  }, {
+    "name" : "Cross behind",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "323"
+  }, {
+    "name" : "Backward cross in front",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "337"
+  }, {
+    "name" : "Quarter turns",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "352"
+  }, {
+    "name" : "Two forward one back",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "364"
+  }, {
+    "name" : "Hopscotch",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "37"
+  }, {
+    "name" : "Single double rotations",
+    "v" : "67XP-AekUoA",
+    "s" : "rs",
+    "t" : "388"
+  } ]
+}, {
   "uuid" : "f93c2988-2b56-4c09-ace1-1e018ce771b0",
   "name" : "Drie bij vier",
   "category" : "Samenspelen en druk zetten",

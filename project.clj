@@ -7,5 +7,6 @@
   :ring {:handler blijdorp.site/app
          :nrepl {:start? true :port 4555}
          :port 8080}
-  :aliases {"build-site" ["run" "-m" "blijdorp.site/export"]}
+  :aliases {"build-site" ["run" "-m" "blijdorp.site/export"]
+            "build-exercises" ["run" "-m" "blijdorp.exercises/export"]}
   :main blijdorp.update)
