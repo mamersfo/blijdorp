@@ -337,6 +337,7 @@ De bal met de zool, dus de onderkant van de voet bewegen.
 ***** UUID: 374821bd-1cd0-4505-ad4b-bd24a2afe340
 ***** Tag: motoriek
 ***** Tag: coerver
+***** Tag: plyometrics
 ***** Variation: #1 Sole taps, s=coerver, v=94KuOfMKG2Q, t=10
 ***** Variation: Naar voren en naar achteren
 **** Exercise: Shuffle
@@ -345,6 +346,7 @@ buitenkant van de voet opzij bewegen.
 ***** UUID: 2364fdd5-74ec-4d38-aadd-b8cf5e7f227f
 ***** Tag: motoriek
 ***** Tag: coerver
+***** Tag: plyometrics
 ***** Variation: #2 Shuffle, s=coerver, v=dRpfwtPv5hA, t=10
 ***** Variation: #3 Shuffle stop, s=coerver, v=15y7MGYKuN8, t=10
 ***** Variation: #5 Shuffle stop take, s=coerver, v=J77JFvfdm4k, t=10
