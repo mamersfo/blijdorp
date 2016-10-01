@@ -1,12 +1,5 @@
 [
   {
-    "matchday": 5,
-    "date":"2016-10-01T11:15+02:00",
-    "teams": ["Zestienhoven","Blijdorp"],
-    "website": "http://www.rcsvzestienhoven.nl/?page=teams&teamspage=show&tid=112184",
-    "location": "Sportpark AGE Zestienhoven, Vd Duijn van Maasdamweg 601, 3045 PE, Rotterdam"
-  },
-  {
     "matchday": 6,
     "date":"2016-10-08T10:00+02:00",
     "teams": ["TOGB","Blijdorp"],

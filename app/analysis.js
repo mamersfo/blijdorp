@@ -68,7 +68,7 @@ export class Analysis extends React.Component {
           color: '#99ccff'
         }
       ],
-      players: new Set(['Fadi', 'Jonas', 'Luc', 'Quincy', 'Stijn'])
+      players: new Set(['Fadi', 'Jonas', 'Luc', 'Quincy', 'Stijn', 'Vito'])
     }
   }
 

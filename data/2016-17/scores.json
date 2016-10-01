@@ -28,5 +28,20 @@
   [ "VVOR"         , 47, true,  "Jonas",  "Fadi",   "counter",   null,        "centrum", "intikker",   0, 2],
   [ "VVOR"         , 48, true,  "Fadi",   "Jonas",  "aanval",    null,        "rechts",  "schot",     -2, 2],
   [ "Hillegersberg", 38, true,  "Fadi",   "Jonas",  "standaard", "hoekschop", "rechts",  "kopbal",     0, 0],
-  [ "Hillegersberg", 49, false, null,     null,     "aanval",    null,        "centrum", "shoot-out", -1, 1]
+  [ "Hillegersberg", 49, false, null,     null,     "aanval",    null,        "centrum", "shoot-out", -1, 1],
+  [ "Zestienhoven" ,  3, true,  "Stijn",  "Vito",   "aanval",    null,        "rechts",  "shoot-out", -1, 0],
+  [ "Zestienhoven" ,  9, true,  "Quincy", null,     "aanval",    null,        "centrum", "schot",      0, 5],
+  [ "Zestienhoven" , 13, true,  "Stijn",  null,     "aanval",    null,        "links",   "schot",      0, 3],
+  [ "Zestienhoven" , 14, true,  "Vito",   null,     "counter",   null,        "rechts",  "shoot-out", -1, 1],
+  [ "Zestienhoven" , 16, true,  "Fadi",   "Vito",   "aanval",    null,        "rechts",  "intikker",   0, 0],
+  [ "Zestienhoven" , 21, true,  "Jonas",  "Fadi",   "aanval",    null,        "links",   "intikker",   0, 0],
+  [ "Zestienhoven" , 24, true,  "Luc",    "Quincy", "aanval",    null,        "rechts",  "intikker",   0, 0],
+  [ "Zestienhoven" , 28, true,  "Vito",   "Luc",    "aanval",    null,        "rechts",  "intikker",   0, 1],
+  [ "Zestienhoven" , 32, true,  "Vito",   "Stijn",  "aanval",    null,        "links",   "intikker",   0, 2],
+  [ "Zestienhoven" , 36, true,  "Vito",   "Stijn",  "aanval",    null,        "rechts",  "intikker",   0, 1],
+  [ "Zestienhoven" , 37, true,  "Stijn",  "Vito",   "aanval",    null,        "rechts",  "schot",     -1, 2],
+  [ "Zestienhoven" , 38, true,  "Vito",   "Quincy", "aanval",    null,        "rechts",  "intikker",  -1, 0],
+  [ "Zestienhoven" , 39, true,  "Vito",   "Fadi",   "aanval",    null,        "centrum", "intikker",   0, 1],
+  [ "Zestienhoven" , 40, true,  "Fadi",   "Stijn",  "aanval",    null,        "centrum", "intikker",   0, 0],
+  [ "Zestienhoven" , 42, true,  "Vito",   "Fadi",   "aanval",    null,        "links",   "schot",      0, 1]
 ]
