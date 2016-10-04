@@ -17,5 +17,16 @@
     "teams": ["Blijdorp", "Hellevoetsluis (optie)"],
     "website": "http://www.vvhellevoetsluis.nl",
     "absent": "Lenny"
+  },
+  {
+    "date":"2016-10-29T00:00+02:00"
+  },
+  {
+    "date":"2016-11-05T00:00+01:00"
+  },
+  {
+    "date":"2016-11-09T19:00+01:00",
+    "teams": ["Blijdorp", "ASW"],
+    "website": "http://www.vvasw.nl"
   }
 ]
