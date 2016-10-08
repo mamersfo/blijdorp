@@ -1,61 +1,61 @@
 [ {
   "id" : 3,
   "name" : "Fadi",
-  "matches" : 6,
-  "total" : 9,
+  "matches" : 7,
+  "total" : 12,
   "position" : "striker"
 }, {
   "id" : 5,
   "name" : "Lenny",
-  "matches" : 6,
+  "matches" : 7,
   "total" : 0,
   "position" : "defender"
 }, {
   "id" : 2,
   "name" : "Dieuwe",
-  "matches" : 4,
+  "matches" : 5,
   "total" : 0,
   "position" : "defender"
 }, {
   "id" : 9,
   "name" : "Vito",
-  "matches" : 5.5,
-  "total" : 7,
+  "matches" : 6.5,
+  "total" : 11,
   "position" : "midfielder"
 }, {
   "id" : 1,
   "name" : "Amine",
-  "matches" : 5,
+  "matches" : 6,
   "total" : 0,
   "position" : "defender"
 }, {
   "id" : 8,
   "name" : "Stijn",
-  "matches" : 6,
-  "total" : 6,
+  "matches" : 7,
+  "total" : 8,
   "position" : "striker"
 }, {
   "id" : 6,
   "name" : "Luc",
-  "matches" : 6,
-  "total" : 7,
+  "matches" : 7,
+  "total" : 8,
   "position" : "midfielder"
 }, {
   "id" : 4,
   "name" : "Jonas",
-  "matches" : 6,
-  "total" : 5,
+  "matches" : 7,
+  "total" : 6,
   "position" : "striker"
 }, {
   "id" : 10,
   "name" : "Xaver ",
-  "matches" : 6,
+  "matches" : 7,
   "total" : 0,
   "position" : "keeper"
 }, {
   "id" : 7,
   "name" : "Quincy",
-  "matches" : 6,
-  "total" : 3,
+  "matches" : 7,
+  "total" : 5,
   "position" : "midfielder"
 } ]

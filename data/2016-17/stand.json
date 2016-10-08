@@ -24,22 +24,22 @@
   "matches" : {
     "wins" : 5,
     "draws" : 1,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
-    "for" : 24,
-    "against" : 10
+    "for" : 26,
+    "against" : 14
   },
   "team" : "Hillegersberg"
 }, {
   "matches" : {
-    "wins" : 6,
+    "wins" : 7,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 35,
-    "against" : 6
+    "for" : 39,
+    "against" : 8
   },
   "team" : "BVCB"
 }, {
@@ -55,12 +55,12 @@
   "team" : "VVOR"
 }, {
   "matches" : {
-    "wins" : 4,
+    "wins" : 5,
     "draws" : 1,
     "losses" : 1
   },
   "goals" : {
-    "for" : 37,
+    "for" : 50,
     "against" : 8
   },
   "team" : "Blijdorp"
@@ -79,11 +79,11 @@
   "matches" : {
     "wins" : 0,
     "draws" : 1,
-    "losses" : 5
+    "losses" : 6
   },
   "goals" : {
     "for" : 11,
-    "against" : 36
+    "against" : 49
   },
   "team" : "TOGB"
 } ]

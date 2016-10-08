@@ -1,5 +1,28 @@
 [
   {
+    "date": "2016-10-08",
+    "league": "Groep 2 04",
+    "teams": ["TOGB", "Blijdorp"],
+    "result": [0, 15],
+    "goals":{
+      "Fadi": 3,
+      "Jonas": 1,
+      "Luc": 1,
+      "Quincy": 2,
+      "Stijn": 2,
+      "Vito": 4
+    },
+    "assists": {
+      "Fadi": 1,
+      "Jonas": 3,
+      "Quincy": 2,
+      "Stijn": 3,
+      "Vito": 2
+    },
+    "absent": {
+    }
+  },
+  {
     "date": "2016-10-01",
     "league": "Groep 2 04",
     "teams": ["Zestienhoven", "Blijdorp"],

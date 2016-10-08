@@ -1,17 +1,17 @@
 [
   {
+    "latest": true,
     "competition": "Groep 2 04",
     "matchday": 6,
     "date": "2016-10-08",
     "fixtures": [
-      ["TOGB", "Blijdorp"],
-      ["Hillegersberg", "BVCB"],
+      ["TOGB", "Blijdorp", 0, 13],
+      ["Hillegersberg", "BVCB", 2, 4],
       ["XerxesDZB", "VVOR"],
       ["VOC", "Zestienhoven"]
     ]
   },
   {
-    "latest": true,
     "competition": "Groep 2 04",
     "matchday": 5,
     "date": "2016-10-01",

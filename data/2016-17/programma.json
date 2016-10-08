@@ -1,12 +1,5 @@
 [
   {
-    "matchday": 6,
-    "date":"2016-10-08T10:00+02:00",
-    "teams": ["TOGB","Blijdorp"],
-    "website": "http://togb.nl/voetbal/teams/jo11-3/",
-    "location": "Sportpark Het Hoge Land, Het Hoge Land 23, 2652 EA, Berkel en Rodenrijs"
-  },
-  {
     "date":"2016-10-15T00:00+02:00",
     "teams": ["Blijdorp", "Hellevoetsluis (optie)"],
     "website": "http://www.vvhellevoetsluis.nl",
