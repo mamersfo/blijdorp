@@ -7,8 +7,8 @@
     "fixtures": [
       ["TOGB", "Blijdorp", 0, 13],
       ["Hillegersberg", "BVCB", 2, 4],
-      ["XerxesDZB", "VVOR"],
-      ["VOC", "Zestienhoven"]
+      ["XerxesDZB", "VVOR", 2, 5],
+      ["VOC", "Zestienhoven", 0, 3]
     ]
   },
   {
