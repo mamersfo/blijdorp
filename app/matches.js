@@ -76,6 +76,7 @@ export class Matches extends Seasonal {
         <tr><td style={{width: '100px'}} >Datum:</td><td>{m.date}</td></tr>
         <tr><td>Competitie:</td><td>{m.league}</td></tr>
         <tr><td>Uitslag:</td><td>{m.result[0] + ' - ' + m.result[1]}</td></tr>
+        <tr><td>Aanvoerder:</td><td>{m.captain}</td></tr>
         <tr><td>Doelpunten:</td><td>{this.renderMap(m.goals)}</td></tr>
         <tr><td>Assists:</td><td>{this.renderMap(m.assists)}</td></tr>
         </tbody>

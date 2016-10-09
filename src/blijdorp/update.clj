@@ -9,16 +9,16 @@
 (def goals-filename "doelpunten.json")
 (def assists-filename "assists.json")
 
-(def PLAYERS {"Amine"  {:id  1 :name "Amine"  :matches 0 :total 0 :position :defender}
-              "Dieuwe" {:id  2 :name "Dieuwe" :matches 0 :total 0 :position :defender}
-              "Fadi"   {:id  3 :name "Fadi"   :matches 0 :total 0 :position :striker}
-              "Jonas"  {:id  4 :name "Jonas"  :matches 0 :total 0 :position :striker}
-              "Lenny"  {:id  5 :name "Lenny"  :matches 0 :total 0 :position :defender}
-              "Luc"    {:id  6 :name "Luc"    :matches 0 :total 0 :position :midfielder}
-              "Quincy" {:id  7 :name "Quincy" :matches 0 :total 0 :position :midfielder}
-              "Stijn"  {:id  8 :name "Stijn"  :matches 0 :total 0 :position :striker}
-              "Vito"   {:id  9 :name "Vito"   :matches 0 :total 0 :position :midfielder}
-              "Xaver"  {:id 10 :name "Xaver " :matches 0 :total 0 :position :keeper}})
+(def PLAYERS {"Amine"  {:id  1 :name "Amine"  :matches 0 :total 0 :position :verdediging}
+              "Dieuwe" {:id  2 :name "Dieuwe" :matches 0 :total 0 :position :verdediging}
+              "Fadi"   {:id  3 :name "Fadi"   :matches 0 :total 0 :position :aanval}
+              "Jonas"  {:id  4 :name "Jonas"  :matches 0 :total 0 :position :aanval}
+              "Lenny"  {:id  5 :name "Lenny"  :matches 0 :total 0 :position :verdediging}
+              "Luc"    {:id  6 :name "Luc"    :matches 0 :total 0 :position :centrum}
+              "Quincy" {:id  7 :name "Quincy" :matches 0 :total 0 :position :centrum}
+              "Stijn"  {:id  8 :name "Stijn"  :matches 0 :total 0 :position :aanval}
+              "Vito"   {:id  9 :name "Vito"   :matches 0 :total 0 :position :centrum}
+              "Xaver"  {:id 10 :name "Xaver " :matches 0 :total 0 :position :doel}})
 
 (defn parse-matches
   []
@@ -33,6 +33,8 @@
       (swap! players update-in [p :matches] + match-count))
     (doseq [m ms]
       (doseq [p (:absent m)]
+        (swap! players update-in [(name (first p)) :matches] - (second p)))
+      (doseq [p (:keeper m)]
         (swap! players update-in [(name (first p)) :matches] - (second p))))
     @players))
 
