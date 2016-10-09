@@ -3,12 +3,13 @@
     "date": "2016-10-08",
     "league": "Groep 2 04",
     "teams": ["TOGB", "Blijdorp"],
+    "captain": "Vito",
     "result": [0, 15],
     "goals":{
-      "Fadi": 3,
+      "Fadi": 4,
       "Jonas": 1,
       "Luc": 1,
-      "Quincy": 2,
+      "Quincy": 1,
       "Stijn": 2,
       "Vito": 4
     },
@@ -20,11 +21,15 @@
       "Vito": 2
     },
     "absent": {
+    },
+    "keeper": {
+      "Dieuwe": 1
     }
   },
   {
     "date": "2016-10-01",
     "league": "Groep 2 04",
+    "captain": "Stijn",
     "teams": ["Zestienhoven", "Blijdorp"],
     "result": [0, 15],
     "goals":{
@@ -43,11 +48,15 @@
       "Vito": 3
     },
     "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
     }
   },
   {
     "date": "2016-09-24",
     "league": "Groep 2 04",
+    "captain": "Jonas",
     "teams": ["Blijdorp", "Hillegersberg"],
     "result": [1, 1],
     "goals":{
@@ -57,11 +66,15 @@
       "Jonas": 1
     },
     "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
     }
   },
   {
     "date": "2016-09-17",
     "league": "Groep 2 04",
+    "captain": "Quincy",
     "teams": ["VVOR", "Blijdorp"],
     "result": [2, 7],
     "goals":{
@@ -78,12 +91,16 @@
       "Stijn": 1
     },
     "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
     }
   },
   {
     "date": "2016-09-10",
     "league": "Groep 2 04",
     "teams": ["Blijdorp", "XerxesDZB"],
+    "captain": "Xaver",
     "result": [5, 0],
     "goals":{
       "Fadi": 2,
@@ -97,12 +114,16 @@
     "absent": {
       "Amine": 1,
       "Dieuwe": 1
+    },
+    "keeper": {
+      "Xaver": 1
     }
   },
   {
     "date": "2016-09-03",
     "league": "Groep 2 04",
     "teams": ["BVCB", "Blijdorp"],
+    "captain": "Lenny",
     "result": [4, 2],
     "goals": {
       "Fadi": 1,
@@ -110,12 +131,16 @@
     },
     "assists": {
       "Stijn": 1
+    },
+    "keeper": {
+      "Xaver": 1
     }
   },
   {
     "date": "2016-08-27",
     "league": "Groep 2 04",
     "teams": ["Blijdorp", "VOC"],
+    "captain": "",
     "result": [7, 1],
     "goals": {
       "Fadi": 2,
@@ -131,6 +156,9 @@
     "absent": {
       "Vito": 0.5,
       "Dieuwe": 1
+    },
+    "keeper": {
+      "Xaver": 1
     }
   }
 ]

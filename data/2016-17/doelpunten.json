@@ -2,60 +2,60 @@
   "id" : 3,
   "name" : "Fadi",
   "matches" : 7,
-  "total" : 12,
-  "position" : "striker"
+  "total" : 13,
+  "position" : "aanval"
 }, {
   "id" : 5,
   "name" : "Lenny",
   "matches" : 7,
   "total" : 0,
-  "position" : "defender"
+  "position" : "verdediging"
 }, {
   "id" : 2,
   "name" : "Dieuwe",
-  "matches" : 5,
+  "matches" : 4,
   "total" : 0,
-  "position" : "defender"
+  "position" : "verdediging"
 }, {
   "id" : 9,
   "name" : "Vito",
   "matches" : 6.5,
   "total" : 11,
-  "position" : "midfielder"
+  "position" : "centrum"
 }, {
   "id" : 1,
   "name" : "Amine",
   "matches" : 6,
   "total" : 0,
-  "position" : "defender"
+  "position" : "verdediging"
 }, {
   "id" : 8,
   "name" : "Stijn",
   "matches" : 7,
   "total" : 8,
-  "position" : "striker"
+  "position" : "aanval"
 }, {
   "id" : 6,
   "name" : "Luc",
   "matches" : 7,
   "total" : 8,
-  "position" : "midfielder"
+  "position" : "centrum"
 }, {
   "id" : 4,
   "name" : "Jonas",
   "matches" : 7,
   "total" : 6,
-  "position" : "striker"
+  "position" : "aanval"
 }, {
   "id" : 10,
   "name" : "Xaver ",
-  "matches" : 7,
+  "matches" : 1,
   "total" : 0,
-  "position" : "keeper"
+  "position" : "doel"
 }, {
   "id" : 7,
   "name" : "Quincy",
   "matches" : 7,
-  "total" : 5,
-  "position" : "midfielder"
+  "total" : 4,
+  "position" : "centrum"
 } ]
