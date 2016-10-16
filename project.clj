@@ -8,5 +8,6 @@
          :nrepl {:start? true :port 4555}
          :port 8080}
   :aliases {"build-site" ["run" "-m" "blijdorp.site/export"]
-            "build-exercises" ["run" "-m" "blijdorp.exercises/export"]}
+            "build-exercises" ["run" "-m" "blijdorp.exercises/export"]
+            "build-news" ["run" "-m" "blijdorp.news/export"]}
   :main blijdorp.update)

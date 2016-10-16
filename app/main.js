@@ -11,6 +11,7 @@ import Schedule from './schedule.js'
 import Table from './table.js'
 import Results from './results.js'
 import Analysis from './analysis'
+import News from './news'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
@@ -28,6 +29,19 @@ const store = createStore(reducer)
 const baseUri = '/blijdorp'
 
 const childRoutes = [
+  {
+    id: 0,
+    path: 'nieuws',
+    component: News,
+    skipChildRoutes: true,
+    childRoutes: [
+      {
+        id: 1,
+        path: ':item',
+        component: News
+      }
+    ]
+  },
   {
     id: 2,
     path: 'competitie',
@@ -76,7 +90,7 @@ const childRoutes = [
     ]
   },
   {
-    id: 10,
+    id: 11,
     path: 'oefeningen',
     component: Exercises
   }
@@ -85,18 +99,21 @@ const childRoutes = [
 class Main extends React.Component {
 
   renderItem(baseUri, item) {
-    let uri = baseUri + '/' + item.path
+    let title = item.path
+    let idx = title.indexOf('/:')
+    if ( idx != -1 ) title = title.substr(0, idx)
+    let uri = baseUri + '/' + title
     return (
       <li key={'item-' + item.id} role='presentation'
         className={this.props.location.pathname == uri ? 'active' : ''}>
-        <Link to={uri}>{item.path}</Link>
+        <Link to={uri}>{title}</Link>
       </li>
     )
   }
   
   renderItems() {
     return childRoutes.map((item) => {
-      if ( item.childRoutes ) {
+      if ( item.childRoutes && ! item.skipChildRoutes ) {
         let className = 'dropdown'
         if ( this.props.location.pathname.startsWith(baseUri + '/' + item.path) )
           className += ' active'
