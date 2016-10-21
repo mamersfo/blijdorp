@@ -67,15 +67,14 @@ export default class News extends React.Component {
       case 'text':
         content = m.text
         break
-    case 'youtube':
-        let src = 'https://www.youtube.com/embed/' + m.videoId
-        content = <iframe width={420} height={235} src={src}></iframe>
+      case 'video':
+        content = <iframe width={420} height={235} src={m.url}></iframe>
         break
       case 'image':
         content = <img src={m.src}></img>
         break
-      case 'href':
-        content = <a href={m.href} target='_blank'>{m.text}</a>
+      case 'link':
+        content = <a href={m.url} target='_blank'>{m.text}</a>
       default:
         break
     }

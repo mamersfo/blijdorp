@@ -1,0 +1,27 @@
+interface Content {
+  type: String!
+  text: String
+  url: String
+}
+
+type Story {
+  id: String!
+  title: String
+  date: String
+  description: String
+  content: [Content]
+}
+
+type Query {
+  stories: [Story]
+  story(id: String!): Story
+}
+
+type Mutation {
+  createStory(title: String): Story
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

@@ -19,16 +19,14 @@ export class Matches extends Seasonal {
     return m ? Object.keys(m).map((k) => k + ' (' + m[k] + ') ') : 'geen'
   }
 
-  renderVideo(id) {
-    const src = 'https://www.youtube.com/embed/' + id
-
+  renderVideo(url) {
     return (
       <div>
         <MediaQuery query='(min-device-width: 768px)'>
-          <iframe width={420} height={235} src={src}></iframe>
+          <iframe width={420} height={235} src={url}></iframe>
         </MediaQuery>
         <MediaQuery query='(max-device-width: 667px)'>
-          <iframe width={275} height={154} src={src}></iframe>
+          <iframe width={275} height={154} src={url}></iframe>
         </MediaQuery>      
       </div>
     )
@@ -36,16 +34,16 @@ export class Matches extends Seasonal {
 
   renderContent(m, idx) {
     let content = ''
-    
+
     switch( m.type ) {
       case 'text':
         content = m.text
         break
-      case 'youtube':
-        content = this.renderVideo(m.videoId)
+      case 'video':
+        content = this.renderVideo(m.url)
         break
       case 'image':
-        content = m.download ? <a href={m.download} target='_blank'><img src={m.src}></img></a> : <img src={m.src}></img>
+        content = m.download ? <a href={m.download} target='_blank'><img src={m.url}></img></a> : <img src={m.url}></img>
         break
       default:
         break

@@ -1,5 +1,4 @@
 (ns blijdorp.update
-  (:gen-class)
   (:require [cheshire.core :refer :all]))
 
 (def season "2016-17")
@@ -99,7 +98,7 @@
 (defn export-assists []
   (export (generate-stats (parse-matches) :assists) assists-filename))
 
-(defn -main []
+(defn export []
   (export-table)
   (export-goals)
   (export-assists))

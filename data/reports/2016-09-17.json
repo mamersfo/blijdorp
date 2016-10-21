@@ -18,12 +18,12 @@
       "text": "Al met al hebben de jongens een mooie wedstrijd gespeeld. Na afloop werd Jonas tot aanvoerder gekozen."
     },
     {
-      "type": "youtube",
-      "videoId": "ojtAB74z2mY"
+      "type": "video",
+      "url": "https://www.youtube.com/embed/ojtAB74z2mY"
     },
     {
-      "type": "youtube",
-      "videoId": "0R0JxDtnOn4"
+      "type": "video",
+      "url": "https://www.youtube.com/embed/0R0JxDtnOn4"
     }
   ]
 }

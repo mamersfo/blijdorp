@@ -30,10 +30,9 @@
        (map (fn [c]
               (condp = (:type c)
                 "text" [:div {:style "margin-bottom: 10px"} (:text c)]
-                "youtube" [:iframe
+                "video" [:iframe
                            {:width 275 :height 154
-                            :src (str "https://www.youtube.com/embed/"
-                                      (:videoId c))}]
+                            :src (str (:url c))}]
                 :default [:div]))
             (:content report))]])))
 

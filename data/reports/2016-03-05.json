@@ -32,7 +32,7 @@
     },
     {
       "type": "image",
-      "src": "data/reports/images/IMG_0506.png"
+      "url": "data/reports/images/IMG_0506.png"
     }
   ]
 }
