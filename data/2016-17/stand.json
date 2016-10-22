@@ -1,89 +1,111 @@
 [ {
   "matches" : {
-    "wins" : 1,
-    "draws" : 0,
-    "losses" : 6
-  },
-  "goals" : {
-    "for" : 11,
-    "against" : 34
-  },
-  "team" : "VOC"
-}, {
-  "matches" : {
-    "wins" : 3,
-    "draws" : 0,
-    "losses" : 4
-  },
-  "goals" : {
-    "for" : 32,
-    "against" : 23
-  },
-  "team" : "XerxesDZB"
-}, {
-  "matches" : {
-    "wins" : 5,
-    "draws" : 1,
-    "losses" : 1
-  },
-  "goals" : {
-    "for" : 26,
-    "against" : 14
-  },
-  "team" : "Hillegersberg"
-}, {
-  "matches" : {
-    "wins" : 7,
+    "wins" : 0,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 39,
-    "against" : 8
+    "for" : 0,
+    "against" : 0
   },
-  "team" : "BVCB"
+  "team" : "VOC"
 }, {
   "matches" : {
-    "wins" : 4,
+    "wins" : 0,
     "draws" : 0,
-    "losses" : 3
+    "losses" : 0
   },
   "goals" : {
-    "for" : 24,
-    "against" : 23
+    "for" : 0,
+    "against" : 0
   },
-  "team" : "VVOR"
+  "team" : "Excelsior'20"
 }, {
   "matches" : {
-    "wins" : 5,
-    "draws" : 1,
-    "losses" : 1
+    "wins" : 0,
+    "draws" : 0,
+    "losses" : 0
   },
   "goals" : {
-    "for" : 50,
-    "against" : 8
+    "for" : 0,
+    "against" : 0
+  },
+  "team" : "Leonidas"
+}, {
+  "matches" : {
+    "wins" : 0,
+    "draws" : 0,
+    "losses" : 0
+  },
+  "goals" : {
+    "for" : 0,
+    "against" : 0
+  },
+  "team" : "JHR"
+}, {
+  "matches" : {
+    "wins" : 0,
+    "draws" : 0,
+    "losses" : 0
+  },
+  "goals" : {
+    "for" : 0,
+    "against" : 0
+  },
+  "team" : "Hillegersberg"
+}, {
+  "matches" : {
+    "wins" : 0,
+    "draws" : 0,
+    "losses" : 0
+  },
+  "goals" : {
+    "for" : 0,
+    "against" : 0
+  },
+  "team" : "De Betrokken Spartaan"
+}, {
+  "matches" : {
+    "wins" : 0,
+    "draws" : 0,
+    "losses" : 0
+  },
+  "goals" : {
+    "for" : 0,
+    "against" : 0
   },
   "team" : "Blijdorp"
 }, {
   "matches" : {
-    "wins" : 1,
-    "draws" : 1,
-    "losses" : 5
+    "wins" : 0,
+    "draws" : 0,
+    "losses" : 0
   },
   "goals" : {
-    "for" : 9,
-    "against" : 43
+    "for" : 0,
+    "against" : 0
   },
   "team" : "Zestienhoven"
 }, {
   "matches" : {
     "wins" : 0,
-    "draws" : 1,
-    "losses" : 6
+    "draws" : 0,
+    "losses" : 0
   },
   "goals" : {
-    "for" : 11,
-    "against" : 49
+    "for" : 0,
+    "against" : 0
   },
-  "team" : "TOGB"
+  "team" : "Spartaan'20"
+}, {
+  "matches" : {
+    "wins" : 0,
+    "draws" : 0,
+    "losses" : 0
+  },
+  "goals" : {
+    "for" : 0,
+    "against" : 0
+  },
+  "team" : "Berkel"
 } ]

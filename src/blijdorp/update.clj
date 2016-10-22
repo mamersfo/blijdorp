@@ -2,6 +2,7 @@
   (:require [cheshire.core :refer :all]))
 
 (def season "2016-17")
+(def competition "1e klasse 06")
 (def results-filename "uitslagen.json")
 (def table-filename "stand.json")
 (def matches-filename "matches.json")
@@ -46,9 +47,10 @@
     (vals @players)))
 
 (defn parse-results
-  []
+  [competition]
   (let [filename (str "data/" season "/" results-filename)]
-    (parse-string (slurp filename) true)))
+    (filter #(= competition (:competition %))
+            (parse-string (slurp filename) true))))
 
 (defn generate-table
   [ms]
@@ -82,7 +84,7 @@
           (swap! table update-in [away-team :goals :against] + home-goals)
           (recur (rest matches)))))))
 
-(defn export
+(defn export-json
   [root filename]
   (let [path (str "data/" season "/" filename)]
     (with-open [out (clojure.java.io/writer path)]
@@ -90,13 +92,13 @@
       (println "Written to" path))))
 
 (defn export-table []
-  (export (generate-table (parse-results)) table-filename))
+  (export-json (generate-table (parse-results competition)) table-filename))
 
 (defn export-goals []
-  (export (generate-stats (parse-matches) :goals) goals-filename))
+  (export-json (generate-stats (parse-matches) :goals) goals-filename))
 
 (defn export-assists []
-  (export (generate-stats (parse-matches) :assists) assists-filename))
+  (export-json (generate-stats (parse-matches) :assists) assists-filename))
 
 (defn export []
   (export-table)

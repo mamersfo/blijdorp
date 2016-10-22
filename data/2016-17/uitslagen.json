@@ -1,6 +1,18 @@
 [
   {
     "latest": true,
+    "competition": "1e klasse 06",
+    "matchday": 9,
+    "date": "2016-10-29",
+    "fixtures": [
+      ["JHR", "Zestienhoven"],
+      ["Blijdorp", "Hillegersberg"],
+      ["Berkel", "Spartaan'20"],
+      ["VOC", "Excelsior'20"],
+      ["Leonidas", "De Betrokken Spartaan"]
+    ]
+  },
+  {
     "competition": "Groep 2 04",
     "matchday": 6,
     "date": "2016-10-08",

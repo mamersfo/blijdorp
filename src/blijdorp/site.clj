@@ -12,7 +12,7 @@
   (layout-page
    [:div {:class "col-xs-12"}
     [:div {:class "jumbotron" :style "margin: 0px"}
-     [:p {:style "margin: 20px"} "Website gewijd aan het selectieteam voor Blijdorp-spelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in Groep 2 04 van het KNVB district West II. Op deze site vind je onder meer wedstrijdverslagen, statistieken en oefenstof."]]]))
+     [:p {:style "margin: 20px"} "Website gewijd aan het selectieteam voor Blijdorp-spelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in de 1e klasse 06 van het KNVB district West II. Op deze site vind je onder meer wedstrijdverslagen, statistieken en oefenstof."]]]))
 
 ;; verslag
 
