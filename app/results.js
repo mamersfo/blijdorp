@@ -56,7 +56,7 @@ export class Results extends Seasonal {
         className='grid'
         component='ul'
         columns={3}
-        columnWidth={250}
+        columnWidth={290}
         gutterWidth={10}
         gutterHeight={10}
         springConfig={{ stiffness: 170, damping: 26 }}>
