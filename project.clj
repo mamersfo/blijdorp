@@ -7,6 +7,7 @@
                  [graphql-clj "0.1.16"]
                  [compojure "1.5.0"]
                  [ring "1.5.0"]
+                 [ring-cors "0.1.8"]
                  [ring/ring-json "0.4.0"]]
   :plugins [[lein-ring "0.9.7"]]
   :ring {:handler blijdorp.graphql/handler

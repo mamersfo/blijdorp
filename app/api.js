@@ -8,4 +8,18 @@ var get = function(which) {
   return fetch(url).then(response => response.json())
 }
 
-export { get }
+var query = function(q) {
+  let body = JSON.stringify({query: q})
+  console.log('body', body)
+  return fetch('http://localhost:8080/graphql', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: body,
+    mode: 'cors'
+  }).then(response => response.json())
+}
+
+export { get, query }

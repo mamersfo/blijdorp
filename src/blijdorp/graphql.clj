@@ -6,11 +6,14 @@
             [graphql-clj.parser :refer (parse)]
             [graphql-clj.introspection :refer (introspection-schema)]
             [graphql-clj.executor :as executor]
+            [graphql-clj.error :refer (throw-error)]
             [compojure.core :refer (ANY POST defroutes)]
             [compojure.route :as route]
             [ring.util.response :as response]
             [ring.middleware.json :refer (wrap-json-response
-                                          wrap-json-params)]))
+                                          wrap-json-params)]
+            [ring.adapter.jetty :refer (run-jetty)]
+            [ring.middleware.cors :refer (wrap-cors)]))
 
 (def schema
   (let [parsed-schema (parse (slurp (io/resource "stories.gql")))]
@@ -31,12 +34,23 @@
   [ctx parent args]
   (:content parent))
 
-(defn create-story
+(defn make-id
+  [s]
+  (when s
+    (clojure.string/lower-case
+     (clojure.string/replace s #"\s+" "-"))))
+
+(defn upsert-story
   [ctx parent args]
-  (let [title (get args "title")
-        id (clojure.string/lower-case
-            (clojure.string/replace title #"\s" "-"))]
-    {:id id :title title}))
+  (println "ctx:" ctx "parent:" parent "args:" args)
+  (let [story (get args "story")]
+    (if-let [title (get story "title")]
+      (let [id (or (get story "id") (make-id title))
+            content (get-in story ["content" :values])
+            story (assoc story "content" content)]
+        (news/save id (dissoc story "id"))
+        (assoc story "id" id))
+      (throw-error "Missing field (title) in type (Story)"))))
 
 (defn resolver
   [type-name field-name]
@@ -45,25 +59,35 @@
    ["Query" "stories"] get-stories
    ["Query" "story"] get-story
    ["Story" "content"] get-content
-   ["Mutation" "createStory"] create-story
+   ["Mutation" "upsertStory"] upsert-story
    :else nil))
 
 (defn execute
   [query variables]
+  (println "query:" query)
   (executor/execute context schema resolver query variables))
 
 (defroutes routes
   (POST "/graphql" [query :as request]
-        (try (response/response (execute query nil))
-             (catch Throwable e
-               (do
-                 (.printStackTrace e)
-                 {:status 500
-                  :body {:exception (.getName (.getClass e))}}))))
+        (try
+          (response/response (execute query nil))
+          (catch Throwable e
+            (do
+              (.printStackTrace e)
+              {:status 500
+               :body {:exception (.getName (.getClass e))}}))))
   (ANY   "/graphql" [] {:status 405})
   (route/not-found (response/not-found {:message "Not found"})))
 
 (def handler
   (-> routes
       wrap-json-response
+      (wrap-cors
+       :access-control-allow-origin [#"http://localhost:3000" #"http://.*"]
+       :access-control-allow-methods [:get :put :post :delete])
       wrap-json-params))
+
+;; (defonce server (run-jetty #'handler {:port 8080 :join? false}))
+;; (defn start [] (.start server))
+;; (defn stop [] (.stop server))
+

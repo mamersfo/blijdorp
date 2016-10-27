@@ -15,12 +15,15 @@
                 (assoc json :id (first (split f #"\."))))))
        (sort #(compare (:date %2) (:date %1)))))
 
-(def output-file
-  (str news-dir "/index.json"))
+(defn save [id story]
+  (let [output-file (str news-dir "/" id ".json")]
+    (with-open [out (clojure.java.io/writer output-file)]
+      (generate-stream story out {:pretty true}))))
 
 (defn export
   []
-  (let [all (map #(select-keys % [:id :title :date]) (stories))]
+  (let [all (map #(select-keys % [:id :title :date]) (stories))
+        output-file (str news-dir "/index.json")]
     (with-open [out (clojure.java.io/writer output-file)]
       (generate-stream all out {:pretty true})
       (println "News index written to" output-file))))
