@@ -43,7 +43,7 @@
   (let [players (atom (generate-players ms))]
     (doseq [m ms]
       (doseq [p (get m k)]
-        (when-not (nil? (get @players p)) (swap! players update-in [(name (first p)) :total] + (second p)))))
+        (swap! players update-in [(name (first p)) :total] + (second p))))
     (vals @players)))
 
 (defn parse-results

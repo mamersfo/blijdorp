@@ -2,7 +2,7 @@
   "id" : 3,
   "name" : "Fadi",
   "matches" : 8,
-  "total" : 0,
+  "total" : 13,
   "position" : "aanval"
 }, {
   "id" : 5,
@@ -20,7 +20,7 @@
   "id" : 9,
   "name" : "Vito",
   "matches" : 7.5,
-  "total" : 0,
+  "total" : 11,
   "position" : "centrum"
 }, {
   "id" : 1,
@@ -32,19 +32,19 @@
   "id" : 8,
   "name" : "Stijn",
   "matches" : 8,
-  "total" : 0,
+  "total" : 10,
   "position" : "aanval"
 }, {
   "id" : 6,
   "name" : "Luc",
   "matches" : 8,
-  "total" : 0,
+  "total" : 8,
   "position" : "centrum"
 }, {
   "id" : 4,
   "name" : "Jonas",
   "matches" : 8,
-  "total" : 0,
+  "total" : 7,
   "position" : "aanval"
 }, {
   "id" : 10,
@@ -56,6 +56,6 @@
   "id" : 7,
   "name" : "Quincy",
   "matches" : 8,
-  "total" : 0,
+  "total" : 5,
   "position" : "centrum"
 } ]
