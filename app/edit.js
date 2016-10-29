@@ -43,9 +43,9 @@ class Story extends React.Component {
 
   renderInput(title, key, value) {
     return (
-      <div>
-        <div>{title}</div>
-        <input type='text' value={value} style={{width: '100%'}}
+      <div key={key} className="form-group">
+        <label for={key}>{title}</label>
+        <input type='text' className="form-control" id={key} value={value} style={{width: '100%'}}
           onChange={this.handleChange.bind(this, key)} />
       </div>
     )
@@ -53,9 +53,9 @@ class Story extends React.Component {
 
   renderText(title, key, text) {
     return (
-      <div key={key}>
-        <div>{title}</div>
-        <textArea rows='5' value={text} style={{width: '100%'}}
+      <div key={key} className="form-group">
+        <label for={key}>{title}</label>
+        <textArea id={key} rows='5' value={text} style={{width: '100%'}}
           onChange={this.handleChange.bind(this, key)} />
       </div>
     )
@@ -132,13 +132,19 @@ class Story extends React.Component {
   render() {
     let { story } = this.state
     return (
-      <div>
-        { this.renderInput('Title', 'title', story.title) }
-        { this.renderText('Description', 'description', story.description) }
-        { story.content && story.content.map(this.renderContent.bind(this)) }
-        <a className="btn btn-default" href="#" role="button"><Link to='/'>Back</Link></a>
-        <a className="btn btn-default" href="#" role="button" onClick={this.save.bind(this)}>Save</a>
-        <a className="btn btn-default" href="#" role="button" onClick={this.logState.bind(this)}>Log</a>
+      <div className='container-fluid'>
+        <div className='row-fluid'>
+          <div className='col-md-12'>
+          <form>
+          { this.renderInput('Title', 'title', story.title) }
+          { this.renderText('Description', 'description', story.description) }
+          { story.content && story.content.map(this.renderContent.bind(this)) }
+          <a className="btn btn-default" href="#" role="button"><Link to='/'>Back</Link></a>
+          <a className="btn btn-default" href="#" role="button" onClick={this.save.bind(this)}>Save</a>
+          <a className="btn btn-default" href="#" role="button" onClick={this.logState.bind(this)}>Log</a>
+          </form>
+          </div>
+        </div>
       </div>
     )
   }
@@ -158,20 +164,24 @@ class List extends React.Component {
   }
   
   render() {
+    if ( this.state.stories.length) {
+      console.log('stories', this.state.stories)
+    }
     return (
       <div className='container-fluid'>
         <div className='row-fluid'>
-        <div className='col-md-12'>
-        {
-          this.state.stories.map((s) => {
-          return (
-            <div key={s.id}>
-              <Link to={`/story/${s.id}`}>{s.title}</Link>
-            </div>
-          )
-          })
-        }
-        </div>
+          <div className='col-md-12'>
+            <h2>Stories</h2>
+            {
+            this.state.stories.map((s) => {
+            return (
+              <div key={s.id}>
+                <Link to={`/story/${s.id}`}>{s.title}</Link>
+              </div>
+            )
+            })
+          }
+          </div>
         </div>
       </div>
     )

@@ -1,5 +1,27 @@
 [
   {
+    "date": "2016-10-29",
+    "league": "1e klasse 06",
+    "teams": ["Blijdorp", "Hillegersberg"],
+    "captain": "Fadi",
+    "result": [5, 2],
+    "goals":{
+      "E.D.": 1,
+      "Jonas": 1,
+      "Quincy": 1,
+      "Stijn": 2
+    },
+    "assists": {
+      "Jonas": 1,
+      "Stijn": 1
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2016-10-08",
     "league": "Groep 2 04",
     "teams": ["TOGB", "Blijdorp"],

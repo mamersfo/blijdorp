@@ -1,11 +1,11 @@
 [ {
   "matches" : {
-    "wins" : 0,
+    "wins" : 1,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 0,
+    "for" : 4,
     "against" : 0
   },
   "team" : "VOC"
@@ -13,98 +13,98 @@
   "matches" : {
     "wins" : 0,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
     "for" : 0,
-    "against" : 0
+    "against" : 4
   },
   "team" : "Excelsior'20"
 }, {
   "matches" : {
     "wins" : 0,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
-    "for" : 0,
-    "against" : 0
+    "for" : 2,
+    "against" : 8
   },
   "team" : "Leonidas"
 }, {
   "matches" : {
-    "wins" : 0,
+    "wins" : 1,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 0,
-    "against" : 0
+    "for" : 5,
+    "against" : 3
   },
   "team" : "JHR"
 }, {
   "matches" : {
     "wins" : 0,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
-    "for" : 0,
-    "against" : 0
+    "for" : 2,
+    "against" : 5
   },
   "team" : "Hillegersberg"
 }, {
   "matches" : {
-    "wins" : 0,
+    "wins" : 1,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 0,
-    "against" : 0
+    "for" : 8,
+    "against" : 2
   },
   "team" : "De Betrokken Spartaan"
 }, {
   "matches" : {
-    "wins" : 0,
+    "wins" : 1,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 0,
-    "against" : 0
+    "for" : 5,
+    "against" : 2
   },
   "team" : "Blijdorp"
 }, {
   "matches" : {
     "wins" : 0,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
-    "for" : 0,
-    "against" : 0
+    "for" : 3,
+    "against" : 5
   },
   "team" : "Zestienhoven"
 }, {
   "matches" : {
     "wins" : 0,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
     "for" : 0,
-    "against" : 0
+    "against" : 3
   },
   "team" : "Spartaan'20"
 }, {
   "matches" : {
-    "wins" : 0,
+    "wins" : 1,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 0,
+    "for" : 3,
     "against" : 0
   },
   "team" : "Berkel"

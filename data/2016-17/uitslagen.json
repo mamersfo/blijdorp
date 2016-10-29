@@ -61,11 +61,11 @@
     "matchday": 9,
     "date": "2016-10-29",
     "fixtures": [
-      ["JHR", "Zestienhoven"],
-      ["Blijdorp", "Hillegersberg"],
-      ["Berkel", "Spartaan'20"],
-      ["VOC", "Excelsior'20"],
-      ["Leonidas", "De Betrokken Spartaan"]
+      ["JHR", "Zestienhoven", 5, 3],
+      ["Blijdorp", "Hillegersberg", 5, 2],
+      ["Berkel", "Spartaan'20", 3, 0],
+      ["VOC", "Excelsior'20", 4, 0],
+      ["Leonidas", "De Betrokken Spartaan", 2, 8]
     ]
   },
   {

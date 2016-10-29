@@ -25,7 +25,10 @@ export class Table extends Seasonal {
       if ( diff === 0 ) {
         diff = a.goals.diff - b.goals.diff
         if ( diff === 0 ) {
-          diff = b.team.localeCompare(a.team)
+          diff = a.goals.for - b.goals.for
+          if ( diff === 0 ) {
+            diff = b.team.localeCompare(a.team)
+          }
         }
       }
     }
