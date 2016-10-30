@@ -56,5 +56,12 @@
   [ "TOGB"         , 43, true,  "Fadi",   "Quincy", "aanval",    null,        "links",   "schot",     -1, 1],
   [ "TOGB"         , 46, true,  "Fadi",   "Stijn",  "counter",   null,        "links",   "intikker",   0, 0],
   [ "TOGB"         , 47, true,  "Vito",   "Stijn",  "aanval",    null,        "links",   "intikker",   1, 1],
-  [ "TOGB"         , 48, true,  "Fadi",   "Vito",   "counter",   null,        "centrum", "intikker",  -2, 2]
+  [ "TOGB"         , 48, true,  "Fadi",   "Vito",   "counter",   null,        "centrum", "intikker",  -2, 2],
+  [ "Hillegersberg",  7, true,  "E.D.",   null,     "standaard", "corner",    "rechts",  "eigen doelpunt", 0, 0],
+  [ "Hillegersberg", 20, true,  "Jonas",  "Stijn",  "aanval",    null,        "rechts",  "schot",      1, 1],
+  [ "Hillegersberg", 22, true,  "Stijn",  "Jonas",  "aanval",    null,        "links",   "schot",      0, 2],
+  [ "Hillegersberg", 25, true,  "Quincy", null,     "standaard", "vrije trap","centrum", "schot",      0, 7],
+  [ "Hillegersberg", 40, false, null,     null,     "counter",   null,        "links",   "shoot-out", -1, 2],
+  [ "Hillegersberg", 50, true,  "Stijn",  null,     "counter",   null,        "rechts",  "schot",      0, 2],
+  [ "Hillegersberg", 50, false, null,     null,     "counter",   null,        "centrum", "shoot-out",  1, 2]
 ]

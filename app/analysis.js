@@ -37,7 +37,7 @@ export class Analysis extends React.Component {
         {
           idx: 3,
           title: 'Wijze van scoren',
-          options: ['schot', 'shoot-out', 'intikker', 'kopbal'],
+          options: ['schot', 'shoot-out', 'intikker', 'kopbal', 'eigen doelpunt'],
           column: 8,
           xType: 'ordinal'
         },
