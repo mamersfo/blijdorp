@@ -55,7 +55,7 @@
 (defn publish-stories
   [ctx parent args]
   (println "ctx:" ctx "parent:" parent "args:" args)
-  (let [pattern "yyyy-MM-dd'T'HH:mm:ss+02:00"
+  (let [pattern "yyyy-MM-dd'T'HH:mm:ss+01:00"
         format (java.text.SimpleDateFormat. pattern)
         stories (sort
                  #(compare (:date %2) (:date %1))
