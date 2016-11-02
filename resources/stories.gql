@@ -19,6 +19,7 @@ type Query {
 
 type Mutation {
   upsertStory(story: Story!): Story
+  publish: [Story]
 }
 
 schema {

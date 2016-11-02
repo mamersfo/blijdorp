@@ -13,7 +13,8 @@
             [ring.middleware.json :refer (wrap-json-response
                                           wrap-json-params)]
             [ring.adapter.jetty :refer (run-jetty)]
-            [ring.middleware.cors :refer (wrap-cors)]))
+            [ring.middleware.cors :refer (wrap-cors)])
+  (:import java.util.Date))
 
 (def schema
   (let [parsed-schema (parse (slurp (io/resource "stories.gql")))]
@@ -42,15 +43,28 @@
 
 (defn upsert-story
   [ctx parent args]
-  (println "ctx:" ctx "parent:" parent "args:" args)
   (let [story (get args "story")]
     (if-let [title (get story "title")]
       (let [id (or (get story "id") (make-id title))
             content (get-in story ["content" :values])
             story (assoc story "content" content)]
-        (news/save id (dissoc story "id"))
-        (assoc story "id" id))
+        (news/save id story)
+        (assoc story :id id))
       (throw-error "Missing field (title) in type (Story)"))))
+
+(defn publish-stories
+  [ctx parent args]
+  (println "ctx:" ctx "parent:" parent "args:" args)
+  (let [pattern "yyyy-MM-dd'T'HH:mm:ss+02:00"
+        format (java.text.SimpleDateFormat. pattern)
+        stories (sort
+                 #(compare (:date %2) (:date %1))
+                 (for [story (news/stories)]
+                   (if (nil? (:date story))
+                     (let [date (.format format (java.util.Date.))]
+                       (news/save (:id story) (assoc story :date date)))
+                     story)))]
+    (news/export stories)))
 
 (defn resolver
   [type-name field-name]
@@ -60,6 +74,7 @@
    ["Query" "story"] get-story
    ["Story" "content"] get-content
    ["Mutation" "upsertStory"] upsert-story
+   ["Mutation" "publish"] publish-stories
    :else nil))
 
 (defn execute
