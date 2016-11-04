@@ -26,3 +26,26 @@ export function series(m, ks) {
   })
 }
 
+export function stringify(o) {
+  switch(typeof o) {
+  case 'object':
+    if ( Array.isArray(o) ) {
+      return '[' + o.map((i) => {
+        return stringify(i)
+      }).join(', ') + ']'
+    } else if ( o === null ) {
+      return 'null'
+    } else {
+      let es = Object.entries(o).filter((e) => {
+        return e[1] != null
+      })
+      return '{' + es.map((e) => {
+        return e[0] + ': ' + stringify(e[1])
+      }).join(', ') + '}'
+    }
+  case 'string':
+    return `"${o}"`
+  default:
+    return `${o}`
+  }
+}

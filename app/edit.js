@@ -2,30 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, Link, hashHistory, browserHistory } from 'react-router'
 import { query } from './api'
-
-var stringify = function(o) {
-  switch(typeof o) {
-  case 'object':
-    if ( Array.isArray(o) ) {
-      return '[' + o.map((i) => {
-        return stringify(i)
-      }).join(', ') + ']'
-    } else if ( o === null ) {
-      return 'null'
-    } else {
-      let es = Object.entries(o).filter((e) => {
-        return e[1] != null
-      })
-      return '{' + es.map((e) => {
-        return e[0] + ': ' + stringify(e[1])
-      }).join(', ') + '}'
-    }
-  case 'string':
-    return `"${o}"`
-  default:
-    return `${o}`
-  }
-}
+import { stringify } from './util'
 
 class Story extends React.Component {
   constructor(props) {
@@ -276,18 +253,14 @@ class List extends React.Component {
   }
 
   componentDidMount() {
-    query('query { stories { id title date } }').then((json) => {
-      let stories = json.data.stories.map(x => {
-        x.date = new Date(x.date)
-        return x
-      })
-      this.setState({stories: stories.sort((a,b) => b.date - a.date)})
+    query('query { stories { id title } }').then((json) => {
+      this.setState({stories: json.data.stories})
     })
   }
 
   publish(e) {
     e.preventDefault()
-    let q = `mutation { publish { id } }`
+    let q = 'mutation { publish { id } }'
     query(q).then((json) => {
       console.log('json', json)
     })
@@ -308,8 +281,10 @@ class List extends React.Component {
             )
             })
             }
-            <Link className="btn btn-default" to={`/story/new`}>Create</Link>
-            <a className="btn btn-default" href="#" role="button" onClick={this.publish.bind(this)}>Publish</a>
+            <div style={{marginTop: '20px'}}>
+              <Link className="btn btn-default" to={`/story/new`}>Create</Link>
+              <a className="btn btn-default" href="#" role="button" onClick={this.publish.bind(this)}>Publish</a>
+            </div>
           </div>
         </div>
       </div>
