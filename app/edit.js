@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Router, Route, Link, hashHistory, browserHistory } from 'react-router'
+import { Router, Route, Link, hashHistory } from 'react-router'
 import { query } from './api'
 import { stringify } from './util'
 

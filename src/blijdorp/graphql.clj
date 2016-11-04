@@ -14,11 +14,12 @@
             [ring.middleware.json :refer (wrap-json-response
                                           wrap-json-params)]
             [ring.adapter.jetty :refer (run-jetty)]
-            [ring.middleware.cors :refer (wrap-cors)])
+            [ring.middleware.cors :refer (wrap-cors)]
+            [cheshire.core :refer (parse-string)])
   (:import java.util.Date))
 
 (def schema
-  (let [parsed-schema (parse (slurp (io/resource "stories.gql")))]
+  (let [parsed-schema (parse (slurp (io/resource "schema.gql")))]
     (create-schema parsed-schema introspection-schema)))
 
 (def context nil)
@@ -26,6 +27,12 @@
 (defn get-matches
   [ctx parent args]
   (parse-matches))
+
+(defn get-match
+  [ctx parent args]
+  (let [date (get args "date")
+        filename (str "data/scores/" date ".json")]
+    (parse-string (slurp filename) true)))
 
 (defn get-stories
   [ctx parent args]
@@ -78,6 +85,7 @@
    ["Query" "stories"] get-stories
    ["Query" "story"] get-story
    ["Query" "matches"] get-matches
+   ["Query" "match"] get-match
    ["Story" "content"] get-content
    ["Mutation" "upsertStory"] upsert-story
    ["Mutation" "publish"] publish-stories

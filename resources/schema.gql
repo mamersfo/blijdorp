@@ -15,12 +15,14 @@ type Story {
 type Match {
   date: String
   teams: [String]
+  result: [Int]
 }
 
 type Query {
   stories: [Story]
   story(id: String!): Story
   matches: [Match]
+  match(date: String!): Match
 }
 
 type Mutation {

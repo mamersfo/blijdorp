@@ -1,0 +1,18 @@
+{
+  "date": "2016-10-29",
+  "teams": ["Blijdorp", "Hillegersberg"],
+  "goals": [
+    {
+      "minute": 7,
+      "team": "Blijdorp",
+      "goal": "E.D",
+      "assist": null,
+      "situation": "standaard",
+      "standard": "hoekschop",
+      "origin": "rechts",
+      "type": "eigen doelpunt",
+      "x": 0,
+      "y": 0
+    }
+  ]
+}
