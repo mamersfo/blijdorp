@@ -12,9 +12,15 @@ type Story {
   content: [Content]
 }
 
+type Match {
+  date: String
+  teams: [String]
+}
+
 type Query {
   stories: [Story]
   story(id: String!): Story
+  matches: [Match]
 }
 
 type Mutation {

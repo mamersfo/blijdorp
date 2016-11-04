@@ -13,8 +13,7 @@
               (let [path (str news-dir "/" f)
                     json (parse-string (slurp path) true)]
                 (assoc json :id (first (split f #"\."))))))
-       ;; (sort #(compare (:date %2) (:date %1)))
-       ))
+       (sort #(compare (:date %2) (:date %1)))))
 
 (defn save [id story]
   (let [output-file (str news-dir "/" id ".json")]

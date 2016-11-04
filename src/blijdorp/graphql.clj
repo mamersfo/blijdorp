@@ -1,5 +1,6 @@
 (ns blijdorp.graphql
   (:require [blijdorp.news :as news]
+            [blijdorp.update :refer (parse-matches)]
             [clojure.core.match :as match]
             [clojure.java.io :as io]
             [graphql-clj.type :refer (create-schema)]
@@ -21,6 +22,10 @@
     (create-schema parsed-schema introspection-schema)))
 
 (def context nil)
+
+(defn get-matches
+  [ctx parent args]
+  (parse-matches))
 
 (defn get-stories
   [ctx parent args]
@@ -72,6 +77,7 @@
    [type-name field-name]
    ["Query" "stories"] get-stories
    ["Query" "story"] get-story
+   ["Query" "matches"] get-matches
    ["Story" "content"] get-content
    ["Mutation" "upsertStory"] upsert-story
    ["Mutation" "publish"] publish-stories
