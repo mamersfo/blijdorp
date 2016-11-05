@@ -34,6 +34,10 @@
         filename (str "data/scores/" date ".json")]
     (parse-string (slurp filename) true)))
 
+(defn get-goals
+  [ctx parent args]
+  (:goals parent))
+
 (defn get-stories
   [ctx parent args]
   (news/stories))
@@ -84,9 +88,10 @@
    [type-name field-name]
    ["Query" "stories"] get-stories
    ["Query" "story"] get-story
+   ["Story" "content"] get-content
    ["Query" "matches"] get-matches
    ["Query" "match"] get-match
-   ["Story" "content"] get-content
+   ["Match" "goals"] get-goals
    ["Mutation" "upsertStory"] upsert-story
    ["Mutation" "publish"] publish-stories
    :else nil))

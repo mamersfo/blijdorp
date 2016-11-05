@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import { Router, Route, Link, hashHistory } from 'react-router'
 import { query } from './api'
 import { stringify } from './util'
+import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table'
+import 'react-bootstrap-table/css/react-bootstrap-table.min.css!'
 
 class Match extends React.Component {
   constructor(props) {
@@ -10,7 +12,9 @@ class Match extends React.Component {
     this.state = {
       match: {
         date: '',
-        teams: ['', '']
+        teams: ['', ''],
+        goals: [
+        ]
       }
     }
   }
@@ -18,7 +22,7 @@ class Match extends React.Component {
   componentDidMount() {
     let date = this.props.params.date
     if ( date !== 'new' ) {
-      let q = `query { match(date: \"${date}\") { date teams } }`
+      let q = `query { match(date: \"${date}\") { date teams goals { score minute goal }} }`
       query(q).then((json) => {
         this.setState({
           match: json.data.match
@@ -44,6 +48,39 @@ class Match extends React.Component {
   save(e) {
     e.preventDefault()
   }
+
+  handleSaveCell(goal, column, value) {
+    console.log('goal', goal, 'column', column, 'value', value)
+  }
+
+  renderTable() {
+    let goals = this.state.match.goals
+    let cellEdit = {
+      mode: 'click',
+      blurToSave: true,
+      afterSaveCell: this.handleSaveCell.bind(this)
+    }
+    let selectRow = {
+      mode: 'checkbox',
+      clickToSelect: true
+    }
+    return (
+      <div>
+        <BootstrapTable data={goals} cellEdit={cellEdit} selectRow={selectRow}
+          insertRow={true} deleteRow={true}>
+        <TableHeaderColumn dataField='score' isKey={true}>Score</TableHeaderColumn>
+        <TableHeaderColumn dataField='minute'>Minute</TableHeaderColumn>
+        <TableHeaderColumn dataField='goal'>Goal</TableHeaderColumn>
+        <TableHeaderColumn dataField='assist'>Assist</TableHeaderColumn>
+        <TableHeaderColumn dataField='situation'>Situation</TableHeaderColumn>
+        <TableHeaderColumn dataField='standard'>Standard</TableHeaderColumn>
+        <TableHeaderColumn dataField='origin'>Origin</TableHeaderColumn>
+        <TableHeaderColumn dataField='type'>Type</TableHeaderColumn>
+      
+      </BootstrapTable>
+      </div>
+    )
+  }
   
   render() {
     let { match } = this.state
@@ -57,10 +94,11 @@ class Match extends React.Component {
                 <h3 className="panel-title">Match</h3>
               </div>
               <div className="panel-body">
-              { this.renderInput('Date', 'date', match.date) }
-              { this.renderInput('Home', 'home', match.teams[0]) }
-              { this.renderInput('Away', 'away', match.teams[1]) }
+                { this.renderInput('Date', 'date', match.date) }
+                { this.renderInput('Home', 'home', match.teams[0]) }
+                { this.renderInput('Away', 'away', match.teams[1]) }
               </div>
+              { this.renderTable() }
               <div>
                 <a className="btn btn-default" href="#" role="button"><Link to='/'>Back</Link></a>
                 <a className="btn btn-default" href="#" role="button" onClick={this.save.bind(this)}>Save</a>

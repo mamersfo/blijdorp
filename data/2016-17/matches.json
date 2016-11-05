@@ -1,5 +1,23 @@
 [
   {
+    "date": "2016-11-05",
+    "league": "1e klasse 06",
+    "teams": ["Blijdorp", "VOC"],
+    "captain": "Stijn",
+    "result": [3, 3],
+    "goals":{
+      "Fadi": 3
+    },
+    "assists": {
+      "Jonas": 3
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2016-10-29",
     "league": "1e klasse 06",
     "teams": ["Blijdorp", "Hillegersberg"],

@@ -3,8 +3,8 @@
   "teams": ["Blijdorp", "Hillegersberg"],
   "goals": [
     {
+      "score": "1-0",
       "minute": 7,
-      "team": "Blijdorp",
       "goal": "E.D",
       "assist": null,
       "situation": "standaard",
