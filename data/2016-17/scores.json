@@ -63,5 +63,11 @@
   [ "Hillegersberg", 25, true,  "Quincy", null,     "standaard", "vrije trap","centrum", "schot",      0, 7],
   [ "Hillegersberg", 40, false, null,     null,     "counter",   null,        "links",   "shoot-out", -1, 2],
   [ "Hillegersberg", 50, true,  "Stijn",  null,     "counter",   null,        "rechts",  "schot",      0, 2],
-  [ "Hillegersberg", 50, false, null,     null,     "counter",   null,        "centrum", "shoot-out",  1, 2]
+  [ "Hillegersberg", 50, false, null,     null,     "counter",   null,        "centrum", "shoot-out",  1, 2],
+  [ "VOC"          ,  7, false, null,     null,     "aanval",    null,        "links",   "intikker",  -1, 1],
+  [ "VOC"          , 12, false, null,     null,     "aanval",    null,        "links",   "intikker",   0, 1],
+  [ "VOC"          , 20, true,  "Fadi",   "Jonas",  "counter",   null,        "centrum", "shoot-out",  0, 4],
+  [ "VOC"          , 21, true,  "Fadi",   "Jonas",  "standaard", "hoekschop", "rechts",  "intikker",   0, 0],
+  [ "VOC"          ,  5, false, null,     null,     "aanval",    null,        "rechts",  "schot",      2, 1],
+  [ "VOC"          , 25, true,  "Fadi",   "Jonas",  "aanval",    null,        "links",   "shoot-out", -1, 2]
 ]

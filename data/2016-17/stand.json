@@ -24,33 +24,33 @@
   "matches" : {
     "wins" : 0,
     "draws" : 0,
-    "losses" : 1
+    "losses" : 2
   },
   "goals" : {
-    "for" : 2,
-    "against" : 8
+    "for" : 3,
+    "against" : 14
   },
   "team" : "Leonidas"
 }, {
   "matches" : {
     "wins" : 1,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
-    "for" : 5,
-    "against" : 3
+    "for" : 7,
+    "against" : 8
   },
   "team" : "JHR"
 }, {
   "matches" : {
-    "wins" : 0,
+    "wins" : 1,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 2,
-    "against" : 5
+    "for" : 7,
+    "against" : 7
   },
   "team" : "Hillegersberg"
 }, {
@@ -88,13 +88,13 @@
   "team" : "Zestienhoven"
 }, {
   "matches" : {
-    "wins" : 0,
+    "wins" : 1,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 0,
-    "against" : 3
+    "for" : 6,
+    "against" : 4
   },
   "team" : "Spartaan'20"
 }, {
