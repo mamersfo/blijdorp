@@ -69,5 +69,12 @@
   [ "VOC"          , 20, true,  "Fadi",   "Jonas",  "counter",   null,        "centrum", "shoot-out",  0, 4],
   [ "VOC"          , 21, true,  "Fadi",   "Jonas",  "standaard", "hoekschop", "rechts",  "intikker",   0, 0],
   [ "VOC"          ,  5, false, null,     null,     "aanval",    null,        "rechts",  "schot",      2, 1],
-  [ "VOC"          , 25, true,  "Fadi",   "Jonas",  "aanval",    null,        "links",   "shoot-out", -1, 2]
+  [ "VOC"          , 25, true,  "Fadi",   "Jonas",  "aanval",    null,        "links",   "shoot-out", -1, 2],
+  [ "ASW"          ,  2, true,  "Jonas",  "Fadi",   "aanval",    null,        "links",   "schot",      0, 1],
+  [ "ASW"          , 19, true,  "Luc",    "Stijn",  "aanval",    null,        "centrum", "schot",      0, 6],
+  [ "ASW"          , 25, true,  "Vito",   "Jonas",  "aanval",    null,        "links",   "intikker",   1, 2],
+  [ "ASW"          , 37, false, null,     null,     "counter",   null,        "links",   "shoot-out", -1, 1],
+  [ "ASW"          , 41, false, null,     null,     "counter",   null,        "rechts",  "shoot-out",  1, 0],
+  [ "ASW"          , 42, true, "Jonas",  "Luc",     "aanval",    null,        "centrum", "shoot-out", -1, 2],
+  [ "ASW"          , 50, true, "Vito",   "Jonas",   "aanval",    null,        "centrum", "intikker",   0, 0]
 ]

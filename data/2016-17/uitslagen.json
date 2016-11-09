@@ -36,15 +36,15 @@
     ]
   },
   {
+    "latest": true,
     "competition": "MiniWorld Cup",
     "matchday": 1,
     "date": "2016-11-09",
     "fixtures": [
-      ["Blijdorp", "ASW"]
+      ["Blijdorp", "ASW", 5, 2]
     ]
   },
   {
-    "latest": true,
     "competition": "1e klasse 06",
     "matchday": 6,
     "date": "2016-11-05",

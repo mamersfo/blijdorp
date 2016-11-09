@@ -1,5 +1,29 @@
 [
   {
+    "date": "2016-11-09",
+    "league": "MiniWorld Cup",
+    "teams": ["Blijdorp", "ASW"],
+    "captain": "Amine",
+    "result": [5, 2],
+    "goals":{
+      "Jonas": 2,
+      "Luc": 1,
+      "Vito": 2
+    },
+    "assists": {
+      "Fadi": 1,
+      "Jonas": 2,
+      "Luc": 1,
+      "Stijn": 1
+    },
+    "absent": {
+      "Dieuwe": 1
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2016-11-05",
     "league": "1e klasse 06",
     "teams": ["Blijdorp", "VOC"],

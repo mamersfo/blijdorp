@@ -1,13 +1,13 @@
 [ {
   "id" : 3,
   "name" : "Fadi",
-  "matches" : 9,
+  "matches" : 10,
   "total" : 16,
   "position" : "aanval"
 }, {
   "id" : 5,
   "name" : "Lenny",
-  "matches" : 9,
+  "matches" : 10,
   "total" : 0,
   "position" : "verdediging"
 }, {
@@ -19,32 +19,32 @@
 }, {
   "id" : 9,
   "name" : "Vito",
-  "matches" : 8.5,
-  "total" : 11,
+  "matches" : 9.5,
+  "total" : 13,
   "position" : "centrum"
 }, {
   "id" : 1,
   "name" : "Amine",
-  "matches" : 8,
+  "matches" : 9,
   "total" : 0,
   "position" : "verdediging"
 }, {
   "id" : 8,
   "name" : "Stijn",
-  "matches" : 9,
+  "matches" : 10,
   "total" : 10,
   "position" : "aanval"
 }, {
   "id" : 6,
   "name" : "Luc",
-  "matches" : 9,
-  "total" : 8,
+  "matches" : 10,
+  "total" : 9,
   "position" : "centrum"
 }, {
   "id" : 4,
   "name" : "Jonas",
-  "matches" : 9,
-  "total" : 7,
+  "matches" : 10,
+  "total" : 9,
   "position" : "aanval"
 }, {
   "id" : 10,
@@ -55,7 +55,7 @@
 }, {
   "id" : 7,
   "name" : "Quincy",
-  "matches" : 9,
+  "matches" : 10,
   "total" : 5,
   "position" : "centrum"
 } ]
