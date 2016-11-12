@@ -75,6 +75,14 @@
   [ "ASW"          , 25, true,  "Vito",   "Jonas",  "aanval",    null,        "links",   "intikker",   1, 2],
   [ "ASW"          , 37, false, null,     null,     "counter",   null,        "links",   "shoot-out", -1, 1],
   [ "ASW"          , 41, false, null,     null,     "counter",   null,        "rechts",  "shoot-out",  1, 0],
-  [ "ASW"          , 42, true, "Jonas",  "Luc",     "aanval",    null,        "centrum", "shoot-out", -1, 2],
-  [ "ASW"          , 50, true, "Vito",   "Jonas",   "aanval",    null,        "centrum", "intikker",   0, 0]
+  [ "ASW"          , 42, true,  "Jonas",  "Luc",    "aanval",    null,        "centrum", "shoot-out", -1, 2],
+  [ "ASW"          , 50, true,  "Vito",   "Jonas",  "aanval",    null,        "centrum", "intikker",   0, 0],
+  [ "DBS"          ,  5, false, null,     null,     "aanval",    null,        "links",   "shoot-out", -1, 1],
+  [ "DBS"          , 26, false, null,     null,     "aanval",    null,        "centrum", "intikker",   0, 1],
+  [ "DBS"          , 29, false, null,     null,     "aanval",    null,        "links",   "shout-out", -2, 1],
+  [ "DBS"          , 42, false, null,     null,     "aanval",    null,        "centrum", "intikker",   0, 0],
+  [ "DBS"          , 45, true,  "Quincy", "Jonas",  "counter",   null,        "centrum", "shoot-out",  0, 1],
+  [ "DBS"          , 49, false, null,     null,     "aanval",    null,        "rechts",  "intikker",   0, 0],
+  [ "DBS"          , 50, false, null,     null,     "aanval",    null,        "centrum", "intikker",   0, 0],
+  [ "DBS"          , 50, true,  null,     null,     "aanval",    null,        "centrum", "schot",      0, 1]
 ]
