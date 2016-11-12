@@ -1,5 +1,25 @@
 [
   {
+    "date": "2016-11-12",
+    "league": "1e klasse 06",
+    "teams": ["De Betrokken Spartaan", "Blijdorp"],
+    "captain": "Luc",
+    "result": [6, 2],
+    "goals":{
+      "Quincy": 1,
+      "Stijn": 1
+    },
+    "assists": {
+      "Jonas": 1
+    },
+    "absent": {
+      "Dieuwe": 1
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2016-11-09",
     "league": "MiniWorld Cup",
     "teams": ["Blijdorp", "ASW"],

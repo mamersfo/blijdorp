@@ -24,19 +24,19 @@
     ]
   },
   {
+    "latest": true,
     "competition": "1e klasse 06",
     "matchday": 8,
     "date": "2016-11-12",
     "fixtures": [
-      ["Zestienhoven", "Leonidas"],
-      ["Spartaan'20", "JHR"],
-      ["Excelsior'20", "Berkel"],
-      ["Hillegersberg", "VOC"],
-      ["De Betrokken Spartaan", "Blijdorp"]
+      ["Zestienhoven", "Leonidas", 10, 2],
+      ["Spartaan'20", "JHR", 3, 2],
+      ["Excelsior'20", "Berkel", 0, 4],
+      ["Hillegersberg", "VOC", 5, 5],
+      ["De Betrokken Spartaan", "Blijdorp", 6, 2]
     ]
   },
   {
-    "latest": true,
     "competition": "MiniWorld Cup",
     "matchday": 1,
     "date": "2016-11-09",
