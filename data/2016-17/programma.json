@@ -26,8 +26,8 @@
   },
   {
     "date":"2017-01-21T09:30+01:00",
-    "teams": ["Blijdorp", "Leonidas"],
-    "website": "http://www.rksvleonidas.com/"
+    "teams": ["Blijdorp", "Nieuwerkerk"],
+    "website": "http://www.vvnieuwerkerk.nl/"
   },
   {
     "date": "2017-01-28T09:30+01:00",
@@ -61,8 +61,8 @@
   },
   {
     "date": "2017-04-01T10:00+02:00",
-    "teams": ["Leonidas", "Blijdorp"],
-    "website": "http://www.rksvleonidas.com/"
+    "teams": ["Nieuwerkerk", "Blijdorp"],
+    "website": "http://www.vvnieuwerkerk.nl/"
   },
   {
     "date": "2017-04-08T09:30+02:00",

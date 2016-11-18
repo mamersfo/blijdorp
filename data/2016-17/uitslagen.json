@@ -8,15 +8,16 @@
       ["De Betrokken Spartaan", "Zestienhoven"],
       ["Blijdorp", "JHR"],
       ["VOC", "Berkel"],
-      ["Leonidas", "Excelsior'20"]
+      ["Nieuwerkerk", "Excelsior'20"]
     ]
   },
   {
+    "latest": true,
     "competition": "1e klasse 06",
     "matchday": 1,
     "date": "2016-11-19",
     "fixtures": [
-      ["JHR", "Leonidas"],
+      ["JHR", "Nieuwerkerk"],
       ["Zestienhoven", "Berkel"],
       ["Spartaan'20", "VOC"],
       ["Excelsior'20", "Blijdorp"],
@@ -24,12 +25,10 @@
     ]
   },
   {
-    "latest": true,
     "competition": "1e klasse 06",
     "matchday": 8,
     "date": "2016-11-12",
     "fixtures": [
-      ["Zestienhoven", "Leonidas", 10, 2],
       ["Spartaan'20", "JHR", 3, 2],
       ["Excelsior'20", "Berkel", 0, 4],
       ["Hillegersberg", "VOC", 5, 5],
@@ -51,7 +50,6 @@
     "fixtures": [
       ["Excelsior'20", "Zestienhoven", 1, 3],
       ["Blijdorp", "VOC", 3, 3],
-      ["Leonidas", "Spartaan'20", 1, 6],
       ["De Betrokken Spartaan", "Berkel", 5, 3],
       ["Hillegersberg", "JHR", 5, 2]
     ]
@@ -64,8 +62,7 @@
       ["JHR", "Zestienhoven", 5, 3],
       ["Blijdorp", "Hillegersberg", 5, 2],
       ["Berkel", "Spartaan'20", 3, 0],
-      ["VOC", "Excelsior'20", 4, 0],
-      ["Leonidas", "De Betrokken Spartaan", 2, 8]
+      ["VOC", "Excelsior'20", 4, 0]
     ]
   },
   {
