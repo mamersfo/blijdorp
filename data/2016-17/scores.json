@@ -84,5 +84,7 @@
   [ "DBS"          , 45, true,  "Quincy", "Jonas",  "counter",   null,        "centrum", "shoot-out",  0, 1],
   [ "DBS"          , 49, false, null,     null,     "aanval",    null,        "rechts",  "intikker",   0, 0],
   [ "DBS"          , 50, false, null,     null,     "aanval",    null,        "centrum", "intikker",   0, 0],
-  [ "DBS"          , 50, true,  null,     null,     "aanval",    null,        "centrum", "schot",      0, 1]
+  [ "DBS"          , 50, true,  null,     null,     "aanval",    null,        "centrum", "schot",      0, 1],
+  [ "Excelsior'20" , 12, false, null,     null,     "aanval",    null,        "links",   "schot",     -4, 1],
+  [ "Excelsior'20" , 25, true,  "Vito",   "Jonas",  "aanval",    null,        "centrum", "shoot-out", -1, 1]  
 ]
