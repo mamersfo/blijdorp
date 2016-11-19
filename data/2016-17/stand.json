@@ -12,12 +12,12 @@
 }, {
   "matches" : {
     "wins" : 0,
-    "draws" : 0,
+    "draws" : 1,
     "losses" : 3
   },
   "goals" : {
-    "for" : 1,
-    "against" : 11
+    "for" : 2,
+    "against" : 13
   },
   "team" : "Excelsior'20"
 }, {
@@ -35,44 +35,44 @@
   "matches" : {
     "wins" : 1,
     "draws" : 1,
-    "losses" : 1
+    "losses" : 2
   },
   "goals" : {
-    "for" : 12,
-    "against" : 12
+    "for" : 14,
+    "against" : 19
   },
   "team" : "Hillegersberg"
 }, {
   "matches" : {
-    "wins" : 2,
+    "wins" : 3,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 11,
-    "against" : 5
+    "for" : 18,
+    "against" : 7
   },
   "team" : "De Betrokken Spartaan"
 }, {
   "matches" : {
     "wins" : 1,
-    "draws" : 1,
+    "draws" : 2,
     "losses" : 1
   },
   "goals" : {
-    "for" : 10,
-    "against" : 11
+    "for" : 11,
+    "against" : 12
   },
   "team" : "Blijdorp"
 }, {
   "matches" : {
     "wins" : 1,
     "draws" : 0,
-    "losses" : 1
+    "losses" : 2
   },
   "goals" : {
-    "for" : 6,
-    "against" : 6
+    "for" : 7,
+    "against" : 15
   },
   "team" : "Zestienhoven"
 }, {
@@ -88,13 +88,13 @@
   "team" : "Spartaan'20"
 }, {
   "matches" : {
-    "wins" : 2,
+    "wins" : 3,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 10,
-    "against" : 5
+    "for" : 20,
+    "against" : 6
   },
   "team" : "Berkel"
 } ]

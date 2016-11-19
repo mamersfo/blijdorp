@@ -1,5 +1,24 @@
 [
   {
+    "date": "2016-11-19",
+    "league": "1e klasse 06",
+    "teams": ["Excelsior'20", "Blijdorp"],
+    "captain": "Xaver",
+    "result": [1, 1],
+    "goals":{
+      "Vito": 1
+    },
+    "assists": {
+      "Jonas": 1
+    },
+    "absent": {
+      "Dieuwe": 1
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2016-11-12",
     "league": "1e klasse 06",
     "teams": ["De Betrokken Spartaan", "Blijdorp"],

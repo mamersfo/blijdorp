@@ -18,10 +18,10 @@
     "date": "2016-11-19",
     "fixtures": [
       ["JHR", "Nieuwerkerk"],
-      ["Zestienhoven", "Berkel"],
+      ["Zestienhoven", "Berkel", 1, 9],
       ["Spartaan'20", "VOC"],
-      ["Excelsior'20", "Blijdorp"],
-      ["Hillegersberg", "De Betrokken Spartaan"]
+      ["Excelsior'20", "Blijdorp", 1, 1],
+      ["Hillegersberg", "De Betrokken Spartaan", 2 , 7]
     ]
   },
   {
@@ -30,7 +30,7 @@
     "date": "2016-11-12",
     "fixtures": [
       ["Spartaan'20", "JHR", 3, 2],
-      ["Excelsior'20", "Berkel", 0, 4],
+      ["Excelsior'20", "Berkel", 0, 5],
       ["Hillegersberg", "VOC", 5, 5],
       ["De Betrokken Spartaan", "Blijdorp", 6, 2]
     ]
