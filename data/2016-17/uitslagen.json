@@ -17,9 +17,9 @@
     "matchday": 1,
     "date": "2016-11-19",
     "fixtures": [
-      ["JHR", "Nieuwerkerk"],
+      ["JHR", "Nieuwerkerk", 2, 3],
       ["Zestienhoven", "Berkel", 1, 9],
-      ["Spartaan'20", "VOC"],
+      ["Spartaan'20", "VOC", 2, 0],
       ["Excelsior'20", "Blijdorp", 1, 1],
       ["Hillegersberg", "De Betrokken Spartaan", 2 , 7]
     ]

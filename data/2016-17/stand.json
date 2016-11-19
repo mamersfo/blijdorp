@@ -2,11 +2,11 @@
   "matches" : {
     "wins" : 1,
     "draws" : 2,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
     "for" : 12,
-    "against" : 8
+    "against" : 10
   },
   "team" : "VOC"
 }, {
@@ -24,11 +24,11 @@
   "matches" : {
     "wins" : 1,
     "draws" : 0,
-    "losses" : 2
+    "losses" : 3
   },
   "goals" : {
-    "for" : 9,
-    "against" : 11
+    "for" : 11,
+    "against" : 14
   },
   "team" : "JHR"
 }, {
@@ -56,6 +56,17 @@
 }, {
   "matches" : {
     "wins" : 1,
+    "draws" : 0,
+    "losses" : 0
+  },
+  "goals" : {
+    "for" : 3,
+    "against" : 2
+  },
+  "team" : "Nieuwerkerk"
+}, {
+  "matches" : {
+    "wins" : 1,
     "draws" : 2,
     "losses" : 1
   },
@@ -77,12 +88,12 @@
   "team" : "Zestienhoven"
 }, {
   "matches" : {
-    "wins" : 1,
+    "wins" : 2,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 3,
+    "for" : 5,
     "against" : 5
   },
   "team" : "Spartaan'20"
