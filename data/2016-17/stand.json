@@ -13,21 +13,21 @@
   "matches" : {
     "wins" : 0,
     "draws" : 1,
-    "losses" : 3
+    "losses" : 4
   },
   "goals" : {
     "for" : 2,
-    "against" : 13
+    "against" : 15
   },
   "team" : "Excelsior'20"
 }, {
   "matches" : {
-    "wins" : 1,
+    "wins" : 2,
     "draws" : 0,
     "losses" : 3
   },
   "goals" : {
-    "for" : 11,
+    "for" : 13,
     "against" : 14
   },
   "team" : "JHR"
@@ -55,12 +55,12 @@
   "team" : "De Betrokken Spartaan"
 }, {
   "matches" : {
-    "wins" : 1,
+    "wins" : 2,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 3,
+    "for" : 5,
     "against" : 2
   },
   "team" : "Nieuwerkerk"
@@ -68,11 +68,11 @@
   "matches" : {
     "wins" : 1,
     "draws" : 2,
-    "losses" : 1
+    "losses" : 2
   },
   "goals" : {
     "for" : 11,
-    "against" : 12
+    "against" : 14
   },
   "team" : "Blijdorp"
 }, {

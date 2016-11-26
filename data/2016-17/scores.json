@@ -86,5 +86,7 @@
   [ "DBS"          , 50, false, null,     null,     "aanval",    null,        "centrum", "intikker",   0, 0],
   [ "DBS"          , 50, true,  null,     null,     "aanval",    null,        "centrum", "schot",      0, 1],
   [ "Excelsior'20" , 12, false, null,     null,     "aanval",    null,        "links",   "schot",     -4, 1],
-  [ "Excelsior'20" , 25, true,  "Vito",   "Jonas",  "aanval",    null,        "centrum", "shoot-out", -1, 1]  
+  [ "Excelsior'20" , 25, true,  "Vito",   "Jonas",  "aanval",    null,        "centrum", "shoot-out", -1, 1],
+  [ "JHR"          , 16, false, null,     null,     "aanval",    null,        "links",   "schot",     -2, 3],
+  [ "JHR"          , 39, false, null,     null,     "standaard", "hoekschop", "links",   "intikker",   0, 1]
 ]

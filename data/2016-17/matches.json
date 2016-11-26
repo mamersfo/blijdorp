@@ -1,5 +1,23 @@
 [
   {
+    "date": "2016-11-26",
+    "league": "1e klasse 06",
+    "teams": ["Blijdorp", "JHR"],
+    "captain": "Jonas",
+    "result": [0, 2],
+    "goals":{
+    },
+    "assists": {
+    },
+    "absent": {
+      "Dieuwe": 1,
+      "Quincy": 1
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2016-11-19",
     "league": "1e klasse 06",
     "teams": ["Excelsior'20", "Blijdorp"],
