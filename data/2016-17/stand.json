@@ -2,11 +2,11 @@
   "matches" : {
     "wins" : 1,
     "draws" : 2,
-    "losses" : 1
+    "losses" : 2
   },
   "goals" : {
     "for" : 12,
-    "against" : 10
+    "against" : 18
   },
   "team" : "VOC"
 }, {
@@ -35,22 +35,22 @@
   "matches" : {
     "wins" : 1,
     "draws" : 1,
-    "losses" : 2
+    "losses" : 3
   },
   "goals" : {
-    "for" : 14,
-    "against" : 19
+    "for" : 15,
+    "against" : 22
   },
   "team" : "Hillegersberg"
 }, {
   "matches" : {
-    "wins" : 3,
+    "wins" : 4,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 18,
-    "against" : 7
+    "for" : 30,
+    "against" : 8
   },
   "team" : "De Betrokken Spartaan"
 }, {
@@ -79,24 +79,13 @@
   "matches" : {
     "wins" : 1,
     "draws" : 0,
-    "losses" : 2
+    "losses" : 3
   },
   "goals" : {
-    "for" : 7,
-    "against" : 15
+    "for" : 8,
+    "against" : 27
   },
   "team" : "Zestienhoven"
-}, {
-  "matches" : {
-    "wins" : 2,
-    "draws" : 0,
-    "losses" : 1
-  },
-  "goals" : {
-    "for" : 5,
-    "against" : 5
-  },
-  "team" : "Spartaan'20"
 }, {
   "matches" : {
     "wins" : 3,
@@ -104,7 +93,18 @@
     "losses" : 1
   },
   "goals" : {
-    "for" : 20,
+    "for" : 8,
+    "against" : 6
+  },
+  "team" : "Spartaan'20"
+}, {
+  "matches" : {
+    "wins" : 4,
+    "draws" : 0,
+    "losses" : 1
+  },
+  "goals" : {
+    "for" : 28,
     "against" : 6
   },
   "team" : "Berkel"
