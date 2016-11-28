@@ -22,7 +22,7 @@ class Match extends React.Component {
   componentDidMount() {
     let date = this.props.params.date
     if ( date !== 'new' ) {
-      let q = `query { match(date: \"${date}\") { date teams goals { score minute goal }} }`
+      let q = `query { match(date: \"${date}\") { date teams goals { score minute goal assist situation standard origin type}} }`
       query(q).then((json) => {
         this.setState({
           match: json.data.match
@@ -47,10 +47,19 @@ class Match extends React.Component {
 
   save(e) {
     e.preventDefault()
+    let { match } = this.state
+    let q = `mutation { upsertMatch(match: ${stringify(match)}) { date } }`
+    query(q).then((json) => {
+      console.log('json', json)
+    })
   }
 
   handleSaveCell(goal, column, value) {
     console.log('goal', goal, 'column', column, 'value', value)
+  }
+
+  handleInsert(row) {
+    console.log('handleInsertRow', row)
   }
 
   renderTable() {
@@ -64,12 +73,15 @@ class Match extends React.Component {
       mode: 'checkbox',
       clickToSelect: true
     }
+    let options = {
+      afterInsertRow: this.handleInsert.bind(this)
+    }
     return (
       <div>
-        <BootstrapTable data={goals} cellEdit={cellEdit} selectRow={selectRow}
-          insertRow={true} deleteRow={true}>
-        <TableHeaderColumn dataField='score' isKey={true}>Score</TableHeaderColumn>
-        <TableHeaderColumn dataField='minute'>Minute</TableHeaderColumn>
+        <BootstrapTable data={goals} cellEdit={cellEdit} options={options}
+          selectRow={selectRow} insertRow={true} deleteRow={true}>
+        <TableHeaderColumn width={75} dataField='score' isKey={true}>Score</TableHeaderColumn>
+        <TableHeaderColumn width={75} dataField='minute'>Minute</TableHeaderColumn>
         <TableHeaderColumn dataField='goal'>Goal</TableHeaderColumn>
         <TableHeaderColumn dataField='assist'>Assist</TableHeaderColumn>
         <TableHeaderColumn dataField='situation'>Situation</TableHeaderColumn>

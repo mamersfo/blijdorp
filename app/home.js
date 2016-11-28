@@ -3,31 +3,7 @@ import Update from './update'
 import { Link } from 'react-router'
 import MediaQuery from 'react-responsive'
 
-export default class Home extends React.Component {
-
-  renderLinks() {
-    const links = [
-      {
-        id: 1,
-        href: 'http://www.rvv-blijdorp.nl',
-        img: '/blijdorp/images/geography-24.png'
-      },
-      {
-        id: 2,
-        href: 'https://twitter.com/BlijdorpSelec06',
-        img: '/blijdorp/images/twitter-24.png'
-      }
-    ]
-
-    return links.map((link) => {
-      return (
-        <span style={{marginRight: '10px'}} key={link.id}>
-          <a href={link.href} target='_blank'><img src={link.img} /></a>
-        </span>
-      )
-    })
-  }
-  
+export default class Home extends React.Component {  
   render() {
     return (
       <div className='col-xs-12 col-md-12'>
@@ -43,9 +19,8 @@ export default class Home extends React.Component {
             </img>
           </MediaQuery>
           <p>
-          Website gewijd aan het selectieteam voor Blijdorp-spelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in de 1e klasse 06 van het KNVB district West II. Op deze site vind je onder meer <Link to='/blijdorp/verslag'>wedstrijdverslagen</Link>, statistieken en <Link to='/blijdorp/oefeningen'>oefenstof</Link>.
+        Website gewijd aan het selectieteam voor Blijdorp-spelers die zijn geboren in het jaar 2006. Nu als JO11-1 uitkomend in de 1e klasse 06 van het KNVB district West II. Deze site wordt uitgegeven op persoonlijke titel, en vertegenwoordigt op geen enkele wijze de mening van R.V.V. Blijdorp of de betrokken trainers/coaches.
           </p>
-          <div>{ this.renderLinks() }</div>
           <Update />
         </div>
       </div>

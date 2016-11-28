@@ -1,7 +1,7 @@
 import 'fetch'
 
-// const baseUrl = "http://localhost:3000"
-const baseUrl = "https://mamersfo.github.io"
+const baseUrl = "http://localhost:3000"
+// const baseUrl = "https://mamersfo.github.io"
 
 var get = function(which) {
   let url = `${baseUrl}/blijdorp/data/${which}.json`
@@ -10,7 +10,6 @@ var get = function(which) {
 
 var query = function(q) {
   let body = JSON.stringify({query: q})
-  console.log('body', body)
   return fetch('http://localhost:8080/graphql', {
     method: 'POST',
     headers: {

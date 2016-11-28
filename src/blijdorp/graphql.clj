@@ -15,7 +15,7 @@
                                           wrap-json-params)]
             [ring.adapter.jetty :refer (run-jetty)]
             [ring.middleware.cors :refer (wrap-cors)]
-            [cheshire.core :refer (parse-string)])
+            [cheshire.core :refer (parse-string generate-stream)])
   (:import java.util.Date))
 
 (def schema
@@ -57,8 +57,25 @@
     (clojure.string/lower-case
      (clojure.string/replace s #"\s+" "-"))))
 
+(defn save [m file]
+  (with-open [out (clojure.java.io/writer file)]
+    (generate-stream m out {:pretty true})
+    m))
+
+(defn upsert-match
+  [ctx parent args]
+  (let [match (-> (get args "match")
+                  (update-in ["teams"] :values)
+                  (update-in ["goals"] :values))
+        date (get match "date")
+        file (str (System/getProperty "user.dir") "/data/scores/" date ".json")]
+    (println "upsert-match:" match)
+    (save match file)
+    match))
+
 (defn upsert-story
   [ctx parent args]
+  (println "upsert-match - args:" args)
   (let [story (get args "story")]
     (if-let [title (get story "title")]
       (let [id (or (get story "id") (make-id title))
@@ -70,7 +87,6 @@
 
 (defn publish-stories
   [ctx parent args]
-  (println "ctx:" ctx "parent:" parent "args:" args)
   (let [pattern "yyyy-MM-dd'T'HH:mm:ss+01:00"
         format (java.text.SimpleDateFormat. pattern)
         stories (sort
@@ -93,12 +109,12 @@
    ["Query" "match"] get-match
    ["Match" "goals"] get-goals
    ["Mutation" "upsertStory"] upsert-story
+   ["Mutation" "upsertMatch"] upsert-match
    ["Mutation" "publish"] publish-stories
    :else nil))
 
 (defn execute
   [query variables]
-  (println "query:" query)
   (executor/execute context schema resolver query variables))
 
 (defroutes routes

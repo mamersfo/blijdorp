@@ -6,7 +6,6 @@ import Goals from './goals'
 import Assists from './assists'
 import Matches from './matches'
 import ChooseSeason from './choose-season'
-import Exercises from './exercises.js'
 import Schedule from './schedule.js'
 import Table from './table.js'
 import Results from './results.js'
@@ -29,19 +28,6 @@ const store = createStore(reducer)
 const baseUri = '/blijdorp'
 
 const childRoutes = [
-  {
-    id: 0,
-    path: 'nieuws',
-    component: News,
-    skipChildRoutes: true,
-    childRoutes: [
-      {
-        id: 1,
-        path: ':item',
-        component: News
-      }
-    ]
-  },
   {
     id: 2,
     path: 'competitie',
@@ -88,11 +74,6 @@ const childRoutes = [
         component: Analysis
       }
     ]
-  },
-  {
-    id: 11,
-    path: 'oefeningen',
-    component: Exercises
   }
 ]
 

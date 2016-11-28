@@ -41,6 +41,7 @@ type Query {
 
 type Mutation {
   upsertStory(story: Story!): Story
+  upsertMatch(match: Match!): Match
   publish: [Story]
 }
 
