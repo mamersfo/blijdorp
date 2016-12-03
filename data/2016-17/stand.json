@@ -46,11 +46,11 @@
   "matches" : {
     "wins" : 4,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
-    "for" : 30,
-    "against" : 8
+    "for" : 32,
+    "against" : 14
   },
   "team" : "De Betrokken Spartaan"
 }, {
@@ -88,13 +88,13 @@
   "team" : "Zestienhoven"
 }, {
   "matches" : {
-    "wins" : 3,
+    "wins" : 4,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 8,
-    "against" : 6
+    "for" : 14,
+    "against" : 8
   },
   "team" : "Spartaan'20"
 }, {
