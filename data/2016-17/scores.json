@@ -88,5 +88,11 @@
   [ "Excelsior'20" , 12, false, null,     null,     "aanval",    null,        "links",   "schot",     -4, 1],
   [ "Excelsior'20" , 25, true,  "Vito",   "Jonas",  "aanval",    null,        "centrum", "shoot-out", -1, 1],
   [ "JHR"          , 16, false, null,     null,     "aanval",    null,        "links",   "schot",     -2, 3],
-  [ "JHR"          , 39, false, null,     null,     "standaard", "hoekschop", "links",   "intikker",   0, 1]
+  [ "JHR"          , 39, false, null,     null,     "standaard", "hoekschop", "links",   "intikker",   0, 1],
+  [ "Zestienhoven" ,  9, false, null,     null,     "aanval",    null,        "rechts",  "shoot-out",  3, 1],
+  [ "Zestienhoven" , 16, false, null,     null,     "counter",   null,        "links",   "intikker",   0, 0],
+  [ "Zestienhoven" , 34, true,  "Jonas",  null,     "aanval",    null,        "centrum", "schot",      0, 2],
+  [ "Zestienhoven" , 38, true,  "Quincy", "Jonas",  "aanval",    null,        "centrum", "shoot-out",  1, 1],
+  [ "Zestienhoven",  43, true,  "Vito",   "Jonas",  "aanval",    null,        "rechts",  "schot",     -1, 2],
+  [ "Zestienhoven",  46, true,  "Stijn",  "Xaver",  "counter",   null,        "centrum", "shoot-out",  0, 2]
 ]

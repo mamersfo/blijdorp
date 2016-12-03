@@ -1,5 +1,27 @@
 [
   {
+    "date": "2016-12-03",
+    "league": "1e klasse 06",
+    "teams": ["Zestienhoven", "Blijdorp"],
+    "captain": "Stijn",
+    "result": [2, 4],
+    "goals":{
+      "Jonas": 1,
+      "Quincy": 1,
+      "Vito": 1,
+      "Stijn": 1
+    },
+    "assists": {
+      "Jonas": 2,
+      "Xaver": 1
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2016-11-26",
     "league": "1e klasse 06",
     "teams": ["Blijdorp", "JHR"],
