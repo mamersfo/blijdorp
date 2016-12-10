@@ -1,18 +1,18 @@
 [
   {
+    "latest": true,
     "competition": "1e klasse 06",
     "matchday": 2,
     "date": "2016-12-10",
     "fixtures": [
-      ["Blijdorp", "Spartaan'20"],
+      ["Blijdorp", "Spartaan'20", 3, 5],
       ["VOC", "Zestienhoven"],
       ["Berkel", "JHR"],
       ["Nieuwerkerk", "Hillegersberg"],
-      ["De Betrokken Spartaan", "Excelsior'20"]
+      ["De Betrokken Spartaan", "Excelsior'20", 8, 5]
     ]
   },
   {
-    "latest": true,
     "competition": "1e klasse 06",
     "matchday": 3,
     "date": "2016-12-03",

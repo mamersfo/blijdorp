@@ -1,5 +1,25 @@
 [
   {
+    "date": "2016-12-10",
+    "league": "1e klasse 06",
+    "teams": ["Blijdorp", "Spartaan'20"],
+    "captain": "Dieuwe",
+    "result": [3, 5],
+    "goals":{
+      "Fadi": 3
+    },
+    "assists": {
+      "Luc": 1,
+      "Quincy": 1,
+      "Xaver": 1
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2016-12-03",
     "league": "1e klasse 06",
     "teams": ["Zestienhoven", "Blijdorp"],

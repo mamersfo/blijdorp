@@ -94,5 +94,13 @@
   [ "Zestienhoven" , 34, true,  "Jonas",  null,     "aanval",    null,        "centrum", "schot",      0, 2],
   [ "Zestienhoven" , 38, true,  "Quincy", "Jonas",  "aanval",    null,        "centrum", "shoot-out",  1, 1],
   [ "Zestienhoven",  43, true,  "Vito",   "Jonas",  "aanval",    null,        "rechts",  "schot",     -1, 2],
-  [ "Zestienhoven",  46, true,  "Stijn",  "Xaver",  "counter",   null,        "centrum", "shoot-out",  0, 2]
+  [ "Zestienhoven",  46, true,  "Stijn",  "Xaver",  "counter",   null,        "centrum", "shoot-out",  0, 2],
+  [ "Spartaan'20",    9, false, null,     null,     "aanval",    null,        "rechts",  "schot",      2, 3],
+  [ "Spartaan'20",   15, false, null,     null,     "pressing",  null,        "links",   "intikker",   0, 0],
+  [ "Spartaan'20",   25, false, null,     null,     "standaard", "hoekschop", "links",   "intikker",  -1, 0],
+  [ "Spartaan'20",   32, false, null,     null,     "aanval",    null,        "centrum", "schot",     -1, 2],
+  [ "Spartaan'20",   34, true,  "Fadi",   "Xaver",  "counter",   null,        "centrum", "shoot-out", -1, 1],
+  [ "Spartaan'20",   42, true,  "Fadi",   "Quincy", "counter",   null,        "links",   "intikker",  -1, 0],
+  [ "Spartaan'20",   46, true,  "Fadi",   "Luc",    "standaard", "hoekschop", "links",   "kopbal",     0, 0],
+  [ "Spartaan'20",   50, false, null,     null,     "aanval",    null,        "centrum", "intikker",   1, 0]
 ]
