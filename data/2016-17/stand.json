@@ -24,22 +24,22 @@
   "matches" : {
     "wins" : 3,
     "draws" : 0,
-    "losses" : 3
+    "losses" : 4
   },
   "goals" : {
-    "for" : 16,
-    "against" : 16
+    "for" : 18,
+    "against" : 21
   },
   "team" : "JHR"
 }, {
   "matches" : {
     "wins" : 2,
     "draws" : 1,
-    "losses" : 3
+    "losses" : 4
   },
   "goals" : {
-    "for" : 19,
-    "against" : 23
+    "for" : 20,
+    "against" : 27
   },
   "team" : "Hillegersberg"
 }, {
@@ -55,13 +55,13 @@
   "team" : "De Betrokken Spartaan"
 }, {
   "matches" : {
-    "wins" : 2,
+    "wins" : 3,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 7,
-    "against" : 12
+    "for" : 11,
+    "against" : 13
   },
   "team" : "Nieuwerkerk"
 }, {
@@ -99,13 +99,13 @@
   "team" : "Spartaan'20"
 }, {
   "matches" : {
-    "wins" : 5,
+    "wins" : 6,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 38,
-    "against" : 8
+    "for" : 43,
+    "against" : 10
   },
   "team" : "Berkel"
 } ]
