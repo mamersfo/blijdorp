@@ -9,7 +9,6 @@ import ChooseSeason from './choose-season'
 import Schedule from './schedule.js'
 import Table from './table.js'
 import Results from './results.js'
-import Analysis from './analysis'
 import News from './news'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
@@ -67,11 +66,6 @@ const childRoutes = [
         id: 9,
         path: 'assists',
         component: Assists
-      },
-      {
-        id: 10,
-        path: 'analyse',
-        component: Analysis
       }
     ]
   }

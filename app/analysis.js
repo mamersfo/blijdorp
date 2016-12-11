@@ -1,12 +1,10 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import { get } from './api'
-import { connect } from 'react-redux'
-import Carousel from 'nuka-carousel'
-import MediaQuery from 'react-responsive'
 import { frequencies, range, series } from './util'
 import { Barchart, Heatmap } from './charts'
 
-export class Analysis extends React.Component {
+class Analysis extends React.Component {
 
   constructor(props) {
     super(props)
@@ -15,42 +13,41 @@ export class Analysis extends React.Component {
       charts: [
         {
           idx: 0,
-          title: 'Tactische situatie',
-          options: ['aanval', 'counter', 'standaard'],
-          column: 5,
+          title: 'Goals by tactical situation',
+          options: ['attack', 'counter', 'pressing', 'set-piece'],
+          key: 'situation',
           xType: 'ordinal'
         },
         {
           idx: 1,
-          title: 'Standaardsituatie',
-          options: ['hoekschop', 'vrije trap'],
-          column: 6,
+          title: 'Goals by set piece type',
+          options: ['corner', 'free kick'],
+          key: 'set-piece',
           xType: 'ordinal'
         },
         {
           idx: 2,
-          title: 'Aanval ingezet',
-          options: ['links', 'centrum', 'rechts'],
-          column: 7,
+          title: 'Goals by origin of attack',
+          options: ['left', 'center', 'right'],
+          key: 'origin',
           xType: 'ordinal'
         },
         {
           idx: 3,
-          title: 'Wijze van scoren',
-          options: ['schot', 'shoot-out', 'intikker', 'kopbal', 'eigen doelpunt'],
-          column: 8,
+          title: 'Goals by method of scoring',
+          options: ['shot', 'shoot-out', 'tap-in', 'header', 'own goal'],
+          key: 'method',
           xType: 'ordinal'
         },
         {
           idx: 4,
-          title: 'Wedstrijdverloop',
-          column: 2,
+          title: 'Goals by 5-minute interval',
           stackBy: 'y',
           type: 'minute'
         },
         {
           idx: 5,
-          title: 'Scoringspositie',
+          title: 'Goals by scoring position',
           type: 'heatmap'
         }
       ],
@@ -64,7 +61,7 @@ export class Analysis extends React.Component {
         },
         {
           key: 'opponent',
-          title: 'Tegenstander',
+          title: 'Opponent',
           color: '#99ccff'
         }
       ],
@@ -82,11 +79,11 @@ export class Analysis extends React.Component {
       })
     })
 
-    let filtered = data.filter((d) => d[2] === flag)
+    let filtered = data.filter((d) => ( d.team === 'Blijdorp' ) === flag)
 
     series = filtered.reduce((m, n) => {
-      let xIdx = n[9] + 6
-      let yIdx = n[10]
+      let xIdx = n.position.x + 6
+      let yIdx = n.position.y
       let x = m[xIdx]
       let y = x[yIdx]
       y.color++
@@ -98,9 +95,9 @@ export class Analysis extends React.Component {
 
   minuteSeries(data, flag) {
     let series = range(5, 50, 5).map((n) => { return {x: n, y: 0} })
-    let filtered = data.filter((d) => d[2] === flag)
+    let filtered = data.filter((d) => ( d.team === 'Blijdorp' ) === flag)
     return filtered.reduce((m, n) => {
-      let minute = n[1]
+      let minute = n.minute
       let idx = Math.min( Math.floor( (minute+1) / 5 ), 9 )
       let entry = m[idx]
       m[idx] = Object.assign( m[idx], {y: entry.y + 1} )
@@ -108,11 +105,15 @@ export class Analysis extends React.Component {
     }, series )
   }
 
+  transform(data) {
+    let arrays = data.map(d => d.goals)
+    return Array.prototype.concat.apply([], arrays)
+  }
+
   componentDidMount() {
-    let uri = this.props.season + '/scores'
-    get(uri).then((data) => {
+    get('/2016-17/scores').then((data) => {
       this.setState({
-        data: data
+        data: this.transform(data)
       })
     })
   }
@@ -124,7 +125,7 @@ export class Analysis extends React.Component {
   renderChartSelect() {
     return (
       <div className='form-group'>
-        <label for='chartSelect'>Grafiek</label>
+        <label for='chartSelect'>Graph</label>
         <select id='chartSelect'
           className='form-control'
           defaultValue={this.state.selectedChart}
@@ -177,12 +178,12 @@ export class Analysis extends React.Component {
 
   renderPlayerSelect() {
     let players = new Set()
-    this.state.data.map((d) => { if (d[3]) players.add(d[3]) })
+    this.state.data.map((d) => { if (d.goal) players.add(d.goal) })
     players = Array.from(players).sort()
     
     return (
       <div className='form-group'>
-        <label for='playerSelect'>Speler</label>
+        <label for='playerSelect'>Player</label>
         {
           players.map((p) => {
             return (
@@ -215,8 +216,8 @@ export class Analysis extends React.Component {
     case 'heatmap':
       return this.heatmapSeries(data, flag)
     default:
-      let filtered = data.filter((d) => d[2] === flag)
-      let values = filtered.map((d) => d[m.column])
+      let filtered = data.filter((d) => ( d.team === 'Blijdorp' ) === flag)
+      let values = filtered.map((d) => d[m.key])
       let freqs = frequencies(values)
       return series(freqs, m.options)
     }
@@ -228,7 +229,7 @@ export class Analysis extends React.Component {
     let series = []
     let idx = 0
 
-    let data = this.state.data.filter((d) => !d[2] || this.state.players.has(d[3]))
+    let data = this.state.data.filter((d) => d.team !== 'Blijdorp' || this.state.players.has(d.goal))
 
     if ( this.state.selectedTeams.has('blijdorp') ) {
       series[idx] = this.makeSeries(data, true, chart)
@@ -251,32 +252,19 @@ export class Analysis extends React.Component {
 
   render() {    
     return (
-      <div className='row-fluid'>
-
-        <MediaQuery query='(min-device-width: 768px)'>
+      <div className='container-fluid'>
+        <div className='row-fluid'>
           <div className='col-xs-3 col-md-3'>
+            <h1>Analysis</h1>
             { this.renderForm() }
           </div>
           <div className='col-xs-9 col-md-9'>
             { this.renderChart(400) }
           </div>
-        </MediaQuery>
-        <MediaQuery query='(max-device-width: 667px)'>
-          <div className='col-xs-12 col-md-12'>
-            { this.renderForm() }
-          </div>
-          <div className='col-xs-12 col-md-12'>
-            { this.renderChart(300) }
-          </div>
-        </MediaQuery>
-
+        </div>
       </div>
     )
   }
 }
 
-export default connect(state => {
-  return {
-    season: state.season
-  }
-})(Analysis)
+ReactDOM.render( <Analysis />, document.getElementById('app'))

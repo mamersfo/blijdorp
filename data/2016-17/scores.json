@@ -1,106 +1,1276 @@
 [
-  [ "VOC"          ,  2, true,  "Luc",    "Stijn",  "aanval",    null,        "rechts",  "schot",      0, 2],
-  [ "VOC"          ,  5, true,  "Stijn",  null,     "counter",   null,        "centrum", "shoot-out", -1, 2],
-  [ "VOC"          ,  8, true,  "Fadi",   "Stijn",  "counter",   null,        "centrum", "shoot-out", -1, 3],
-  [ "VOC"          , 22, true,  "Quincy", "Jonas",  "aanval",    null,        "rechts",  "shoot-out", -2, 2],
-  [ "VOC"          , 25, true,  "Luc",    "Jonas",  "aanval",    null,        "links",   "schot",      1, 2],
-  [ "VOC"          , 32, true,  "Fadi",   "Stijn",  "aanval",    null,        "rechts",  "intikker",   0, 0],
-  [ "VOC"          , 33, true,  "Luc",    "Fadi",   "aanval",    null,        "centrum", "schot",      2, 1],
-  [ "VOC"          , 45, false, null,     null,     "standaard", "hoekschop", "links",   "intikker",   0, 0],
-  [ "BVCB"         ,  4, false, null,     null,     "aanval",    null,        "rechts",  "schot",      1, 0],
-  [ "BVCB"         , 13, true,  "Jonas",  "Stijn",  "aanval",    null,        "centrum", "schot",      3, 3],
-  [ "BVCB"         , 14, false, null,     null,     "standaard", "hoekschop", "links",   "intikker",   1, 0],
-  [ "BVCB"         , 20, false,  null,    null,     "aanval",    null,        "rechts",  "schot",      0, 3],
-  [ "BVCB"         , 22, true,  "Fadi",   null,     "aanval",    null,        "links",   "schot",      4, 1],
-  [ "BVCB"         , 45, false, null,     null,     "aanval",    null,        "rechts",  "schot",      0, 3],
-  [ "XerxesDZB"    ,  8, true,  "Jonas",  null    , "aanval",    null,        "centrum", "shoot-out",  1, 1],
-  [ "XerxesDZB"    , 21, true,  "Luc",    "Quincy", "standaard", "vrije trap","centrum", "schot",     -4, 5],
-  [ "XerxesDZB"    , 25, true,  "Fadi",   "Stijn",  "counter",   null,        "links",   "schot",      0, 3],
-  [ "XerxesDZB"    , 28, true,  "Luc",    null,     "aanval",    null,        "rechts",  "intikker",   0, 0],
-  [ "XerxesDZB"    , 46, true,  "Fadi",   "Stijn",  "counter",   null,        "centrum", "shoot-out", -1, 1],
-  [ "VVOR"         ,  2, true,  "Quincy", "Fadi",   "aanval",    null,        "rechts",  "schot",      0, 2],
-  [ "VVOR"         , 10, false, null,     null,     "counter",   null,        "rechts",  "schot",      1, 2],
-  [ "VVOR"         , 17, true,  "Stijn",  "Jonas",  "standaard", "hoekschop", "rechts",  "kopbal",     0, 0],
-  [ "VVOR"         , 33, true,  "Luc",    "Stijn",  "aanval",    null,        "links",   "intikker",   0, 0],
-  [ "VVOR"         , 34, true,  "Stijn",  "Quincy", "aanval",    null,        "centrum", "intikker",   0, 0],
-  [ "VVOR"         , 41, true,  "Jonas",  "Quincy", "standaard", "vrije trap","rechts",  "schot",     -2, 6],
-  [ "VVOR"         , 42, false, null,     null ,    "counter",   null,        "links",   "schot",      0, 3],
-  [ "VVOR"         , 47, true,  "Jonas",  "Fadi",   "counter",   null,        "centrum", "intikker",   0, 2],
-  [ "VVOR"         , 48, true,  "Fadi",   "Jonas",  "aanval",    null,        "rechts",  "schot",     -2, 2],
-  [ "Hillegersberg", 38, true,  "Fadi",   "Jonas",  "standaard", "hoekschop", "rechts",  "kopbal",     0, 0],
-  [ "Hillegersberg", 49, false, null,     null,     "aanval",    null,        "centrum", "shoot-out", -1, 1],
-  [ "Zestienhoven" ,  3, true,  "Stijn",  "Vito",   "aanval",    null,        "rechts",  "shoot-out", -1, 0],
-  [ "Zestienhoven" ,  9, true,  "Quincy", null,     "aanval",    null,        "centrum", "schot",      0, 5],
-  [ "Zestienhoven" , 13, true,  "Stijn",  null,     "aanval",    null,        "links",   "schot",      0, 3],
-  [ "Zestienhoven" , 14, true,  "Vito",   null,     "counter",   null,        "rechts",  "shoot-out", -1, 1],
-  [ "Zestienhoven" , 16, true,  "Fadi",   "Vito",   "aanval",    null,        "rechts",  "intikker",   0, 0],
-  [ "Zestienhoven" , 21, true,  "Jonas",  "Fadi",   "aanval",    null,        "links",   "intikker",   0, 0],
-  [ "Zestienhoven" , 24, true,  "Luc",    "Quincy", "aanval",    null,        "rechts",  "intikker",   0, 0],
-  [ "Zestienhoven" , 28, true,  "Vito",   "Luc",    "aanval",    null,        "rechts",  "intikker",   0, 1],
-  [ "Zestienhoven" , 32, true,  "Vito",   "Stijn",  "aanval",    null,        "links",   "intikker",   0, 2],
-  [ "Zestienhoven" , 36, true,  "Vito",   "Stijn",  "aanval",    null,        "rechts",  "intikker",   0, 1],
-  [ "Zestienhoven" , 37, true,  "Stijn",  "Vito",   "aanval",    null,        "rechts",  "schot",     -1, 2],
-  [ "Zestienhoven" , 38, true,  "Vito",   "Quincy", "aanval",    null,        "rechts",  "intikker",  -1, 0],
-  [ "Zestienhoven" , 39, true,  "Vito",   "Fadi",   "aanval",    null,        "centrum", "intikker",   0, 1],
-  [ "Zestienhoven" , 40, true,  "Fadi",   "Stijn",  "aanval",    null,        "centrum", "intikker",   0, 0],
-  [ "Zestienhoven" , 42, true,  "Vito",   "Fadi",   "aanval",    null,        "links",   "schot",      0, 1],
-  [ "TOGB"         ,  1, true,  "Vito",   "Quincy", "aanval",    null,        "links",   "kopbal",     0, 1],
-  [ "TOGB"         ,  6, true,  "Vito",   "Stijn",  "aanval",    null,        "centrum", "schot",      0, 2],
-  [ "TOGB"         , 16, true,  "Fadi",   "Jonas",  "standaard", "hoekschop", "rechts",  "intikker",   0, 0],
-  [ "TOGB"         , 23, true,  "Vito",   null,     "counter",   null,        "centrum", "shoot-out",  1, 1],
-  [ "TOGB"         , 25, true,  "Luc",    "Fadi",   "counter",   null,        "centrum", "shoot-out", -1, 2],
-  [ "TOGB"         , 28, true,  "Stijn",  "Jonas",  "aanval",    null,        "links",   "schot",      0, 3],
-  [ "TOGB"         , 32, true,  "Stijn",  "Vito",   "aanval",    null,        "rechts",  "schot",      1, 2],
-  [ "TOGB"         , 33, true,  "Jonas",  null,     "counter",   null,        "centrum", "shoot-out",  0, 3],
-  [ "TOGB"         , 37, true,  "Quincy", "Jonas",  "aanval",    null,        "links",   "intikker",   0, 1],
-  [ "TOGB"         , 43, true,  "Fadi",   "Quincy", "aanval",    null,        "links",   "schot",     -1, 1],
-  [ "TOGB"         , 46, true,  "Fadi",   "Stijn",  "counter",   null,        "links",   "intikker",   0, 0],
-  [ "TOGB"         , 47, true,  "Vito",   "Stijn",  "aanval",    null,        "links",   "intikker",   1, 1],
-  [ "TOGB"         , 48, true,  "Fadi",   "Vito",   "counter",   null,        "centrum", "intikker",  -2, 2],
-  [ "Hillegersberg",  7, true,  "E.D.",   null,     "standaard", "hoekschop", "rechts",  "eigen doelpunt", 0, 0],
-  [ "Hillegersberg", 20, true,  "Jonas",  "Stijn",  "aanval",    null,        "rechts",  "schot",      1, 1],
-  [ "Hillegersberg", 22, true,  "Stijn",  "Jonas",  "aanval",    null,        "links",   "schot",      0, 2],
-  [ "Hillegersberg", 25, true,  "Quincy", null,     "standaard", "vrije trap","centrum", "schot",      0, 7],
-  [ "Hillegersberg", 40, false, null,     null,     "counter",   null,        "links",   "shoot-out", -1, 2],
-  [ "Hillegersberg", 50, true,  "Stijn",  null,     "counter",   null,        "rechts",  "schot",      0, 2],
-  [ "Hillegersberg", 50, false, null,     null,     "counter",   null,        "centrum", "shoot-out",  1, 2],
-  [ "VOC"          ,  7, false, null,     null,     "aanval",    null,        "links",   "intikker",  -1, 1],
-  [ "VOC"          , 12, false, null,     null,     "aanval",    null,        "links",   "intikker",   0, 1],
-  [ "VOC"          , 20, true,  "Fadi",   "Jonas",  "counter",   null,        "centrum", "shoot-out",  0, 4],
-  [ "VOC"          , 21, true,  "Fadi",   "Jonas",  "standaard", "hoekschop", "rechts",  "intikker",   0, 0],
-  [ "VOC"          ,  5, false, null,     null,     "aanval",    null,        "rechts",  "schot",      2, 1],
-  [ "VOC"          , 25, true,  "Fadi",   "Jonas",  "aanval",    null,        "links",   "shoot-out", -1, 2],
-  [ "ASW"          ,  2, true,  "Jonas",  "Fadi",   "aanval",    null,        "links",   "schot",      0, 1],
-  [ "ASW"          , 19, true,  "Luc",    "Stijn",  "aanval",    null,        "centrum", "schot",      0, 6],
-  [ "ASW"          , 25, true,  "Vito",   "Jonas",  "aanval",    null,        "links",   "intikker",   1, 2],
-  [ "ASW"          , 37, false, null,     null,     "counter",   null,        "links",   "shoot-out", -1, 1],
-  [ "ASW"          , 41, false, null,     null,     "counter",   null,        "rechts",  "shoot-out",  1, 0],
-  [ "ASW"          , 42, true,  "Jonas",  "Luc",    "aanval",    null,        "centrum", "shoot-out", -1, 2],
-  [ "ASW"          , 50, true,  "Vito",   "Jonas",  "aanval",    null,        "centrum", "intikker",   0, 0],
-  [ "DBS"          ,  5, false, null,     null,     "aanval",    null,        "links",   "shoot-out", -1, 1],
-  [ "DBS"          , 26, false, null,     null,     "aanval",    null,        "centrum", "intikker",   0, 1],
-  [ "DBS"          , 29, false, null,     null,     "aanval",    null,        "links",   "shout-out", -2, 1],
-  [ "DBS"          , 42, false, null,     null,     "aanval",    null,        "centrum", "intikker",   0, 0],
-  [ "DBS"          , 45, true,  "Quincy", "Jonas",  "counter",   null,        "centrum", "shoot-out",  0, 1],
-  [ "DBS"          , 49, false, null,     null,     "aanval",    null,        "rechts",  "intikker",   0, 0],
-  [ "DBS"          , 50, false, null,     null,     "aanval",    null,        "centrum", "intikker",   0, 0],
-  [ "DBS"          , 50, true,  null,     null,     "aanval",    null,        "centrum", "schot",      0, 1],
-  [ "Excelsior'20" , 12, false, null,     null,     "aanval",    null,        "links",   "schot",     -4, 1],
-  [ "Excelsior'20" , 25, true,  "Vito",   "Jonas",  "aanval",    null,        "centrum", "shoot-out", -1, 1],
-  [ "JHR"          , 16, false, null,     null,     "aanval",    null,        "links",   "schot",     -2, 3],
-  [ "JHR"          , 39, false, null,     null,     "standaard", "hoekschop", "links",   "intikker",   0, 1],
-  [ "Zestienhoven" ,  9, false, null,     null,     "aanval",    null,        "rechts",  "shoot-out",  3, 1],
-  [ "Zestienhoven" , 16, false, null,     null,     "counter",   null,        "links",   "intikker",   0, 0],
-  [ "Zestienhoven" , 34, true,  "Jonas",  null,     "aanval",    null,        "centrum", "schot",      0, 2],
-  [ "Zestienhoven" , 38, true,  "Quincy", "Jonas",  "aanval",    null,        "centrum", "shoot-out",  1, 1],
-  [ "Zestienhoven",  43, true,  "Vito",   "Jonas",  "aanval",    null,        "rechts",  "schot",     -1, 2],
-  [ "Zestienhoven",  46, true,  "Stijn",  "Xaver",  "counter",   null,        "centrum", "shoot-out",  0, 2],
-  [ "Spartaan'20",    9, false, null,     null,     "aanval",    null,        "rechts",  "schot",      2, 3],
-  [ "Spartaan'20",   15, false, null,     null,     "pressing",  null,        "links",   "intikker",   0, 0],
-  [ "Spartaan'20",   25, false, null,     null,     "standaard", "hoekschop", "links",   "intikker",  -1, 0],
-  [ "Spartaan'20",   32, false, null,     null,     "aanval",    null,        "centrum", "schot",     -1, 2],
-  [ "Spartaan'20",   34, true,  "Fadi",   "Xaver",  "counter",   null,        "centrum", "shoot-out", -1, 1],
-  [ "Spartaan'20",   42, true,  "Fadi",   "Quincy", "counter",   null,        "links",   "intikker",  -1, 0],
-  [ "Spartaan'20",   46, true,  "Fadi",   "Luc",    "standaard", "hoekschop", "links",   "kopbal",     0, 0],
-  [ "Spartaan'20",   50, false, null,     null,     "aanval",    null,        "centrum", "intikker",   1, 0]
+  {
+    "opponent" : "VOC",
+    "date" : "2016-08-27",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Luc",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 0,
+          "y" : 2
+        },
+        "origin" : "right",
+        "minute" : 2
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "goal" : "Stijn",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : -1,
+          "y" : 2
+        },
+        "origin" : "center",
+        "minute" : 5
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : -1,
+          "y" : 3
+        },
+        "origin" : "center",
+        "minute" : 8
+      }, {
+        "situation" : "attack",
+        "method" : "shoot-out",
+        "goal" : "Quincy",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : -2,
+          "y" : 2
+        },
+        "origin" : "right",
+        "minute" : 22
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Luc",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 1,
+          "y" : 2
+        },
+        "origin" : "left",
+        "minute" : 25
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "right",
+        "minute" : 32
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Luc",
+        "team" : "Blijdorp",
+        "assist" : "Fadi",
+        "position" : {
+          "x" : 2,
+          "y" : 1
+        },
+        "origin" : "center",
+        "minute" : 33
+      }, {
+        "situation" : "set-piece",
+        "method" : "tap-in",
+        "set-piece" : "corner",
+        "team" : "VOC",
+        "origin" : "left",
+        "minute" : 45,
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        }
+      } ]
+  },
+  {
+    "opponent" : "BVCB",
+    "date" : "2016-09-03",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "BVCB",
+        "origin" : "right",
+        "minute" : 4,
+        "position" : {
+          "x" : 1,
+          "y" : 0
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Jonas",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 3,
+          "y" : 3
+        },
+        "origin" : "center",
+        "minute" : 13
+      }, {
+        "situation" : "set-piece",
+        "method" : "tap-in",
+        "set-piece" : "corner",
+        "team" : "BVCB",
+        "origin" : "left",
+        "minute" : 14,
+        "position" : {
+          "x" : 1,
+          "y" : 0
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "BVCB",
+        "origin" : "right",
+        "minute" : 20,
+        "position" : {
+          "x" : 0,
+          "y" : 3
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : 4,
+          "y" : 1
+        },
+        "origin" : "left",
+        "minute" : 22
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "BVCB",
+        "origin" : "right",
+        "minute" : 45,
+        "position" : {
+          "x" : 0,
+          "y" : 3
+        }
+      } ]
+  },
+  {
+    "opponent" : "XerxesDZB",
+    "date" : "2016-09-10",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "shoot-out",
+        "goal" : "Jonas",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : 1,
+          "y" : 1
+        },
+        "origin" : "center",
+        "minute" : 8
+      }, {
+        "situation" : "set-piece",
+        "method" : "shot",
+        "set-piece" : "free kick",
+        "goal" : "Luc",
+        "team" : "Blijdorp",
+        "assist" : "Quincy",
+        "position" : {
+          "x" : -4,
+          "y" : 5
+        },
+        "origin" : "center",
+        "minute" : 21
+      }, {
+        "situation" : "counter",
+        "method" : "shot",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 0,
+          "y" : 3
+        },
+        "origin" : "left",
+        "minute" : 25
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Luc",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "right",
+        "minute" : 28
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : -1,
+          "y" : 1
+        },
+        "origin" : "center",
+        "minute" : 46
+      } ]
+  },
+  {
+    "opponent" : "VVOR",
+    "date" : "2016-09-17",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Quincy",
+        "team" : "Blijdorp",
+        "assist" : "Fadi",
+        "position" : {
+          "x" : 0,
+          "y" : 2
+        },
+        "origin" : "right",
+        "minute" : 2
+      }, {
+        "situation" : "counter",
+        "method" : "shot",
+        "team" : "VVOR",
+        "origin" : "right",
+        "minute" : 10,
+        "position" : {
+          "x" : 1,
+          "y" : 2
+        }
+      }, {
+        "situation" : "set-piece",
+        "method" : "header",
+        "set-piece" : "corner",
+        "goal" : "Stijn",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "right",
+        "minute" : 17
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Luc",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "left",
+        "minute" : 33
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Stijn",
+        "team" : "Blijdorp",
+        "assist" : "Quincy",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "center",
+        "minute" : 34
+      }, {
+        "situation" : "set-piece",
+        "method" : "shot",
+        "set-piece" : "free kick",
+        "goal" : "Jonas",
+        "team" : "Blijdorp",
+        "assist" : "Quincy",
+        "position" : {
+          "x" : -2,
+          "y" : 6
+        },
+        "origin" : "right",
+        "minute" : 41
+      }, {
+        "situation" : "counter",
+        "method" : "shot",
+        "team" : "VVOR",
+        "origin" : "left",
+        "minute" : 42,
+        "position" : {
+          "x" : 0,
+          "y" : 3
+        }
+      }, {
+        "situation" : "counter",
+        "method" : "tap-in",
+        "goal" : "Jonas",
+        "team" : "Blijdorp",
+        "assist" : "Fadi",
+        "position" : {
+          "x" : 0,
+          "y" : 2
+        },
+        "origin" : "center",
+        "minute" : 47
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : -2,
+          "y" : 2
+        },
+        "origin" : "right",
+        "minute" : 48
+      } ]
+  },
+  {
+    "opponent" : "Hillegersberg",
+    "date" : "2016-09-24",
+    "goals" : [
+      {
+        "situation" : "set-piece",
+        "method" : "header",
+        "set-piece" : "corner",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "right",
+        "minute" : 38
+      }, {
+        "situation" : "attack",
+        "method" : "shoot-out",
+        "team" : "Hillegersberg",
+        "origin" : "center",
+        "minute" : 49,
+        "position" : {
+          "x" : -1,
+          "y" : 1
+        }
+      } ]
+  },
+  {
+    "opponent" : "Zestienhoven",
+    "date" : "2016-10-01",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "shoot-out",
+        "goal" : "Stijn",
+        "team" : "Blijdorp",
+        "assist" : "Vito",
+        "position" : {
+          "x" : -1,
+          "y" : 0
+        },
+        "origin" : "right",
+        "minute" : 3
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Quincy",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : 0,
+          "y" : 5
+        },
+        "origin" : "center",
+        "minute" : 9
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Stijn",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : 0,
+          "y" : 3
+        },
+        "origin" : "left",
+        "minute" : 13
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : -1,
+          "y" : 1
+        },
+        "origin" : "right",
+        "minute" : 14
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Vito",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "right",
+        "minute" : 16
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Jonas",
+        "team" : "Blijdorp",
+        "assist" : "Fadi",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "left",
+        "minute" : 21
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Luc",
+        "team" : "Blijdorp",
+        "assist" : "Quincy",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "right",
+        "minute" : 24
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Luc",
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        },
+        "origin" : "right",
+        "minute" : 28
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 0,
+          "y" : 2
+        },
+        "origin" : "left",
+        "minute" : 32
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        },
+        "origin" : "right",
+        "minute" : 36
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Stijn",
+        "team" : "Blijdorp",
+        "assist" : "Vito",
+        "position" : {
+          "x" : -1,
+          "y" : 2
+        },
+        "origin" : "right",
+        "minute" : 37
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Quincy",
+        "position" : {
+          "x" : -1,
+          "y" : 0
+        },
+        "origin" : "right",
+        "minute" : 38
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Fadi",
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        },
+        "origin" : "center",
+        "minute" : 39
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "center",
+        "minute" : 40
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Fadi",
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        },
+        "origin" : "left",
+        "minute" : 42
+      } ]
+  },
+  {
+    "opponent" : "TOGB",
+    "date" : "2016-10-08",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "header",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Quincy",
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        },
+        "origin" : "left",
+        "minute" : 1
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 0,
+          "y" : 2
+        },
+        "origin" : "center",
+        "minute" : 6
+      }, {
+        "situation" : "set-piece",
+        "method" : "tap-in",
+        "set-piece" : "corner",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "right",
+        "minute" : 16
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : 1,
+          "y" : 1
+        },
+        "origin" : "center",
+        "minute" : 23
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "goal" : "Luc",
+        "team" : "Blijdorp",
+        "assist" : "Fadi",
+        "position" : {
+          "x" : -1,
+          "y" : 2
+        },
+        "origin" : "center",
+        "minute" : 25
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Stijn",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 0,
+          "y" : 3
+        },
+        "origin" : "left",
+        "minute" : 28
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Stijn",
+        "team" : "Blijdorp",
+        "assist" : "Vito",
+        "position" : {
+          "x" : 1,
+          "y" : 2
+        },
+        "origin" : "right",
+        "minute" : 32
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "goal" : "Jonas",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : 0,
+          "y" : 3
+        },
+        "origin" : "center",
+        "minute" : 33
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Quincy",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        },
+        "origin" : "left",
+        "minute" : 37
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Quincy",
+        "position" : {
+          "x" : -1,
+          "y" : 1
+        },
+        "origin" : "left",
+        "minute" : 43
+      }, {
+        "situation" : "counter",
+        "method" : "tap-in",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "left",
+        "minute" : 46
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 1,
+          "y" : 1
+        },
+        "origin" : "left",
+        "minute" : 47
+      }, {
+        "situation" : "counter",
+        "method" : "tap-in",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Vito",
+        "position" : {
+          "x" : -2,
+          "y" : 2
+        },
+        "origin" : "center",
+        "minute" : 48
+      } ]
+  },
+  {
+    "opponent" : "Hillegersberg",
+    "date" : "2016-10-29",
+    "goals" : [
+      {
+        "situation" : "set-piece",
+        "method" : "own goal",
+        "set-piece" : "corner",
+        "goal" : "E.D.",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "right",
+        "minute" : 7
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Jonas",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 1,
+          "y" : 1
+        },
+        "origin" : "right",
+        "minute" : 20
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Stijn",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 0,
+          "y" : 2
+        },
+        "origin" : "left",
+        "minute" : 22
+      }, {
+        "situation" : "set-piece",
+        "method" : "shot",
+        "set-piece" : "free kick",
+        "goal" : "Quincy",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : 0,
+          "y" : 7
+        },
+        "origin" : "center",
+        "minute" : 25
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "team" : "Hillegersberg",
+        "origin" : "left",
+        "minute" : 40,
+        "position" : {
+          "x" : -1,
+          "y" : 2
+        }
+      }, {
+        "situation" : "counter",
+        "method" : "shot",
+        "goal" : "Stijn",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : 0,
+          "y" : 2
+        },
+        "origin" : "right",
+        "minute" : 50
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "team" : "Hillegersberg",
+        "origin" : "center",
+        "minute" : 50,
+        "position" : {
+          "x" : 1,
+          "y" : 2
+        }
+      } ]
+  },
+  {
+    "opponent" : "VOC",
+    "date" : "2016-11-05",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "team" : "VOC",
+        "origin" : "left",
+        "minute" : 7,
+        "position" : {
+          "x" : -1,
+          "y" : 1
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "team" : "VOC",
+        "origin" : "left",
+        "minute" : 12,
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        }
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 0,
+          "y" : 4
+        },
+        "origin" : "center",
+        "minute" : 20
+      }, {
+        "situation" : "set-piece",
+        "method" : "tap-in",
+        "set-piece" : "corner",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "right",
+        "minute" : 21
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "VOC",
+        "origin" : "right",
+        "minute" : 5,
+        "position" : {
+          "x" : 2,
+          "y" : 1
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "shoot-out",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : -1,
+          "y" : 2
+        },
+        "origin" : "left",
+        "minute" : 25
+      } ]
+  },
+  {
+    "opponent" : "ASW",
+    "date" : "2016-11-09",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Jonas",
+        "team" : "Blijdorp",
+        "assist" : "Fadi",
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        },
+        "origin" : "left",
+        "minute" : 2
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Luc",
+        "team" : "Blijdorp",
+        "assist" : "Stijn",
+        "position" : {
+          "x" : 0,
+          "y" : 6
+        },
+        "origin" : "center",
+        "minute" : 19
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 1,
+          "y" : 2
+        },
+        "origin" : "left",
+        "minute" : 25
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "team" : "ASW",
+        "origin" : "left",
+        "minute" : 37,
+        "position" : {
+          "x" : -1,
+          "y" : 1
+        }
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "team" : "ASW",
+        "origin" : "right",
+        "minute" : 41,
+        "position" : {
+          "x" : 1,
+          "y" : 0
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "shoot-out",
+        "goal" : "Jonas",
+        "team" : "Blijdorp",
+        "assist" : "Luc",
+        "position" : {
+          "x" : -1,
+          "y" : 2
+        },
+        "origin" : "center",
+        "minute" : 42
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "center",
+        "minute" : 50
+      } ]
+  },
+  {
+    "opponent" : "De Betrokken Spartaan",
+    "date" : "2016-11-12",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "shoot-out",
+        "team" : "De Betrokken Spartaan",
+        "origin" : "left",
+        "minute" : 5,
+        "position" : {
+          "x" : -1,
+          "y" : 1
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "team" : "De Betrokken Spartaan",
+        "origin" : "center",
+        "minute" : 26,
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "shout-out",
+        "team" : "De Betrokken Spartaan",
+        "origin" : "left",
+        "minute" : 29,
+        "position" : {
+          "x" : -2,
+          "y" : 1
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "team" : "De Betrokken Spartaan",
+        "origin" : "center",
+        "minute" : 42,
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        }
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "goal" : "Quincy",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        },
+        "origin" : "center",
+        "minute" : 45
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "team" : "De Betrokken Spartaan",
+        "origin" : "right",
+        "minute" : 49,
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "team" : "De Betrokken Spartaan",
+        "origin" : "center",
+        "minute" : 50,
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "Blijdorp",
+        "origin" : "center",
+        "minute" : 50,
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        }
+      } ]
+  },
+  {
+    "opponent" : "Excelsior'20",
+    "date" : "2016-11-19",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "Excelsior'20",
+        "origin" : "left",
+        "minute" : 12,
+        "position" : {
+          "x" : -4,
+          "y" : 1
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "shoot-out",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : -1,
+          "y" : 1
+        },
+        "origin" : "center",
+        "minute" : 25
+      } ]
+  },
+  {
+    "opponent" : "JHR",
+    "date" : "2016-11-26",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "JHR",
+        "origin" : "left",
+        "minute" : 16,
+        "position" : {
+          "x" : -2,
+          "y" : 3
+        }
+      }, {
+        "situation" : "set-piece",
+        "method" : "tap-in",
+        "set-piece" : "corner",
+        "team" : "JHR",
+        "origin" : "left",
+        "minute" : 39,
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        }
+      } ]
+  },
+  {
+    "opponent" : "Zestienhoven",
+    "date" : "2016-12-03",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "shoot-out",
+        "team" : "Zestienhoven",
+        "origin" : "right",
+        "minute" : 9,
+        "position" : {
+          "x" : 3,
+          "y" : 1
+        }
+      }, {
+        "situation" : "counter",
+        "method" : "tap-in",
+        "team" : "Zestienhoven",
+        "origin" : "left",
+        "minute" : 16,
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Jonas",
+        "team" : "Blijdorp",
+        "position" : {
+          "x" : 0,
+          "y" : 2
+        },
+        "origin" : "center",
+        "minute" : 34
+      }, {
+        "situation" : "attack",
+        "method" : "shoot-out",
+        "goal" : "Quincy",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : 1,
+          "y" : 1
+        },
+        "origin" : "center",
+        "minute" : 38
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "goal" : "Vito",
+        "team" : "Blijdorp",
+        "assist" : "Jonas",
+        "position" : {
+          "x" : -1,
+          "y" : 2
+        },
+        "origin" : "right",
+        "minute" : 43
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "goal" : "Stijn",
+        "team" : "Blijdorp",
+        "assist" : "Xaver",
+        "position" : {
+          "x" : 0,
+          "y" : 2
+        },
+        "origin" : "center",
+        "minute" : 46
+      } ]
+  },
+  {
+    "opponent" : "Spartaan'20",
+    "date" : "2016-12-10",
+    "goals" : [
+      {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "Spartaan'20",
+        "origin" : "right",
+        "minute" : 9,
+        "position" : {
+          "x" : 2,
+          "y" : 3
+        }
+      }, {
+        "situation" : "pressing",
+        "method" : "tap-in",
+        "team" : "Spartaan'20",
+        "origin" : "left",
+        "minute" : 15,
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        }
+      }, {
+        "situation" : "set-piece",
+        "method" : "tap-in",
+        "set-piece" : "corner",
+        "team" : "Spartaan'20",
+        "origin" : "left",
+        "minute" : 25,
+        "position" : {
+          "x" : -1,
+          "y" : 0
+        }
+      }, {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "Spartaan'20",
+        "origin" : "center",
+        "minute" : 32,
+        "position" : {
+          "x" : -1,
+          "y" : 2
+        }
+      }, {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Xaver",
+        "position" : {
+          "x" : -1,
+          "y" : 1
+        },
+        "origin" : "center",
+        "minute" : 34
+      }, {
+        "situation" : "counter",
+        "method" : "tap-in",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Quincy",
+        "position" : {
+          "x" : -1,
+          "y" : 0
+        },
+        "origin" : "left",
+        "minute" : 42
+      }, {
+        "situation" : "set-piece",
+        "method" : "header",
+        "set-piece" : "corner",
+        "goal" : "Fadi",
+        "team" : "Blijdorp",
+        "assist" : "Luc",
+        "position" : {
+          "x" : 0,
+          "y" : 0
+        },
+        "origin" : "left",
+        "minute" : 46
+      }, {
+        "situation" : "attack",
+        "method" : "tap-in",
+        "team" : "Spartaan'20",
+        "origin" : "center",
+        "minute" : 50,
+        "position" : {
+          "x" : 1,
+          "y" : 0
+        }
+      } ]
+  }
 ]
