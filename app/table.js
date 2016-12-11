@@ -45,7 +45,7 @@ export class Table extends Seasonal {
   renderHead(cols) {
     let headers = cols.map((c) => {
       return (
-        <th style={{width: '10%', textAlign: 'right'}}>{c}</th>
+        <th style={{width: '8%', textAlign: 'right'}}>{c}</th>
       )
     })
 
@@ -54,6 +54,7 @@ export class Table extends Seasonal {
         <th style={{width: '10px'}}>#</th>
         <th></th>
         {headers}
+        <th></th>
       </tr>
     )
   }
@@ -82,6 +83,19 @@ export class Table extends Seasonal {
     )
   }
 
+  renderForm(form) {
+    let parts = form.reverse().map((f,i) => {
+      return (
+        <span className={'box '+f.result}>
+          <a href='#' data-toggle='tooltip' title={f.text}>
+          {f.result.substring(0,1)}
+          </a>
+        </span>
+      )
+    })
+    return <div>{parts}</div>
+  }
+
   renderDefault() {
     return (
       <table className='table' style={{margin: '0px'}}>
@@ -102,10 +116,11 @@ export class Table extends Seasonal {
                 <td style={{textAlign: 'right'}}>{t.matches.wins}</td>
                 <td style={{textAlign: 'right'}}>{t.matches.draws}</td>
                 <td style={{textAlign: 'right'}}>{t.matches.losses}</td>
-                <td style={{textAlign: 'right'}}>{t.points}</td>
+                <td style={{textAlign: 'right'}}><b>{t.points}</b></td>
                 <td style={{textAlign: 'right'}}>{t.goals.for}</td>
                 <td style={{textAlign: 'right'}}>{t.goals.against}</td>
                 <td style={{textAlign: 'right'}}>{diff}</td>
+                <td>{this.renderForm(t.form)}</td>
               </tr>
             )
           })

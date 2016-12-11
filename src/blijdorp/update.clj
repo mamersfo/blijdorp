@@ -1,12 +1,12 @@
 (ns blijdorp.update
   (:require [cheshire.core :refer :all]))
 
-(def season "2016-17")
-(def competition "1e klasse 06")
+(def season           "2016-17")
+(def competition      "1e klasse 06")
 (def results-filename "uitslagen.json")
-(def table-filename "stand.json")
+(def table-filename   "stand.json")
 (def matches-filename "matches.json")
-(def goals-filename "doelpunten.json")
+(def goals-filename   "doelpunten.json")
 (def assists-filename "assists.json")
 
 (def PLAYERS {"Amine"  {:id  1 :name "Amine"  :matches 0 :total 0 :position :verdediging}
@@ -57,7 +57,9 @@
   (let [matches (apply concat (map :fixtures ms))
         matches (filter #(= 4 (count %1)) matches)
         teams (set (flatten (map #(vector (first %) (second %)) matches)))
-        stats {:matches {:wins 0 :draws 0 :losses 0} :goals {:for 0 :against 0}}
+        stats {:matches {:wins 0 :draws 0 :losses 0}
+               :goals {:for 0 :against 0}
+               :form []}
         table (atom (reduce #(assoc %1 %2 stats) {} teams))]
     (loop [matches matches]
       (if (empty? matches)
@@ -67,21 +69,38 @@
               away-team (second match)
               home-goals (last (butlast match))
               away-goals (last match)
+              text (str home-team " " home-goals "-" away-goals " " away-team)
+              win {:result "win" :text text}
+              draw {:result "draw" :text text}
+              loss {:result "loss" :text text}
               diff (- home-goals away-goals)]
           (cond
-            (> diff 0) (do
-                         (swap! table update-in [home-team :matches :wins] inc)
-                         (swap! table update-in [away-team :matches :losses] inc))
-            (< diff 0) (do
-                         (swap! table update-in [home-team :matches :losses] inc)
-                         (swap! table update-in [away-team :matches :wins] inc))
-            :else      (do
-                         (swap! table update-in [home-team :matches :draws] inc)
-                         (swap! table update-in [away-team :matches :draws] inc)))
+            (> diff 0)
+            (do
+              (swap! table update-in [home-team :matches :wins] inc)
+              (swap! table update-in [away-team :matches :losses] inc))
+            (< diff 0)
+            (do
+              (swap! table update-in [home-team :matches :losses] inc)
+              (swap! table update-in [away-team :matches :wins] inc))
+            :else
+            (do
+              (swap! table update-in [home-team :matches :draws] inc)
+              (swap! table update-in [away-team :matches :draws] inc)))
           (swap! table update-in [home-team :goals :for] + home-goals)
           (swap! table update-in [home-team :goals :against] + away-goals)
           (swap! table update-in [away-team :goals :for] + away-goals)
           (swap! table update-in [away-team :goals :against] + home-goals)
+          (when (< (count (get-in @table [home-team :form])) 5)
+            (cond
+              (> diff 0) (swap! table update-in [home-team :form] conj win)
+              (< diff 0) (swap! table update-in [home-team :form] conj loss)
+              :else (swap! table update-in [home-team :form] conj draw)))
+          (when (< (count (get-in @table [away-team :form])) 5)
+            (cond
+              (> diff 0) (swap! table update-in [away-team :form] conj loss)
+              (< diff 0) (swap! table update-in [away-team :form] conj win)
+              :else (swap! table update-in [away-team :form] conj draw)))
           (recur (rest matches)))))))
 
 (defn export-json

@@ -24,3 +24,23 @@
 .grid-item *:last-child {
     margin-bottom: 0;
 }
+
+.box {
+    display: inline-block;
+    width: 1em!important;
+    margin: 1px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.box.loss {
+    background-color: red;
+}
+
+.box.draw {
+    background-color: gray;
+}
+
+.box.win {
+    background-color: green;
+}
