@@ -135,15 +135,18 @@
   "team" : "De Betrokken Spartaan"
 }, {
   "matches" : {
-    "wins" : 3,
+    "wins" : 4,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 11,
-    "against" : 13
+    "for" : 14,
+    "against" : 14
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Zestienhoven 1-3 Nieuwerkerk"
+  }, {
     "result" : "win",
     "text" : "Nieuwerkerk 4-1 Hillegersberg"
   }, {
@@ -188,13 +191,16 @@
   "matches" : {
     "wins" : 1,
     "draws" : 0,
-    "losses" : 4
+    "losses" : 5
   },
   "goals" : {
-    "for" : 10,
-    "against" : 31
+    "for" : 11,
+    "against" : 34
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Zestienhoven 1-3 Nieuwerkerk"
+  }, {
     "result" : "loss",
     "text" : "Zestienhoven 2-4 Blijdorp"
   }, {
@@ -206,9 +212,6 @@
   }, {
     "result" : "win",
     "text" : "Excelsior'20 1-3 Zestienhoven"
-  }, {
-    "result" : "loss",
-    "text" : "JHR 5-3 Zestienhoven"
   } ],
   "team" : "Zestienhoven"
 }, {
