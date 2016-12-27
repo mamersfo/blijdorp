@@ -1,0 +1,122 @@
+[
+  {
+    "id": "BBDY18J",
+    "name": "Berkel",
+    "fullname": "cvv Berkel",
+    "website": "cvvberkel.nl",
+    "address": {
+      "street": "Het Hoge Land 23",
+      "postalCode": "2652 EA",
+      "city": "Berkel en Rodenrijs"
+    },
+    "position": [ 52.0022084, 4.4730019 ]
+  },
+  {
+    "id": "BBFB935",
+    "name": "Blijdorp",
+    "fullname": "R.V.V. Blijdorp",
+    "website": "rvv-blijdorp.nl",
+    "address": {
+      "street": "Energieweg 15",
+      "postalCode": "3041 JC",
+      "city": "Rotterdam"
+    },
+    "position": [ 51.9264862, 4.4397681 ]
+  },
+  {
+    "id": "QKZJ74W",
+    "name": "De Betrokken Spartaan",
+    "fullname": "msv De Betrokken Spartaan",
+    "website": "debetrokkenspartaan.nl",
+    "address": {
+      "street": "Spaanseweg 3",
+      "postalCode": "3028 HW",
+      "city": "Rotterdam"
+    },
+    "position": [ 51.9208144, 4.4193392 ]
+  },
+  {
+    "id": "BBDZ80D",
+    "name": "Excelsior'20",
+    "fullname": "RKSV Excelsior'20",
+    "website": "excelsior20.nl",
+    "address": {
+      "street": "Parkweg 419",
+      "postalCode": "3121 KK",
+      "city": "Schiedam"
+    },
+    "position": [ 51.9299468, 4.3914764 ]
+  },
+  {
+    "id": "FNRC65X",
+    "name": "Hillegersberg",
+    "fullname": "vv Hillegersberg",
+    "website": "vvhillegersberg.nl",
+    "address": {
+      "street": "Duivenpad 11",
+      "postalCode": "3055 VE",
+      "city": "Rotterdam"
+    },
+    "position": [ 51.964447, 4.4967823 ]
+  },
+  {
+    "id": "BBFC34R",
+    "name": "JHR",
+    "fullname": "sv JHR",
+    "website": "svjhr.nl",
+    "address": {
+      "street": "RFC-weg 155",
+      "postalCode": "3022 EZ",
+      "city": "Rotterdam"
+    },
+    "position": [ 51.9215377, 4.4397424 ]
+  },
+  {
+    "id": "BBDY33K",
+    "name": "Nieuwerkerk",
+    "fullname": "vv Nieuwerkerk",
+    "website": "vvnieuwerkerk.nl",
+    "address": {
+      "street": "Sportpark Dorrestein 2",
+      "postalCode": "2912 TL",
+      "city": "Nieuwerkerk"
+    },
+    "position": [ 51.9606586, 4.6009416 ]
+  },
+  {
+    "id": "BBDY08C",
+    "name": "Spartaan'20",
+    "fullname": "RKSV Spartaan'20",
+    "website": "spartaan20.nl",
+    "address": {
+      "street": "Oldegaarde 251",
+      "postalCode": "3084 AA",
+      "city": "Rotterdam"
+    },
+    "position": [ 51.8782325, 4.4894363 ]
+  },
+  {
+    "id": "BBDZ847",
+    "name": "VOC",
+    "fullname": "V.O.C.",
+    "website": "v-o-c.nl",
+    "address": {
+      "street": "Hazelaarweg 7",
+      "postalCode": "3053 PM",
+      "city": "Rotterdam"
+    },
+    "position": [ 51.9698157, 4.4793669 ]
+  },
+  {
+    "id": "FRKT31W",
+    "name": "Zestienhoven",
+    "fullname": "RCSV Zestienhoven",
+    "website": "rcsvzestienhoven.nl",
+    "address": {
+      "street": "Van der Duijn van Maasdamweg 601",
+      "postalCode": "3045 PE",
+      "city": "Rotterdam"      
+    },
+    "position": [ 51.946115, 4.4383457 ]
+  }
+]

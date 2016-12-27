@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import Seasonal from './seasonal'
 import { LocalDate, LocalTime } from './datetime'
 import MediaQuery from 'react-responsive'
+import { Link } from 'react-router'
 
 export class Schedule extends Seasonal {
 
@@ -42,9 +43,9 @@ export class Schedule extends Seasonal {
       } else {
         return (
           <td>
-            <a href={m.website} data-toggle='tooltip' title={m.location} target='_blank'>
+            <Link to={`/blijdorp/clubs/${team}`}>
               {team}
-            </a>
+            </Link>
           </td>
         )
       }
@@ -63,8 +64,6 @@ export class Schedule extends Seasonal {
             <th style={{width: '10%'}}>Verzamelen</th>
             <th style={{width: '20%'}}>Thuisploeg</th>
             <th style={{width: '20%'}}>Bezoekers</th>
-            <th>Afmeldingen</th>
-            <th>Scheidsrechter</th>
           </tr>
         </thead>
         <tbody>
@@ -77,8 +76,6 @@ export class Schedule extends Seasonal {
                 <td>{this.gatheringTime(m)}</td>
                 { this.renderTeam(m, 0) }
                 { this.renderTeam(m, 1) }
-                <td>{m.absent}</td>
-                <td>{m.referee}</td>
               </tr>
             )
           })

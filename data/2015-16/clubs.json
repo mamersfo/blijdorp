@@ -1,0 +1,38 @@
+[
+  {
+    "id": "BBFB935",
+    "name": "Blijdorp",
+    "fullname": "R.V.V. Blijdorp",
+    "website": "rvv-blijdorp.nl",
+    "address": {
+      "street": "Energieweg 15",
+      "postalCode": "3041 JC",
+      "city": "Rotterdam"
+    },
+    "position": [ 51.9264862, 4.4397681 ]
+  },
+  {
+    "id": "QKZJ74W",
+    "name": "De Betrokken Spartaan",
+    "fullname": "msv De Betrokken Spartaan",
+    "website": "debetrokkenspartaan.nl",
+    "address": {
+      "street": "Spaanseweg 3",
+      "postalCode": "3028 HW",
+      "city": "Rotterdam"
+    },
+    "position": [ 51.9208144, 4.4193392 ]
+  },
+  {
+    "id": "BBDZ80D",
+    "name": "Excelsior'20",
+    "fullname": "RKSV Excelsior'20",
+    "website": "excelsior20.nl",
+    "address": {
+      "street": "Parkweg 419",
+      "postalCode": "3121 KK",
+      "city": "Schiedam"
+    },
+    "position": [ 51.9299468, 4.3914764 ]
+  }
+]

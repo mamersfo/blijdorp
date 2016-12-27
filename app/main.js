@@ -9,9 +9,9 @@ import ChooseSeason from './choose-season'
 import Schedule from './schedule.js'
 import Table from './table.js'
 import Results from './results.js'
-import News from './news'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
+import Clubs from './clubs'
 
 function reducer(state = {season: '2016-17'}, action) {
   switch(action.type) {
@@ -68,16 +68,28 @@ const childRoutes = [
         component: Assists
       }
     ]
+  },
+  {
+    id: 10,
+    title: 'clubs',
+    path: 'clubs/Blijdorp',
+    component: Clubs
+  },
+  {
+    id: 11,
+    path: 'clubs/:club',
+    component: Clubs,
+    render: false
   }
 ]
 
 class Main extends React.Component {
 
   renderItem(baseUri, item) {
-    let title = item.path
+    let title = item.title || item.path
     let idx = title.indexOf('/:')
     if ( idx != -1 ) title = title.substr(0, idx)
-    let uri = baseUri + '/' + title
+    let uri = baseUri + '/' + item.path
     return (
       <li key={'item-' + item.id} role='presentation'
         className={this.props.location.pathname == uri ? 'active' : ''}>
@@ -101,7 +113,7 @@ class Main extends React.Component {
             </ul>
           </li>
         )
-       } else {
+      } else if ( item.render !== false ) {
          return this.renderItem(baseUri, item)
       }
     })    
