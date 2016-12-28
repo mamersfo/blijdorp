@@ -8,17 +8,19 @@
 (def matches-filename "matches.json")
 (def goals-filename   "doelpunten.json")
 (def assists-filename "assists.json")
+(def stats-filename   "stats.json")
 
-(def PLAYERS {"Amine"  {:id  1 :name "Amine"  :matches 0 :total 0 :position :verdediging}
-              "Dieuwe" {:id  2 :name "Dieuwe" :matches 0 :total 0 :position :verdediging}
-              "Fadi"   {:id  3 :name "Fadi"   :matches 0 :total 0 :position :aanval}
-              "Jonas"  {:id  4 :name "Jonas"  :matches 0 :total 0 :position :aanval}
-              "Lenny"  {:id  5 :name "Lenny"  :matches 0 :total 0 :position :verdediging}
-              "Luc"    {:id  6 :name "Luc"    :matches 0 :total 0 :position :centrum}
-              "Quincy" {:id  7 :name "Quincy" :matches 0 :total 0 :position :centrum}
-              "Stijn"  {:id  8 :name "Stijn"  :matches 0 :total 0 :position :aanval}
-              "Vito"   {:id  9 :name "Vito"   :matches 0 :total 0 :position :centrum}
-              "Xaver"  {:id 10 :name "Xaver " :matches 0 :total 0 :position :doel}})
+(def PLAYERS
+  {"Amine"  {:id  1 :name "Amine"  :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
+   "Dieuwe" {:id  2 :name "Dieuwe" :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
+   "Fadi"   {:id  3 :name "Fadi"   :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
+   "Jonas"  {:id  4 :name "Jonas"  :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
+   "Lenny"  {:id  5 :name "Lenny"  :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
+   "Luc"    {:id  6 :name "Luc"    :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
+   "Quincy" {:id  7 :name "Quincy" :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
+   "Stijn"  {:id  8 :name "Stijn"  :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
+   "Vito"   {:id  9 :name "Vito"   :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
+   "Xaver"  {:id 10 :name "Xaver"  :matches 0 :goals 0 :assists 0 :total 0 :position :doel}})
 
 (defn parse-matches
   []
@@ -39,12 +41,23 @@
     @players))
 
 (defn generate-stats
-  [ms k]
-  (let [players (atom (generate-players ms))]
-    (doseq [m ms]
-      (doseq [p (get m k)]
-        (swap! players update-in [(name (first p)) :total] + (second p))))
-    (vals @players)))
+  ([ms]
+   (let [players (atom (generate-players ms))]
+     (doseq [m ms]
+       (doseq [p (get m :goals)]
+         (swap! players update-in [(name (first p)) :goals] + (second p)))
+       (doseq [p (get m :assists)]
+         (swap! players update-in [(name (first p)) :assists] + (second p))))
+     (doseq [player (vals @players)]
+       (let [total (+ (:goals player) (:assists player))]
+         (swap! players update-in [(:name player) :total] + total)))
+     (vals @players)))
+  ([ms k]
+   (let [players (atom (generate-players ms))]
+     (doseq [m ms]
+       (doseq [p (get m k)]
+         (swap! players update-in [(name (first p)) :total] + (second p))))
+     (vals @players))))
 
 (defn parse-results
   [competition]
@@ -118,6 +131,9 @@
 
 (defn export-assists []
   (export-json (generate-stats (parse-matches) :assists) assists-filename))
+
+(defn export-stats []
+  (export-json (generate-stats (parse-matches)) stats-filename))
 
 (defn export []
   (export-table)

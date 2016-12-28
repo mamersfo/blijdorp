@@ -1,17 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router'
-import Home from './home'
-import Goals from './goals'
-import Assists from './assists'
-import Matches from './matches'
-import ChooseSeason from './choose-season'
-import Schedule from './schedule.js'
-import Table from './table.js'
-import Results from './results.js'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
+import Home from './home'
+import Schedule from './schedule.js'
+import Results from './results.js'
+import Table from './table.js'
+import Matches from './matches'
+import Stats from './stats'
 import Clubs from './clubs'
+import ChooseSeason from './choose-season'
 
 function reducer(state = {season: '2016-17'}, action) {
   switch(action.type) {
@@ -28,55 +27,38 @@ const baseUri = '/blijdorp'
 
 const childRoutes = [
   {
-    id: 2,
-    path: 'competitie',
-    childRoutes: [
-      {
-        id: 3,
-        path: 'programma',
-        component: Schedule
-      },
-      {
-        id: 4,
-        path: 'uitslagen',
-        component: Results
-      },
-      {
-        id: 5,
-        path: 'stand',
-        component: Table
-      }
-    ]
+    id: 1,
+    path: 'programma',
+    component: Schedule
   },
   {
-    id: 6,
+    id: 2,
+    path: 'uitslagen',
+    component: Results
+  },
+  {
+    id: 3,
+    path: 'stand',
+    component: Table
+  },
+  {
+    id: 4,
     path: 'verslagen',
     component: Matches
   },
   {
-    id: 7,
+    id: 5,
     path: 'statistieken',
-    childRoutes: [
-      {
-        id: 8,
-        path: 'doelpunten',
-        component: Goals
-      },
-      {
-        id: 9,
-        path: 'assists',
-        component: Assists
-      }
-    ]
+    component: Stats
   },
   {
-    id: 10,
+    id: 6,
     title: 'clubs',
     path: 'clubs/Blijdorp',
     component: Clubs
   },
   {
-    id: 11,
+    id: 7,
     path: 'clubs/:club',
     component: Clubs,
     render: false

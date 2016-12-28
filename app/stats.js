@@ -7,7 +7,7 @@ import Carousel from 'nuka-carousel'
 import MediaQuery from 'react-responsive'
 import 'react-bootstrap-table/css/react-bootstrap-table.min.css!'
 
-export class Players extends React.Component {
+export class Stats extends React.Component {
 
   constructor(props) {
     super(props)
@@ -37,11 +37,15 @@ export class Players extends React.Component {
       if ( m[p.position] === undefined ) {
         m[p.position] = {
           name: p.position,
+          goals: p.goals,
+          assists: p.assists,
           matches: p.matches,
           total: p.total
         }
       } else {
         m[p.position].matches += p.matches
+        m[p.position].goals += p.goals
+        m[p.position].assists += p.assists
         m[p.position].total += p.total
       }
       return m
@@ -50,7 +54,7 @@ export class Players extends React.Component {
   }
   
   fetchData(season) {
-    get(season + '/' + this.props.metric).then((data) => {
+    get(season + '/stats').then((data) => {
       let sorted = data.sort((a, b) => b.total - a.total)
       this.setState({
         players: this.average(sorted),
@@ -73,13 +77,19 @@ export class Players extends React.Component {
   renderTable(which, data) {
     return (
       <div>
-      <h4>{this.props.metric + ' per ' + which}</h4>
+      <h4>{'doelpunten en assists per ' + which}</h4>
       <BootstrapTable tableStyle={{margin: 0}} data={data} striped={true}>
         <TableHeaderColumn isKey={true} dataField='id' hidden={true}>
           id
         </TableHeaderColumn>
         <TableHeaderColumn dataField='name' dataSort={true} width='100'>
           {which}
+        </TableHeaderColumn>
+        <TableHeaderColumn dataField='goals' dataSort={true} width='100' dataAlign='end'>
+          goals
+        </TableHeaderColumn>
+        <TableHeaderColumn dataField='assists' dataSort={true} width='100' dataAlign='end'>
+          assists
         </TableHeaderColumn>
         <TableHeaderColumn dataField='total' dataSort={true} width='100' dataAlign='end'>
           totaal
@@ -98,13 +108,13 @@ export class Players extends React.Component {
   renderCarousel() {
     return (
       <Carousel>
-        <div style={{width: '450px', height: '500px', margin: '0 auto'}}>
+        <div style={{width: '600px', height: '500px', margin: '0 auto'}}>
           { this.renderTable('speler', this.state.players) }
         </div>
-        <div style={{width: '450px', height: '500px', margin: '0 auto'}}>
+        <div style={{width: '600px', height: '500px', margin: '0 auto'}}>
           <TreeMap title={this.props.metric} children={this.state.items} colorDomain={this.props.colorDomain} colorRange={this.props.colorRange} colorType={this.props.colorType} />
         </div>
-        <div style={{width: '450px', height: '500px', margin: '0 auto'}}>
+        <div style={{width: '600px', height: '500px', margin: '0 auto'}}>
           { this.renderTable('positie', this.state.positions) }
         </div>
       </Carousel>
@@ -119,11 +129,16 @@ export class Players extends React.Component {
           <TableHeaderColumn isKey={true} dataField='id' hidden={true}>
             Id
           </TableHeaderColumn>
-          <TableHeaderColumn dataField='name' dataSort={true} width='100'>
+          <TableHeaderColumn dataField='name' dataSort={true} width='75'>
             Speler
           </TableHeaderColumn>
-          <TableHeaderColumn dataField='total' dataSort={true} width='100'
-            dataAlign='end'>
+          <TableHeaderColumn dataField='goals' dataSort={true} width='75' dataAlign='end'>
+            Goals
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField='assists' dataSort={true} width='75' dataAlign='end'>
+            Assists
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField='total' dataSort={true} width='75' dataAlign='end'>
             Totaal
           </TableHeaderColumn>
         </BootstrapTable>
@@ -151,4 +166,4 @@ export default connect(state => {
   return {
     season: state.season
   }
-})(Players)
+})(Stats)

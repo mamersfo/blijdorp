@@ -1,0 +1,81 @@
+[ {
+  "id" : 3,
+  "name" : "Fadi",
+  "matches" : 15,
+  "goals" : 19,
+  "assists" : 9,
+  "total" : 28,
+  "position" : "aanval"
+}, {
+  "id" : 5,
+  "name" : "Lenny",
+  "matches" : 15,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "verdediging"
+}, {
+  "id" : 2,
+  "name" : "Dieuwe",
+  "matches" : 8,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "verdediging"
+}, {
+  "id" : 9,
+  "name" : "Vito",
+  "matches" : 14.5,
+  "goals" : 15,
+  "assists" : 5,
+  "total" : 20,
+  "position" : "centrum"
+}, {
+  "id" : 1,
+  "name" : "Amine",
+  "matches" : 14,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "verdediging"
+}, {
+  "id" : 8,
+  "name" : "Stijn",
+  "matches" : 15,
+  "goals" : 12,
+  "assists" : 12,
+  "total" : 24,
+  "position" : "aanval"
+}, {
+  "id" : 6,
+  "name" : "Luc",
+  "matches" : 15,
+  "goals" : 9,
+  "assists" : 3,
+  "total" : 12,
+  "position" : "centrum"
+}, {
+  "id" : 4,
+  "name" : "Jonas",
+  "matches" : 15,
+  "goals" : 10,
+  "assists" : 19,
+  "total" : 29,
+  "position" : "aanval"
+}, {
+  "id" : 10,
+  "name" : "Xaver",
+  "matches" : 1,
+  "goals" : 0,
+  "assists" : 2,
+  "total" : 2,
+  "position" : "doel"
+}, {
+  "id" : 7,
+  "name" : "Quincy",
+  "matches" : 14,
+  "goals" : 7,
+  "assists" : 8,
+  "total" : 15,
+  "position" : "centrum"
+} ]

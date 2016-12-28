@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Amine",
+    "position": "verdediging",
+    "matches": 26,
+    "goals": 1,
+    "assists": 0,
+    "total": 1,
+    "average": 0.0
+  },
+  {
+    "id": 2,
+    "name": "Dieuwe",
+    "position": "verdediging",
+    "matches": 17.5,
+    "goals": 2,
+    "assists": 5,
+    "total": 7,
+    "average": 0.4
+  },
+  {
+    "id": 3,
+    "name": "Fadi",
+    "position": "aanval",
+    "matches": 26,
+    "goals": 46,
+    "assists": 17,
+    "total": 63,
+    "average": 2.4
+  },
+  {
+    "id": 5,
+    "name": "Lenny",
+    "position": "verdediging",
+    "matches": 25,
+    "goals": 0,
+    "assists": 0,
+    "total": 0,
+    "average": 0.0
+  },
+  {
+    "id": 6,
+    "name": "Luc",
+    "position": "centrum",
+    "matches": 26,
+    "goals": 13,
+    "assists": 17,
+    "total": 30,
+    "average": 1.2
+  },
+  {
+    "id": 7,
+    "name": "Quincy",
+    "matches": 16.5,
+    "position": "centrum",
+    "goals": 11,
+    "assists": 10,
+    "total": 18,
+    "average": 1.1
+  },
+  {
+    "id": 8,
+    "name": "Stijn",
+    "position": "aanval",
+    "matches": 18,
+    "goals": 16,
+    "assists": 7,
+    "total": 23,
+    "average": 1.3
+  },
+  {
+    "id": 9,
+    "name": "Vito",
+    "matches": 22.5,
+    "position": "centrum",
+    "goals": 9,
+    "assists": 9,
+    "total": 18,
+    "average": 0.8
+  },
+  {
+    "id": 11,
+    "name": "Vic",
+    "position": "aanval",
+    "matches": 25,
+    "goals": 14,
+    "assists": 6,
+    "total": 20,
+    "average": 0.8
+  }
+]
