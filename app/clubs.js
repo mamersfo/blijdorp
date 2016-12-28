@@ -17,6 +17,11 @@ export class Clubs extends Seasonal {
       filename: 'clubs',
       data: []
     }
+    this.renderMarker = this.renderMarker.bind(this)
+  }
+
+  route( dest ) {
+    return `http://www.anwb.nl/verkeer/routeplanner?lat1=51.9264862&lat2=${dest.position[0]}&lon1=4.4397074&lon2=${dest.position[1]}&name1=Blijdorp&name2=${dest.name}&transportMode1=car`
   }
   
   componentDidUpdate() {
@@ -41,6 +46,43 @@ export class Clubs extends Seasonal {
     }
   }
 
+  renderMarker(c) {
+    let imgUrl = baseUrl + c.id + '.jpg'
+    return (
+      <Marker key={c.name} position={c.position}>
+        <Popup>
+          <span>
+          <img src={imgUrl} /><br/>
+          <a target="_blank" href={'http://' + c.website}>
+          {c.fullname}
+          </a><br/>
+          {c.address.street}<br/>
+          {c.address.postalCode} {c.address.city}<br/>
+          <a target="_blank" href={this.route(c)}>Routebeschrijving</a>
+          </span>
+        </Popup>
+      </Marker>
+    )
+  }
+
+  renderClubs() {
+    return (
+      <div style={{marginBottom: '20px'}}> 
+      {
+        this.state.data.map((c, idx) => {
+          return (
+            <span>
+              { idx > 0 ? ' | ' : '' }
+              <Link to={`/blijdorp/clubs/${c.name}`}
+                activeClassName='active'>{c.name}</Link>
+            </span>
+          )
+        })
+      }
+      </div>
+    )
+  }
+  
   render() {
     let current = this.props.params.club || 'Blijdorp'
     let club = this.state.data.find( (c) => c.name === current)
@@ -48,42 +90,14 @@ export class Clubs extends Seasonal {
     
     return (
       <div>
-        <div style={{marginBottom: '20px'}}> 
-        {
-          this.state.data.map((c, idx) => {
-            return (
-              <span>
-                { idx > 0 ? ' | ' : '' }
-                <Link to={`/blijdorp/clubs/${c.name}`}
-                  activeClassName='active'>{c.name}</Link>
-              </span>
-            )
-          })
-        }
-      </div>
-      <Map ref='map' center={pos} zoom={14} style={{height: '400px'}}>
+      {this.renderClubs()}
+      <Map ref='map' center={pos} zoom={14} style={{height: '450px'}}>
         <TileLayer
           url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
           attribution={attribution}
         />
         {
-          this.state.data.map((c) => {
-            let imgUrl = baseUrl + c.id + '.jpg'
-            return (
-              <Marker key={c.name} position={c.position}>
-                <Popup>
-                  <span>
-                    <img src={imgUrl} /><br/>
-                      <a target="_blank" href={'http://' + c.website}>
-                        {c.fullname}
-                      </a><br/>
-                      {c.address.street}<br/>
-                      {c.address.postalCode} {c.address.city}
-                  </span>
-                </Popup>
-              </Marker>
-            )
-          })
+          this.state.data.map(this.renderMarker)
         }
       </Map>
       </div>
