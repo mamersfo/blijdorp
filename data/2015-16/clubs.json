@@ -12,6 +12,18 @@
     "position": [ 51.9264862, 4.4397681 ]
   },
   {
+    "id": "BBFC31O",
+    "name": "CWO",
+    "fullname": "sv CWO",
+    "website": "svcwo.nl",
+    "address": {
+      "street": "Trimpad 12",
+      "postalCode": "3135 GA",
+      "city": "Vlaardingen"
+    },
+    "position": [ 51.9210767, 4.3624627 ]
+  },
+  {
     "id": "QKZJ74W",
     "name": "De Betrokken Spartaan",
     "fullname": "msv De Betrokken Spartaan",
@@ -34,5 +46,77 @@
       "city": "Schiedam"
     },
     "position": [ 51.9299468, 4.3914764 ]
+  },
+  {
+    "id": "BBFC28S",
+    "name": "GLZ Delfshaven",
+    "fullname": "GLZ Delfshaven",
+    "website": "",
+    "address": {
+      "street": "Spaanseweg 3",
+      "postalCode": "3028 HW",
+      "city": "Rotterdam"
+    },
+    "position": [ 51.9208144, 4.4193392 ]
+  },
+  {
+    "id": "BBDX31D",
+    "name": "Hermes DVS",
+    "fullname": "C. en F.C. Hermes D.V.S.",
+    "website": "hermesdvs.nl",
+    "address": {
+      "street": "Olympiaweg 10",
+      "postalCode": "3118 JD",
+      "city": "Schiedam"
+    },
+    "position": [ 51.9214353, 4.3713605 ]
+  },
+  {
+    "id": "BBDX62N",
+    "name": "Kethel Spaland",
+    "fullname": "Kethel Spaland",
+    "website": "kethelspaland.nl",
+    "address": {
+      "street": "Zoomweg 2",
+      "postalCode": "3123 EP",
+      "city": "Schiedam"
+    },
+    "position": [ 51.9329012, 4.37718 ]
+  },
+  {
+    "id": "FKRC30U",
+    "name": "SVV",
+    "fullname": "sv SVV",
+    "website": "sv-svv.nl",
+    "address": {
+      "street": "Sportlaan 54",
+      "postalCode": "3118 JC",
+      "city": "Schiedam"
+    },
+    "position": [ 51.9180841, 4.370327 ]
+  },
+  {
+    "id": "BBFB05A",
+    "name": "VFC",
+    "fullname": "VFC",
+    "website": "vfcvoetbal.nl",
+    "address": {
+      "street": "Sportlaan 130",
+      "postalCode": "3135 GX",
+      "city": "Vlaardingen"
+    },
+    "position": [ 51.9215856, 4.3536906 ]
+  },
+  {
+    "id": "GDQB71P",
+    "name": "Victoria'04",
+    "fullname": "Victoria'04",
+    "website": "victoria04.nl",
+    "address": {
+      "street": "Kooikersweg 3",
+      "postalCode": "3138 HE",
+      "city": "Vlaardingen"
+    },
+    "position": [ 51.9205291, 4.3187271 ]
   }
 ]

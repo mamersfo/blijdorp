@@ -55,7 +55,13 @@ export class Stats extends React.Component {
   
   fetchData(season) {
     get(season + '/stats').then((data) => {
-      let sorted = data.sort((a, b) => b.total - a.total)
+      let sorted = data.sort((a, b) => {
+        let diff = b.total - a.total
+        if ( diff === 0 ) {
+          diff = a.matches - b.matches
+        }
+        return diff
+      })
       this.setState({
         players: this.average(sorted),
         items: this.transform(sorted.filter(player => player.total != 0)),
