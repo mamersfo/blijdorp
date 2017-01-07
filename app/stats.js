@@ -83,7 +83,7 @@ export class Stats extends React.Component {
   renderTable(which, data) {
     return (
       <div>
-      <h4>{'doelpunten en assists per ' + which}</h4>
+      <h4>{'goals en assists per ' + which}</h4>
       <BootstrapTable tableStyle={{margin: 0}} data={data} striped={true}>
         <TableHeaderColumn isKey={true} dataField='id' hidden={true}>
           id

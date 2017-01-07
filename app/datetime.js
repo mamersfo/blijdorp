@@ -38,6 +38,8 @@ export class LocalTime extends React.Component {
         { hour: this.state.hour, minute: this.state.minute }
       ) : ''
 
+    if ( s === '00:00' ) s = ''
+
     return <span>{s}</span>
   }
 }

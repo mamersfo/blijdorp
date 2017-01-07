@@ -27,8 +27,9 @@ export class Results extends Seasonal {
         <table className='table' style={{width: '100%'}}>
         {
           d.fixtures.map((f) => {
+            let weight = f[0] === 'Blijdorp' || f[1] === 'Blijdorp' ? 'bold' : 'normal'
             return (
-              <tr>
+              <tr style={{fontWeight: weight}}>
                 <td>{f[0] + ' - ' + f[1]}</td>
                 <td style={{width: 10}}></td>
                 <td>{ f.length === 4 ? f[2] + '-' + f[3] : ''}</td>

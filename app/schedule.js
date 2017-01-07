@@ -59,11 +59,12 @@ export class Schedule extends Seasonal {
       <table className='table table-hover'>
         <thead>
           <tr key={0}>
-            <th style={{width: '15%'}}>Datum</th>
+            <th style={{width: '10%'}}>Datum</th>
             <th style={{width: '10%'}}>Aftrap</th>
             <th style={{width: '10%'}}>Verzamelen</th>
             <th style={{width: '20%'}}>Thuisploeg</th>
             <th style={{width: '20%'}}>Bezoekers</th>
+            <th style={{width: '30%'}}></th>
           </tr>
         </thead>
         <tbody>
@@ -76,6 +77,7 @@ export class Schedule extends Seasonal {
                 <td>{this.gatheringTime(m)}</td>
                 { this.renderTeam(m, 0) }
                 { this.renderTeam(m, 1) }
+                <td></td>
               </tr>
             )
           })
