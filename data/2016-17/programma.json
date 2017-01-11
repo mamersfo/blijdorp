@@ -39,6 +39,11 @@
     "website": "http://www.svjhr.nl"
   },
   {
+    "date": "2017-03-14T20:00+01:00",
+    "teams": ["Nieuwenhoorn", "Blijdorp"],
+    "website": "http://www.nieuwenhoorn.nl"
+  },
+  {
     "date": "2017-03-18T09:30+01:00",
     "teams": ["Blijdorp", "Berkel"],
     "website": "http://www.cvvberkel.nl"

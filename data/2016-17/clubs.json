@@ -72,6 +72,18 @@
     "position": [ 51.9215377, 4.4397424 ]
   },
   {
+    "id": "BBFB32K",
+    "name": "Nieuwenhoorn",
+    "fullname": "Nieuwenhoorn",
+    "website": "nieuwenhoorn.nl",
+    "address": {
+      "street": "Rijksstraatweg 270",
+      "postalCode": "3223 KE",
+      "city": "Hellevoetsluis"
+    },
+    "position": [ 51.85264, 4.13984 ]
+  },
+  {
     "id": "BBDY33K",
     "name": "Nieuwerkerk",
     "fullname": "vv Nieuwerkerk",
