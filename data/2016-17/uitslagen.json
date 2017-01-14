@@ -125,11 +125,10 @@
     "matchday": 5,
     "date": "2017-01-14",
     "fixtures": [
-      ["Berkel", "Blijdorp"],
-      ["VOC", "Nieuwerkerk"],
-      ["JHR", "De Betrokken Spartaan"],
-      ["Spartaan'20", "Excelsior'20"],
-      ["Zestienhoven", "Hillegersberg"]
+      ["Berkel", "Blijdorp", 7, 2],
+      ["VOC", "Nieuwerkerk", 1, 2],
+      ["JHR", "De Betrokken Spartaan", 1, 1],
+      ["Spartaan'20", "Excelsior'20", 4, 0]
     ]
   },
   {

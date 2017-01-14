@@ -1272,5 +1272,111 @@
           "y" : 0
         }
       } ]
+  },
+  {
+    "opponent" : "Berkel",
+    "date" : "2017-01-14",
+    "goals" : [
+      {
+        "situation" : "set-piece",
+        "set-piece": "corner",
+        "method" : "tap-in",
+        "team" : "Blijdorp",
+        "origin" : "right",
+        "minute" : 4,
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        }
+      },
+      {
+        "situation" : "attack",
+        "method" : "shoot-out",
+        "team" : "Blijdorp",
+        "origin" : "center",
+        "minute" : 6,
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        }
+      },
+      {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "Berkel",
+        "origin" : "center",
+        "minute" : 7,
+        "position" : {
+          "x" : 0,
+          "y" : 3
+        }
+      },
+      {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "Berkel",
+        "origin" : "center",
+        "minute" : 20,
+        "position" : {
+          "x" : 1,
+          "y" : 5
+        }
+      },
+      {
+        "situation" : "attack",
+        "method" : "shot",
+        "team" : "Berkel",
+        "origin" : "center",
+        "minute" : 35,
+        "position" : {
+          "x" : -1,
+          "y" : -1
+        }
+      },
+      {
+        "situation" : "counter",
+        "method" : "header",
+        "team" : "Berkel",
+        "origin" : "right",
+        "minute" : 39,
+        "position" : {
+          "x" : 0,
+          "y" : 1
+        }
+      },
+      {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "team" : "Berkel",
+        "origin" : "right",
+        "minute" : 43,
+        "position" : {
+          "x" : 1,
+          "y" : 1
+        }
+      },
+      {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "team" : "Berkel",
+        "origin" : "left",
+        "minute" : 44,
+        "position" : {
+          "x" : -1,
+          "y" : 1
+        }
+      },
+      {
+        "situation" : "counter",
+        "method" : "shoot-out",
+        "team" : "Berkel",
+        "origin" : "right",
+        "minute" : 49,
+        "position" : {
+          "x" : 1,
+          "y" : 1
+        }
+      }
+    ]
   }
 ]

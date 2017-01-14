@@ -137,5 +137,4 @@
 
 (defn export []
   (export-table)
-  (export-goals)
-  (export-assists))
+  (export-stats))

@@ -2,9 +2,9 @@
   "id" : 3,
   "name" : "Fadi",
   "matches" : 16,
-  "goals" : 19,
-  "assists" : 9,
-  "total" : 28,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 9,
   "position" : "aanval"
 }, {
   "id" : 5,
@@ -26,9 +26,9 @@
   "id" : 9,
   "name" : "Vito",
   "matches" : 15.5,
-  "goals" : 16,
-  "assists" : 5,
-  "total" : 21,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 5,
   "position" : "centrum"
 }, {
   "id" : 1,
@@ -42,40 +42,40 @@
   "id" : 8,
   "name" : "Stijn",
   "matches" : 16,
-  "goals" : 12,
-  "assists" : 12,
-  "total" : 24,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 12,
   "position" : "aanval"
 }, {
   "id" : 6,
   "name" : "Luc",
   "matches" : 16,
-  "goals" : 9,
-  "assists" : 3,
-  "total" : 12,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 3,
   "position" : "centrum"
 }, {
   "id" : 4,
   "name" : "Jonas",
   "matches" : 16,
-  "goals" : 11,
-  "assists" : 20,
-  "total" : 31,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 20,
   "position" : "aanval"
 }, {
   "id" : 10,
   "name" : "Xaver",
   "matches" : 1,
   "goals" : 0,
-  "assists" : 2,
+  "assists" : 0,
   "total" : 2,
   "position" : "doel"
 }, {
   "id" : 7,
   "name" : "Quincy",
   "matches" : 15,
-  "goals" : 7,
-  "assists" : 8,
-  "total" : 15,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 8,
   "position" : "centrum"
 } ]
