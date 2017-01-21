@@ -2,13 +2,16 @@
   "matches" : {
     "wins" : 1,
     "draws" : 2,
-    "losses" : 4
+    "losses" : 5
   },
   "goals" : {
-    "for" : 15,
-    "against" : 23
+    "for" : 18,
+    "against" : 28
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "VOC 3-5 De Betrokken Spartaan"
+  }, {
     "result" : "loss",
     "text" : "VOC 1-2 Nieuwerkerk"
   }, {
@@ -20,9 +23,6 @@
   }, {
     "result" : "loss",
     "text" : "Spartaan'20 2-0 VOC"
-  }, {
-    "result" : "draw",
-    "text" : "Hillegersberg 5-5 VOC"
   } ],
   "team" : "VOC"
 }, {
@@ -108,15 +108,18 @@
   "team" : "Hillegersberg"
 }, {
   "matches" : {
-    "wins" : 5,
+    "wins" : 6,
     "draws" : 1,
     "losses" : 1
   },
   "goals" : {
-    "for" : 41,
-    "against" : 20
+    "for" : 46,
+    "against" : 23
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "VOC 3-5 De Betrokken Spartaan"
+  }, {
     "result" : "draw",
     "text" : "JHR 1-1 De Betrokken Spartaan"
   }, {
@@ -128,9 +131,6 @@
   }, {
     "result" : "win",
     "text" : "De Betrokken Spartaan 12-1 Zestienhoven"
-  }, {
-    "result" : "win",
-    "text" : "Hillegersberg 2-7 De Betrokken Spartaan"
   } ],
   "team" : "De Betrokken Spartaan"
 }, {

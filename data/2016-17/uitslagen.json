@@ -129,7 +129,7 @@
     "date": "2017-01-21",
     "fixtures": [
       ["JHR", "Excelsior'20", 5, 2],
-      ["VOC", "De Betrokken Spartaan"],
+      ["VOC", "De Betrokken Spartaan", 3, 5],
       ["Berkel", "Hillegersberg", 7, 2]
     ]
   },
