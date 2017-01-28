@@ -150,22 +150,18 @@
         (thead)
         (tbody data)]]])))
 
-(defn goals [ctx]
-  (stats "Doelpunten" "data/current/doelpunten.json"))
-
-(defn assists [ctx]
-  (stats "Assists" "data/current/assists.json"))
+(defn statistics [ctx]
+  (stats "Goals en assists" "data/current/stats.json"))
 
 ;; menu
 
 (def menu
-  [{:uri "/index.html"    :name "JO11-1"     :fn home}
-   {:uri "/schedule.html" :name "Programma"  :fn schedule}
-   {:uri "/results.html"  :name "Uitslagen"  :fn results}
-   {:uri "/table.html"    :name "Stand"      :fn table}
-   {:uri "/report.html"   :name "Verslag"    :fn report}
-   {:uri "/goals.html"    :name "Doelpunten" :fn goals}
-   {:uri "/assists.html"  :name "Assists"    :fn assists}])
+  [{:uri "/index.html"    :name "Blijdorp JO11-1" :fn home}
+   {:uri "/schedule.html" :name "Programma"       :fn schedule}
+   {:uri "/results.html"  :name "Uitslagen"       :fn results}
+   {:uri "/table.html"    :name "Stand"           :fn table}
+   {:uri "/report.html"   :name "Verslagen"       :fn report}
+   {:uri "/stats.html"    :name "Statistieken"    :fn statistics}])
 
 (defn get-pages []
   (reduce (fn [m i] (assoc m (:uri i) (:fn i))) {}  menu))

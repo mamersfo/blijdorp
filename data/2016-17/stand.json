@@ -2,13 +2,16 @@
   "matches" : {
     "wins" : 1,
     "draws" : 2,
-    "losses" : 5
+    "losses" : 6
   },
   "goals" : {
-    "for" : 18,
-    "against" : 28
+    "for" : 19,
+    "against" : 31
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "VOC 1-3 Spartaan'20"
+  }, {
     "result" : "loss",
     "text" : "VOC 3-5 De Betrokken Spartaan"
   }, {
@@ -20,9 +23,6 @@
   }, {
     "result" : "loss",
     "text" : "VOC 0-8 Berkel"
-  }, {
-    "result" : "loss",
-    "text" : "Spartaan'20 2-0 VOC"
   } ],
   "team" : "VOC"
 }, {
@@ -216,15 +216,18 @@
   "team" : "Zestienhoven"
 }, {
   "matches" : {
-    "wins" : 6,
+    "wins" : 7,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 23,
-    "against" : 11
+    "for" : 26,
+    "against" : 12
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "VOC 1-3 Spartaan'20"
+  }, {
     "result" : "win",
     "text" : "Spartaan'20 4-0 Excelsior'20"
   }, {
@@ -236,9 +239,6 @@
   }, {
     "result" : "win",
     "text" : "Hillegersberg 1-3 Spartaan'20"
-  }, {
-    "result" : "win",
-    "text" : "Spartaan'20 2-0 VOC"
   } ],
   "team" : "Spartaan'20"
 }, {
