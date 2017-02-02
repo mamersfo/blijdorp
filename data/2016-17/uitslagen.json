@@ -68,6 +68,13 @@
   },
   {
     "competition": "1e klasse 06",
+    "date": "2017-02-25",
+    "fixtures": [
+      ["Zestienhoven","Spartaan'20"]
+    ]
+  },
+  {
+    "competition": "1e klasse 06",
     "matchday": 13,
     "date": "2017-03-11",
     "fixtures": [
