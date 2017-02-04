@@ -2,13 +2,16 @@
   "matches" : {
     "wins" : 1,
     "draws" : 2,
-    "losses" : 6
+    "losses" : 7
   },
   "goals" : {
-    "for" : 19,
-    "against" : 31
+    "for" : 21,
+    "against" : 34
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "VOC 2-3 Zestienhoven"
+  }, {
     "result" : "loss",
     "text" : "VOC 1-3 Spartaan'20"
   }, {
@@ -20,9 +23,6 @@
   }, {
     "result" : "loss",
     "text" : "JHR 3-2 VOC"
-  }, {
-    "result" : "loss",
-    "text" : "VOC 0-8 Berkel"
   } ],
   "team" : "VOC"
 }, {
@@ -189,15 +189,18 @@
   "team" : "Blijdorp"
 }, {
   "matches" : {
-    "wins" : 1,
+    "wins" : 2,
     "draws" : 0,
     "losses" : 5
   },
   "goals" : {
-    "for" : 11,
-    "against" : 34
+    "for" : 14,
+    "against" : 36
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "VOC 2-3 Zestienhoven"
+  }, {
     "result" : "loss",
     "text" : "Zestienhoven 1-3 Nieuwerkerk"
   }, {
@@ -209,9 +212,6 @@
   }, {
     "result" : "loss",
     "text" : "Zestienhoven 1-9 Berkel"
-  }, {
-    "result" : "win",
-    "text" : "Excelsior'20 1-3 Zestienhoven"
   } ],
   "team" : "Zestienhoven"
 }, {
