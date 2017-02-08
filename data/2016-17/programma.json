@@ -10,12 +10,6 @@
     "website": "http://www.rcsvzestienhoven.nl/?page=subpage&spid=393"
   },
   {
-    "date": "2017-02-25T00:00+01:00"
-  },
-  {
-    "date": "2017-03-04T00:00+01:00"
-  },
-  {
     "date": "2017-03-11T11:00+01:00",
     "teams": ["JHR", "Blijdorp"],
     "website": "http://www.svjhr.nl"
@@ -46,11 +40,13 @@
     "website": "http://stichting-soccerplus.nl/?page_id=9899"
   },
   {
-    "date": "2017-04-15T00:00+02:00"
-  },
-  {
     "date": "2017-04-22T11:00+02:00",
     "teams": ["Hillegersberg", "Blijdorp"],
     "website": "http://www.vvhillegersberg.nl"
+  },
+  {
+    "date": "2017-05-24T00:00+02:00",
+    "teams": ["Rozenburg", "toernooi"],
+    "website": "http://www.vvrozenburg.nl"
   }
 ]

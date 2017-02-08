@@ -96,6 +96,18 @@
     "position": [ 51.9606586, 4.6009416 ]
   },
   {
+    "id": "BBDY42M",
+    "name": "Rozenburg",
+    "fullname": "vv Rozenburg",
+    "website": "vvrozenburg.nl",
+    "address": {
+      "street": "Vinkseweg 31",
+      "postalCode": "3181 HT",
+      "city": "Rozenburg"
+    },
+    "position": [ 51.9154059, 4.2248314 ]
+  },
+  {
     "id": "BBDY08C",
     "name": "Spartaan'20",
     "fullname": "RKSV Spartaan'20",

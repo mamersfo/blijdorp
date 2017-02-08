@@ -38,7 +38,7 @@ export class Schedule extends Seasonal {
   renderTeam(m, idx) {
     if ( m && m.teams && idx < m.teams.length ) {
       let team = m.teams[idx]
-      if ( "Blijdorp" === team ) {
+      if ( "Blijdorp" === team || "toernooi" === team ) {
         return <td><strong>{team}</strong></td>
       } else {
         return (
