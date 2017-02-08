@@ -786,12 +786,10 @@ System.config({
     "react-responsive": "npm:react-responsive@1.1.5",
     "react-router": "npm:react-router@2.6.1",
     "react-sanfona": "npm:react-sanfona@0.0.14",
-    "react-slick": "npm:react-slick@0.14.3",
     "react-stonecutter": "npm:react-stonecutter@0.3.3",
     "react-tokeninput": "npm:react-tokeninput@2.1.1",
     "react-vis": "npm:react-vis@0.4.2",
     "redux": "npm:redux@3.5.2",
-    "slick-carousel": "npm:slick-carousel@1.6.0",
     "whatwg-fetch": "npm:whatwg-fetch@1.1.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -1114,9 +1112,6 @@ System.config({
       "node-fetch": "npm:node-fetch@1.6.3",
       "whatwg-fetch": "npm:whatwg-fetch@1.1.1"
     },
-    "npm:json2mq@0.2.0": {
-      "string-convert": "npm:string-convert@0.2.1"
-    },
     "npm:kw-react-tween-state@0.1.5": {
       "process": "github:jspm/nodelibs-process@0.1.2",
       "raf": "npm:raf@3.3.0",
@@ -1305,13 +1300,6 @@ System.config({
       "react": "npm:react@15.4.1",
       "redux": "npm:redux@3.5.2"
     },
-    "npm:react-responsive-mixin@0.4.0": {
-      "can-use-dom": "npm:can-use-dom@0.1.0",
-      "enquire.js": "npm:enquire.js@2.1.1",
-      "json2mq": "npm:json2mq@0.2.0",
-      "path": "github:jspm/nodelibs-path@0.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2"
-    },
     "npm:react-responsive@1.1.5": {
       "http": "github:jspm/nodelibs-http@1.7.1",
       "hyphenate-style-name": "npm:hyphenate-style-name@1.0.1",
@@ -1335,16 +1323,6 @@ System.config({
       "react": "npm:react@15.4.1",
       "react-dom": "npm:react-dom@15.4.1",
       "uuid": "npm:uuid@2.0.1"
-    },
-    "npm:react-slick@0.14.3": {
-      "classnames": "npm:classnames@2.2.5",
-      "json2mq": "npm:json2mq@0.2.0",
-      "object-assign": "npm:object-assign@4.1.0",
-      "process": "github:jspm/nodelibs-process@0.1.2",
-      "react": "npm:react@15.4.1",
-      "react-dom": "npm:react-dom@15.4.1",
-      "react-responsive-mixin": "npm:react-responsive-mixin@0.4.0",
-      "slick-carousel": "npm:slick-carousel@1.6.0"
     },
     "npm:react-stonecutter@0.3.3": {
       "enquire.js": "npm:enquire.js@2.1.1",
@@ -1435,9 +1413,6 @@ System.config({
     },
     "npm:shallowequal@0.2.2": {
       "lodash.keys": "npm:lodash.keys@3.1.2"
-    },
-    "npm:slick-carousel@1.6.0": {
-      "jquery": "npm:jquery@3.1.0"
     },
     "npm:stream-browserify@1.0.0": {
       "events": "github:jspm/nodelibs-events@0.1.1",

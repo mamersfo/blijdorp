@@ -17,11 +17,9 @@
       "react-responsive": "npm:react-responsive@^1.1.5",
       "react-router": "npm:react-router@^2.6.1",
       "react-sanfona": "npm:react-sanfona@^0.0.14",
-      "react-slick": "npm:react-slick@^0.14.3",
       "react-stonecutter": "npm:react-stonecutter@^0.3.3",
       "react-vis": "npm:react-vis@^0.4.2",
       "redux": "npm:redux@^3.5.2",
-      "slick-carousel": "npm:slick-carousel@^1.6.0",
       "whatwg-fetch": "npm:whatwg-fetch@^1.0.0"
     },
     "devDependencies": {
