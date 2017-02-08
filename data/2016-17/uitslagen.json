@@ -90,7 +90,6 @@
     "date": "2017-02-25",
     "fixtures": [
       ["Zestienhoven", "Spartaan'20"],
-      ["Blijdorp", "Excelsior'20"],
       ["Nieuwerkerk", "JHR"],
       ["De Betrokken Spartaan", "Hillegersberg"]
     ]
@@ -108,6 +107,7 @@
     ]
   },
   {
+    "latest": true,    
     "competition": "1e klasse 06",
     "matchday": 11,
     "date": "2017-02-11",
@@ -120,7 +120,6 @@
     ]
   },
   {
-    "latest": true,
     "competition": "1e klasse 06",
     "date": "2017-02-04",
     "fixtures": [
