@@ -72,6 +72,18 @@
     "position": [ 51.9215377, 4.4397424 ]
   },
   {
+    "id": "BBDX62N",
+    "name": "Kethel Spaland",
+    "fullname": "vv Kethel Spaland",
+    "website": "kethelspaland.nl",
+    "address": {
+      "street": "Zoomweg 2",
+      "postalCode": "3123 EP",
+      "city": "Schiedam"
+    },
+    "position": [ 51.940223, 4.362037 ]
+  },
+  {
     "id": "BBFB32K",
     "name": "Nieuwenhoorn",
     "fullname": "Nieuwenhoorn",

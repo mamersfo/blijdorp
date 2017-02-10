@@ -45,7 +45,12 @@
     "website": "http://www.vvhillegersberg.nl"
   },
   {
-    "date": "2017-05-24T00:00+02:00",
+    "date": "2017-05-20T00:00+02:00",
+    "teams": ["Kethel Spaland", "toernooi"],
+    "website": "http://kethelspaland.nl/clubsite/"
+  },
+  {
+    "date": "2017-05-25T00:00+02:00",
     "teams": ["Rozenburg", "toernooi"],
     "website": "http://www.vvrozenburg.nl"
   }
