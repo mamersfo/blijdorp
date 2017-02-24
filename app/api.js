@@ -1,6 +1,5 @@
 import 'fetch'
 
-// const baseUrl = "http://localhost:3000"
 const baseUrl = "https://mamersfo.github.io"
 
 var get = function(which) {

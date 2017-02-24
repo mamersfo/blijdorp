@@ -6,9 +6,8 @@ import L from 'leaflet'
 import { Link } from 'react-router'
 import Seasonal from './seasonal'
 
-const attribution = '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+const attribution = '&copy; <a href="https://www.mapbox.com/about/maps/" target="_blank">Mapbox</a> | &copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> | <a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a>'
 const baseUrl = 'http://bin617.website-voetbal.nl/sites/voetbal.nl/files/knvblogos_width35/'
-// const tileUrl = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png'
 const tileUrl = 'https://api.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFtZXJzZm8iLCJhIjoiY2l6aThoNHdxMDA0YTMzdDlubnQza2FveiJ9.VMxvRS1-qYKZi-PLgKG5fA'
 
 export class Clubs extends Seasonal {
