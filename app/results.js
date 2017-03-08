@@ -43,9 +43,9 @@ export class Results extends Seasonal {
   }
 
   renderDefault() {
-    let content = this.state.data.map((d) => {
+    let content = this.state.data.map((d, i) => {
       return (
-        <li key={d.date} className='grid-item'
+        <li key={i} className='grid-item'
             style={{backgroundColor: d.latest ? '#99ccff' : '#eee'}}>
           { this.renderResults(d) }
         </li>
