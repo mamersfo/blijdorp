@@ -1,5 +1,21 @@
 [
   {
+    "date": "2017-03-11",
+    "league": "1e klasse 06",
+    "teams": ["JHR", "Blijdorp"],
+    "captain": "Amine",
+    "result": [0, 0],
+    "goals":{
+    },
+    "assists": {
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2017-01-14",
     "league": "1e klasse 06",
     "teams": ["Berkel", "Blijdorp"],
