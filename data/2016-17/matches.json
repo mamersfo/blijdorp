@@ -1,5 +1,25 @@
 [
   {
+    "date": "2017-03-14",
+    "league": "MiniWorld Cup",
+    "teams": ["Nieuwenhoorn", "Blijdorp"],
+    "captain": "Stijn",
+    "result": [3, 3],
+    "goals":{
+      "Jonas": 2,
+      "Stijn": 1
+    },
+    "assists": {
+      "Fadi": 1,
+      "Jonas": 1
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },  
+  {
     "date": "2017-03-11",
     "league": "1e klasse 06",
     "teams": ["JHR", "Blijdorp"],

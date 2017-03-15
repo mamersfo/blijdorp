@@ -107,11 +107,12 @@
     ]
   },
   {
+    "latest": true,
     "competition": "MiniWorld Cup",
     "matchday": 2,
     "date": "2016-03-14",
     "fixtures": [
-      ["Nieuwenhoorn", "Blijdorp"]
+      ["Nieuwenhoorn", "Blijdorp", 3, 3]
     ]
   },
   {
@@ -119,11 +120,10 @@
     "matchday": 12,
     "date": "2016-03-14",
     "fixtures": [
-      ["Nieuwerkerk", "Berkel"]
+      ["Nieuwerkerk", "Berkel", 3, 6]
     ]
   },
   {
-    "latest": true,
     "competition": "1e klasse 06",
     "matchday": 13,
     "date": "2017-03-11",
