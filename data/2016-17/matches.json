@@ -1,5 +1,25 @@
 [
   {
+    "date": "2017-03-18",
+    "league": "1e klasse 06",
+    "teams": ["Blijdorp", "Berkel"],
+    "captain": "Jonas",
+    "result": [2, 2],
+    "goals":{
+      "Fadi": 1,
+      "Jonas": 1
+    },
+    "assists": {
+      "Fadi": 1,
+      "Jonas": 1
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2017-03-14",
     "league": "MiniWorld Cup",
     "teams": ["Nieuwenhoorn", "Blijdorp"],

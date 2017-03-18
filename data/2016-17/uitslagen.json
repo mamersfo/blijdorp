@@ -100,19 +100,19 @@
     ]
   },
   {
+    "latest": true,    
     "competition": "1e klasse 06",
     "matchday": 14,
     "date": "2017-03-18",
     "fixtures": [
-      ["De Betrokken Spartaan", "JHR"],
-      ["Hillegersberg", "Zestienhoven"],
-      ["Excelsior'20", "Spartaan'20"],
-      ["Nieuwerkerk", "VOC"],
-      ["Blijdorp", "Berkel"]
+      ["De Betrokken Spartaan", "JHR", 8, 1],
+      ["Hillegersberg", "Zestienhoven", 8, 1],
+      ["Excelsior'20", "Spartaan'20", 1, 5],
+      ["Nieuwerkerk", "VOC", 2, 1],
+      ["Blijdorp", "Berkel", 2, 2]
     ]
   },
   {
-    "latest": true,
     "competition": "MiniWorld Cup",
     "matchday": 2,
     "date": "2016-03-14",
