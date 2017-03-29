@@ -1,5 +1,24 @@
 [
   {
+    "date": "2017-03-25",
+    "league": "1e klasse 06",
+    "teams": ["VOC", "Blijdorp"],
+    "captain": "Xaver",
+    "result": [3, 2],
+    "goals":{
+      "Luc": 1,
+      "Quincy": 1
+    },
+    "assists": {
+      "Jonas": 1
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2017-03-18",
     "league": "1e klasse 06",
     "teams": ["Blijdorp", "Berkel"],
