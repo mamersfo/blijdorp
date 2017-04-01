@@ -1,5 +1,21 @@
 [
   {
+    "date": "2017-04-01",
+    "league": "1e klasse 06",
+    "teams": ["Nieuwerkerk", "Blijdorp"],
+    "captain": "Quincy",
+    "result": [5, 0],
+    "goals":{
+    },
+    "assists": {
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2017-03-25",
     "league": "1e klasse 06",
     "teams": ["VOC", "Blijdorp"],
