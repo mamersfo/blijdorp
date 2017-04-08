@@ -1,5 +1,25 @@
 [
   {
+    "date": "2017-04-08",
+    "league": "1e klasse 06",
+    "teams": ["Blijdorp", "De Betrokken Spartaan"],
+    "captain": "Jonas",
+    "result": [2, 4],
+    "goals":{
+      "Jonas": 2
+    },
+    "assists": {
+      "Xaver": 2
+    },
+    "absent": {
+      "Amine": 1,
+      "Dieuwe": 1
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2017-04-01",
     "league": "1e klasse 06",
     "teams": ["Nieuwerkerk", "Blijdorp"],
