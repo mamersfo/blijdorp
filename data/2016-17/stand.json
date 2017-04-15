@@ -1,14 +1,17 @@
 [ {
   "matches" : {
-    "wins" : 4,
+    "wins" : 5,
     "draws" : 2,
     "losses" : 10
   },
   "goals" : {
-    "for" : 36,
-    "against" : 55
+    "for" : 38,
+    "against" : 56
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Zestienhoven 1-2 VOC"
+  }, {
     "result" : "win",
     "text" : "VOC 7-1 Hillegersberg"
   }, {
@@ -20,9 +23,6 @@
   }, {
     "result" : "loss",
     "text" : "Nieuwerkerk 2-1 VOC"
-  }, {
-    "result" : "loss",
-    "text" : "Berkel 6-0 VOC"
   } ],
   "team" : "VOC"
 }, {
@@ -164,13 +164,16 @@
   "matches" : {
     "wins" : 2,
     "draws" : 4,
-    "losses" : 7
+    "losses" : 8
   },
   "goals" : {
     "for" : 26,
-    "against" : 42
+    "against" : 43
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Spartaan'20 1-0 Blijdorp"
+  }, {
     "result" : "loss",
     "text" : "Blijdorp 2-4 De Betrokken Spartaan"
   }, {
@@ -182,22 +185,22 @@
   }, {
     "result" : "draw",
     "text" : "Blijdorp 2-2 Berkel"
-  }, {
-    "result" : "draw",
-    "text" : "JHR 0-0 Blijdorp"
   } ],
   "team" : "Blijdorp"
 }, {
   "matches" : {
     "wins" : 3,
     "draws" : 0,
-    "losses" : 10
+    "losses" : 11
   },
   "goals" : {
-    "for" : 24,
-    "against" : 69
+    "for" : 25,
+    "against" : 71
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Zestienhoven 1-2 VOC"
+  }, {
     "result" : "loss",
     "text" : "Nieuwerkerk 8-2 Zestienhoven"
   }, {
@@ -209,22 +212,22 @@
   }, {
     "result" : "loss",
     "text" : "Hillegersberg 8-1 Zestienhoven"
-  }, {
-    "result" : "loss",
-    "text" : "Zestienhoven 1-6 De Betrokken Spartaan"
   } ],
   "team" : "Zestienhoven"
 }, {
   "matches" : {
-    "wins" : 13,
+    "wins" : 14,
     "draws" : 1,
     "losses" : 2
   },
   "goals" : {
-    "for" : 65,
+    "for" : 66,
     "against" : 27
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Spartaan'20 1-0 Blijdorp"
+  }, {
     "result" : "win",
     "text" : "JHR 1-8 Spartaan'20"
   }, {
@@ -236,9 +239,6 @@
   }, {
     "result" : "win",
     "text" : "Excelsior'20 1-5 Spartaan'20"
-  }, {
-    "result" : "win",
-    "text" : "Spartaan'20 6-2 Hillegersberg"
   } ],
   "team" : "Spartaan'20"
 }, {

@@ -1,5 +1,21 @@
 [
   {
+    "date": "2017-04-15",
+    "league": "1e klasse 06",
+    "teams": ["Spartaan'20", "Blijdorp"],
+    "captain": "Xaver",
+    "result": [1, 0],
+    "goals":{
+    },
+    "assists": {
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2017-04-08",
     "league": "1e klasse 06",
     "teams": ["Blijdorp", "De Betrokken Spartaan"],
