@@ -1,5 +1,26 @@
 [
   {
+    "date": "2017-04-22",
+    "league": "1e klasse 06",
+    "teams": ["Hillegersberg", "Blijdorp"],
+    "captain": "Amine",
+    "result": [3, 4],
+    "goals":{
+      "Fadi": 2,
+      "Jonas": 1,
+      "Stijn": 1
+    },
+    "assists": {
+      "Jonas": 1,
+      "Luc": 1
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2017-04-15",
     "league": "1e klasse 06",
     "teams": ["Spartaan'20", "Blijdorp"],

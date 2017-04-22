@@ -42,18 +42,18 @@
     ]
   },
   {
+    "latest": true,
     "competition": "1e klasse 06",
     "matchday": 18,
     "date": "2017-04-22",
     "fixtures": [
-      ["Zestienhoven", "JHR"],
-      ["Hillegersberg", "Blijdorp"],
-      ["Excelsior'20", "VOC"],
-      ["Spartaan'20", "Berkel"]
+      ["Zestienhoven", "JHR", 4, 3],
+      ["Hillegersberg", "Blijdorp", 3, 4],
+      ["Excelsior'20", "VOC", 1, 4],
+      ["Spartaan'20", "Berkel", 1, 4]
     ]
   },
   {
-    "latest": true,
     "competition": "1e klasse 06",
     "matchday": 11,
     "date": "2017-04-15",
