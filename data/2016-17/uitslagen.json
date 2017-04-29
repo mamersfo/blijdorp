@@ -3,7 +3,8 @@
     "competition": "1e klasse 06",
     "date": "2016-05-16",
     "fixtures": [
-      ["Nieuwerkerk", "De Betrokken Spartaan"]
+      ["Nieuwerkerk", "De Betrokken Spartaan"],
+      ["Blijdorp", "Excelsior'20"]
     ]
   },
   {
@@ -37,14 +38,6 @@
       ["JHR", "Berkel"],
       ["Zestienhoven", "Hillegersberg"],
       ["Excelsior'20", "De Betrokken Spartaan"]
-    ]
-  },
-  {
-    "competition": "1e klasse 06",
-    "matchday": 10,
-    "date": "2016-04-29",
-    "fixtures": [
-      ["Blijdorp", "Excelsior'20"]
     ]
   },
   {
