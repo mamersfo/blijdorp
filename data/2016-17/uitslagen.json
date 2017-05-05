@@ -1,6 +1,13 @@
 [
   {
     "competition": "1e klasse 06",
+    "date": "2016-05-17",
+    "fixtures": [
+      ["De Betrokken Spartaan", "Hillegersberg"]
+    ]
+  },
+  {
+    "competition": "1e klasse 06",
     "date": "2016-05-16",
     "fixtures": [
       ["Nieuwerkerk", "De Betrokken Spartaan"],
@@ -12,8 +19,7 @@
     "matchday": 12,
     "date": "2016-05-13",
     "fixtures": [
-      ["Blijdorp", "Zestienhoven"],
-      ["De Betrokken Spartaan", "Hillegersberg"]
+      ["Blijdorp", "Zestienhoven"]
     ]
   },
   {
@@ -32,6 +38,7 @@
     ]
   },
   {
+    "latest": true,
     "competition": "1e klasse 06",
     "date": "2016-05-06",
     "fixtures": [
@@ -41,7 +48,6 @@
     ]
   },
   {
-    "latest": true,
     "competition": "1e klasse 06",
     "matchday": 18,
     "date": "2017-04-22",
