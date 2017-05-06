@@ -42,9 +42,9 @@
     "competition": "1e klasse 06",
     "date": "2016-05-06",
     "fixtures": [
-      ["JHR", "Berkel"],
-      ["Zestienhoven", "Hillegersberg"],
-      ["Excelsior'20", "De Betrokken Spartaan"]
+      ["JHR", "Berkel", 0, 10],
+      ["Zestienhoven", "Hillegersberg", 6, 0],
+      ["Excelsior'20", "De Betrokken Spartaan", 0, 6]
     ]
   },
   {
