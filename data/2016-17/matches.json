@@ -1,5 +1,28 @@
 [
   {
+    "date": "2017-05-09",
+    "league": "1e klasse 06",
+    "teams": ["Blijdorp", "Nieuwerkerk"],
+    "captain": "Luc",
+    "result": [4, 3],
+    "goals":{
+      "Fadi": 2,
+      "Jonas": 2,
+      "Stijn": 1
+    },
+    "assists": {
+      "Amine": 1,
+      "Fadi": 1,
+      "Jonas": 1,
+      "Xaver": 1
+    },
+    "absent": {
+    },
+    "keeper": {
+      "Xaver": 1
+    }
+  },
+  {
     "date": "2017-04-22",
     "league": "1e klasse 06",
     "teams": ["Hillegersberg", "Blijdorp"],

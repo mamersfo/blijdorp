@@ -137,13 +137,16 @@
   "matches" : {
     "wins" : 9,
     "draws" : 1,
-    "losses" : 5
+    "losses" : 6
   },
   "goals" : {
-    "for" : 45,
-    "against" : 41
+    "for" : 48,
+    "against" : 45
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Blijdorp 4-3 Nieuwerkerk"
+  }, {
     "result" : "win",
     "text" : "Nieuwerkerk 8-2 Zestienhoven"
   }, {
@@ -155,22 +158,22 @@
   }, {
     "result" : "loss",
     "text" : "Spartaan'20 7-2 Nieuwerkerk"
-  }, {
-    "result" : "win",
-    "text" : "Nieuwerkerk 2-1 VOC"
   } ],
   "team" : "Nieuwerkerk"
 }, {
   "matches" : {
-    "wins" : 3,
+    "wins" : 4,
     "draws" : 4,
     "losses" : 8
   },
   "goals" : {
-    "for" : 30,
-    "against" : 46
+    "for" : 34,
+    "against" : 49
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Blijdorp 4-3 Nieuwerkerk"
+  }, {
     "result" : "win",
     "text" : "Hillegersberg 3-4 Blijdorp"
   }, {
@@ -182,22 +185,22 @@
   }, {
     "result" : "loss",
     "text" : "Nieuwerkerk 5-0 Blijdorp"
-  }, {
-    "result" : "loss",
-    "text" : "VOC 3-2 Blijdorp"
   } ],
   "team" : "Blijdorp"
 }, {
   "matches" : {
     "wins" : 5,
     "draws" : 0,
-    "losses" : 11
+    "losses" : 12
   },
   "goals" : {
-    "for" : 35,
-    "against" : 74
+    "for" : 36,
+    "against" : 89
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Berkel 15-1 Zestienhoven"
+  }, {
     "result" : "win",
     "text" : "Zestienhoven 6-0 Hillegersberg"
   }, {
@@ -209,9 +212,6 @@
   }, {
     "result" : "loss",
     "text" : "Nieuwerkerk 8-2 Zestienhoven"
-  }, {
-    "result" : "loss",
-    "text" : "Spartaan'20 5-1 Zestienhoven"
   } ],
   "team" : "Zestienhoven"
 }, {
@@ -243,15 +243,18 @@
   "team" : "Spartaan'20"
 }, {
   "matches" : {
-    "wins" : 15,
+    "wins" : 16,
     "draws" : 1,
     "losses" : 1
   },
   "goals" : {
-    "for" : 103,
-    "against" : 24
+    "for" : 118,
+    "against" : 25
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Berkel 15-1 Zestienhoven"
+  }, {
     "result" : "win",
     "text" : "JHR 0-10 Berkel"
   }, {
@@ -263,9 +266,6 @@
   }, {
     "result" : "win",
     "text" : "Hillegersberg 0-6 Berkel"
-  }, {
-    "result" : "win",
-    "text" : "Berkel 4-3 De Betrokken Spartaan"
   } ],
   "team" : "Berkel"
 } ]
