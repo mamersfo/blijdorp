@@ -162,15 +162,18 @@
   "team" : "Nieuwerkerk"
 }, {
   "matches" : {
-    "wins" : 4,
+    "wins" : 5,
     "draws" : 4,
     "losses" : 8
   },
   "goals" : {
-    "for" : 34,
-    "against" : 49
+    "for" : 40,
+    "against" : 51
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Blijdorp 6-2 Zestienhoven"
+  }, {
     "result" : "win",
     "text" : "Blijdorp 4-3 Nieuwerkerk"
   }, {
@@ -182,22 +185,22 @@
   }, {
     "result" : "loss",
     "text" : "Blijdorp 2-4 De Betrokken Spartaan"
-  }, {
-    "result" : "loss",
-    "text" : "Nieuwerkerk 5-0 Blijdorp"
   } ],
   "team" : "Blijdorp"
 }, {
   "matches" : {
     "wins" : 5,
     "draws" : 0,
-    "losses" : 12
+    "losses" : 13
   },
   "goals" : {
-    "for" : 36,
-    "against" : 89
+    "for" : 38,
+    "against" : 95
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Blijdorp 6-2 Zestienhoven"
+  }, {
     "result" : "loss",
     "text" : "Berkel 15-1 Zestienhoven"
   }, {
@@ -209,9 +212,6 @@
   }, {
     "result" : "loss",
     "text" : "Zestienhoven 1-2 VOC"
-  }, {
-    "result" : "loss",
-    "text" : "Nieuwerkerk 8-2 Zestienhoven"
   } ],
   "team" : "Zestienhoven"
 }, {
