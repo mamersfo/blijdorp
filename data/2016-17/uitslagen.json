@@ -7,6 +7,7 @@
     ]
   },
   {
+    "latest": true,    
     "competition": "1e klasse 06",
     "date": "2016-05-16",
     "fixtures": [
@@ -15,7 +16,6 @@
     ]
   },
   {
-    "latest": true,
     "competition": "1e klasse 06",
     "matchday": 12,
     "date": "2016-05-13",
