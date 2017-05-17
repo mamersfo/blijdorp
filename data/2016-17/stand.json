@@ -110,13 +110,16 @@
   "matches" : {
     "wins" : 12,
     "draws" : 1,
-    "losses" : 3
+    "losses" : 4
   },
   "goals" : {
-    "for" : 87,
-    "against" : 38
+    "for" : 92,
+    "against" : 46
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Nieuwerkerk 8-5 De Betrokken Spartaan"
+  }, {
     "result" : "loss",
     "text" : "De Betrokken Spartaan 2-5 Nieuwerkerk"
   }, {
@@ -128,22 +131,22 @@
   }, {
     "result" : "win",
     "text" : "De Betrokken Spartaan 8-1 VOC"
-  }, {
-    "result" : "loss",
-    "text" : "Berkel 4-3 De Betrokken Spartaan"
   } ],
   "team" : "De Betrokken Spartaan"
 }, {
   "matches" : {
-    "wins" : 10,
+    "wins" : 11,
     "draws" : 1,
     "losses" : 6
   },
   "goals" : {
-    "for" : 53,
-    "against" : 47
+    "for" : 61,
+    "against" : 52
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Nieuwerkerk 8-5 De Betrokken Spartaan"
+  }, {
     "result" : "win",
     "text" : "De Betrokken Spartaan 2-5 Nieuwerkerk"
   }, {
@@ -155,9 +158,6 @@
   }, {
     "result" : "win",
     "text" : "Nieuwerkerk 5-0 Blijdorp"
-  }, {
-    "result" : "loss",
-    "text" : "Hillegersberg 4-2 Nieuwerkerk"
   } ],
   "team" : "Nieuwerkerk"
 }, {
