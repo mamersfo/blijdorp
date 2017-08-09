@@ -1,0 +1,146 @@
+[
+	{
+		"id": "MFFS21G",
+		"name": "AGE-GGK",
+		"fullname": "AGE GGK",
+		"website": "www.age-rotterdam.nl",
+		"address": {
+			"street": "Van der Duijn van Maasdamweg 601",
+			"postalCode": "3045 PE",
+			"city": "Rotterdam"      
+		},
+		"position": [ 51.946115, 4.4394062 ]
+	},
+	{
+		"id": "BBFB935",
+		"name": "Blijdorp",
+		"fullname": "R.V.V. Blijdorp",
+		"website": "rvv-blijdorp.nl",
+		"address": {
+			"street": "Energieweg 15",
+			"postalCode": "3041 JC",
+			"city": "Rotterdam"
+		},
+		"position": [ 51.9264862, 4.4397681 ]
+	},
+	{
+		"id": "BBFC31O",
+		"name": "CWO",
+		"fullname": "sv CWO",
+		"website": "svcwo.nl",
+		"address": {
+			"street": "Kethelweg 220",
+			"postalCode": "3135 GP",
+			"city": "Vlaardingen"
+		},
+		"position": [ 51.9210767, 4.3624627 ]
+	},
+	{
+		"id": "BBDZ80D",
+		"name": "Excelsior'20",
+		"fullname": "RKSV Excelsior'20",
+		"website": "excelsior20.nl",
+		"address": {
+			"street": "Parkweg 419",
+			"postalCode": "3121 KK",
+			"city": "Schiedam"
+		},
+		"position": [ 51.9299468, 4.3914764 ]
+	},
+	{
+		"id": "BBFC28S",
+		"name": "GLZ Delfshaven",
+		"fullname": "GLZ Delfshaven",
+		"website": "glzdelfshaven.nl",
+		"address": {
+			"street": "Spaanseweg 1",
+			"postalCode": "3028 HW",
+			"city": "Rotterdam"
+		},
+		"position": [ 51.9200779, 4.4259776 ]
+	},
+	{
+		"id": "BBDX31D",
+		"name": "Hermes DVS",
+		"fullname": "C. en F.C. Hermes-D.V.S.",
+		"website": "hermesdvs.nl",
+		"address": {
+			"street": "Olympiaweg 10",
+			"postalCode": "3118 JD",
+			"city": "Schiedam"
+		},
+		"position": [ 51.9214353, 4.3713605 ]
+	},
+	{
+		"id": "BBDX92W",
+		"name": "HOVDJSCR",
+		"fullname": "sv H.O.V./D.J.S.C.R.",
+		"website": "hovdjscr.nl",
+		"address": {
+			"street": "Prinses Beatrixlaan 499",
+			"postalCode": "3062 CA",
+			"city": "Rotterdam"
+		},
+		"position": [ 51.9373327, 4.4990918 ]
+	},
+	{
+		"id": "BBDX56O",
+		"name": "HWD",
+		"fullname": "vv HWD",
+		"website": "vvhwd.nl",
+		"address": {
+			"street": "Taludweg 5",
+			"postalCode": "3042 JZ",
+			"city": "Rotterdam"
+		},
+		"position": [ 51.927439, 4.4299743 ]
+	},
+	{
+		"id": "BBDX62N",
+		"name": "Kethel Spaland",
+		"fullname": "vv Kethel Spaland",
+		"website": "kethelspaland.nl",
+		"address": {
+			"street": "Zoomweg 2",
+			"postalCode": "3123 EP",
+			"city": "Schiedam"
+		},
+		"position": [ 51.940223, 4.362037 ]
+	},
+	{
+		"id": "BBDY33K",
+		"name": "Nieuwerkerk",
+		"fullname": "vv Nieuwerkerk",
+		"website": "vvnieuwerkerk.nl",
+		"address": {
+			"street": "Sportpark Dorrestein 2",
+			"postalCode": "2912 TL",
+			"city": "Nieuwerkerk"
+		},
+		"position": [ 51.9606586, 4.6009416 ]
+	},
+	{
+		"id": "BBFB05A",
+		"name": "VFC",
+		"fullname": "VFC Vlaardingen",
+		"website": "vfcvoetbal.nl",
+		"address": {
+			"street": "Sportlaan 130",
+			"postalCode": "3135 GX",
+			"city": "Vlaardingen"
+		},
+		"position": [ 51.9215856, 4.3536906 ]
+	},
+	{
+		"id": "FRKT31W",
+		"name": "Zestienhoven",
+		"fullname": "RCSV Zestienhoven",
+		"website": "rcsvzestienhoven.nl",
+		"address": {
+			"street": "Van der Duijn van Maasdamweg 601",
+			"postalCode": "3045 PE",
+			"city": "Rotterdam"      
+		},
+		"position": [ 51.946115, 4.4383457 ]
+	}
+]

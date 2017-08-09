@@ -11,7 +11,7 @@ export class ChooseSeason extends React.Component {
   }
 
   renderItems() {
-    const seasons = ['2015-16', '2016-17']
+      const seasons = ['2015-16', '2016-17', '2017-18']
 
     return seasons.map((s) => {
       return (

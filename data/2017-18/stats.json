@@ -1,0 +1,81 @@
+[ {
+  "id" : 0,
+  "name" : "Noah",
+  "matches" : 0,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "verdediging"
+}, {
+  "id" : 0,
+  "name" : "Helene",
+  "matches" : 0,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "centrum"
+}, {
+  "id" : 0,
+  "name" : "Sem",
+  "matches" : 0,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "centrum"
+}, {
+  "id" : 0,
+  "name" : "Lil",
+  "matches" : 0,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "aanval"
+}, {
+  "id" : 0,
+  "name" : "Inder",
+  "matches" : 0,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "centrum"
+}, {
+  "id" : 0,
+  "name" : "Jan",
+  "matches" : 0,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "doel"
+}, {
+  "id" : 0,
+  "name" : "Raf",
+  "matches" : 0,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "aanval"
+}, {
+  "id" : 0,
+  "name" : "Zai",
+  "matches" : 0,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "aanval"
+}, {
+  "id" : 0,
+  "name" : "Tije",
+  "matches" : 0,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "verdediging"
+}, {
+  "id" : 0,
+  "name" : "Ruben",
+  "matches" : 0,
+  "goals" : 0,
+  "assists" : 0,
+  "total" : 0,
+  "position" : "verdediging"
+} ]

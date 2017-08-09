@@ -1,8 +1,8 @@
 (ns blijdorp.update
   (:require [cheshire.core :refer :all]))
 
-(def season           "2016-17")
-(def competition      "1e klasse 06")
+(def season           "2017-18")
+(def competition      "Groep 3 16")
 (def results-filename "uitslagen.json")
 (def table-filename   "stand.json")
 (def matches-filename "matches.json")
@@ -11,16 +11,16 @@
 (def stats-filename   "stats.json")
 
 (def PLAYERS
-  {"Amine"  {:id  1 :name "Amine"  :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
-   "Dieuwe" {:id  2 :name "Dieuwe" :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
-   "Fadi"   {:id  3 :name "Fadi"   :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
-   "Jonas"  {:id  4 :name "Jonas"  :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
-   "Lenny"  {:id  5 :name "Lenny"  :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
-   "Luc"    {:id  6 :name "Luc"    :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
-   "Quincy" {:id  7 :name "Quincy" :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
-   "Stijn"  {:id  8 :name "Stijn"  :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
-   "Vito"   {:id  9 :name "Vito"   :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
-   "Xaver"  {:id 10 :name "Xaver"  :matches 0 :goals 0 :assists 0 :total 0 :position :doel}})
+  {"Helene"  {:id 0 :name "Helene"  :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
+   "Inder"   {:id 0 :name "Inder"   :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
+   "Jan"     {:id 0 :name "Jan"     :matches 0 :goals 0 :assists 0 :total 0 :position :doel}
+   "Lil"     {:id 0 :name "Lil"     :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
+   "Noah"    {:id 0 :name "Noah"    :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
+   "Raf"     {:id 0 :name "Raf"     :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
+   "Ruben"   {:id 0 :name "Ruben"   :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
+   "Sem"     {:id 0 :name "Sem"     :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
+   "Tije"    {:id 0 :name "Tije"    :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
+   "Zai"     {:id 0 :name "Zai"     :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}})
 
 (defn parse-matches
   []

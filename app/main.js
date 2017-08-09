@@ -12,7 +12,7 @@ import Stats from './stats'
 import Clubs from './clubs'
 import ChooseSeason from './choose-season'
 
-function reducer(state = {season: '2016-17'}, action) {
+function reducer(state = {season: '2017-18'}, action) {
   switch(action.type) {
     case 'CHOOSE_SEASON':
       return {season: action.season}

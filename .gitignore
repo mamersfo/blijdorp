@@ -21,3 +21,4 @@ data/current
 .\#*
 \*cider-repl*
 app/api~.js
+*~*
