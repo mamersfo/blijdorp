@@ -2,7 +2,8 @@
 	{
 		"date": "2017-09-02T08:30+02:00",
 		"teams": ["HWD", "Blijdorp"],
-		"website": "http://www.vvhwd.nl"
+		"website": "http://www.vvhwd.nl",
+		"absent": "Inder (o.v.)"
 	},
 	{
 		"date": "2017-09-09T08:30+02:00",
