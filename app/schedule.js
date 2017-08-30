@@ -72,7 +72,7 @@ export class Schedule extends Seasonal {
 							  <td>{this.gatheringTime(m)}</td>
 							  { this.renderTeam(m, 0) }
 							  { this.renderTeam(m, 1) }
-							  <td>{m.absent} </td>
+							  <td>{m.absent}</td>
 							</tr>
 						);
 					})

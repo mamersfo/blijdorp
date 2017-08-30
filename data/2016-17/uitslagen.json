@@ -1,7 +1,7 @@
 [
   {
     "competition": "1e klasse 06",
-    "date": "2016-05-17",
+    "date": "2017-05-17",
     "fixtures": [
       ["De Betrokken Spartaan", "Hillegersberg"]
     ]
@@ -9,7 +9,7 @@
   {
     "latest": true,    
     "competition": "1e klasse 06",
-    "date": "2016-05-16",
+    "date": "2017-05-16",
     "fixtures": [
       ["Nieuwerkerk", "De Betrokken Spartaan", 8, 5],
       ["Blijdorp", "Excelsior'20", 5, 2]
@@ -18,21 +18,21 @@
   {
     "competition": "1e klasse 06",
     "matchday": 12,
-    "date": "2016-05-13",
+    "date": "2017-05-13",
     "fixtures": [
       ["Blijdorp", "Zestienhoven", 6, 2]
     ]
   },
   {
     "competition": "1e klasse 06",
-    "date": "2016-05-10",
+    "date": "2017-05-10",
     "fixtures": [
       ["De Betrokken Spartaan", "Nieuwerkerk", 2, 5]
     ]
   },
   {
     "competition": "1e klasse 06",
-    "date": "2016-05-09",
+    "date": "2017-05-09",
     "fixtures": [
       ["Blijdorp", "Nieuwerkerk", 4, 3],
       ["Berkel", "Zestienhoven", 15, 1]
@@ -40,7 +40,7 @@
   },
   {
     "competition": "1e klasse 06",
-    "date": "2016-05-06",
+    "date": "2017-05-06",
     "fixtures": [
       ["JHR", "Berkel", 0, 10],
       ["Zestienhoven", "Hillegersberg", 6, 0],
@@ -94,7 +94,7 @@
   {
     "competition": "1e klasse 06",
     "matchday": 11,
-    "date": "2016-03-29",
+    "date": "2017-03-29",
     "fixtures": [
       ["Hillegersberg", "Nieuwerkerk", 4, 2]
     ]
@@ -126,7 +126,7 @@
   {
     "competition": "MiniWorld Cup",
     "matchday": 2,
-    "date": "2016-03-14",
+    "date": "2017-03-14",
     "fixtures": [
       ["Nieuwenhoorn", "Blijdorp", 3, 3]
     ]
@@ -134,7 +134,7 @@
   {
     "competition": "1e klasse 06",
     "matchday": 12,
-    "date": "2016-03-14",
+    "date": "2017-03-14",
     "fixtures": [
       ["Nieuwerkerk", "Berkel", 3, 6]
     ]

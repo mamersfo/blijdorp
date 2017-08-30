@@ -2,7 +2,7 @@
   (:require [cheshire.core :refer :all]))
 
 (def season           "2017-18")
-(def competition      "Groep 3 16")
+(def competition      "Beker Groep 3-16")
 (def results-filename "uitslagen.json")
 (def table-filename   "stand.json")
 (def matches-filename "matches.json")

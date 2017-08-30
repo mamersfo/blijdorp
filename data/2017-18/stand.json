@@ -1,1 +1,49 @@
-[ ]
+[ {
+  "matches" : {
+    "wins" : 0,
+    "draws" : 0,
+    "losses" : 0
+  },
+  "goals" : {
+    "for" : 0,
+    "against" : 0
+  },
+  "form" : [],
+  "team" : "GLZ Delfshaven"
+}, {
+  "matches" : {
+    "wins" : 0,
+    "draws" : 0,
+    "losses" : 0
+  },
+  "goals" : {
+    "for" : 0,
+    "against" : 0
+  },
+  "form" : [],
+  "team" : "Excelsior'20"
+}, {
+  "matches" : {
+    "wins" : 0,
+    "draws" : 0,
+    "losses" : 0
+  },
+  "goals" : {
+    "for" : 0,
+    "against" : 0
+  },
+  "form" : [],
+  "team" : "HWD"
+}, {
+  "matches" : {
+    "wins" : 0,
+    "draws" : 0,
+    "losses" : 0
+  },
+  "goals" : {
+    "for" : 0,
+    "against" : 0
+  },
+  "form" : [],
+  "team" : "Blijdorp"
+} ]
