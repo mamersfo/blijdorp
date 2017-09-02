@@ -1,23 +1,29 @@
-import 'fetch'
+import 'fetch';
 
-const baseUrl = "https://mamersfo.github.io"
+// const baseUrl = "http://localhost:3000";
+const baseUrl = "https://mamersfo.github.io";
 
 var get = function(which) {
-  let url = `${baseUrl}/blijdorp/data/${which}.json`
-  return fetch(url).then(response => response.json())
-}
+		let url = `${baseUrl}/blijdorp/data/${which}.json`;
+		return fetch(url).then(response => {
+				if ( response.status == 200 ) {
+						return response.json();
+				}
+				return null;
+		});
+};
 
 var query = function(q) {
-  let body = JSON.stringify({query: q})
-  return fetch('http://localhost:8080/graphql', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: body,
-    mode: 'cors'
-  }).then(response => response.json())
-}
+		let body = JSON.stringify({query: q});
+		return fetch('http://localhost:8080/graphql', {
+				method: 'POST',
+				headers: {
+						'Accept': 'application/json',
+						'Content-Type': 'application/json'
+				},
+				body: body,
+				mode: 'cors'
+		}).then(response => response.json());
+};
 
 export { get, query }

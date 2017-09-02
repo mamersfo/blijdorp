@@ -1,45 +1,29 @@
 [ {
-  "id" : 0,
+  "id" : 5,
   "name" : "Noah",
-  "matches" : 0,
-  "goals" : 0,
+  "matches" : 1,
+  "goals" : 1,
   "assists" : 0,
-  "total" : 0,
+  "total" : 1,
   "position" : "verdediging"
 }, {
-  "id" : 0,
-  "name" : "Helene",
-  "matches" : 0,
-  "goals" : 0,
-  "assists" : 0,
-  "total" : 0,
-  "position" : "centrum"
-}, {
-  "id" : 0,
-  "name" : "Sem",
-  "matches" : 0,
-  "goals" : 0,
-  "assists" : 0,
-  "total" : 0,
-  "position" : "centrum"
-}, {
-  "id" : 0,
+  "id" : 4,
   "name" : "Lil",
-  "matches" : 0,
-  "goals" : 0,
-  "assists" : 0,
-  "total" : 0,
+  "matches" : 1,
+  "goals" : 1,
+  "assists" : 1,
+  "total" : 2,
   "position" : "aanval"
 }, {
-  "id" : 0,
+  "id" : 2,
   "name" : "Inder",
-  "matches" : 0,
+  "matches" : 1,
   "goals" : 0,
   "assists" : 0,
   "total" : 0,
   "position" : "centrum"
 }, {
-  "id" : 0,
+  "id" : 3,
   "name" : "Jan",
   "matches" : 0,
   "goals" : 0,
@@ -47,35 +31,51 @@
   "total" : 0,
   "position" : "doel"
 }, {
-  "id" : 0,
+  "id" : 6,
   "name" : "Raf",
-  "matches" : 0,
+  "matches" : 1,
+  "goals" : 1,
+  "assists" : 1,
+  "total" : 2,
+  "position" : "aanval"
+}, {
+  "id" : 1,
+  "name" : "Hélène",
+  "matches" : 1,
   "goals" : 0,
   "assists" : 0,
   "total" : 0,
-  "position" : "aanval"
+  "position" : "centrum"
 }, {
-  "id" : 0,
-  "name" : "Zai",
-  "matches" : 0,
-  "goals" : 0,
-  "assists" : 0,
-  "total" : 0,
-  "position" : "aanval"
-}, {
-  "id" : 0,
+  "id" : 9,
   "name" : "Tije",
-  "matches" : 0,
+  "matches" : 1,
   "goals" : 0,
   "assists" : 0,
   "total" : 0,
   "position" : "verdediging"
 }, {
-  "id" : 0,
-  "name" : "Ruben",
-  "matches" : 0,
+  "id" : 8,
+  "name" : "Senn",
+  "matches" : 1,
   "goals" : 0,
+  "assists" : 1,
+  "total" : 1,
+  "position" : "centrum"
+}, {
+  "id" : 7,
+  "name" : "Ruben",
+  "matches" : 1,
+  "goals" : 1,
   "assists" : 0,
-  "total" : 0,
+  "total" : 1,
   "position" : "verdediging"
+}, {
+  "id" : 10,
+  "name" : "Zay",
+  "matches" : 1,
+  "goals" : 1,
+  "assists" : 1,
+  "total" : 2,
+  "position" : "aanval"
 } ]

@@ -1,22 +1,22 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { Accordion, AccordionItem } from 'react-sanfona'
-import Seasonal from './seasonal'
-import { get } from './api'
-import MediaQuery from 'react-responsive'
+import React from 'react';
+import { connect } from 'react-redux';
+import { Accordion, AccordionItem } from 'react-sanfona';
+import Seasonal from './seasonal';
+import { get } from './api';
+import MediaQuery from 'react-responsive';
 
 export class Matches extends Seasonal {
 
   constructor(props) {
-    super(props)
-    this.state = { filename: 'matches', data: [] }
-    this.handleChange = this.handleChange.bind(this)
-    this.renderContent = this.renderContent.bind(this)
-    this.renderVideo = this.renderVideo.bind(this)
+			super(props);
+			this.state = { filename: 'matches', data: [] };
+			this.handleChange = this.handleChange.bind(this);
+			this.renderContent = this.renderContent.bind(this);
+			this.renderVideo = this.renderVideo.bind(this);
   }
 
   renderMap(m) {
-    return m ? Object.keys(m).map((k) => k + ' (' + m[k] + ') ') : 'geen'
+			return m ? Object.keys(m).map((k) => k + ' (' + m[k] + ') ') : 'geen';
   }
 
   renderVideo(url) {
@@ -29,27 +29,27 @@ export class Matches extends Seasonal {
           <iframe width={275} height={154} src={url}></iframe>
         </MediaQuery>      
       </div>
-    )
+    );
   }
 
   renderContent(m, idx) {
-    let content = ''
+			let content = '';
 
     switch( m.type ) {
       case 'text':
-        content = m.text
-        break
+        content = m.text;
+        break;
       case 'video':
-        content = this.renderVideo(m.url)
-        break
+        content = this.renderVideo(m.url);
+        break;
       case 'image':
-        content = m.download ? <a href={m.download} target='_blank'><img src={m.url}></img></a> : <img src={m.url}></img>
-        break
+        content = m.download ? <a href={m.download} target='_blank'><img src={m.url}></img></a> : <img src={m.url}></img>;
+        break;
       default:
-        break
+        break;
     }
 
-    return <p key={m.date + '-' + idx}>{content}</p>
+			return <p key={m.date + '-' + idx}>{content}</p>;
   }
 
   renderReport(m) {
@@ -61,10 +61,10 @@ export class Matches extends Seasonal {
           </div>
           { m.report.author && ( <div>Verslag: { m.report.author }</div> ) }
         </div>
-      )
+      );
     }
 
-    return null
+			return null;
   }
 
   renderTable(m) {
@@ -79,42 +79,42 @@ export class Matches extends Seasonal {
         <tr><td>Assists:</td><td>{this.renderMap(m.assists)}</td></tr>
         </tbody>
       </table>
-    )
+    );
   }
 
   postProcess(data) {
-    return data.reduce((a,b) => { a[b.date] = b; return a }, {})
+			return data.reduce((a,b) => { a[b.date] = b; return a; }, {});
   }
 
   handleChange(a) {
-    let key = a.activeItems[0]
-    if ( key ) {
-      let { data } = this.state
-      let match = data[key]
-      if ( undefined === match.report ) {
-        get( 'reports/' + key ).then( json => {
-          match.report = json
-          data[key] = match
-          this.setState({data: data})
-        })
-      }
-    }
+			let key = a.activeItems[0];
+			if ( key ) {
+					let { data } = this.state;
+					let match = data[key];
+					if ( undefined === match.report ) {
+							get( 'reports/' + key ).then( json => {
+									match.report = json;
+									data[key] = match;
+									this.setState({data: data});
+							});
+					}
+			}
   }
 
   renderItems() {
-    let { data } = this.state
-    return Object.keys(data).map((k) => {
-      let m = data[k]
-      let title = m.teams[0] + ' - ' + m.teams[1]
-      return (
-        <AccordionItem title={title} slug={m.date} key={m.date}>
-          <div>
-            { this.renderTable(m) }
-            { this.renderReport(m) }
-          </div>
-        </AccordionItem>  
-      )
-    })
+			let { data } = this.state;
+			return Object.keys(data).map((k) => {
+					let m = data[k];
+					let title = m.teams[0] + ' - ' + m.teams[1];
+					return (
+							<AccordionItem title={title} slug={m.date} key={m.date}>
+								<div>
+									{ this.renderTable(m) }
+									{ this.renderReport(m) }
+								</div>
+							</AccordionItem>  
+					);
+			});
   }
   
   render() {
@@ -126,12 +126,12 @@ export class Matches extends Seasonal {
           </Accordion>
         </div>
       </div>
-    )
+    );
   }
 }
 
 export default connect(state => {
   return {
     season: state.season
-  }
-})(Matches)
+  };
+})(Matches);

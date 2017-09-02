@@ -1,49 +1,61 @@
 [ {
   "matches" : {
-    "wins" : 0,
+    "wins" : 1,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 0,
-    "against" : 0
+    "for" : 20,
+    "against" : 1
   },
-  "form" : [],
+  "form" : [ {
+    "result" : "win",
+    "text" : "GLZ Delfshaven 20-1 Excelsior'20"
+  } ],
   "team" : "GLZ Delfshaven"
 }, {
   "matches" : {
     "wins" : 0,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
-    "for" : 0,
-    "against" : 0
+    "for" : 1,
+    "against" : 20
   },
-  "form" : [],
+  "form" : [ {
+    "result" : "loss",
+    "text" : "GLZ Delfshaven 20-1 Excelsior'20"
+  } ],
   "team" : "Excelsior'20"
 }, {
   "matches" : {
     "wins" : 0,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
-    "for" : 0,
-    "against" : 0
+    "for" : 2,
+    "against" : 5
   },
-  "form" : [],
+  "form" : [ {
+    "result" : "loss",
+    "text" : "HWD 2-5 Blijdorp"
+  } ],
   "team" : "HWD"
 }, {
   "matches" : {
-    "wins" : 0,
+    "wins" : 1,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 0,
-    "against" : 0
+    "for" : 5,
+    "against" : 2
   },
-  "form" : [],
+  "form" : [ {
+    "result" : "win",
+    "text" : "HWD 2-5 Blijdorp"
+  } ],
   "team" : "Blijdorp"
 } ]
