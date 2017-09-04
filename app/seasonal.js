@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { get } from './api';
 
 export default class Seasonal extends React.Component {
