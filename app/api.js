@@ -1,9 +1,7 @@
 import 'fetch';
 
-const baseUrl = "https://mamersfo.github.com";
-
 var get = function(which) {
-		let url = `${baseUrl}/blijdorp/data/${which}.json`;
+		let url = `/blijdorp/data/${which}.json`;
 		return fetch(url).then(response => {
 				if ( response.status == 200 ) {
 						return response.json();
