@@ -1,6 +1,6 @@
 import 'fetch';
 
-const baseUrl = "http://mamersfo.github.com";
+const baseUrl = "https://mamersfo.github.com";
 
 var get = function(which) {
 		let url = `${baseUrl}/blijdorp/data/${which}.json`;
