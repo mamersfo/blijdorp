@@ -85,8 +85,8 @@ export default class Home extends React.Component {
 																		);
 																})
 														}
-						      </tbody>
-								  </table>
+												</tbody>
+										</table>
 								<Update />
 								</div>
 						</div>
