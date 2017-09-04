@@ -61,7 +61,7 @@ export default class Home extends React.Component {
 														<tr>
 																<th style={{width: '20%'}}>Datum</th>
 																<th style={{width: '10%'}}>Tijdstip</th>
-																<th style={{width: '30%'}}></th>
+																<th style={{width: '30%'}}>Activiteit</th>
 																<th style={{width: '30%'}}>
 																		<a href='https://www.wunderground.com/' target='_blank'>
 																				<img src='/blijdorp/images/wundergroundLogo_4c_rev_horz.png'
