@@ -8,11 +8,14 @@
                  [compojure "1.5.1"]
                  [ring "1.5.0"]
                  [ring-cors "0.1.8"]
-                 [ring/ring-json "0.4.0"]]
+                 [ring/ring-json "0.4.0"]
+                 [clj-http "3.7.0"]
+                 [clj-time "0.14.0"]]
   :plugins [[lein-ring "0.9.7"]]
   :ring {:handler blijdorp.graphql/handler
          :nrepl {:start? true :port 4555}
          :port 8080}
   :aliases {"build-data"      ["run" "-m" "blijdorp.update/export"]
             "build-site"      ["run" "-m" "blijdorp.site/export"]
-            "build-news"      ["run" "-m" "blijdorp.news/export"]})
+            "build-news"      ["run" "-m" "blijdorp.news/export"]
+            "build-home"      ["run" "-m" "blijdorp.weather/export"]})
