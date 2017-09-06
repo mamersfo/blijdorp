@@ -1,27 +1,39 @@
 [ {
   "title" : "donderdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 18C. Wind uit het WZW van 15 tot 30 km/u.",
-  "date" : "2017-09-07T17:15+02:00",
-  "type" : "training"
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 18C. Wind uit het WZW van 15 tot 25 km/u.",
+  "date" : "2017-10-07T00:00+02:00",
+  "teams" : [ "AGE-GGK", "Blijdorp" ],
+  "day" : 7,
+  "type" : "match"
 }, {
   "title" : "zaterdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Regen en onweer. Maximaal 16C. Wind uit het WZW van 15 tot 30 km/u. Kans op regen 70%.",
-  "date" : "2017-09-09T10:30+02:00",
-  "teams" : [ "Blijdorp", "GLZ Delfshaven" ],
+  "fcttext_metric" : "Regenbuien met onweer. Maximaal 16C. Wind uit het WZW van 15 tot 30 km/u. Kans op regen 70%.",
+  "date" : "2017-12-09T00:00+01:00",
+  "teams" : [ "Blijdorp", "Kethel Spaland" ],
   "day" : 9,
+  "type" : "match"
+}, {
+  "title" : "maandag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/tstorms.gif",
+  "fcttext_metric" : "Winderig met onweersbuien. Maximaal 16C. Wind uit het ZW van 30 tot 50 km/u. Kans op regen 80%. Windstoten kunnen af en toe meer dan 65 km/u bereiken.",
+  "date" : "2017-11-11T00:00+01:00",
+  "teams" : [ "Blijdorp", "GLZ Delfshaven" ],
+  "day" : 11,
   "type" : "match"
 }, {
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Regenbuien. Maximaal 16C. Wind uit het WZW van 15 tot 30 km/u. Kans op regen 70%.",
+  "fcttext_metric" : "Regenbuien. Maximaal 16C. Wind uit het W van 15 tot 30 km/u. Kans op regen 80%.",
   "date" : "2017-09-12T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Regenbuien. Maximaal 16C. Wind uit het W van 15 tot 30 km/u. Kans op regen 60%.",
-  "date" : "2017-09-14T17:15+02:00",
-  "type" : "training"
+  "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
+  "fcttext_metric" : "Regen. Maximaal 17C. Wind uit het W van 25 tot 40 km/u. Kans op regen 60%. Regenval ongeveer 6 mm.",
+  "date" : "2017-10-14T00:00+02:00",
+  "teams" : [ "Blijdorp", "Hermes DVS" ],
+  "day" : 14,
+  "type" : "match"
 } ]
