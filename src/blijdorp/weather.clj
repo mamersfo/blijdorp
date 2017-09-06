@@ -37,6 +37,7 @@
   []
   (let [date-fn (fn [s] (t/day (f/parse (f/formatters :date) (subs s 0 10))))
         matches (parse-stream (reader "data/current/programma.json") true)
+        matches (take 2 matches)
         matches (map (fn [m] (assoc m :day (date-fn (:date m)))) matches)]
    (reduce (fn [ms m] (assoc ms (:day m) m)) {} matches)))
 
