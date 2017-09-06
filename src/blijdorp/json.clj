@@ -8,6 +8,6 @@
       (generate-stream root out {:pretty true})
       (println "Written to" path))))
 
-(defn read
+(defn parse
   [s]
   (parse-string s true))
