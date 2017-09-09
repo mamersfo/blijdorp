@@ -1,27 +1,19 @@
 [ {
-  "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
-  "fcttext_metric" : "Bewolkt met ochtendregen. Maximaal 17C. Wind uit het W van 15 tot 25 km/u. Kans op regen 100%. Regenval ongeveer 6 mm.",
-  "date" : "2017-09-09T10:30+02:00",
-  "teams" : [ "Blijdorp", "GLZ Delfshaven" ],
-  "day" : 9,
-  "type" : "match"
-}, {
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Lichte regen in de ochtend. Maximaal 17C. Wind uit het WZW van 15 tot 30 km/u. Kans op regen 60%.",
+  "fcttext_metric" : "Ochtendbuien. Maximaal 17C. Wind uit het WZW van 25 tot 40 km/u. Kans op regen 60%.",
   "date" : "2017-09-12T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Winderig met regenbuien en onweer. Maximaal 15C. Wind uit het W van 30 tot 50 km/u. Kans op regen 80%.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
+  "fcttext_metric" : "Regen en wind. Maximaal 15C. Wind uit het W van 30 tot 50 km/u. Kans op regen 90%. Regenval ongeveer 6 mm.",
   "date" : "2017-09-14T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Regenbuien. Maximaal 16C. Wind uit het WNW van 15 tot 30 km/u. Kans op regen 60%.",
+  "fcttext_metric" : "Lichte regen in de ochtend. Maximaal 15C. Wind uit het NW van 15 tot 30 km/u. Kans op regen 70%.",
   "date" : "2017-09-16T12:00+02:00",
   "teams" : [ "Blijdorp", "Excelsior'20" ],
   "day" : 16,
