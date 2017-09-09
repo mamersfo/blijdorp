@@ -1,54 +1,10 @@
 [
 	{
-		"date": "2017-09-09T10:30+02:00",
-		"teams": ["Blijdorp", "GLZ Delfshaven"]
-	},
-	{
 		"date": "2017-09-16T12:00+02:00",
 		"teams": ["Blijdorp", "Excelsior'20"]
 	},
   {
 		"date": "2017-09-23T11:00+02:00",
 		"teams": ["VFC", "Blijdorp"]
-	},
-  {
-		"date": "2017-09-30T00:00+02:00",
-		"teams": ["Blijdorp", "CWO"]
-	},
-  {
-		"date": "2017-10-07T00:00+02:00",
-		"teams": ["AGE-GGK", "Blijdorp"]
-	},
-  {
-		"date": "2017-10-14T00:00+02:00",
-		"teams": ["Blijdorp", "Hermes DVS"]
-	},
-  {
-		"date": "2017-10-28T00:00+02:00",
-		"teams": ["Excelsior'20", "Blijdorp"]
-	},
-  {
-		"date": "2017-11-04T00:00+01:00",
-		"teams": ["Blijdorp", "HWD"]
-	},
-  {
-		"date": "2017-11-11T00:00+01:00",
-		"teams": ["Blijdorp", "GLZ Delfshaven"]
-	},
-  {
-		"date": "2017-11-18T00:00+01:00",
-		"teams": ["Nieuwerkerk", "Blijdorp"]
-	},
-  {
-		"date": "2017-11-25T00:00+01:00",
-		"teams": ["Blijdorp", "Zestienhoven"]
-	},
-  {
-		"date": "2017-12-02T00:00+01:00",
-		"teams": ["HOVDJSCR", "Blijdorp"]
-	},
-  {
-		"date": "2017-12-09T00:00+01:00",
-		"teams": ["Blijdorp", "Kethel Spaland"]
 	}
 ]
