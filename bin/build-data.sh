@@ -3,4 +3,4 @@
 lein build-data
 git add data/2017-18/stats.json
 git add data/2017-18/stand.json
-git add data/2016-18/uitslagen.json
+git add data/2017-18/uitslagen.json

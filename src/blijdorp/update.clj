@@ -11,7 +11,7 @@
 (def stats-filename   "stats.json")
 
 (def PLAYERS
-  {"Hélène"  {:id 1 :name "Hélène"  :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
+  {"Helene"  {:id 1 :name "Helene"  :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
    "Inder"   {:id 2 :name "Inder"   :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
    "Jan"     {:id 3 :name "Jan"     :matches 0 :goals 0 :assists 0 :total 0 :position :doel}
    "Lil"     {:id 4 :name "Lil"     :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
@@ -62,6 +62,7 @@
 (defn parse-results
   [competition]
   (let [filename (str "data/" season "/" results-filename)]
+    (println "filename:" filename)
     (filter #(= competition (:competition %))
             (parse-string (slurp filename) true))))
 

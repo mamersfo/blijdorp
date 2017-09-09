@@ -1,27 +1,46 @@
 [
-		{
-				"date": "2017-09-02",
-				"league": "Beker groep 3-16",
-				"teams": ["HWD", "Blijdorp"],
-				"captain": "Jan",
-				"result": [2, 5],
-				"goals":{
-						"Raf": 1,
-						"Lil": 1,
-						"Zay": 1,
-						"Ruben": 1,
-						"Noah": 1
-				},
-				"assists": {
-						"Lil": 1,
-						"Raf": 1,
-						"Senn": 1,
-						"Zay": 1
-				},
-				"absent": {
-				},
-				"keeper": {
-						"Jan": 1
-				}
+  {
+		"date": "2017-09-09",
+		"league": "Beker groep 3-16",
+		"teams": ["Blijdorp", "GLZ Delfshaven"],
+		"captain": "Inder",
+		"result": [2, 11],
+		"goals":{
+			"Helene": 1,
+			"Inder": 1
+		},
+		"assists": {
+			"Zay": 1
+		},
+		"absent": {
+		},
+		"keeper": {
+			"Jan": 1
 		}
+	},
+	{
+		"date": "2017-09-02",
+		"league": "Beker groep 3-16",
+		"teams": ["HWD", "Blijdorp"],
+		"captain": "Jan",
+		"result": [2, 5],
+		"goals":{
+			"Raf": 1,
+			"Lil": 1,
+			"Zay": 1,
+			"Ruben": 1,
+			"Noah": 1
+		},
+		"assists": {
+			"Lil": 1,
+			"Raf": 1,
+			"Senn": 1,
+			"Zay": 1
+		},
+		"absent": {
+		},
+		"keeper": {
+			"Jan": 1
+		}
+	}
 ]

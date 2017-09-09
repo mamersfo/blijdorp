@@ -1,14 +1,17 @@
 [ {
   "matches" : {
-    "wins" : 1,
+    "wins" : 2,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 20,
-    "against" : 1
+    "for" : 31,
+    "against" : 3
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Blijdorp 2-11 GLZ Delfshaven"
+  }, {
     "result" : "win",
     "text" : "GLZ Delfshaven 20-1 Excelsior'20"
   } ],
@@ -47,13 +50,16 @@
   "matches" : {
     "wins" : 1,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
-    "for" : 5,
-    "against" : 2
+    "for" : 7,
+    "against" : 13
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Blijdorp 2-11 GLZ Delfshaven"
+  }, {
     "result" : "win",
     "text" : "HWD 2-5 Blijdorp"
   } ],

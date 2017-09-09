@@ -4,7 +4,7 @@
 		"competition": "Beker Groep 3-16",
 		"date": "2017-09-09",
 		"fixtures": [
-			["Blijdorp", "GLZ Delfshaven"],
+			["Blijdorp", "GLZ Delfshaven", 2, 11],
 			["Excelsior'20", "HWD"]
 		]
 	},
