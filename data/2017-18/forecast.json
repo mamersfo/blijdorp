@@ -1,19 +1,13 @@
 [ {
-  "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 17C. Wind uit het WZW van 25 tot 40 km/u.",
-  "date" : "2017-09-12T17:15+02:00",
-  "type" : "training"
-}, {
   "title" : "donderdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
-  "fcttext_metric" : "Winderig met regen en mogelijk enig onweer. Maximaal 14C. Wind uit het W van 30 tot 50 km/u. Kans op regen 100%. Lokaal zware regenbuien mogelijk.",
+  "fcttext_metric" : "Regen en wind. Maximaal 14C. Wind uit het W van 30 tot 50 km/u. Kans op regen 100%. Regenval ongeveer 12 mm. Lokaal zware regenbuien mogelijk.",
   "date" : "2017-09-14T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancetstorms.gif",
-  "fcttext_metric" : "Ochtendonweersbuien. Maximaal 16C. Wind uit het WZW van 10 tot 15 km/u. Kans op regen 60%.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/tstorms.gif",
+  "fcttext_metric" : "Onweersbuien. Maximaal 16C. Wind uit het W van 15 tot 25 km/u. Kans op regen 80%.",
   "date" : "2017-09-16T12:00+02:00",
   "teams" : [ "Blijdorp", "Excelsior'20" ],
   "day" : 16,
@@ -21,13 +15,13 @@
 }, {
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Ochtendbuien. Maximaal 16C. Wind uit het W van 10 tot 15 km/u. Kans op regen 40%.",
+  "fcttext_metric" : "Ochtendbuien. Maximaal 16C. Wind uit het W van 15 tot 30 km/u. Kans op regen 30%.",
   "date" : "2017-09-19T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Enkele regenbuien. Maximaal 17C. Wind uit het ZZW van 15 tot 30 km/u. Kans op regen 30%.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 18C. Wind uit het ZZW van 15 tot 25 km/u.",
   "date" : "2017-09-21T17:15+02:00",
   "type" : "training"
 } ]
