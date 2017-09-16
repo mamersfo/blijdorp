@@ -1,27 +1,27 @@
 [ {
   "title" : "zaterdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
-  "fcttext_metric" : "Regen. Mogelijk onweer. Maximaal 14C. Wind uit het WZW van 10 tot 15 km/u. Kans op regen 90%.",
+  "fcttext_metric" : "Regen. Mogelijk onweer. Maximaal 14C. Wind uit het ZW van 10 tot 15 km/u. Kans op regen 90%.",
   "date" : "2017-09-16T12:00+02:00",
   "teams" : [ "Blijdorp", "Excelsior'20" ],
   "day" : 16,
   "type" : "match"
 }, {
   "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Regenbuien. Maximaal 15C. Wind uit het NW van 15 tot 25 km/u. Kans op regen 70%.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 16C. Wind uit het NW van 15 tot 25 km/u.",
   "date" : "2017-09-19T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext_metric" : "Bewolking in de ochtend gevolgd door zon in de middag. Maximaal 18C. Wind uit het ZZW van 10 tot 15 km/u.",
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 18C. Wind uit het Z van 10 tot 15 km/u.",
   "date" : "2017-09-21T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Regenbuien. Maximaal 17C. Wind uit het ZW van 10 tot 15 km/u. Kans op regen 50%.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 17C. Wind uit het ZZW van 10 tot 15 km/u.",
   "date" : "2017-09-23T11:00+02:00",
   "teams" : [ "VFC", "Blijdorp" ],
   "day" : 23,
