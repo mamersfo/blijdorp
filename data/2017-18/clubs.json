@@ -120,18 +120,6 @@
 		"position": [ 51.9606586, 4.6009416 ]
 	},
 	{
-		"id": "BBFB05A",
-		"name": "VFC",
-		"fullname": "VFC Vlaardingen",
-		"website": "vfcvoetbal.nl",
-		"address": {
-			"street": "Sportlaan 130",
-			"postalCode": "3135 GX",
-			"city": "Vlaardingen"
-		},
-		"position": [ 51.9215856, 4.3536906 ]
-	},
-	{
 		"id": "FRKT31W",
 		"name": "Zestienhoven",
 		"fullname": "RCSV Zestienhoven",

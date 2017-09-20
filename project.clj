@@ -18,4 +18,4 @@
   :aliases {"build-data"      ["run" "-m" "blijdorp.update/export"]
             "build-site"      ["run" "-m" "blijdorp.site/export"]
             "build-news"      ["run" "-m" "blijdorp.news/export"]
-            "build-home"      ["run" "-m" "blijdorp.weather/export"]})
+            "build-forecast"  ["run" "-m" "blijdorp.weather/export"]})
