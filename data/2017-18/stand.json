@@ -1,151 +1,147 @@
-[ {
-  "matches" : {
-    "wins" : 0,
-    "draws" : 1,
-    "losses" : 0
+[
+  {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "form" : [
+    ],
+    "team" : "Kethel Spaland"
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "form" : [
+    ],
+    "team" : "GLZ Delfshaven"
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "form" : [
+    ],
+    "team" : "Excelsior'20"
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "form" : [
+    ],
+    "team" : "HOV/DJSCR"
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "form" : [
+    ],
+    "team" : "AGE-GGK"
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "form" : [
+    ],
+    "team" : "Hermes DVS"
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "form" : [
+    ],
+    "team" : "Nieuwerkerk"
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "form" : [
+    ],
+    "team" : "CWO"
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "form" : [
+    ],
+    "team" : "HWD"
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "form" : [
+    ],
+    "team" : "Zestienhoven"
   },
-  "goals" : {
-    "for" : 0,
-    "against" : 0
-  },
-  "form" : [ {
-    "result" : "draw",
-    "text" : "HOV/DJSCR 0-0 Kethel Spaland"
-  } ],
-  "team" : "Kethel Spaland"
-}, {
-  "matches" : {
-    "wins" : 0,
-    "draws" : 1,
-    "losses" : 0
-  },
-  "goals" : {
-    "for" : 0,
-    "against" : 0
-  },
-  "form" : [ {
-    "result" : "draw",
-    "text" : "HWD 0-0 GLZ Delfshaven"
-  } ],
-  "team" : "GLZ Delfshaven"
-}, {
-  "matches" : {
-    "wins" : 0,
-    "draws" : 1,
-    "losses" : 0
-  },
-  "goals" : {
-    "for" : 0,
-    "against" : 0
-  },
-  "form" : [ {
-    "result" : "draw",
-    "text" : "Excelsior'20 0-0 CWO"
-  } ],
-  "team" : "Excelsior'20"
-}, {
-  "matches" : {
-    "wins" : 0,
-    "draws" : 1,
-    "losses" : 0
-  },
-  "goals" : {
-    "for" : 0,
-    "against" : 0
-  },
-  "form" : [ {
-    "result" : "draw",
-    "text" : "HOV/DJSCR 0-0 Kethel Spaland"
-  } ],
-  "team" : "HOV/DJSCR"
-}, {
-  "matches" : {
-    "wins" : 0,
-    "draws" : 1,
-    "losses" : 0
-  },
-  "goals" : {
-    "for" : 0,
-    "against" : 0
-  },
-  "form" : [ {
-    "result" : "draw",
-    "text" : "Zestienhoven 0-0 AGE-GGK"
-  } ],
-  "team" : "AGE-GGK"
-}, {
-  "matches" : {
-    "wins" : 0,
-    "draws" : 1,
-    "losses" : 0
-  },
-  "goals" : {
-    "for" : 0,
-    "against" : 0
-  },
-  "form" : [ {
-    "result" : "draw",
-    "text" : "Hermes DVS 0-0 Nieuwerkerk"
-  } ],
-  "team" : "Hermes DVS"
-}, {
-  "matches" : {
-    "wins" : 0,
-    "draws" : 1,
-    "losses" : 0
-  },
-  "goals" : {
-    "for" : 0,
-    "against" : 0
-  },
-  "form" : [ {
-    "result" : "draw",
-    "text" : "Hermes DVS 0-0 Nieuwerkerk"
-  } ],
-  "team" : "Nieuwerkerk"
-}, {
-  "matches" : {
-    "wins" : 0,
-    "draws" : 1,
-    "losses" : 0
-  },
-  "goals" : {
-    "for" : 0,
-    "against" : 0
-  },
-  "form" : [ {
-    "result" : "draw",
-    "text" : "Excelsior'20 0-0 CWO"
-  } ],
-  "team" : "CWO"
-}, {
-  "matches" : {
-    "wins" : 0,
-    "draws" : 1,
-    "losses" : 0
-  },
-  "goals" : {
-    "for" : 0,
-    "against" : 0
-  },
-  "form" : [ {
-    "result" : "draw",
-    "text" : "HWD 0-0 GLZ Delfshaven"
-  } ],
-  "team" : "HWD"
-}, {
-  "matches" : {
-    "wins" : 0,
-    "draws" : 1,
-    "losses" : 0
-  },
-  "goals" : {
-    "for" : 0,
-    "against" : 0
-  },
-  "form" : [ {
-    "result" : "draw",
-    "text" : "Zestienhoven 0-0 AGE-GGK"
-  } ],
-  "team" : "Zestienhoven"
-} ]
+  {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "form" : [
+    ],
+    "team" : "Blijdorp"
+  }
+]
