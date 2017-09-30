@@ -1,4 +1,16 @@
 [
+  {
+		"id": "42",
+		"name": "Capelle",
+		"fullname": "v.v. Capelle",
+		"website": "www.vvcapelle.nl",
+		"address": {
+			"street": "P C Boutenssingel 1",
+			"postalCode": "2902 BG",
+			"city": "Capelle aan den IJssel"      
+		},
+		"position": [ 51.9225331, 4.5747571 ]
+	},
 	{
 		"id": "MFFS21G",
 		"name": "AGE-GGK",
