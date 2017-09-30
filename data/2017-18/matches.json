@@ -1,5 +1,26 @@
 [
   {
+		"date": "2017-09-30",
+		"league": "3e klasse 7 najaar",
+		"teams": ["Blijdorp", "Zestienhoven"],
+		"captain": "Senn",
+		"result": [2, 1],
+		"goals":{
+			"Raf": 1,
+			"Zay": 1
+		},
+		"assists": {
+			"Inder": 1,
+      "Raf": 1
+		},
+		"absent": {
+      "Noah": 1
+		},
+		"keeper": {
+			"Jan": 1
+		}
+	},
+  {
 		"date": "2017-09-09",
 		"league": "Beker groep 3-16",
 		"teams": ["Blijdorp", "GLZ Delfshaven"],

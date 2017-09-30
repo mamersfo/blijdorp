@@ -1,27 +1,19 @@
 [ {
-  "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
-  "fcttext_metric" : "Regenbuien. Maximaal 16C. Wind uit het W van 10 tot 15 km/u. Kans op regen 60%.",
-  "date" : "2017-09-30T09:30+02:00",
-  "teams" : [ "Blijdorp", "Zestienhoven" ],
-  "day" : 30,
-  "type" : "match"
-}, {
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext_metric" : "Gedeeltelijk bewolkt en winderig. Maximaal 15C. Wind uit het WNW van 30 tot 50 km/u. Windstoten kunnen af en toe meer dan 65 km/u bereiken.",
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 15C. Wind uit het WNW van 25 tot 40 km/u.",
   "date" : "2017-10-03T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 16C. Wind uit het WZW van 25 tot 40 km/u.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext_metric" : "Winderig met ochtendregenbuien. Maximaal 16C. Wind uit het WZW van 25 tot 40 km/u. Kans op regen 50%. Windstoten kunnen af en toe meer dan 65 km/u bereiken.",
   "date" : "2017-10-05T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Middagregenbuien. Maximaal 14C. Wind uit het W van 15 tot 30 km/u. Kans op regen 40%.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+  "fcttext_metric" : "Ochtendbuien. Maximaal 14C. Wind uit het W van 15 tot 30 km/u. Kans op regen 30%.",
   "date" : "2017-10-07T08:30+02:00",
   "teams" : [ "AGE-GGK", "Blijdorp" ],
   "day" : 7,
