@@ -33,15 +33,18 @@
   "team" : "GLZ Delfshaven"
 }, {
   "matches" : {
-    "wins" : 0,
+    "wins" : 1,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 1,
-    "against" : 10
+    "for" : 3,
+    "against" : 11
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "AGE-GGK 1-2 Excelsior'20"
+  }, {
     "result" : "loss",
     "text" : "Excelsior'20 1-10 CWO"
   } ],
@@ -65,13 +68,16 @@
   "matches" : {
     "wins" : 1,
     "draws" : 0,
-    "losses" : 0
+    "losses" : 1
   },
   "goals" : {
-    "for" : 2,
-    "against" : 1
+    "for" : 3,
+    "against" : 3
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "AGE-GGK 1-2 Excelsior'20"
+  }, {
     "result" : "win",
     "text" : "Zestienhoven 1-2 AGE-GGK"
   } ],
