@@ -1,19 +1,19 @@
 [ {
   "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext_metric" : "Gedeeltelijk bewolkt. Lichte kans op een regenbui. Maximaal 15C. Wind uit het WNW van 25 tot 40 km/u.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/cloudy.gif",
+  "fcttext_metric" : "Bewolkt. Minimaal 12C.",
   "date" : "2017-10-03T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
-  "fcttext_metric" : "Winderig, regenperioden in de ochtend. Maximaal 14C. Wind uit het WNW van 30 tot 50 km/u. Kans op regen 100%. Regenval ongeveer 6 mm. Windstoten kunnen af en toe meer dan 65 km/u bereiken.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext_metric" : "Winderig met lichte regen in de ochtend. Maximaal 15C. Wind uit het WNW van 40 tot 55 km/u. Kans op regen 80%. Windstoten kunnen af en toe meer dan 80 km/u bereiken.",
   "date" : "2017-10-05T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Lichte regen in de ochtend. Maximaal 13C. Wind uit het NW van 15 tot 30 km/u. Kans op regen 70%.",
+  "fcttext_metric" : "Regenbuien. Maximaal 14C. Wind uit het W van 15 tot 30 km/u. Kans op regen 40%.",
   "date" : "2017-10-07T08:30+02:00",
   "teams" : [ "AGE-GGK", "Blijdorp" ],
   "day" : 7,
@@ -21,7 +21,13 @@
 }, {
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Ochtendbuien. Maximaal 15C. Wind uit het WZW van 10 tot 15 km/u. Kans op regen 40%.",
+  "fcttext_metric" : "Ochtendbuien. Maximaal 15C. Wind uit het W van 15 tot 30 km/u. Kans op regen 40%.",
   "date" : "2017-10-10T17:15+02:00",
+  "type" : "training"
+}, {
+  "title" : "donderdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/clear.gif",
+  "fcttext_metric" : "Overwegend helder. Maximaal 15C. Wind uit het ZZW van 10 tot 15 km/u.",
+  "date" : "2017-10-12T17:15+02:00",
   "type" : "training"
 } ]
