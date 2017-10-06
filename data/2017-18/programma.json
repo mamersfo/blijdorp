@@ -1,7 +1,8 @@
 [
   {
 		"date": "2017-10-07T08:30+02:00",
-		"teams": ["AGE-GGK", "Blijdorp"]
+		"teams": ["AGE-GGK", "Blijdorp"],
+    "absent": "Lil"
 	},
   {
 		"date": "2017-10-14T09:45+02:00",
