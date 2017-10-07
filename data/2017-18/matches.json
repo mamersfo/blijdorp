@@ -1,5 +1,23 @@
 [
   {
+		"date": "2017-10-07",
+		"league": "3e klasse 7 najaar",
+		"teams": ["AGE-GGK", "Blijdorp"],
+		"captain": "Ruben",
+		"result": [3, 1],
+		"goals":{
+			"Helene": 1
+		},
+		"assists": {
+		},
+		"absent": {
+      "Lil": 1
+		},
+		"keeper": {
+			"Jan": 1
+		}
+	},
+  {
 		"date": "2017-09-30",
 		"league": "3e klasse 7 najaar",
 		"teams": ["Blijdorp", "Zestienhoven"],
