@@ -5,7 +5,11 @@
 		"date": "2017-10-07",
 		"fixtures": [
       ["AGE-GGK", "Blijdorp", 3, 1],
-      ["Zestienhoven", "Kethel Spaland", 4, 0]
+      ["Zestienhoven", "Kethel Spaland", 4, 0],
+      ["Excelsior'20", "HWD", 3, 4],
+      ["CWO", "Nieuwerkerk", 1, 5],
+      ["HOV/DJSCR", "Hermes DVS", 2, 8],
+      ["Spartaan'20", "GLZ Delfshaven", 1, 4]
 		]
 	},
   {
