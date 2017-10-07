@@ -2,6 +2,18 @@
   {
 		"latest": true,    
 		"competition": "3e klasse 7 najaar",
+		"date": "2017-10-07",
+		"fixtures": [
+      ["AGE-GGK", "Blijdorp"],
+      ["Zestienhoven", "Kethel Spaland"],
+      ["CWO", "Nieuwerkerk"],
+      ["Excelsior'20", "HWD"],
+      ["Spartaan'20", "GLZ Delfshaven"],
+      ["HOV/DJSCR", "Hermes DVS"]
+		]
+	},
+  {
+		"competition": "3e klasse 7 najaar",
 		"date": "2017-09-30",
 		"fixtures": [
       ["CWO", "HWD", 0, 4],

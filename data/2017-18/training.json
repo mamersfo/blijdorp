@@ -1,0 +1,464 @@
+[
+  {
+    "id": 1,
+    "section": "Techniek",
+    "category": "Balcontrole",
+    "title": "Binnenkant voet zijwaarts meenemen",
+    "video": "8574854c-c955-4648-ad7b-ab89ef98ea84"
+  },
+  {
+    "id": 2,
+    "section": "Techniek",
+    "category": "Balcontrole",
+    "title": "Scheertrap",
+    "video": "95533d56-59fb-463d-9166-754ebb828c11"
+  },
+  {
+    "id": 3,
+    "section": "Techniek",
+    "category": "Balcontrole",
+    "title": "Wreefduw",
+    "video": "7e598b22-2535-4107-a46f-b5056092786e"
+  },
+  {
+    "id": 17,
+    "section": "Techniek",
+    "category": "Balcontrole",
+    "title": "Wreefcontrole",
+    "video": "5b522e6e-0c78-4329-b529-6fdd382e7716"
+  },
+  {
+    "id": 4,
+    "section": "Techniek",
+    "category": "Balcontrole",
+    "title": "Dubbele V",
+    "video": "e4ecdd66-4732-4c6f-89b0-c7d9d0c5125f"
+  },
+  {
+    "id": 5,
+    "section": "Techniek",
+    "category": "Balcontrole",
+    "title": "De enkelrol",
+    "video": "c918b65a-85e2-427f-9590-735ff42ffea9"
+  },
+  {
+    "id": 6,
+    "section": "Techniek",
+    "category": "Balcontrole",
+    "title": "De heupdraai",
+    "video": "01679cce-91be-4d3c-8111-1767ab9c22a8"
+  },
+  {
+    "id": 7,
+    "section": "Techniek",
+    "category": "Balcontrole",
+    "title": "De tol",
+    "video": "5fb7d658-ab52-4942-92cf-843c4e19e139"
+  },
+  {
+    "id": 8,
+    "section": "Techniek",
+    "category": "Balcontrole",
+    "title": "Tik Tak (afrollen teen tot hak)",
+    "video": "7f29ef6a-45e6-4421-91d8-49cf708d4966"
+  },
+  {
+    "id": 9,
+    "section": "Techniek",
+    "category": "Balcontrole",
+    "title": "Tik Tak (met afrollen, Zig Zag)",
+    "video": "23dbac08-bdc1-4cdb-85c7-fcb680066eac"
+  },
+  {
+    "id": 10,
+    "section": "Techniek",
+    "category": "Balcontrole",
+    "title": "Tik Tak (met overstap)",
+    "video": "1e84e59a-fd56-45a1-94af-a195e342d97e"
+  },
+  {
+    "id": 11,
+    "section": "Techniek",
+    "category": "Kappen",
+    "title": "De Fopstop",
+    "video": "20da73b4-5ffb-4e17-823e-a434849d4b3d"
+  },
+  {
+    "id": 12,
+    "section": "Techniek",
+    "category": "Kappen",
+    "title": "De Maestro",
+    "video": "96970e07-727d-4137-aecc-f566b70f7a10"
+  },
+  {
+    "id": 13,
+    "section": "Techniek",
+    "category": "Kappen",
+    "title": "De overstap",
+    "video": "c393ec52-dbb4-46ef-959e-102fd8350d8d"
+  },
+  {
+    "id": 14,
+    "section": "Techniek",
+    "category": "Draaien",
+    "title": "De 'binnen' wegdraai",
+    "video": "f7901339-df72-4c24-892f-25302dca0820"
+  },
+  {
+    "id": 15,
+    "section": "Techniek",
+    "category": "Draaien",
+    "title": "De Haak",
+    "video": "2058ad93-3797-4d8f-8017-e2e96947137c"
+  },
+  {
+    "id": 16,
+    "section": "Techniek",
+    "category": "Draaien",
+    "title": "De 'V'",
+    "video": "73ebfe47-b952-4081-aa04-4f7d1ddd9cb5"
+  },
+  {
+    "id": 18,
+    "section": "Techniek",
+    "category": "Passeren",
+    "title": "De dubbelkluts",
+    "video": "idvideo931abc08-dad3-48cc-acd8-b18849fca85b"
+  },
+  {
+    "id": 19,
+    "section": "Techniek",
+    "category": "Passeren",
+    "title": "De flits",
+    "video": "4d1f925e-cf1d-473b-b500-582cc4552a1b"
+  },
+  {
+    "id": 20,
+    "section": "Techniek",
+    "category": "Passeren",
+    "title": "De schaar",
+    "video": "4d1f925e-cf1d-473b-b500-582cc4552a1b"
+  },
+  {
+    "id": 21,
+    "section": "Techniek",
+    "category": "Passeren",
+    "title": "De Zig-Zag",
+    "video": "89b6bc70-7026-4731-bdf1-682d80585ac7"
+  },
+  {
+    "id": 22,
+    "section": "Techniek",
+    "category": "Passeren",
+    "title": "De zijstap",
+    "video": "4956f0db-267c-41ae-9935-1b63fccaee76"
+  },
+  {
+    "id": 23,
+    "section": "Techniek",
+    "category": "Trappen",
+    "title": "Trap met binnenkant voet",
+    "video": "6a11f05b-084e-4899-8cda-e1133f7423ad"
+  },
+  {
+    "id": 24,
+    "section": "Techniek",
+    "category": "Trappen",
+    "title": "Wreeftrap",
+    "video": "7168866e-314f-4241-85db-bd822fe1c74d"
+  },
+  {
+    "id": 25,
+    "section": "Tactiek",
+    "category": "Pass en trap",
+    "title": "De Y-vorm (basis)",
+    "video": "c747327c-fa2e-4c1e-8f95-cd731b78c3bb"
+  },
+  {
+    "id": 26,
+    "section": "Tactiek",
+    "category": "Pass en trap",
+    "title": "Uitspelen van een 2:1 situatie",
+    "video": "f816be1c-d4f9-402c-85b6-2f882ec31826"
+  },
+  {
+    "id": 27,
+    "section": "Tactiek",
+    "category": "Pass en trap",
+    "title": "Voorbereiden van het uitspelen van een 2:1 situatie",
+    "video": "3a4e8000-f58b-4a9b-8e52-7c8681204d1d"
+  },
+  {
+    "id": 28,
+    "section": "Tactiek",
+    "category": "Pass en trap",
+    "title": "De passing driehoek (variatie #1)",
+    "video": "b905c78f-1a82-4429-87a6-ced5f77038c8"
+  },
+  {
+    "id": 29,
+    "section": "Tactiek",
+    "category": "Pass en trap",
+    "title": "Het verbeteren van de wreefpass over lange afstand",
+    "video": "ce7f6e41-af90-4435-8a16-22227d39eb8d"
+  },
+  {
+    "id": 30,
+    "section": "Tactiek",
+    "category": "Magic 5/7 variaties",
+    "title": "Magic 7 (basisvorm)",
+    "video": "abf8e762-9827-454a-9024-a45ad16705f2"
+  },
+  {
+    "id": 31,
+    "section": "Tactiek",
+    "category": "Magic 5/7 variaties",
+    "title": "Magic 7 (variatie)",
+    "video": "2a8f879e-0db0-4880-85f3-6fc74c59372a"
+  },
+  {
+    "id": 32,
+    "section": "Tactiek",
+    "category": "Magic 5/7 variaties",
+    "title": "Techniek (Vierkant variatie 7)",
+    "video": "fea02363-8e89-4200-9d58-8337d490f78b"
+  },
+  {
+    "id": 33,
+    "section": "Tactiek",
+    "category": "Magic 5/7 variaties",
+    "title": "Techniek (Vierkant variatie 9)",
+    "video": "b08e2d8d-7d03-4d6f-aa95-30b0677dd7d8"
+  },
+  {
+    "id": 46,
+    "section": "Tactiek",
+    "category": "Partijvorm 1:1",
+    "title": "1 tegen 1 lijnvoetbal",
+    "video": "b6316496-956f-4f01-8a1c-ac4a6b399a4d"
+  },
+  {
+    "id": 47,
+    "section": "Tactiek",
+    "category": "Partijvorm 1:1",
+    "title": "1 tegen 1 met 2 goaltjes aan de zijkant",
+    "video": "21b5f1a4-6145-475b-9348-73b7a9c1765f"
+  },
+  {
+    "id": 48,
+    "section": "Tactiek",
+    "category": "Partijvorm 1:1",
+    "title": "1 tegen 1 met 2 kleine goaltjes (sprintvorm)",
+    "video": "3369ae86-6b43-4386-9a82-a1856c93f4ff"
+  },
+  {
+    "id": 49,
+    "section": "Tactiek",
+    "category": "Partijvorm 1:1",
+    "title": "1 tegen 1 met 4 goaltjes (sprintvorm)",
+    "video": "152761f3-8bfc-43ff-8ba4-1256dcd7a61a"
+  },
+  {
+    "id": 50,
+    "section": "Tactiek",
+    "category": "Partijvorm 1:1",
+    "title": "1 tegen 1 met vrijlopen met 4 goals ",
+    "video": "31b812cf-7964-4dd5-9f0d-ac3a9a827d39"
+  },
+  {
+    "id": 35,
+    "section": "Tactiek",
+    "category": "Partijvorm 2:1",
+    "title": "2 tegen 1 met 3 goaltjes",
+    "video": "9cc9ae23-8c99-44be-af58-70ac72d65593"
+  },
+  {
+    "id": 59,
+    "section": "Tactiek",
+    "category": "Partijvorm 2:2",
+    "title": "2 (+k) tegen 2 (+k) grote goals (lang smal veld)",
+    "video": "c0b2bc9a-bfd5-4951-8646-62b87ade469f"
+  },
+  {
+    "id": 34,
+    "section": "Tactiek",
+    "category": "Partijvorm 2:2",
+    "title": "2 (+k) tegen 2 (+k) met 2 grote goals",
+    "video": "e5366b14-c612-404d-a746-eef3dec4b291"
+  },
+  {
+    "id": 51,
+    "section": "Tactiek",
+    "category": "Partijvorm 2:2",
+    "title": "2 tegen 2 lijnvoetbal",
+    "video": "8c4f02bf-7cf8-479c-91f6-ce027d5372be"
+  },
+  {
+    "id": 36,
+    "section": "Tactiek",
+    "category": "Partijvorm 3:2",
+    "title": "3 (+k) tegen 2 (+k) grote goals",
+    "video": "49edcc08-e860-4e91-8315-24bbbb026b0e"
+  },
+  {
+    "id": 60,
+    "section": "Tactiek",
+    "category": "Partijvorm 3:2",
+    "title": "3 (+k) tegen 2 (+k) met grote goals (lang smal veld)",
+    "video": "bdae85c5-add1-4335-99ed-8dce3771828e"
+  },
+  {
+    "id": 42,
+    "section": "Tactiek",
+    "category": "Partijvorm 3:2",
+    "title": "3 tegen 2 met 2 kleine goaltjes",
+    "video": "4340c177-45cf-4860-a031-265f88af9b12"
+  },
+  {
+    "id": 37,
+    "section": "Tactiek",
+    "category": "Partijvorm 3:2",
+    "title": "3 tegen 2 met 4 goaltjes",
+    "video": "986652db-2400-44e3-9873-1dddef5e2471"
+  },
+  {
+    "id": 52,
+    "section": "Tactiek",
+    "category": "Partijvorm 3:3",
+    "title": "3 (+k) tegen 3 (+k) grote goals",
+    "video": "dd8506aa-2dde-41b8-a81d-4c5a2d616897"
+  },
+  {
+    "id": 53,
+    "section": "Tactiek",
+    "category": "Partijvorm 3:3",
+    "title": "3 tegen 3 lijnvoetbal",
+    "video": "2e9211f5-c4ed-4d48-97b0-f79b59ee1963"
+  },
+  {
+    "id": 38,
+    "section": "Tactiek",
+    "category": "Partijvorm 4:3",
+    "title": "4 (+k) tegen 3 (+k) met 2 grote goals",
+    "video": "45fe2157-97f7-430d-b6ea-893679042537"
+  },
+  {
+    "id": 43,
+    "section": "Tactiek",
+    "category": "Partijvorm 4:3",
+    "title": "4 (+k) tegen 3 (+k) met grote goals (lang smal veld)",
+    "video": "cdb817f9-8da4-4f6d-bdd6-af8b3433346f"
+  },
+  {
+    "id": 44,
+    "section": "Tactiek",
+    "category": "Partijvorm 4:3",
+    "title": "4 tegen 3 met 2 kleine goaltjes",
+    "video": "5a75a105-d6ad-4ac0-8205-c946402474de"
+  },
+  {
+    "id": 40,
+    "section": "Tactiek",
+    "category": "Partijvorm 4:3",
+    "title": "4 tegen 3 met 4 goaltjes",
+    "video": "307b3975-b170-414c-b070-c1e6775a7dc6"
+  },
+  {
+    "id": 39,
+    "section": "Tactiek",
+    "category": "Partijvorm 4:4",
+    "title": "4 (+k) tegen 4 (+k) met 2 grote goals",
+    "video": "45355af6-11aa-4210-9cd5-535441ed4e5c"
+  },
+  {
+    "id": 55,
+    "section": "Tactiek",
+    "category": "Partijvorm 4:4",
+    "title": "4 (+k) tegen 4 (+k) met 2 grote goals (5:5)",
+    "video": "b9a986b3-16bf-4291-99f5-c87ee8168139"
+  },
+  {
+    "id": 41,
+    "section": "Tactiek",
+    "category": "Partijvorm 4:4",
+    "title": "4 tegen 4 basisvorm",
+    "video": "4eb839ee-f257-49a0-b37c-9343f50788bb"
+  },
+  {
+    "id": 45,
+    "section": "Tactiek",
+    "category": "Partijvorm 4:4",
+    "title": "4 tegen 4 met 2 kleine goaltjes",
+    "video": "36a770f9-119f-4440-b5bd-d3d04f2c718e"
+  },
+  {
+    "id": 61,
+    "section": "Tactiek",
+    "category": "Afwerken",
+    "title": "1 tegen 1 met 2 grote goals (sprintvorm)",
+    "video": "a0bdc486-6fbd-49e5-b6ef-0666ed1a2b2a"
+  },
+  {
+    "id": 62,
+    "section": "Tactiek",
+    "category": "Afwerken",
+    "title": "1 tegen 1 sprintduel afwerken",
+    "video": "bb1bddc6-0896-407f-9c32-6c4a915dab10"
+  },
+  {
+    "id": 63,
+    "section": "Tactiek",
+    "category": "Afwerken",
+    "title": "Afwerkvorm zonder weerstand",
+    "video": "a23c57db-bf8b-4900-80be-6bea2d9c867b"
+  },
+  {
+    "id": 64,
+    "section": "Tactiek",
+    "category": "Afwerken",
+    "title": "Combinatie passing en afronding",
+    "video": "a17fd092-c575-494f-bf9a-75dacbe82c72"
+  },
+  {
+    "id": 65,
+    "section": "Tactiek",
+    "category": "Afwerken",
+    "title": "Opendraaien en afronden 1 grote goal",
+    "video": "8798c94c-a2ad-4fdf-973d-b6b6d3dee1b6"
+  },
+  {
+    "id": 66,
+    "section": "Tactiek",
+    "category": "Afwerken",
+    "title": "Verbeteren van het afwerken op goal (basisvorm)",
+    "video": "50256bde-9fac-484a-9442-bc2e862612d7"
+  },
+  {
+    "id": 67,
+    "section": "Tactiek",
+    "category": "Afwerken",
+    "title": "Verbeteren van het afwerken op goal (variatie #1)",
+    "video": "f78febaa-97dc-44b5-b3f2-3ec32c03b77d"
+  },
+  {
+    "id": 68,
+    "section": "Tactiek",
+    "category": "Afwerken",
+    "title": "Verbeteren van het afwerken op goal (variatie #2)",
+    "video": "91ac1251-ddc1-43b3-bf5d-f8e2148814ef"
+  },
+  {
+    "id": 69,
+    "section": "Tactiek",
+    "category": "Afwerken",
+    "title": "Verbeteren van het afwerken op goal (variatie #3)",
+    "video": "a17f4f88-4b81-4cca-b4e3-8ed02a2aedab"
+  },
+  {
+    "id": 70,
+    "section": "Tactiek",
+    "category": "Afwerken",
+    "title": "Afwerken grote goal & 2 kleine goaltjes (tegenstander van voren)",
+    "video": "ac991f3f-383c-41a3-9fa0-a5938c1bb648"
+  }
+]

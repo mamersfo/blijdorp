@@ -131,6 +131,18 @@
 		},
 		"position": [ 51.9606586, 4.6009416 ]
 	},
+  {
+    "id": "BBDY08C",
+    "name": "Spartaan'20",
+    "fullname": "RKSV Spartaan'20",
+    "website": "spartaan20.nl",
+    "address": {
+      "street": "Oldegaarde 251",
+      "postalCode": "3084 AA",
+      "city": "Rotterdam"
+    },
+    "position": [ 51.8782325, 4.4894363 ]
+  },
 	{
 		"id": "FRKT31W",
 		"name": "Zestienhoven",
