@@ -1,30 +1,27 @@
 [ {
-  "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
-  "fcttext_metric" : "Regen en wind. Maximaal 16C. Wind uit het WZW van 30 tot 50 km/u. Kans op regen 90%. Regenval ongeveer 6 mm. Windstoten kunnen af en toe meer dan 65 km/u bereiken.",
-  "date" : "2017-10-07T08:30+02:00",
-  "teams" : [ "AGE-GGK", "Blijdorp" ],
-  "absent" : "Lil",
-  "day" : 7,
-  "type" : "match"
-}, {
   "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
-  "fcttext_metric" : "Regen. Maximaal 15C. Wind uit het WZW van 25 tot 40 km/u. Kans op regen 80%. Regenval ongeveer 6 mm. Windstoten kunnen af en toe meer dan 65 km/u bereiken.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext_metric" : "Lichte regen. Maximaal 16C. Wind uit het WZW van 15 tot 30 km/u. Kans op regen 40%.",
   "date" : "2017-10-10T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext_metric" : "Bewolkt en winderig. Maximaal 16C. Wind uit het WZW van 25 tot 40 km/u.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 15C. Wind uit het W van 15 tot 30 km/u.",
   "date" : "2017-10-12T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 17C. Wind uit het ZW van 15 tot 25 km/u.",
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 19C. Wind uit het ZW van 15 tot 25 km/u.",
   "date" : "2017-10-14T09:45+02:00",
   "teams" : [ "Blijdorp", "CWO" ],
   "day" : 14,
   "type" : "match"
+}, {
+  "title" : "dinsdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext_metric" : "Regenbuien. Maximaal 16C. Wind uit het ZZO van 15 tot 25 km/u. Kans op regen 50%.",
+  "date" : "2017-10-17T17:15+02:00",
+  "type" : "training"
 } ]
