@@ -18,13 +18,13 @@
   "team" : "Kethel Spaland"
 }, {
   "matches" : {
-    "wins" : 4,
+    "wins" : 3,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 39,
-    "against" : 4
+    "for" : 28,
+    "against" : 3
   },
   "form" : [ {
     "result" : "win",
@@ -32,9 +32,6 @@
   }, {
     "result" : "win",
     "text" : "Spartaan'20 1-4 GLZ Delfshaven"
-  }, {
-    "result" : "win",
-    "text" : "GLZ Delfshaven 11-1 HOV/DJSCR"
   }, {
     "result" : "win",
     "text" : "HWD 0-11 GLZ Delfshaven"
@@ -66,27 +63,6 @@
   "team" : "Excelsior'20"
 }, {
   "matches" : {
-    "wins" : 0,
-    "draws" : 0,
-    "losses" : 3
-  },
-  "goals" : {
-    "for" : 5,
-    "against" : 29
-  },
-  "form" : [ {
-    "result" : "loss",
-    "text" : "HWD 10-2 HOV/DJSCR"
-  }, {
-    "result" : "loss",
-    "text" : "HOV/DJSCR 2-8 Hermes DVS"
-  }, {
-    "result" : "loss",
-    "text" : "GLZ Delfshaven 11-1 HOV/DJSCR"
-  } ],
-  "team" : "HOV/DJSCR"
-}, {
-  "matches" : {
     "wins" : 2,
     "draws" : 0,
     "losses" : 1
@@ -108,20 +84,17 @@
   "team" : "AGE-GGK"
 }, {
   "matches" : {
-    "wins" : 3,
+    "wins" : 2,
     "draws" : 1,
     "losses" : 0
   },
   "goals" : {
-    "for" : 21,
-    "against" : 7
+    "for" : 13,
+    "against" : 5
   },
   "form" : [ {
     "result" : "draw",
     "text" : "Hermes DVS 5-5 Spartaan'20"
-  }, {
-    "result" : "win",
-    "text" : "HOV/DJSCR 2-8 Hermes DVS"
   }, {
     "result" : "win",
     "text" : "Kethel Spaland 0-4 Hermes DVS"
@@ -177,18 +150,15 @@
   "team" : "CWO"
 }, {
   "matches" : {
-    "wins" : 3,
+    "wins" : 2,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 18,
-    "against" : 16
+    "for" : 8,
+    "against" : 14
   },
   "form" : [ {
-    "result" : "win",
-    "text" : "HWD 10-2 HOV/DJSCR"
-  }, {
     "result" : "win",
     "text" : "Excelsior'20 3-4 HWD"
   }, {

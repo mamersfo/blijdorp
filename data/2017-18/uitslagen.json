@@ -5,7 +5,6 @@
 		"date": "2017-10-14",
 		"fixtures": [
       ["Hermes DVS", "Spartaan'20", 5, 5],
-      ["HWD", "HOV/DJSCR", 10, 2],
       ["GLZ Delfshaven", "Excelsior'20", 13, 2],
       ["Nieuwerkerk", "Zestienhoven", 7, 2],
       ["Blijdorp", "CWO", 4, 2]
@@ -19,7 +18,6 @@
       ["Zestienhoven", "Kethel Spaland", 4, 0],
       ["Excelsior'20", "HWD", 3, 4],
       ["CWO", "Nieuwerkerk", 1, 5],
-      ["HOV/DJSCR", "Hermes DVS", 2, 8],
       ["Spartaan'20", "GLZ Delfshaven", 1, 4]
 		]
 	},
@@ -30,7 +28,6 @@
       ["CWO", "HWD", 0, 4],
       ["Blijdorp", "Zestienhoven", 2, 1],
       ["Kethel Spaland", "Hermes DVS", 0, 4],
-      ["GLZ Delfshaven", "HOV/DJSCR", 11, 1],
       ["AGE-GGK", "Excelsior'20", 1, 2]
 		]
 	},
