@@ -1,5 +1,24 @@
 [
   {
+		"date": "2017-10-21",
+		"league": "Beker groep 3-16",
+		"teams": ["Blijdorp", "Excelsior'20"],
+		"captain": "Inder",
+		"result": [3, 1],
+		"goals":{
+      "Zay": 2
+		},
+		"assists": {
+      "Senn": 2
+		},
+		"absent": {
+      "Helene": 1,
+      "Jan": 1
+		},
+		"keeper": {
+		}
+	},
+  {
 		"date": "2017-10-14",
 		"league": "3e klasse 7 najaar",
 		"teams": ["Blijdorp", "CWO"],
