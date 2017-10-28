@@ -75,15 +75,18 @@
   "team" : "Excelsior'20"
 }, {
   "matches" : {
-    "wins" : 3,
+    "wins" : 4,
     "draws" : 0,
     "losses" : 1
   },
   "goals" : {
-    "for" : 10,
-    "against" : 4
+    "for" : 12,
+    "against" : 5
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "AGE-GGK 2-1 Nieuwerkerk"
+  }, {
     "result" : "win",
     "text" : "Kethel Spaland 0-4 AGE-GGK"
   }, {
@@ -125,13 +128,16 @@
   "matches" : {
     "wins" : 2,
     "draws" : 0,
-    "losses" : 1
+    "losses" : 2
   },
   "goals" : {
-    "for" : 12,
-    "against" : 7
+    "for" : 13,
+    "against" : 9
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "AGE-GGK 2-1 Nieuwerkerk"
+  }, {
     "result" : "win",
     "text" : "Nieuwerkerk 7-2 Zestienhoven"
   }, {
