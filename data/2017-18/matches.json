@@ -1,5 +1,29 @@
 [
   {
+		"date": "2017-10-28",
+		"league": "3e klasse 7 najaar",
+		"teams": ["Blijdorp", "Kethel Spaland"],
+		"captain": "Senn",
+		"result": [6, 1],
+		"goals":{
+      "Raf": 1,
+      "Inder": 2,
+      "Zay": 1,
+      "Helene": 1,
+      "Senn": 1
+		},
+		"assists": {
+      "Senn": 1,
+      "Lil": 1,
+      "Raf": 1
+		},
+		"absent": {
+		},
+		"keeper": {
+			"Ruben": 1
+		}
+	},
+  {
 		"date": "2017-10-21",
 		"league": "Beker groep 3-16",
 		"teams": ["Blijdorp", "Excelsior'20"],

@@ -1,6 +1,16 @@
 [
   {
-		"latest": true,    
+		"latest": true,
+		"competition": "3e klasse 7 najaar",
+		"date": "2017-10-21",
+		"fixtures": [
+      ["Zestienhoven", "HWD", 10, 1],
+      ["Excelsior'20", "Hermes DVS", 2, 6],
+      ["CWO", "GLZ Delfshaven", 1, 10],
+      ["Blijdorp", "Kethel Spaland", 6, 1]
+		]
+	},
+  {
     "competition": "Beker Groep 3-16",
 		"date": "2017-10-21",
 		"fixtures": [
@@ -8,7 +18,6 @@
 		]
 	},
   {
-		"latest": true,
 		"competition": "3e klasse 7 najaar",
 		"date": "2017-10-21",
 		"fixtures": [
