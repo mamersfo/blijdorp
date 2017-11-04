@@ -4,6 +4,17 @@
 		"competition": "3e klasse 7 najaar",
 		"date": "2017-10-21",
 		"fixtures": [
+      ["Kethel Spaland", "CWO", 0, 4],
+      ["Nieuwerkerk", "Blijdorp", 4, 2],
+      ["Hermes DVS", "AGE-GGK", 2, 1],
+      ["HWD", "Spartaan'20", 2, 8],
+      ["GLZ Delfshaven", "Zestienhoven", 13, 0]
+		]
+	},
+  {
+		"competition": "3e klasse 7 najaar",
+		"date": "2017-10-21",
+		"fixtures": [
       ["Zestienhoven", "HWD", 10, 1],
       ["Excelsior'20", "Hermes DVS", 2, 6],
       ["CWO", "GLZ Delfshaven", 1, 10],

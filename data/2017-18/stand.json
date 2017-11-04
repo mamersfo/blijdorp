@@ -2,13 +2,16 @@
   "matches" : {
     "wins" : 0,
     "draws" : 0,
-    "losses" : 4
+    "losses" : 5
   },
   "goals" : {
     "for" : 1,
-    "against" : 18
+    "against" : 22
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Kethel Spaland 0-4 CWO"
+  }, {
     "result" : "loss",
     "text" : "Blijdorp 6-1 Kethel Spaland"
   }, {
@@ -24,15 +27,18 @@
   "team" : "Kethel Spaland"
 }, {
   "matches" : {
-    "wins" : 4,
+    "wins" : 5,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 38,
+    "for" : 51,
     "against" : 4
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "GLZ Delfshaven 13-0 Zestienhoven"
+  }, {
     "result" : "win",
     "text" : "CWO 1-10 GLZ Delfshaven"
   }, {
@@ -77,13 +83,16 @@
   "matches" : {
     "wins" : 4,
     "draws" : 0,
-    "losses" : 1
+    "losses" : 2
   },
   "goals" : {
-    "for" : 12,
-    "against" : 5
+    "for" : 13,
+    "against" : 7
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Hermes DVS 2-1 AGE-GGK"
+  }, {
     "result" : "win",
     "text" : "AGE-GGK 2-1 Nieuwerkerk"
   }, {
@@ -95,22 +104,22 @@
   }, {
     "result" : "loss",
     "text" : "AGE-GGK 1-2 Excelsior'20"
-  }, {
-    "result" : "win",
-    "text" : "Zestienhoven 1-2 AGE-GGK"
   } ],
   "team" : "AGE-GGK"
 }, {
   "matches" : {
-    "wins" : 3,
+    "wins" : 4,
     "draws" : 1,
     "losses" : 0
   },
   "goals" : {
-    "for" : 19,
-    "against" : 7
+    "for" : 21,
+    "against" : 8
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Hermes DVS 2-1 AGE-GGK"
+  }, {
     "result" : "win",
     "text" : "Excelsior'20 2-6 Hermes DVS"
   }, {
@@ -126,15 +135,18 @@
   "team" : "Hermes DVS"
 }, {
   "matches" : {
-    "wins" : 2,
+    "wins" : 3,
     "draws" : 0,
     "losses" : 2
   },
   "goals" : {
-    "for" : 13,
-    "against" : 9
+    "for" : 17,
+    "against" : 11
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Nieuwerkerk 4-2 Blijdorp"
+  }, {
     "result" : "loss",
     "text" : "AGE-GGK 2-1 Nieuwerkerk"
   }, {
@@ -150,15 +162,18 @@
   "team" : "Nieuwerkerk"
 }, {
   "matches" : {
-    "wins" : 1,
+    "wins" : 2,
     "draws" : 0,
     "losses" : 4
   },
   "goals" : {
-    "for" : 14,
+    "for" : 18,
     "against" : 24
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Kethel Spaland 0-4 CWO"
+  }, {
     "result" : "loss",
     "text" : "CWO 1-10 GLZ Delfshaven"
   }, {
@@ -170,22 +185,22 @@
   }, {
     "result" : "loss",
     "text" : "CWO 0-4 HWD"
-  }, {
-    "result" : "win",
-    "text" : "Excelsior'20 1-10 CWO"
   } ],
   "team" : "CWO"
 }, {
   "matches" : {
     "wins" : 2,
     "draws" : 0,
-    "losses" : 2
+    "losses" : 3
   },
   "goals" : {
-    "for" : 9,
-    "against" : 24
+    "for" : 11,
+    "against" : 32
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "HWD 2-8 Spartaan'20"
+  }, {
     "result" : "loss",
     "text" : "Zestienhoven 10-1 HWD"
   }, {
@@ -203,13 +218,16 @@
   "matches" : {
     "wins" : 3,
     "draws" : 0,
-    "losses" : 1
+    "losses" : 2
   },
   "goals" : {
-    "for" : 13,
-    "against" : 7
+    "for" : 15,
+    "against" : 11
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Nieuwerkerk 4-2 Blijdorp"
+  }, {
     "result" : "win",
     "text" : "Blijdorp 6-1 Kethel Spaland"
   }, {
@@ -227,13 +245,16 @@
   "matches" : {
     "wins" : 2,
     "draws" : 0,
-    "losses" : 3
+    "losses" : 4
   },
   "goals" : {
     "for" : 18,
-    "against" : 12
+    "against" : 25
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "GLZ Delfshaven 13-0 Zestienhoven"
+  }, {
     "result" : "win",
     "text" : "Zestienhoven 10-1 HWD"
   }, {
@@ -245,22 +266,22 @@
   }, {
     "result" : "loss",
     "text" : "Blijdorp 2-1 Zestienhoven"
-  }, {
-    "result" : "loss",
-    "text" : "Zestienhoven 1-2 AGE-GGK"
   } ],
   "team" : "Zestienhoven"
 }, {
   "matches" : {
-    "wins" : 0,
+    "wins" : 1,
     "draws" : 1,
     "losses" : 1
   },
   "goals" : {
-    "for" : 6,
-    "against" : 9
+    "for" : 14,
+    "against" : 11
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "HWD 2-8 Spartaan'20"
+  }, {
     "result" : "draw",
     "text" : "Hermes DVS 5-5 Spartaan'20"
   }, {

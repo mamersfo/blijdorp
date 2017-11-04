@@ -1,5 +1,23 @@
 [
   {
+		"date": "2017-11-04",
+		"league": "3e klasse 7 najaar",
+		"teams": ["Nieuwerkerk", "Blijdorp"],
+		"captain": "Helene",
+		"result": [4, 2],
+		"goals":{
+      "Ruben": 1,
+      "Noah": 1
+		},
+		"assists": {
+		},
+		"absent": {
+		},
+		"keeper": {
+			"Jan": 1
+		}
+	},
+  {
 		"date": "2017-10-28",
 		"league": "3e klasse 7 najaar",
 		"teams": ["Blijdorp", "Kethel Spaland"],
