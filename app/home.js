@@ -23,6 +23,12 @@ export default class Home extends React.Component {
     });
   }
 
+  renderText(m) {
+    if ( m.fcttext_metric === undefined ||
+         m.fcttext_metric.length == 0 ) return m.fcttext;
+    return m.fcttext_metric;
+  }
+
   renderEvent(m) {
     if ( m.type === 'training' ) {
       return <span>Trainen</span>;
@@ -79,7 +85,7 @@ export default class Home extends React.Component {
                       <td>{m.title} <LocalDate date={m.date} month='long'/></td>
                       <td><LocalTime date={m.date} /></td>
                       <td>{ this.renderEvent(m) }</td>
-                      <td>{m.fcttext}</td>
+                      <td>{ this.renderText(m) }</td>
                       <td><img src={m.icon_url}/></td>     
                     </tr>
                   );

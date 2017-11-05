@@ -2,18 +2,21 @@
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/clear.gif",
   "fcttext" : "Overwegend helder. Maximaal 48F. Wind uit het ZZO van 5 tot 10 mpu.",
+  "fcttext_metric" : "",
   "date" : "2017-11-07T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Regenbuien. Maximaal 51F. Wind uit het WZW van 10 tot 20 mpu. Kans op regen 50%.",
+  "fcttext" : "Regenbuien. Maximaal 52F. Wind uit het WZW van 10 tot 15 mpu. Kans op regen 50%.",
+  "fcttext_metric" : "",
   "date" : "2017-11-09T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
   "fcttext" : "Regen. Maximaal 49F. Wind uit het WZW van 10 tot 20 mpu. Kans op regen 60%. Regenval ongeveer 0.25 inch.",
+  "fcttext_metric" : "",
   "date" : "2017-11-14T17:15+02:00",
   "type" : "training"
 } ]
