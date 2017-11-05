@@ -11,16 +11,16 @@
 (def stats-filename   "stats.json")
 
 (def PLAYERS
-  {"Helene"  {:id 1 :name "Helene"  :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
-   "Inder"   {:id 2 :name "Inder"   :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
-   "Jan"     {:id 3 :name "Jan"     :matches 0 :goals 0 :assists 0 :total 0 :position :doel}
-   "Lil"     {:id 4 :name "Lil"     :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
-   "Noah"    {:id 5 :name "Noah"    :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
-   "Raf"     {:id 6 :name "Raf"     :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
-   "Ruben"   {:id 7 :name "Ruben"   :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
-   "Senn"    {:id 8 :name "Senn"    :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
-   "Tije"    {:id 9 :name "Tije"    :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
-   "Zay"     {:id 10 :name "Zay"    :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}})
+  {"Helene"  {:id 1 :name  "Helene"  :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
+   "Inder"   {:id 2 :name  "Inder"   :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
+   "Jan"     {:id 3 :name  "Jan"     :matches 0 :goals 0 :assists 0 :total 0 :position :doel}
+   "Lil"     {:id 4 :name  "Lil"     :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
+   "Noah"    {:id 5 :name  "Noah"    :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
+   "Raf"     {:id 6 :name  "Raf"     :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}
+   "Ruben"   {:id 7 :name  "Ruben"   :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
+   "Senn"    {:id 8 :name  "Senn"    :matches 0 :goals 0 :assists 0 :total 0 :position :centrum}
+   "Tije"    {:id 9 :name  "Tije"    :matches 0 :goals 0 :assists 0 :total 0 :position :verdediging}
+   "Zay"     {:id 10 :name "Zay"     :matches 0 :goals 0 :assists 0 :total 0 :position :aanval}})
 
 (defn parse-matches
   []

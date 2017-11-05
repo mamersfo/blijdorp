@@ -79,7 +79,7 @@ export default class Home extends React.Component {
                       <td>{m.title} <LocalDate date={m.date} month='long'/></td>
                       <td><LocalTime date={m.date} /></td>
                       <td>{ this.renderEvent(m) }</td>
-                      <td>{m.fcttext_metric}</td>
+                      <td>{m.fcttext}</td>
                       <td><img src={m.icon_url}/></td>     
                     </tr>
                   );
