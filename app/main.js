@@ -11,6 +11,7 @@ import Matches from './matches';
 import Stats from './stats';
 import Clubs from './clubs';
 import ChooseSeason from './choose-season';
+import Training from './training';
 
 function reducer(state = {season: '2017-18'}, action) {
 	switch(action.type) {
@@ -57,6 +58,11 @@ const childRoutes = [
 		path: 'clubs/Blijdorp',
 		component: Clubs
 	},
+  // {
+  //   id: 8,
+  //   path: 'oefenstof',
+  //   component: Training
+  // },
 	{
 		id: 7,
 		path: 'clubs/:club',
