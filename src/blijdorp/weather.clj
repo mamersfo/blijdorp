@@ -23,7 +23,7 @@
                  "donderdag" "vrijdag" "zaterdag"}]
     (map #(select-keys % [:title
                           :icon_url
-                          :fcttext_metric])
+                          :fcttext])
          (filter #(contains? titles (:title %))
                  (-> resp
                      :body
