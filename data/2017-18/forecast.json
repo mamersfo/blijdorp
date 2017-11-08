@@ -1,29 +1,22 @@
 [ {
-  "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 48F. Wind uit het ZZO van 5 tot 10 mpu.",
-  "fcttext_metric" : "",
-  "date" : "2017-11-07T17:15+02:00",
-  "type" : "training"
-}, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
-  "fcttext" : "Overwegend bewolkt. Maximaal 53F. Wind uit het ZW van 10 tot 15 mpu.",
-  "fcttext_metric" : "",
+  "icon_url" : "http://icons.wxug.com/i/c/k/cloudy.gif",
+  "fcttext" : "Bewolkt. Maximaal 53F. Wind uit het ZW van 10 tot 15 mpu.",
+  "fcttext_metric" : "Bewolkt. Maximaal 12C. Wind uit het ZW van 15 tot 25 km/u.",
   "date" : "2017-11-09T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/cloudy.gif",
   "fcttext" : "Bewolkt. Maximaal 48F. Wind uit het WZW van 10 tot 15 mpu.",
-  "fcttext_metric" : "",
+  "fcttext_metric" : "Bewolkt. Maximaal 9C. Wind uit het W van 15 tot 25 km/u.",
   "date" : "2017-11-14T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 49F. Wind uit het W van 10 tot 15 mpu.",
-  "fcttext_metric" : "",
+  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 50F. Wind uit het WZW van 10 tot 15 mpu.",
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 10C. Wind uit het WZW van 10 tot 15 km/u.",
   "date" : "2017-11-16T17:15+02:00",
   "type" : "training"
 } ]
