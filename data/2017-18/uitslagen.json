@@ -2,6 +2,15 @@
   {
 		"latest": true,
 		"competition": "3e klasse 7 najaar",
+		"date": "2017-11-18",
+		"fixtures": [
+      ["Blijdorp", "Excelsior'20", 4, 1],
+      ["Kethel Spaland", "HWD", 1, 1],
+      ["Hermes DVS", "GLZ Delfshaven", 0, 6]
+		]
+	},
+  {
+		"competition": "3e klasse 7 najaar",
 		"date": "2017-11-11",
 		"fixtures": [
       ["Excelsior'20", "Nieuwerkerk", 2, 9],

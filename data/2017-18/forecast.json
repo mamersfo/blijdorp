@@ -1,31 +1,22 @@
 [ {
-  "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Zich in de middag ontwikkelende lichte regen. Maximaal 49F. Wind uit het W van 15 tot 25 mpu. Kans op regen 50%. Windstoten kunnen af en toe meer dan 40 mpu bereiken.",
-  "fcttext_metric" : "Zich in de middag ontwikkelende lichte regen. Maximaal 9C. Wind uit het W van 25 tot 40 km/u. Kans op regen 50%. Windstoten kunnen af en toe meer dan 65 km/u bereiken.",
-  "date" : "2017-11-18T11:00+01:00",
-  "teams" : [ "Blijdorp", "Excelsior'20" ],
-  "day" : 18,
-  "type" : "match"
-}, {
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Lichte regen. Maximaal 50F. Wind uit het WZW van 5 tot 10 mpu. Kans op regen 50%.",
-  "fcttext_metric" : "Lichte regen. Maximaal 10C. Wind uit het WZW van 10 tot 15 km/u. Kans op regen 50%.",
+  "fcttext" : "Zich in de middag ontwikkelende lichte regen. Maximaal 51F. Wind uit het ZW van 10 tot 15 mpu. Kans op regen 70%.",
+  "fcttext_metric" : "Zich in de middag ontwikkelende lichte regen. Maximaal 10C. Wind uit het ZW van 15 tot 25 km/u. Kans op regen 70%.",
   "date" : "2017-11-21T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Lichte regen en winderig. Maximaal 55F. Wind uit het ZW van 20 tot 30 mpu. Kans op regen 50%.",
-  "fcttext_metric" : "Lichte regen en winderig. Maximaal 13C. Wind uit het ZW van 30 tot 50 km/u. Kans op regen 50%.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+  "fcttext" : "Overwegend bewolkt en winderig. Maximaal 57F. Wind uit het ZZW van 20 tot 30 mpu.",
+  "fcttext_metric" : "Overwegend bewolkt en winderig. Maximaal 14C. Wind uit het ZZW van 30 tot 50 km/u.",
   "date" : "2017-11-23T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
-  "fcttext" : "Overwegend bewolkt. Maximaal 56F. Wind uit het ZZW van 15 tot 25 mpu.",
-  "fcttext_metric" : "Overwegend bewolkt. Maximaal 13C. Wind uit het ZZW van 25 tot 40 km/u.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext" : "Middagregenbuien. Maximaal 55F. Wind uit het ZZW van 15 tot 25 mpu. Kans op regen 60%.",
+  "fcttext_metric" : "Middagregenbuien. Maximaal 13C. Wind uit het ZZW van 25 tot 40 km/u. Kans op regen 60%.",
   "date" : "2017-11-25T10:30+01:00",
   "teams" : [ "Hermes DVS", "Blijdorp" ],
   "day" : 25,

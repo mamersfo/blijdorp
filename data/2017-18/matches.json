@@ -1,5 +1,28 @@
 [
   {
+		"date": "2017-11-18",
+		"league": "3e klasse 7 najaar",
+		"teams": ["Blijdorp", "Excelsior'20"],
+		"captain": "Noah",
+		"result": [4, 1],
+		"goals":{
+      "Senn": 1,
+      "Zay": 2,
+      "Lil": 1
+		},
+		"assists": {
+      "Zay": 1,
+      "Inder": 1,
+      "Ruben": 1
+		},
+		"absent": {
+      "Raf": 1
+		},
+		"keeper": {
+			"Jan": 1
+		}
+	},
+  {
 		"date": "2017-11-04",
 		"league": "3e klasse 7 najaar",
 		"teams": ["Nieuwerkerk", "Blijdorp"],
