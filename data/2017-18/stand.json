@@ -245,13 +245,16 @@
   "matches" : {
     "wins" : 2,
     "draws" : 1,
-    "losses" : 4
+    "losses" : 5
   },
   "goals" : {
-    "for" : 21,
-    "against" : 28
+    "for" : 23,
+    "against" : 33
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Zestienhoven 2-5 Spartaan'20"
+  }, {
     "result" : "draw",
     "text" : "CWO 3-3 Zestienhoven"
   }, {
@@ -263,22 +266,22 @@
   }, {
     "result" : "loss",
     "text" : "Nieuwerkerk 7-2 Zestienhoven"
-  }, {
-    "result" : "win",
-    "text" : "Zestienhoven 4-0 Kethel Spaland"
   } ],
   "team" : "Zestienhoven"
 }, {
   "matches" : {
-    "wins" : 2,
+    "wins" : 3,
     "draws" : 1,
     "losses" : 1
   },
   "goals" : {
-    "for" : 24,
-    "against" : 11
+    "for" : 29,
+    "against" : 13
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Zestienhoven 2-5 Spartaan'20"
+  }, {
     "result" : "win",
     "text" : "Spartaan'20 10-0 Kethel Spaland"
   }, {
