@@ -2,30 +2,39 @@
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
   "fcttext" : "Lichte regen in de ochtend. Maximaal 54F. Wind uit het WZW van 10 tot 20 mpu. Kans op regen 70%.",
-  "fcttext_metric" : "Lichte regen. Maximaal 12C. Wind uit het WZW van 15 tot 30 km/u. Kans op regen 70%.",
+  "fcttext_metric" : "Lichte regen in de ochtend. Maximaal 12C. Wind uit het WZW van 15 tot 30 km/u. Kans op regen 70%.",
   "date" : "2017-11-21T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext" : "Bewolkt en winderig. Maximaal 58F. Wind uit het ZZW van 20 tot 30 mpu.",
-  "fcttext_metric" : "Bewolkt en winderig. Maximaal 14C. Wind uit het ZZW van 30 tot 50 km/u.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext" : "Middagregenbuien, winderig. Maximaal 57F. Wind uit het ZW van 20 tot 30 mpu. Kans op regen 60%.",
+  "fcttext_metric" : "Middagregenbuien, winderig. Maximaal 14C. Wind uit het ZW van 30 tot 50 km/u. Kans op regen 60%.",
   "date" : "2017-11-23T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
-  "fcttext" : "Overwegend bewolkt. Maximaal 53F. Wind uit het ZW van 15 tot 25 mpu.",
-  "fcttext_metric" : "Overwegend bewolkt. Maximaal 12C. Wind uit het ZW van 25 tot 40 km/u.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext" : "Lichte regen. Maximaal 49F. Wind uit het WZW van 10 tot 20 mpu. Kans op regen 60%.",
+  "fcttext_metric" : "Regenbuien. Maximaal 10C. Wind uit het WZW van 15 tot 30 km/u. Kans op regen 60%.",
   "date" : "2017-11-25T10:30+01:00",
   "teams" : [ "Hermes DVS", "Blijdorp" ],
   "day" : 25,
   "type" : "match"
 }, {
   "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Lichte regen. Maximaal 50F. Wind uit het ZW van 15 tot 25 mpu. Kans op regen 60%.",
-  "fcttext_metric" : "Lichte regen. Maximaal 10C. Wind uit het WZW van 25 tot 40 km/u. Kans op regen 60%.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
+  "fcttext" : "Regen. Maximaal 47F. Wind uit het WNW van 10 tot 20 mpu. Kans op regen 60%. Regenval ongeveer 0.25 inch.",
+  "fcttext_metric" : "Regen. Maximaal 8C. Wind uit het WNW van 15 tot 30 km/u. Kans op regen 60%. Regenval ongeveer 6 mm.",
   "date" : "2017-11-28T17:15+02:00",
   "type" : "training"
+}, {
+  "title" : "woensdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/tstorms.gif",
+  "fcttext" : "Onweersbuien. Maximaal 47F. Wind uit het W van 10 tot 15 mpu. Kans op regen 80%.",
+  "fcttext_metric" : "Onweersbuien. Maximaal 8C. Wind uit het W van 15 tot 25 km/u. Kans op regen 80%.",
+  "date" : "2017-11-29T18:30+01:00",
+  "teams" : [ "Capelle", "Blijdorp" ],
+  "day" : 29,
+  "type" : "match"
 } ]
