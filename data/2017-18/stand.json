@@ -82,14 +82,17 @@
 }, {
   "matches" : {
     "wins" : 4,
-    "draws" : 0,
+    "draws" : 1,
     "losses" : 3
   },
   "goals" : {
-    "for" : 13,
-    "against" : 17
+    "for" : 15,
+    "against" : 19
   },
   "form" : [ {
+    "result" : "draw",
+    "text" : "AGE-GGK 2-2 CWO"
+  }, {
     "result" : "loss",
     "text" : "GLZ Delfshaven 10-0 AGE-GGK"
   }, {
@@ -101,9 +104,6 @@
   }, {
     "result" : "win",
     "text" : "Kethel Spaland 0-4 AGE-GGK"
-  }, {
-    "result" : "win",
-    "text" : "AGE-GGK 3-1 Blijdorp"
   } ],
   "team" : "AGE-GGK"
 }, {
@@ -163,14 +163,17 @@
 }, {
   "matches" : {
     "wins" : 2,
-    "draws" : 1,
+    "draws" : 2,
     "losses" : 4
   },
   "goals" : {
-    "for" : 21,
-    "against" : 27
+    "for" : 23,
+    "against" : 29
   },
   "form" : [ {
+    "result" : "draw",
+    "text" : "AGE-GGK 2-2 CWO"
+  }, {
     "result" : "draw",
     "text" : "CWO 3-3 Zestienhoven"
   }, {
@@ -182,9 +185,6 @@
   }, {
     "result" : "loss",
     "text" : "Blijdorp 4-2 CWO"
-  }, {
-    "result" : "loss",
-    "text" : "CWO 1-5 Nieuwerkerk"
   } ],
   "team" : "CWO"
 }, {

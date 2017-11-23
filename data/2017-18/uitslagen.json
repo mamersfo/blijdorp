@@ -40,14 +40,14 @@
 		]
 	},
   {
-		"competition": "3e klasse 7 najaar",
-		"date": "2017-11-21",
-		"fixtures": [
-      ["AGE-GGK", "CWO"]
-		]
+		  "latest": true,
+		  "competition": "3e klasse 7 najaar",
+		  "date": "2017-11-21",
+		  "fixtures": [
+        ["AGE-GGK", "CWO", 2, 2]
+		  ]
 	},
   {
-		"latest": true,
 		"competition": "3e klasse 7 najaar",
 		"date": "2017-11-18",
 		"fixtures": [
