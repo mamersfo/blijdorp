@@ -29,18 +29,18 @@
 		]
 	},
   {
-		"competition": "3e klasse 7 najaar",
-		"date": "2017-11-25",
-		"fixtures": [
-      ["Excelsior'20", "Zestienhoven"],
-      ["Spartaan'20", "CWO"],
-      ["HWD", "Nieuwerkerk"],
-      ["GLZ Delfshaven", "Kethel Spaland"],
-      ["Hermes DVS", "Blijdorp"]
-		]
+		  "latest": true,
+		  "competition": "3e klasse 7 najaar",
+		  "date": "2017-11-25",
+		  "fixtures": [
+          ["Excelsior'20", "Zestienhoven", 0, 3],
+          ["Spartaan'20", "CWO", 7, 0],
+          ["HWD", "Nieuwerkerk", 1, 5],
+          ["GLZ Delfshaven", "Kethel Spaland", 12, 0],
+          ["Hermes DVS", "Blijdorp", 2, 1]
+		  ]
 	},
   {
-		  "latest": true,
 		  "competition": "3e klasse 7 najaar",
 		  "date": "2017-11-21",
 		  "fixtures": [

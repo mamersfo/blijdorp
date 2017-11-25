@@ -1,5 +1,24 @@
 [
   {
+		"date": "2017-11-25",
+		"league": "3e klasse 7 najaar",
+		"teams": ["Hermes DVS", "Blijdorp"],
+		"captain": "Zay",
+		"result": [2, 1],
+		"goals":{
+      "Senn": 1
+		},
+		"assists": {
+      "Ruben": 1
+		},
+		"absent": {
+      "Raf": 1
+		},
+		"keeper": {
+			"Jan": 1
+		}
+	},
+  {
 		"date": "2017-11-18",
 		"league": "3e klasse 7 najaar",
 		"teams": ["Blijdorp", "Excelsior'20"],
