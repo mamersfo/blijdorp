@@ -58,9 +58,9 @@
   "id" : 8,
   "name" : "Senn",
   "matches" : 10,
-  "goals" : 4,
+  "goals" : 3,
   "assists" : 4,
-  "total" : 8,
+  "total" : 7,
   "position" : "centrum"
 }, {
   "id" : 7,
@@ -74,8 +74,8 @@
   "id" : 10,
   "name" : "Zay",
   "matches" : 9,
-  "goals" : 7,
+  "goals" : 8,
   "assists" : 3,
-  "total" : 10,
+  "total" : 11,
   "position" : "aanval"
 } ]
