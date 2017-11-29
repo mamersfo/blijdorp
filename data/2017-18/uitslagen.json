@@ -22,14 +22,14 @@
 		]
 	},
   {
-		"competition": "Voetbal Rijnmond Cup",
-		"date": "2017-11-29",
-		"fixtures": [
-      ["Capelle", "Blijdorp"]
-		]
+		  "latest": true,
+		  "competition": "Voetbal Rijnmond Cup",
+		  "date": "2017-11-29",
+		  "fixtures": [
+          ["Capelle", "Blijdorp", 2, 1]
+		  ]
 	},
   {
-		  "latest": true,
 		  "competition": "3e klasse 7 najaar",
 		  "date": "2017-11-25",
 		  "fixtures": [

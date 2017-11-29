@@ -1,5 +1,24 @@
 [
   {
+		"date": "2017-11-29",
+		"league": "Abel Cup",
+		"teams": ["Capelle", "Blijdorp"],
+		"captain": "Jan",
+		"result": [2, 1],
+		"goals":{
+      "Inder": 1
+		},
+		"assists": {
+		},
+		"absent": {
+        "Lil": 1,
+        "Zay": 1
+		},
+		"keeper": {
+			"Jan": 1
+		}
+	},
+  {
 		"date": "2017-11-25",
 		"league": "3e klasse 7 najaar",
 		"teams": ["Hermes DVS", "Blijdorp"],
