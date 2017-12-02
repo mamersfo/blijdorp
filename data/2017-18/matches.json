@@ -1,4 +1,25 @@
 [
+    {
+		    "date": "2017-12-02",
+		    "league": "3e klasse 7 najaar",
+		    "teams": ["Blijdorp", "GLZ Delfshaven"],
+		    "captain": "Jan",
+		    "result": [2, 6],
+		    "goals":{
+            "Noah": 1,
+            "Raf": 1
+		    },
+		    "assists": {
+            "Helene": 1,
+            "Inder": 1
+		    },
+		    "absent": {
+            "Zay": 1
+		    },
+		    "keeper": {
+			      "Jan": 1
+		    }
+	  },
   {
 		"date": "2017-11-29",
 		"league": "Abel Cup",

@@ -1,31 +1,24 @@
 [ {
   "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Lichte regen. Maximaal 41F. Wind uit het ZZW van 5 tot 10 mpu. Kans op regen 60%.",
-  "fcttext_metric" : "Lichte regen. Maximaal 5C. Wind uit het ZZW van 10 tot 15 km/u. Kans op regen 60%.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/cloudy.gif",
+  "fcttext" : "Bewolkt. Erg koud. Maximaal 40F. Wind uit het ZZW van 5 tot 10 mpu.",
+  "fcttext_metric" : "Zich in de middag ontwikkelende lichte regen. Erg koud. Maximaal 4C. Wind uit het ZZW van 10 tot 15 km/u. Kans op regen 40%.",
   "date" : "2017-12-02T09:30+01:00",
   "teams" : [ "Blijdorp", "GLZ Delfshaven" ],
   "day" : 2,
   "type" : "match"
 }, {
-  "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/mostlycloudy.gif",
-  "fcttext" : "Overwegend bewolkt. Maximaal 49F. Wind uit het W van 10 tot 15 mpu.",
-  "fcttext_metric" : "Overwegend bewolkt. Maximaal 9C. Wind uit het W van 15 tot 25 km/u.",
-  "date" : "2017-12-05T17:15+02:00",
-  "type" : "training"
-}, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Middagregenbuien. Maximaal 47F. Wind uit het ZZW van 15 tot 25 mpu. Kans op regen 30%.",
-  "fcttext_metric" : "Middagregenbuien. Maximaal 9C. Wind uit het ZZW van 15 tot 30 km/u. Kans op regen 30%.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
+  "fcttext" : "Regen en wind. Maximaal 47F. Wind uit het ZZW van 20 tot 30 mpu. Kans op regen 80%. Regenval ongeveer 0.25 inch.",
+  "fcttext_metric" : "Regen en wind. Maximaal 8C. Wind uit het ZZW van 30 tot 50 km/u. Kans op regen 80%. Regenval ongeveer 6 mm.",
   "date" : "2017-12-07T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Regenbuien. Maximaal 44F. Wind uit het W van 10 tot 20 mpu. Kans op regen 60%.",
-  "fcttext_metric" : "Regenbuien. Maximaal 7C. Wind uit het W van 15 tot 30 km/u. Kans op regen 60%.",
+  "fcttext" : "Lichte regen. Maximaal 41F. Wind uit het WNW van 10 tot 20 mpu. Kans op regen 70%.",
+  "fcttext_metric" : "Lichte regen. Maximaal 5C. Wind uit het WNW van 15 tot 30 km/u. Kans op regen 70%.",
   "date" : "2017-12-09T10:30+01:00",
   "teams" : [ "HWD", "Blijdorp" ],
   "day" : 9,
