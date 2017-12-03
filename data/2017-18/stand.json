@@ -83,13 +83,16 @@
   "matches" : {
     "wins" : 4,
     "draws" : 1,
-    "losses" : 3
+    "losses" : 4
   },
   "goals" : {
     "for" : 15,
-    "against" : 19
+    "against" : 22
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "AGE-GGK 0-3 HWD"
+  }, {
     "result" : "draw",
     "text" : "AGE-GGK 2-2 CWO"
   }, {
@@ -101,9 +104,6 @@
   }, {
     "result" : "win",
     "text" : "AGE-GGK 2-1 Nieuwerkerk"
-  }, {
-    "result" : "win",
-    "text" : "Kethel Spaland 0-4 AGE-GGK"
   } ],
   "team" : "AGE-GGK"
 }, {
@@ -189,15 +189,18 @@
   "team" : "CWO"
 }, {
   "matches" : {
-    "wins" : 2,
+    "wins" : 3,
     "draws" : 1,
     "losses" : 4
   },
   "goals" : {
-    "for" : 13,
+    "for" : 16,
     "against" : 38
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "AGE-GGK 0-3 HWD"
+  }, {
     "result" : "loss",
     "text" : "HWD 1-5 Nieuwerkerk"
   }, {
@@ -209,9 +212,6 @@
   }, {
     "result" : "loss",
     "text" : "Zestienhoven 10-1 HWD"
-  }, {
-    "result" : "win",
-    "text" : "Excelsior'20 3-4 HWD"
   } ],
   "team" : "HWD"
 }, {
