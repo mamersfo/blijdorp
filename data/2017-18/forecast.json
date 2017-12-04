@@ -1,24 +1,31 @@
 [ {
+  "title" : "dinsdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/cloudy.gif",
+  "fcttext" : "Bewolkt. Mogelijk enkele buitjes. Maximaal 47F. Wind uit het WZW van 10 tot 15 mpu.",
+  "fcttext_metric" : "Bewolkt. Mogelijk enkele buitjes. Maximaal 8C. Wind uit het WZW van 15 tot 25 km/u.",
+  "date" : "2017-12-05T17:15+02:00",
+  "type" : "training"
+}, {
   "title" : "donderdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
-  "fcttext" : "Regen en wind. Maximaal 47F. Wind uit het ZW van 20 tot 30 mpu. Kans op regen 80%. Regenval ongeveer 0.5 inch.",
-  "fcttext_metric" : "Regen en wind. Maximaal 8C. Wind uit het ZW van 30 tot 50 km/u. Kans op regen 80%. Regenval ongeveer 12 mm.",
+  "fcttext" : "Winderig met zich in de middag ontwikkelende regen. Maximaal 48F. Wind uit het ZZW van 20 tot 30 mpu. Kans op regen 90%. Windstoten kunnen af en toe meer dan 40 mpu bereiken.",
+  "fcttext_metric" : "Winderig met zich in de middag ontwikkelende regen. Maximaal 9C. Wind uit het ZZW van 30 tot 50 km/u. Kans op regen 90%. Windstoten kunnen af en toe meer dan 65 km/u bereiken.",
   "date" : "2017-12-07T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Regenbuien. Maximaal 40F. Wind uit het WNW van 10 tot 20 mpu. Kans op regen 60%.",
-  "fcttext_metric" : "Regenbuien. Maximaal 5C. Wind uit het WNW van 15 tot 30 km/u. Kans op regen 60%.",
+  "fcttext" : "Lichte regen. Koud. Maximaal 39F. Wind uit het WNW van 15 tot 25 mpu. Kans op regen 70%.",
+  "fcttext_metric" : "Lichte regen. Koud. Maximaal 4C. Wind uit het WNW van 25 tot 40 km/u. Kans op regen 70%.",
   "date" : "2017-12-09T10:30+01:00",
   "teams" : [ "HWD", "Blijdorp" ],
   "day" : 9,
   "type" : "match"
 }, {
   "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/snow.gif",
-  "fcttext" : "Regen met sneeuw. Maximaal 40F. Wind uit het WZW van 10 tot 15 mpu. Kans op regen 60%.",
-  "fcttext_metric" : "Regen met sneeuw. Maximaal 5C. Wind uit het WZW van 15 tot 25 km/u. Kans op regen 60%.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext" : "Regenbuien. Maximaal 39F. Wind uit het ZW van 10 tot 15 mpu. Kans op regen 60%.",
+  "fcttext_metric" : "Regenbuien. Maximaal 4C. Wind uit het ZW van 15 tot 25 km/u. Kans op regen 60%.",
   "date" : "2017-12-12T17:15+02:00",
   "type" : "training"
 } ]
