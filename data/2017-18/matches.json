@@ -1,5 +1,24 @@
 [
     {
+		    "date": "2017-12-09",
+		    "league": "3e klasse 7 najaar",
+		    "teams": ["HWD", "Blijdorp"],
+		    "captain": "Jan",
+		    "result": [3, 2],
+		    "goals":{
+            "Zay": 1,
+            "Raf": 1
+		    },
+		    "assists": {
+            "Helene": 1
+		    },
+		    "absent": {
+		    },
+		    "keeper": {
+			      "Jan": 1
+		    }
+	  },
+    {
 		    "date": "2017-12-02",
 		    "league": "3e klasse 7 najaar",
 		    "teams": ["Blijdorp", "GLZ Delfshaven"],

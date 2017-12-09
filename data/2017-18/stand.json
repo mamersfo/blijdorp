@@ -1,14 +1,17 @@
 [ {
   "matches" : {
     "wins" : 0,
-    "draws" : 1,
+    "draws" : 2,
     "losses" : 8
   },
   "goals" : {
-    "for" : 3,
-    "against" : 54
+    "for" : 4,
+    "against" : 55
   },
   "form" : [ {
+    "result" : "draw",
+    "text" : "Kethel Spaland 1-1 Excelsior'20"
+  }, {
     "result" : "loss",
     "text" : "Nieuwerkerk 9-1 Kethel Spaland"
   }, {
@@ -20,22 +23,22 @@
   }, {
     "result" : "loss",
     "text" : "Spartaan'20 10-0 Kethel Spaland"
-  }, {
-    "result" : "loss",
-    "text" : "Kethel Spaland 0-4 CWO"
   } ],
   "team" : "Kethel Spaland"
 }, {
   "matches" : {
-    "wins" : 9,
+    "wins" : 10,
     "draws" : 0,
     "losses" : 0
   },
   "goals" : {
-    "for" : 85,
-    "against" : 6
+    "for" : 88,
+    "against" : 8
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "GLZ Delfshaven 3-2 Nieuwerkerk"
+  }, {
     "result" : "win",
     "text" : "Blijdorp 2-6 GLZ Delfshaven"
   }, {
@@ -47,22 +50,22 @@
   }, {
     "result" : "win",
     "text" : "GLZ Delfshaven 10-0 AGE-GGK"
-  }, {
-    "result" : "win",
-    "text" : "GLZ Delfshaven 13-0 Zestienhoven"
   } ],
   "team" : "GLZ Delfshaven"
 }, {
   "matches" : {
     "wins" : 1,
-    "draws" : 0,
+    "draws" : 1,
     "losses" : 8
   },
   "goals" : {
-    "for" : 15,
-    "against" : 55
+    "for" : 16,
+    "against" : 56
   },
   "form" : [ {
+    "result" : "draw",
+    "text" : "Kethel Spaland 1-1 Excelsior'20"
+  }, {
     "result" : "loss",
     "text" : "Excelsior'20 2-5 Spartaan'20"
   }, {
@@ -74,22 +77,22 @@
   }, {
     "result" : "loss",
     "text" : "Excelsior'20 2-9 Nieuwerkerk"
-  }, {
-    "result" : "loss",
-    "text" : "Excelsior'20 2-6 Hermes DVS"
   } ],
   "team" : "Excelsior'20"
 }, {
   "matches" : {
     "wins" : 4,
     "draws" : 1,
-    "losses" : 4
+    "losses" : 5
   },
   "goals" : {
-    "for" : 15,
-    "against" : 22
+    "for" : 16,
+    "against" : 24
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Spartaan'20 2-1 AGE-GGK"
+  }, {
     "result" : "loss",
     "text" : "AGE-GGK 0-3 HWD"
   }, {
@@ -101,22 +104,22 @@
   }, {
     "result" : "loss",
     "text" : "Hermes DVS 2-1 AGE-GGK"
-  }, {
-    "result" : "win",
-    "text" : "AGE-GGK 2-1 Nieuwerkerk"
   } ],
   "team" : "AGE-GGK"
 }, {
   "matches" : {
-    "wins" : 5,
+    "wins" : 6,
     "draws" : 1,
     "losses" : 1
   },
   "goals" : {
-    "for" : 23,
-    "against" : 15
+    "for" : 28,
+    "against" : 17
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Hermes DVS 5-2 CWO"
+  }, {
     "result" : "win",
     "text" : "Hermes DVS 2-1 Blijdorp"
   }, {
@@ -128,22 +131,22 @@
   }, {
     "result" : "win",
     "text" : "Excelsior'20 2-6 Hermes DVS"
-  }, {
-    "result" : "draw",
-    "text" : "Hermes DVS 5-5 Spartaan'20"
   } ],
   "team" : "Hermes DVS"
 }, {
   "matches" : {
     "wins" : 6,
     "draws" : 0,
-    "losses" : 2
+    "losses" : 3
   },
   "goals" : {
-    "for" : 40,
-    "against" : 15
+    "for" : 42,
+    "against" : 18
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "GLZ Delfshaven 3-2 Nieuwerkerk"
+  }, {
     "result" : "win",
     "text" : "Nieuwerkerk 9-1 Kethel Spaland"
   }, {
@@ -155,22 +158,22 @@
   }, {
     "result" : "win",
     "text" : "Nieuwerkerk 4-2 Blijdorp"
-  }, {
-    "result" : "loss",
-    "text" : "AGE-GGK 2-1 Nieuwerkerk"
   } ],
   "team" : "Nieuwerkerk"
 }, {
   "matches" : {
     "wins" : 2,
     "draws" : 2,
-    "losses" : 5
+    "losses" : 6
   },
   "goals" : {
-    "for" : 23,
-    "against" : 36
+    "for" : 25,
+    "against" : 41
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "Hermes DVS 5-2 CWO"
+  }, {
     "result" : "loss",
     "text" : "Spartaan'20 7-0 CWO"
   }, {
@@ -182,22 +185,22 @@
   }, {
     "result" : "win",
     "text" : "Kethel Spaland 0-4 CWO"
-  }, {
-    "result" : "loss",
-    "text" : "CWO 1-10 GLZ Delfshaven"
   } ],
   "team" : "CWO"
 }, {
   "matches" : {
-    "wins" : 3,
+    "wins" : 4,
     "draws" : 1,
     "losses" : 4
   },
   "goals" : {
-    "for" : 16,
-    "against" : 38
+    "for" : 19,
+    "against" : 40
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "HWD 3-2 Blijdorp"
+  }, {
     "result" : "win",
     "text" : "AGE-GGK 0-3 HWD"
   }, {
@@ -209,22 +212,22 @@
   }, {
     "result" : "loss",
     "text" : "HWD 2-8 Spartaan'20"
-  }, {
-    "result" : "loss",
-    "text" : "Zestienhoven 10-1 HWD"
   } ],
   "team" : "HWD"
 }, {
   "matches" : {
     "wins" : 4,
     "draws" : 0,
-    "losses" : 4
+    "losses" : 5
   },
   "goals" : {
-    "for" : 22,
-    "against" : 20
+    "for" : 24,
+    "against" : 23
   },
   "form" : [ {
+    "result" : "loss",
+    "text" : "HWD 3-2 Blijdorp"
+  }, {
     "result" : "loss",
     "text" : "Blijdorp 2-6 GLZ Delfshaven"
   }, {
@@ -236,9 +239,6 @@
   }, {
     "result" : "loss",
     "text" : "Nieuwerkerk 4-2 Blijdorp"
-  }, {
-    "result" : "win",
-    "text" : "Blijdorp 6-1 Kethel Spaland"
   } ],
   "team" : "Blijdorp"
 }, {
@@ -270,15 +270,18 @@
   "team" : "Zestienhoven"
 }, {
   "matches" : {
-    "wins" : 5,
+    "wins" : 6,
     "draws" : 1,
     "losses" : 1
   },
   "goals" : {
-    "for" : 41,
-    "against" : 15
+    "for" : 43,
+    "against" : 16
   },
   "form" : [ {
+    "result" : "win",
+    "text" : "Spartaan'20 2-1 AGE-GGK"
+  }, {
     "result" : "win",
     "text" : "Excelsior'20 2-5 Spartaan'20"
   }, {
@@ -290,9 +293,6 @@
   }, {
     "result" : "win",
     "text" : "Spartaan'20 10-0 Kethel Spaland"
-  }, {
-    "result" : "win",
-    "text" : "HWD 2-8 Spartaan'20"
   } ],
   "team" : "Spartaan'20"
 } ]
