@@ -1,15 +1,16 @@
 [ {
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Regenbuien. Maximaal 40F. Wind uit het W van 10 tot 15 mpu. Kans op regen 70%.",
-  "fcttext_metric" : "Regenbuien. Maximaal 5C. Wind uit het W van 15 tot 25 km/u. Kans op regen 70%.",
+  "fcttext" : "Middagregenbuien. Maximaal 39F. Wind uit het W van 10 tot 15 mpu. Kans op regen 50%.",
+  "fcttext_metric" : "Middagregenbuien. Maximaal 4C. Wind uit het W van 15 tot 25 km/u. Kans op regen 50%.",
   "date" : "2017-12-12T17:15+02:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Regenbuien. Maximaal 42F. Wind uit het WZW van 10 tot 20 mpu. Kans op regen 70%.",
-  "fcttext_metric" : "Regenbuien. Maximaal 6C. Wind uit het WZW van 15 tot 30 km/u. Kans op regen 70%.",
+  "fcttext" : "Winderig met regenbuien. Maximaal 41F. Wind uit het WZW van 20 tot 30 mpu. Kans op regen 60%. Windstoten kunnen af en toe meer dan 40 mpu bereiken.",
+  "fcttext_metric" : "Winderig met regenbuien. Maximaal 5C. Wind uit het WZW van 30 tot 50 km/u. Kans op regen 60%. Windstoten kunnen af en toe meer dan 65 km/u bereiken.",
   "date" : "2017-12-14T17:15+02:00",
   "type" : "training"
-} ]
+}
+]
