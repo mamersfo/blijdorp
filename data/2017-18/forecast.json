@@ -1,9 +1,22 @@
 [ {
-  "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/rain.gif",
-  "fcttext" : "Regen en wind. Maximaal 42F. Wind uit het WZW van 20 tot 30 mpu. Kans op regen 70%. Regenval ongeveer 0.25 inch. Windstoten kunnen af en toe meer dan 40 mpu bereiken.",
-  "fcttext_metric" : "Regen en wind. Maximaal 5C. Wind uit het WZW van 30 tot 50 km/u. Kans op regen 80%. Regenval ongeveer 6 mm. Windstoten kunnen af en toe meer dan 65 km/u bereiken.",
-  "date" : "2017-12-14T17:15+01:00",
+  "title" : "dinsdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 45F. Wind uit het ZO van 10 tot 15 mpu.",
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 7C. Wind uit het ZO van 15 tot 25 km/u.",
+  "date" : "2018-01-09T17:15+01:00",
   "type" : "training"
-}
-]
+}, {
+  "title" : "donderdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/cloudy.gif",
+  "fcttext" : "Bewolkt. Maximaal 46F. Windkracht ONO en wisselend.",
+  "fcttext_metric" : "Bewolkt. Maximaal 8C. Windkracht O en wisselend.",
+  "date" : "2018-01-11T17:15+01:00",
+  "type" : "training"
+}, {
+  "title" : "dinsdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext" : "Ochtendbuien. Maximaal 41F. Wind uit het Z van 10 tot 15 mpu. Kans op regen 40%.",
+  "fcttext_metric" : "Ochtendbuien. Maximaal 5C. Wind uit het Z van 15 tot 25 km/u. Kans op regen 40%.",
+  "date" : "2018-01-16T17:15+01:00",
+  "type" : "training"
+} ]
