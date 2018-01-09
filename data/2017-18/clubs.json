@@ -1,18 +1,5 @@
 [
-  {
-		"id": "42",
-		"name": "Capelle",
-		"fullname": "v.v. Capelle",
-		"website": "www.vvcapelle.nl",
-		"address": {
-			"street": "P C Boutenssingel 1",
-			"postalCode": "2902 BG",
-			"city": "Capelle aan den IJssel"      
-		},
-		"position": [ 51.9225331, 4.5747571 ]
-	},
 	{
-		"id": "MFFS21G",
 		"name": "AGE-GGK",
 		"fullname": "AGE GGK",
 		"website": "www.age-rotterdam.nl",
@@ -24,7 +11,6 @@
 		"position": [ 51.946115, 4.4394062 ]
 	},
 	{
-		"id": "BBFB935",
 		"name": "Blijdorp",
 		"fullname": "R.V.V. Blijdorp",
 		"website": "rvv-blijdorp.nl",
@@ -35,8 +21,29 @@
 		},
 		"position": [ 51.9264862, 4.4397681 ]
 	},
+  {
+		"name": "BVCB",
+		"fullname": "sv B.V.C.B.",
+		"website": "www.bvcb.nl",
+		"address": {
+			"street": "Sporthoekpad 1",
+			"postalCode": "2661 GV",
+			"city": "Bergschenhoek"      
+		},
+		"position": [ 51.9822088, 4.5101301 ]
+	},
+  {
+		"name": "Capelle",
+		"fullname": "v.v. Capelle",
+		"website": "www.vvcapelle.nl",
+		"address": {
+			"street": "P C Boutenssingel 1",
+			"postalCode": "2902 BG",
+			"city": "Capelle aan den IJssel"      
+		},
+		"position": [ 51.9225331, 4.5747571 ]
+	},
 	{
-		"id": "BBFC31O",
 		"name": "CWO",
 		"fullname": "sv CWO",
 		"website": "svcwo.nl",
@@ -47,8 +54,18 @@
 		},
 		"position": [ 51.9210767, 4.3624627 ]
 	},
+  {
+		"name": "DHL",
+		"fullname": "sv DHL",
+		"website": "www.svdhl.nl",
+		"address": {
+			"street": "Brasserskade 234",
+			"postalCode": "2616 LA",
+			"city": "Delft"
+		},
+		"position": [ 52.0298254, 4.3676395 ]
+	},
 	{
-		"id": "BBDZ80D",
 		"name": "Excelsior'20",
 		"fullname": "RKSV Excelsior'20",
 		"website": "excelsior20.nl",
@@ -60,7 +77,6 @@
 		"position": [ 51.9299468, 4.3914764 ]
 	},
 	{
-		"id": "BBFC28S",
 		"name": "GLZ Delfshaven",
 		"fullname": "GLZ Delfshaven",
 		"website": "glzdelfshaven.nl",
@@ -72,7 +88,6 @@
 		"position": [ 51.9200779, 4.4259776 ]
 	},
 	{
-		"id": "BBDX31D",
 		"name": "Hermes DVS",
 		"fullname": "C. en F.C. Hermes-D.V.S.",
 		"website": "hermesdvs.nl",
@@ -83,8 +98,18 @@
 		},
 		"position": [ 51.9214353, 4.3713605 ]
 	},
+  {
+    "name": "Hillegersberg",
+    "fullname": "vv Hillegersberg",
+    "website": "vvhillegersberg.nl",
+    "address": {
+      "street": "Duivenpad 11",
+      "postalCode": "3055 VE",
+      "city": "Rotterdam"
+    },
+    "position": [ 51.964447, 4.4967823 ]
+  },
 	{
-		"id": "BBDX56O",
 		"name": "HWD",
 		"fullname": "vv HWD",
 		"website": "vvhwd.nl",
@@ -96,7 +121,6 @@
 		"position": [ 51.927439, 4.4299743 ]
 	},
 	{
-		"id": "BBDX62N",
 		"name": "Kethel Spaland",
 		"fullname": "vv Kethel Spaland",
 		"website": "kethelspaland.nl",
@@ -107,8 +131,18 @@
 		},
 		"position": [ 51.940223, 4.362037 ]
 	},
+  {
+		"name": "Leonidas",
+		"fullname": "R.K.S.V. Leonidas",
+		"website": "www.rksvleonidas.com",
+		"address": {
+			"street": "Erasmuspad 9",
+			"postalCode": "3052 KP",
+			"city": "Rotterdam"
+		},
+		"position": [ 51.947885, 4.4654503 ]
+	},
 	{
-		"id": "BBDY33K",
 		"name": "Nieuwerkerk",
 		"fullname": "vv Nieuwerkerk",
 		"website": "vvnieuwerkerk.nl",
@@ -120,7 +154,17 @@
 		"position": [ 51.9606586, 4.6009416 ]
 	},
   {
-    "id": "BBDY08C",
+		"name": "Oliveo",
+		"fullname": "Oliveo",
+		"website": "oliveo.nl",
+		"address": {
+			"street": "Sportlaan 2",
+			"postalCode": "2641 AZ",
+			"city": "Pijnacker"
+		},
+		"position": [ 52.0254817, 4.4169652 ]
+	},
+  {
     "name": "Spartaan'20",
     "fullname": "RKSV Spartaan'20",
     "website": "spartaan20.nl",
@@ -131,8 +175,18 @@
     },
     "position": [ 51.8782325, 4.4894363 ]
   },
+  {
+		"name": "XerxesDZB",
+		"fullname": "XerxesDZB",
+		"website": "www.xerxesdzb.nl",
+		"address": {
+			"street": "Igor Stravinskysingel 1",
+			"postalCode": "3069 MA",
+			"city": "Rotterdam"
+		},
+		"position": [ 51.9688309, 4.5557931 ]
+	},
 	{
-		"id": "FRKT31W",
 		"name": "Zestienhoven",
 		"fullname": "RCSV Zestienhoven",
 		"website": "rcsvzestienhoven.nl",

@@ -48,12 +48,10 @@ export class Clubs extends Seasonal {
   }
 
   renderMarker(c) {
-    let imgUrl = baseUrl + c.id + '.jpg'
     return (
       <Marker key={c.name} position={c.position}>
         <Popup>
           <span>
-          <img src={imgUrl} /><br/>
           <a target="_blank" href={'http://' + c.website}>
           {c.fullname}
           </a><br/>
