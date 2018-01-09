@@ -3,43 +3,13 @@ import { connect } from 'react-redux'
 import Seasonal from './seasonal'
 import { get } from './api'
 import MediaQuery from 'react-responsive'
+import { Link } from 'react-router'
 
 export class Table extends Seasonal {
 
   constructor(props) {
     super(props)
     this.state = { filename: 'stand', data: [] }
-  }
-
-  transform(t) {
-    t.matches['total'] = Object.values(t.matches).reduce((a,b) => a+b, 0)
-    t['points'] = t.matches.wins * 3 + t.matches.draws
-    t.goals['diff'] = t.goals.for - t.goals.against
-    return t
-  }
-
-  compare(a, b) {
-    let diff = a.points - b.points
-    if ( diff === 0 ) {
-      diff = b.matches.total - a.matches.total
-      if ( diff === 0 ) {
-        diff = a.goals.diff - b.goals.diff
-        if ( diff === 0 ) {
-          diff = a.goals.for - b.goals.for
-          if ( diff === 0 ) {
-            diff = b.team.localeCompare(a.team)
-          }
-        }
-      }
-    }
-
-    return diff > 0 ? -1 : 1
-  }
-
-  fetchData(season, filename) {
-    get(season + '/' + filename).then((data) => {
-      this.setState({data: data.map(this.transform).sort(this.compare)})
-    })
   }
 
   renderHead(cols) {
@@ -72,7 +42,7 @@ export class Table extends Seasonal {
               <tr key={idx} className={t.team === 'Blijdorp' ? 'active' : ''}>
                 <td style={{textAlign: 'right'}}>{idx + 1 + '.'}</td>
                 <td>{t.team === 'Blijdorp' ? <b>{t.team}</b> : t.team}</td>
-                <td style={{textAlign: 'right'}}>{t.matches.total}</td>
+                <td style={{textAlign: 'right'}}>{t.total}</td>
                 <td style={{textAlign: 'right'}}>{t.points}</td>
               </tr>
             )
@@ -96,38 +66,65 @@ export class Table extends Seasonal {
     return <div>{parts}</div>
   }
 
-  renderDefault() {
+  renderCompetitions() {
     return (
-      <table className='table' style={{margin: '0px'}}>
-        <thead>
+      <div style={{marginBottom: '20px'}}> 
         {
-          this.renderHead(['G', 'W', 'GL', 'V', 'P', 'DPV', 'DPT', 'DS'])
-        }
-        </thead>
-        <tbody>
-        {
-          this.state.data.map((t, idx) => {
-            let diff = t.goals.diff > 0 ? '+' + t.goals.diff : t.goals.diff
+          this.state.data.map((o, idx) => {
             return (
-              <tr key={idx} className={t.team === 'Blijdorp' ? 'active' : ''}>
-                <td style={{textAlign: 'right'}}>{idx + 1 + '.'}</td>
-                <td>{t.team === 'Blijdorp' ? <b>{t.team}</b> : t.team}</td>
-                <td style={{textAlign: 'right'}}>{t.matches.total}</td>
-                <td style={{textAlign: 'right'}}>{t.matches.wins}</td>
-                <td style={{textAlign: 'right'}}>{t.matches.draws}</td>
-                <td style={{textAlign: 'right'}}>{t.matches.losses}</td>
-                <td style={{textAlign: 'right'}}><b>{t.points}</b></td>
-                <td style={{textAlign: 'right'}}>{t.goals.for}</td>
-                <td style={{textAlign: 'right'}}>{t.goals.against}</td>
-                <td style={{textAlign: 'right'}}>{diff}</td>
-                <td>{this.renderForm(t.form)}</td>
-              </tr>
+              <span>
+                { idx > 0 ? ' | ' : '' }
+                <Link to={`/blijdorp/stand/${idx}`}
+                      activeClassName='active'>{o.competition}</Link>
+              </span>
             )
           })
-        }
-        </tbody>
-      </table>
+      }
+      </div>
     )
+  }
+
+  renderDefault() {
+    if ( this.state.data.length > 0 ) {
+      let idx = this.props.params.competition
+      if ( idx === undefined ) idx = 0
+      return (
+        <div>
+          {this.renderCompetitions()}
+          <table className='table' style={{margin: '0px'}}>
+            <thead>
+              {
+                this.renderHead(['G', 'W', 'GL', 'V', 'P', 'DPV', 'DPT', 'DS'])
+              }
+            </thead>
+            <tbody>
+              {
+                this.state.data[idx] && this.state.data[idx].teams.map((t, idx) => {
+                  let diff = t.diff > 0 ? '+' + t.diff : t.diff
+                  return (
+                    <tr key={idx} className={t.team === 'Blijdorp' ? 'active' : ''}>
+                      <td style={{textAlign: 'right'}}>{idx + 1 + '.'}</td>
+                      <td>{t.team === 'Blijdorp' ? <b>{t.team}</b> : t.team}</td>
+                      <td style={{textAlign: 'right'}}>{t.total}</td>
+                      <td style={{textAlign: 'right'}}>{t.matches.wins}</td>
+                      <td style={{textAlign: 'right'}}>{t.matches.draws}</td>
+                      <td style={{textAlign: 'right'}}>{t.matches.losses}</td>
+                      <td style={{textAlign: 'right'}}><b>{t.points}</b></td>
+                      <td style={{textAlign: 'right'}}>{t.goals.for}</td>
+                      <td style={{textAlign: 'right'}}>{t.goals.against}</td>
+                      <td style={{textAlign: 'right'}}>{diff}</td>
+                      <td>{this.renderForm(t.form)}</td>
+                    </tr>
+                  )
+                })
+              }
+            </tbody>
+          </table>
+        </div>
+      )
+    }
+
+    return null
   }
 
   render() {

@@ -65,7 +65,7 @@ class Analysis extends React.Component {
           color: '#99ccff'
         }
       ],
-      players: new Set(['Fadi', 'Jonas', 'Luc', 'Quincy', 'Stijn', 'Vito']);
+      players: new Set(['Fadi', 'Jonas', 'Luc', 'Quincy', 'Stijn', 'Vito'])
     }
   }
 

@@ -1,271 +1,547 @@
 [ {
-  "matches" : {
-    "wins" : 6,
-    "draws" : 2,
-    "losses" : 10
-  },
-  "goals" : {
-    "for" : 42,
-    "against" : 57
-  },
-  "form" : [ {
-    "result" : "win",
-    "text" : "Excelsior'20 1-4 VOC"
+  "competition" : "Groep 2 04",
+  "teams" : [ {
+    "matches" : {
+      "wins" : 7,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 39,
+      "against" : 8
+    },
+    "form" : [ {
+      "result" : "win",
+      "text" : "Hillegersberg 2-4 BVCB"
+    }, {
+      "result" : "win",
+      "text" : "BVCB 5-3 XerxesDZB"
+    }, {
+      "result" : "win",
+      "text" : "VOC 1-3 BVCB"
+    }, {
+      "result" : "win",
+      "text" : "BVCB 9-0 Zestienhoven"
+    }, {
+      "result" : "win",
+      "text" : "VVOR 0-5 BVCB"
+    } ],
+    "team" : "BVCB",
+    "total" : 7,
+    "points" : 21,
+    "diff" : 31
   }, {
-    "result" : "win",
-    "text" : "Zestienhoven 1-2 VOC"
+    "matches" : {
+      "wins" : 5,
+      "draws" : 1,
+      "losses" : 1
+    },
+    "goals" : {
+      "for" : 50,
+      "against" : 8
+    },
+    "form" : [ {
+      "result" : "win",
+      "text" : "TOGB 0-13 Blijdorp"
+    }, {
+      "result" : "win",
+      "text" : "Zestienhoven 0-15 Blijdorp"
+    }, {
+      "result" : "draw",
+      "text" : "Blijdorp 1-1 Hillegersberg"
+    }, {
+      "result" : "win",
+      "text" : "VVOR 2-7 Blijdorp"
+    }, {
+      "result" : "win",
+      "text" : "Blijdorp 5-0 XerxesDZB"
+    } ],
+    "team" : "Blijdorp",
+    "total" : 7,
+    "points" : 16,
+    "diff" : 42
   }, {
-    "result" : "win",
-    "text" : "VOC 7-1 Hillegersberg"
+    "matches" : {
+      "wins" : 5,
+      "draws" : 1,
+      "losses" : 1
+    },
+    "goals" : {
+      "for" : 26,
+      "against" : 14
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "Hillegersberg 2-4 BVCB"
+    }, {
+      "result" : "win",
+      "text" : "TOGB 2-5 Hillegersberg"
+    }, {
+      "result" : "draw",
+      "text" : "Blijdorp 1-1 Hillegersberg"
+    }, {
+      "result" : "win",
+      "text" : "Hillegersberg 4-2 XerxesDZB"
+    }, {
+      "result" : "win",
+      "text" : "VOC 2-5 Hillegersberg"
+    } ],
+    "team" : "Hillegersberg",
+    "total" : 7,
+    "points" : 16,
+    "diff" : 12
   }, {
-    "result" : "loss",
-    "text" : "De Betrokken Spartaan 8-1 VOC"
+    "matches" : {
+      "wins" : 4,
+      "draws" : 0,
+      "losses" : 3
+    },
+    "goals" : {
+      "for" : 24,
+      "against" : 23
+    },
+    "form" : [ {
+      "result" : "win",
+      "text" : "XerxesDZB 2-5 VVOR"
+    }, {
+      "result" : "win",
+      "text" : "VVOR 5-1 VOC"
+    }, {
+      "result" : "win",
+      "text" : "Zestienhoven 1-4 VVOR"
+    }, {
+      "result" : "loss",
+      "text" : "VVOR 2-7 Blijdorp"
+    }, {
+      "result" : "loss",
+      "text" : "VVOR 0-5 BVCB"
+    } ],
+    "team" : "VVOR",
+    "total" : 7,
+    "points" : 12,
+    "diff" : 1
   }, {
-    "result" : "win",
-    "text" : "VOC 3-2 Blijdorp"
-  } ],
-  "team" : "VOC"
+    "matches" : {
+      "wins" : 3,
+      "draws" : 0,
+      "losses" : 4
+    },
+    "goals" : {
+      "for" : 32,
+      "against" : 23
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "XerxesDZB 2-5 VVOR"
+    }, {
+      "result" : "loss",
+      "text" : "BVCB 5-3 XerxesDZB"
+    }, {
+      "result" : "win",
+      "text" : "XerxesDZB 8-2 TOGB"
+    }, {
+      "result" : "loss",
+      "text" : "Hillegersberg 4-2 XerxesDZB"
+    }, {
+      "result" : "loss",
+      "text" : "Blijdorp 5-0 XerxesDZB"
+    } ],
+    "team" : "XerxesDZB",
+    "total" : 7,
+    "points" : 9,
+    "diff" : 9
+  }, {
+    "matches" : {
+      "wins" : 1,
+      "draws" : 1,
+      "losses" : 5
+    },
+    "goals" : {
+      "for" : 9,
+      "against" : 43
+    },
+    "form" : [ {
+      "result" : "win",
+      "text" : "VOC 0-3 Zestienhoven"
+    }, {
+      "result" : "loss",
+      "text" : "Zestienhoven 0-15 Blijdorp"
+    }, {
+      "result" : "loss",
+      "text" : "Zestienhoven 1-4 VVOR"
+    }, {
+      "result" : "loss",
+      "text" : "BVCB 9-0 Zestienhoven"
+    }, {
+      "result" : "draw",
+      "text" : "Zestienhoven 3-3 TOGB"
+    } ],
+    "team" : "Zestienhoven",
+    "total" : 7,
+    "points" : 4,
+    "diff" : -34
+  }, {
+    "matches" : {
+      "wins" : 1,
+      "draws" : 0,
+      "losses" : 6
+    },
+    "goals" : {
+      "for" : 11,
+      "against" : 34
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "VOC 0-3 Zestienhoven"
+    }, {
+      "result" : "loss",
+      "text" : "VVOR 5-1 VOC"
+    }, {
+      "result" : "loss",
+      "text" : "VOC 1-3 BVCB"
+    }, {
+      "result" : "win",
+      "text" : "TOGB 2-4 VOC"
+    }, {
+      "result" : "loss",
+      "text" : "VOC 2-5 Hillegersberg"
+    } ],
+    "team" : "VOC",
+    "total" : 7,
+    "points" : 3,
+    "diff" : -23
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 1,
+      "losses" : 6
+    },
+    "goals" : {
+      "for" : 11,
+      "against" : 49
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "TOGB 0-13 Blijdorp"
+    }, {
+      "result" : "loss",
+      "text" : "TOGB 2-5 Hillegersberg"
+    }, {
+      "result" : "loss",
+      "text" : "XerxesDZB 8-2 TOGB"
+    }, {
+      "result" : "loss",
+      "text" : "TOGB 2-4 VOC"
+    }, {
+      "result" : "draw",
+      "text" : "Zestienhoven 3-3 TOGB"
+    } ],
+    "team" : "TOGB",
+    "total" : 7,
+    "points" : 1,
+    "diff" : -38
+  } ]
 }, {
-  "matches" : {
-    "wins" : 2,
-    "draws" : 1,
-    "losses" : 15
-  },
-  "goals" : {
-    "for" : 27,
-    "against" : 74
-  },
-  "form" : [ {
-    "result" : "loss",
-    "text" : "Blijdorp 5-2 Excelsior'20"
+  "competition" : "1e klasse 06",
+  "teams" : [ {
+    "matches" : {
+      "wins" : 16,
+      "draws" : 1,
+      "losses" : 1
+    },
+    "goals" : {
+      "for" : 118,
+      "against" : 25
+    },
+    "form" : [ {
+      "result" : "win",
+      "text" : "Berkel 15-1 Zestienhoven"
+    }, {
+      "result" : "win",
+      "text" : "JHR 0-10 Berkel"
+    }, {
+      "result" : "win",
+      "text" : "Spartaan'20 1-4 Berkel"
+    }, {
+      "result" : "win",
+      "text" : "Berkel 8-1 Excelsior'20"
+    }, {
+      "result" : "win",
+      "text" : "Hillegersberg 0-6 Berkel"
+    } ],
+    "team" : "Berkel",
+    "total" : 18,
+    "points" : 49,
+    "diff" : 93
   }, {
-    "result" : "loss",
-    "text" : "Excelsior'20 0-6 De Betrokken Spartaan"
+    "matches" : {
+      "wins" : 14,
+      "draws" : 1,
+      "losses" : 3
+    },
+    "goals" : {
+      "for" : 67,
+      "against" : 31
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "Spartaan'20 1-4 Berkel"
+    }, {
+      "result" : "win",
+      "text" : "Spartaan'20 1-0 Blijdorp"
+    }, {
+      "result" : "win",
+      "text" : "JHR 1-8 Spartaan'20"
+    }, {
+      "result" : "win",
+      "text" : "Spartaan'20 5-1 Zestienhoven"
+    }, {
+      "result" : "win",
+      "text" : "Spartaan'20 7-2 Nieuwerkerk"
+    } ],
+    "team" : "Spartaan'20",
+    "total" : 18,
+    "points" : 43,
+    "diff" : 36
   }, {
-    "result" : "loss",
-    "text" : "Excelsior'20 1-4 VOC"
+    "matches" : {
+      "wins" : 12,
+      "draws" : 1,
+      "losses" : 4
+    },
+    "goals" : {
+      "for" : 92,
+      "against" : 46
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "Nieuwerkerk 8-5 De Betrokken Spartaan"
+    }, {
+      "result" : "loss",
+      "text" : "De Betrokken Spartaan 2-5 Nieuwerkerk"
+    }, {
+      "result" : "win",
+      "text" : "Excelsior'20 0-6 De Betrokken Spartaan"
+    }, {
+      "result" : "win",
+      "text" : "Blijdorp 2-4 De Betrokken Spartaan"
+    }, {
+      "result" : "win",
+      "text" : "De Betrokken Spartaan 8-1 VOC"
+    } ],
+    "team" : "De Betrokken Spartaan",
+    "total" : 17,
+    "points" : 37,
+    "diff" : 46
   }, {
-    "result" : "loss",
-    "text" : "Berkel 8-1 Excelsior'20"
+    "matches" : {
+      "wins" : 11,
+      "draws" : 1,
+      "losses" : 6
+    },
+    "goals" : {
+      "for" : 61,
+      "against" : 52
+    },
+    "form" : [ {
+      "result" : "win",
+      "text" : "Nieuwerkerk 8-5 De Betrokken Spartaan"
+    }, {
+      "result" : "win",
+      "text" : "De Betrokken Spartaan 2-5 Nieuwerkerk"
+    }, {
+      "result" : "loss",
+      "text" : "Blijdorp 4-3 Nieuwerkerk"
+    }, {
+      "result" : "win",
+      "text" : "Nieuwerkerk 8-2 Zestienhoven"
+    }, {
+      "result" : "win",
+      "text" : "Nieuwerkerk 5-0 Blijdorp"
+    } ],
+    "team" : "Nieuwerkerk",
+    "total" : 18,
+    "points" : 34,
+    "diff" : 9
   }, {
-    "result" : "win",
-    "text" : "Excelsior'20 6-1 JHR"
-  } ],
-  "team" : "Excelsior'20"
-}, {
-  "matches" : {
-    "wins" : 4,
-    "draws" : 2,
-    "losses" : 12
-  },
-  "goals" : {
-    "for" : 35,
-    "against" : 72
-  },
-  "form" : [ {
-    "result" : "loss",
-    "text" : "JHR 0-10 Berkel"
+    "matches" : {
+      "wins" : 6,
+      "draws" : 4,
+      "losses" : 8
+    },
+    "goals" : {
+      "for" : 45,
+      "against" : 53
+    },
+    "form" : [ {
+      "result" : "win",
+      "text" : "Blijdorp 5-2 Excelsior'20"
+    }, {
+      "result" : "win",
+      "text" : "Blijdorp 6-2 Zestienhoven"
+    }, {
+      "result" : "win",
+      "text" : "Blijdorp 4-3 Nieuwerkerk"
+    }, {
+      "result" : "win",
+      "text" : "Hillegersberg 3-4 Blijdorp"
+    }, {
+      "result" : "loss",
+      "text" : "Spartaan'20 1-0 Blijdorp"
+    } ],
+    "team" : "Blijdorp",
+    "total" : 18,
+    "points" : 22,
+    "diff" : -8
   }, {
-    "result" : "loss",
-    "text" : "Zestienhoven 4-3 JHR"
+    "matches" : {
+      "wins" : 6,
+      "draws" : 2,
+      "losses" : 10
+    },
+    "goals" : {
+      "for" : 42,
+      "against" : 57
+    },
+    "form" : [ {
+      "result" : "win",
+      "text" : "Excelsior'20 1-4 VOC"
+    }, {
+      "result" : "win",
+      "text" : "Zestienhoven 1-2 VOC"
+    }, {
+      "result" : "win",
+      "text" : "VOC 7-1 Hillegersberg"
+    }, {
+      "result" : "loss",
+      "text" : "De Betrokken Spartaan 8-1 VOC"
+    }, {
+      "result" : "win",
+      "text" : "VOC 3-2 Blijdorp"
+    } ],
+    "team" : "VOC",
+    "total" : 18,
+    "points" : 20,
+    "diff" : -15
   }, {
-    "result" : "loss",
-    "text" : "JHR 1-8 Spartaan'20"
+    "matches" : {
+      "wins" : 6,
+      "draws" : 1,
+      "losses" : 10
+    },
+    "goals" : {
+      "for" : 49,
+      "against" : 69
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "Zestienhoven 6-0 Hillegersberg"
+    }, {
+      "result" : "loss",
+      "text" : "Hillegersberg 3-4 Blijdorp"
+    }, {
+      "result" : "loss",
+      "text" : "VOC 7-1 Hillegersberg"
+    }, {
+      "result" : "loss",
+      "text" : "Hillegersberg 0-6 Berkel"
+    }, {
+      "result" : "win",
+      "text" : "Hillegersberg 4-2 Nieuwerkerk"
+    } ],
+    "team" : "Hillegersberg",
+    "total" : 17,
+    "points" : 19,
+    "diff" : -20
   }, {
-    "result" : "loss",
-    "text" : "Excelsior'20 6-1 JHR"
+    "matches" : {
+      "wins" : 5,
+      "draws" : 0,
+      "losses" : 13
+    },
+    "goals" : {
+      "for" : 38,
+      "against" : 95
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "Blijdorp 6-2 Zestienhoven"
+    }, {
+      "result" : "loss",
+      "text" : "Berkel 15-1 Zestienhoven"
+    }, {
+      "result" : "win",
+      "text" : "Zestienhoven 6-0 Hillegersberg"
+    }, {
+      "result" : "win",
+      "text" : "Zestienhoven 4-3 JHR"
+    }, {
+      "result" : "loss",
+      "text" : "Zestienhoven 1-2 VOC"
+    } ],
+    "team" : "Zestienhoven",
+    "total" : 18,
+    "points" : 15,
+    "diff" : -57
   }, {
-    "result" : "loss",
-    "text" : "JHR 2-4 Hillegersberg"
-  } ],
-  "team" : "JHR"
-}, {
-  "matches" : {
-    "wins" : 6,
-    "draws" : 1,
-    "losses" : 10
-  },
-  "goals" : {
-    "for" : 49,
-    "against" : 69
-  },
-  "form" : [ {
-    "result" : "loss",
-    "text" : "Zestienhoven 6-0 Hillegersberg"
+    "matches" : {
+      "wins" : 4,
+      "draws" : 2,
+      "losses" : 12
+    },
+    "goals" : {
+      "for" : 35,
+      "against" : 72
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "JHR 0-10 Berkel"
+    }, {
+      "result" : "loss",
+      "text" : "Zestienhoven 4-3 JHR"
+    }, {
+      "result" : "loss",
+      "text" : "JHR 1-8 Spartaan'20"
+    }, {
+      "result" : "loss",
+      "text" : "Excelsior'20 6-1 JHR"
+    }, {
+      "result" : "loss",
+      "text" : "JHR 2-4 Hillegersberg"
+    } ],
+    "team" : "JHR",
+    "total" : 18,
+    "points" : 14,
+    "diff" : -37
   }, {
-    "result" : "loss",
-    "text" : "Hillegersberg 3-4 Blijdorp"
-  }, {
-    "result" : "loss",
-    "text" : "VOC 7-1 Hillegersberg"
-  }, {
-    "result" : "loss",
-    "text" : "Hillegersberg 0-6 Berkel"
-  }, {
-    "result" : "win",
-    "text" : "Hillegersberg 4-2 Nieuwerkerk"
-  } ],
-  "team" : "Hillegersberg"
-}, {
-  "matches" : {
-    "wins" : 12,
-    "draws" : 1,
-    "losses" : 4
-  },
-  "goals" : {
-    "for" : 92,
-    "against" : 46
-  },
-  "form" : [ {
-    "result" : "loss",
-    "text" : "Nieuwerkerk 8-5 De Betrokken Spartaan"
-  }, {
-    "result" : "loss",
-    "text" : "De Betrokken Spartaan 2-5 Nieuwerkerk"
-  }, {
-    "result" : "win",
-    "text" : "Excelsior'20 0-6 De Betrokken Spartaan"
-  }, {
-    "result" : "win",
-    "text" : "Blijdorp 2-4 De Betrokken Spartaan"
-  }, {
-    "result" : "win",
-    "text" : "De Betrokken Spartaan 8-1 VOC"
-  } ],
-  "team" : "De Betrokken Spartaan"
-}, {
-  "matches" : {
-    "wins" : 11,
-    "draws" : 1,
-    "losses" : 6
-  },
-  "goals" : {
-    "for" : 61,
-    "against" : 52
-  },
-  "form" : [ {
-    "result" : "win",
-    "text" : "Nieuwerkerk 8-5 De Betrokken Spartaan"
-  }, {
-    "result" : "win",
-    "text" : "De Betrokken Spartaan 2-5 Nieuwerkerk"
-  }, {
-    "result" : "loss",
-    "text" : "Blijdorp 4-3 Nieuwerkerk"
-  }, {
-    "result" : "win",
-    "text" : "Nieuwerkerk 8-2 Zestienhoven"
-  }, {
-    "result" : "win",
-    "text" : "Nieuwerkerk 5-0 Blijdorp"
-  } ],
-  "team" : "Nieuwerkerk"
-}, {
-  "matches" : {
-    "wins" : 6,
-    "draws" : 4,
-    "losses" : 8
-  },
-  "goals" : {
-    "for" : 45,
-    "against" : 53
-  },
-  "form" : [ {
-    "result" : "win",
-    "text" : "Blijdorp 5-2 Excelsior'20"
-  }, {
-    "result" : "win",
-    "text" : "Blijdorp 6-2 Zestienhoven"
-  }, {
-    "result" : "win",
-    "text" : "Blijdorp 4-3 Nieuwerkerk"
-  }, {
-    "result" : "win",
-    "text" : "Hillegersberg 3-4 Blijdorp"
-  }, {
-    "result" : "loss",
-    "text" : "Spartaan'20 1-0 Blijdorp"
-  } ],
-  "team" : "Blijdorp"
-}, {
-  "matches" : {
-    "wins" : 5,
-    "draws" : 0,
-    "losses" : 13
-  },
-  "goals" : {
-    "for" : 38,
-    "against" : 95
-  },
-  "form" : [ {
-    "result" : "loss",
-    "text" : "Blijdorp 6-2 Zestienhoven"
-  }, {
-    "result" : "loss",
-    "text" : "Berkel 15-1 Zestienhoven"
-  }, {
-    "result" : "win",
-    "text" : "Zestienhoven 6-0 Hillegersberg"
-  }, {
-    "result" : "win",
-    "text" : "Zestienhoven 4-3 JHR"
-  }, {
-    "result" : "loss",
-    "text" : "Zestienhoven 1-2 VOC"
-  } ],
-  "team" : "Zestienhoven"
-}, {
-  "matches" : {
-    "wins" : 14,
-    "draws" : 1,
-    "losses" : 3
-  },
-  "goals" : {
-    "for" : 67,
-    "against" : 31
-  },
-  "form" : [ {
-    "result" : "loss",
-    "text" : "Spartaan'20 1-4 Berkel"
-  }, {
-    "result" : "win",
-    "text" : "Spartaan'20 1-0 Blijdorp"
-  }, {
-    "result" : "win",
-    "text" : "JHR 1-8 Spartaan'20"
-  }, {
-    "result" : "win",
-    "text" : "Spartaan'20 5-1 Zestienhoven"
-  }, {
-    "result" : "win",
-    "text" : "Spartaan'20 7-2 Nieuwerkerk"
-  } ],
-  "team" : "Spartaan'20"
-}, {
-  "matches" : {
-    "wins" : 16,
-    "draws" : 1,
-    "losses" : 1
-  },
-  "goals" : {
-    "for" : 118,
-    "against" : 25
-  },
-  "form" : [ {
-    "result" : "win",
-    "text" : "Berkel 15-1 Zestienhoven"
-  }, {
-    "result" : "win",
-    "text" : "JHR 0-10 Berkel"
-  }, {
-    "result" : "win",
-    "text" : "Spartaan'20 1-4 Berkel"
-  }, {
-    "result" : "win",
-    "text" : "Berkel 8-1 Excelsior'20"
-  }, {
-    "result" : "win",
-    "text" : "Hillegersberg 0-6 Berkel"
-  } ],
-  "team" : "Berkel"
+    "matches" : {
+      "wins" : 2,
+      "draws" : 1,
+      "losses" : 15
+    },
+    "goals" : {
+      "for" : 27,
+      "against" : 74
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "Blijdorp 5-2 Excelsior'20"
+    }, {
+      "result" : "loss",
+      "text" : "Excelsior'20 0-6 De Betrokken Spartaan"
+    }, {
+      "result" : "loss",
+      "text" : "Excelsior'20 1-4 VOC"
+    }, {
+      "result" : "loss",
+      "text" : "Berkel 8-1 Excelsior'20"
+    }, {
+      "result" : "win",
+      "text" : "Excelsior'20 6-1 JHR"
+    } ],
+    "team" : "Excelsior'20",
+    "total" : 18,
+    "points" : 7,
+    "diff" : -47
+  } ]
 } ]

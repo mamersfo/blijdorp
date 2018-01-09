@@ -1,122 +1,167 @@
 [
   {
-    "team": "HermesDVS",
-    "matches": {
-      "wins": 15,
-      "draws": 0,
-      "losses": 3
-    },
-    "goals": {
-      "for": 105,
-      "against": 48
-    }
-  },
-  {
-    "team": "SVV E2",
-    "matches": {
-      "wins": 10,
-      "draws": 3,
-      "losses": 5
-    },
-    "goals": {
-      "for": 85,
-      "against": 71
-    }
-  },
-  {
-    "team": "CWO E1",
-    "matches": {
-      "wins": 10,
-      "draws": 0,
-      "losses": 8
-    },
-    "goals": {
-      "for": 65,
-      "against": 55
-    }
-  },
-  {
-    "team": "VFC E5",
-    "matches": {
-      "wins": 9,
-      "draws": 0,
-      "losses": 8
-    },
-    "goals": {
-      "for": 55,
-      "against": 48
-    }
-  },
-  {
-    "team": "De Betrokken Spartaan E3",
-    "matches": {
-      "wins": 8,
-      "draws": 3,
-      "losses": 7
-    },
-    "goals": {
-      "for": 64,
-      "against": 51
-    }
-  },
-  {
-    "team": "Blijdorp E3",
-    "matches": {
-      "wins": 8,
-      "draws": 0,
-      "losses": 10
-    },
-    "goals": {
-      "for": 62,
-      "against": 69
-    }
-  },
-  {
-    "team": "Excelsior'20 E3",
-    "matches": {
-      "wins": 7,
-      "draws": 2,
-      "losses": 9
-    },
-    "goals": {
-      "for": 72,
-      "against": 85
-    }
-  },
-  {
-    "team": "GLZ Delfshaven E1",
-    "matches": {
-      "wins": 6,
-      "draws": 2,
-      "losses": 9
-    },
-    "goals": {
-      "for": 59,
-      "against": 72
-    }
-  },
-  {
-    "team": "Victoria'04 E2",
-    "matches": {
-      "wins": 6,
-      "draws": 2,
-      "losses": 10
-    },
-    "goals": {
-      "for": 32,
-      "against": 55
-    }
-  },
-  {
-    "team": "Kethel Spaland E2",
-    "matches": {
-      "wins": 3,
-      "draws": 2,
-      "losses": 13
-    },
-    "goals": {
-      "for": 34,
-      "against": 79
-    }
+    "competition": "3e klasse 09",
+    "teams": [
+      {
+        "team": "HermesDVS E1",
+        "total": 18,
+        "matches": {
+          "wins": 15,
+          "draws": 0,
+          "losses": 3
+        },
+        "points": 45,
+        "goals": {
+          "for": 105,
+          "against": 48
+        },
+        "diff": 45,
+        "form": []
+      },
+      {
+        "team": "SVV E2",
+        "total": 18,
+        "matches": {
+          "wins": 10,
+          "draws": 3,
+          "losses": 5
+        },
+        "points": 33,
+        "goals": {
+          "for": 85,
+          "against": 71
+        },
+        "diff": 14,
+        "form": []
+      },
+      {
+        "team": "CWO E1",
+        "total": 18,
+        "matches": {
+          "wins": 10,
+          "draws": 0,
+          "losses": 8
+        },
+        "points": 30,
+        "goals": {
+          "for": 65,
+          "against": 55
+        },
+        "diff": 10,
+        "form": []
+      },
+      {
+        "team": "VFC E5",
+        "total": 17,
+        "matches": {
+          "wins": 9,
+          "draws": 0,
+          "losses": 8
+        },
+        "points": 27,
+        "goals": {
+          "for": 55,
+          "against": 48
+        },
+        "diff": 7,
+        "form": []
+      },
+      {
+        "team": "De Betrokken Spartaan E3",
+        "total": 18,
+        "matches": {
+          "wins": 8,
+          "draws": 3,
+          "losses": 7
+        },
+        "points": 27,
+        "goals": {
+          "for": 64,
+          "against": 51
+        },
+        "diff": 13,
+        "form": []
+      },
+      {
+        "team": "Blijdorp",
+        "total": 18,
+        "matches": {
+          "wins": 8,
+          "draws": 0,
+          "losses": 10
+        },
+        "points": 24,
+        "goals": {
+          "for": 62,
+          "against": 69
+        },
+        "diff": -7,
+        "form": []
+      },
+      {
+        "team": "Excelsior'20 E3",
+        "total": 18,
+        "matches": {
+          "wins": 7,
+          "draws": 2,
+          "losses": 9
+        },
+        "points": 23,
+        "goals": {
+          "for": 72,
+          "against": 85
+        },
+        "diff": -13,
+        "form": []
+      },
+      {
+        "team": "GLZ Delfshaven E1",
+        "total": 17,
+        "matches": {
+          "wins": 6,
+          "draws": 2,
+          "losses": 9
+        },
+        "points": 20,
+        "goals": {
+          "for": 59,
+          "against": 72
+        },
+        "diff": -13,
+        "form": []
+      },
+      {
+        "team": "Victoria'04 E2",
+        "total": 18,
+        "matches": {
+          "wins": 6,
+          "draws": 2,
+          "losses": 10
+        },
+        "points": 20,
+        "goals": {
+          "for": 32,
+          "against": 55
+        },
+        "diff": -23,
+        "form": []
+      },
+      {
+        "team": "Kethel Spaland E2",
+        "total": 18,
+        "matches": {
+          "wins": 3,
+          "draws": 2,
+          "losses": 13
+        },
+        "points": 11,
+        "goals": {
+          "for": 34,
+          "against": 79
+        },
+        "diff": -45,
+        "form": []
+      }
+    ]
   }
 ]

@@ -9,7 +9,6 @@ export default class Home extends React.Component {
 
   postProcess(data) {
     return data.map((m) => {
-      console.log('date', m.date);
       let date = new Date(m.date);
       return Object.assign(m, { date, date } );
     });

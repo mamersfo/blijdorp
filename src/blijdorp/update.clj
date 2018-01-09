@@ -2,7 +2,25 @@
   (:require [cheshire.core :refer :all]))
 
 (def season           "2017-18")
-(def competition      "3e klasse 7 najaar")
+(def competitions     {"3e klasse 2 voorjaar"
+                       [{:team "AGE-GGK"}
+                        {:team "Blijdorp"}
+                        {:team "BVCB"}
+                        {:team "CWO"}
+                        {:team "DHL"}
+                        {:team "GLZ Delfshaven"}
+                        {:team "Hillegersberg"}
+                        {:team "HWD"}
+                        {:team "Leonidas"}
+                        {:team "Oliveo"}
+                        {:team "XerxesDZB"}
+                        {:team "Zestienhoven"}
+                        ]
+                       "3e klasse 7 najaar"
+                       nil
+                       "Beker Groep 3-16"
+                       nil})
+
 (def results-filename "uitslagen.json")
 (def table-filename   "stand.json")
 (def matches-filename "matches.json")
@@ -62,7 +80,6 @@
 (defn parse-results
   [competition]
   (let [filename (str "data/" season "/" results-filename)]
-    (println "filename:" filename)
     (filter #(= competition (:competition %))
             (parse-string (slurp filename) true))))
 
@@ -77,7 +94,18 @@
         table (atom (reduce #(assoc %1 %2 stats) {} teams))]
     (loop [matches matches]
       (if (empty? matches)
-        (map #(assoc (get @table %) :team %) (keys @table))
+        (reverse
+         (sort-by
+          (juxt :points (comp - :total) :diff :team)
+          (map #(let [team (get @table %)]
+                  (assoc team
+                         :team %
+                         :total (apply + (vals (:matches team)))
+                         :points (+ (* 3 (-> team :matches :wins))
+                                    (-> team :matches :draws))
+                         :diff (- (-> team :goals :for)
+                                  (-> team :goals :against))))
+               (keys @table))))
         (let [match (first matches)
               home-team (first match)
               away-team (second match)
@@ -124,8 +152,38 @@
       (generate-stream root out {:pretty true})
       (println "Written to" path))))
 
-(defn export-table []
-  (export-json (generate-table (parse-results competition)) table-filename))
+(defn all-competitions
+  []
+  (let [filename (str "data/" season "/" results-filename)
+        results (parse-string (slurp filename) true)]
+    (set (map :competition results))))
+
+(defn get-competition
+  [k]
+  (if-let [teams (get competitions k)]
+    (map #(assoc %
+                 :total 0
+                 :matches {:wins 0
+                           :draws 0
+                           :losses 0}
+                 :points 0
+                 :goals {:for 0
+                         :against 0}
+                 :diff 0
+                 :form []) teams)))
+
+(defn tables
+  []
+  (loop [comps (keys competitions) coll []]
+    (if-not (empty? comps)
+      (let [key (first comps)
+            teams (or (get-competition key)
+                      (generate-table (parse-results key)))]
+        (recur (next comps)
+               (conj coll (hash-map :competition key :teams teams))))
+      coll)))
+(defn export-tables []
+  (export-json (tables) table-filename))
 
 (defn export-goals []
   (export-json (generate-stats (parse-matches) :goals) goals-filename))
@@ -137,5 +195,5 @@
   (export-json (generate-stats (parse-matches)) stats-filename))
 
 (defn export []
-  (export-table)
+  (export-tables)
   (export-stats))

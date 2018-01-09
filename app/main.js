@@ -39,7 +39,8 @@ const childRoutes = [
 	},
 	{
 		id: 3,
-		path: 'stand',
+    title: 'stand',
+		path: 'stand/0',
 		component: Table
 	},
 	{
@@ -58,17 +59,18 @@ const childRoutes = [
 		path: 'clubs/Blijdorp',
 		component: Clubs
 	},
-  // {
-  //   id: 8,
-  //   path: 'oefenstof',
-  //   component: Training
-  // },
 	{
 		id: 7,
 		path: 'clubs/:club',
 		component: Clubs,
 		render: false
-	}
+	},
+  {
+    id: 8,
+    path: 'stand/:competition',
+    component: Table,
+    render: false
+  }
 ];
 
 class Main extends React.Component {
