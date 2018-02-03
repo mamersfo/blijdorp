@@ -1,21 +1,6 @@
 [ {
   "competition" : "3e klasse 2 voorjaar",
   "teams" : [ {
-    "team" : "AGE-GGK",
-    "total" : 0,
-    "matches" : {
-      "wins" : 0,
-      "draws" : 0,
-      "losses" : 0
-    },
-    "points" : 0,
-    "goals" : {
-      "for" : 0,
-      "against" : 0
-    },
-    "diff" : 0,
-    "form" : [ ]
-  }, {
     "team" : "Blijdorp",
     "total" : 0,
     "matches" : {
@@ -31,7 +16,7 @@
     "diff" : 0,
     "form" : [ ]
   }, {
-    "team" : "BVCB",
+    "team" : "Capelle",
     "total" : 0,
     "matches" : {
       "wins" : 0,
@@ -47,6 +32,21 @@
     "form" : [ ]
   }, {
     "team" : "CWO",
+    "total" : 0,
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "points" : 0,
+    "goals" : {
+      "for" : 0,
+      "against" : 0
+    },
+    "diff" : 0,
+    "form" : [ ]
+  }, {
+    "team" : "DHC",
     "total" : 0,
     "matches" : {
       "wins" : 0,
@@ -77,21 +77,6 @@
     "form" : [ ]
   }, {
     "team" : "GLZ Delfshaven",
-    "total" : 0,
-    "matches" : {
-      "wins" : 0,
-      "draws" : 0,
-      "losses" : 0
-    },
-    "points" : 0,
-    "goals" : {
-      "for" : 0,
-      "against" : 0
-    },
-    "diff" : 0,
-    "form" : [ ]
-  }, {
-    "team" : "Hillegersberg",
     "total" : 0,
     "matches" : {
       "wins" : 0,

@@ -23,7 +23,7 @@ export class Schedule extends Seasonal {
 		if ( undefined !== m.teams ) {
 			const clone = new Date(m.date.getTime());
 			if ( m.date.getHours() > 0 ) {
-				clone.setMinutes(m.date.getMinutes() - 45);
+				clone.setMinutes(m.date.getMinutes() - 30);
 				return <LocalTime date={clone} />;
 			}
 		}

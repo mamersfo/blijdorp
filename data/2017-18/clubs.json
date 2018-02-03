@@ -55,6 +55,17 @@
 		"position": [ 51.9210767, 4.3624627 ]
 	},
   {
+		"name": "DHC",
+		"fullname": "DHC",
+		"website": "www.dhc-delft.nl",
+		"address": {
+			"street": "Sportring 2",
+			"postalCode": "2616 LK",
+			"city": "Delft"
+		},
+		"position": [ 52.0095802, 4.3450119 ]
+	},
+  {
 		"name": "DHL",
 		"fullname": "sv DHL",
 		"website": "www.svdhl.nl",
