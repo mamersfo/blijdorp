@@ -26,5 +26,21 @@
   {
     "date": "2018-04-21T09:35+01:00",
     "teams": [ "Blijdorp", "DHC" ]
+  },
+  {
+    "date": "2018-05-10T08:00+01:00",
+    "teams": [ "BVCB", "toernooi" ]
+  },
+  {
+    "date": "2018-05-12T08:30+01:00",
+    "teams": [ "CWO", "Blijdorp" ]
+  },
+  {
+    "date": "2018-05-19T07:30+01:00",
+    "teams": [ "DHL", "Blijdorp" ]
+  },
+  {
+    "date": "2018-05-26T08:30+01:00",
+    "teams": [ "Blijdorp", "XerxesDZB" ]
   }
 ]
