@@ -1,50 +1,59 @@
 [
-    {
-		    "latest": true,
-		    "competition": "3e klasse 7 najaar",
-		    "date": "2017-12-09",
-		    "fixtures": [
-            ["Spartaan'20", "AGE-GGK", 2, 1],
-            ["HWD", "Blijdorp", 3, 2],
-            ["Hermes DVS", "CWO", 5, 2],
-            ["GLZ Delfshaven", "Nieuwerkerk", 3, 2],
-            ["Kethel Spaland", "Excelsior'20", 1, 1]
-		    ]
-	  },
   {
-		  "competition": "3e klasse 7 najaar",
-		  "date": "2017-12-02",
-		  "fixtures": [
-          ["AGE-GGK", "HWD", 0, 3],
-          ["Blijdorp", "GLZ Delfshaven", 2, 6],
-          ["Excelsior'20", "Spartaan'20", 2, 5],
-          ["Nieuwerkerk", "Kethel Spaland", 9, 1]
-		  ]
+		"latest": true,
+		"competition": "3e klasse 9 voorjaar",
+		"date": "2018-02-10",
+		"fixtures": [
+      ["Blijdorp", "Zestienhoven", 2, 2],
+      ["Capelle", "GLZ Delfshaven", 1, 4],
+      ["Oliveo", "XerxesDZB", 2, 1]
+		]
 	},
   {
-		  "competition": "Voetbal Rijnmond Cup",
-		  "date": "2017-11-29",
-		  "fixtures": [
-          ["Capelle", "Blijdorp", 2, 1]
-		  ]
+		"competition": "3e klasse 7 najaar",
+		"date": "2017-12-09",
+		"fixtures": [
+      ["Spartaan'20", "AGE-GGK", 2, 1],
+      ["HWD", "Blijdorp", 3, 2],
+      ["Hermes DVS", "CWO", 5, 2],
+      ["GLZ Delfshaven", "Nieuwerkerk", 3, 2],
+      ["Kethel Spaland", "Excelsior'20", 1, 1]
+		]
 	},
   {
-		  "competition": "3e klasse 7 najaar",
-		  "date": "2017-11-25",
-		  "fixtures": [
-          ["Excelsior'20", "Zestienhoven", 0, 3],
-          ["Spartaan'20", "CWO", 7, 0],
-          ["HWD", "Nieuwerkerk", 1, 5],
-          ["GLZ Delfshaven", "Kethel Spaland", 12, 0],
-          ["Hermes DVS", "Blijdorp", 2, 1]
-		  ]
+		"competition": "3e klasse 7 najaar",
+		"date": "2017-12-02",
+		"fixtures": [
+      ["AGE-GGK", "HWD", 0, 3],
+      ["Blijdorp", "GLZ Delfshaven", 2, 6],
+      ["Excelsior'20", "Spartaan'20", 2, 5],
+      ["Nieuwerkerk", "Kethel Spaland", 9, 1]
+		]
 	},
   {
-		  "competition": "3e klasse 7 najaar",
-		  "date": "2017-11-21",
-		  "fixtures": [
-        ["AGE-GGK", "CWO", 2, 2]
-		  ]
+		"competition": "Voetbal Rijnmond Cup",
+		"date": "2017-11-29",
+		"fixtures": [
+      ["Capelle", "Blijdorp", 2, 1]
+		]
+	},
+  {
+		"competition": "3e klasse 7 najaar",
+		"date": "2017-11-25",
+		"fixtures": [
+      ["Excelsior'20", "Zestienhoven", 0, 3],
+      ["Spartaan'20", "CWO", 7, 0],
+      ["HWD", "Nieuwerkerk", 1, 5],
+      ["GLZ Delfshaven", "Kethel Spaland", 12, 0],
+      ["Hermes DVS", "Blijdorp", 2, 1]
+		]
+	},
+  {
+		"competition": "3e klasse 7 najaar",
+		"date": "2017-11-21",
+		"fixtures": [
+      ["AGE-GGK", "CWO", 2, 2]
+		]
 	},
   {
 		"competition": "3e klasse 7 najaar",

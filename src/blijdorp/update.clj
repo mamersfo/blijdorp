@@ -2,20 +2,8 @@
   (:require [cheshire.core :refer :all]))
 
 (def season           "2017-18")
-(def competitions     {"3e klasse 2 voorjaar"
-                       [{:team "AGE-GGK"}
-                        {:team "Blijdorp"}
-                        {:team "BVCB"}
-                        {:team "CWO"}
-                        {:team "DHL"}
-                        {:team "GLZ Delfshaven"}
-                        {:team "Hillegersberg"}
-                        {:team "HWD"}
-                        {:team "Leonidas"}
-                        {:team "Oliveo"}
-                        {:team "XerxesDZB"}
-                        {:team "Zestienhoven"}
-                        ]
+(def competitions     {"3e klasse 9 voorjaar"
+                       nil
                        "3e klasse 7 najaar"
                        nil
                        "Beker Groep 3-16"
@@ -177,11 +165,11 @@
   (loop [comps (keys competitions) coll []]
     (if-not (empty? comps)
       (let [key (first comps)
-            teams (or (get-competition key)
-                      (generate-table (parse-results key)))]
+            teams (generate-table (parse-results key))]
         (recur (next comps)
                (conj coll (hash-map :competition key :teams teams))))
       coll)))
+
 (defn export-tables []
   (export-json (tables) table-filename))
 

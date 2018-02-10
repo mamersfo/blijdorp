@@ -1,35 +1,77 @@
 [ {
-  "competition" : "3e klasse 2 voorjaar",
+  "competition" : "3e klasse 9 voorjaar",
   "teams" : [ {
-    "team" : "Blijdorp",
-    "total" : 0,
     "matches" : {
-      "wins" : 0,
+      "wins" : 1,
       "draws" : 0,
       "losses" : 0
     },
-    "points" : 0,
     "goals" : {
-      "for" : 0,
-      "against" : 0
+      "for" : 4,
+      "against" : 1
     },
-    "diff" : 0,
-    "form" : [ ]
+    "form" : [ {
+      "result" : "win",
+      "text" : "Capelle 1-4 GLZ Delfshaven"
+    } ],
+    "team" : "GLZ Delfshaven",
+    "total" : 1,
+    "points" : 3,
+    "diff" : 3
   }, {
-    "team" : "Capelle",
-    "total" : 0,
     "matches" : {
-      "wins" : 0,
+      "wins" : 1,
       "draws" : 0,
       "losses" : 0
     },
-    "points" : 0,
     "goals" : {
-      "for" : 0,
-      "against" : 0
+      "for" : 2,
+      "against" : 1
     },
-    "diff" : 0,
-    "form" : [ ]
+    "form" : [ {
+      "result" : "win",
+      "text" : "Oliveo 2-1 XerxesDZB"
+    } ],
+    "team" : "Oliveo",
+    "total" : 1,
+    "points" : 3,
+    "diff" : 1
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 1,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 2,
+      "against" : 2
+    },
+    "form" : [ {
+      "result" : "draw",
+      "text" : "Blijdorp 2-2 Zestienhoven"
+    } ],
+    "team" : "Zestienhoven",
+    "total" : 1,
+    "points" : 1,
+    "diff" : 0
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 1,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 2,
+      "against" : 2
+    },
+    "form" : [ {
+      "result" : "draw",
+      "text" : "Blijdorp 2-2 Zestienhoven"
+    } ],
+    "team" : "Blijdorp",
+    "total" : 1,
+    "points" : 1,
+    "diff" : 0
   }, {
     "team" : "CWO",
     "total" : 0,
@@ -76,21 +118,6 @@
     "diff" : 0,
     "form" : [ ]
   }, {
-    "team" : "GLZ Delfshaven",
-    "total" : 0,
-    "matches" : {
-      "wins" : 0,
-      "draws" : 0,
-      "losses" : 0
-    },
-    "points" : 0,
-    "goals" : {
-      "for" : 0,
-      "against" : 0
-    },
-    "diff" : 0,
-    "form" : [ ]
-  }, {
     "team" : "HWD",
     "total" : 0,
     "matches" : {
@@ -106,65 +133,41 @@
     "diff" : 0,
     "form" : [ ]
   }, {
-    "team" : "Leonidas",
-    "total" : 0,
     "matches" : {
       "wins" : 0,
       "draws" : 0,
-      "losses" : 0
+      "losses" : 1
     },
-    "points" : 0,
     "goals" : {
-      "for" : 0,
-      "against" : 0
+      "for" : 1,
+      "against" : 2
     },
-    "diff" : 0,
-    "form" : [ ]
-  }, {
-    "team" : "Oliveo",
-    "total" : 0,
-    "matches" : {
-      "wins" : 0,
-      "draws" : 0,
-      "losses" : 0
-    },
-    "points" : 0,
-    "goals" : {
-      "for" : 0,
-      "against" : 0
-    },
-    "diff" : 0,
-    "form" : [ ]
-  }, {
+    "form" : [ {
+      "result" : "loss",
+      "text" : "Oliveo 2-1 XerxesDZB"
+    } ],
     "team" : "XerxesDZB",
-    "total" : 0,
-    "matches" : {
-      "wins" : 0,
-      "draws" : 0,
-      "losses" : 0
-    },
+    "total" : 1,
     "points" : 0,
-    "goals" : {
-      "for" : 0,
-      "against" : 0
-    },
-    "diff" : 0,
-    "form" : [ ]
+    "diff" : -1
   }, {
-    "team" : "Zestienhoven",
-    "total" : 0,
     "matches" : {
       "wins" : 0,
       "draws" : 0,
-      "losses" : 0
+      "losses" : 1
     },
-    "points" : 0,
     "goals" : {
-      "for" : 0,
-      "against" : 0
+      "for" : 1,
+      "against" : 4
     },
-    "diff" : 0,
-    "form" : [ ]
+    "form" : [ {
+      "result" : "loss",
+      "text" : "Capelle 1-4 GLZ Delfshaven"
+    } ],
+    "team" : "Capelle",
+    "total" : 1,
+    "points" : 0,
+    "diff" : -3
   } ]
 }, {
   "competition" : "3e klasse 7 najaar",
