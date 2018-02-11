@@ -2,12 +2,9 @@
   (:require [cheshire.core :refer :all]))
 
 (def season           "2017-18")
-(def competitions     {"3e klasse 9 voorjaar"
-                       nil
+(def competitions     ["3e klasse 9 voorjaar"
                        "3e klasse 7 najaar"
-                       nil
-                       "Beker Groep 3-16"
-                       nil})
+                       "Beker Groep 3-16"])
 
 (def results-filename "uitslagen.json")
 (def table-filename   "stand.json")
@@ -140,29 +137,9 @@
       (generate-stream root out {:pretty true})
       (println "Written to" path))))
 
-(defn all-competitions
-  []
-  (let [filename (str "data/" season "/" results-filename)
-        results (parse-string (slurp filename) true)]
-    (set (map :competition results))))
-
-(defn get-competition
-  [k]
-  (if-let [teams (get competitions k)]
-    (map #(assoc %
-                 :total 0
-                 :matches {:wins 0
-                           :draws 0
-                           :losses 0}
-                 :points 0
-                 :goals {:for 0
-                         :against 0}
-                 :diff 0
-                 :form []) teams)))
-
 (defn tables
   []
-  (loop [comps (keys competitions) coll []]
+  (loop [comps competitions coll []]
     (if-not (empty? comps)
       (let [key (first comps)
             teams (generate-table (parse-results key))]

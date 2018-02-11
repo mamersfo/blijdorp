@@ -7,6 +7,24 @@
       "losses" : 0
     },
     "goals" : {
+      "for" : 8,
+      "against" : 1
+    },
+    "form" : [ {
+      "result" : "win",
+      "text" : "DHC 8-1 Leonidas"
+    } ],
+    "team" : "DHC",
+    "total" : 1,
+    "points" : 3,
+    "diff" : 7
+  }, {
+    "matches" : {
+      "wins" : 1,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
       "for" : 4,
       "against" : 1
     },
@@ -88,21 +106,6 @@
     "diff" : 0,
     "form" : [ ]
   }, {
-    "team" : "DHC",
-    "total" : 0,
-    "matches" : {
-      "wins" : 0,
-      "draws" : 0,
-      "losses" : 0
-    },
-    "points" : 0,
-    "goals" : {
-      "for" : 0,
-      "against" : 0
-    },
-    "diff" : 0,
-    "form" : [ ]
-  }, {
     "team" : "DHL",
     "total" : 0,
     "matches" : {
@@ -168,6 +171,24 @@
     "total" : 1,
     "points" : 0,
     "diff" : -3
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 1
+    },
+    "goals" : {
+      "for" : 1,
+      "against" : 8
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "DHC 8-1 Leonidas"
+    } ],
+    "team" : "Leonidas",
+    "total" : 1,
+    "points" : 0,
+    "diff" : -7
   } ]
 }, {
   "competition" : "3e klasse 7 najaar",
