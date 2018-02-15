@@ -56,6 +56,24 @@
     "diff" : 1
   }, {
     "matches" : {
+      "wins" : 1,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 3,
+      "against" : 2
+    },
+    "form" : [ {
+      "result" : "win",
+      "text" : "DHL 3-2 HWD"
+    } ],
+    "team" : "DHL",
+    "total" : 1,
+    "points" : 3,
+    "diff" : 1
+  }, {
+    "matches" : {
       "wins" : 0,
       "draws" : 1,
       "losses" : 0
@@ -106,36 +124,6 @@
     "diff" : 0,
     "form" : [ ]
   }, {
-    "team" : "DHL",
-    "total" : 0,
-    "matches" : {
-      "wins" : 0,
-      "draws" : 0,
-      "losses" : 0
-    },
-    "points" : 0,
-    "goals" : {
-      "for" : 0,
-      "against" : 0
-    },
-    "diff" : 0,
-    "form" : [ ]
-  }, {
-    "team" : "HWD",
-    "total" : 0,
-    "matches" : {
-      "wins" : 0,
-      "draws" : 0,
-      "losses" : 0
-    },
-    "points" : 0,
-    "goals" : {
-      "for" : 0,
-      "against" : 0
-    },
-    "diff" : 0,
-    "form" : [ ]
-  }, {
     "matches" : {
       "wins" : 0,
       "draws" : 0,
@@ -150,6 +138,24 @@
       "text" : "Oliveo 2-1 XerxesDZB"
     } ],
     "team" : "XerxesDZB",
+    "total" : 1,
+    "points" : 0,
+    "diff" : -1
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 1
+    },
+    "goals" : {
+      "for" : 2,
+      "against" : 3
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "DHL 3-2 HWD"
+    } ],
+    "team" : "HWD",
     "total" : 1,
     "points" : 0,
     "diff" : -1
