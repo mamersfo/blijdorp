@@ -1,9 +1,8 @@
 [ {
   "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/cloudy.gif",
-  "fcttext" : "Bewolkt. Kouder wordend. Maximaal 43F. Wind uit het ONO van 5 tot 10 mpu.",
-  "fcttext_metric" : "Bewolkt. Kouder wordend. Maximaal 6C. Wind uit het ONO van 10 tot 15 km/u.",
-  "date" : "2018-02-20T17:15+01:00",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext" : "Zich in de middag ontwikkelende lichte regen. Maximaal 44F. Wind uit het ZZO van 10 tot 15 mpu. Kans op regen 60%.",
+  "fcttext_metric" : "Zich in de middag ontwikkelende lichte regen. Maximaal 7C. Wind uit het ZO van 10 tot 15 km/u. Kans op regen 60%.",
+  "date" : "2018-03-06T17:15+01:00",
   "type" : "training"
-}
-]
+} ]
