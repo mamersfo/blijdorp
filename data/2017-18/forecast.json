@@ -1,8 +1,24 @@
 [ {
+  "title" : "zaterdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext" : "Zich in de middag ontwikkelende lichte regen. Maximaal 57F. Wind uit het Z van 10 tot 20 mpu. Kans op regen 70%.",
+  "fcttext_metric" : "Zich in de middag ontwikkelende lichte regen. Maximaal 14C. Wind uit het Z van 15 tot 30 km/u. Kans op regen 70%.",
+  "date" : "2018-03-10T09:30+01:00",
+  "teams" : [ "Blijdorp", "Leonidas" ],
+  "day" : 10,
+  "type" : "match"
+}, {
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Zich in de middag ontwikkelende lichte regen. Maximaal 44F. Wind uit het ZZO van 10 tot 15 mpu. Kans op regen 60%.",
-  "fcttext_metric" : "Zich in de middag ontwikkelende lichte regen. Maximaal 7C. Wind uit het ZO van 10 tot 15 km/u. Kans op regen 60%.",
-  "date" : "2018-03-06T17:15+01:00",
+  "fcttext" : "Regenbuien. Maximaal 45F. Wind uit het WNW van 10 tot 20 mpu. Kans op regen 60%.",
+  "fcttext_metric" : "Regenbuien. Maximaal 7C. Wind uit het WNW van 15 tot 30 km/u. Kans op regen 60%.",
+  "date" : "2018-03-13T17:15+01:00",
+  "type" : "training"
+}, {
+  "title" : "donderdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext" : "Middagregenbuien. Maximaal 53F. Wind uit het ZO van 10 tot 20 mpu. Kans op regen 40%.",
+  "fcttext_metric" : "Middagregenbuien. Maximaal 12C. Wind uit het ZO van 15 tot 30 km/u. Kans op regen 40%.",
+  "date" : "2018-03-15T17:15+01:00",
   "type" : "training"
 } ]
