@@ -22,17 +22,6 @@
 		"position": [ 51.9264862, 4.4397681 ]
 	},
   {
-		"name": "BVCB",
-		"fullname": "sv B.V.C.B.",
-		"website": "www.bvcb.nl",
-		"address": {
-			"street": "Sporthoekpad 1",
-			"postalCode": "2661 GV",
-			"city": "Bergschenhoek"      
-		},
-		"position": [ 51.9822088, 4.5101301 ]
-	},
-  {
 		"name": "Capelle",
 		"fullname": "v.v. Capelle",
 		"website": "www.vvcapelle.nl",
@@ -109,17 +98,6 @@
 		},
 		"position": [ 51.9214353, 4.3713605 ]
 	},
-  {
-    "name": "Hillegersberg",
-    "fullname": "vv Hillegersberg",
-    "website": "vvhillegersberg.nl",
-    "address": {
-      "street": "Duivenpad 11",
-      "postalCode": "3055 VE",
-      "city": "Rotterdam"
-    },
-    "position": [ 51.964447, 4.4967823 ]
-  },
 	{
 		"name": "HWD",
 		"fullname": "vv HWD",
@@ -152,6 +130,17 @@
 			"city": "Rotterdam"
 		},
 		"position": [ 51.947885, 4.4654503 ]
+	},
+  {
+		"name": "Neptunus-Schiebroek",
+		"fullname": "rvv Neptunus-Schiebroek",
+		"website": "neptunus-schiebroek.nl",
+		"address": {
+			"street": "Hazelaarweg 40",
+			"postalCode": "3053 PM",
+			"city": "Rotterdam"
+		},
+		"position": [ 51.9659489, 4.4778496 ]
 	},
 	{
 		"name": "Nieuwerkerk",
