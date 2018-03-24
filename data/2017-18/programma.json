@@ -1,22 +1,14 @@
 [
   {
-    "date": "2018-03-17T10:30+01:00",
-    "teams": [ "GLZ Delfshaven", "Blijdorp" ]
-  },
-  {
-    "date": "2018-03-24T09:30+01:00",
-    "teams": [ "Blijdorp", "Oliveo" ]
-  },
-  {
     "date": "2018-04-07T10:00+01:00",
     "teams": [ "HWD", "Blijdorp" ]
   },
   {
-    "date": "2018-04-14T08:45+01:00",
+    "date": "2018-04-14T08:30+01:00",
     "teams": [ "Blijdorp", "Capelle" ]
   },
   {
-    "date": "2018-04-21T09:35+01:00",
+    "date": "2018-04-21T08:30+01:00",
     "teams": [ "Blijdorp", "DHC" ]
   },
   {
@@ -28,7 +20,7 @@
     "teams": [ "DHL", "Blijdorp" ]
   },
   {
-    "date": "2018-05-26T08:30+01:00",
+    "date": "2018-05-26T08:45+01:00",
     "teams": [ "Blijdorp", "XerxesDZB" ]
   },
   {

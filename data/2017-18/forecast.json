@@ -1,24 +1,2 @@
-[ {
-  "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Regenbuien. Maximaal 44F. Wind uit het WNW van 10 tot 20 mpu. Kans op regen 50%.",
-  "fcttext_metric" : "Regenbuien. Maximaal 7C. Wind uit het WNW van 15 tot 30 km/u. Kans op regen 50%.",
-  "date" : "2018-03-13T17:15+01:00",
-  "type" : "training"
-}, {
-  "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 55F. Wind uit het ZO van 15 tot 25 mpu.",
-  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 13C. Wind uit het ZO van 25 tot 40 km/u.",
-  "date" : "2018-03-15T17:15+01:00",
-  "type" : "training"
-}, {
-  "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 48F. Wind uit het O van 10 tot 20 mpu.",
-  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 9C. Wind uit het O van 15 tot 30 km/u.",
-  "date" : "2018-03-17T10:30+01:00",
-  "teams" : [ "GLZ Delfshaven", "Blijdorp" ],
-  "day" : 17,
-  "type" : "match"
-} ]
+[
+]
