@@ -1,5 +1,24 @@
 [
   {
+		"date": "2018-04-07",
+		"league": "3e klasse 9 voorjaar",
+		"teams": ["HWD", "Blijdorp"],
+		"result": [3, 2],
+		"goals":{
+      "Raf": 1,
+      "Noah": 1
+		},
+		"assists": {
+      "Tije": 1,
+      "Raf": 1
+		},
+		"absent": {
+		},
+		"keeper": {
+			"Jan": 1
+		}
+	},
+  {
 		"date": "2018-03-24",
 		"league": "3e klasse 9 voorjaar",
 		"teams": ["Blijdorp", "Oliveo"],

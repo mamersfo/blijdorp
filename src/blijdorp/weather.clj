@@ -56,7 +56,7 @@
                        (assoc forecast
                               :date (str
                                      (f/unparse (f/formatters :date) date)
-                                     "T17:15+01:00")
+                                     "T16:15+01:00")
                               :type "training"))))]
     (filter identity (map merge-fn ds fc))))
 
