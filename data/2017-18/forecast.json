@@ -1,17 +1,24 @@
 [ {
   "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Ochtendbuien. Maximaal 62F. Wind uit het ZO van 5 tot 10 mpu. Kans op regen 40%.",
-  "fcttext_metric" : "Ochtendbuien. Maximaal 17C. Wind uit het ZO van 10 tot 15 km/u. Kans op regen 40%.",
-  "date" : "2018-04-10T16:15+01:00",
+  "icon_url" : "http://icons.wxug.com/i/c/k/clear.gif",
+  "fcttext" : "Overwegend helder. Maximaal 64F. Wind uit het ZZW van 5 tot 10 mpu.",
+  "fcttext_metric" : "Overwegend helder. Maximaal 18C. Wind uit het ZZW van 10 tot 15 km/u.",
+  "date" : "2018-04-17T16:15+01:00",
+  "type" : "training"
+}, {
+  "title" : "donderdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/clear.gif",
+  "fcttext" : "Overwegend helder. Aanhoudend warm. Maximaal 72F. Wind uit het OZO van 10 tot 20 mpu.",
+  "fcttext_metric" : "Overwegend helder. Aanhoudend warm. Maximaal 22C. Wind uit het OZO van 15 tot 30 km/u.",
+  "date" : "2018-04-19T16:15+01:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 61F. Wind uit het ZZO van 10 tot 15 mpu.",
-  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 16C. Wind uit het ZZO van 15 tot 25 km/u.",
-  "date" : "2018-04-14T08:30+01:00",
-  "teams" : [ "Blijdorp", "Capelle" ],
-  "day" : 14,
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext" : "Middagregenbuien. Maximaal 66F. Wind uit het N van 5 tot 10 mpu. Kans op regen 40%.",
+  "fcttext_metric" : "Middagregenbuien. Maximaal 19C. Wind uit het N van 10 tot 15 km/u. Kans op regen 40%.",
+  "date" : "2018-04-21T08:30+01:00",
+  "teams" : [ "Blijdorp", "DHC" ],
+  "day" : 21,
   "type" : "match"
 } ]
