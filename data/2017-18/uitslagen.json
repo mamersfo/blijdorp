@@ -4,11 +4,11 @@
 		"competition": "3e klasse 9 voorjaar",
 		"date": "2018-04-14",
 		"fixtures": [
-      ["Blijdorp", "Capelle"],
-      ["Leonidas", "DHL"],
-      ["DHC", "CWO"],
-      ["GLZ Delfshaven", "HWD"],
-      ["Zestienhoven", "Oliveo"]
+      ["Blijdorp", "Capelle", 2, 3],
+      ["Leonidas", "DHL", 4, 3],
+      ["DHC", "CWO", 1, 1],
+      ["GLZ Delfshaven", "HWD", 0, 1],
+      ["Zestienhoven", "Oliveo", 1, 3]
 		]
 	},
   {

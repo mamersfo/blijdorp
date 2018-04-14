@@ -3,15 +3,19 @@
 		"date": "2018-04-14",
 		"league": "3e klasse 9 voorjaar",
 		"teams": ["Blijdorp", "Capelle"],
-		"result": [0, 0],
+		"result": [2, 3],
 		"goals":{
+      "Inder": 2
 		},
 		"assists": {
+      "Raf": 1,
+      "Senn": 1
 		},
 		"absent": {
 		},
 		"keeper": {
-			"Jan": 1
+			"Inder": 0.5,
+      "Ruben": 0.5
 		}
 	},
   {
