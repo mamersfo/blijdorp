@@ -1,15 +1,15 @@
 [ {
   "title" : "dinsdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
-  "fcttext" : "Winderig met regenbuien. Maximaal 49F. Wind uit het ZW van 20 tot 30 mpu. Kans op regen 60%.",
-  "fcttext_metric" : "Winderig met regenbuien. Maximaal 10C. Wind uit het ZW van 30 tot 50 km/u. Kans op regen 60%.",
+  "fcttext" : "Winderig met regenbuien. Maximaal 51F. Wind uit het ZW van 20 tot 30 mpu. Kans op regen 60%.",
+  "fcttext_metric" : "Winderig met regenbuien. Maximaal 11C. Wind uit het ZW van 30 tot 50 km/u. Kans op regen 60%.",
   "date" : "2018-05-01T16:15+01:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
   "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 58F. Wind uit het NW van 10 tot 15 mpu.",
-  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 14C. Wind uit het NW van 10 tot 15 km/u.",
+  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 57F. Wind uit het WNW van 10 tot 15 mpu.",
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 14C. Wind uit het WNW van 10 tot 15 km/u.",
   "date" : "2018-05-03T16:15+01:00",
   "type" : "training"
 } ]
