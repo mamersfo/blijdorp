@@ -11,8 +11,8 @@
   "name" : "Helene",
   "matches" : 19,
   "goals" : 5,
-  "assists" : 3,
-  "total" : 8,
+  "assists" : 4,
+  "total" : 9,
   "position" : "centrum"
 }, {
   "id" : 4,
@@ -27,8 +27,8 @@
   "name" : "Inder",
   "matches" : 18.5,
   "goals" : 6,
-  "assists" : 7,
-  "total" : 13,
+  "assists" : 6,
+  "total" : 12,
   "position" : "centrum"
 }, {
   "id" : 3,
