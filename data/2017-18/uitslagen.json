@@ -2,6 +2,15 @@
   {
 		"latest": true,
 		"competition": "3e klasse 9 voorjaar",
+		"date": "2018-04-28",
+		"fixtures": [
+      ["GLZ Delfshaven", "Blijdorp", 2, 3],
+      ["Leonidas", "Zestienhoven", 2, 3],
+      ["DHL", "Oliveo", 2, 2]
+		]
+	},
+  {
+		"competition": "3e klasse 9 voorjaar",
 		"date": "2018-04-21",
 		"fixtures": [
       ["Blijdorp", "DHC", 2, 2],

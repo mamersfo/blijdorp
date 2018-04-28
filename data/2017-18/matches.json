@@ -1,5 +1,27 @@
 [
   {
+		"date": "2018-04-28",
+		"league": "3e klasse 9 voorjaar",
+		"teams": ["GLZ Delfshaven", "Blijdorp"],
+		"result": [2, 3],
+		"goals":{
+      "Raf": 1,
+      "Noah": 1
+		},
+		"assists": {
+      "Inder": 1,
+      "Raf": 1
+		},
+		"absent": {
+      "Ruben": 1,
+      "Senn": 1,
+      "Zay": 1
+		},
+		"keeper": {
+      "Jan": 1
+		}
+	},
+  {
 		"date": "2018-04-21",
 		"league": "3e klasse 9 voorjaar",
 		"teams": ["Blijdorp", "DHC"],
