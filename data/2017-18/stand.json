@@ -33,14 +33,20 @@
   }, {
     "matches" : {
       "wins" : 5,
-      "draws" : 1,
-      "losses" : 0
+      "draws" : 2,
+      "losses" : 1
     },
     "goals" : {
-      "for" : 22,
-      "against" : 12
+      "for" : 26,
+      "against" : 19
     },
     "form" : [ {
+      "result" : "draw",
+      "text" : "CWO 4-4 Blijdorp"
+    }, {
+      "result" : "loss",
+      "text" : "HWD 3-0 CWO"
+    }, {
       "result" : "win",
       "text" : "Oliveo 0-1 CWO"
     }, {
@@ -49,58 +55,25 @@
     }, {
       "result" : "win",
       "text" : "CWO 5-2 Zestienhoven"
-    }, {
-      "result" : "win",
-      "text" : "CWO 5-3 Capelle"
-    }, {
-      "result" : "win",
-      "text" : "CWO 2-1 GLZ Delfshaven"
     } ],
     "team" : "CWO",
-    "total" : 6,
-    "points" : 16,
-    "diff" : 10
-  }, {
-    "matches" : {
-      "wins" : 4,
-      "draws" : 2,
-      "losses" : 1
-    },
-    "goals" : {
-      "for" : 17,
-      "against" : 10
-    },
-    "form" : [ {
-      "result" : "draw",
-      "text" : "DHL 2-2 Oliveo"
-    }, {
-      "result" : "loss",
-      "text" : "Oliveo 0-1 CWO"
-    }, {
-      "result" : "win",
-      "text" : "Zestienhoven 1-3 Oliveo"
-    }, {
-      "result" : "draw",
-      "text" : "Blijdorp 2-2 Oliveo"
-    }, {
-      "result" : "win",
-      "text" : "Oliveo 5-1 HWD"
-    } ],
-    "team" : "Oliveo",
-    "total" : 7,
-    "points" : 14,
+    "total" : 8,
+    "points" : 17,
     "diff" : 7
   }, {
     "matches" : {
-      "wins" : 4,
+      "wins" : 5,
       "draws" : 0,
       "losses" : 2
     },
     "goals" : {
-      "for" : 15,
+      "for" : 18,
       "against" : 16
     },
     "form" : [ {
+      "result" : "win",
+      "text" : "HWD 3-0 CWO"
+    }, {
       "result" : "win",
       "text" : "HWD 6-5 Leonidas"
     }, {
@@ -112,25 +85,55 @@
     }, {
       "result" : "loss",
       "text" : "Oliveo 5-1 HWD"
-    }, {
-      "result" : "win",
-      "text" : "HWD 2-1 Capelle"
     } ],
     "team" : "HWD",
-    "total" : 6,
-    "points" : 12,
-    "diff" : -1
+    "total" : 7,
+    "points" : 15,
+    "diff" : 2
   }, {
     "matches" : {
-      "wins" : 3,
+      "wins" : 4,
+      "draws" : 3,
+      "losses" : 1
+    },
+    "goals" : {
+      "for" : 20,
+      "against" : 13
+    },
+    "form" : [ {
+      "result" : "draw",
+      "text" : "Leonidas 3-3 Oliveo"
+    }, {
+      "result" : "draw",
+      "text" : "DHL 2-2 Oliveo"
+    }, {
+      "result" : "loss",
+      "text" : "Oliveo 0-1 CWO"
+    }, {
+      "result" : "win",
+      "text" : "Zestienhoven 1-3 Oliveo"
+    }, {
+      "result" : "draw",
+      "text" : "Blijdorp 2-2 Oliveo"
+    } ],
+    "team" : "Oliveo",
+    "total" : 8,
+    "points" : 15,
+    "diff" : 7
+  }, {
+    "matches" : {
+      "wins" : 4,
       "draws" : 2,
       "losses" : 2
     },
     "goals" : {
-      "for" : 26,
-      "against" : 21
+      "for" : 30,
+      "against" : 23
     },
     "form" : [ {
+      "result" : "win",
+      "text" : "DHC 4-2 GLZ Delfshaven"
+    }, {
       "result" : "draw",
       "text" : "Blijdorp 2-2 DHC"
     }, {
@@ -142,25 +145,25 @@
     }, {
       "result" : "win",
       "text" : "DHC 4-2 DHL"
-    }, {
-      "result" : "loss",
-      "text" : "DHC 2-6 XerxesDZB"
     } ],
     "team" : "DHC",
-    "total" : 7,
-    "points" : 11,
-    "diff" : 5
+    "total" : 8,
+    "points" : 14,
+    "diff" : 7
   }, {
     "matches" : {
-      "wins" : 3,
+      "wins" : 4,
       "draws" : 1,
       "losses" : 3
     },
     "goals" : {
-      "for" : 20,
-      "against" : 19
+      "for" : 26,
+      "against" : 23
     },
     "form" : [ {
+      "result" : "win",
+      "text" : "Zestienhoven 4-6 DHL"
+    }, {
       "result" : "draw",
       "text" : "DHL 2-2 Oliveo"
     }, {
@@ -172,25 +175,25 @@
     }, {
       "result" : "loss",
       "text" : "DHC 4-2 DHL"
-    }, {
-      "result" : "win",
-      "text" : "Capelle 2-3 DHL"
     } ],
     "team" : "DHL",
-    "total" : 7,
-    "points" : 10,
-    "diff" : 1
+    "total" : 8,
+    "points" : 13,
+    "diff" : 3
   }, {
     "matches" : {
       "wins" : 2,
-      "draws" : 3,
+      "draws" : 4,
       "losses" : 2
     },
     "goals" : {
-      "for" : 22,
-      "against" : 15
+      "for" : 26,
+      "against" : 19
     },
     "form" : [ {
+      "result" : "draw",
+      "text" : "CWO 4-4 Blijdorp"
+    }, {
       "result" : "win",
       "text" : "GLZ Delfshaven 2-3 Blijdorp"
     }, {
@@ -202,13 +205,10 @@
     }, {
       "result" : "loss",
       "text" : "HWD 3-2 Blijdorp"
-    }, {
-      "result" : "draw",
-      "text" : "Blijdorp 2-2 Oliveo"
     } ],
     "team" : "Blijdorp",
-    "total" : 7,
-    "points" : 9,
+    "total" : 8,
+    "points" : 10,
     "diff" : 7
   }, {
     "matches" : {
@@ -244,13 +244,16 @@
     "matches" : {
       "wins" : 2,
       "draws" : 0,
-      "losses" : 6
+      "losses" : 7
     },
     "goals" : {
-      "for" : 19,
-      "against" : 18
+      "for" : 21,
+      "against" : 22
     },
     "form" : [ {
+      "result" : "loss",
+      "text" : "DHC 4-2 GLZ Delfshaven"
+    }, {
       "result" : "loss",
       "text" : "GLZ Delfshaven 2-3 Blijdorp"
     }, {
@@ -262,25 +265,25 @@
     }, {
       "result" : "loss",
       "text" : "DHL 4-1 GLZ Delfshaven"
-    }, {
-      "result" : "win",
-      "text" : "Leonidas 1-7 GLZ Delfshaven"
     } ],
     "team" : "GLZ Delfshaven",
-    "total" : 8,
+    "total" : 9,
     "points" : 6,
-    "diff" : 1
+    "diff" : -1
   }, {
     "matches" : {
       "wins" : 1,
       "draws" : 1,
-      "losses" : 5
+      "losses" : 6
     },
     "goals" : {
-      "for" : 16,
-      "against" : 30
+      "for" : 20,
+      "against" : 36
     },
     "form" : [ {
+      "result" : "loss",
+      "text" : "Zestienhoven 4-6 DHL"
+    }, {
       "result" : "win",
       "text" : "Leonidas 2-3 Zestienhoven"
     }, {
@@ -292,25 +295,25 @@
     }, {
       "result" : "loss",
       "text" : "CWO 5-2 Zestienhoven"
-    }, {
-      "result" : "loss",
-      "text" : "Zestienhoven 1-3 XerxesDZB"
     } ],
     "team" : "Zestienhoven",
-    "total" : 7,
+    "total" : 8,
     "points" : 4,
-    "diff" : -14
+    "diff" : -16
   }, {
     "matches" : {
       "wins" : 1,
-      "draws" : 0,
+      "draws" : 1,
       "losses" : 7
     },
     "goals" : {
-      "for" : 23,
-      "against" : 54
+      "for" : 26,
+      "against" : 57
     },
     "form" : [ {
+      "result" : "draw",
+      "text" : "Leonidas 3-3 Oliveo"
+    }, {
       "result" : "loss",
       "text" : "Leonidas 2-3 Zestienhoven"
     }, {
@@ -322,13 +325,10 @@
     }, {
       "result" : "loss",
       "text" : "XerxesDZB 10-4 Leonidas"
-    }, {
-      "result" : "loss",
-      "text" : "Leonidas 1-7 GLZ Delfshaven"
     } ],
     "team" : "Leonidas",
-    "total" : 8,
-    "points" : 3,
+    "total" : 9,
+    "points" : 4,
     "diff" : -31
   } ]
 }, {

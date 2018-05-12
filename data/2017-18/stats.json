@@ -17,7 +17,7 @@
 }, {
   "id" : 4,
   "name" : "Lil",
-  "matches" : 18,
+  "matches" : 19,
   "goals" : 4,
   "assists" : 4,
   "total" : 8,
@@ -25,31 +25,31 @@
 }, {
   "id" : 2,
   "name" : "Inder",
-  "matches" : 18.5,
-  "goals" : 6,
+  "matches" : 19.5,
+  "goals" : 7,
   "assists" : 6,
-  "total" : 12,
+  "total" : 13,
   "position" : "centrum"
 }, {
   "id" : 3,
   "name" : "Jan",
-  "matches" : 2,
-  "goals" : 0,
-  "assists" : 1,
-  "total" : 1,
+  "matches" : 3,
+  "goals" : 1,
+  "assists" : 2,
+  "total" : 3,
   "position" : "doel"
 }, {
   "id" : 6,
   "name" : "Raf",
-  "matches" : 18,
+  "matches" : 19,
   "goals" : 13,
-  "assists" : 8,
-  "total" : 21,
+  "assists" : 9,
+  "total" : 22,
   "position" : "aanval"
 }, {
   "id" : 9,
   "name" : "Tije",
-  "matches" : 20,
+  "matches" : 21,
   "goals" : 0,
   "assists" : 2,
   "total" : 2,
@@ -65,7 +65,7 @@
 }, {
   "id" : 7,
   "name" : "Ruben",
-  "matches" : 17.5,
+  "matches" : 18.0,
   "goals" : 2,
   "assists" : 2,
   "total" : 4,
@@ -73,9 +73,9 @@
 }, {
   "id" : 10,
   "name" : "Zay",
-  "matches" : 16,
-  "goals" : 13,
+  "matches" : 17,
+  "goals" : 14,
   "assists" : 3,
-  "total" : 16,
+  "total" : 17,
   "position" : "aanval"
 } ]

@@ -1,5 +1,28 @@
 [
   {
+		"date": "2018-05-12",
+		"league": "3e klasse 9 voorjaar",
+		"teams": ["CWO", "Blijdorp"],
+		"result": [4, 4],
+		"goals":{
+      "Inder": 1,
+      "Jan": 1,
+      "Zay": 1
+		},
+		"assists": {
+      "Raf": 1,
+      "Jan": 1
+		},
+		"absent": {
+      "Senn": 1,
+      "Helene": 1,
+      "Noah": 1
+		},
+		"keeper": {
+      "Ruben": 0.5
+		}
+	},
+  {
 		"date": "2018-04-28",
 		"league": "3e klasse 9 voorjaar",
 		"teams": ["GLZ Delfshaven", "Blijdorp"],
