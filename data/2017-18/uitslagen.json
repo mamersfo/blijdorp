@@ -2,12 +2,24 @@
   {
 		"latest": true,
 		"competition": "3e klasse 9 voorjaar",
-		"date": "2018-04-28",
+		"date": "2018-05-19",
+		"fixtures": [
+      ["DHL", "Blijdorp", 1, 5],
+      ["XerxesDZB", "CWO", 2, 1],
+      ["Oliveo", "Capelle", 1, 1],
+      ["GLZ Delfshaven", "Zestienhoven", 5, 1],
+      ["HWD", "DHC", 4, 4]
+		]
+	},
+  {
+		"competition": "3e klasse 9 voorjaar",
+		"date": "2018-05-12",
 		"fixtures": [
       ["CWO", "Blijdorp", 4, 4],
       ["DHC", "GLZ Delfshaven", 4, 2],
       ["Zestienhoven", "DHL", 4, 6],
-      ["Leonidas", "Oliveo", 3, 3]
+      ["Leonidas", "Oliveo", 3, 3],
+      ["XerxesDZB", "HWD", 2, 1]
 		]
 	},
   {

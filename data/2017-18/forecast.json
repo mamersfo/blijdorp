@@ -1,24 +1,24 @@
 [ {
   "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/clear.gif",
-  "fcttext" : "Overwegend helder. Maximaal 75F. Wind uit het NO van 5 tot 10 mpu.",
-  "fcttext_metric" : "Overwegend helder. Maximaal 24C. Wind uit het NO van 10 tot 15 km/u.",
-  "date" : "2018-05-15T16:15+01:00",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancetstorms.gif",
+  "fcttext" : "In de middag ontwikkelen zich onweersbuien. Erg warm. Maximaal 75F. Windkracht NNO en wisselend. Kans op regen 50%.",
+  "fcttext_metric" : "In de middag ontwikkelen zich onweersbuien. Erg warm. Maximaal 24C. Windkracht NNO en wisselend. Kans op regen 50%.",
+  "date" : "2018-05-22T16:15+01:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/cloudy.gif",
-  "fcttext" : "Bewolkt. Maximaal 56F. Wind uit het N van 15 tot 25 mpu.",
-  "fcttext_metric" : "Bewolkt. Maximaal 13C. Wind uit het N van 15 tot 30 km/u.",
-  "date" : "2018-05-17T16:15+01:00",
+  "icon_url" : "http://icons.wxug.com/i/c/k/clear.gif",
+  "fcttext" : "Overwegend helder. Erg warm. Maximaal 78F. Wind uit het O van 10 tot 15 mpu.",
+  "fcttext_metric" : "Overwegend helder. Erg warm. Maximaal 26C. Wind uit het O van 15 tot 25 km/u.",
+  "date" : "2018-05-24T16:15+01:00",
   "type" : "training"
 }, {
   "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 62F. Wind uit het NNW van 10 tot 15 mpu.",
-  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 17C. Wind uit het NNW van 15 tot 25 km/u.",
-  "date" : "2018-05-19T07:30+01:00",
-  "teams" : [ "DHL", "Blijdorp" ],
-  "day" : 19,
+  "icon_url" : "http://icons.wxug.com/i/c/k/clear.gif",
+  "fcttext" : "Overwegend helder. Erg warm. Maximaal 71F. Wind uit het NO van 10 tot 20 mpu.",
+  "fcttext_metric" : "Overwegend helder. Erg warm. Maximaal 22C. Wind uit het NO van 15 tot 30 km/u.",
+  "date" : "2018-05-26T08:45+01:00",
+  "teams" : [ "Blijdorp", "XerxesDZB" ],
+  "day" : 26,
   "type" : "match"
 } ]

@@ -1,5 +1,27 @@
 [
   {
+		"date": "2018-05-19",
+		"league": "3e klasse 9 voorjaar",
+		"teams": ["DHL", "Blijdorp"],
+		"result": [1, 5],
+		"goals":{
+      "Lil": 2,
+      "Raf": 1,
+      "Zay": 1,
+      "Ruben": 1
+		},
+		"assists": {
+      "Raf": 1,
+      "Helene": 1,
+      "Noah": 1
+		},
+		"absent": {
+		},
+		"keeper": {
+      "Jan": 1
+		}
+	},
+  {
 		"date": "2018-05-12",
 		"league": "3e klasse 9 voorjaar",
 		"teams": ["CWO", "Blijdorp"],

@@ -2,15 +2,21 @@
   "competition" : "3e klasse 9 voorjaar",
   "teams" : [ {
     "matches" : {
-      "wins" : 6,
+      "wins" : 8,
       "draws" : 0,
       "losses" : 1
     },
     "goals" : {
-      "for" : 31,
-      "against" : 14
+      "for" : 35,
+      "against" : 16
     },
     "form" : [ {
+      "result" : "win",
+      "text" : "XerxesDZB 2-1 CWO"
+    }, {
+      "result" : "win",
+      "text" : "XerxesDZB 2-1 HWD"
+    }, {
       "result" : "win",
       "text" : "XerxesDZB 4-0 Capelle"
     }, {
@@ -19,28 +25,25 @@
     }, {
       "result" : "win",
       "text" : "XerxesDZB 10-4 Leonidas"
-    }, {
-      "result" : "win",
-      "text" : "Zestienhoven 1-3 XerxesDZB"
-    }, {
-      "result" : "win",
-      "text" : "DHC 2-6 XerxesDZB"
     } ],
     "team" : "XerxesDZB",
-    "total" : 7,
-    "points" : 18,
-    "diff" : 17
+    "total" : 9,
+    "points" : 24,
+    "diff" : 19
   }, {
     "matches" : {
       "wins" : 5,
       "draws" : 2,
-      "losses" : 1
+      "losses" : 2
     },
     "goals" : {
-      "for" : 26,
-      "against" : 19
+      "for" : 27,
+      "against" : 21
     },
     "form" : [ {
+      "result" : "loss",
+      "text" : "XerxesDZB 2-1 CWO"
+    }, {
       "result" : "draw",
       "text" : "CWO 4-4 Blijdorp"
     }, {
@@ -52,55 +55,25 @@
     }, {
       "result" : "draw",
       "text" : "DHC 1-1 CWO"
-    }, {
-      "result" : "win",
-      "text" : "CWO 5-2 Zestienhoven"
     } ],
     "team" : "CWO",
-    "total" : 8,
+    "total" : 9,
     "points" : 17,
-    "diff" : 7
-  }, {
-    "matches" : {
-      "wins" : 5,
-      "draws" : 0,
-      "losses" : 2
-    },
-    "goals" : {
-      "for" : 18,
-      "against" : 16
-    },
-    "form" : [ {
-      "result" : "win",
-      "text" : "HWD 3-0 CWO"
-    }, {
-      "result" : "win",
-      "text" : "HWD 6-5 Leonidas"
-    }, {
-      "result" : "win",
-      "text" : "GLZ Delfshaven 0-1 HWD"
-    }, {
-      "result" : "win",
-      "text" : "HWD 3-2 Blijdorp"
-    }, {
-      "result" : "loss",
-      "text" : "Oliveo 5-1 HWD"
-    } ],
-    "team" : "HWD",
-    "total" : 7,
-    "points" : 15,
-    "diff" : 2
+    "diff" : 6
   }, {
     "matches" : {
       "wins" : 4,
-      "draws" : 3,
+      "draws" : 4,
       "losses" : 1
     },
     "goals" : {
-      "for" : 20,
-      "against" : 13
+      "for" : 21,
+      "against" : 14
     },
     "form" : [ {
+      "result" : "draw",
+      "text" : "Oliveo 1-1 Capelle"
+    }, {
       "result" : "draw",
       "text" : "Leonidas 3-3 Oliveo"
     }, {
@@ -112,25 +85,55 @@
     }, {
       "result" : "win",
       "text" : "Zestienhoven 1-3 Oliveo"
-    }, {
-      "result" : "draw",
-      "text" : "Blijdorp 2-2 Oliveo"
     } ],
     "team" : "Oliveo",
-    "total" : 8,
-    "points" : 15,
+    "total" : 9,
+    "points" : 16,
     "diff" : 7
   }, {
     "matches" : {
+      "wins" : 5,
+      "draws" : 1,
+      "losses" : 3
+    },
+    "goals" : {
+      "for" : 23,
+      "against" : 22
+    },
+    "form" : [ {
+      "result" : "draw",
+      "text" : "HWD 4-4 DHC"
+    }, {
+      "result" : "loss",
+      "text" : "XerxesDZB 2-1 HWD"
+    }, {
+      "result" : "win",
+      "text" : "HWD 3-0 CWO"
+    }, {
+      "result" : "win",
+      "text" : "HWD 6-5 Leonidas"
+    }, {
+      "result" : "win",
+      "text" : "GLZ Delfshaven 0-1 HWD"
+    } ],
+    "team" : "HWD",
+    "total" : 9,
+    "points" : 16,
+    "diff" : 1
+  }, {
+    "matches" : {
       "wins" : 4,
-      "draws" : 2,
+      "draws" : 3,
       "losses" : 2
     },
     "goals" : {
-      "for" : 30,
-      "against" : 23
+      "for" : 34,
+      "against" : 27
     },
     "form" : [ {
+      "result" : "draw",
+      "text" : "HWD 4-4 DHC"
+    }, {
       "result" : "win",
       "text" : "DHC 4-2 GLZ Delfshaven"
     }, {
@@ -142,55 +145,25 @@
     }, {
       "result" : "loss",
       "text" : "Capelle 4-1 DHC"
-    }, {
-      "result" : "win",
-      "text" : "DHC 4-2 DHL"
     } ],
     "team" : "DHC",
-    "total" : 8,
-    "points" : 14,
+    "total" : 9,
+    "points" : 15,
     "diff" : 7
   }, {
     "matches" : {
-      "wins" : 4,
-      "draws" : 1,
-      "losses" : 3
-    },
-    "goals" : {
-      "for" : 26,
-      "against" : 23
-    },
-    "form" : [ {
-      "result" : "win",
-      "text" : "Zestienhoven 4-6 DHL"
-    }, {
-      "result" : "draw",
-      "text" : "DHL 2-2 Oliveo"
-    }, {
-      "result" : "loss",
-      "text" : "Leonidas 4-3 DHL"
-    }, {
-      "result" : "win",
-      "text" : "DHL 4-1 GLZ Delfshaven"
-    }, {
-      "result" : "loss",
-      "text" : "DHC 4-2 DHL"
-    } ],
-    "team" : "DHL",
-    "total" : 8,
-    "points" : 13,
-    "diff" : 3
-  }, {
-    "matches" : {
-      "wins" : 2,
+      "wins" : 3,
       "draws" : 4,
       "losses" : 2
     },
     "goals" : {
-      "for" : 26,
-      "against" : 19
+      "for" : 31,
+      "against" : 20
     },
     "form" : [ {
+      "result" : "win",
+      "text" : "DHL 1-5 Blijdorp"
+    }, {
       "result" : "draw",
       "text" : "CWO 4-4 Blijdorp"
     }, {
@@ -202,25 +175,55 @@
     }, {
       "result" : "loss",
       "text" : "Blijdorp 2-3 Capelle"
-    }, {
-      "result" : "loss",
-      "text" : "HWD 3-2 Blijdorp"
     } ],
     "team" : "Blijdorp",
-    "total" : 8,
-    "points" : 10,
-    "diff" : 7
+    "total" : 9,
+    "points" : 13,
+    "diff" : 11
+  }, {
+    "matches" : {
+      "wins" : 4,
+      "draws" : 1,
+      "losses" : 4
+    },
+    "goals" : {
+      "for" : 27,
+      "against" : 28
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "DHL 1-5 Blijdorp"
+    }, {
+      "result" : "win",
+      "text" : "Zestienhoven 4-6 DHL"
+    }, {
+      "result" : "draw",
+      "text" : "DHL 2-2 Oliveo"
+    }, {
+      "result" : "loss",
+      "text" : "Leonidas 4-3 DHL"
+    }, {
+      "result" : "win",
+      "text" : "DHL 4-1 GLZ Delfshaven"
+    } ],
+    "team" : "DHL",
+    "total" : 9,
+    "points" : 13,
+    "diff" : -1
   }, {
     "matches" : {
       "wins" : 3,
-      "draws" : 0,
+      "draws" : 1,
       "losses" : 5
     },
     "goals" : {
-      "for" : 21,
-      "against" : 23
+      "for" : 22,
+      "against" : 24
     },
     "form" : [ {
+      "result" : "draw",
+      "text" : "Oliveo 1-1 Capelle"
+    }, {
       "result" : "loss",
       "text" : "XerxesDZB 4-0 Capelle"
     }, {
@@ -232,25 +235,25 @@
     }, {
       "result" : "win",
       "text" : "Capelle 4-1 DHC"
-    }, {
-      "result" : "loss",
-      "text" : "CWO 5-3 Capelle"
     } ],
     "team" : "Capelle",
-    "total" : 8,
-    "points" : 9,
+    "total" : 9,
+    "points" : 10,
     "diff" : -2
   }, {
     "matches" : {
-      "wins" : 2,
+      "wins" : 3,
       "draws" : 0,
       "losses" : 7
     },
     "goals" : {
-      "for" : 21,
-      "against" : 22
+      "for" : 26,
+      "against" : 23
     },
     "form" : [ {
+      "result" : "win",
+      "text" : "GLZ Delfshaven 5-1 Zestienhoven"
+    }, {
       "result" : "loss",
       "text" : "DHC 4-2 GLZ Delfshaven"
     }, {
@@ -262,25 +265,25 @@
     }, {
       "result" : "loss",
       "text" : "GLZ Delfshaven 0-1 HWD"
-    }, {
-      "result" : "loss",
-      "text" : "DHL 4-1 GLZ Delfshaven"
     } ],
     "team" : "GLZ Delfshaven",
-    "total" : 9,
-    "points" : 6,
-    "diff" : -1
+    "total" : 10,
+    "points" : 9,
+    "diff" : 3
   }, {
     "matches" : {
       "wins" : 1,
       "draws" : 1,
-      "losses" : 6
+      "losses" : 7
     },
     "goals" : {
-      "for" : 20,
-      "against" : 36
+      "for" : 21,
+      "against" : 41
     },
     "form" : [ {
+      "result" : "loss",
+      "text" : "GLZ Delfshaven 5-1 Zestienhoven"
+    }, {
       "result" : "loss",
       "text" : "Zestienhoven 4-6 DHL"
     }, {
@@ -292,14 +295,11 @@
     }, {
       "result" : "loss",
       "text" : "Zestienhoven 1-3 Oliveo"
-    }, {
-      "result" : "loss",
-      "text" : "CWO 5-2 Zestienhoven"
     } ],
     "team" : "Zestienhoven",
-    "total" : 8,
+    "total" : 9,
     "points" : 4,
-    "diff" : -16
+    "diff" : -20
   }, {
     "matches" : {
       "wins" : 1,
