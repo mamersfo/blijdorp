@@ -1,24 +1,24 @@
 [ {
-  "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancetstorms.gif",
-  "fcttext" : "In de middag ontwikkelen zich onweersbuien. Erg warm. Maximaal 75F. Windkracht NNO en wisselend. Kans op regen 50%.",
-  "fcttext_metric" : "In de middag ontwikkelen zich onweersbuien. Erg warm. Maximaal 24C. Windkracht NNO en wisselend. Kans op regen 50%.",
-  "date" : "2018-05-22T16:15+01:00",
-  "type" : "training"
-}, {
-  "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/clear.gif",
-  "fcttext" : "Overwegend helder. Erg warm. Maximaal 78F. Wind uit het O van 10 tot 15 mpu.",
-  "fcttext_metric" : "Overwegend helder. Erg warm. Maximaal 26C. Wind uit het O van 15 tot 25 km/u.",
-  "date" : "2018-05-24T16:15+01:00",
-  "type" : "training"
-}, {
   "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/clear.gif",
-  "fcttext" : "Overwegend helder. Erg warm. Maximaal 71F. Wind uit het NO van 10 tot 20 mpu.",
-  "fcttext_metric" : "Overwegend helder. Erg warm. Maximaal 22C. Wind uit het NO van 15 tot 30 km/u.",
+  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+  "fcttext" : "Gedeeltelijk bewolkt. Heet. Maximaal 82F. Wind uit het O van 10 tot 15 mpu.",
+  "fcttext_metric" : "",
   "date" : "2018-05-26T08:45+01:00",
   "teams" : [ "Blijdorp", "XerxesDZB" ],
   "day" : 26,
   "type" : "match"
+}, {
+  "title" : "dinsdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancetstorms.gif",
+  "fcttext" : "Verspreide onweersbuien. Maximaal 81F. Windkracht NO en wisselend. Kans op regen 50%.",
+  "fcttext_metric" : "",
+  "date" : "2018-05-29T16:15+01:00",
+  "type" : "training"
+}, {
+  "title" : "donderdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 74F. Wind uit het WNW van 5 tot 10 mpu.",
+  "fcttext_metric" : "",
+  "date" : "2018-05-31T16:15+01:00",
+  "type" : "training"
 } ]

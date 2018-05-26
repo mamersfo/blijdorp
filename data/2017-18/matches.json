@@ -1,5 +1,20 @@
 [
   {
+		"date": "2018-05-26",
+		"league": "3e klasse 9 voorjaar",
+		"teams": ["Blijdorp", "XerxesDZB"],
+		"result": [0, 0],
+		"goals":{
+		},
+		"assists": {
+		},
+		"absent": {
+		},
+		"keeper": {
+      "Jan": 1
+		}
+	},
+  {
 		"date": "2018-05-19",
 		"league": "3e klasse 9 voorjaar",
 		"teams": ["DHL", "Blijdorp"],

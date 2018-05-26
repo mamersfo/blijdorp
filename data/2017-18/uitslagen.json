@@ -2,6 +2,17 @@
   {
 		"latest": true,
 		"competition": "3e klasse 9 voorjaar",
+		"date": "2018-05-26",
+		"fixtures": [
+      ["Blijdorp", "XerxesDZB"],
+      ["Zestienhoven", "HWD"],
+      ["CWO", "DHL"],
+      ["DHC", "Oliveo"],
+      ["Capelle", "Leonidas"]
+		]
+	},
+  {
+		"competition": "3e klasse 9 voorjaar",
 		"date": "2018-05-19",
 		"fixtures": [
       ["DHL", "Blijdorp", 1, 5],
@@ -202,13 +213,7 @@
     "competition": "Beker Groep 3-16",
 		"date": "2017-10-21",
 		"fixtures": [
-      ["Blijdorp", "Excelsior'20", 3, 1]
-		]
-	},
-  {
-		"competition": "3e klasse 7 najaar",
-		"date": "2017-10-21",
-		"fixtures": [
+      ["Blijdorp", "Excelsior'20", 3, 1],
       ["Kethel Spaland", "AGE-GGK", 0, 4]
 		]
 	},
