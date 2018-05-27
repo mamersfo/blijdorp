@@ -5,8 +5,15 @@
 		"teams": ["Blijdorp", "XerxesDZB"],
 		"result": [0, 0],
 		"goals":{
+      "Noah": 1,
+      "Zay": 1,
+      "Lil": 1,
+      "Inder": 1
 		},
 		"assists": {
+      "Inder": 1,
+      "Senn": 1,
+      "Zay": 1
 		},
 		"absent": {
 		},

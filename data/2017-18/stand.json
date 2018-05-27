@@ -2,15 +2,18 @@
   "competition" : "3e klasse 9 voorjaar",
   "teams" : [ {
     "matches" : {
-      "wins" : 8,
+      "wins" : 9,
       "draws" : 0,
       "losses" : 1
     },
     "goals" : {
-      "for" : 35,
-      "against" : 16
+      "for" : 42,
+      "against" : 20
     },
     "form" : [ {
+      "result" : "win",
+      "text" : "Blijdorp 4-7 XerxesDZB"
+    }, {
       "result" : "win",
       "text" : "XerxesDZB 2-1 CWO"
     }, {
@@ -22,25 +25,25 @@
     }, {
       "result" : "win",
       "text" : "GLZ Delfshaven 2-3 XerxesDZB"
-    }, {
-      "result" : "win",
-      "text" : "XerxesDZB 10-4 Leonidas"
     } ],
     "team" : "XerxesDZB",
-    "total" : 9,
-    "points" : 24,
-    "diff" : 19
+    "total" : 10,
+    "points" : 27,
+    "diff" : 22
   }, {
     "matches" : {
-      "wins" : 5,
+      "wins" : 6,
       "draws" : 2,
       "losses" : 2
     },
     "goals" : {
-      "for" : 27,
-      "against" : 21
+      "for" : 34,
+      "against" : 23
     },
     "form" : [ {
+      "result" : "win",
+      "text" : "CWO 7-2 DHL"
+    }, {
       "result" : "loss",
       "text" : "XerxesDZB 2-1 CWO"
     }, {
@@ -52,25 +55,25 @@
     }, {
       "result" : "win",
       "text" : "Oliveo 0-1 CWO"
-    }, {
-      "result" : "draw",
-      "text" : "DHC 1-1 CWO"
     } ],
     "team" : "CWO",
-    "total" : 9,
-    "points" : 17,
-    "diff" : 6
+    "total" : 10,
+    "points" : 20,
+    "diff" : 11
   }, {
     "matches" : {
-      "wins" : 4,
+      "wins" : 5,
       "draws" : 4,
       "losses" : 1
     },
     "goals" : {
-      "for" : 21,
-      "against" : 14
+      "for" : 23,
+      "against" : 15
     },
     "form" : [ {
+      "result" : "win",
+      "text" : "DHC 1-2 Oliveo"
+    }, {
       "result" : "draw",
       "text" : "Oliveo 1-1 Capelle"
     }, {
@@ -82,25 +85,25 @@
     }, {
       "result" : "loss",
       "text" : "Oliveo 0-1 CWO"
-    }, {
-      "result" : "win",
-      "text" : "Zestienhoven 1-3 Oliveo"
     } ],
     "team" : "Oliveo",
-    "total" : 9,
-    "points" : 16,
-    "diff" : 7
+    "total" : 10,
+    "points" : 19,
+    "diff" : 8
   }, {
     "matches" : {
       "wins" : 5,
-      "draws" : 1,
+      "draws" : 2,
       "losses" : 3
     },
     "goals" : {
-      "for" : 23,
-      "against" : 22
+      "for" : 24,
+      "against" : 23
     },
     "form" : [ {
+      "result" : "draw",
+      "text" : "Zestienhoven 1-1 HWD"
+    }, {
       "result" : "draw",
       "text" : "HWD 4-4 DHC"
     }, {
@@ -112,25 +115,25 @@
     }, {
       "result" : "win",
       "text" : "HWD 6-5 Leonidas"
-    }, {
-      "result" : "win",
-      "text" : "GLZ Delfshaven 0-1 HWD"
     } ],
     "team" : "HWD",
-    "total" : 9,
-    "points" : 16,
+    "total" : 10,
+    "points" : 17,
     "diff" : 1
   }, {
     "matches" : {
       "wins" : 4,
       "draws" : 3,
-      "losses" : 2
+      "losses" : 3
     },
     "goals" : {
-      "for" : 34,
-      "against" : 27
+      "for" : 35,
+      "against" : 29
     },
     "form" : [ {
+      "result" : "loss",
+      "text" : "DHC 1-2 Oliveo"
+    }, {
       "result" : "draw",
       "text" : "HWD 4-4 DHC"
     }, {
@@ -142,25 +145,25 @@
     }, {
       "result" : "draw",
       "text" : "DHC 1-1 CWO"
-    }, {
-      "result" : "loss",
-      "text" : "Capelle 4-1 DHC"
     } ],
     "team" : "DHC",
-    "total" : 9,
+    "total" : 10,
     "points" : 15,
-    "diff" : 7
+    "diff" : 6
   }, {
     "matches" : {
       "wins" : 3,
       "draws" : 4,
-      "losses" : 2
+      "losses" : 3
     },
     "goals" : {
-      "for" : 31,
-      "against" : 20
+      "for" : 35,
+      "against" : 27
     },
     "form" : [ {
+      "result" : "loss",
+      "text" : "Blijdorp 4-7 XerxesDZB"
+    }, {
       "result" : "win",
       "text" : "DHL 1-5 Blijdorp"
     }, {
@@ -172,55 +175,25 @@
     }, {
       "result" : "draw",
       "text" : "Blijdorp 2-2 DHC"
-    }, {
-      "result" : "loss",
-      "text" : "Blijdorp 2-3 Capelle"
     } ],
     "team" : "Blijdorp",
-    "total" : 9,
+    "total" : 10,
     "points" : 13,
-    "diff" : 11
+    "diff" : 8
   }, {
     "matches" : {
       "wins" : 4,
       "draws" : 1,
-      "losses" : 4
-    },
-    "goals" : {
-      "for" : 27,
-      "against" : 28
-    },
-    "form" : [ {
-      "result" : "loss",
-      "text" : "DHL 1-5 Blijdorp"
-    }, {
-      "result" : "win",
-      "text" : "Zestienhoven 4-6 DHL"
-    }, {
-      "result" : "draw",
-      "text" : "DHL 2-2 Oliveo"
-    }, {
-      "result" : "loss",
-      "text" : "Leonidas 4-3 DHL"
-    }, {
-      "result" : "win",
-      "text" : "DHL 4-1 GLZ Delfshaven"
-    } ],
-    "team" : "DHL",
-    "total" : 9,
-    "points" : 13,
-    "diff" : -1
-  }, {
-    "matches" : {
-      "wins" : 3,
-      "draws" : 1,
       "losses" : 5
     },
     "goals" : {
-      "for" : 22,
+      "for" : 25,
       "against" : 24
     },
     "form" : [ {
+      "result" : "win",
+      "text" : "Capelle 3-0 Leonidas"
+    }, {
       "result" : "draw",
       "text" : "Oliveo 1-1 Capelle"
     }, {
@@ -232,14 +205,41 @@
     }, {
       "result" : "win",
       "text" : "Blijdorp 2-3 Capelle"
-    }, {
-      "result" : "win",
-      "text" : "Capelle 4-1 DHC"
     } ],
     "team" : "Capelle",
-    "total" : 9,
-    "points" : 10,
-    "diff" : -2
+    "total" : 10,
+    "points" : 13,
+    "diff" : 1
+  }, {
+    "matches" : {
+      "wins" : 4,
+      "draws" : 1,
+      "losses" : 5
+    },
+    "goals" : {
+      "for" : 29,
+      "against" : 35
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "CWO 7-2 DHL"
+    }, {
+      "result" : "loss",
+      "text" : "DHL 1-5 Blijdorp"
+    }, {
+      "result" : "win",
+      "text" : "Zestienhoven 4-6 DHL"
+    }, {
+      "result" : "draw",
+      "text" : "DHL 2-2 Oliveo"
+    }, {
+      "result" : "loss",
+      "text" : "Leonidas 4-3 DHL"
+    } ],
+    "team" : "DHL",
+    "total" : 10,
+    "points" : 13,
+    "diff" : -6
   }, {
     "matches" : {
       "wins" : 3,
@@ -273,14 +273,17 @@
   }, {
     "matches" : {
       "wins" : 1,
-      "draws" : 1,
+      "draws" : 2,
       "losses" : 7
     },
     "goals" : {
-      "for" : 21,
-      "against" : 41
+      "for" : 22,
+      "against" : 42
     },
     "form" : [ {
+      "result" : "draw",
+      "text" : "Zestienhoven 1-1 HWD"
+    }, {
       "result" : "loss",
       "text" : "GLZ Delfshaven 5-1 Zestienhoven"
     }, {
@@ -292,25 +295,25 @@
     }, {
       "result" : "loss",
       "text" : "Capelle 7-2 Zestienhoven"
-    }, {
-      "result" : "loss",
-      "text" : "Zestienhoven 1-3 Oliveo"
     } ],
     "team" : "Zestienhoven",
-    "total" : 9,
-    "points" : 4,
+    "total" : 10,
+    "points" : 5,
     "diff" : -20
   }, {
     "matches" : {
       "wins" : 1,
       "draws" : 1,
-      "losses" : 7
+      "losses" : 8
     },
     "goals" : {
       "for" : 26,
-      "against" : 57
+      "against" : 60
     },
     "form" : [ {
+      "result" : "loss",
+      "text" : "Capelle 3-0 Leonidas"
+    }, {
       "result" : "draw",
       "text" : "Leonidas 3-3 Oliveo"
     }, {
@@ -322,14 +325,11 @@
     }, {
       "result" : "win",
       "text" : "Leonidas 4-3 DHL"
-    }, {
-      "result" : "loss",
-      "text" : "XerxesDZB 10-4 Leonidas"
     } ],
     "team" : "Leonidas",
-    "total" : 9,
+    "total" : 10,
     "points" : 4,
-    "diff" : -31
+    "diff" : -34
   } ]
 }, {
   "competition" : "3e klasse 7 najaar",
@@ -486,36 +486,6 @@
   }, {
     "matches" : {
       "wins" : 4,
-      "draws" : 1,
-      "losses" : 5
-    },
-    "goals" : {
-      "for" : 16,
-      "against" : 24
-    },
-    "form" : [ {
-      "result" : "loss",
-      "text" : "Spartaan'20 2-1 AGE-GGK"
-    }, {
-      "result" : "loss",
-      "text" : "AGE-GGK 0-3 HWD"
-    }, {
-      "result" : "draw",
-      "text" : "AGE-GGK 2-2 CWO"
-    }, {
-      "result" : "loss",
-      "text" : "GLZ Delfshaven 10-0 AGE-GGK"
-    }, {
-      "result" : "loss",
-      "text" : "Hermes DVS 2-1 AGE-GGK"
-    } ],
-    "team" : "AGE-GGK",
-    "total" : 10,
-    "points" : 13,
-    "diff" : -8
-  }, {
-    "matches" : {
-      "wins" : 4,
       "draws" : 0,
       "losses" : 5
     },
@@ -573,6 +543,36 @@
     "total" : 9,
     "points" : 10,
     "diff" : -7
+  }, {
+    "matches" : {
+      "wins" : 3,
+      "draws" : 1,
+      "losses" : 5
+    },
+    "goals" : {
+      "for" : 12,
+      "against" : 24
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "Spartaan'20 2-1 AGE-GGK"
+    }, {
+      "result" : "loss",
+      "text" : "AGE-GGK 0-3 HWD"
+    }, {
+      "result" : "draw",
+      "text" : "AGE-GGK 2-2 CWO"
+    }, {
+      "result" : "loss",
+      "text" : "GLZ Delfshaven 10-0 AGE-GGK"
+    }, {
+      "result" : "loss",
+      "text" : "Hermes DVS 2-1 AGE-GGK"
+    } ],
+    "team" : "AGE-GGK",
+    "total" : 9,
+    "points" : 10,
+    "diff" : -12
   }, {
     "matches" : {
       "wins" : 2,
@@ -637,11 +637,11 @@
     "matches" : {
       "wins" : 0,
       "draws" : 2,
-      "losses" : 8
+      "losses" : 7
     },
     "goals" : {
       "for" : 4,
-      "against" : 55
+      "against" : 51
     },
     "form" : [ {
       "result" : "draw",
@@ -660,9 +660,9 @@
       "text" : "Spartaan'20 10-0 Kethel Spaland"
     } ],
     "team" : "Kethel Spaland",
-    "total" : 10,
+    "total" : 9,
     "points" : 2,
-    "diff" : -51
+    "diff" : -47
   } ]
 }, {
   "competition" : "Beker Groep 3-16",
@@ -713,6 +713,24 @@
     "diff" : -4
   }, {
     "matches" : {
+      "wins" : 1,
+      "draws" : 0,
+      "losses" : 0
+    },
+    "goals" : {
+      "for" : 4,
+      "against" : 0
+    },
+    "form" : [ {
+      "result" : "win",
+      "text" : "Kethel Spaland 0-4 AGE-GGK"
+    } ],
+    "team" : "AGE-GGK",
+    "total" : 1,
+    "points" : 3,
+    "diff" : 4
+  }, {
+    "matches" : {
       "wins" : 0,
       "draws" : 0,
       "losses" : 1
@@ -729,6 +747,24 @@
     "total" : 1,
     "points" : 0,
     "diff" : -3
+  }, {
+    "matches" : {
+      "wins" : 0,
+      "draws" : 0,
+      "losses" : 1
+    },
+    "goals" : {
+      "for" : 0,
+      "against" : 4
+    },
+    "form" : [ {
+      "result" : "loss",
+      "text" : "Kethel Spaland 0-4 AGE-GGK"
+    } ],
+    "team" : "Kethel Spaland",
+    "total" : 1,
+    "points" : 0,
+    "diff" : -4
   }, {
     "matches" : {
       "wins" : 0,

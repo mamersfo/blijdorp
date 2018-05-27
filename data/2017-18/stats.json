@@ -1,15 +1,15 @@
 [ {
   "id" : 5,
   "name" : "Noah",
-  "matches" : 20,
-  "goals" : 7,
+  "matches" : 21,
+  "goals" : 8,
   "assists" : 5,
-  "total" : 12,
+  "total" : 13,
   "position" : "verdediging"
 }, {
   "id" : 1,
   "name" : "Helene",
-  "matches" : 20,
+  "matches" : 21,
   "goals" : 5,
   "assists" : 5,
   "total" : 10,
@@ -17,18 +17,18 @@
 }, {
   "id" : 4,
   "name" : "Lil",
-  "matches" : 20,
-  "goals" : 6,
+  "matches" : 21,
+  "goals" : 7,
   "assists" : 4,
-  "total" : 10,
+  "total" : 11,
   "position" : "aanval"
 }, {
   "id" : 2,
   "name" : "Inder",
-  "matches" : 20.5,
-  "goals" : 7,
-  "assists" : 6,
-  "total" : 13,
+  "matches" : 21.5,
+  "goals" : 8,
+  "assists" : 7,
+  "total" : 15,
   "position" : "centrum"
 }, {
   "id" : 3,
@@ -41,7 +41,7 @@
 }, {
   "id" : 6,
   "name" : "Raf",
-  "matches" : 20,
+  "matches" : 21,
   "goals" : 14,
   "assists" : 10,
   "total" : 24,
@@ -49,7 +49,7 @@
 }, {
   "id" : 9,
   "name" : "Tije",
-  "matches" : 22,
+  "matches" : 23,
   "goals" : 0,
   "assists" : 2,
   "total" : 2,
@@ -57,15 +57,15 @@
 }, {
   "id" : 8,
   "name" : "Senn",
-  "matches" : 19,
+  "matches" : 20,
   "goals" : 4,
-  "assists" : 7,
-  "total" : 11,
+  "assists" : 8,
+  "total" : 12,
   "position" : "centrum"
 }, {
   "id" : 7,
   "name" : "Ruben",
-  "matches" : 19.0,
+  "matches" : 20.0,
   "goals" : 3,
   "assists" : 2,
   "total" : 5,
@@ -73,9 +73,9 @@
 }, {
   "id" : 10,
   "name" : "Zay",
-  "matches" : 18,
-  "goals" : 15,
-  "assists" : 3,
-  "total" : 18,
+  "matches" : 19,
+  "goals" : 16,
+  "assists" : 4,
+  "total" : 20,
   "position" : "aanval"
 } ]
