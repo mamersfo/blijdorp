@@ -1,24 +1,22 @@
 [ {
-  "title" : "zaterdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext" : "Gedeeltelijk bewolkt. Heet. Maximaal 82F. Wind uit het O van 10 tot 15 mpu.",
-  "fcttext_metric" : "",
-  "date" : "2018-05-26T08:45+01:00",
-  "teams" : [ "Blijdorp", "XerxesDZB" ],
-  "day" : 26,
-  "type" : "match"
-}, {
   "title" : "dinsdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/chancetstorms.gif",
-  "fcttext" : "Verspreide onweersbuien. Maximaal 81F. Windkracht NO en wisselend. Kans op regen 50%.",
-  "fcttext_metric" : "",
+  "icon_url" : "http://icons.wxug.com/i/c/k/tstorms.gif",
+  "fcttext" : "Onweersbuien. Maximaal 80F. Wind uit het NNO van 5 tot 10 mpu. Kans op regen 80%.",
+  "fcttext_metric" : "Verspreide onweersbuien. Maximaal 27C. Wind uit het NNO van 10 tot 15 km/u. Kans op regen 60%.",
   "date" : "2018-05-29T16:15+01:00",
   "type" : "training"
 }, {
   "title" : "donderdag",
-  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
-  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 74F. Wind uit het WNW van 5 tot 10 mpu.",
-  "fcttext_metric" : "",
+  "icon_url" : "http://icons.wxug.com/i/c/k/chancerain.gif",
+  "fcttext" : "Middagregenbuien. Maximaal 73F. Wind uit het NNW van 10 tot 15 mpu. Kans op regen 50%.",
+  "fcttext_metric" : "Middagregenbuien. Maximaal 23C. Wind uit het NNW van 10 tot 15 km/u. Kans op regen 50%.",
   "date" : "2018-05-31T16:15+01:00",
+  "type" : "training"
+}, {
+  "title" : "dinsdag",
+  "icon_url" : "http://icons.wxug.com/i/c/k/partlycloudy.gif",
+  "fcttext" : "Gedeeltelijk bewolkt. Maximaal 69F. Wind uit het NNO van 10 tot 15 mpu.",
+  "fcttext_metric" : "Gedeeltelijk bewolkt. Maximaal 21C. Wind uit het NNO van 15 tot 25 km/u.",
+  "date" : "2018-06-05T16:15+01:00",
   "type" : "training"
 } ]
